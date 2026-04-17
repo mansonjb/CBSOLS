@@ -69,7 +69,7 @@ export default function ShowroomPage() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <a
                   href={`tel:${company.phoneClean}`}
-                  style={{ display: 'block', textAlign: 'center', padding: '1rem 2rem', backgroundColor: 'var(--terra)', color: 'var(--cream)', fontSize: '0.7rem', letterSpacing: '0.18em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500 }}
+                  style={{ display: 'block', textAlign: 'center', padding: '1rem 2rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.18em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500 }}
                 >
                   Appeler pour un RDV
                 </a>

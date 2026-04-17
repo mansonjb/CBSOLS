@@ -66,13 +66,13 @@ export default function RealisationsPage() {
                 <div style={{ padding: '2rem', position: 'relative', zIndex: 1 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
                     <span style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)' }}>{project.sector}</span>
-                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', color: 'var(--text-muted)' }}>{project.year} · {project.surface}</span>
+                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', color: 'rgba(240,235,227,0.45)' }}>{project.year} · {project.surface}</span>
                   </div>
-                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.1rem', fontWeight: 400, color: 'var(--cream)', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
+                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.1rem', fontWeight: 400, color: '#F0EBE3', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
                     {project.title}
                   </h2>
                   <div style={{ fontSize: '0.75rem', color: 'var(--terra)', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>{project.type}</div>
-                  <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>{project.desc}</p>
+                  <p style={{ fontSize: '0.78rem', color: 'rgba(240,235,227,0.6)', margin: 0, lineHeight: 1.6 }}>{project.desc}</p>
                 </div>
               </div>
             ))}
@@ -82,7 +82,7 @@ export default function RealisationsPage() {
             <p style={{ fontSize: '0.875rem', color: 'var(--cream-muted)', marginBottom: '2rem' }}>
               Ces réalisations représentent une sélection de notre portfolio. Consultez-nous pour découvrir d'autres projets similaires au vôtre.
             </p>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: 'var(--cream)', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500 }}>
+            <Link href="/contact" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500 }}>
               Discuter de votre projet
             </Link>
           </div>

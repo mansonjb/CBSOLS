@@ -1,48 +1,54 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0D0C0A;
-  --bg-card: #161512;
-  --bg-subtle: #1E1C18;
-  --cream: #F0EBE3;
-  --cream-muted: #B8AFA4;
-  --terra: #C4714A;
-  --terra-light: #D4875E;
-  --gold: #B8975A;
-  --gold-light: #D4B278;
-  --text: #F0EBE3;
-  --text-muted: #8A8070;
-  --border: rgba(240, 235, 227, 0.08);
-  --border-hover: rgba(240, 235, 227, 0.16);
+  --bg:           #FAFAF8;
+  --bg-alt:       #F4F1EC;
+  --bg-card:      #FFFFFF;
+  --dark:         #1A1916;
+  --dark-2:       #3D3A35;
+  --muted:        #8A8680;
+  --muted-light:  #B8B5B0;
+  --terra:        #C4714A;
+  --terra-dark:   #A85D38;
+  --border:       rgba(26, 25, 22, 0.1);
+  --border-mid:   rgba(26, 25, 22, 0.15);
+  --border-strong:rgba(26, 25, 22, 0.25);
+  --border-hover: rgba(196, 113, 74, 0.3);
+
+  /* Compat aliases from old dark theme — now mapped to white-design values */
+  --cream:        #1A1916;
+  --cream-muted:  #8A8680;
+  --text-muted:   #8A8680;
+  --font-playfair: 'Playfair Display', Georgia, serif;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background-color: var(--bg);
-  color: var(--text);
+  color: var(--dark);
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
-::selection {
-  background-color: var(--terra);
-  color: var(--cream);
-}
+::selection { background: var(--terra); color: #fff; }
 
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', Georgia, serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--terra); border-radius: 2px; }
+img { display: block; }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg-alt); }
+::-webkit-scrollbar-thumb { background: var(--terra); }
+
+.service-card:hover { background-color: var(--bg-alt) !important; }
+.project-img:hover { transform: scale(1.03); }
+.project-img { transition: transform 0.5s ease; }
