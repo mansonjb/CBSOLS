@@ -73,72 +73,80 @@ export default function Home() {
   return (
     <>
       {/* ─── HERO ────────────────────────────────────────────────── */}
-      <section style={{ paddingTop: '72px', backgroundColor: '#fff', padding: '72px 2rem 5rem', overflow: 'hidden' }}>
-        <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
+      <section style={{ paddingTop: '72px', backgroundColor: '#fff', overflow: 'hidden' }}>
+        <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center', minHeight: 'calc(100vh - 72px)', paddingTop: '3rem', paddingBottom: '4rem' }} className="hero-grid">
 
-          {/* Top row */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3.5rem', flexWrap: 'wrap', gap: '1rem' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem 1.125rem', border: '1px solid var(--border-mid)', borderRadius: '999px' }}>
-              <span style={{ width: '7px', height: '7px', borderRadius: '50%', backgroundColor: 'var(--terra)', display: 'inline-block', flexShrink: 0 }} />
-              <span style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--dark-2)', fontWeight: 500 }}>500+ projets réalisés</span>
-            </div>
-            <div style={{ fontSize: '0.72rem', color: 'var(--muted)', letterSpacing: '0.06em' }}>La Rochelle · Île de Ré · Charente-Maritime</div>
-          </div>
-
-          {/* Giant headline with inline photo bubbles */}
-          <div style={{ marginBottom: '3rem' }}>
-            <h1 style={{
-              fontFamily: 'Playfair Display, Georgia, serif',
-              fontSize: 'clamp(3.5rem, 7.5vw, 8.5rem)',
-              fontWeight: 700,
-              color: 'var(--dark)',
-              lineHeight: 1.0,
-              letterSpacing: '-0.04em',
-              display: 'flex',
-              flexWrap: 'wrap',
-              alignItems: 'center',
-              gap: '0.3em',
-              margin: 0,
-            }}>
-              <span>Le sol qui</span>
-              <span style={{ display: 'inline-block', width: 'clamp(56px,6vw,90px)', height: 'clamp(56px,6vw,90px)', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, border: '3px solid var(--bg-alt)', verticalAlign: 'middle' }}>
-                <Image src="/images/tapis-hotel.jpg" alt="" width={90} height={90} style={{ objectFit: 'cover', width: '100%', height: '100%', display: 'block' }} />
-              </span>
-              <span>définit</span>
-              <span style={{ display: 'inline-block', width: 'clamp(56px,6vw,90px)', height: 'clamp(56px,6vw,90px)', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, border: '3px solid var(--bg-alt)', verticalAlign: 'middle' }}>
-                <Image src="/images/restaurant-coutanceau.jpg" alt="" width={90} height={90} style={{ objectFit: 'cover', width: '100%', height: '100%', display: 'block' }} />
-              </span>
-              <br style={{ width: '100%' }} />
-              <em style={{ color: 'var(--terra)', fontStyle: 'italic', fontWeight: 400 }}>votre espace.</em>
-            </h1>
-          </div>
-
-          {/* Bottom row: desc + CTAs */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '3rem', alignItems: 'end', flexWrap: 'wrap' }} className="hero-bottom">
-            <p style={{ fontSize: 'clamp(0.95rem, 1.4vw, 1.15rem)', color: 'var(--dark-2)', lineHeight: 1.65, maxWidth: '520px', margin: 0 }}>
-              Moquette, sol PVC, tapis sur mesure — CB Sols accompagne particuliers, hôtels, restaurants et entreprises en Charente-Maritime depuis <strong>25 ans</strong>.
-            </p>
-            <div style={{ display: 'flex', gap: '0.875rem', flexWrap: 'wrap', flexShrink: 0 }}>
-              <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 2rem', backgroundColor: 'var(--dark)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Devis gratuit
-                <span style={{ width: '26px', height: '26px', borderRadius: '50%', backgroundColor: 'var(--terra)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                </span>
-              </Link>
-              <Link href="/realisations" style={{ display: 'inline-flex', alignItems: 'center', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px' }}>
-                Réalisations
-              </Link>
-            </div>
-          </div>
-
-          {/* Stats */}
-          <div style={{ display: 'flex', gap: '0', marginTop: '5rem', paddingTop: '2.5rem', borderTop: '1px solid var(--border)', flexWrap: 'wrap' }}>
-            {[{ v: '+25', l: "ans d'expérience" }, { v: '500+', l: 'projets réalisés' }, { v: '31', l: 'communes couvertes' }, { v: '4.9★', l: 'note Google' }].map((s, i) => (
-              <div key={s.v} style={{ flex: '1 1 auto', minWidth: '120px', paddingRight: '3rem' }}>
-                <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 700, color: 'var(--dark)', letterSpacing: '-0.04em', lineHeight: 1 }}>{s.v}</div>
-                <div style={{ fontSize: '0.65rem', color: 'var(--muted)', letterSpacing: '0.08em', marginTop: '0.375rem' }}>{s.l}</div>
+            {/* Left — text */}
+            <div>
+              {/* Pill badge */}
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem 1.125rem', border: '1px solid var(--border-mid)', borderRadius: '999px', marginBottom: '2.5rem' }}>
+                <span style={{ width: '7px', height: '7px', borderRadius: '50%', backgroundColor: 'var(--terra)', display: 'inline-block', flexShrink: 0 }} />
+                <span style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--dark-2)', fontWeight: 500 }}>500+ projets réalisés</span>
               </div>
-            ))}
+
+              {/* Headline */}
+              <h1 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(3.2rem, 5.5vw, 6.5rem)', fontWeight: 300, color: 'var(--dark)', lineHeight: 1.05, letterSpacing: '-0.02em', margin: '0 0 2rem' }}>
+                Le sol qui<br />
+                <em style={{ fontStyle: 'italic', color: 'var(--dark)' }}>définit</em><br />
+                <em style={{ fontStyle: 'italic', color: 'var(--terra)' }}>votre espace.</em>
+              </h1>
+
+              {/* Description */}
+              <p style={{ fontSize: 'clamp(0.9rem, 1.2vw, 1.05rem)', color: 'var(--dark-2)', lineHeight: 1.7, maxWidth: '440px', margin: '0 0 2.5rem' }}>
+                Moquette, sol PVC, tapis sur mesure — CB Sols accompagne particuliers, hôtels et entreprises en Charente-Maritime depuis <strong>25 ans</strong>.
+              </p>
+
+              {/* CTAs */}
+              <div style={{ display: 'flex', gap: '0.875rem', flexWrap: 'wrap' }}>
+                <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 2rem', backgroundColor: 'var(--dark)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
+                  Devis gratuit
+                  <span style={{ width: '26px', height: '26px', borderRadius: '50%', backgroundColor: 'var(--terra)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  </span>
+                </Link>
+                <Link href="/realisations" style={{ display: 'inline-flex', alignItems: 'center', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px' }}>
+                  Réalisations
+                </Link>
+              </div>
+
+              {/* Stats */}
+              <div style={{ display: 'flex', gap: '0', marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid var(--border)', flexWrap: 'wrap' }}>
+                {[{ v: '+25', l: "ans d'expérience" }, { v: '500+', l: 'projets réalisés' }, { v: '31', l: 'communes couvertes' }, { v: '4.9★', l: 'note Google' }].map((s) => (
+                  <div key={s.v} style={{ flex: '1 1 auto', minWidth: '100px', paddingRight: '2rem' }}>
+                    <div style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', fontWeight: 300, color: 'var(--dark)', letterSpacing: '-0.03em', lineHeight: 1 }}>{s.v}</div>
+                    <div style={{ fontSize: '0.62rem', color: 'var(--muted)', letterSpacing: '0.08em', marginTop: '0.375rem' }}>{s.l}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right — photo card */}
+            <div style={{ position: 'relative' }} className="hero-photo-col">
+              <div style={{ borderRadius: '24px', overflow: 'hidden', aspectRatio: '3/4', position: 'relative', maxHeight: '680px' }}>
+                <Image
+                  src="/images/tapis-hotel.jpg"
+                  alt="Tapis sur mesure — Hôtel La Baronnie, Île de Ré"
+                  fill
+                  style={{ objectFit: 'cover', objectPosition: 'center' }}
+                  priority
+                  sizes="(max-width: 900px) 100vw, 50vw"
+                />
+                {/* Caption card */}
+                <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', right: '1.5rem', backgroundColor: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', borderRadius: '14px', padding: '1rem 1.25rem', borderLeft: '3px solid var(--terra)' }}>
+                  <div style={{ fontSize: '0.56rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem', fontWeight: 600 }}>
+                    Tapis sur mesure · 600 m²
+                  </div>
+                  <div style={{ fontSize: '0.88rem', color: 'var(--dark)', fontWeight: 500, fontFamily: 'var(--font-playfair, Georgia, serif)' }}>
+                    Hôtel La Baronnie · Île de Ré
+                  </div>
+                </div>
+              </div>
+              {/* Location badge */}
+              <div style={{ position: 'absolute', top: '1.5rem', right: '-1rem', backgroundColor: 'var(--dark)', color: 'rgba(240,235,227,0.7)', borderRadius: '999px', padding: '0.5rem 1rem', fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
+                La Rochelle · Île de Ré · 17
+              </div>
+            </div>
           </div>
         </div>
       </section>

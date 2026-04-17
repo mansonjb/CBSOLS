@@ -19,7 +19,7 @@
   --cream:        #1A1916;
   --cream-muted:  #8A8680;
   --text-muted:   #8A8680;
-  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-playfair: 'Cormorant Garamond', Georgia, serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,8 +38,8 @@ body {
 ::selection { background: var(--terra); color: #fff; }
 
 h1, h2, h3, h4 {
-  font-family: 'Playfair Display', Georgia, serif;
-  letter-spacing: -0.025em;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
@@ -52,3 +52,14 @@ img { display: block; }
 .service-card:hover { background-color: var(--bg-alt) !important; }
 .project-img:hover { transform: scale(1.03); }
 .project-img { transition: transform 0.5s ease; }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; min-height: auto !important; }
+  .hero-photo-col { display: none; }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+.marquee-track { animation: marquee 28s linear infinite; }
