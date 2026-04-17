@@ -44,7 +44,7 @@ export function Header() {
               priority
             />
             <div style={{ borderLeft: '1px solid rgba(26,25,22,0.15)', paddingLeft: '0.75rem' }}>
-              <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.1rem', fontWeight: 700, color: 'var(--dark)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+              <div style={{ fontFamily: 'var(--font-sans)', fontSize: '1.1rem', fontWeight: 700, color: 'var(--dark)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
                 CB <span style={{ color: 'var(--terra)' }}>Sols</span>
               </div>
               <div style={{ fontSize: '0.55rem', letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase', marginTop: '2px' }}>

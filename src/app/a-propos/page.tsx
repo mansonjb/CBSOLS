@@ -14,9 +14,9 @@ export default function AProposPage() {
       <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Notre histoire</div>
-          <h1 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 400, color: 'var(--cream)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+          <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
             25 ans au service<br />
-            <em style={{ fontStyle: 'italic', color: 'var(--terra)' }}>de vos sols.</em>
+            <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>de vos sols.</em>
           </h1>
           <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '560px', lineHeight: 1.7, margin: 0 }}>
             CB Sols est né en 1999 d'une passion pour les beaux matériaux et le travail bien fait. En 25 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime — des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille aux restaurants étoilés.
@@ -29,7 +29,7 @@ export default function AProposPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '5rem', alignItems: 'start' }}>
             <div>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Valentin Prévoteau</div>
-              <p style={{ fontSize: '1.1rem', color: 'var(--cream)', lineHeight: 1.8, marginBottom: '1.5rem', fontFamily: 'var(--font-playfair, Georgia, serif)', fontStyle: 'italic' }}>
+              <p style={{ fontSize: '1.1rem', color: 'var(--cream)', lineHeight: 1.8, marginBottom: '1.5rem', fontFamily: 'var(--font-serif)', fontStyle: 'italic' }}>
                 "Un sol, c'est la base de tout espace. Bien choisi, bien posé, il dure des décennies et transforme un lieu."
               </p>
               <p style={{ fontSize: '0.875rem', color: 'var(--cream-muted)', lineHeight: 1.7, marginBottom: '1.5rem' }}>
@@ -50,7 +50,7 @@ export default function AProposPage() {
                   { year: "Aujourd'hui", label: '500+ chantiers réalisés', desc: 'La Rochelle, Île de Ré, Rochefort, Saintes et toute la Charente-Maritime' },
                 ].map((item) => (
                   <div key={item.year} style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: '1.5rem', paddingBottom: '2rem', borderBottom: '1px solid var(--border)' }}>
-                    <div style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '0.9rem', color: 'var(--terra)', fontWeight: 700 }}>{item.year}</div>
+                    <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9rem', color: 'var(--terra)', fontWeight: 700 }}>{item.year}</div>
                     <div>
                       <div style={{ fontSize: '0.875rem', color: 'var(--cream)', fontWeight: 500, marginBottom: '0.25rem' }}>{item.label}</div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</div>
@@ -73,10 +73,10 @@ export default function AProposPage() {
             ))}
           </div>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500 }}>
+            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
               Nous contacter
             </Link>
-            <Link href="/showroom" style={{ display: 'inline-block', padding: '1rem 2rem', border: '1px solid var(--border-hover)', color: 'var(--cream-muted)', fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none' }}>
+            <Link href="/showroom" style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px' }}>
               Visiter le showroom
             </Link>
           </div>

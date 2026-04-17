@@ -20,7 +20,7 @@ export function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
               <Image src="/images/logo-cbsols.png" alt="CB Sols" width={36} height={34} style={{ objectFit: 'contain', opacity: 0.9 }} />
               <div>
-                <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.1rem', fontWeight: 700, color: '#F0EBE3', letterSpacing: '-0.02em' }}>
+                <div style={{ fontFamily: 'var(--font-sans)', fontSize: '1.1rem', fontWeight: 700, color: '#F0EBE3', letterSpacing: '-0.02em' }}>
                   CB <span style={{ color: 'var(--terra)' }}>Sols</span>
                 </div>
                 <div style={{ fontSize: '0.55rem', letterSpacing: '0.16em', color: 'rgba(240,235,227,0.4)', textTransform: 'uppercase' }}>Revêtements · La Rochelle</div>

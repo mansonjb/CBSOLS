@@ -14,7 +14,7 @@ export default function SecteursPage() {
       <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Professionnels</div>
-          <h1 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 400, color: 'var(--cream)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+          <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
             Solutions pour chaque secteur
           </h1>
           <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '560px', lineHeight: 1.7, margin: 0 }}>
@@ -31,7 +31,7 @@ export default function SecteursPage() {
                 <div style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', gap: '2rem', alignItems: 'center', padding: '2.5rem 0', borderBottom: '1px solid var(--border)', transition: 'all 0.2s' }}>
                   <div style={{ fontSize: '2.5rem' }}>{sector.icon}</div>
                   <div>
-                    <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.6rem', fontWeight: 400, color: 'var(--cream)', margin: '0 0 0.4rem', letterSpacing: '-0.02em' }}>
+                    <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.4rem', letterSpacing: '-0.03em' }}>
                       {sector.name}
                     </h2>
                     <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', margin: '0 0 1rem', lineHeight: 1.6, maxWidth: '500px' }}>

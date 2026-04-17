@@ -18,8 +18,8 @@ export default function ContactPage() {
             {/* Left: infos */}
             <div>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Contact</div>
-              <h1 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 400, color: 'var(--cream)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.1 }}>
-                Parlons de<br /><em style={{ fontStyle: 'italic', color: 'var(--terra)' }}>votre projet.</em>
+              <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
+                Parlons de<br /><em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>votre projet.</em>
               </h1>
               <p style={{ fontSize: '0.875rem', color: 'var(--cream-muted)', lineHeight: 1.7, marginBottom: '3rem' }}>
                 Devis gratuit sous 48h. Nous nous déplaçons sur l'ensemble de la Charente-Maritime pour évaluer votre chantier.
@@ -28,7 +28,7 @@ export default function ContactPage() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                 <div>
                   <div style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.5rem' }}>Téléphone</div>
-                  <a href={`tel:${company.phoneClean}`} style={{ fontSize: '1.5rem', fontFamily: 'var(--font-playfair, Georgia, serif)', color: 'var(--cream)', textDecoration: 'none', fontWeight: 400 }}>
+                  <a href={`tel:${company.phoneClean}`} style={{ fontSize: '1.75rem', fontFamily: 'var(--font-sans)', color: 'var(--dark)', textDecoration: 'none', fontWeight: 800 }}>
                     {company.phone}
                   </a>
                 </div>

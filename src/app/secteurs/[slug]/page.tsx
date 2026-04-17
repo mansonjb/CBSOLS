@@ -45,20 +45,20 @@ export default async function SecteurPage({ params }: Props) {
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>{sector.name}</span>
           </div>
           <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{sector.icon}</div>
-          <h1 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 400, color: 'var(--cream)', margin: '0 0 0.75rem', letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+          <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
             {sector.name}
           </h1>
-          <p style={{ fontSize: '1.1rem', fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 1.5rem', fontFamily: 'var(--font-playfair, Georgia, serif)' }}>
+          <p style={{ fontSize: '1.1rem', fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 1.5rem', fontFamily: 'var(--font-serif)', fontWeight: 300 }}>
             {sector.tagline}
           </p>
           <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '600px', lineHeight: 1.7, margin: '0 0 2.5rem' }}>
             {sector.description}
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500 }}>
+            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
               Devis professionnel
             </Link>
-            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '1rem 2rem', border: '1px solid var(--border-hover)', color: 'var(--cream-muted)', fontSize: '0.82rem', textDecoration: 'none' }}>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
               {company.phone}
             </a>
           </div>
@@ -74,7 +74,7 @@ export default async function SecteurPage({ params }: Props) {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {sector.challenges.map((c, i) => (
                   <div key={i} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start', padding: '1rem', border: '1px solid var(--border)', backgroundColor: 'var(--bg-card)' }}>
-                    <div style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.25rem', color: 'var(--terra)', opacity: 0.5, lineHeight: 1, flexShrink: 0 }}>0{i + 1}</div>
+                    <div style={{ fontFamily: 'var(--font-sans)', fontSize: '1rem', color: 'var(--terra)', opacity: 0.5, lineHeight: 1, flexShrink: 0, fontWeight: 800 }}>0{i + 1}</div>
                     <span style={{ fontSize: '0.85rem', color: 'var(--cream-muted)', lineHeight: 1.5 }}>{c}</span>
                   </div>
                 ))}
@@ -128,10 +128,10 @@ export default async function SecteurPage({ params }: Props) {
             ))}
           </div>
           <div style={{ marginTop: '3rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500 }}>
+            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
               Obtenir un devis pro
             </Link>
-            <Link href="/secteurs" style={{ display: 'inline-block', padding: '1rem 2rem', border: '1px solid var(--border-hover)', color: 'var(--cream-muted)', fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none' }}>
+            <Link href="/secteurs" style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px' }}>
               Tous les secteurs
             </Link>
           </div>
