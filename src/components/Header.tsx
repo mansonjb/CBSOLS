@@ -75,10 +75,10 @@ export function Header() {
               {company.phone}
             </a>
             <Link href="/contact" style={{
-              display: 'inline-block', padding: '0.625rem 1.375rem',
+              display: 'inline-block', padding: '0.625rem 1.5rem',
               backgroundColor: 'var(--terra)', color: '#fff',
               fontSize: '0.65rem', letterSpacing: '0.16em', textTransform: 'uppercase',
-              textDecoration: 'none', fontWeight: 600,
+              textDecoration: 'none', fontWeight: 600, borderRadius: '999px',
               transition: 'background-color 0.2s',
             }}>
               Devis gratuit
