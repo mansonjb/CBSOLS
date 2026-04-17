@@ -2,6 +2,8 @@ import { MetadataRoute } from 'next'
 import { cities } from '@/data/cities'
 import { services } from '@/data/services'
 import { sectors } from '@/data/sectors'
+import { solutions } from '@/data/solutions'
+import { guides } from '@/data/guides'
 
 const BASE_URL = 'https://cbsols.fr'
 
@@ -53,5 +55,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  return [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...geoPages]
+  const solutionPages: MetadataRoute.Sitemap = solutions.map((s) => ({
+    url: `${BASE_URL}/solutions/${s.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }))
+
+  const guidePages: MetadataRoute.Sitemap = guides.map((g) => ({
+    url: `${BASE_URL}/guide/${g.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.75,
+  }))
+
+  return [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...geoPages, ...solutionPages, ...guidePages]
 }

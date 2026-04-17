@@ -2,7 +2,7 @@ export interface City {
   slug: string
   name: string
   department: string
-  zone: 'la-rochelle' | 'ile-de-re' | 'charente-maritime'
+  zone: 'la-rochelle' | 'ile-de-re' | 'ile-doleron' | 'charente-maritime'
   description: string
   population?: number
 }
@@ -259,11 +259,151 @@ export const cities: City[] = [
     description: 'sous-préfecture de Charente-Maritime',
     population: 3500,
   },
+  // Plus agglomération rochelaise
+  {
+    slug: 'dompierre-sur-mer',
+    name: 'Dompierre-sur-Mer',
+    department: '17',
+    zone: 'la-rochelle',
+    description: "commune résidentielle de l'agglomération de La Rochelle",
+    population: 6200,
+  },
+  {
+    slug: 'croix-chapeau',
+    name: 'Croix-Chapeau',
+    department: '17',
+    zone: 'la-rochelle',
+    description: "commune de l'agglomération rochelaise",
+    population: 2800,
+  },
+  {
+    slug: 'saint-rogatien',
+    name: 'Saint-Rogatien',
+    department: '17',
+    zone: 'la-rochelle',
+    description: "commune résidentielle proche de La Rochelle",
+    population: 3500,
+  },
+  {
+    slug: 'yves',
+    name: 'Yves',
+    department: '17',
+    zone: 'la-rochelle',
+    description: "commune littorale de l'agglomération rochelaise",
+    population: 1200,
+  },
+  {
+    slug: 'salles-sur-mer',
+    name: 'Salles-sur-Mer',
+    department: '17',
+    zone: 'la-rochelle',
+    description: "commune de l'agglomération de La Rochelle",
+    population: 3100,
+  },
+  // Île d'Oléron
+  {
+    slug: 'saint-pierre-doleron',
+    name: "Saint-Pierre-d'Oléron",
+    department: '17',
+    zone: 'ile-doleron',
+    description: "chef-lieu de l'Île d'Oléron",
+    population: 6700,
+  },
+  {
+    slug: 'saint-georges-doleron',
+    name: "Saint-Georges-d'Oléron",
+    department: '17',
+    zone: 'ile-doleron',
+    description: "commune centrale de l'Île d'Oléron",
+    population: 3500,
+  },
+  {
+    slug: 'dolus-doleron',
+    name: "Dolus-d'Oléron",
+    department: '17',
+    zone: 'ile-doleron',
+    description: "commune balnéaire de l'Île d'Oléron",
+    population: 3200,
+  },
+  {
+    slug: 'le-grand-village-plage',
+    name: 'Le Grand-Village-Plage',
+    department: '17',
+    zone: 'ile-doleron',
+    description: "station balnéaire de l'Île d'Oléron",
+    population: 1100,
+  },
+  {
+    slug: 'le-chateau-doleron',
+    name: "Le Château-d'Oléron",
+    department: '17',
+    zone: 'ile-doleron',
+    description: "commune fortifiée de l'Île d'Oléron",
+    population: 4000,
+  },
+  {
+    slug: 'saint-trojan-les-bains',
+    name: 'Saint-Trojan-les-Bains',
+    department: '17',
+    zone: 'ile-doleron',
+    description: "station thermale et balnéaire de l'Île d'Oléron",
+    population: 1500,
+  },
+  // Plus Charente-Maritime
+  {
+    slug: 'saint-palais-sur-mer',
+    name: 'Saint-Palais-sur-Mer',
+    department: '17',
+    zone: 'charente-maritime',
+    description: 'station balnéaire proche de Royan',
+    population: 4000,
+  },
+  {
+    slug: 'meschers-sur-gironde',
+    name: 'Meschers-sur-Gironde',
+    department: '17',
+    zone: 'charente-maritime',
+    description: 'commune balnéaire de l\'estuaire de la Gironde',
+    population: 3200,
+  },
+  {
+    slug: 'saint-georges-de-didonne',
+    name: 'Saint-Georges-de-Didonne',
+    department: '17',
+    zone: 'charente-maritime',
+    description: 'station balnéaire de l\'estuaire de la Gironde',
+    population: 5000,
+  },
+  {
+    slug: 'port-des-barques',
+    name: 'Port-des-Barques',
+    department: '17',
+    zone: 'charente-maritime',
+    description: "commune littorale face à l'Île Madame",
+    population: 1800,
+  },
+  {
+    slug: 'marans',
+    name: 'Marans',
+    department: '17',
+    zone: 'charente-maritime',
+    description: 'commune fluviale au nord de la Charente-Maritime',
+    population: 4500,
+  },
+  {
+    slug: 'courcon',
+    name: 'Courçon',
+    department: '17',
+    zone: 'charente-maritime',
+    description: 'commune du Marais Poitevin en Charente-Maritime',
+    population: 2400,
+  },
 ]
 
 export const cityZoneLabels: Record<City['zone'], string> = {
   'la-rochelle': 'Agglomération de La Rochelle',
   'ile-de-re': 'Île de Ré',
+  'ile-doleron': "Île d'Oléron",
   'charente-maritime': 'Charente-Maritime',
 }
 

@@ -94,29 +94,34 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      {open && (
-        <div style={{ backgroundColor: '#fff', borderTop: '1px solid var(--border)', padding: '1.5rem 2rem 2rem' }}>
+      {/* Mobile menu — animated slide */}
+      <div style={{
+        maxHeight: open ? '520px' : '0',
+        overflow: 'hidden',
+        transition: 'max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1)',
+        backgroundColor: '#fff',
+      }}>
+        <div style={{ borderTop: '1px solid var(--border)', padding: '1.5rem 2rem 2rem' }}>
           {nav.map(item => (
             <Link key={item.href} href={item.href} onClick={() => setOpen(false)} style={{
               display: 'block', padding: '0.875rem 0',
               borderBottom: '1px solid var(--border)',
               color: 'var(--dark)', textDecoration: 'none',
-              fontSize: '0.875rem', letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 500,
+              fontSize: '0.82rem', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600,
             }}>
               {item.label}
             </Link>
           ))}
           <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            <a href={`tel:${company.phoneClean}`} style={{ fontSize: '1.25rem', color: 'var(--terra)', textDecoration: 'none', fontWeight: 600, fontFamily: 'Playfair Display, Georgia, serif' }}>
+            <a href={`tel:${company.phoneClean}`} style={{ fontSize: '1.4rem', color: 'var(--terra)', textDecoration: 'none', fontWeight: 800, fontFamily: 'var(--font-sans)' }}>
               {company.phone}
             </a>
-            <Link href="/contact" onClick={() => setOpen(false)} style={{ display: 'inline-block', padding: '0.875rem 1.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, textAlign: 'center' }}>
+            <Link href="/contact" onClick={() => setOpen(false)} style={{ display: 'inline-block', padding: '0.875rem 1.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, textAlign: 'center', borderRadius: '999px' }}>
               Devis gratuit
             </Link>
           </div>
         </div>
-      )}
+      </div>
 
       <style>{`
         @media (max-width: 900px) { .desk-nav { display: none !important; } .mob-burger { display: flex !important; } }
