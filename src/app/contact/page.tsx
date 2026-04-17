@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { company } from '@/data/company'
+import { ContactForm } from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact & Devis Gratuit — CB Sols La Rochelle',
@@ -47,96 +48,26 @@ export default function ContactPage() {
                     {company.zones.join(' · ')}
                   </p>
                 </div>
+
+                {/* Trust signals */}
+                <div style={{ paddingTop: '1.5rem', borderTop: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {[
+                    'Devis gratuit, sans engagement',
+                    'Réponse sous 48h ouvrées',
+                    'Déplacement gratuit pour estimation',
+                    'Garantie décennale sur tous les travaux',
+                  ].map((item) => (
+                    <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                      <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: 'var(--terra)', flexShrink: 0 }} />
+                      <span style={{ fontSize: '0.8rem', color: 'var(--cream-muted)' }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Right: form */}
-            <div style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', padding: '3rem' }}>
-              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '2rem' }}>Demande de devis</div>
-              <form
-                action={`mailto:${company.email}`}
-                method="get"
-                style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
-              >
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                  <div>
-                    <label style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--cream-muted)', display: 'block', marginBottom: '0.5rem' }}>Nom *</label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      style={{ width: '100%', backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)', color: 'var(--cream)', padding: '0.875rem 1rem', fontSize: '0.875rem', outline: 'none', fontFamily: 'inherit' }}
-                    />
-                  </div>
-                  <div>
-                    <label style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--cream-muted)', display: 'block', marginBottom: '0.5rem' }}>Téléphone *</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      required
-                      style={{ width: '100%', backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)', color: 'var(--cream)', padding: '0.875rem 1rem', fontSize: '0.875rem', outline: 'none', fontFamily: 'inherit' }}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--cream-muted)', display: 'block', marginBottom: '0.5rem' }}>Email *</label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    style={{ width: '100%', backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)', color: 'var(--cream)', padding: '0.875rem 1rem', fontSize: '0.875rem', outline: 'none', fontFamily: 'inherit' }}
-                  />
-                </div>
-
-                <div>
-                  <label style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--cream-muted)', display: 'block', marginBottom: '0.5rem' }}>Ville / Lieu du chantier</label>
-                  <input
-                    type="text"
-                    name="city"
-                    style={{ width: '100%', backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)', color: 'var(--cream)', padding: '0.875rem 1rem', fontSize: '0.875rem', outline: 'none', fontFamily: 'inherit' }}
-                  />
-                </div>
-
-                <div>
-                  <label style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--cream-muted)', display: 'block', marginBottom: '0.5rem' }}>Type de projet</label>
-                  <select
-                    name="project_type"
-                    style={{ width: '100%', backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)', color: 'var(--cream)', padding: '0.875rem 1rem', fontSize: '0.875rem', outline: 'none', fontFamily: 'inherit', appearance: 'none' }}
-                  >
-                    <option value="">Choisir…</option>
-                    <option>Pose de moquette</option>
-                    <option>Sol PVC (lames ou dalles)</option>
-                    <option>Sol PVC en lés</option>
-                    <option>Douche intégrale PVC</option>
-                    <option>Tapis sur mesure</option>
-                    <option>Tapis de propreté</option>
-                    <option>Nettoyage de moquette</option>
-                    <option>Autre / Conseil</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--cream-muted)', display: 'block', marginBottom: '0.5rem' }}>Message / Description du projet</label>
-                  <textarea
-                    name="message"
-                    rows={4}
-                    style={{ width: '100%', backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)', color: 'var(--cream)', padding: '0.875rem 1rem', fontSize: '0.875rem', outline: 'none', fontFamily: 'inherit', resize: 'vertical' }}
-                    placeholder="Surface approximative, type de local, délai souhaité…"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  style={{ padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: 'var(--cream)', border: 'none', cursor: 'pointer', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', fontWeight: 500, fontFamily: 'inherit', transition: 'background-color 0.2s' }}
-                >
-                  Envoyer ma demande
-                </button>
-                <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', margin: 0 }}>
-                  Réponse garantie sous 48h ouvrées
-                </p>
-              </form>
-            </div>
+            {/* Right: real form with server action */}
+            <ContactForm />
           </div>
         </div>
       </section>
