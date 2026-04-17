@@ -95,3 +95,10 @@ img { display: block; }
   100% { transform: translateX(-33.333%); }
 }
 .marquee-track { animation: marquee 28s linear infinite; }
+
+/* Mobile CTA sticky bar */
+.mobile-cta-bar { display: none !important; }
+@media (max-width: 900px) {
+  .mobile-cta-bar { display: flex !important; }
+  body { padding-bottom: 76px; }
+}

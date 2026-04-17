@@ -9,9 +9,10 @@ import { ColorSwitcher } from './ColorSwitcher'
 const nav = [
   { href: '/services', label: 'Services' },
   { href: '/secteurs', label: 'Professionnels' },
+  { href: '/marques', label: 'Marques' },
+  { href: '/tarifs', label: 'Tarifs' },
   { href: '/realisations', label: 'Réalisations' },
   { href: '/showroom', label: 'Showroom' },
-  { href: '/a-propos', label: 'À propos' },
 ]
 
 export function Header() {
