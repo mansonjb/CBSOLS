@@ -4,6 +4,7 @@ import { services } from '@/data/services'
 import { sectors } from '@/data/sectors'
 import { cities } from '@/data/cities'
 import { company } from '@/data/company'
+import { HeroSlider } from '@/components/HeroSlider'
 
 const projects = [
   { title: 'Bistrot de la Grande Terrasse', type: 'Moquette acoustique', sector: 'Restauration', img: '/images/bistrot-restaurant.jpg' },
@@ -181,22 +182,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right: photo */}
+        {/* Right: photo slider */}
         <div style={{ position: 'relative', overflow: 'hidden', minHeight: '600px' }} className="hero-photo">
-          <Image
-            src="/images/tapis-hotel.jpg"
-            alt="Tapis sur mesure Hôtel La Baronnie — CB Sols Île de Ré"
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
-            priority
-            sizes="50vw"
-          />
-          {/* Caption card */}
-          <div style={{ position: 'absolute', bottom: '2.5rem', left: '2.5rem', backgroundColor: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', padding: '1rem 1.375rem', maxWidth: '260px', borderLeft: '3px solid var(--terra)' }}>
-            <div style={{ fontSize: '0.56rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem', fontWeight: 600 }}>Hôtel La Baronnie · Île de Ré</div>
-            <div style={{ fontSize: '0.85rem', color: 'var(--dark)', fontWeight: 500 }}>Tapis sur mesure — Chambre</div>
-            <div style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: '0.2rem' }}>Motif exclusif · 600 m²</div>
-          </div>
+          <HeroSlider />
         </div>
       </section>
 
@@ -314,9 +302,9 @@ export default function Home() {
       <section style={{ padding: '0', backgroundColor: 'var(--dark)', overflow: 'hidden' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }} className="materials-grid">
           {[
-            { img: '/images/textures/carpet-close.jpg', label: 'Moquette', caption: 'Laine & synthétique — hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · Balsan · Interface' },
-            { img: '/images/textures/carpet-texture.jpg', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés — zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · Tarkett · Forbo' },
-            { img: '/images/textures/luxury-interior.jpg', label: 'Tapis sur mesure', caption: 'Motif exclusif, forme libre, coloris personnalisés', href: '/services/tapis-sur-mesure', brand: 'EGE · Balsan · Balta' },
+            { img: '/images/moquette-bureau.jpg', label: 'Moquette', caption: 'Laine & synthétique — hôtellerie, bureaux, résidentiel haut de gamme', href: '/services/pose-moquette', brand: 'EGE · Balsan · Interface' },
+            { img: '/images/cuisine-pro.jpg', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés à chaud — zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · Tarkett · Forbo' },
+            { img: '/images/motif-tapis-hotel.jpg', label: 'Tapis sur mesure', caption: 'Motif exclusif, forme libre, coloris personnalisés en showroom', href: '/services/tapis-sur-mesure', brand: 'EGE · Balsan · Balta' },
           ].map(mat => (
             <Link key={mat.label} href={mat.href} style={{ textDecoration: 'none', display: 'block', position: 'relative', overflow: 'hidden', aspectRatio: '4/5' }} className="material-tile">
               <Image

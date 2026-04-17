@@ -101,13 +101,13 @@ export default async function SecteurPage({ params }: Props) {
       <section style={{ padding: '4rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '2rem' }}>Services recommandés pour {sector.name}</div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1px', backgroundColor: 'var(--border)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
             {recommendedServicesData.map((service) => service && (
               <Link key={service.slug} href={`/services/${service.slug}`} style={{ textDecoration: 'none' }}>
-                <div style={{ backgroundColor: 'var(--bg-card)', padding: '2rem', transition: 'background-color 0.2s' }}>
-                  <h3 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.1rem', fontWeight: 400, color: 'var(--cream)', margin: '0 0 0.75rem' }}>{service.name}</h3>
-                  <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', margin: '0 0 1.25rem', lineHeight: 1.6 }}>{service.description}</p>
-                  <div style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--terra)' }}>Découvrir →</div>
+                <div className="service-card" style={{ backgroundColor: 'var(--bg-alt)', padding: '2rem', border: '1px solid var(--border)', transition: 'background-color 0.2s', height: '100%' }}>
+                  <h3 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.1rem', fontWeight: 400, color: 'var(--dark)', margin: '0 0 0.75rem' }}>{service.name}</h3>
+                  <p style={{ fontSize: '0.78rem', color: 'var(--muted)', margin: '0 0 1.25rem', lineHeight: 1.6 }}>{service.description}</p>
+                  <div style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--terra)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>Découvrir →</div>
                 </div>
               </Link>
             ))}

@@ -194,13 +194,10 @@ export default async function ServicePage({ params }: Props) {
         <section style={{ padding: '4rem 2rem 6rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>
           <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '2rem' }}>Autres services</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1px', backgroundColor: 'var(--border)' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
               {services.filter((s) => s.slug !== slug).map((s) => (
-                <Link key={s.slug} href={`/services/${s.slug}`} style={{ textDecoration: 'none', display: 'block' }}>
-                  <div style={{ backgroundColor: 'var(--bg-card)', padding: '1.5rem', transition: 'background-color 0.2s' }}>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 500, color: 'var(--cream)', marginBottom: '0.5rem' }}>{s.shortName}</div>
-                    <div style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--terra)' }}>Voir →</div>
-                  </div>
+                <Link key={s.slug} href={`/services/${s.slug}`} style={{ textDecoration: 'none', display: 'inline-block', padding: '0.625rem 1.25rem', border: '1px solid var(--border-mid)', fontSize: '0.78rem', color: 'var(--dark-2)', transition: 'border-color 0.2s, color 0.2s' }}>
+                  {s.shortName}
                 </Link>
               ))}
             </div>
