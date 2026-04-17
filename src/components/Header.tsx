@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { company } from '@/data/company'
 import { ThemeToggle } from './ThemeToggle'
+import { ColorSwitcher } from './ColorSwitcher'
 
 const nav = [
   { href: '/services', label: 'Services' },
@@ -68,7 +69,8 @@ export function Header() {
           </nav>
 
           {/* Right CTA */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }} className="desk-nav">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }} className="desk-nav">
+            <ColorSwitcher />
             <ThemeToggle />
             <a href={`tel:${company.phoneClean}`} style={{
               fontSize: '0.8rem', color: 'var(--dark-2)', textDecoration: 'none',

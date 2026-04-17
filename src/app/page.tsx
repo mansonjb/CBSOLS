@@ -4,6 +4,7 @@ import { services } from '@/data/services'
 import { sectors } from '@/data/sectors'
 import { cities } from '@/data/cities'
 import { company } from '@/data/company'
+import { HeroSlider } from '@/components/HeroSlider'
 
 const projects = [
   { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel.jpg' },
@@ -121,26 +122,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right — photo card */}
+            {/* Right — hero slider */}
             <div style={{ position: 'relative' }} className="hero-photo-col">
               <div style={{ borderRadius: '24px', overflow: 'hidden', aspectRatio: '3/4', position: 'relative', maxHeight: '680px' }}>
-                <Image
-                  src="/images/tapis-hotel.jpg"
-                  alt="Tapis sur mesure — Hôtel La Baronnie, Île de Ré"
-                  fill
-                  style={{ objectFit: 'cover', objectPosition: 'center' }}
-                  priority
-                  sizes="(max-width: 900px) 100vw, 50vw"
-                />
-                {/* Caption card */}
-                <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', right: '1.5rem', backgroundColor: 'var(--bg-glass)', backdropFilter: 'blur(12px)', borderRadius: '14px', padding: '1rem 1.25rem', borderLeft: '3px solid var(--terra)' }}>
-                  <div style={{ fontSize: '0.56rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem', fontWeight: 600 }}>
-                    Tapis sur mesure · 600 m²
-                  </div>
-                  <div style={{ fontSize: '0.88rem', color: 'var(--dark)', fontWeight: 500, fontFamily: 'var(--font-playfair, Georgia, serif)' }}>
-                    Hôtel La Baronnie · Île de Ré
-                  </div>
-                </div>
+                <HeroSlider />
               </div>
               {/* Location badge */}
               <div style={{ position: 'absolute', top: '1.5rem', right: '-1rem', backgroundColor: 'var(--bg-inv)', color: 'rgba(240,235,227,0.7)', borderRadius: '999px', padding: '0.5rem 1rem', fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>

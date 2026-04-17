@@ -10,10 +10,22 @@ const slides = [
     surface: '600 m²',
   },
   {
+    img: '/images/motif-tapis-hotel.jpg',
+    project: 'Lobby hôtelier · La Rochelle',
+    type: 'Tapis motif exclusif',
+    surface: '120 m²',
+  },
+  {
     img: '/images/restaurant-coutanceau.jpg',
     project: 'Restaurant Coutanceau · La Rochelle',
     type: 'Moquette gastronomique',
     surface: '220 m²',
+  },
+  {
+    img: '/images/moquette-chambre.jpg',
+    project: 'Résidences · Île de Ré',
+    type: 'Moquette chambre hôtelière',
+    surface: '180 m²',
   },
   {
     img: '/images/moquette-bureau.jpg',
@@ -23,7 +35,7 @@ const slides = [
   },
   {
     img: '/images/golf.jpg',
-    project: 'Golf de la Prée',
+    project: 'Golf de la Prée · Île de Ré',
     type: 'Moquette + PVC vestiaires',
     surface: '600 m²',
   },
@@ -75,35 +87,36 @@ export function HeroSlider() {
       {/* Caption */}
       <div style={{
         position: 'absolute',
-        bottom: '2.5rem',
-        left: '2.5rem',
-        right: '5rem',
-        backgroundColor: 'rgba(255,255,255,0.95)',
-        backdropFilter: 'blur(10px)',
-        padding: '1rem 1.375rem',
+        bottom: '1.5rem',
+        left: '1.5rem',
+        right: '4.5rem',
+        backgroundColor: 'var(--bg-glass)',
+        backdropFilter: 'blur(12px)',
+        padding: '1rem 1.25rem',
         borderLeft: '3px solid var(--terra)',
+        borderRadius: '14px',
         transition: 'opacity 0.4s',
         opacity: transitioning ? 0 : 1,
       }}>
         <div style={{ fontSize: '0.56rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem', fontWeight: 600 }}>
           {slides[current].type} · {slides[current].surface}
         </div>
-        <div style={{ fontSize: '0.85rem', color: 'var(--dark)', fontWeight: 500 }}>
+        <div style={{ fontSize: '0.85rem', color: 'var(--dark)', fontWeight: 500, fontFamily: 'var(--font-sans)' }}>
           {slides[current].project}
         </div>
       </div>
 
       {/* Dots */}
-      <div style={{ position: 'absolute', bottom: '3.25rem', right: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
+      <div style={{ position: 'absolute', bottom: '2.25rem', right: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
             aria-label={`Slide ${i + 1}`}
             style={{
-              width: '6px',
-              height: i === current ? '24px' : '6px',
-              backgroundColor: i === current ? 'var(--terra)' : 'rgba(255,255,255,0.5)',
+              width: '5px',
+              height: i === current ? '22px' : '5px',
+              backgroundColor: i === current ? 'var(--terra)' : 'rgba(255,255,255,0.45)',
               border: 'none',
               cursor: 'pointer',
               transition: 'all 0.35s ease',
