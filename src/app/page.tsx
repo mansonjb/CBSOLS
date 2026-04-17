@@ -1,16 +1,17 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { services } from '@/data/services'
 import { sectors } from '@/data/sectors'
 import { cities } from '@/data/cities'
 import { company } from '@/data/company'
 
 const projects = [
-  { title: 'Hôtel Île de Ré', type: 'Moquette & Douches PVC', sector: 'Hôtellerie 4★', bg: '#1a1410' },
-  { title: 'Restaurant Gastronomique La Rochelle', type: 'Moquette acoustique sur mesure', sector: 'Restauration', bg: '#121610' },
-  { title: 'Cabinet Comptable Rochefort', type: 'Dalles PVC bureau', sector: 'Tertiaire', bg: '#141012' },
-  { title: 'Golf Charente-Maritime', type: 'Moquette contrat + vestiaires PVC', sector: 'Sport & Loisirs', bg: '#101412' },
-  { title: 'EHPAD Saintes', type: 'PVC en lés + Douches PVC PMR', sector: 'Santé', bg: '#101214' },
-  { title: 'Amphithéâtre Universitaire La Rochelle', type: 'Sol PVC haute résistance', sector: 'Collectivité', bg: '#12101a' },
+  { title: 'Bistrot de la Grande Terrasse', type: 'Moquette acoustique', sector: 'Restauration', img: '/images/bistrot-restaurant.jpg' },
+  { title: 'Restaurant Christopher Coutanceau', type: 'Moquette gastronomique sur mesure', sector: 'Restauration étoilée', img: '/images/restaurant-coutanceau.jpg' },
+  { title: 'Restaurant Gaya — La Rochelle', type: 'Moquette salle', sector: 'Restauration', img: '/images/restaurant-gaya.jpg' },
+  { title: 'Hôtel La Baronnie — Île de Ré', type: 'Tapis sur mesure', sector: 'Hôtellerie', img: '/images/tapis-hotel.jpg' },
+  { title: 'Golf de la Prée', type: 'Moquette contrat + PVC vestiaires', sector: 'Sport & Loisirs', img: '/images/golf.jpg' },
+  { title: 'Cuisine Professionnelle', type: 'Sol PVC soudé à chaud', sector: 'Restauration Pro', img: '/images/cuisine-pro.jpg' },
 ]
 
 export default function Home() {
@@ -107,12 +108,19 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
             {projects.map((project) => (
               <Link key={project.title} href="/realisations" style={{ textDecoration: 'none' }}>
-                <div style={{ backgroundColor: project.bg, border: '1px solid var(--border)', aspectRatio: '4/3', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', overflow: 'hidden', transition: 'border-color 0.2s', cursor: 'pointer' }}>
-                  <div style={{ position: 'absolute', inset: 0, backgroundImage: 'repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 20px)', pointerEvents: 'none' }} />
-                  <div style={{ padding: '1.5rem', position: 'relative' }}>
+                <div style={{ border: '1px solid var(--border)', aspectRatio: '4/3', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', overflow: 'hidden', transition: 'border-color 0.2s', cursor: 'pointer', backgroundColor: '#1a1410' }}>
+                  <Image
+                    src={project.img}
+                    alt={project.title}
+                    fill
+                    style={{ objectFit: 'cover', opacity: 0.75 }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.85) 0%, rgba(13,12,10,0.2) 50%, transparent 100%)', pointerEvents: 'none' }} />
+                  <div style={{ padding: '1.5rem', position: 'relative', zIndex: 1 }}>
                     <div style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.5rem' }}>{project.sector}</div>
                     <div style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1rem', color: 'var(--cream)', marginBottom: '0.25rem' }}>{project.title}</div>
-                    <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{project.type}</div>
+                    <div style={{ fontSize: '0.72rem', color: 'var(--cream-muted)' }}>{project.type}</div>
                   </div>
                 </div>
               </Link>
@@ -232,14 +240,24 @@ export default function Home() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               {[
-                { bg: 'linear-gradient(135deg, #1a1210, #2a1a10)', label: 'Moquette', val: 'Textures premium' },
-                { bg: 'linear-gradient(135deg, #101a14, #102010)', label: 'Sol PVC', val: 'Résistance & style' },
-                { bg: 'linear-gradient(135deg, #12101a, #1a1030)', label: 'Tapis sur mesure', val: 'Création unique' },
-                { bg: 'linear-gradient(135deg, #1a1500, #2a2000)', label: 'Douche PVC', val: 'Zéro joint' },
+                { img: '/images/moquette-chambre.jpg', label: 'Moquette', val: 'Textures premium' },
+                { img: '/images/golf.jpg', label: 'Sol PVC', val: 'Résistance & style' },
+                { img: '/images/motif-tapis-hotel.jpg', label: 'Tapis sur mesure', val: 'Création unique' },
+                { img: '/images/moquette-bleu.jpg', label: 'Moquette bleue', val: 'Chambres particulier' },
               ].map((item) => (
-                <div key={item.label} style={{ background: item.bg, border: '1px solid var(--border)', padding: '1.5rem', aspectRatio: '1', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-                  <div style={{ fontSize: '0.65rem', color: 'var(--terra)', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.25rem' }}>{item.label}</div>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--cream-muted)' }}>{item.val}</div>
+                <div key={item.label} style={{ border: '1px solid var(--border)', aspectRatio: '1', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', overflow: 'hidden', backgroundColor: '#1a1410' }}>
+                  <Image
+                    src={item.img}
+                    alt={item.label}
+                    fill
+                    style={{ objectFit: 'cover', opacity: 0.7 }}
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.8) 0%, transparent 60%)', pointerEvents: 'none' }} />
+                  <div style={{ padding: '1rem', position: 'relative', zIndex: 1 }}>
+                    <div style={{ fontSize: '0.6rem', color: 'var(--terra)', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.2rem' }}>{item.label}</div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--cream-muted)' }}>{item.val}</div>
+                  </div>
                 </div>
               ))}
             </div>

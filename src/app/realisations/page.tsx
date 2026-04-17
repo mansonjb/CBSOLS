@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Réalisations — Projets Moquette, Sol PVC & Tapis CB Sols',
@@ -8,14 +9,17 @@ export const metadata: Metadata = {
 }
 
 const projects = [
-  { title: 'Hôtel Île de Ré — Chambres & Salles de Bain', type: 'Moquette chambres + Douches intégrales PVC', sector: 'Hôtellerie 4★', year: '2024', surface: '800 m²', desc: 'Remplacement complet des revêtements de sol et des douches carrelage par des douches intégrales PVC. Moquette EGE haut de gamme en chambre.', bg: '#1a1410' },
-  { title: 'Restaurant Gastronomique — La Rochelle', type: 'Moquette acoustique sur mesure', sector: 'Restauration', year: '2024', surface: '220 m²', desc: 'Pose d\'une moquette acoustique haut de gamme en salle de restaurant pour améliorer le confort sonore des convives. Finitions soignées en plinthes bois.', bg: '#121610' },
-  { title: 'Cabinet Comptable — Rochefort', type: 'Dalles PVC résistantes aux roulettes bureau', sector: 'Tertiaire', year: '2023', surface: '350 m²', desc: 'Remplacement de la moquette ancienne par des dalles PVC haute résistance adaptées aux chaises à roulettes. Pose le week-end sans interruption d\'activité.', bg: '#141012' },
-  { title: 'Golf de Charente-Maritime — Clubhouse & Vestiaires', type: 'Moquette contrat + Sol PVC vestiaires', sector: 'Sport & Loisirs', year: '2023', surface: '600 m²', desc: 'Refonte complète des sols du clubhouse avec une moquette contrat résistante et élégante, et des sols PVC étanches dans les vestiaires.', bg: '#101412' },
-  { title: 'EHPAD — Saintes', type: 'PVC en lés + Douches PVC PMR', sector: 'Santé', year: '2023', surface: '1200 m²', desc: 'Chantier en milieu ouvert : pose de PVC en lés dans les circulations et les chambres, et installation de douches PVC PMR accessibles aux résidents.', bg: '#101214' },
-  { title: 'Amphithéâtre Universitaire — La Rochelle', type: 'Sol PVC haute résistance', sector: 'Collectivité', year: '2022', surface: '450 m²', desc: 'Remplacement du sol d\'un amphithéâtre de 450 places par un PVC en lés haute résistance. Pose pendant les vacances universitaires d\'été.', bg: '#12101a' },
-  { title: 'Cabinet d\'Assurances — La Rochelle', type: 'Dalles PVC + Tapis de propreté sur mesure', sector: 'Tertiaire', year: '2026', surface: '180 m²', desc: 'Renovation complète des sols avec dalles PVC et installation de tapis de propreté à l\'entrée avec logo de l\'entreprise.', bg: '#1a1312' },
-  { title: 'Bistrot de la Grande Terrasse — La Rochelle', type: 'Moquette salle + Sol PVC cuisine', sector: 'Restauration', year: '2026', surface: '280 m²', desc: 'Renovation sol salle de restaurant et cuisine. Moquette acoustique en salle, PVC résistant en cuisine professionnelle.', bg: '#121412' },
+  { title: 'Bistrot de la Grande Terrasse', type: 'Moquette acoustique salle', sector: 'Restauration', year: '2026', surface: '280 m²', desc: "Rénovation complète du sol de la salle de restaurant. Moquette acoustique haut de gamme pour améliorer le confort sonore des convives.", img: '/images/bistrot-restaurant.jpg' },
+  { title: 'Restaurant Christopher Coutanceau', type: 'Moquette sur mesure gastronomique', sector: 'Restauration étoilée', year: '2025', surface: '220 m²', desc: "Pose d'une moquette sur mesure dans un restaurant gastronomique de La Rochelle. Couleurs et motifs coordonnés à la décoration intérieure.", img: '/images/restaurant-coutanceau.jpg' },
+  { title: 'Restaurant Gaya — La Rochelle', type: 'Moquette salle de restaurant', sector: 'Restauration', year: '2025', surface: '180 m²', desc: "Réfection complète des sols de la salle principale avec moquette de qualité professionnelle.", img: '/images/restaurant-gaya.jpg' },
+  { title: 'Hôtel La Baronnie — Île de Ré', type: 'Tapis sur mesure & moquettes chambres', sector: 'Hôtellerie', year: '2025', surface: '600 m²', desc: "Création de tapis sur mesure au motif exclusif pour les espaces communs et chambres. Moquette EGE haut de gamme dans les chambres.", img: '/images/tapis-hotel.jpg' },
+  { title: 'Motif Tapis Hôtel La Baronnie', type: 'Détail création tapis sur mesure', sector: 'Hôtellerie', year: '2025', surface: '—', desc: "Zoom sur le motif exclusif créé sur mesure pour l'Hôtel La Baronnie. Design coordonné à l'identité visuelle de l'établissement.", img: '/images/motif-tapis-hotel.jpg' },
+  { title: 'Golf de la Prée — Charente-Maritime', type: 'Moquette contrat + Sol PVC vestiaires', sector: 'Sport & Loisirs', year: '2023', surface: '600 m²', desc: "Refonte complète des sols du clubhouse avec moquette contrat résistante, et sols PVC étanches dans les vestiaires.", img: '/images/golf.jpg' },
+  { title: 'Moquette Bureau — Charente-Maritime', type: 'Moquette dalles bureau', sector: 'Tertiaire', year: '2024', surface: '350 m²', desc: "Pose de moquette dalles haute résistance adaptées aux chaises à roulettes. Pose le week-end sans interruption d'activité.", img: '/images/moquette-bureau.jpg' },
+  { title: 'Chambre Particulier — Moquette Motif', type: 'Moquette résidentielle sur mesure', sector: 'Résidentiel', year: '2025', surface: '45 m²', desc: "Moquette avec motif graphique pour une chambre haut de gamme chez un particulier. Choix du motif réalisé en showroom.", img: '/images/moquette-chambre.jpg' },
+  { title: 'Chambre Particulier — Moquette Bleue', type: 'Moquette résidentielle', sector: 'Résidentiel', year: '2025', surface: '35 m²', desc: "Moquette coloris bleu pour une chambre d'adulte. Conseil personnalisé en showroom pour le choix de la teinte et de la texture.", img: '/images/moquette-bleu.jpg' },
+  { title: 'Cuisine Professionnelle', type: 'Sol PVC soudé à chaud', sector: 'Restauration Pro', year: '2024', surface: '80 m²', desc: "Pose de PVC en lés avec soudure à chaud dans une cuisine professionnelle. Aucun joint pour une hygiène maximale et un nettoyage intensif facilité.", img: '/images/cuisine-pro.jpg' },
+  { title: 'Restaurant Étoilé — La Rochelle', type: 'Moquette salle gastronomique', sector: 'Restauration étoilée', year: '2024', surface: '180 m²', desc: "Moquette acoustique haut de gamme pour la salle d'un restaurant gastronomique. Confort sonore et élégance au service de l'expérience client.", img: '/images/restaurant-etoile.jpg' },
 ]
 
 export default function RealisationsPage() {
@@ -40,7 +44,7 @@ export default function RealisationsPage() {
               <div
                 key={project.title}
                 style={{
-                  backgroundColor: project.bg,
+                  backgroundColor: '#1a1410',
                   border: '1px solid var(--border)',
                   display: 'flex',
                   flexDirection: 'column',
@@ -51,8 +55,15 @@ export default function RealisationsPage() {
                   transition: 'border-color 0.2s',
                 }}
               >
-                <div style={{ position: 'absolute', inset: 0, backgroundImage: 'repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 20px)', pointerEvents: 'none' }} />
-                <div style={{ padding: '2rem', position: 'relative' }}>
+                <Image
+                  src={project.img}
+                  alt={project.title}
+                  fill
+                  style={{ objectFit: 'cover', opacity: 0.65 }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.9) 0%, rgba(13,12,10,0.3) 50%, transparent 100%)', pointerEvents: 'none' }} />
+                <div style={{ padding: '2rem', position: 'relative', zIndex: 1 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
                     <span style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)' }}>{project.sector}</span>
                     <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', color: 'var(--text-muted)' }}>{project.year} · {project.surface}</span>
