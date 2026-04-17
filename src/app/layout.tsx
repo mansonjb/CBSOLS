@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter, Cormorant_Garamond } from 'next/font/google'
+import { Plus_Jakarta_Sans, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { company } from '@/data/company'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
-const cormorant = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-playfair', display: 'swap', weight: ['300', '400', '500', '600'], style: ['normal', 'italic'] })
+const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-sans', display: 'swap', weight: ['400', '500', '600', '700', '800'] })
+const cormorant = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-serif', display: 'swap', weight: ['300', '400'], style: ['normal', 'italic'] })
 
 export const metadata: Metadata = {
   title: {
@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }
 
   return (
-    <html lang="fr" className={`${inter.variable} ${cormorant.variable}`}>
+    <html lang="fr" className={`${jakarta.variable} ${cormorant.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>

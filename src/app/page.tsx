@@ -85,11 +85,11 @@ export default function Home() {
                 <span style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--dark-2)', fontWeight: 500 }}>500+ projets réalisés</span>
               </div>
 
-              {/* Headline */}
-              <h1 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(3.2rem, 5.5vw, 6.5rem)', fontWeight: 300, color: 'var(--dark)', lineHeight: 1.05, letterSpacing: '-0.02em', margin: '0 0 2rem' }}>
-                Le sol qui<br />
-                <em style={{ fontStyle: 'italic', color: 'var(--dark)' }}>définit</em><br />
-                <em style={{ fontStyle: 'italic', color: 'var(--terra)' }}>votre espace.</em>
+              {/* Headline — bold sans + italic serif (NexArch pattern) */}
+              <h1 style={{ fontSize: 'clamp(3rem, 5.5vw, 6.5rem)', lineHeight: 1.0, letterSpacing: '-0.03em', margin: '0 0 2rem', fontWeight: 800, color: 'var(--dark)' }}>
+                <span style={{ fontFamily: 'var(--font-sans, system-ui, sans-serif)', fontWeight: 800, display: 'block' }}>Le sol qui</span>
+                <span style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontWeight: 300, fontStyle: 'italic', display: 'block' }}>définit</span>
+                <span style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontWeight: 300, fontStyle: 'italic', color: 'var(--terra)', display: 'block' }}>votre espace.</span>
               </h1>
 
               {/* Description */}
@@ -114,8 +114,8 @@ export default function Home() {
               <div style={{ display: 'flex', gap: '0', marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid var(--border)', flexWrap: 'wrap' }}>
                 {[{ v: '+25', l: "ans d'expérience" }, { v: '500+', l: 'projets réalisés' }, { v: '31', l: 'communes couvertes' }, { v: '4.9★', l: 'note Google' }].map((s) => (
                   <div key={s.v} style={{ flex: '1 1 auto', minWidth: '100px', paddingRight: '2rem' }}>
-                    <div style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', fontWeight: 300, color: 'var(--dark)', letterSpacing: '-0.03em', lineHeight: 1 }}>{s.v}</div>
-                    <div style={{ fontSize: '0.62rem', color: 'var(--muted)', letterSpacing: '0.08em', marginTop: '0.375rem' }}>{s.l}</div>
+                    <div style={{ fontFamily: 'var(--font-sans, system-ui)', fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', fontWeight: 800, color: 'var(--dark)', letterSpacing: '-0.04em', lineHeight: 1 }}>{s.v}</div>
+                    <div style={{ fontSize: '0.62rem', color: 'var(--muted)', letterSpacing: '0.06em', marginTop: '0.4rem' }}>{s.l}</div>
                   </div>
                 ))}
               </div>
@@ -196,8 +196,8 @@ export default function Home() {
         <div style={{ maxWidth: '1320px', margin: '0 auto 3rem', padding: '0 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 500 }}>Portfolio</p>
-            <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 700, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
-              Nos<br /><em style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--terra)' }}>réalisations</em>
+            <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
+              Nos<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>réalisations</em>
             </h2>
           </div>
           <Link href="/realisations" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px', flexShrink: 0 }}>
@@ -244,8 +244,8 @@ export default function Home() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem', flexWrap: 'wrap', gap: '1rem' }}>
             <div>
               <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 500 }}>Expertise</p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 700, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
-                Nos<br /><em style={{ fontStyle: 'italic', fontWeight: 400 }}>spécialités</em>
+              <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
+                Nos<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300 }}>spécialités</em>
               </h2>
             </div>
             <Link href="/services" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px', flexShrink: 0 }}>
@@ -295,8 +295,8 @@ export default function Home() {
       <section style={{ padding: '8rem 2rem', backgroundColor: '#fff' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '5rem', flexWrap: 'wrap', gap: '1.5rem' }}>
-            <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 700, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
-              Notre<br /><em style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--terra)' }}>méthode</em>
+            <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
+              Notre<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>méthode</em>
             </h2>
             <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '380px', margin: 0 }}>
               De la prise de contact à la réception de chantier — un accompagnement complet, sans sous-traitance.
@@ -322,8 +322,8 @@ export default function Home() {
       <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg-alt)' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem', flexWrap: 'wrap', gap: '1rem' }}>
-            <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 700, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
-              Ils nous<br /><em style={{ fontStyle: 'italic', fontWeight: 400 }}>font confiance</em>
+            <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
+              Ils nous<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300 }}>font confiance</em>
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.3rem', flexShrink: 0 }}>
               <div style={{ display: 'flex', gap: '3px' }}>
@@ -357,8 +357,8 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '6rem', alignItems: 'start' }} className="b2b-grid">
             <div style={{ position: 'sticky', top: '96px' }}>
               <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.875rem', fontWeight: 500 }}>Professionnels</p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(2.5rem, 4vw, 4rem)', fontWeight: 700, color: 'var(--dark)', marginBottom: '1.25rem', lineHeight: 1.0, letterSpacing: '-0.03em' }}>
-                Solutions<br /><em style={{ fontStyle: 'italic', fontWeight: 400 }}>secteur</em>
+              <h2 style={{ fontSize: 'clamp(2.5rem, 4vw, 4rem)', fontWeight: 800, color: 'var(--dark)', marginBottom: '1.25rem', lineHeight: 1.0, letterSpacing: '-0.03em' }}>
+                Solutions<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300 }}>secteur</em>
               </h2>
               <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.75, marginBottom: '2rem' }}>
                 CB Sols maîtrise les contraintes de chaque secteur — normes incendie, hygiène, accessibilité PMR, passages intensifs.
@@ -390,8 +390,8 @@ export default function Home() {
       {/* ─── ZONES ───────────────────────────────────────────────── */}
       <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg-alt)' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 700, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', marginBottom: '4rem' }}>
-            Nous intervenons<br /><em style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--terra)' }}>partout.</em>
+          <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', marginBottom: '4rem' }}>
+            Nous intervenons<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>partout.</em>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '3rem' }}>
             {zoneGroups.map(group => (
@@ -442,8 +442,8 @@ export default function Home() {
       <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--dark)', textAlign: 'center' }}>
         <div style={{ maxWidth: '680px', margin: '0 auto' }}>
           <Image src="/images/logo-cbsols.png" alt="CB Sols" width={52} height={49} style={{ margin: '0 auto 2rem', opacity: 0.45 }} />
-          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(2.5rem, 5vw, 5rem)', fontWeight: 700, color: '#F0EBE3', marginBottom: '1.25rem', lineHeight: 1.0, letterSpacing: '-0.03em' }}>
-            Votre projet mérite<br /><em style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--terra)' }}>un artisan qui l'écoute.</em>
+          <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)', fontWeight: 800, color: '#F0EBE3', marginBottom: '1.25rem', lineHeight: 1.0, letterSpacing: '-0.03em' }}>
+            Votre projet mérite<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>un artisan qui l'écoute.</em>
           </h2>
           <p style={{ fontSize: '0.9rem', color: 'rgba(240,235,227,0.5)', lineHeight: 1.75, marginBottom: '2.5rem' }}>
             Devis gratuit sous 48h. La Rochelle, Île de Ré, Charente-Maritime.

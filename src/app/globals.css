@@ -19,7 +19,9 @@
   --cream:        #1A1916;
   --cream-muted:  #8A8680;
   --text-muted:   #8A8680;
-  --font-playfair: 'Cormorant Garamond', Georgia, serif;
+  --font-sans:   var(--font-sans, 'Plus Jakarta Sans', system-ui, sans-serif);
+  --font-serif:  var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  --font-playfair: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,7 +31,7 @@ html { scroll-behavior: smooth; }
 body {
   background-color: var(--bg);
   color: var(--dark);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-sans, 'Plus Jakarta Sans', system-ui, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
@@ -38,9 +40,9 @@ body {
 ::selection { background: var(--terra); color: #fff; }
 
 h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
+  font-family: var(--font-sans, 'Plus Jakarta Sans', system-ui, sans-serif);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
 }
 
 img { display: block; }
