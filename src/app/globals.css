@@ -14,14 +14,43 @@
   --border-mid:   rgba(26, 25, 22, 0.15);
   --border-strong:rgba(26, 25, 22, 0.25);
   --border-hover: rgba(196, 113, 74, 0.3);
+  --bg-inv:       #1A1916;
+  --bg-glass:     rgba(255, 255, 255, 0.92);
+  --btn-inv-bg:   #1A1916;
+  --btn-inv-text: #FFFFFF;
 
-  /* Compat aliases from old dark theme — now mapped to white-design values */
+  /* Compat aliases */
   --cream:        #1A1916;
   --cream-muted:  #8A8680;
   --text-muted:   #8A8680;
   --font-sans:   var(--font-sans, 'Plus Jakarta Sans', system-ui, sans-serif);
   --font-serif:  var(--font-serif, 'Cormorant Garamond', Georgia, serif);
   --font-playfair: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+}
+
+[data-theme="dark"] {
+  --bg:           #0A0908;
+  --bg-alt:       #111009;
+  --bg-card:      #171614;
+  --dark:         #EDE9E2;
+  --dark-2:       #B5B1AB;
+  --muted:        #726F6B;
+  --muted-light:  #4A4845;
+  --terra:        #D17D56;
+  --terra-dark:   #BB6B42;
+  --border:       rgba(255, 255, 255, 0.07);
+  --border-mid:   rgba(255, 255, 255, 0.10);
+  --border-strong:rgba(255, 255, 255, 0.17);
+  --border-hover: rgba(209, 125, 86, 0.35);
+  --bg-inv:       #0D0C0B;
+  --bg-glass:     rgba(15, 14, 12, 0.90);
+  --btn-inv-bg:   #EDE9E2;
+  --btn-inv-text: #0A0908;
+
+  /* Compat aliases */
+  --cream:        #EDE9E2;
+  --cream-muted:  #726F6B;
+  --text-muted:   #726F6B;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,6 +64,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 ::selection { background: var(--terra); color: #fff; }

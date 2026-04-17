@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <>
       {/* ─── HERO ────────────────────────────────────────────────── */}
-      <section style={{ paddingTop: '72px', backgroundColor: '#fff', overflow: 'hidden' }}>
+      <section style={{ paddingTop: '72px', backgroundColor: 'var(--bg)', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 2rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center', minHeight: 'calc(100vh - 72px)', paddingTop: '3rem', paddingBottom: '4rem' }} className="hero-grid">
 
@@ -99,7 +99,7 @@ export default function Home() {
 
               {/* CTAs */}
               <div style={{ display: 'flex', gap: '0.875rem', flexWrap: 'wrap' }}>
-                <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 2rem', backgroundColor: 'var(--dark)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
+                <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 2rem', backgroundColor: 'var(--btn-inv-bg)', color: 'var(--btn-inv-text)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
                   Devis gratuit
                   <span style={{ width: '26px', height: '26px', borderRadius: '50%', backgroundColor: 'var(--terra)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -133,7 +133,7 @@ export default function Home() {
                   sizes="(max-width: 900px) 100vw, 50vw"
                 />
                 {/* Caption card */}
-                <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', right: '1.5rem', backgroundColor: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', borderRadius: '14px', padding: '1rem 1.25rem', borderLeft: '3px solid var(--terra)' }}>
+                <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', right: '1.5rem', backgroundColor: 'var(--bg-glass)', backdropFilter: 'blur(12px)', borderRadius: '14px', padding: '1rem 1.25rem', borderLeft: '3px solid var(--terra)' }}>
                   <div style={{ fontSize: '0.56rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem', fontWeight: 600 }}>
                     Tapis sur mesure · 600 m²
                   </div>
@@ -143,7 +143,7 @@ export default function Home() {
                 </div>
               </div>
               {/* Location badge */}
-              <div style={{ position: 'absolute', top: '1.5rem', right: '-1rem', backgroundColor: 'var(--dark)', color: 'rgba(240,235,227,0.7)', borderRadius: '999px', padding: '0.5rem 1rem', fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
+              <div style={{ position: 'absolute', top: '1.5rem', right: '-1rem', backgroundColor: 'var(--bg-inv)', color: 'rgba(240,235,227,0.7)', borderRadius: '999px', padding: '0.5rem 1rem', fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
                 La Rochelle · Île de Ré · 17
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Home() {
       </section>
 
       {/* ─── MARQUEE ─────────────────────────────────────────────── */}
-      <div style={{ backgroundColor: 'var(--dark)', padding: '0.75rem 0', overflow: 'hidden', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+      <div style={{ backgroundColor: 'var(--bg-inv)', padding: '0.75rem 0', overflow: 'hidden', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="marquee-track" style={{ display: 'flex', gap: '0', whiteSpace: 'nowrap' }}>
           {[0, 1, 2].map(i => (
             <span key={i} style={{ display: 'inline-flex', gap: '2.5rem', paddingRight: '2.5rem', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,235,227,0.4)', flexShrink: 0 }}>
@@ -165,7 +165,7 @@ export default function Home() {
       </div>
 
       {/* ─── GARANTIES ───────────────────────────────────────────── */}
-      <section style={{ backgroundColor: 'var(--dark)', padding: '4rem 2rem' }}>
+      <section style={{ backgroundColor: 'var(--bg-inv)', padding: '4rem 2rem' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0' }} className="garanties-grid">
           {garanties.map((g, i) => (
             <div key={g.title} style={{ padding: '2rem 2.5rem', borderRight: i < garanties.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none' }} className="garantie-item">
@@ -192,7 +192,7 @@ export default function Home() {
       </section>
 
       {/* ─── PROJETS (horizontal scroll) ─────────────────────────── */}
-      <section style={{ padding: '8rem 0 6rem', backgroundColor: '#fff', overflow: 'hidden' }}>
+      <section style={{ padding: '8rem 0 6rem', backgroundColor: 'var(--bg)', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto 3rem', padding: '0 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 500 }}>Portfolio</p>
@@ -209,7 +209,7 @@ export default function Home() {
         <div style={{ display: 'flex', gap: '1.25rem', overflowX: 'auto', paddingLeft: 'max(2rem, calc((100vw - 1320px) / 2))', paddingRight: '2rem', paddingBottom: '1rem', scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch', msOverflowStyle: 'none', scrollbarWidth: 'none' }} className="projects-scroll">
           {projects.map(p => (
             <Link key={p.title} href="/realisations" style={{ textDecoration: 'none', flexShrink: 0, width: 'clamp(260px, 28vw, 360px)', scrollSnapAlign: 'start', display: 'block' }}>
-              <div style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden', aspectRatio: '3/4', backgroundColor: '#e8e4de' }}>
+              <div style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden', aspectRatio: '3/4', backgroundColor: 'var(--bg-alt)' }}>
                 <Image
                   src={p.img}
                   alt={p.title}
@@ -256,7 +256,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
             {services.map((service, i) => (
               <Link key={service.slug} href={`/services/${service.slug}`} style={{ textDecoration: 'none' }}>
-                <div className="service-card" style={{ backgroundColor: '#fff', padding: '2.25rem', borderRadius: '16px', height: '100%', transition: 'transform 0.2s, box-shadow 0.2s', boxShadow: '0 1px 3px rgba(26,25,22,0.06)' }}>
+                <div className="service-card" style={{ backgroundColor: 'var(--bg-card)', padding: '2.25rem', borderRadius: '16px', height: '100%', transition: 'transform 0.2s, box-shadow 0.2s', boxShadow: '0 1px 3px rgba(26,25,22,0.06)' }}>
                   <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '3rem', color: 'var(--terra)', opacity: 0.15, fontWeight: 700, lineHeight: 1, marginBottom: '1.5rem' }}>
                     {String(i + 1).padStart(2, '0')}
                   </div>
@@ -272,7 +272,7 @@ export default function Home() {
 
       {/* ─── MATIÈRES ────────────────────────────────────────────── */}
       <section style={{ padding: '0', overflow: 'hidden' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px', backgroundColor: 'var(--dark)' }} className="materials-grid">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px', backgroundColor: 'var(--bg-inv)' }} className="materials-grid">
           {[
             { img: '/images/moquette-bureau.jpg', label: 'Moquette', caption: 'Laine & synthétique — hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · Balsan · Interface' },
             { img: '/images/cuisine-pro.jpg', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés — zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · Tarkett · Forbo' },
@@ -292,7 +292,7 @@ export default function Home() {
       </section>
 
       {/* ─── MÉTHODE ─────────────────────────────────────────────── */}
-      <section style={{ padding: '8rem 2rem', backgroundColor: '#fff' }}>
+      <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg)' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '5rem', flexWrap: 'wrap', gap: '1.5rem' }}>
             <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
@@ -307,7 +307,7 @@ export default function Home() {
             <div style={{ position: 'absolute', top: '44px', left: '44px', right: '44px', height: '1px', backgroundColor: 'var(--border-mid)' }} className="process-line" />
             {processSteps.map(step => (
               <div key={step.num} style={{ position: 'relative', zIndex: 1 }}>
-                <div style={{ width: '88px', height: '88px', borderRadius: '50%', border: '1.5px solid var(--terra)', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
+                <div style={{ width: '88px', height: '88px', borderRadius: '50%', border: '1.5px solid var(--terra)', backgroundColor: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
                   <span style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.4rem', fontWeight: 400, color: 'var(--terra)' }}>{step.num}</span>
                 </div>
                 <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.05rem', fontWeight: 400, color: 'var(--dark)', marginBottom: '0.75rem', lineHeight: 1.25 }}>{step.title}</h3>
@@ -335,7 +335,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }} className="temoignages-grid">
             {testimonials.map((t, i) => (
-              <div key={i} style={{ padding: '2.25rem', backgroundColor: '#fff', borderRadius: '16px', display: 'flex', flexDirection: 'column', boxShadow: '0 1px 4px rgba(26,25,22,0.06)' }}>
+              <div key={i} style={{ padding: '2.25rem', backgroundColor: 'var(--bg-card)', borderRadius: '16px', display: 'flex', flexDirection: 'column', boxShadow: '0 1px 4px rgba(0,0,0,0.08)' }}>
                 <Stars n={t.stars} />
                 <blockquote style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '0.95rem', fontStyle: 'italic', color: 'var(--dark)', lineHeight: 1.75, margin: '0 0 1.75rem', flex: 1 }}>
                   &ldquo;{t.quote}&rdquo;
@@ -352,7 +352,7 @@ export default function Home() {
       </section>
 
       {/* ─── B2B ─────────────────────────────────────────────────── */}
-      <section style={{ padding: '8rem 2rem', backgroundColor: '#fff', borderTop: '1px solid var(--border)' }}>
+      <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '6rem', alignItems: 'start' }} className="b2b-grid">
             <div style={{ position: 'sticky', top: '96px' }}>
@@ -363,7 +363,7 @@ export default function Home() {
               <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.75, marginBottom: '2rem' }}>
                 CB Sols maîtrise les contraintes de chaque secteur — normes incendie, hygiène, accessibilité PMR, passages intensifs.
               </p>
-              <Link href="/secteurs" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 1.75rem', backgroundColor: 'var(--dark)', color: '#fff', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
+              <Link href="/secteurs" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 1.75rem', backgroundColor: 'var(--btn-inv-bg)', color: 'var(--btn-inv-text)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
                 Solutions pro →
               </Link>
             </div>
@@ -412,9 +412,9 @@ export default function Home() {
       </section>
 
       {/* ─── SHOWROOM ────────────────────────────────────────────── */}
-      <section style={{ padding: '0', backgroundColor: '#fff', borderTop: '1px solid var(--border)' }}>
+      <section style={{ padding: '0', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }} className="showroom-grid">
-          <div style={{ position: 'relative', minHeight: '520px', overflow: 'hidden', backgroundColor: '#e8e4de', borderRadius: '0 0 0 0' }}>
+          <div style={{ position: 'relative', minHeight: '520px', overflow: 'hidden', backgroundColor: 'var(--bg-alt)', borderRadius: '0 0 0 0' }}>
             <Image src="/images/moquette-chambre.jpg" alt="Showroom CB Sols — échantillons moquette" fill style={{ objectFit: 'cover' }} sizes="50vw" />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '5rem 4rem' }}>
@@ -439,7 +439,7 @@ export default function Home() {
       </section>
 
       {/* ─── CTA ─────────────────────────────────────────────────── */}
-      <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--dark)', textAlign: 'center' }}>
+      <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg-inv)', textAlign: 'center' }}>
         <div style={{ maxWidth: '680px', margin: '0 auto' }}>
           <Image src="/images/logo-cbsols.png" alt="CB Sols" width={52} height={49} style={{ margin: '0 auto 2rem', opacity: 0.45 }} />
           <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)', fontWeight: 800, color: '#F0EBE3', marginBottom: '1.25rem', lineHeight: 1.0, letterSpacing: '-0.03em' }}>

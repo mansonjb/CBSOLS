@@ -10,7 +10,7 @@ export function Footer() {
   )
 
   return (
-    <footer style={{ backgroundColor: 'var(--dark)', color: 'rgba(240,235,227,0.7)' }}>
+    <footer style={{ backgroundColor: 'var(--bg-inv)', color: 'rgba(240,235,227,0.7)' }}>
       {/* Top band */}
       <div style={{ borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '4rem 2rem 3rem' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '3rem' }}>

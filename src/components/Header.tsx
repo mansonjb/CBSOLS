@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { company } from '@/data/company'
+import { ThemeToggle } from './ThemeToggle'
 
 const nav = [
   { href: '/services', label: 'Services' },
@@ -25,10 +26,10 @@ export function Header() {
   return (
     <header style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-      backgroundColor: '#FFFFFF',
-      borderBottom: `1px solid ${scrolled ? 'rgba(26,25,22,0.12)' : 'rgba(26,25,22,0.08)'}`,
-      boxShadow: scrolled ? '0 1px 20px rgba(26,25,22,0.06)' : 'none',
-      transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
+      backgroundColor: 'var(--bg-card)',
+      borderBottom: '1px solid var(--border-mid)',
+      boxShadow: scrolled ? '0 1px 20px rgba(0,0,0,0.08)' : 'none',
+      transition: 'box-shadow 0.3s ease, background-color 0.3s ease',
     }}>
       <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 2rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '72px' }}>
@@ -68,6 +69,7 @@ export function Header() {
 
           {/* Right CTA */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }} className="desk-nav">
+            <ThemeToggle />
             <a href={`tel:${company.phoneClean}`} style={{
               fontSize: '0.8rem', color: 'var(--dark-2)', textDecoration: 'none',
               fontWeight: 500, letterSpacing: '0.02em',
@@ -99,7 +101,7 @@ export function Header() {
         maxHeight: open ? '520px' : '0',
         overflow: 'hidden',
         transition: 'max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1)',
-        backgroundColor: '#fff',
+        backgroundColor: 'var(--bg-card)',
       }}>
         <div style={{ borderTop: '1px solid var(--border)', padding: '1.5rem 2rem 2rem' }}>
           {nav.map(item => (
@@ -119,6 +121,10 @@ export function Header() {
             <Link href="/contact" onClick={() => setOpen(false)} style={{ display: 'inline-block', padding: '0.875rem 1.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, textAlign: 'center', borderRadius: '999px' }}>
               Devis gratuit
             </Link>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', paddingTop: '0.5rem' }}>
+              <ThemeToggle />
+              <span style={{ fontSize: '0.72rem', color: 'var(--muted)', letterSpacing: '0.06em' }}>Thème sombre / clair</span>
+            </div>
           </div>
         </div>
       </div>

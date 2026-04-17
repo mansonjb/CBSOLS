@@ -55,9 +55,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr" className={`${jakarta.variable} ${cormorant.variable}`}>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(t===null&&p)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();` }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
-      <body style={{ fontFamily: 'var(--font-inter, Inter, system-ui, sans-serif)' }}>
+      <body>
         <Header />
         <main>{children}</main>
         <Footer />
