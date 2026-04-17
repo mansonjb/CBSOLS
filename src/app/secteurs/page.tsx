@@ -1,0 +1,57 @@
+import Link from 'next/link'
+import type { Metadata } from 'next'
+import { sectors } from '@/data/sectors'
+
+export const metadata: Metadata = {
+  title: 'Solutions Pro — Hôtels, Restaurants, Bureaux, Collectivités',
+  description:
+    'CB Sols, partenaire des professionnels de Charente-Maritime. Solutions revêtement de sol pour hôtellerie, restauration, bureaux, collectivités, commerces, campings et EHPAD.',
+}
+
+export default function SecteursPage() {
+  return (
+    <div style={{ paddingTop: '72px' }}>
+      <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Professionnels</div>
+          <h1 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 400, color: 'var(--cream)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+            Solutions pour chaque secteur
+          </h1>
+          <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '560px', lineHeight: 1.7, margin: 0 }}>
+            CB Sols accompagne les professionnels de Charente-Maritime avec des solutions adaptées à chaque secteur d'activité. Normes, contraintes techniques, budgets — nous connaissons votre environnement.
+          </p>
+        </div>
+      </section>
+
+      <section style={{ padding: '4rem 2rem 6rem' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+            {sectors.map((sector) => (
+              <Link key={sector.slug} href={`/secteurs/${sector.slug}`} style={{ textDecoration: 'none', display: 'block' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', gap: '2rem', alignItems: 'center', padding: '2.5rem 0', borderBottom: '1px solid var(--border)', transition: 'all 0.2s' }}>
+                  <div style={{ fontSize: '2.5rem' }}>{sector.icon}</div>
+                  <div>
+                    <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.6rem', fontWeight: 400, color: 'var(--cream)', margin: '0 0 0.4rem', letterSpacing: '-0.02em' }}>
+                      {sector.name}
+                    </h2>
+                    <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', margin: '0 0 1rem', lineHeight: 1.6, maxWidth: '500px' }}>
+                      {sector.tagline} — {sector.description.slice(0, 100)}…
+                    </p>
+                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      {sector.recommendedServices.slice(0, 3).map((s) => (
+                        <span key={s} style={{ fontSize: '0.62rem', padding: '0.2rem 0.6rem', border: '1px solid var(--border)', color: 'var(--text-muted)' }}>{s.replace(/-/g, ' ')}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <div style={{ fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', whiteSpace: 'nowrap' }}>
+                    Découvrir →
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
