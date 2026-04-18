@@ -37,9 +37,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@context': 'https://schema.org',
     '@type': 'HomeAndConstructionBusiness',
     name: company.legalName,
+    legalName: company.legalName,
     url: 'https://cbsols.fr',
     telephone: company.phoneClean,
     email: company.email,
+    description: 'Artisan spécialiste du revêtement de sol depuis 1999 en Charente-Maritime. Moquette professionnelle, sol PVC, tapis sur mesure. Certifié Qualibat. Intervention hôtels, campings, bureaux, EHPAD.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: company.address.street,
@@ -48,9 +50,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressCountry: 'FR',
     },
     geo: { '@type': 'GeoCoordinates', latitude: company.geo.lat, longitude: company.geo.lng },
-    areaServed: company.zones.map((z) => ({ '@type': 'City', name: z })),
+    areaServed: [
+      { '@type': 'City', name: 'La Rochelle' },
+      { '@type': 'AdministrativeArea', name: 'Île de Ré' },
+      { '@type': 'AdministrativeArea', name: "Île d'Oléron" },
+      { '@type': 'AdministrativeArea', name: 'Charente-Maritime' },
+    ],
+    hasMap: 'https://maps.google.com/?q=CB+Sols+Villedoux',
     priceRange: '€€',
     foundingDate: '1999',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '47',
+      bestRating: '5',
+    },
+    employee: {
+      '@type': 'Person',
+      name: 'Valentin Prévoteau',
+      jobTitle: 'Artisan poseur de revêtements de sol',
+      worksFor: { '@type': 'Organization', name: company.legalName },
+    },
+    knowsAbout: ['Moquette professionnelle', 'Sol PVC', 'LVT', 'Tapis sur mesure', 'Moquette hôtelière', 'Sol PVC cuisine professionnelle', 'Revêtement de sol ERP'],
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', name: 'Qualification Qualibat' },
+      { '@type': 'EducationalOccupationalCredential', name: 'Assurance décennale' },
+    ],
   }
 
   return (

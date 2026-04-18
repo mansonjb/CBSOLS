@@ -64,15 +64,22 @@ function Stars({ n }: { n: number }) {
   )
 }
 
-export default function Home() {
-  const zoneGroups = [
-    { label: 'Agglomération de La Rochelle', cities: cities.filter(c => c.zone === 'la-rochelle') },
-    { label: 'Île de Ré', cities: cities.filter(c => c.zone === 'ile-de-re') },
-    { label: 'Charente-Maritime', cities: cities.filter(c => c.zone === 'charente-maritime') },
-  ]
+const homeFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Le devis est-il vraiment gratuit, même pour une petite surface ?', acceptedAnswer: { '@type': 'Answer', text: "Oui, sans minimum de surface et sans engagement. CB Sols se déplace gratuitement dans toute la Charente-Maritime pour mesurer, évaluer l'état du support et vous remettre un devis détaillé sous 48h. Que ce soit pour 15 m² ou 1 500 m²." } },
+    { '@type': 'Question', name: "Peut-on poser la moquette sans fermer l'hôtel ou le bureau ?", acceptedAnswer: { '@type': 'Answer', text: "Oui. CB Sols travaille en rotation dans les hôtels (chambre par chambre sur les libérations) et le week-end dans les bureaux. La grande majorité des chantiers professionnels se font sans interrompre une seule journée d'activité." } },
+    { '@type': 'Question', name: 'Quelle est la différence entre la moquette contrat et la moquette résidentielle ?', acceptedAnswer: { '@type': 'Answer', text: "La moquette contrat est classée 32-33 selon la norme EN 1307, certifiée Bfl-s1 (incendie) et testée pour des centaines de milliers de passages. C'est la seule option légale dans un hôtel, des bureaux ou un ERP." } },
+    { '@type': 'Question', name: 'CB Sols sous-traite-t-il la pose ?', acceptedAnswer: { '@type': 'Answer', text: "Non. La pose est toujours réalisée par l'équipe CB Sols — aucune sous-traitance. Valentin Prévoteau supervise personnellement les chantiers. Garantie décennale incluse." } },
+    { '@type': 'Question', name: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?", acceptedAnswer: { '@type': 'Answer', text: "Oui, régulièrement. CB Sols équipe des hôtels, campings et résidences sur les deux îles depuis 25 ans. Les contraintes insulaires sont parfaitement intégrées dans les devis et plannings." } },
+  ],
+}
 
+export default function Home() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
       {/* ─── HERO ────────────────────────────────────────────────── */}
       <section style={{ paddingTop: '72px', backgroundColor: 'var(--bg)', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 2rem' }}>
@@ -207,7 +214,7 @@ export default function Home() {
 
                 {/* Top pill */}
                 <div style={{ position: 'absolute', top: '1.25rem', left: '1.25rem' }}>
-                  <span style={{ fontSize: '0.58rem', letterSpacing: '0.14em', textTransform: 'uppercase', backgroundColor: 'rgba(255,255,255,0.92)', padding: '0.35rem 0.875rem', borderRadius: '999px', color: 'var(--dark)', fontWeight: 500 }}>
+                  <span style={{ fontSize: '0.58rem', letterSpacing: '0.14em', textTransform: 'uppercase', backgroundColor: 'rgba(255,255,255,0.92)', padding: '0.35rem 0.875rem', borderRadius: '999px', color: '#1A1916', fontWeight: 600 }}>
                     {p.sector}
                   </span>
                 </div>
@@ -343,10 +350,10 @@ export default function Home() {
             <div style={{ position: 'sticky', top: '96px' }}>
               <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.875rem', fontWeight: 500 }}>Professionnels</p>
               <h2 style={{ fontSize: 'clamp(2.5rem, 4vw, 4rem)', fontWeight: 800, color: 'var(--dark)', marginBottom: '1.25rem', lineHeight: 1.0, letterSpacing: '-0.03em' }}>
-                Solutions<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300 }}>secteur</em>
+                Par secteur<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300 }}>d'activité</em>
               </h2>
               <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.75, marginBottom: '2rem' }}>
-                CB Sols maîtrise les contraintes de chaque secteur — normes incendie, hygiène, accessibilité PMR, passages intensifs.
+                Hôtel, restaurant, bureau ou EHPAD — chaque secteur a ses normes. CB Sols les connaît toutes.
               </p>
               <Link href="/secteurs" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 1.75rem', backgroundColor: 'var(--btn-inv-bg)', color: 'var(--btn-inv-text)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
                 Solutions pro →
@@ -375,22 +382,34 @@ export default function Home() {
       {/* ─── ZONES ───────────────────────────────────────────────── */}
       <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg-alt)' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', marginBottom: '4rem' }}>
-            Nous intervenons<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>partout.</em>
-          </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '3rem' }}>
-            {zoneGroups.map(group => (
-              <div key={group.label}>
-                <div style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--dark)', fontWeight: 600, marginBottom: '1.25rem', paddingBottom: '0.75rem', borderBottom: '2px solid var(--terra)' }}>
-                  {group.label}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem', flexWrap: 'wrap', gap: '1rem' }}>
+            <div>
+              <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 500 }}>Zone d'intervention</p>
+              <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, color: 'var(--dark)', lineHeight: 0.95, letterSpacing: '-0.04em', margin: 0 }}>
+                Nous intervenons<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>partout.</em>
+              </h2>
+            </div>
+            <Link href="/zones" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px', flexShrink: 0 }}>
+              47 communes →
+            </Link>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
+            {[
+              { zone: 'la-rochelle', label: 'La Rochelle & agglo', desc: 'La Rochelle, Aytré, Lagord, Villedoux, Puilboreau…', href: '/revetement-sol-la-rochelle', count: cities.filter(c => c.zone === 'la-rochelle').length },
+              { zone: 'ile-de-re', label: 'Île de Ré', desc: 'Saint-Martin, La Flotte, Rivedoux, Ars-en-Ré…', href: '/revetement-sol-saint-martin-de-re', count: cities.filter(c => c.zone === 'ile-de-re').length },
+              { zone: 'ile-doleron', label: "Île d'Oléron", desc: 'Saint-Pierre, Saint-Georges, Le Château…', href: '/ile-doleron', count: cities.filter(c => c.zone === 'ile-doleron').length },
+              { zone: 'charente-maritime', label: 'Charente-Maritime', desc: 'Rochefort, Saintes, Royan, Jonzac, Saujon…', href: '/zones', count: cities.filter(c => c.zone === 'charente-maritime').length },
+            ].map(z => (
+              <Link key={z.zone} href={z.href} style={{ textDecoration: 'none', display: 'block' }}>
+                <div className="service-card" style={{ backgroundColor: 'var(--bg-card)', borderRadius: '16px', padding: '2rem', height: '100%', transition: 'transform 0.2s' }}>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '50%', backgroundColor: 'rgba(196,113,74,0.1)', marginBottom: '1.25rem' }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--terra)" strokeWidth="1.5" strokeLinecap="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  </div>
+                  <div style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.4rem', letterSpacing: '-0.02em' }}>{z.label}</div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--muted)', lineHeight: 1.6, marginBottom: '1rem' }}>{z.desc}</div>
+                  <div style={{ fontSize: '0.62rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>{z.count} communes →</div>
                 </div>
-                {group.cities.map(city => (
-                  <Link key={city.slug} href={`/revetement-sol-${city.slug}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.625rem 0', borderBottom: '1px solid var(--border)', fontSize: '0.82rem', color: 'var(--dark-2)', textDecoration: 'none' }}>
-                    <span>{city.name}</span>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ color: 'var(--muted-light)', flexShrink: 0 }}><path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                  </Link>
-                ))}
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -418,6 +437,60 @@ export default function Home() {
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.875rem 1.5rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.875rem', textDecoration: 'none', fontWeight: 500, borderRadius: '999px' }}>
                 {company.phone}
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── FAQ HOMEPAGE ────────────────────────────────────────── */}
+      <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '6rem', alignItems: 'start' }} className="b2b-grid">
+            <div style={{ position: 'sticky', top: '96px' }}>
+              <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.875rem', fontWeight: 500 }}>Questions fréquentes</p>
+              <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 800, color: 'var(--dark)', marginBottom: '1.25rem', lineHeight: 1.05, letterSpacing: '-0.03em' }}>
+                Ce que nos clients<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>nous demandent.</em>
+              </h2>
+              <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.75, marginBottom: '2rem' }}>
+                Des réponses claires, sans langue de bois. Pour aller plus loin, consultez nos guides.
+              </p>
+              <Link href="/guide/choisir-sa-moquette" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 1.75rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
+                Voir tous les guides →
+              </Link>
+            </div>
+            <div>
+              {[
+                {
+                  q: "Le devis est-il vraiment gratuit, même pour une petite surface ?",
+                  a: "Oui, sans minimum de surface et sans engagement. CB Sols se déplace gratuitement dans toute la Charente-Maritime pour mesurer, évaluer l'état du support et vous remettre un devis détaillé sous 48h. Que ce soit pour 15 m² ou 1 500 m²."
+                },
+                {
+                  q: "Peut-on poser la moquette sans fermer l'hôtel ou le bureau ?",
+                  a: "Oui. CB Sols travaille en rotation dans les hôtels (chambre par chambre sur les libérations) et le week-end dans les bureaux. La grande majorité des chantiers professionnels se font sans interrompre une seule journée d'activité."
+                },
+                {
+                  q: "Quelle est la différence entre la moquette contrat et la moquette résidentielle ?",
+                  a: "La moquette contrat est classée 32-33 selon la norme EN 1307, certifiée Bfl-s1 (incendie) et testée pour des centaines de milliers de passages. C'est la seule option légale dans un hôtel, des bureaux ou un ERP. CB Sols ne pose que de la moquette contrat sur les chantiers professionnels."
+                },
+                {
+                  q: "CB Sols sous-traite-t-il la pose ?",
+                  a: "Non. La pose est toujours réalisée par l'équipe CB Sols — aucune sous-traitance. Valentin Prévoteau supervise personnellement les chantiers. C'est la garantie d'un résultat irréprochable et d'un interlocuteur unique du devis à la réception."
+                },
+                {
+                  q: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?",
+                  a: "Oui, régulièrement. CB Sols équipe des hôtels, campings et résidences sur les deux îles depuis 25 ans. Les contraintes insulaires (logistique, hygrométrie, saisonnalité) sont parfaitement intégrées dans nos devis et plannings."
+                },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: '1.75rem 0', borderBottom: '1px solid var(--border)' }}>
+                  <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.875rem', letterSpacing: '-0.02em', lineHeight: 1.3 }}>{item.q}</h3>
+                  <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.75, margin: 0 }}>{item.a}</p>
+                </div>
+              ))}
+              <div style={{ paddingTop: '1.5rem' }}>
+                <Link href="/faq/devis-revetement-sol-gratuit" style={{ fontSize: '0.75rem', color: 'var(--terra)', textDecoration: 'none', letterSpacing: '0.06em' }}>
+                  Toutes les questions fréquentes →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
