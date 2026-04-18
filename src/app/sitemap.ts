@@ -5,6 +5,7 @@ import { sectors } from '@/data/sectors'
 import { solutions } from '@/data/solutions'
 import { guides } from '@/data/guides'
 import { brands } from '@/data/brands'
+import { faqs } from '@/data/faqs'
 
 const BASE_URL = 'https://cbsols.fr'
 
@@ -81,5 +82,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...geoPages, ...solutionPages, ...guidePages, ...brandPages]
+  const faqPages: MetadataRoute.Sitemap = faqs.map((f) => ({
+    url: `${BASE_URL}/faq/${f.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.75,
+  }))
+
+  return [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...geoPages, ...solutionPages, ...guidePages, ...brandPages, ...faqPages]
 }

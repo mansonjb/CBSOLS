@@ -398,6 +398,14 @@ export const cities: City[] = [
     description: 'commune du Marais Poitevin en Charente-Maritime',
     population: 2400,
   },
+  {
+    slug: 'cognac',
+    name: 'Cognac',
+    department: '16',
+    zone: 'charente-maritime',
+    description: 'capitale mondiale du cognac, à la frontière de la zone CB Sols',
+    population: 19000,
+  },
 ]
 
 export const cityZoneLabels: Record<City['zone'], string> = {

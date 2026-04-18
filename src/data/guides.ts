@@ -193,6 +193,171 @@ export const guides: Guide[] = [
     ],
     relatedSolutions: ['moquette-hotel', 'sol-pvc-restaurant', 'tapis-sur-mesure-hotel'],
   },
+  {
+    slug: 'entretien-moquette-hotel',
+    title: 'Entretien de la moquette hôtelière : le guide complet',
+    metaTitle: 'Entretien Moquette Hôtelière 2025 — Guide Expert CB Sols',
+    metaDescription: "Comment entretenir la moquette d'un hôtel ? Fréquences, injection-extraction, produits, coûts. Guide complet par CB Sols, spécialiste hôtellerie Charente-Maritime.",
+    category: 'Guide Hôtellerie',
+    headline: "Entretien de la moquette d'hôtel",
+    intro: "La moquette représente souvent le poste le plus important d'investissement dans la rénovation d'un hôtel. Un entretien rigoureux permet de multiplier sa durée de vie par deux — et d'éviter une rénovation prématurée qui perturbe l'activité. CB Sols accompagne ses clients hôteliers avec un programme d'entretien structuré.",
+    sections: [
+      {
+        title: "L'aspiration quotidienne : la base non négociable",
+        body: "Dans un hôtel, la moquette des chambres doit être aspirée à chaque changement de client et au minimum quotidiennement dans les parties communes à fort trafic. L'aspirateur utilisé a une importance capitale : un aspirateur de ménage classique ne suffit pas. Il faut un modèle professionnel avec filtration HEPA et brosse rotative adaptée au type de moquette (boucle ou velours).\n\nLes couloirs méritent une attention particulière. Ils reçoivent 3 à 5 fois plus de trafic que les chambres. Une aspiration biquotidienne en haute saison est recommandée pour les couloirs d'hôtels 3 étoiles et plus. L'accumulation de salissures sèches est l'ennemi principal de la moquette : elle crée une abrasion mécanique des fibres qui les détruit progressivement.\n\nCB Sols conseille systématiquement à ses clients hôteliers de vérifier l'équipement d'entretien de leurs équipes de ménage. Un bon aspirateur professionnel coûte 300 à 800 € mais préserve un investissement de 50 000 à 200 000 €.",
+      },
+      {
+        title: "L'injection-extraction : fréquence et protocole",
+        body: "Le nettoyage par injection-extraction (hot-water extraction) est la méthode de référence pour le nettoyage en profondeur de la moquette hôtelière. Une machine professionnelle injecte de l'eau chaude à 90-95°C mélangée à un détergent adapté, puis aspire immédiatement le tout — emmenant avec elle les salissures incrustées, les résidus de savon des bagages et les allergènes accumulés.\n\nFréquences recommandées par zone :\n- Chambres : 2 fois par an minimum, idéalement en basse saison (octobre-novembre et mars-avril)\n- Couloirs : 3 à 4 fois par an, avec un passage impératif avant et après la haute saison\n- Lobby et réception : mensuel en haute saison, bimestriel en basse saison\n\nPour les hôtels à fort taux d'occupation (80%+), augmenter ces fréquences d'un cycle par an. CB Sols propose des contrats d'entretien annuels pour les hôtels de Charente-Maritime.",
+      },
+      {
+        title: "Le traitement des taches : intervention immédiate",
+        body: "En hôtellerie, les taches doivent être traitées dans les 5 à 10 minutes suivant leur apparition. Passé ce délai, certaines taches (vin rouge, café, huile de solaire, rouge à lèvres) peuvent devenir permanentes sur les fibres synthétiques.\n\nProtocole d'intervention rapide : (1) absorber le surplus avec un chiffon propre par tamponnement — jamais en frottant, (2) appliquer un détachant adapté à la tache en partant de l'extérieur vers le centre, (3) absorber à nouveau, (4) rincer légèrement à l'eau froide, (5) sécher rapidement avec un ventilateur si possible.\n\nCB Sols fournit, avec chaque chantier de pose, un kit de détachants professionnels adaptés à la moquette installée, avec les fiches d'utilisation pour les équipes de ménage. Ce kit est la première ligne de défense contre les dégradations prématurées.",
+      },
+      {
+        title: "Quand remplacer la moquette d'hôtel ?",
+        body: "Même la meilleure moquette hôtelière a une durée de vie limitée. Les signes qui indiquent qu'un remplacement s'impose : les fibres sont aplaties et ne se relèvent plus après aspiration (phénomène de matting), les taches persistent malgré l'injection-extraction, les couleurs s'estompent de façon visible, la moquette présente des zones de décollement aux bords ou aux joints.\n\nEn moyenne, une moquette hôtelière bien entretenue dure 8 à 12 ans en chambre, 5 à 8 ans en couloir à fort trafic. Le remplacement de la moquette d'un hôtel se planifie en basse saison pour minimiser l'impact sur le CA. CB Sols travaille chambre par chambre pour maintenir le taux d'occupation.\n\nCB Sols propose des audits gratuits pour évaluer l'état de votre moquette et vous conseiller sur la stratégie de remplacement la plus rentable.",
+      },
+    ],
+    faq: [
+      { q: "Combien coûte l'entretien annuel de la moquette d'un hôtel ?", a: "Pour un hôtel de 30 chambres (surface totale moquette : 700 à 1 200 m²), le coût d'un contrat d'entretien annuel avec CB Sols est de 2 500 à 5 000 € HT selon la fréquence et l'éloignement. Ce coût représente 5 à 10% du coût de remplacement — un investissement rationnel pour prolonger la durée de vie de la moquette." },
+      { q: "Peut-on nettoyer la moquette d'une chambre d'hôtel sans la mettre hors service ?", a: "Oui. Le temps de séchage après injection-extraction est de 2 à 4 heures selon la ventilation et la saison. CB Sols réalise les nettoyages sur les chambres libres, en rotation avec les chambres occupées. Aucune fermeture n'est nécessaire pour un hôtel de taille normale." },
+      { q: "Existe-t-il des traitements préventifs pour la moquette d'hôtel ?", a: "Oui. Le traitement anti-tache Teflon ou Scotchgard appliqué après la pose ou après un nettoyage en profondeur crée une barrière invisible qui repousse les liquides et facilite l'absorption des taches. CB Sols propose ce traitement en option lors de chaque pose et chaque nettoyage annuel." },
+    ],
+    relatedSolutions: ['moquette-hotel', 'tapis-sur-mesure-hotel'],
+  },
+  {
+    slug: 'prix-pose-sol-pvc',
+    title: 'Prix de pose du sol PVC professionnel en 2025',
+    metaTitle: 'Prix Pose Sol PVC Professionnel 2025 — Tarifs CB Sols',
+    metaDescription: 'Quel est le prix de pose du sol PVC professionnel en 2025 ? Tarifs détaillés LVT, lés, cuisine pro, hôtel. Guide honnête par CB Sols, Charente-Maritime.',
+    category: 'Guide Tarifs',
+    headline: 'Prix de pose du sol PVC en 2025',
+    intro: "Le prix de pose du sol PVC varie considérablement selon le type de produit, la surface et la complexité du chantier. Ce guide détaille les fourchettes réelles pratiquées par CB Sols en 2025 — sans langue de bois.",
+    sections: [
+      {
+        title: "Sol PVC en lames et dalles (LVT) : 35 à 75 €/m²",
+        body: "Les lames et dalles vinyle (LVT — Luxury Vinyl Tile) sont le segment le plus dynamique du marché. Leur pose est relativement rapide : en pose flottante, une équipe de 2 poseurs couvre 80 à 120 m² par jour.\n\nFourchettes 2025 (fourni posé) :\n- LVT flottant bureaux et commerces : 35 à 60 €/m²\n- LVT collé hôtellerie haut de gamme : 45 à 75 €/m²\n- Dalles vinyle design (motif bois ou pierre) : 40 à 70 €/m²\n\nLes facteurs qui font varier le prix : la qualité du produit choisi (épaisseur, classe d'usage, décor), la surface totale (tarif dégressif dès 200 m²), et l'état du support (ragréage éventuel). CB Sols établit toujours un devis détaillé poste par poste avant toute signature.",
+      },
+      {
+        title: "Sol PVC en lés (rouleaux) : 30 à 90 €/m²",
+        body: "Le sol PVC en lés (vendu en rouleaux de 2 m ou 4 m de large) couvre un large éventail d'usages et de prix. C'est la solution de référence pour les cuisines professionnelles, les couloirs d'hôpitaux, les espaces à trafic intense.\n\nFourchettes 2025 (fourni posé) :\n- PVC hétérogène lés collectivités (couloirs, écoles) : 30 à 55 €/m²\n- PVC lés hétérogène hôtellerie : 40 à 70 €/m²\n- PVC homogène cuisine professionnelle R11 : 55 à 90 €/m²\n\nSur les surfaces supérieures à 300 m², CB Sols applique des remises de volume qui peuvent atteindre 10 à 15% du tarif de base. Pour les hôtels qui commandent moquette + PVC en même temps, un tarif global est négocié.",
+      },
+      {
+        title: "Les travaux annexes qui s'ajoutent au prix de base",
+        body: "Le prix affiché par m² ne comprend pas toujours l'ensemble des travaux nécessaires. Il faut anticiper :\n\nDépose de l'ancien revêtement : 4 à 8 €/m² selon le type et l'état. Une moquette collée ancienne sur carrelage prend plus de temps qu'une moquette gripper récente.\n\nRagréage et nivellement : 8 à 20 €/m² selon l'épaisseur et la surface. C'est souvent le poste le plus imprévisible — l'état du support ne se découvre vraiment qu'après dépose.\n\nSoudure à chaud : 3 à 6 €/ml de joint soudé. Indispensable en cuisine professionnelle et recommandé partout où l'étanchéité est requise.\n\nRemontées en cuvette (cuisines, douches) : 15 à 30 €/ml selon la hauteur de remontée et la complexité.\n\nMajoration nuit ou week-end : +15 à 30% sur le total main-d'œuvre. CB Sols est transparent sur ces majorations dans chaque devis.",
+      },
+      {
+        title: "Comment obtenir le meilleur prix",
+        body: "Plusieurs leviers permettent d'optimiser le coût total d'un chantier de sol PVC :\n\nLa surface est votre principal levier. CB Sols applique des tarifs dégressifs significatifs à partir de 200 m², et davantage à partir de 500 m². Regrouper plusieurs zones ou plusieurs hébergements dans un même bon de commande est toujours rentable.\n\nLe timing est également important. Les chantiers planifiés 2 à 3 mois à l'avance permettent à CB Sols d'optimiser ses achats de matériaux. À l'inverse, les urgences ou les chantiers de nuit sont légitimement majorés.\n\nEnfin, le choix du produit. CB Sols ne cherche pas à vous vendre le produit le plus cher mais le mieux adapté à votre usage. Un LVT classe 33 suffit pour des bureaux à fréquentation normale — inutile de payer pour du classe 34. Le devis gratuit inclut systématiquement des alternatives de gamme.",
+      },
+    ],
+    faq: [
+      { q: "Le devis CB Sols est-il vraiment gratuit ?", a: "Oui, sans condition et sans engagement. CB Sols se déplace gratuitement dans toute la Charente-Maritime pour mesurer, évaluer le support et vous remettre un devis chiffré sous 48h. Même pour des surfaces de quelques dizaines de mètres carrés." },
+      { q: "Peut-on avoir une estimation sans visite ?", a: "Oui. En nous envoyant vos plans (ou une estimation de surface) et des photos du support existant, CB Sols peut établir une estimation budgétaire par email. Cette estimation est sans engagement. La visite sur site reste nécessaire pour le devis définitif." },
+      { q: "Les prix incluent-ils la TVA ?", a: "Les fourchettes de prix CB Sols sont exprimées HT. La TVA applicable est 20% pour les professionnels et 10% pour les travaux de rénovation dans des logements de plus de 2 ans (conformément à l'article 279-0 bis du CGI). Vos devis précisent toujours le détail HT/TTC." },
+    ],
+    relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel', 'sol-pvc-ehpad'],
+  },
+  {
+    slug: 'moquette-vs-parquet-bureau',
+    title: 'Moquette ou parquet pour un bureau : comparatif complet',
+    metaTitle: 'Moquette ou Parquet Bureau — Comparatif 2025 CB Sols',
+    metaDescription: 'Moquette ou parquet pour vos bureaux ? Acoustique, entretien, durabilité, coût : comparatif complet et honnête pour faire le bon choix. Par CB Sols.',
+    category: 'Comparatif',
+    headline: 'Moquette ou parquet pour un bureau',
+    intro: "C'est la question la plus fréquente lors des rénovations de bureaux : faut-il choisir la moquette ou le parquet (ou son imitation vinyle) ? Les deux options ont des qualités et des défauts spécifiques. Ce comparatif vous aide à choisir selon vos priorités.",
+    sections: [
+      {
+        title: "Acoustique : avantage moquette, nettement",
+        body: "C'est le critère le plus différenciant. La moquette est imbattable pour l'absorption acoustique dans les bureaux. Elle réduit les bruits d'impact (bruits de pas, chutes d'objets) de 20 à 35 dB selon les produits et les sous-couches utilisées. Dans un open space, cette réduction est directement perceptible : on travaille mieux quand on n'entend pas ses voisins marcher.\n\nLe parquet (même avec une sous-couche acoustique) est réverbérant. Les bruits de pas sont clairement audibles. Le sol PVC à décor bois offre de meilleures performances que le parquet massif ou stratifié, surtout avec une sous-couche acoustique spécifique, mais reste très en dessous de la moquette.\n\nSi vos collaborateurs travaillent concentrés (rédaction, analyse, programmation), la moquette est supérieure. Si l'espace est un showroom ou un espace de vente, le parquet ou le PVC peut être préféré pour son image visuelle.",
+      },
+      {
+        title: "Entretien : avantage parquet (ou sol PVC)",
+        body: "Le parquet et le sol PVC s'entretiennent avec une serpillère et des produits courants. Pas de nettoyage spécialisé nécessaire, pas de machine. Pour des bureaux à fort trafic ou des espaces où les salissures liquides sont fréquentes (espaces de restauration, cuisines communes), c'est un avantage réel.\n\nLa moquette demande une aspiration régulière (idéalement hebdomadaire) et un nettoyage à l'injection-extraction annuel par un professionnel. Ce coût récurrent doit être intégré dans le budget d'exploitation.\n\nNéanmoins, une tache de café sur un sol dur laisse une auréole même après nettoyage. Sur une moquette traitée anti-taches, les liquides perles et s'absorbent plus facilement si l'intervention est rapide.",
+      },
+      {
+        title: "Durabilité et coût total : ils se valent sur 10 ans",
+        body: "Un parquet massif en bois dur dure indéfiniment s'il est retimbré régulièrement. Mais en bureaux, il se raye rapidement (roulettes de chaises) et supporte mal les variations d'humidité. Le sol PVC à décor bois dure 15 à 25 ans en bureau avec peu d'entretien.\n\nLa moquette durablement bien entretenue tient 10 à 15 ans en bureau classique. Son coût d'installation est généralement inférieur au parquet massif ou au LVT haut de gamme.\n\nSur 10 ans, en intégrant le coût d'installation, les coûts d'entretien (nettoyage annuel) et l'amortissement, moquette et sol PVC sont souvent comparables. Le parquet massif a un coût initial élevé mais une valeur résiduelle supérieure.\n\nCB Sols vous présente, sur demande, une simulation de coût total sur 10 ans pour les options qui correspondent à votre budget et à votre usage.",
+      },
+      {
+        title: "Esthétique et image de marque : une question de positionnement",
+        body: "La moquette evoque la confidentialité, le sérieux, le confort. C'est le sol des cabinets d'avocats, des banques privées, des directions générales. Elle crée une ambiance feutrée qui rassure les clients et favorise la concentration.\n\nLe parquet ou le sol PVC à décor bois évoque le dynamisme, la modernité, la transparence. C'est le sol des agences créatives, des espaces coworking, des startups. Il photographie bien pour les photos de bureau sur les réseaux sociaux.\n\nIl n'y a pas de bonne ou mauvaise réponse — tout dépend de l'identité que vous voulez projeter. CB Sols vous apporte des échantillons en situation réelle lors du devis pour vous aider à trancher.",
+      },
+    ],
+    faq: [
+      { q: "Peut-on combiner moquette et parquet dans un même bureau ?", a: "Oui, et c'est souvent la meilleure solution. Par exemple : moquette dans les zones de travail concentré (open space, salles de réunion) et sol PVC ou parquet dans les circulations, l'entrée et la cuisine. CB Sols réalise des transitions propres entre les deux types de revêtements." },
+      { q: "La moquette convient-elle aux chaises à roulettes ?", a: "Oui, à condition de choisir un produit classé 33 ou 34 (usage commercial intensif) avec une résistance spécifique aux roulettes. Les moquettes en dalles ou boucles velours sont particulièrement adaptées. Des protège-sols transparents peuvent compléter la protection sous les postes fixes." },
+      { q: "Quel revêtement choisir pour un espace coworking ?", a: "Pour un espace coworking, CB Sols recommande souvent une combinaison : dalles moquette dans les espaces de travail (acoustique + remplacement partiel facile) et sol PVC dans les zones de passage, cuisine et reception (entretien simplifié). Cette approche combine les avantages des deux univers." },
+    ],
+    relatedSolutions: ['moquette-bureau', 'sol-pvc-hotel'],
+  },
+  {
+    slug: 'choisir-revetement-sol-cuisine-pro',
+    title: 'Choisir le bon revêtement de sol pour une cuisine professionnelle',
+    metaTitle: 'Revêtement Sol Cuisine Professionnelle — Guide Choix CB Sols',
+    metaDescription: 'Quel revêtement de sol pour une cuisine professionnelle ? Normes HACCP, antidérapance, résistance chimique, drainage. Guide expert par CB Sols.',
+    category: 'Guide Technique',
+    headline: 'Le sol idéal pour une cuisine professionnelle',
+    intro: "Le choix du revêtement de sol d'une cuisine professionnelle n'est pas une décision esthétique — c'est une décision technique et réglementaire. Un mauvais choix génère des risques sanitaires, des accidents du travail et des non-conformités lors des inspections. CB Sols vous guide dans ce choix stratégique.",
+    sections: [
+      {
+        title: "Les contraintes réglementaires : HACCP et code du travail",
+        body: "La réglementation HACCP (Hazard Analysis Critical Control Point) impose pour les cuisines professionnelles des revêtements imperméables, lisses ou faiblement texturés, résistants aux agents nettoyants et désinfectants, sans joints inaccessibles. En pratique, cela signifie : zéro carrelage avec joints larges, zéro sol poreux.\n\nLe code du travail impose des performances antidérapantes minimales. La classification allemande R (DIN 51130) est la référence : R9 pour les zones à faible risque, R10 pour les cuisines standard, R11 pour les zones humides chaudes (fritures, plonge), R12 pour les zones avec huiles en grande quantité.\n\nEnfin, les normes incendie ERP (si votre restaurant est un établissement recevant du public) peuvent imposer des classements spécifiques. CB Sols vous fournit les attestations de conformité pour vos dossiers administratifs.",
+      },
+      {
+        title: "Les solutions techniques recommandées",
+        body: "Sol PVC homogène soudé à chaud : c'est la référence absolue pour les cuisines professionnelles. Le sol PVC homogène (Tarkett iQ Granit, Forbo Eternal) est constitué d'une seule matière sur toute l'épaisseur — il n'a pas de couche supérieure à s'user. La soudure à chaud des joints élimine toute infiltration. Les remontées en cuvette créent une étanchéité parfaite sol/mur. Durée de vie : 20 à 30 ans.\n\nCarrelage antidérapant R11/R12 avec résine époxy dans les joints : une alternative solide si vous souhaitez une esthétique carrelage. Les joints en résine époxy sont imperméables et résistants aux acides. L'entretien est plus contraignant (nettoyage des reliefs). CB Sols ne pose pas de carrelage mais peut coordonner avec votre carreleur.\n\nRésine de sol (résine époxy ou polyuréthane) : solution sans joint, imperméable à 100%, excellente résistance chimique. Idéale pour les cuisines de grande surface. Durée de vie variable selon la qualité de la mise en œuvre. CB Sols ne réalise pas les résines mais peut vous orienter vers un partenaire spécialisé.",
+      },
+      {
+        title: "L'importance des raccordements et remontées",
+        body: "Le sol seul ne suffit pas à garantir l'étanchéité d'une cuisine professionnelle. La jonction sol/mur est la zone la plus critique. Sans protection, les liquides, graisses et micro-organismes s'infiltrent sous le revêtement et dans les murs, créant des foyers bactériens invisibles.\n\nLa solution professionnelle : les remontées en cuvette. Le sol PVC remonte de 10 à 15 cm sur les murs, soudé à chaud dans les angles et au raccordement avec les équipements (plinthe de plan de travail, colonne de douche, siphon). Cette technique crée une cuvette étanche.\n\nCB Sols maîtrise cette technique et réalise les remontées en cuvette sur tous ses chantiers de cuisine professionnelle. C'est un savoir-faire qui demande de la précision et de l'expérience — les coins intérieurs et extérieurs sont les points les plus délicats.",
+      },
+      {
+        title: "Drainage et siphons de sol",
+        body: "Si votre cuisine dispose de siphons de sol (douches de nettoyage haute pression), le raccordement entre le sol PVC et le siphon est une étape critique. CB Sols réalise des bagues de raccordement étanches autour des siphons pour éviter toute infiltration.\n\nSi votre cuisine n'est pas équipée de siphons de sol mais que vous travaillez au nettoyage haute pression, réfléchissez à en faire installer (lot plomberie) avant la pose du sol. CB Sols peut coordonner les deux interventions pour un résultat optimal.\n\nEnfin, si votre cuisine a une pente vers les siphons, le ragréage préalable doit respecter et accentuer légèrement cette pente. CB Sols vérifie systématiquement la pente lors de l'évaluation du support.",
+      },
+    ],
+    faq: [
+      { q: "Le carrelage est-il autorisé dans une cuisine professionnelle ?", a: "Oui, à condition que les joints soient en résine époxy (imperméable) et non en ciment (poreux et bactérien). Les carreaux doivent être antidérapants R11 minimum. CB Sols ne pose pas de carrelage, mais recommande le sol PVC soudé pour sa supériorité sanitaire et sa facilité d'entretien." },
+      { q: "Peut-on poser du sol PVC sur du carrelage dans une cuisine ?", a: "Oui, si le carrelage est parfaitement plan (tolérance 2mm sous règle de 2m), en bon état, sans carreau décollé et sans joints hauts. Un ragréage de surfaçage est souvent nécessaire pour effacer les reliefs des joints. CB Sols évalue ce point lors du devis." },
+      { q: "Combien de temps dure la pose d'un sol cuisine professionnelle ?", a: "Pour une cuisine de 50 m², comptez 1 journée pour la préparation du support et la pose, plus demi-journée pour la soudure et les finitions. CB Sols intervient le dimanche ou la nuit pour les cuisines en activité. La cuisine peut être utilisée dès le lendemain de la finition." },
+    ],
+    relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
+  },
+  {
+    slug: 'moquette-acoustique',
+    title: 'La moquette acoustique : guide complet',
+    metaTitle: 'Moquette Acoustique — Guide Complet 2025 CB Sols',
+    metaDescription: "Tout savoir sur la moquette acoustique : performances, certifications, applications, prix. Guide expert par CB Sols, spécialiste en Charente-Maritime.",
+    category: 'Guide Technique',
+    headline: 'La moquette acoustique',
+    intro: "La moquette est de loin le revêtement de sol le plus performant sur le plan acoustique. Réduction des bruits d'impact, absorption des bruits aériens, amélioration du confort des espaces : ce guide détaille les mécanismes et les choix à faire pour une performance optimale.",
+    sections: [
+      {
+        title: "Comment la moquette absorbe le bruit",
+        body: "La moquette agit à deux niveaux acoustiques distincts. Premièrement, elle réduit les bruits d'impact : une chute d'objet, des pas, une chaise que l'on traîne. Ces vibrations sont amorties dans les fibres et la sous-couche avant même de se transmettre à la dalle ou au plancher. Les mesures de Δw (delta w) quantifient cette performance : une moquette de bureau moyenne atteint Δw 25 à 30 dB, les moquettes acoustiques spécialisées dépassent les 35 dB.\n\nDeuxièmement, la moquette contribue à l'absorption acoustique de la pièce elle-même. Elle réduit le temps de réverbération (TR60) en absorbant une partie de l'énergie sonore qui rebondirait sur un sol dur. Dans un restaurant ou une salle de réunion, cet effet réduit le niveau de bruit ambiant de 3 à 8 dB — une différence clairement perceptible à l'oreille.\n\nLa combinaison moquette + plafond acoustique + panneaux muraux crée les meilleures conditions de travail et de confort. CB Sols peut vous orienter vers des acousticiens partenaires pour des projets nécessitant une étude acoustique formelle.",
+      },
+      {
+        title: "Les paramètres qui influencent les performances",
+        body: "Tous les types de moquette ne sont pas équivalents sur le plan acoustique. Les principaux paramètres sont :\n\nLa construction : la moquette tuftée velours est plus absorbante que la moquette boucle. La moquette aiguilletée, plus dense et plus rigide, est moins efficace en absorption mais mieux résistante au trafic intense.\n\nLe grammage et la hauteur de poil : plus la moquette est épaisse et dense, plus les performances acoustiques sont élevées. Une moquette de 700 g/m² sera plus performante qu'une moquette de 400 g/m².\n\nLa sous-couche : l'élément le plus impactant pour la réduction des bruits d'impact. Une sous-couche mousse ou feutre de 3 à 8 mm améliore considérablement le Δw. Certaines moquettes intègrent leur sous-couche (dos polyuréthane), d'autres nécessitent une sous-couche indépendante.\n\nCB Sols sélectionne le couple moquette + sous-couche en fonction de l'objectif acoustique de chaque projet.",
+      },
+      {
+        title: "Applications prioritaires : où la moquette acoustique s'impose",
+        body: "Hôtellerie : les couloirs et les chambres sont les zones où la moquette acoustique apporte la valeur la plus immédiate. Le silence nocturne conditionne directement les avis clients. Un hôtel bien insonorisé obtient des notes plus élevées sur les plateformes de réservation.\n\nBureaux open space : la cacophonie des grands open spaces est un facteur reconnu de stress et de baisse de productivité. La moquette acoustique, associée à des panneaux et à un plafond absorbant, est l'un des investissements les plus rentables pour améliorer les conditions de travail.\n\nEHPAD et santé : le silence la nuit est une condition médicale pour les résidents. La moquette dans les couloirs et les chambres réduit les nuisances sonores des passages de personnel et des équipements.\n\nCinémas et salles de spectacle : le sol contribue à l'équilibre acoustique de la salle. Une moquette haute densité dans les allées et l'espace entre les sièges améliore la qualité perçue du son.",
+      },
+      {
+        title: "Certifications et labels à connaître",
+        body: "En France, les moquettes acoustiques ne disposent pas d'un label unique officiel. Les performances se lisent dans les fiches techniques des fabricants.\n\nLe Δw (norme ISO 10140) mesure la réduction des bruits d'impact. Une valeur de 20 dB est correcte, 30 dB est performant, 35 dB et plus est excellent pour une moquette professionnelle.\n\nL'αw (facteur d'absorption) mesure l'absorption acoustique de la pièce. Une moquette épaisse atteint αw 0,15 à 0,30 — une contribution significative en complément des traitements de plafond.\n\nLes marques EGE, Balsan et Forbo publient systématiquement ces données dans leurs fiches techniques. CB Sols vous accompagne dans la lecture de ces données pour choisir le produit le plus adapté à votre objectif acoustique.",
+      },
+    ],
+    faq: [
+      { q: "Quelle est la moquette la plus performante acoustiquement ?", a: "Les moquettes tuftées velours haute densité avec sous-couche mousse intégrée sont les plus performantes. EGE Hospitality et Balsan Acoustic Pro atteignent des Δw de 30 à 38 dB. Pour les applications très exigeantes (studios d'enregistrement, salles de spectacle), des solutions combinées moquette + sous-couche spécifique permettent des performances supérieures." },
+      { q: "La moquette acoustique coûte-t-elle plus cher ?", a: "Pas nécessairement. Les surcoûts liés à une moquette acoustique de qualité représentent généralement 10 à 20% par rapport à une moquette standard de même gamme. Rapporté aux bénéfices (confort, satisfaction client, concentration), c'est l'un des meilleurs investissements que l'on puisse faire dans un espace professionnel." },
+      { q: "La moquette acoustique s'entretient-elle différemment ?", a: "Non. L'entretien d'une moquette acoustique est identique à celui d'une moquette classique : aspiration régulière et injection-extraction annuelle. La sous-couche n'est pas affectée par le nettoyage en surface si le protocole est respecté (humidité contrôlée, séchage rapide)." },
+    ],
+    relatedSolutions: ['moquette-hotel', 'moquette-restaurant', 'moquette-bureau'],
+  },
 ]
 
 export function getGuideBySlug(slug: string): Guide | undefined {
