@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { MobileCTA } from '@/components/MobileCTA'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { company } from '@/data/company'
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-sans', display: 'swap', weight: ['400', '500', '600', '700', '800'] })
@@ -91,6 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <MobileCTA />
         <WhatsAppButton />
+        <SpeedInsights />
       </body>
     </html>
   )
