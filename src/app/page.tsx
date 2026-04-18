@@ -7,12 +7,12 @@ import { company } from '@/data/company'
 import { HeroSlider } from '@/components/HeroSlider'
 
 const projects = [
-  { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel.jpg' },
-  { title: 'Restaurant Coutanceau', type: 'Moquette gastronomique', sector: 'Restauration étoilée', surface: '220 m²', img: '/images/restaurant-coutanceau.jpg' },
-  { title: 'Golf de la Prée', type: 'Moquette + PVC vestiaires', sector: 'Sport & Loisirs', surface: '600 m²', img: '/images/golf.jpg' },
-  { title: 'Moquette Bureaux', type: 'Dalles haute résistance', sector: 'Tertiaire', surface: '350 m²', img: '/images/moquette-bureau.jpg' },
-  { title: 'Bistrot Grande Terrasse', type: 'Moquette acoustique', sector: 'Restauration', surface: '280 m²', img: '/images/bistrot-restaurant.jpg' },
-  { title: 'Cuisine Professionnelle', type: 'PVC soudé à chaud', sector: 'Pro & CHR', surface: '80 m²', img: '/images/cuisine-pro.jpg' },
+  { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel-real.jpg' },
+  { title: 'Restaurant Coutanceau', type: 'Moquette gastronomique', sector: 'Restauration étoilée', surface: '220 m²', img: '/images/restaurant-etoile-real.jpg' },
+  { title: 'Golf de la Prée', type: 'Moquette + PVC vestiaires', sector: 'Sport & Loisirs', surface: '600 m²', img: '/images/golf-real.jpg' },
+  { title: 'Bistrot Grande Terrasse', type: 'Moquette acoustique', sector: 'Restauration', surface: '280 m²', img: '/images/bistrot-restaurant-real.jpg' },
+  { title: 'Bureaux Charente-Maritime', type: 'Dalles haute résistance', sector: 'Tertiaire', surface: '350 m²', img: '/images/moquette-bureau-real.jpg' },
+  { title: 'Cuisine Professionnelle', type: 'PVC soudé à chaud', sector: 'Pro & CHR', surface: '80 m²', img: '/images/cuisine-pro-real.jpg' },
 ]
 
 const testimonials = [
@@ -180,6 +180,32 @@ export default function Home() {
               <img src={b.src} alt={b.name} style={{ height: '26px', width: 'auto', maxWidth: '100px', objectFit: 'contain', filter: 'grayscale(1)' }} />
             </a>
           ))}
+        </div>
+      </section>
+
+      {/* ─── CLIENTS ─────────────────────────────────────────────── */}
+      <section style={{ padding: '3rem 2rem', backgroundColor: 'var(--bg)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '1.75rem', textAlign: 'center' }}>Ils nous font confiance</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center', justifyContent: 'center' }}>
+            {[
+              { src: '/images/clients/Hotel_La_Baronnie.png', alt: 'Hôtel La Baronnie' },
+              { src: '/images/clients/LaGrandeTerrasse.png', alt: 'La Grande Terrasse' },
+              { src: '/images/clients/Logo_GolfDeLaPree.png', alt: 'Golf de la Prée' },
+              { src: '/images/clients/Logo_Gaya.png', alt: 'Restaurant Gaya' },
+              { src: '/images/clients/Masqhotel.png', alt: 'Masq Hôtel' },
+              { src: '/images/clients/LogoHotelGrandLarge.png', alt: 'Hôtel Grand Large' },
+              { src: '/images/clients/HotelSaintNicolas.png', alt: 'Hôtel Saint-Nicolas' },
+              { src: '/images/clients/CLR_Hotels.png', alt: 'CLR Hotels' },
+              { src: '/images/clients/Ibis.png', alt: 'Ibis' },
+              { src: '/images/clients/MammaMiaRestaurant.png', alt: 'Mamma Mia Restaurant' },
+              { src: '/images/clients/HotelLaMarine.png', alt: 'Hôtel La Marine' },
+              { src: '/images/clients/LogoMaisonDesAmbassadeurs.png', alt: 'Maison des Ambassadeurs' },
+            ].map(c => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={c.alt} src={c.src} alt={c.alt} className="client-logo" style={{ height: '32px', width: 'auto', maxWidth: '110px', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.45, transition: 'opacity 0.2s' }} />
+            ))}
+          </div>
         </div>
       </section>
 

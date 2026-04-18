@@ -102,3 +102,6 @@ img { display: block; }
   .mobile-cta-bar { display: flex !important; }
   body { padding-bottom: 76px; }
 }
+
+/* Client logos hover */
+.client-logo:hover { opacity: 0.9 !important; filter: grayscale(0) !important; }

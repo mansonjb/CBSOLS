@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
@@ -21,6 +22,19 @@ export default function ShowroomPage() {
             Notre showroom est un espace confidentiel, loin des grandes surfaces. Vous êtes reçu par un expert qui prend le temps de comprendre votre projet, votre usage, vos envies.
           </p>
         </div>
+      </section>
+
+      {/* Photo showroom */}
+      <section style={{ padding: '0', maxHeight: '480px', overflow: 'hidden', position: 'relative' }}>
+        <Image
+          src="/images/showroom-interieur.png"
+          alt="Showroom CB Sols Villedoux — espace confidentiel avec plus de 500 échantillons"
+          width={1024}
+          height={509}
+          style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center' }}
+          priority
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, rgba(var(--bg-rgb,255,255,255),0.4) 100%)' }} />
       </section>
 
       <section style={{ padding: '5rem 2rem' }}>

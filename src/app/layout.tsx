@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       { '@type': 'AdministrativeArea', name: "Île d'Oléron" },
       { '@type': 'AdministrativeArea', name: 'Charente-Maritime' },
     ],
-    hasMap: 'https://maps.google.com/?q=CB+Sols+Villedoux',
+    hasMap: 'https://share.google/86MXB40I3QuKofiI4',
     priceRange: '€€',
     foundingDate: '1999',
     aggregateRating: {
