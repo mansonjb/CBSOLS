@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: 'Showroom Revêtement Sol La Rochelle — CB Sols, Sur Rendez-vous',
+  title: 'Showroom Revêtement Sol La Rochelle | CB Sols, Sur Rendez-vous',
   description:
     'Visitez le showroom CB Sols à Villedoux (10 min de La Rochelle). Plus de 500 échantillons de moquettes, sols PVC et tapis sur mesure. Sur rendez-vous.',
 }
@@ -30,7 +30,7 @@ export default function ShowroomPage() {
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Ce que vous trouverez</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 {[
-                  { label: '500+ échantillons', desc: 'Moquettes, lames PVC, dalles, vinyles en rouleaux, tapis — toute la gamme CB Sols' },
+                  { label: '500+ échantillons', desc: 'Moquettes, lames PVC, dalles, vinyles en rouleaux, tapis : toute la gamme CB Sols' },
                   { label: 'Conseil personnalisé', desc: 'Valentin Prévoteau ou un membre de son équipe vous accompagne dans votre choix' },
                   { label: 'Échantillons à emporter', desc: 'Repartez avec vos coups de cœur pour les comparer chez vous à la lumière naturelle' },
                   { label: 'Visualisation in situ', desc: 'Nous vous aidons à projeter le rendu final dans votre espace avec des outils de visualisation' },

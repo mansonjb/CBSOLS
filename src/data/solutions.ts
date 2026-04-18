@@ -21,7 +21,7 @@ export const solutions: Solution[] = [
   {
     slug: 'moquette-hotel',
     title: 'Moquette Hôtel',
-    metaTitle: 'Moquette Hôtel Charente-Maritime — Pose Professionnelle CB Sols',
+    metaTitle: 'Moquette Hôtel Charente-Maritime | Pose Professionnelle CB Sols',
     metaDescription: 'Pose de moquette hôtelière en Charente-Maritime. CB Sols équipe hôtels 2 à 5 étoiles : chambres, couloirs, lobbys. Certifié EGE & Balsan. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
@@ -50,7 +50,7 @@ export const solutions: Solution[] = [
       { name: 'Tapis sur mesure', desc: 'Création de tapis d\'accueil et de salon avec logo ou motif exclusif pour les lobbys et salons' },
     ],
     references: [
-      'Hôtel La Baronnie — Saint-Martin-de-Ré : tapis sur mesure motif exclusif + moquette EGE, 600 m²',
+      'Hôtel La Baronnie, Saint-Martin-de-Ré : tapis sur mesure motif exclusif + moquette EGE, 600 m²',
       'Résidences de tourisme Île de Ré : chambres et couloirs, 8 hébergements équipés',
       'Hôtels La Rochelle centre : rénovation partielle par rotation, sans interruption d\'activité',
     ],
@@ -64,7 +64,7 @@ export const solutions: Solution[] = [
   {
     slug: 'moquette-restaurant',
     title: 'Moquette Restaurant',
-    metaTitle: 'Moquette Restaurant & Brasserie — Pose Pro Charente-Maritime',
+    metaTitle: 'Moquette Restaurant & Brasserie | Pose Pro Charente-Maritime',
     metaDescription: 'Moquette acoustique pour restaurants en Charente-Maritime. CB Sols : pose en 48h, produits professionnels, résistance aux taches. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
@@ -72,7 +72,7 @@ export const solutions: Solution[] = [
     sectorName: 'Restauration',
     headline: 'Moquette pour restaurants',
     tagline: "L'acoustique, l'ambiance, la durabilité",
-    intro: "En restauration, le sol est un outil acoustique autant qu'esthétique. Une moquette bien choisie réduit le niveau sonore de 8 à 12 dB dans une salle — la différence entre une ambiance agréable et un brouhaha invivable. CB Sols pose des moquettes dans des restaurants gastronomiques, brasseries et cafés de Charente-Maritime depuis 1999.",
+    intro: "En restauration, le sol est un outil acoustique autant qu'esthétique. Une moquette bien choisie réduit le niveau sonore de 8 à 12 dB dans une salle, la différence entre une ambiance agréable et un brouhaha invivable. CB Sols pose des moquettes dans des restaurants gastronomiques, brasseries et cafés de Charente-Maritime depuis 1999.",
     specificChallenges: [
       'Niveau sonore excessif (bruit de couverts, conversations, cuisine)',
       'Résistance aux taches : vin, sauces, café',
@@ -92,9 +92,9 @@ export const solutions: Solution[] = [
       { name: 'Tapis de délimitation sur mesure', desc: 'Tapis sur mesure pour créer des zones (bar, salle privée, terrasse couverte)' },
     ],
     references: [
-      'Restaurant Christopher Coutanceau — La Rochelle : moquette sur mesure, 220 m²',
-      'Bistrot de la Grande Terrasse — La Rochelle : moquette acoustique, 280 m²',
-      'Restaurant Gaya — La Rochelle : réfection complète salle principale, 180 m²',
+      'Restaurant Christopher Coutanceau, La Rochelle : moquette sur mesure, 220 m²',
+      'Bistrot de la Grande Terrasse, La Rochelle : moquette acoustique, 280 m²',
+      'Restaurant Gaya, La Rochelle : réfection complète salle principale, 180 m²',
     ],
     faq: [
       { q: 'La moquette est-elle hygiénique dans un restaurant ?', a: "Oui, avec les bons produits. Les moquettes professionnelles sont traitées anti-taches et anti-bactéries. Un nettoyage hebdomadaire à l'injection-extraction suffit pour maintenir une hygiène irréprochable. CB Sols vous recommande les produits d'entretien adaptés lors de la livraison." },
@@ -105,7 +105,7 @@ export const solutions: Solution[] = [
   {
     slug: 'moquette-bureau',
     title: 'Moquette Bureau & Open Space',
-    metaTitle: 'Moquette Bureau Open Space — Pose Pro Charente-Maritime',
+    metaTitle: 'Moquette Bureau Open Space | Pose Pro Charente-Maritime',
     metaDescription: 'Moquette dalles ou rouleaux pour bureaux en Charente-Maritime. CB Sols : pose le week-end, sans interruption activité. Résistance roulettes. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
@@ -113,7 +113,7 @@ export const solutions: Solution[] = [
     sectorName: 'Bureaux & Entreprises',
     headline: 'Moquette pour bureaux',
     tagline: 'Concentrez-vous. Le sol travaille pour vous.',
-    intro: "En bureau, la moquette améliore la concentration, réduit la fatigue auditive et absorbe les bruits de pas — un impact direct sur la productivité. CB Sols installe des moquettes dalles et rouleaux dans les bureaux, open spaces, salles de réunion et cabinets de Charente-Maritime, avec pose le week-end pour ne jamais interrompre votre activité.",
+    intro: "En bureau, la moquette améliore la concentration, réduit la fatigue auditive et absorbe les bruits de pas : un impact direct sur la productivité. CB Sols installe des moquettes dalles et rouleaux dans les bureaux, open spaces, salles de réunion et cabinets de Charente-Maritime, avec pose le week-end pour ne jamais interrompre votre activité.",
     specificChallenges: [
       'Résistance aux roulettes de chaises de bureau (abrasion)',
       'Acoustique : réduction des bruits de pas et conversations',
@@ -133,7 +133,7 @@ export const solutions: Solution[] = [
       { name: 'Balsan Loop', desc: 'Boucle velours résistant aux roulettes, facile d\'entretien, nombreux coloris sobres et professionnels' },
     ],
     references: [
-      'Bureaux Charente-Maritime — 350 m² : dalles moquette Interface, pose le week-end',
+      'Bureaux Charente-Maritime, 350 m² : dalles moquette Interface, pose le week-end',
       'Cabinets comptables La Rochelle : moquette rouleau intégral, 180 m²',
       'Open space PME La Rochelle : rénovation par zones sans interruption, 220 m²',
     ],
@@ -145,7 +145,7 @@ export const solutions: Solution[] = [
   {
     slug: 'moquette-ehpad',
     title: 'Moquette EHPAD & Établissements de Santé',
-    metaTitle: 'Moquette EHPAD Charente-Maritime — Normes, Pose, Entretien',
+    metaTitle: 'Moquette EHPAD Charente-Maritime | Normes, Pose, Entretien',
     metaDescription: 'Moquette pour EHPAD et établissements de santé en Charente-Maritime. CB Sols : produits certifiés, pose en milieu occupé, normes PMR. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
@@ -153,7 +153,7 @@ export const solutions: Solution[] = [
     sectorName: 'Santé & EHPAD',
     headline: 'Moquette pour EHPAD',
     tagline: 'Confort, hygiène et sécurité pour vos résidents',
-    intro: "La moquette dans un EHPAD n'est pas un luxe — c'est un choix médical. Elle réduit le bruit entre les chambres (confort des résidents), amortit les chutes (sécurité), et peut être conçue pour guider les personnes désorientées grâce aux contrastes de couleurs. CB Sols maîtrise les normes spécifiques aux établissements de santé et intervient en milieu occupé.",
+    intro: "La moquette dans un EHPAD n'est pas un luxe : c'est un choix médical. Elle réduit le bruit entre les chambres (confort des résidents), amortit les chutes (sécurité), et peut être conçue pour guider les personnes désorientées grâce aux contrastes de couleurs. CB Sols maîtrise les normes spécifiques aux établissements de santé et intervient en milieu occupé.",
     specificChallenges: [
       'Conformité normes incendie Euroclasse Bfl-s1',
       'Antidérapance et amortissement des chutes',
@@ -183,7 +183,7 @@ export const solutions: Solution[] = [
   {
     slug: 'sol-pvc-restaurant',
     title: 'Sol PVC Restaurant & Cuisine Pro',
-    metaTitle: 'Sol PVC Cuisine Professionnelle Charente-Maritime — CB Sols',
+    metaTitle: 'Sol PVC Cuisine Professionnelle Charente-Maritime | CB Sols',
     metaDescription: 'Sol PVC pour cuisines professionnelles et restaurants en Charente-Maritime. Soudé à chaud, sans joints, nettoyage intensif. Devis gratuit CB Sols.',
     serviceSlug: 'sol-pvc-les',
     serviceName: 'Sol PVC Lés',
@@ -191,7 +191,7 @@ export const solutions: Solution[] = [
     sectorName: 'Restauration',
     headline: 'Sol PVC pour restaurants',
     tagline: 'Hygiène maximale, résistance absolue',
-    intro: "En cuisine professionnelle, le sol est une question d'hygiène réglementaire. Le PVC en lés soudé à chaud élimine tous les joints — aucun endroit où les bactéries peuvent s'accumuler. CB Sols installe des sols PVC dans les cuisines professionnelles, restaurants, brasseries et traiteurs de Charente-Maritime, avec des produits certifiés normes HACCP.",
+    intro: "En cuisine professionnelle, le sol est une question d'hygiène réglementaire. Le PVC en lés soudé à chaud élimine tous les joints : aucun endroit où les bactéries peuvent s'accumuler. CB Sols installe des sols PVC dans les cuisines professionnelles, restaurants, brasseries et traiteurs de Charente-Maritime, avec des produits certifiés normes HACCP.",
     specificChallenges: [
       'Hygiène HACCP : zéro joint, zéro rétention bactérienne',
       'Résistance aux graisses, acides et produits de nettoyage industriels',
@@ -200,7 +200,7 @@ export const solutions: Solution[] = [
       'Durabilité face aux équipements roulants lourds',
     ],
     ourApproach: [
-      'PVC en lés soudé à chaud — zéro joint visible',
+      'PVC en lés soudé à chaud : zéro joint visible',
       'Remontées en plinthe soudées pour étanchéité sol/mur',
       'Produits certifiés R10/R11 selon zones (cuisine chaude, plonge)',
       'Couleur claire ou sombre selon les préconisations HACCP',
@@ -214,14 +214,14 @@ export const solutions: Solution[] = [
       'Restaurants étoilés Charente-Maritime : cuisines et offices équipés',
     ],
     faq: [
-      { q: 'Quelle différence entre PVC lés soudé et PVC clipsé pour une cuisine pro ?', a: "Le PVC lés soudé à chaud crée un revêtement parfaitement continu, sans aucun joint. C'est la seule solution conforme aux normes HACCP pour une cuisine professionnelle. Le PVC clipsé (lames ou dalles) laisse des interstices qui retiennent les graisses et les bactéries — non recommandé en cuisine chaude." },
+      { q: 'Quelle différence entre PVC lés soudé et PVC clipsé pour une cuisine pro ?', a: "Le PVC lés soudé à chaud crée un revêtement parfaitement continu, sans aucun joint. C'est la seule solution conforme aux normes HACCP pour une cuisine professionnelle. Le PVC clipsé (lames ou dalles) laisse des interstices qui retiennent les graisses et les bactéries : non recommandé en cuisine chaude." },
       { q: 'Combien de temps dure la pose d\'un sol PVC en cuisine professionnelle ?', a: "Pour une cuisine de 50 à 100 m², comptez 1 à 2 jours de pose. CB Sols s'adapte à vos horaires pour intervenir hors service (nuit ou jour de fermeture)." },
     ],
   },
   {
     slug: 'sol-pvc-hotel',
-    title: 'Sol PVC Hôtel — Espaces Communs & Salles de Bain',
-    metaTitle: 'Sol PVC Hôtel Charente-Maritime — Salles de Bain, Couloirs, Spa',
+    title: 'Sol PVC Hôtel | Espaces Communs & Salles de Bain',
+    metaTitle: 'Sol PVC Hôtel Charente-Maritime | Salles de Bain, Couloirs, Spa',
     metaDescription: 'Sol PVC et douche intégrale PVC pour hôtels en Charente-Maritime. CB Sols : résistance à l\'eau, esthétique premium, pose sans fermeture. Devis gratuit.',
     serviceSlug: 'sol-pvc-les',
     serviceName: 'Sol PVC',
@@ -258,7 +258,7 @@ export const solutions: Solution[] = [
   {
     slug: 'sol-pvc-ehpad',
     title: 'Sol PVC EHPAD & Établissements de Santé',
-    metaTitle: 'Sol PVC EHPAD Charente-Maritime — Normes, Antidérapant, Pose',
+    metaTitle: 'Sol PVC EHPAD Charente-Maritime | Normes, Antidérapant, Pose',
     metaDescription: 'Sol PVC pour EHPAD, cliniques et établissements de santé en Charente-Maritime. CB Sols : produits certifiés R9/R10, pose en milieu occupé. Devis gratuit.',
     serviceSlug: 'sol-pvc-les',
     serviceName: 'Sol PVC Lés',
@@ -295,7 +295,7 @@ export const solutions: Solution[] = [
   {
     slug: 'tapis-sur-mesure-hotel',
     title: 'Tapis Sur Mesure Hôtel',
-    metaTitle: 'Tapis Sur Mesure Hôtel Charente-Maritime — Création Exclusive CB Sols',
+    metaTitle: 'Tapis Sur Mesure Hôtel Charente-Maritime | Création Exclusive CB Sols',
     metaDescription: 'Création de tapis sur mesure pour hôtels en Charente-Maritime. Motif exclusif, logo, dimensions custom. CB Sols : 25 ans d\'expertise. Devis gratuit.',
     serviceSlug: 'tapis-sur-mesure',
     serviceName: 'Tapis sur mesure',
@@ -303,7 +303,7 @@ export const solutions: Solution[] = [
     sectorName: 'Hôtellerie',
     headline: 'Tapis sur mesure pour hôtels',
     tagline: 'L\'identité de votre établissement sous les pieds de vos clients',
-    intro: "Un tapis sur mesure dans le lobby d'un hôtel, c'est souvent le premier souvenir qu'un client emporte. CB Sols crée des tapis avec motifs exclusifs, logo intégré et dimensions sur mesure pour les établissements hôteliers de Charente-Maritime — de l'hôtel boutique à la résidence de tourisme haut de gamme.",
+    intro: "Un tapis sur mesure dans le lobby d'un hôtel, c'est souvent le premier souvenir qu'un client emporte. CB Sols crée des tapis avec motifs exclusifs, logo intégré et dimensions sur mesure pour les établissements hôteliers de Charente-Maritime, de l'hôtel boutique à la résidence de tourisme haut de gamme.",
     specificChallenges: [
       'Cohérence avec l\'identité visuelle de l\'établissement',
       'Résistance aux passages intensifs dans les zones d\'accueil',
@@ -321,7 +321,7 @@ export const solutions: Solution[] = [
       { name: 'Balsan Axminster', desc: 'Tapis tissés Axminster, motifs complexes possibles, qualité hôtelière internationale' },
     ],
     references: [
-      'Hôtel La Baronnie — Île de Ré : tapis motif exclusif pour espaces communs et chambres, 600 m²',
+      'Hôtel La Baronnie, Île de Ré : tapis motif exclusif pour espaces communs et chambres, 600 m²',
       'Résidences de tourisme Charente-Maritime : tapis lobby sur mesure',
     ],
     faq: [
@@ -332,7 +332,7 @@ export const solutions: Solution[] = [
   {
     slug: 'sol-pvc-camping',
     title: 'Sol PVC Camping & Mobil-Home',
-    metaTitle: 'Sol PVC Camping Mobil-Home Charente-Maritime — Pose CB Sols',
+    metaTitle: 'Sol PVC Camping Mobil-Home Charente-Maritime | Pose CB Sols',
     metaDescription: 'Sol PVC waterproof pour campings et mobil-homes en Charente-Maritime. CB Sols : résistance humidité, pose rapide, tarifs compétitifs. Devis gratuit.',
     serviceSlug: 'sol-pvc-lames-dalles',
     serviceName: 'Sol PVC Lames & Dalles',
@@ -348,7 +348,7 @@ export const solutions: Solution[] = [
       'Résistance aux locataires intensifs en juillet-août',
     ],
     ourApproach: [
-      'Lames PVC clipsées waterproof — pose sans colle, rapide et propre',
+      'Lames PVC clipsées waterproof : pose sans colle, rapide et propre',
       'Intervention intersaison (septembre-mars)',
       'Tarifs dégressifs pour les campings qui font rénover plusieurs hébergements',
       'Conseil gamme selon l\'étoilage du camping',
@@ -369,7 +369,7 @@ export const solutions: Solution[] = [
   {
     slug: 'moquette-camping',
     title: 'Moquette Camping & Hébergements Touristiques',
-    metaTitle: 'Moquette Camping Charente-Maritime — Pose Professionnelle CB Sols',
+    metaTitle: 'Moquette Camping Charente-Maritime | Pose Professionnelle CB Sols',
     metaDescription: 'Moquette pour campings, chalets et mobil-homes en Charente-Maritime. CB Sols : résistance humidité, pose intersaison, tarifs dégressifs. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
@@ -377,7 +377,7 @@ export const solutions: Solution[] = [
     sectorName: 'Campings & Tourisme',
     headline: 'Moquette pour campings',
     tagline: "La moquette qui résiste à l'été, à la mer et aux locataires",
-    intro: "La Charente-Maritime compte 350+ campings et hébergements touristiques — la première densité de France. Dans les chalets, bungalows, espaces d'accueil et animations, la moquette crée une atmosphère chaleureuse et absorbante que le PVC seul ne peut pas offrir. CB Sols maîtrise les contraintes spécifiques du secteur : humidité littorale, saisonnalité, renouvellement rapide intersaison.",
+    intro: "La Charente-Maritime compte 350+ campings et hébergements touristiques, la première densité de France. Dans les chalets, bungalows, espaces d'accueil et animations, la moquette crée une atmosphère chaleureuse et absorbante que le PVC seul ne peut pas offrir. CB Sols maîtrise les contraintes spécifiques du secteur : humidité littorale, saisonnalité, renouvellement rapide intersaison.",
     specificChallenges: [
       "Hygrométrie élevée en zone côtière (condensation, remontées)",
       "Trafic locatif intensif de juin à août",
@@ -411,7 +411,7 @@ export const solutions: Solution[] = [
   {
     slug: 'moquette-cinema-salle-spectacle',
     title: 'Moquette Cinéma & Salles de Spectacle',
-    metaTitle: 'Moquette Cinéma Salle Spectacle Charente-Maritime — CB Sols',
+    metaTitle: 'Moquette Cinéma Salle Spectacle Charente-Maritime | CB Sols',
     metaDescription: 'Moquette acoustique pour cinémas, salles de spectacle et auditoriums en Charente-Maritime. CB Sols : isolation phonique, normes ERP, pose sans fermeture. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
@@ -453,7 +453,7 @@ export const solutions: Solution[] = [
   {
     slug: 'sol-pvc-pharmacie',
     title: 'Sol PVC Pharmacie & Cabinets Médicaux',
-    metaTitle: 'Sol PVC Pharmacie Cabinet Médical Charente-Maritime — CB Sols',
+    metaTitle: 'Sol PVC Pharmacie Cabinet Médical Charente-Maritime | CB Sols',
     metaDescription: 'Sol PVC antidérapant pour pharmacies et cabinets médicaux en Charente-Maritime. CB Sols : normes sanitaires, résistance désinfectants, pose rapide. Devis gratuit.',
     serviceSlug: 'sol-pvc-les',
     serviceName: 'Sol PVC Lés',
@@ -495,7 +495,7 @@ export const solutions: Solution[] = [
   {
     slug: 'tapis-entree-immeuble',
     title: "Tapis d'Entrée Immeuble & Copropriétés",
-    metaTitle: "Tapis Entrée Immeuble Copropriété Charente-Maritime — CB Sols",
+    metaTitle: "Tapis Entrée Immeuble Copropriété Charente-Maritime | CB Sols",
     metaDescription: "Tapis d'entrée et couloir pour immeubles et copropriétés en Charente-Maritime. CB Sols : tapis de propreté sur mesure, pose rapide, entretien facilité. Devis gratuit.",
     serviceSlug: 'tapis-de-proprete',
     serviceName: 'Tapis de Propreté',
@@ -503,7 +503,7 @@ export const solutions: Solution[] = [
     sectorName: 'Commerces & Copropriétés',
     headline: "Tapis d'entrée et couloirs d'immeuble",
     tagline: "La première impression commence avant la porte",
-    intro: "L'entrée d'un immeuble ou d'une copropriété est un espace soumis à un trafic intense et à des salissures importantes — sable, eau, boue — en particulier en zone littorale. CB Sols propose des solutions de tapis de propreté et de revêtement de couloir adaptées aux parties communes : résistants, faciles à entretenir, esthétiques et conformes aux normes incendie des ERP.",
+    intro: "L'entrée d'un immeuble ou d'une copropriété est un espace soumis à un trafic intense et à des salissures importantes (sable, eau, boue), en particulier en zone littorale. CB Sols propose des solutions de tapis de propreté et de revêtement de couloir adaptées aux parties communes : résistants, faciles à entretenir, esthétiques et conformes aux normes incendie des ERP.",
     specificChallenges: [
       "Retenir les salissures avant qu'elles pénètrent dans l'immeuble",
       "Résistance aux passages intensifs (résidents + livraisons + visiteurs)",
@@ -537,7 +537,7 @@ export const solutions: Solution[] = [
   {
     slug: 'moquette-collectivite',
     title: 'Moquette Collectivités & Établissements Scolaires',
-    metaTitle: 'Moquette Collectivités Charente-Maritime — Marchés Publics CB Sols',
+    metaTitle: 'Moquette Collectivités Charente-Maritime | Marchés Publics CB Sols',
     metaDescription: 'Moquette pour collectivités, écoles et mairies en Charente-Maritime. CB Sols répond aux appels d\'offres, pose en vacances scolaires. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',

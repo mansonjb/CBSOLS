@@ -14,14 +14,14 @@ export const faqs: Faq[] = [
   {
     slug: 'difference-moquette-contrat-particulier',
     question: 'Quelle est la différence entre moquette contrat et moquette pour particulier ?',
-    metaTitle: 'Moquette Contrat vs Moquette Particulier — Différences CB Sols',
+    metaTitle: 'Moquette Contrat vs Moquette Particulier | Différences CB Sols',
     metaDescription: 'Moquette contrat ou moquette résidentielle : quelles différences concrètes ? Normes, durabilité, prix. CB Sols explique tout simplement.',
     category: 'Moquette',
     shortAnswer: "La moquette contrat est conçue pour les usages professionnels intensifs : classements d'usage supérieurs (32-33), certifications incendie obligatoires (Bfl-s1) et résistance mécanique bien supérieure à la moquette résidentielle.",
     sections: [
       {
         title: 'Les classements d\'usage : le critère fondamental',
-        body: "La différence principale entre moquette contrat et moquette résidentielle tient dans son classement d'usage européen. Les moquettes sont classées de 21 (résidentiel léger) à 34 (commercial très intensif).\n\nMoquette résidentielle : classements 21 à 23. Conçue pour un foyer familial avec un trafic limité. Durée de vie : 5 à 10 ans selon l'usage.\n\nMoquette contrat : classements 31 à 34. Conçue pour les bureaux, hôtels, commerces, établissements de santé. Résistance testée pour des centaines de milliers de passages. Durée de vie : 10 à 20 ans selon le classement et l'entretien.\n\nEn dessous du classement 31, une moquette n'est pas certifiée pour un usage professionnel. La poser dans un hôtel ou des bureaux constitue une non-conformité réglementaire — avec des conséquences potentielles sur les assurances en cas de sinistre.",
+        body: "La différence principale entre moquette contrat et moquette résidentielle tient dans son classement d'usage européen. Les moquettes sont classées de 21 (résidentiel léger) à 34 (commercial très intensif).\n\nMoquette résidentielle : classements 21 à 23. Conçue pour un foyer familial avec un trafic limité. Durée de vie : 5 à 10 ans selon l'usage.\n\nMoquette contrat : classements 31 à 34. Conçue pour les bureaux, hôtels, commerces, établissements de santé. Résistance testée pour des centaines de milliers de passages. Durée de vie : 10 à 20 ans selon le classement et l'entretien.\n\nEn dessous du classement 31, une moquette n'est pas certifiée pour un usage professionnel. La poser dans un hôtel ou des bureaux constitue une non-conformité réglementaire, avec des conséquences potentielles sur les assurances en cas de sinistre.",
       },
       {
         title: 'Les certifications incendie : obligatoires en professionnel',
@@ -33,7 +33,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Le prix : un écart qui se justifie',
-        body: "La moquette contrat coûte plus cher à l'achat. Une moquette résidentielle peut se trouver à 8-15 €/m² fournie. Une moquette contrat de bureau standard est à 15-30 €/m², et une moquette hôtelière haut de gamme (EGE, Balsan) à 25-80 €/m².\n\nMais rapportée à la durée de vie, la moquette contrat est souvent moins chère. Si une moquette résidentielle dure 3 ans dans un usage professionnel (puis doit être remplacée) contre 12 ans pour une moquette contrat, le coût annuel est radicalement différent.\n\nCB Sols ne vend que de la moquette contrat pour les professionnels — jamais de la moquette résidentielle sur un chantier commercial. C'est une question de responsabilité.",
+        body: "La moquette contrat coûte plus cher à l'achat. Une moquette résidentielle peut se trouver à 8-15 €/m² fournie. Une moquette contrat de bureau standard est à 15-30 €/m², et une moquette hôtelière haut de gamme (EGE, Balsan) à 25-80 €/m².\n\nMais rapportée à la durée de vie, la moquette contrat est souvent moins chère. Si une moquette résidentielle dure 3 ans dans un usage professionnel (puis doit être remplacée) contre 12 ans pour une moquette contrat, le coût annuel est radicalement différent.\n\nCB Sols ne vend que de la moquette contrat pour les professionnels, jamais de la moquette résidentielle sur un chantier commercial. C'est une question de responsabilité.",
       },
     ],
     relatedFaqs: ['duree-vie-moquette-professionnelle', 'pose-moquette-sur-carrelage'],
@@ -42,7 +42,7 @@ export const faqs: Faq[] = [
   {
     slug: 'pose-moquette-sur-carrelage',
     question: 'Peut-on poser de la moquette sur du carrelage existant ?',
-    metaTitle: 'Poser Moquette sur Carrelage — Conseils Expert CB Sols',
+    metaTitle: 'Poser Moquette sur Carrelage | Conseils Expert CB Sols',
     metaDescription: 'Peut-on poser de la moquette sur du carrelage ? Conditions, méthodes, avantages et inconvénients. Guide technique par CB Sols en Charente-Maritime.',
     category: 'Technique de Pose',
     shortAnswer: "Oui, sous conditions. Le carrelage doit être plan (tolérance 2mm sous règle de 2m), propre, sans carreau décollé et les joints en bon état. Un ragréage de surfaçage est souvent nécessaire pour effacer les reliefs des joints.",
@@ -70,18 +70,18 @@ export const faqs: Faq[] = [
   {
     slug: 'duree-vie-moquette-professionnelle',
     question: 'Quelle est la durée de vie d\'une moquette professionnelle ?',
-    metaTitle: 'Durée de Vie Moquette Professionnelle — CB Sols',
+    metaTitle: 'Durée de Vie Moquette Professionnelle | CB Sols',
     metaDescription: "Combien de temps dure une moquette professionnelle ? Hôtel, bureau, EHPAD : durées de vie réelles selon l'usage et l'entretien. Guide CB Sols.",
     category: 'Moquette',
     shortAnswer: "Une moquette professionnelle bien choisie et bien entretenue dure 8 à 15 ans selon l'usage. En hôtellerie : 8 à 12 ans en chambre, 5 à 8 ans en couloir. En bureau classement 33 : 12 à 15 ans.",
     sections: [
       {
         title: 'Durées de vie par secteur et type d\'usage',
-        body: "La durée de vie d'une moquette professionnelle varie considérablement selon l'intensité du trafic :\n\nHôtellerie — chambres (classement 33, grammage 600-800 g/m²) : 8 à 12 ans avec un entretien régulier. Les chambres à fort taux d'occupation (90%+) en haut de gamme sont à renouveler plus souvent pour maintenir l'image.\n\nHôtellerie — couloirs (classement 33-34, haute résistance) : 5 à 8 ans. Les couloirs subissent un trafic beaucoup plus intense que les chambres — chariots de ménage, bagages, va-et-vient constant.\n\nBureaux — open space (classement 33, dalles) : 10 à 15 ans avec aspirateur hebdomadaire et injection-extraction annuelle. Les dalles permettent le remplacement partiel des zones les plus usées.\n\nEHPAD — chambres (classement 33, spécial santé) : 8 à 12 ans. Les contraintes sanitaires imposent une vigilance particulière sur les taches et l'hygiène.\n\nCinémas et salles de spectacle (classement 34) : 12 à 18 ans. Malgré le fort trafic, les passages sont concentrés sur des plages horaires courtes et le nettoyage est régulier.",
+        body: "La durée de vie d'une moquette professionnelle varie considérablement selon l'intensité du trafic :\n\nHôtellerie, chambres (classement 33, grammage 600-800 g/m²) : 8 à 12 ans avec un entretien régulier. Les chambres à fort taux d'occupation (90%+) en haut de gamme sont à renouveler plus souvent pour maintenir l'image.\n\nHôtellerie, couloirs (classement 33-34, haute résistance) : 5 à 8 ans. Les couloirs subissent un trafic beaucoup plus intense que les chambres : chariots de ménage, bagages, va-et-vient constant.\n\nBureaux, open space (classement 33, dalles) : 10 à 15 ans avec aspirateur hebdomadaire et injection-extraction annuelle. Les dalles permettent le remplacement partiel des zones les plus usées.\n\nEHPAD, chambres (classement 33, spécial santé) : 8 à 12 ans. Les contraintes sanitaires imposent une vigilance particulière sur les taches et l'hygiène.\n\nCinémas et salles de spectacle (classement 34) : 12 à 18 ans. Malgré le fort trafic, les passages sont concentrés sur des plages horaires courtes et le nettoyage est régulier.",
       },
       {
         title: 'Les facteurs qui allongent ou raccourcissent la durée de vie',
-        body: "L'entretien est le facteur numéro 1. Une moquette mal entretenue (aspiration irrégulière, taches non traitées, pas d'injection-extraction) peut voir sa durée de vie divisée par deux. Inversement, un programme d'entretien rigoureux prolonge significativement sa vie.\n\nLe produit choisi est déterminant. Un grammage supérieur (800 g/m² vs 500 g/m²) fait une différence notable en couloir hôtelier. Le type de fibre aussi : le nylon 6.6 est plus résistant à l'abrasion que le nylon 6, lui-même supérieur au polyester.\n\nLe support et la pose influencent la tenue dans le temps. Une moquette mal collée se décolle aux bords et forme des plis — causes d'usure prématurée et de risques de chute. CB Sols prépare toujours le support et choisit l'adhésif adapté pour garantir une tenue dans la durée.\n\nLes conditions climatiques locales jouent aussi un rôle en Charente-Maritime. L'hygrométrie élevée en zone côtière peut affecter le dos de la moquette si le sous-sol n'est pas parfaitement sec.",
+        body: "L'entretien est le facteur numéro 1. Une moquette mal entretenue (aspiration irrégulière, taches non traitées, pas d'injection-extraction) peut voir sa durée de vie divisée par deux. Inversement, un programme d'entretien rigoureux prolonge significativement sa vie.\n\nLe produit choisi est déterminant. Un grammage supérieur (800 g/m² vs 500 g/m²) fait une différence notable en couloir hôtelier. Le type de fibre aussi : le nylon 6.6 est plus résistant à l'abrasion que le nylon 6, lui-même supérieur au polyester.\n\nLe support et la pose influencent la tenue dans le temps. Une moquette mal collée se décolle aux bords et forme des plis, causes d'usure prématurée et de risques de chute. CB Sols prépare toujours le support et choisit l'adhésif adapté pour garantir une tenue dans la durée.\n\nLes conditions climatiques locales jouent aussi un rôle en Charente-Maritime. L'hygrométrie élevée en zone côtière peut affecter le dos de la moquette si le sous-sol n'est pas parfaitement sec.",
       },
       {
         title: 'Les signes qui indiquent qu\'il faut remplacer',
@@ -98,7 +98,7 @@ export const faqs: Faq[] = [
   {
     slug: 'sol-pvc-cuisine-professionnelle-norme',
     question: 'Quelles sont les normes du sol PVC pour une cuisine professionnelle ?',
-    metaTitle: 'Normes Sol PVC Cuisine Professionnelle — CB Sols',
+    metaTitle: 'Normes Sol PVC Cuisine Professionnelle | CB Sols',
     metaDescription: 'Quelles normes pour le sol PVC en cuisine professionnelle ? HACCP, antidérapance R11, classement incendie, soudure à chaud. CB Sols explique.',
     category: 'Sol PVC',
     shortAnswer: "Un sol PVC de cuisine professionnelle doit être classé R10 ou R11 (antidérapance), résistant aux graisses et désinfectants, soudé à chaud (zéro joint) et conforme aux exigences HACCP. Tarkett iQ Granit et Forbo Eternal sont les références.",
@@ -113,7 +113,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'La soudure à chaud : technique et nécessité',
-        body: "La soudure à chaud est une technique qui consiste à créer une jonction étanche entre deux lés de sol PVC en faisant fondre un cordon de soudure (de même composition que le sol) dans la gorge usinée entre les deux lés.\n\nPourquoi c'est obligatoire en cuisine : sans soudure, la jonction entre deux lés est un joint qui, même très serré, permet aux liquides, graisses et micro-organismes de s'infiltrer sous le revêtement. En cuisine professionnelle, soumise à des nettoyages haute pression, cette infiltration est inévitable et rapide.\n\nLa soudure à chaud nécessite un matériel spécifique (pistolet de soudure et bus calibrés) et une formation technique. CB Sols forme ses poseurs à cette technique et réalise la soudure sur tous ses chantiers cuisine professionnelle.\n\nLes remontées en cuvette (le sol PVC soudé qui remonte de 10 à 15 cm sur les murs) complètent le dispositif d'étanchéité en éliminant la jonction sol/mur — autre point critique de contamination.",
+        body: "La soudure à chaud est une technique qui consiste à créer une jonction étanche entre deux lés de sol PVC en faisant fondre un cordon de soudure (de même composition que le sol) dans la gorge usinée entre les deux lés.\n\nPourquoi c'est obligatoire en cuisine : sans soudure, la jonction entre deux lés est un joint qui, même très serré, permet aux liquides, graisses et micro-organismes de s'infiltrer sous le revêtement. En cuisine professionnelle, soumise à des nettoyages haute pression, cette infiltration est inévitable et rapide.\n\nLa soudure à chaud nécessite un matériel spécifique (pistolet de soudure et bus calibrés) et une formation technique. CB Sols forme ses poseurs à cette technique et réalise la soudure sur tous ses chantiers cuisine professionnelle.\n\nLes remontées en cuvette (le sol PVC soudé qui remonte de 10 à 15 cm sur les murs) complètent le dispositif d'étanchéité en éliminant la jonction sol/mur, autre point critique de contamination.",
       },
       {
         title: 'Les produits de référence et leurs certifications',
@@ -126,7 +126,7 @@ export const faqs: Faq[] = [
   {
     slug: 'devis-revetement-sol-gratuit',
     question: 'Comment obtenir un devis gratuit pour son revêtement de sol ?',
-    metaTitle: 'Devis Revêtement de Sol Gratuit — CB Sols Charente-Maritime',
+    metaTitle: 'Devis Revêtement de Sol Gratuit | CB Sols Charente-Maritime',
     metaDescription: 'Comment obtenir un devis gratuit pour votre revêtement de sol ? Process CB Sols, délais, ce qui est inclus. Devis sous 48h en Charente-Maritime.',
     category: 'Devis & Process',
     shortAnswer: "CB Sols se déplace gratuitement dans toute la Charente-Maritime pour mesurer, évaluer le support et remettre un devis chiffré sous 48h. Contactez par téléphone, formulaire ou email avec vos plans.",
@@ -137,7 +137,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Ce que comprend le devis CB Sols',
-        body: "Un devis CB Sols est complet et transparent. Il comprend :\n\n- La description précise des travaux (surfaces, produits, méthodes)\n- Le détail HT de chaque poste : fourniture matériaux, dépose de l'ancien revêtement (si applicable), préparation du support (ragréage, primaire), pose, soudure (si applicable), finitions (plinthes, seuils)\n- Le prix TTC avec indication du taux de TVA applicable (20% professionnel, 10% rénovation résidentielle +2 ans)\n- Les délais de réalisation et la date de disponibilité de l'équipe\n- La durée de validité du devis (généralement 3 mois)\n\nLe devis est sans engagement. Vous pouvez demander des alternatives de produits ou de méthodes — CB Sols présente systématiquement au moins deux options de gamme.",
+        body: "Un devis CB Sols est complet et transparent. Il comprend :\n\n- La description précise des travaux (surfaces, produits, méthodes)\n- Le détail HT de chaque poste : fourniture matériaux, dépose de l'ancien revêtement (si applicable), préparation du support (ragréage, primaire), pose, soudure (si applicable), finitions (plinthes, seuils)\n- Le prix TTC avec indication du taux de TVA applicable (20% professionnel, 10% rénovation résidentielle +2 ans)\n- Les délais de réalisation et la date de disponibilité de l'équipe\n- La durée de validité du devis (généralement 3 mois)\n\nLe devis est sans engagement. Vous pouvez demander des alternatives de produits ou de méthodes : CB Sols présente systématiquement au moins deux options de gamme.",
       },
       {
         title: 'Peut-on avoir une estimation sans visite ?',

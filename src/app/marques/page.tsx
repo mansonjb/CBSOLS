@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { brands } from '@/data/brands'
 
 export const metadata: Metadata = {
-  title: 'Marques Partenaires — EGE, Gerflor, Tarkett, Balsan | CB Sols',
+  title: 'Marques Partenaires | EGE, Gerflor, Tarkett, Balsan | CB Sols',
   description: 'CB Sols est revendeur agréé des meilleures marques de revêtements de sol : EGE, Gerflor, Tarkett, Balsan, Interface. Showroom Villedoux, Charente-Maritime.',
   alternates: { canonical: 'https://cbsols.fr/marques' },
 }

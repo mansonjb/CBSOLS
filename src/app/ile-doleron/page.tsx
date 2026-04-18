@@ -5,7 +5,7 @@ import { services } from '@/data/services'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: "Revêtement de Sol Île d'Oléron — CB Sols, Artisan Certifié",
+  title: "Revêtement de Sol Île d'Oléron | CB Sols, Artisan Certifié",
   description: "CB Sols intervient sur toute l'Île d'Oléron pour la pose de moquette, sol PVC et tapis sur mesure. Hôtels, campings, résidences. Devis gratuit sous 48h.",
   alternates: { canonical: 'https://cbsols.fr/ile-doleron' },
 }
@@ -14,7 +14,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: "Revêtement de Sol Île d'Oléron",
-  description: "Pose de revêtement de sol sur l'Île d'Oléron par CB Sols — moquette, sol PVC, tapis sur mesure.",
+  description: "Pose de revêtement de sol sur l'Île d'Oléron par CB Sols : moquette, sol PVC, tapis sur mesure.",
   areaServed: { '@type': 'Place', name: "Île d'Oléron" },
   provider: {
     '@type': 'LocalBusiness',
@@ -61,7 +61,7 @@ export default function IleDoleronPage() {
             </h1>
 
             <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '640px', lineHeight: 1.75, marginBottom: '2.5rem' }}>
-              CB Sols intervient sur toute l'Île d'Oléron — 2e île de France Atlantique, destination touristique majeure de Charente-Maritime. Moquette hôtelière, sol PVC cuisine professionnelle, tapis sur mesure pour campings et résidences : nous connaissons les contraintes de l'île.
+              CB Sols intervient sur toute l'Île d'Oléron, 2e île de France Atlantique, destination touristique majeure de Charente-Maritime. Moquette hôtelière, sol PVC cuisine professionnelle, tapis sur mesure pour campings et résidences : nous connaissons les contraintes de l'île.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

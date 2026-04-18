@@ -33,7 +33,7 @@ export const services: Service[] = [
     useCases: ['Chambres d\'hôtel', 'Salles de réunion', 'Bureaux', 'Escaliers', 'Couloirs'],
     brands: ['EGE', 'Balsan', 'Forbo', 'Balta'],
     geoVerb: 'Pose de moquette à',
-    metaTitle: (city) => `Pose de Moquette ${city} — CB Sols, Artisan Certifié`,
+    metaTitle: (city) => `Pose de Moquette ${city} | CB Sols, Artisan Certifié`,
     metaDescription: (city) =>
       `Pose de moquette professionnelle à ${city} et environs. CB Sols : artisan spécialiste depuis 25 ans, devis gratuit. Hôtels, bureaux, particuliers.`,
     h1: (city) => `Pose de Moquette à ${city}`,
@@ -56,7 +56,7 @@ export const services: Service[] = [
     useCases: ['Commerces', 'Cuisines professionnelles', 'Couloirs', 'Open spaces', 'Rénovation rapide'],
     brands: ['Gerflor', 'Tarkett', 'Forbo', 'Armstrong'],
     geoVerb: 'Sol PVC à',
-    metaTitle: (city) => `Sol PVC Lames & Dalles ${city} — CB Sols`,
+    metaTitle: (city) => `Sol PVC Lames & Dalles ${city} | CB Sols`,
     metaDescription: (city) =>
       `Pose de sol PVC lames et dalles à ${city}. CB Sols installe les meilleures marques (Gerflor, Tarkett) pour professionnels et particuliers. Devis gratuit.`,
     h1: (city) => `Sol PVC Lames & Dalles à ${city}`,
@@ -68,7 +68,7 @@ export const services: Service[] = [
     icon: '▬',
     description: 'Revêtement vinyle en rouleaux, pose soignée avec plinthes et soudure à chaud.',
     longDescription:
-      "Le PVC en lés (ou vinyle en rouleaux) est le revêtement de référence pour les espaces professionnels exigeants. Sa pose en continuité sans joints, avec soudure à chaud, garantit une parfaite étanchéité — idéale pour les cuisines, salles de soins et espaces collectifs nécessitant un nettoyage intensif.",
+      "Le PVC en lés (ou vinyle en rouleaux) est le revêtement de référence pour les espaces professionnels exigeants. Sa pose en continuité sans joints, avec soudure à chaud, garantit une parfaite étanchéité : idéale pour les cuisines, salles de soins et espaces collectifs nécessitant un nettoyage intensif.",
     benefits: [
       'Aucun joint = hygiène maximale',
       'Soudure à chaud étanche',
@@ -79,7 +79,7 @@ export const services: Service[] = [
     useCases: ['Cuisines professionnelles', 'Établissements de santé', 'Laboratoires', 'Couloirs collectifs', 'Amphithéâtres'],
     brands: ['Gerflor', 'Tarkett', 'Forbo Flooring', 'Altro'],
     geoVerb: 'PVC en lés à',
-    metaTitle: (city) => `Sol PVC en Lés ${city} — Pose Professionnelle CB Sols`,
+    metaTitle: (city) => `Sol PVC en Lés ${city} | Pose Professionnelle CB Sols`,
     metaDescription: (city) =>
       `Pose de sol PVC en lés à ${city} par CB Sols. Revêtement vinyle en rouleaux avec soudure à chaud, idéal pour professionnels de santé et collectivités.`,
     h1: (city) => `Sol PVC en Lés à ${city}`,
@@ -102,7 +102,7 @@ export const services: Service[] = [
     useCases: ['Hôtels & résidences', 'EHPAD & maisons de retraite', 'Campings premium', 'Particuliers en rénovation', 'Résidences de tourisme'],
     brands: ['Altro', 'Gerflor', 'Forbo'],
     geoVerb: 'Douche intégrale PVC à',
-    metaTitle: (city) => `Douche Intégrale PVC ${city} — CB Sols`,
+    metaTitle: (city) => `Douche Intégrale PVC ${city} | CB Sols`,
     metaDescription: (city) =>
       `Installation de douches intégrales PVC à ${city}. Étanchéité parfaite, sans joints, entretien facile. Idéal hôtels, EHPAD et rénovation. CB Sols, devis gratuit.`,
     h1: (city) => `Douche Intégrale PVC à ${city}`,
@@ -114,7 +114,7 @@ export const services: Service[] = [
     icon: '◈',
     description: 'Création de tapis décoratifs sur mesure, finitions premium pour hôtels et espaces de prestige.',
     longDescription:
-      "Le tapis sur mesure est la signature d'un espace de prestige. CB Sols collabore avec les designers et architectes d'intérieur pour concevoir des pièces uniques : forme, couleur, matière, finition de bords — tout est personnalisable. Idéal pour les lobbys d'hôtels, restaurants gastronomiques et résidences de luxe.",
+      "Le tapis sur mesure est la signature d'un espace de prestige. CB Sols collabore avec les designers et architectes d'intérieur pour concevoir des pièces uniques : forme, couleur, matière, finition de bords, tout est personnalisable. Idéal pour les lobbys d'hôtels, restaurants gastronomiques et résidences de luxe.",
     benefits: [
       'Dimension et forme au millimètre',
       'Choix illimité de coloris et matières',
@@ -125,7 +125,7 @@ export const services: Service[] = [
     useCases: ['Lobbys d\'hôtels', 'Restaurants gastronomiques', 'Salles de réception', 'Résidences de luxe', 'Boutiques premium'],
     brands: ['EGE', 'Brintons', 'Balsan', 'Lano'],
     geoVerb: 'Tapis sur mesure à',
-    metaTitle: (city) => `Tapis Sur Mesure ${city} — CB Sols, Création Sur-Mesure`,
+    metaTitle: (city) => `Tapis Sur Mesure ${city} | CB Sols, Création Sur-Mesure`,
     metaDescription: (city) =>
       `Tapis décoratifs sur mesure à ${city}. CB Sols crée vos tapis uniques pour hôtels, restaurants et espaces prestige. Devis personnalisé.`,
     h1: (city) => `Tapis Sur Mesure à ${city}`,
@@ -148,7 +148,7 @@ export const services: Service[] = [
     useCases: ['Entrées d\'hôtels', 'Commerces', 'Bureaux & entreprises', 'Collectivités', 'Résidences'],
     brands: ['Coba', 'Forbo', 'Coral', 'Notrax'],
     geoVerb: 'Tapis de propreté à',
-    metaTitle: (city) => `Tapis de Propreté ${city} — CB Sols, Sur Mesure`,
+    metaTitle: (city) => `Tapis de Propreté ${city} | CB Sols, Sur Mesure`,
     metaDescription: (city) =>
       `Tapis de propreté professionnels à ${city}. Sur mesure, avec logo possible. CB Sols protège vos sols et soigne l'image de votre établissement.`,
     h1: (city) => `Tapis de Propreté à ${city}`,
@@ -171,7 +171,7 @@ export const services: Service[] = [
     useCases: ['Hôtels entre saisons', 'Bureaux', 'Salles de conférence', 'Résidences', 'Campings premium'],
     brands: ['Prochem', 'Karcher', 'Chemspec'],
     geoVerb: 'Nettoyage de moquette à',
-    metaTitle: (city) => `Nettoyage de Moquette ${city} — CB Sols, Injection-Extraction`,
+    metaTitle: (city) => `Nettoyage de Moquette ${city} | CB Sols, Injection-Extraction`,
     metaDescription: (city) =>
       `Nettoyage professionnel de moquette à ${city} par injection-extraction. CB Sols restitue l'éclat de vos moquettes. Intervention rapide, devis gratuit.`,
     h1: (city) => `Nettoyage de Moquette à ${city}`,
@@ -194,7 +194,7 @@ export const services: Service[] = [
     useCases: ['Maisons et appartements', 'Bureaux et commerces', 'Hôtels et restaurants', 'Collectivités', 'Chantiers neufs et rénovation'],
     brands: ['Gerflor', 'Forbo', 'EGE', 'Tarkett', 'Balsan'],
     geoVerb: 'Revêtement de sol à',
-    metaTitle: (city) => `Revêtement de Sol ${city} — CB Sols, Artisan Spécialiste`,
+    metaTitle: (city) => `Revêtement de Sol ${city} | CB Sols, Artisan Spécialiste`,
     metaDescription: (city) =>
       `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis 25 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
     h1: (city) => `Revêtement de Sol à ${city}`,

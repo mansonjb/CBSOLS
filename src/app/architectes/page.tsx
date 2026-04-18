@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: 'Architectes & Prescripteurs — CB Sols, Partenaire Revêtement de Sol',
+  title: 'Architectes & Prescripteurs | CB Sols, Partenaire Revêtement de Sol',
   description: 'CB Sols accompagne architectes, décorateurs et maîtres d\'œuvre en Charente-Maritime. Fiches techniques, nuanciers, suivi de chantier dédié. Devis prescripteur sous 24h.',
   alternates: { canonical: 'https://cbsols.fr/architectes' },
 }
@@ -12,7 +12,7 @@ const atouts = [
   {
     num: '01',
     title: 'Fiches techniques complètes',
-    desc: 'Classements feu, acoustique, résistance chimique, formats de pose — tous les documents nécessaires à vos DOE et CCTP disponibles sur demande.',
+    desc: 'Classements feu, acoustique, résistance chimique, formats de pose : tous les documents nécessaires à vos DOE et CCTP disponibles sur demande.',
   },
   {
     num: '02',
@@ -22,7 +22,7 @@ const atouts = [
   {
     num: '03',
     title: 'Devis sous 24h (vs 48h standard)',
-    desc: 'Les dossiers architectes sont traités en priorité. Envoyez vos plans DXF/PDF et vos spécifications — retour chiffré le lendemain.',
+    desc: 'Les dossiers architectes sont traités en priorité. Envoyez vos plans DXF/PDF et vos spécifications : retour chiffré le lendemain.',
   },
   {
     num: '04',
@@ -37,7 +37,7 @@ const atouts = [
   {
     num: '06',
     title: 'Garantie décennale + certificats',
-    desc: 'Attestation décennale à jour, assurance RC pro, certificats de conformité des produits — dossier complet pour votre DOE à la livraison.',
+    desc: 'Attestation décennale à jour, assurance RC pro, certificats de conformité des produits : dossier complet pour votre DOE à la livraison.',
   },
 ]
 
@@ -45,16 +45,16 @@ const process = [
   { step: 'Brief', desc: 'Envoyez vos plans, votre programme et vos exigences techniques. CB Sols analyse la faisabilité et vous rappelle sous 4h.' },
   { step: 'Proposition', desc: 'Sélection de produits adaptés à vos spécifications (classements, esthétique, budget maître d\'ouvrage) avec alternatives.' },
   { step: 'Devis CCTP', desc: 'Devis détaillé par poste, compatible avec votre CCTP, incluant fiches techniques et références normatives.' },
-  { step: 'Chantier', desc: 'Pose par l\'équipe CB Sols — pas de sous-traitance. Planning respect, photos d\'avancement si souhaité.' },
+  { step: 'Chantier', desc: 'Pose par l\'équipe CB Sols, pas de sous-traitance. Planning respect, photos d\'avancement si souhaité.' },
   { step: 'DOE', desc: 'Remise du dossier des ouvrages exécutés complet : produits posés, fiches techniques, attestations, garanties.' },
 ]
 
 const secteurs = [
-  { label: 'Hôtellerie & tourisme', desc: 'Îles de Ré et Oléron, La Rochelle, Royan — hôtels 2 à 5 étoiles, résidences, campings' },
-  { label: 'Bureaux & tertiaire', desc: 'Open spaces, salles de réunion, accueil — dalles acoustiques, LVT, moquette contrat' },
+  { label: 'Hôtellerie & tourisme', desc: 'Îles de Ré et Oléron, La Rochelle, Royan : hôtels 2 à 5 étoiles, résidences, campings' },
+  { label: 'Bureaux & tertiaire', desc: 'Open spaces, salles de réunion, accueil : dalles acoustiques, LVT, moquette contrat' },
   { label: 'EHPAD & santé', desc: 'Moquettes bactériostatiques, PVC homogènes certifiés, accessibilité PMR' },
   { label: 'Restauration & CHR', desc: 'Cuisines pro R11 soudées, salles acoustiques, espaces mixtes' },
-  { label: 'Collectivités & ERP', desc: 'Appels d\'offres, classements feu, accessibilité — dossiers conformes' },
+  { label: 'Collectivités & ERP', desc: 'Appels d\'offres, classements feu, accessibilité : dossiers conformes' },
 ]
 
 export default function ArchitectesPage() {
@@ -161,7 +161,7 @@ export default function ArchitectesPage() {
             Parlons de votre projet
           </h2>
           <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.7, marginBottom: '1rem' }}>
-            <strong style={{ color: 'var(--dark-2)' }}>Valentin Prévoteau</strong> — {company.phone}
+            <strong style={{ color: 'var(--dark-2)' }}>Valentin Prévoteau</strong>, {company.phone}
           </p>
           <p style={{ fontSize: '0.82rem', color: 'var(--muted)', marginBottom: '2.5rem' }}>
             Réponse sous 4h en semaine. Envoyez plans et spécifications à{' '}

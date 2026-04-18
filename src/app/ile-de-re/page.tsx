@@ -5,7 +5,7 @@ import { services } from '@/data/services'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: "Revêtement de Sol Île de Ré — CB Sols, Artisan Certifié",
+  title: "Revêtement de Sol Île de Ré | CB Sols, Artisan Certifié",
   description: "CB Sols intervient sur toute l'Île de Ré pour la pose de moquette, sol PVC et tapis sur mesure. Hôtels, campings, résidences. Devis gratuit sous 48h.",
   alternates: { canonical: 'https://cbsols.fr/ile-de-re' },
 }
@@ -14,7 +14,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: "Revêtement de Sol Île de Ré",
-  description: "Pose de revêtement de sol sur l'Île de Ré par CB Sols — moquette, sol PVC, tapis sur mesure.",
+  description: "Pose de revêtement de sol sur l'Île de Ré par CB Sols : moquette, sol PVC, tapis sur mesure.",
   areaServed: { '@type': 'Place', name: "Île de Ré" },
   provider: {
     '@type': 'LocalBusiness',
@@ -61,7 +61,7 @@ export default function IleDeRePage() {
             </h1>
 
             <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '640px', lineHeight: 1.75, marginBottom: '2.5rem' }}>
-              CB Sols intervient sur toute l'Île de Ré — 1re île touristique de la côte Atlantique, reliée à La Rochelle par le viaduc depuis 1988. Moquette hôtelière, sol PVC cuisine professionnelle, tapis sur mesure pour campings et résidences de tourisme : nous maîtrisons les contraintes spécifiques de l'île.
+              CB Sols intervient sur toute l'Île de Ré, 1re île touristique de la côte Atlantique, reliée à La Rochelle par le viaduc depuis 1988. Moquette hôtelière, sol PVC cuisine professionnelle, tapis sur mesure pour campings et résidences de tourisme : nous maîtrisons les contraintes spécifiques de l'île.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

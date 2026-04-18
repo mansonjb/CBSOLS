@@ -12,8 +12,8 @@ const cormorant = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-ser
 
 export const metadata: Metadata = {
   title: {
-    default: 'CB Sols — Artisan Revêtement de Sol La Rochelle & Île de Ré',
-    template: '%s — CB Sols',
+    default: 'CB Sols | Artisan Revêtement de Sol La Rochelle & Île de Ré',
+    template: '%s | CB Sols',
   },
   description:
     'CB Sols, artisan spécialiste du revêtement de sol depuis 25 ans en Charente-Maritime. Moquette, sol PVC, tapis sur mesure pour particuliers et professionnels à La Rochelle, Île de Ré et environs.',

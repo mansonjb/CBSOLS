@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: 'Tarifs et Prix — Pose Revêtement de Sol Professionnel CB Sols',
+  title: 'Tarifs et Prix | Pose Revêtement de Sol Professionnel CB Sols',
   description: 'Grille de tarifs 2025 pour la pose de moquette, sol PVC et tapis en Charente-Maritime. Fourchettes honnêtes, devis gratuit sous 48h. CB Sols à La Rochelle.',
   alternates: { canonical: 'https://cbsols.fr/tarifs' },
 }

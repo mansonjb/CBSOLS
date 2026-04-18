@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityData = getCityBySlug(city)
   if (!cityData) return {}
   return {
-    title: `Revêtement de Sol ${cityData.name} — CB Sols, Artisan Certifié`,
+    title: `Revêtement de Sol ${cityData.name} | CB Sols, Artisan Certifié`,
     description: `Pose de revêtement de sol à ${cityData.name} par CB Sols. Spécialiste moquette, sol PVC et tapis depuis 25 ans. Devis gratuit, intervention rapide en ${cityZoneLabels[cityData.zone]}.`,
     alternates: { canonical: `https://cbsols.fr/revetement-sol-${city}` },
   }
@@ -83,7 +83,7 @@ export default async function CityHubPage({ params }: Props) {
 
             <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '640px', lineHeight: 1.7, marginBottom: '2.5rem' }}>
               CB Sols intervient à {cityData.name}, {cityData.description}, pour tous vos projets de revêtement de sol.
-              Moquette, sol PVC, tapis sur mesure — posés par des artisans qualifiés depuis 25 ans en Charente-Maritime. Devis gratuit sous 48h.
+              Moquette, sol PVC, tapis sur mesure : posés par des artisans qualifiés depuis 25 ans en Charente-Maritime. Devis gratuit sous 48h.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -138,7 +138,7 @@ export default async function CityHubPage({ params }: Props) {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {[
                   { label: `Intervention rapide à ${cityData.name}`, desc: 'Basé en Charente-Maritime, disponible sous 48-72h pour un déplacement estimatif' },
-                  { label: 'Devis gratuit et détaillé', desc: 'Métrés, matériaux, main d\'œuvre — tout est précisé dans notre devis' },
+                  { label: 'Devis gratuit et détaillé', desc: 'Métrés, matériaux, main d\'œuvre : tout est précisé dans notre devis' },
                   { label: 'Pose soignée par des artisans', desc: 'Équipe CB Sols formée aux exigences des chantiers professionnels et résidentiels' },
                   { label: 'Garantie décennale', desc: 'Tous nos chantiers à ' + cityData.name + ' sont couverts par la garantie décennale' },
                 ].map((item) => (
@@ -155,7 +155,7 @@ export default async function CityHubPage({ params }: Props) {
         {/* FAQ locale */}
         <section style={{ padding: '4rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '2rem' }}>FAQ — Revêtement de sol à {cityData.name}</div>
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '2rem' }}>FAQ - Revêtement de sol à {cityData.name}</div>
             {[
               {
                 q: `CB Sols intervient-il bien à ${cityData.name} ?`,

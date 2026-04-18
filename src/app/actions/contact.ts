@@ -41,7 +41,7 @@ export async function sendContactForm(
     <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; background: #0D0C0A; color: #F0EBE3; padding: 40px;">
       <div style="border-bottom: 2px solid #C4714A; padding-bottom: 20px; margin-bottom: 30px;">
         <h1 style="font-size: 24px; color: #C4714A; margin: 0;">Nouvelle demande de devis</h1>
-        <p style="color: #8A8070; margin: 8px 0 0; font-size: 14px;">CB Sols — cbsols.fr</p>
+        <p style="color: #8A8070; margin: 8px 0 0; font-size: 14px;">CB Sols, cbsols.fr</p>
       </div>
 
       <table style="width: 100%; border-collapse: collapse;">
@@ -76,7 +76,7 @@ export async function sendContactForm(
   const autoReplyHtml = `
     <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; background: #0D0C0A; color: #F0EBE3; padding: 40px;">
       <h1 style="font-size: 24px; color: #C4714A; margin: 0 0 8px;">Votre demande a bien été reçue</h1>
-      <p style="color: #8A8070; font-size: 14px; margin: 0 0 30px;">CB Sols — Revêtements de sol en Charente-Maritime</p>
+      <p style="color: #8A8070; font-size: 14px; margin: 0 0 30px;">CB Sols : Revêtements de sol en Charente-Maritime</p>
 
       <p style="color: #B8AFA4; line-height: 1.7;">Bonjour ${name},</p>
       <p style="color: #B8AFA4; line-height: 1.7;">
@@ -97,14 +97,14 @@ export async function sendContactForm(
       from: process.env.CONTACT_FROM,
       to: process.env.CONTACT_TO,
       replyTo: email,
-      subject: `[CB Sols] Devis — ${projectType || 'Nouveau contact'} — ${name}`,
+      subject: `[CB Sols] Devis | ${projectType || 'Nouveau contact'} | ${name}`,
       html: htmlBody,
     })
 
     await transporter.sendMail({
       from: process.env.CONTACT_FROM,
       to: email,
-      subject: 'CB Sols — Votre demande a bien été reçue',
+      subject: 'CB Sols : Votre demande a bien été reçue',
       html: autoReplyHtml,
     })
 

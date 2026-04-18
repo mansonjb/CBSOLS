@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: 'Mentions Légales — CB Sols',
+  title: 'Mentions Légales | CB Sols',
   robots: { index: false },
 }
 

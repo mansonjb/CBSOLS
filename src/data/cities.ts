@@ -94,7 +94,7 @@ export const cities: City[] = [
     name: 'Villedoux',
     department: '17',
     zone: 'la-rochelle',
-    description: 'commune rurale de l\'agglo rochelaise — siège de CB Sols',
+    description: 'commune rurale de l\'agglo rochelaise, siège de CB Sols',
     population: 2100,
   },
   // Île de Ré

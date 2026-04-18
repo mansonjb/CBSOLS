@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const sector = getSectorBySlug(slug)
   if (!sector) return {}
   return {
-    title: `Revêtement Sol ${sector.name} — CB Sols`,
+    title: `Revêtement Sol ${sector.name} | CB Sols`,
     description: `CB Sols, partenaire revêtement de sol pour ${sector.name.toLowerCase()} en Charente-Maritime. ${sector.tagline}. Devis gratuit, intervention rapide.`,
     alternates: { canonical: `https://cbsols.fr/secteurs/${slug}` },
   }

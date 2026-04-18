@@ -3,7 +3,7 @@ import { company } from '@/data/company'
 import { ContactForm } from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact & Devis Gratuit — CB Sols La Rochelle',
+  title: 'Contact & Devis Gratuit | CB Sols La Rochelle',
   description:
     'Demandez votre devis gratuit à CB Sols. Artisan revêtement de sol à La Rochelle, Île de Ré et Charente-Maritime. Réponse sous 48h.',
 }

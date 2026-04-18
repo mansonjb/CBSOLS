@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { sectors } from '@/data/sectors'
 
 export const metadata: Metadata = {
-  title: 'Solutions Pro — Hôtels, Restaurants, Bureaux, Collectivités',
+  title: 'Solutions Pro | Hôtels, Restaurants, Bureaux, Collectivités',
   description:
     'CB Sols, partenaire des professionnels de Charente-Maritime. Solutions revêtement de sol pour hôtellerie, restauration, bureaux, collectivités, commerces, campings et EHPAD.',
 }
@@ -18,7 +18,7 @@ export default function SecteursPage() {
             Solutions pour chaque secteur
           </h1>
           <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '560px', lineHeight: 1.7, margin: 0 }}>
-            CB Sols accompagne les professionnels de Charente-Maritime avec des solutions adaptées à chaque secteur d'activité. Normes, contraintes techniques, budgets — nous connaissons votre environnement.
+            CB Sols accompagne les professionnels de Charente-Maritime avec des solutions adaptées à chaque secteur d'activité. Normes, contraintes techniques, budgets : nous connaissons votre environnement.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function SecteursPage() {
                       {sector.name}
                     </h2>
                     <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', margin: '0 0 1rem', lineHeight: 1.6, maxWidth: '500px' }}>
-                      {sector.tagline} — {sector.description.slice(0, 100)}…
+                      {sector.tagline} : {sector.description.slice(0, 100)}…
                     </p>
                     <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                       {sector.recommendedServices.slice(0, 3).map((s) => (

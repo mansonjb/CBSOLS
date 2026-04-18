@@ -15,7 +15,7 @@ export const guides: Guide[] = [
   {
     slug: 'choisir-sa-moquette',
     title: 'Comment choisir sa moquette professionnelle',
-    metaTitle: 'Comment Choisir sa Moquette Professionnelle — Guide CB Sols',
+    metaTitle: 'Comment Choisir sa Moquette Professionnelle | Guide CB Sols',
     metaDescription: 'Guide complet pour choisir la bonne moquette professionnelle : critères de choix, classements, grammages, marques. Par CB Sols, spécialiste en Charente-Maritime.',
     category: 'Guide Moquette',
     headline: 'Choisir sa moquette professionnelle',
@@ -49,7 +49,7 @@ export const guides: Guide[] = [
   {
     slug: 'sol-pvc-ou-moquette',
     title: 'Sol PVC ou moquette : comment choisir',
-    metaTitle: 'Sol PVC ou Moquette pour Professionnel — Comparatif CB Sols',
+    metaTitle: 'Sol PVC ou Moquette pour Professionnel | Comparatif CB Sols',
     metaDescription: 'Sol PVC vs moquette : comparatif complet pour les professionnels. Coût, durabilité, entretien, acoustique, confort. Quel revêtement choisir selon votre activité ?',
     category: 'Comparatif',
     headline: 'Sol PVC ou moquette',
@@ -61,7 +61,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Entretien et hygiène : avantage sol PVC",
-        body: "Le sol PVC s'entretient avec une simple serpillère et des produits classiques. En cuisine professionnelle, en couloir d'hôpital ou dans un espace à fort risque de salissures liquides, le PVC est indispensable. Imperméable, il ne retient pas l'humidité et ne favorise pas le développement bactérien.\n\nLa moquette nécessite un aspirateur quotidien et un nettoyage professionnel annuel à l'injection-extraction. Dans les espaces à risque alimentaire ou sanitaire élevé, elle est proscrite.\n\nVerdic : pour les cuisines, les vestiaires, les locaux techniques, les espaces à trafic liquide — sol PVC obligatoire.",
+        body: "Le sol PVC s'entretient avec une simple serpillère et des produits classiques. En cuisine professionnelle, en couloir d'hôpital ou dans un espace à fort risque de salissures liquides, le PVC est indispensable. Imperméable, il ne retient pas l'humidité et ne favorise pas le développement bactérien.\n\nLa moquette nécessite un aspirateur quotidien et un nettoyage professionnel annuel à l'injection-extraction. Dans les espaces à risque alimentaire ou sanitaire élevé, elle est proscrite.\n\nVerdic : pour les cuisines, les vestiaires, les locaux techniques, les espaces à trafic liquide, sol PVC obligatoire.",
       },
       {
         title: "Coût total de possession : c'est plus nuancé",
@@ -69,7 +69,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Esthétique et ambiance",
-        body: "La moquette crée une atmosphère chaleureuse, confortable et feutrée. Elle reste le choix de référence pour les chambres d'hôtel, les salons d'accueil et les bureaux où l'on veut projeter une image premium. Les gammes modernes (EGE, Balsan) offrent une très grande variété de motifs et coloris.\n\nLe sol PVC a fait d'énormes progrès esthétiques. Les lames vinyle à décor bois ou pierre sont aujourd'hui très réalistes. Pour un restaurant, un espace de vente ou un espace mixte bureau/showroom, le sol PVC apporte une touche contemporaine et facile à personnaliser.\n\nVerdic : la moquette pour le feutré et le haut de gamme traditionnel ; le PVC pour le contemporain et le polyvalent.",
+        body: "La moquette crée une atmosphère chaleureuse, confortable et feutrée. Elle reste le choix de référence pour les chambres d'hôtel, les salons d'accueil et les bureaux où l'on veut projeter une image premium. Les gammes modernes (EGE, Balsan) offrent une très grande variété de motifs et coloris.\n\nLe sol PVC a fait d'énormes progrès esthétiques. Les lames vinyle à décor bois ou pierre sont aujourd'hui très réalistes. Pour un restaurant, un espace de vente ou un espace mixte bureau/showroom, le sol PVC apporte une touche contemporaine et facile à personnaliser.\n\nVerdic : la moquette pour le feutré et le haut de gamme traditionnel, le PVC pour le contemporain et le polyvalent.",
       },
     ],
     faq: [
@@ -94,7 +94,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Les certifications à exiger",
-        body: "Plusieurs certifications coexistent. La certification Cradle to Cradle (C2C) garantit que la moquette peut être recyclée en fin de vie — c'est un critère de plus en plus demandé dans les appels d'offres publics. La certification Oeko-Tex Standard 100 garantit l'absence de substances nocives pour la santé, importante pour les EHPAD et les espaces fréquentés par des personnes vulnérables.\n\nLe label GUT (Gemeinschaft umweltfreundlicher Teppichboden) est une certification allemande reconnue pour les faibles émissions de COV. La norme ISO 9001 s'applique au processus de fabrication.\n\nCB Sols vous fournit systématiquement les fiches techniques et certificats de conformité avec chaque commande.",
+        body: "Plusieurs certifications coexistent. La certification Cradle to Cradle (C2C) garantit que la moquette peut être recyclée en fin de vie, un critère de plus en plus demandé dans les appels d'offres publics. La certification Oeko-Tex Standard 100 garantit l'absence de substances nocives pour la santé, importante pour les EHPAD et les espaces fréquentés par des personnes vulnérables.\n\nLe label GUT (Gemeinschaft umweltfreundlicher Teppichboden) est une certification allemande reconnue pour les faibles émissions de COV. La norme ISO 9001 s'applique au processus de fabrication.\n\nCB Sols vous fournit systématiquement les fiches techniques et certificats de conformité avec chaque commande.",
       },
       {
         title: "Prix et budgets",
@@ -138,7 +138,7 @@ export const guides: Guide[] = [
   {
     slug: 'sol-pvc-cuisines-professionnelles',
     title: 'Sol PVC pour cuisines professionnelles',
-    metaTitle: 'Sol PVC Cuisine Professionnelle — Choix, Normes et Pose CB Sols',
+    metaTitle: 'Sol PVC Cuisine Professionnelle | Choix, Normes et Pose CB Sols',
     metaDescription: 'Quel sol PVC pour une cuisine professionnelle ? Normes HACCP, antidérapance, résistance chimique, drainage. Guide et pose par CB Sols en Charente-Maritime.',
     category: 'Guide Sol PVC',
     headline: 'Sol PVC pour cuisines professionnelles',
@@ -146,15 +146,15 @@ export const guides: Guide[] = [
     sections: [
       {
         title: "Les normes et obligations",
-        body: "Les cuisines professionnelles (restaurants, hôtels, collectivités) sont soumises aux réglementations HACCP qui imposent des revêtements imperméables, lisses ou faiblement rugueux, résistants aux produits de nettoyage et de désinfection, et sans joints inaccessibles à l'entretien.\n\nL'antidérapance est imposée par le code du travail pour les locaux à risque glissant. La classification R des sols donne le niveau d'antidérapance : R10 pour les cuisines sèches, R11 ou R12 pour les zones humides et grasses. CB Sols sélectionne des produits homologués R11 minimum pour toutes les cuisines professionnelles.\n\nLa résistance chimique est essentielle : produits de nettoyage alcalins concentrés, désinfectants chlorés, graisses alimentaires — le sol doit résister à des cycles quotidiens.",
+        body: "Les cuisines professionnelles (restaurants, hôtels, collectivités) sont soumises aux réglementations HACCP qui imposent des revêtements imperméables, lisses ou faiblement rugueux, résistants aux produits de nettoyage et de désinfection, et sans joints inaccessibles à l'entretien.\n\nL'antidérapance est imposée par le code du travail pour les locaux à risque glissant. La classification R des sols donne le niveau d'antidérapance : R10 pour les cuisines sèches, R11 ou R12 pour les zones humides et grasses. CB Sols sélectionne des produits homologués R11 minimum pour toutes les cuisines professionnelles.\n\nLa résistance chimique est essentielle : produits de nettoyage alcalins concentrés, désinfectants chlorés, graisses alimentaires : le sol doit résister à des cycles quotidiens.",
       },
       {
         title: "Les types de sols PVC adaptés",
-        body: "Le sol PVC homogène est le plus adapté aux cuisines professionnelles. Contrairement au sol PVC hétérogène (couches superposées), il est constitué d'une seule couche de matière qui monte jusqu'à la surface. Pas de couche supérieure à user, pas de délamination possible. Sa durée de vie est exceptionnelle — 20 à 30 ans en usage intensif.\n\nLes produits Tarkett iQ (Granit, Unicolore) et Forbo Eternal sont les références du marché pour les cuisines professionnelles. Ils offrent la classification R10/R11, la résistance chimique et les certifications sanitaires requises.\n\nLes remontées en plinthe sont obligatoires pour éviter les infiltrations sous le sol. CB Sols réalise des remontées en cuvette (sol PVC soudé qui remonte de 10 à 20 cm sur les murs) pour une étanchéité parfaite.",
+        body: "Le sol PVC homogène est le plus adapté aux cuisines professionnelles. Contrairement au sol PVC hétérogène (couches superposées), il est constitué d'une seule couche de matière qui monte jusqu'à la surface. Pas de couche supérieure à user, pas de délamination possible. Sa durée de vie est exceptionnelle : 20 à 30 ans en usage intensif.\n\nLes produits Tarkett iQ (Granit, Unicolore) et Forbo Eternal sont les références du marché pour les cuisines professionnelles. Ils offrent la classification R10/R11, la résistance chimique et les certifications sanitaires requises.\n\nLes remontées en plinthe sont obligatoires pour éviter les infiltrations sous le sol. CB Sols réalise des remontées en cuvette (sol PVC soudé qui remonte de 10 à 20 cm sur les murs) pour une étanchéité parfaite.",
       },
       {
         title: "La soudure à chaud : pourquoi c'est obligatoire",
-        body: "Dans une cuisine professionnelle, les lés de sol PVC doivent être soudés à chaud, jamais encollés jointivement. La soudure à chaud crée une jonction étanche entre les lés en faisant fondre un cordon de soudure PVC de même composition dans la gorge de joint.\n\nSans soudure, les joints permettent aux liquides, graisses et micro-organismes de s'infiltrer sous le revêtement — ce qui est une non-conformité HACCP et une source de dégradation rapide du sol et du support.\n\nCB Sols dispose du matériel de soudure à chaud professionnel et forme ses poseurs à cette technique. Tous nos chantiers cuisine professionnelle incluent la soudure et les remontées étanches.",
+        body: "Dans une cuisine professionnelle, les lés de sol PVC doivent être soudés à chaud, jamais encollés jointivement. La soudure à chaud crée une jonction étanche entre les lés en faisant fondre un cordon de soudure PVC de même composition dans la gorge de joint.\n\nSans soudure, les joints permettent aux liquides, graisses et micro-organismes de s'infiltrer sous le revêtement : non-conformité HACCP garantie et source de dégradation rapide du sol et du support.\n\nCB Sols dispose du matériel de soudure à chaud professionnel et forme ses poseurs à cette technique. Tous nos chantiers cuisine professionnelle incluent la soudure et les remontées étanches.",
       },
     ],
     faq: [
@@ -167,7 +167,7 @@ export const guides: Guide[] = [
   {
     slug: 'cout-pose-revetement-sol',
     title: 'Coût et prix de pose des revêtements de sol',
-    metaTitle: 'Prix Pose Revêtement de Sol Professionnel 2025 — CB Sols',
+    metaTitle: 'Prix Pose Revêtement de Sol Professionnel 2025 | CB Sols',
     metaDescription: 'Grille de prix 2025 pour la pose de moquette, sol PVC et tapis professionnels. Tarifs CB Sols en Charente-Maritime. Devis gratuit.',
     category: 'Guide Tarifs',
     headline: 'Prix et coûts de pose',
@@ -179,7 +179,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Prix de pose du sol PVC",
-        body: "La pose de sol PVC en lés se situe entre 10 et 18 €/m² pour la main-d'œuvre. La pose en dalles vinyle (LVT flottant) est légèrement moins onéreuse : 8-14 €/m². La soudure à chaud est facturée en supplément : comptez 3-5 €/ml de joint soudé.\n\nPour les cuisines professionnelles avec remontées en cuvette, prévoyez un supplément de 15-25 €/ml pour les remontées et raccordements étanches. Ces travaux sont exigeants techniquement et délicats — ne pas chercher à économiser sur ce poste.\n\nFourni posé : 35-65 €/m² pour un sol PVC hétérogène bureau, 50-90 €/m² pour un sol PVC homogène cuisine professionnelle, 40-75 €/m² pour des lames LVT hôtelières.",
+        body: "La pose de sol PVC en lés se situe entre 10 et 18 €/m² pour la main-d'œuvre. La pose en dalles vinyle (LVT flottant) est légèrement moins onéreuse : 8-14 €/m². La soudure à chaud est facturée en supplément : comptez 3-5 €/ml de joint soudé.\n\nPour les cuisines professionnelles avec remontées en cuvette, prévoyez un supplément de 15-25 €/ml pour les remontées et raccordements étanches. Ces travaux sont exigeants techniquement et délicats : pas question d'économiser sur ce poste.\n\nFourni posé : 35-65 €/m² pour un sol PVC hétérogène bureau, 50-90 €/m² pour un sol PVC homogène cuisine professionnelle, 40-75 €/m² pour des lames LVT hôtelières.",
       },
       {
         title: "Ce qui influence le prix",
@@ -196,11 +196,11 @@ export const guides: Guide[] = [
   {
     slug: 'entretien-moquette-hotel',
     title: 'Entretien de la moquette hôtelière : le guide complet',
-    metaTitle: 'Entretien Moquette Hôtelière 2025 — Guide Expert CB Sols',
+    metaTitle: 'Entretien Moquette Hôtelière 2025 | Guide Expert CB Sols',
     metaDescription: "Comment entretenir la moquette d'un hôtel ? Fréquences, injection-extraction, produits, coûts. Guide complet par CB Sols, spécialiste hôtellerie Charente-Maritime.",
     category: 'Guide Hôtellerie',
     headline: "Entretien de la moquette d'hôtel",
-    intro: "La moquette représente souvent le poste le plus important d'investissement dans la rénovation d'un hôtel. Un entretien rigoureux permet de multiplier sa durée de vie par deux — et d'éviter une rénovation prématurée qui perturbe l'activité. CB Sols accompagne ses clients hôteliers avec un programme d'entretien structuré.",
+    intro: "La moquette représente souvent le poste le plus important d'investissement dans la rénovation d'un hôtel. Un entretien rigoureux permet de multiplier sa durée de vie par deux, et d'éviter une rénovation prématurée qui perturbe l'activité. CB Sols accompagne ses clients hôteliers avec un programme d'entretien structuré.",
     sections: [
       {
         title: "L'aspiration quotidienne : la base non négociable",
@@ -208,11 +208,11 @@ export const guides: Guide[] = [
       },
       {
         title: "L'injection-extraction : fréquence et protocole",
-        body: "Le nettoyage par injection-extraction (hot-water extraction) est la méthode de référence pour le nettoyage en profondeur de la moquette hôtelière. Une machine professionnelle injecte de l'eau chaude à 90-95°C mélangée à un détergent adapté, puis aspire immédiatement le tout — emmenant avec elle les salissures incrustées, les résidus de savon des bagages et les allergènes accumulés.\n\nFréquences recommandées par zone :\n- Chambres : 2 fois par an minimum, idéalement en basse saison (octobre-novembre et mars-avril)\n- Couloirs : 3 à 4 fois par an, avec un passage impératif avant et après la haute saison\n- Lobby et réception : mensuel en haute saison, bimestriel en basse saison\n\nPour les hôtels à fort taux d'occupation (80%+), augmenter ces fréquences d'un cycle par an. CB Sols propose des contrats d'entretien annuels pour les hôtels de Charente-Maritime.",
+        body: "Le nettoyage par injection-extraction (hot-water extraction) est la méthode de référence pour le nettoyage en profondeur de la moquette hôtelière. Une machine professionnelle injecte de l'eau chaude à 90-95°C mélangée à un détergent adapté, puis aspire immédiatement le tout, emmenant avec elle les salissures incrustées, les résidus de savon des bagages et les allergènes accumulés.\n\nFréquences recommandées par zone :\n- Chambres : 2 fois par an minimum, idéalement en basse saison (octobre-novembre et mars-avril)\n- Couloirs : 3 à 4 fois par an, avec un passage impératif avant et après la haute saison\n- Lobby et réception : mensuel en haute saison, bimestriel en basse saison\n\nPour les hôtels à fort taux d'occupation (80%+), augmenter ces fréquences d'un cycle par an. CB Sols propose des contrats d'entretien annuels pour les hôtels de Charente-Maritime.",
       },
       {
         title: "Le traitement des taches : intervention immédiate",
-        body: "En hôtellerie, les taches doivent être traitées dans les 5 à 10 minutes suivant leur apparition. Passé ce délai, certaines taches (vin rouge, café, huile de solaire, rouge à lèvres) peuvent devenir permanentes sur les fibres synthétiques.\n\nProtocole d'intervention rapide : (1) absorber le surplus avec un chiffon propre par tamponnement — jamais en frottant, (2) appliquer un détachant adapté à la tache en partant de l'extérieur vers le centre, (3) absorber à nouveau, (4) rincer légèrement à l'eau froide, (5) sécher rapidement avec un ventilateur si possible.\n\nCB Sols fournit, avec chaque chantier de pose, un kit de détachants professionnels adaptés à la moquette installée, avec les fiches d'utilisation pour les équipes de ménage. Ce kit est la première ligne de défense contre les dégradations prématurées.",
+        body: "En hôtellerie, les taches doivent être traitées dans les 5 à 10 minutes suivant leur apparition. Passé ce délai, certaines taches (vin rouge, café, huile de solaire, rouge à lèvres) peuvent devenir permanentes sur les fibres synthétiques.\n\nProtocole d'intervention rapide : (1) absorber le surplus avec un chiffon propre par tamponnement (jamais en frottant), (2) appliquer un détachant adapté à la tache en partant de l'extérieur vers le centre, (3) absorber à nouveau, (4) rincer légèrement à l'eau froide, (5) sécher rapidement avec un ventilateur si possible.\n\nCB Sols fournit, avec chaque chantier de pose, un kit de détachants professionnels adaptés à la moquette installée, avec les fiches d'utilisation pour les équipes de ménage. Ce kit est la première ligne de défense contre les dégradations prématurées.",
       },
       {
         title: "Quand remplacer la moquette d'hôtel ?",
@@ -220,7 +220,7 @@ export const guides: Guide[] = [
       },
     ],
     faq: [
-      { q: "Combien coûte l'entretien annuel de la moquette d'un hôtel ?", a: "Pour un hôtel de 30 chambres (surface totale moquette : 700 à 1 200 m²), le coût d'un contrat d'entretien annuel avec CB Sols est de 2 500 à 5 000 € HT selon la fréquence et l'éloignement. Ce coût représente 5 à 10% du coût de remplacement — un investissement rationnel pour prolonger la durée de vie de la moquette." },
+      { q: "Combien coûte l'entretien annuel de la moquette d'un hôtel ?", a: "Pour un hôtel de 30 chambres (surface totale moquette : 700 à 1 200 m²), le coût d'un contrat d'entretien annuel avec CB Sols est de 2 500 à 5 000 € HT selon la fréquence et l'éloignement. Ce coût représente 5 à 10% du coût de remplacement, un investissement rationnel pour prolonger la durée de vie de la moquette." },
       { q: "Peut-on nettoyer la moquette d'une chambre d'hôtel sans la mettre hors service ?", a: "Oui. Le temps de séchage après injection-extraction est de 2 à 4 heures selon la ventilation et la saison. CB Sols réalise les nettoyages sur les chambres libres, en rotation avec les chambres occupées. Aucune fermeture n'est nécessaire pour un hôtel de taille normale." },
       { q: "Existe-t-il des traitements préventifs pour la moquette d'hôtel ?", a: "Oui. Le traitement anti-tache Teflon ou Scotchgard appliqué après la pose ou après un nettoyage en profondeur crée une barrière invisible qui repousse les liquides et facilite l'absorption des taches. CB Sols propose ce traitement en option lors de chaque pose et chaque nettoyage annuel." },
     ],
@@ -229,15 +229,15 @@ export const guides: Guide[] = [
   {
     slug: 'prix-pose-sol-pvc',
     title: 'Prix de pose du sol PVC professionnel en 2025',
-    metaTitle: 'Prix Pose Sol PVC Professionnel 2025 — Tarifs CB Sols',
+    metaTitle: 'Prix Pose Sol PVC Professionnel 2025 | Tarifs CB Sols',
     metaDescription: 'Quel est le prix de pose du sol PVC professionnel en 2025 ? Tarifs détaillés LVT, lés, cuisine pro, hôtel. Guide honnête par CB Sols, Charente-Maritime.',
     category: 'Guide Tarifs',
     headline: 'Prix de pose du sol PVC en 2025',
-    intro: "Le prix de pose du sol PVC varie considérablement selon le type de produit, la surface et la complexité du chantier. Ce guide détaille les fourchettes réelles pratiquées par CB Sols en 2025 — sans langue de bois.",
+    intro: "Le prix de pose du sol PVC varie considérablement selon le type de produit, la surface et la complexité du chantier. Ce guide détaille les fourchettes réelles pratiquées par CB Sols en 2025, sans langue de bois.",
     sections: [
       {
         title: "Sol PVC en lames et dalles (LVT) : 35 à 75 €/m²",
-        body: "Les lames et dalles vinyle (LVT — Luxury Vinyl Tile) sont le segment le plus dynamique du marché. Leur pose est relativement rapide : en pose flottante, une équipe de 2 poseurs couvre 80 à 120 m² par jour.\n\nFourchettes 2025 (fourni posé) :\n- LVT flottant bureaux et commerces : 35 à 60 €/m²\n- LVT collé hôtellerie haut de gamme : 45 à 75 €/m²\n- Dalles vinyle design (motif bois ou pierre) : 40 à 70 €/m²\n\nLes facteurs qui font varier le prix : la qualité du produit choisi (épaisseur, classe d'usage, décor), la surface totale (tarif dégressif dès 200 m²), et l'état du support (ragréage éventuel). CB Sols établit toujours un devis détaillé poste par poste avant toute signature.",
+        body: "Les lames et dalles vinyle (LVT, Luxury Vinyl Tile) sont le segment le plus dynamique du marché. Leur pose est relativement rapide : en pose flottante, une équipe de 2 poseurs couvre 80 à 120 m² par jour.\n\nFourchettes 2025 (fourni posé) :\n- LVT flottant bureaux et commerces : 35 à 60 €/m²\n- LVT collé hôtellerie haut de gamme : 45 à 75 €/m²\n- Dalles vinyle design (motif bois ou pierre) : 40 à 70 €/m²\n\nLes facteurs qui font varier le prix : la qualité du produit choisi (épaisseur, classe d'usage, décor), la surface totale (tarif dégressif dès 200 m²), et l'état du support (ragréage éventuel). CB Sols établit toujours un devis détaillé poste par poste avant toute signature.",
       },
       {
         title: "Sol PVC en lés (rouleaux) : 30 à 90 €/m²",
@@ -245,11 +245,11 @@ export const guides: Guide[] = [
       },
       {
         title: "Les travaux annexes qui s'ajoutent au prix de base",
-        body: "Le prix affiché par m² ne comprend pas toujours l'ensemble des travaux nécessaires. Il faut anticiper :\n\nDépose de l'ancien revêtement : 4 à 8 €/m² selon le type et l'état. Une moquette collée ancienne sur carrelage prend plus de temps qu'une moquette gripper récente.\n\nRagréage et nivellement : 8 à 20 €/m² selon l'épaisseur et la surface. C'est souvent le poste le plus imprévisible — l'état du support ne se découvre vraiment qu'après dépose.\n\nSoudure à chaud : 3 à 6 €/ml de joint soudé. Indispensable en cuisine professionnelle et recommandé partout où l'étanchéité est requise.\n\nRemontées en cuvette (cuisines, douches) : 15 à 30 €/ml selon la hauteur de remontée et la complexité.\n\nMajoration nuit ou week-end : +15 à 30% sur le total main-d'œuvre. CB Sols est transparent sur ces majorations dans chaque devis.",
+        body: "Le prix affiché par m² ne comprend pas toujours l'ensemble des travaux nécessaires. Il faut anticiper :\n\nDépose de l'ancien revêtement : 4 à 8 €/m² selon le type et l'état. Une moquette collée ancienne sur carrelage prend plus de temps qu'une moquette gripper récente.\n\nRagréage et nivellement : 8 à 20 €/m² selon l'épaisseur et la surface. C'est souvent le poste le plus imprévisible : l'état du support ne se découvre vraiment qu'après dépose.\n\nSoudure à chaud : 3 à 6 €/ml de joint soudé. Indispensable en cuisine professionnelle et recommandé partout où l'étanchéité est requise.\n\nRemontées en cuvette (cuisines, douches) : 15 à 30 €/ml selon la hauteur de remontée et la complexité.\n\nMajoration nuit ou week-end : +15 à 30% sur le total main-d'œuvre. CB Sols est transparent sur ces majorations dans chaque devis.",
       },
       {
         title: "Comment obtenir le meilleur prix",
-        body: "Plusieurs leviers permettent d'optimiser le coût total d'un chantier de sol PVC :\n\nLa surface est votre principal levier. CB Sols applique des tarifs dégressifs significatifs à partir de 200 m², et davantage à partir de 500 m². Regrouper plusieurs zones ou plusieurs hébergements dans un même bon de commande est toujours rentable.\n\nLe timing est également important. Les chantiers planifiés 2 à 3 mois à l'avance permettent à CB Sols d'optimiser ses achats de matériaux. À l'inverse, les urgences ou les chantiers de nuit sont légitimement majorés.\n\nEnfin, le choix du produit. CB Sols ne cherche pas à vous vendre le produit le plus cher mais le mieux adapté à votre usage. Un LVT classe 33 suffit pour des bureaux à fréquentation normale — inutile de payer pour du classe 34. Le devis gratuit inclut systématiquement des alternatives de gamme.",
+        body: "Plusieurs leviers permettent d'optimiser le coût total d'un chantier de sol PVC :\n\nLa surface est votre principal levier. CB Sols applique des tarifs dégressifs significatifs à partir de 200 m², et davantage à partir de 500 m². Regrouper plusieurs zones ou plusieurs hébergements dans un même bon de commande est toujours rentable.\n\nLe timing est également important. Les chantiers planifiés 2 à 3 mois à l'avance permettent à CB Sols d'optimiser ses achats de matériaux. À l'inverse, les urgences ou les chantiers de nuit sont légitimement majorés.\n\nEnfin, le choix du produit. CB Sols ne cherche pas à vous vendre le produit le plus cher mais le mieux adapté à votre usage. Un LVT classe 33 suffit pour des bureaux à fréquentation normale : inutile de payer pour du classe 34. Le devis gratuit inclut systématiquement des alternatives de gamme.",
       },
     ],
     faq: [
@@ -262,7 +262,7 @@ export const guides: Guide[] = [
   {
     slug: 'moquette-vs-parquet-bureau',
     title: 'Moquette ou parquet pour un bureau : comparatif complet',
-    metaTitle: 'Moquette ou Parquet Bureau — Comparatif 2025 CB Sols',
+    metaTitle: 'Moquette ou Parquet Bureau | Comparatif 2025 CB Sols',
     metaDescription: 'Moquette ou parquet pour vos bureaux ? Acoustique, entretien, durabilité, coût : comparatif complet et honnête pour faire le bon choix. Par CB Sols.',
     category: 'Comparatif',
     headline: 'Moquette ou parquet pour un bureau',
@@ -282,7 +282,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Esthétique et image de marque : une question de positionnement",
-        body: "La moquette evoque la confidentialité, le sérieux, le confort. C'est le sol des cabinets d'avocats, des banques privées, des directions générales. Elle crée une ambiance feutrée qui rassure les clients et favorise la concentration.\n\nLe parquet ou le sol PVC à décor bois évoque le dynamisme, la modernité, la transparence. C'est le sol des agences créatives, des espaces coworking, des startups. Il photographie bien pour les photos de bureau sur les réseaux sociaux.\n\nIl n'y a pas de bonne ou mauvaise réponse — tout dépend de l'identité que vous voulez projeter. CB Sols vous apporte des échantillons en situation réelle lors du devis pour vous aider à trancher.",
+        body: "La moquette evoque la confidentialité, le sérieux, le confort. C'est le sol des cabinets d'avocats, des banques privées, des directions générales. Elle crée une ambiance feutrée qui rassure les clients et favorise la concentration.\n\nLe parquet ou le sol PVC à décor bois évoque le dynamisme, la modernité, la transparence. C'est le sol des agences créatives, des espaces coworking, des startups. Il photographie bien pour les photos de bureau sur les réseaux sociaux.\n\nIl n'y a pas de bonne ou mauvaise réponse : tout dépend de l'identité que vous voulez projeter. CB Sols vous apporte des échantillons en situation réelle lors du devis pour vous aider à trancher.",
       },
     ],
     faq: [
@@ -295,11 +295,11 @@ export const guides: Guide[] = [
   {
     slug: 'choisir-revetement-sol-cuisine-pro',
     title: 'Choisir le bon revêtement de sol pour une cuisine professionnelle',
-    metaTitle: 'Revêtement Sol Cuisine Professionnelle — Guide Choix CB Sols',
+    metaTitle: 'Revêtement Sol Cuisine Professionnelle | Guide Choix CB Sols',
     metaDescription: 'Quel revêtement de sol pour une cuisine professionnelle ? Normes HACCP, antidérapance, résistance chimique, drainage. Guide expert par CB Sols.',
     category: 'Guide Technique',
     headline: 'Le sol idéal pour une cuisine professionnelle',
-    intro: "Le choix du revêtement de sol d'une cuisine professionnelle n'est pas une décision esthétique — c'est une décision technique et réglementaire. Un mauvais choix génère des risques sanitaires, des accidents du travail et des non-conformités lors des inspections. CB Sols vous guide dans ce choix stratégique.",
+    intro: "Le choix du revêtement de sol d'une cuisine professionnelle n'est pas une décision esthétique : c'est une décision technique et réglementaire. Un mauvais choix génère des risques sanitaires, des accidents du travail et des non-conformités lors des inspections. CB Sols vous guide dans ce choix stratégique.",
     sections: [
       {
         title: "Les contraintes réglementaires : HACCP et code du travail",
@@ -307,11 +307,11 @@ export const guides: Guide[] = [
       },
       {
         title: "Les solutions techniques recommandées",
-        body: "Sol PVC homogène soudé à chaud : c'est la référence absolue pour les cuisines professionnelles. Le sol PVC homogène (Tarkett iQ Granit, Forbo Eternal) est constitué d'une seule matière sur toute l'épaisseur — il n'a pas de couche supérieure à s'user. La soudure à chaud des joints élimine toute infiltration. Les remontées en cuvette créent une étanchéité parfaite sol/mur. Durée de vie : 20 à 30 ans.\n\nCarrelage antidérapant R11/R12 avec résine époxy dans les joints : une alternative solide si vous souhaitez une esthétique carrelage. Les joints en résine époxy sont imperméables et résistants aux acides. L'entretien est plus contraignant (nettoyage des reliefs). CB Sols ne pose pas de carrelage mais peut coordonner avec votre carreleur.\n\nRésine de sol (résine époxy ou polyuréthane) : solution sans joint, imperméable à 100%, excellente résistance chimique. Idéale pour les cuisines de grande surface. Durée de vie variable selon la qualité de la mise en œuvre. CB Sols ne réalise pas les résines mais peut vous orienter vers un partenaire spécialisé.",
+        body: "Sol PVC homogène soudé à chaud : c'est la référence absolue pour les cuisines professionnelles. Le sol PVC homogène (Tarkett iQ Granit, Forbo Eternal) est constitué d'une seule matière sur toute l'épaisseur, sans couche supérieure à s'user. La soudure à chaud des joints élimine toute infiltration. Les remontées en cuvette créent une étanchéité parfaite sol/mur. Durée de vie : 20 à 30 ans.\n\nCarrelage antidérapant R11/R12 avec résine époxy dans les joints : une alternative solide si vous souhaitez une esthétique carrelage. Les joints en résine époxy sont imperméables et résistants aux acides. L'entretien est plus contraignant (nettoyage des reliefs). CB Sols ne pose pas de carrelage mais peut coordonner avec votre carreleur.\n\nRésine de sol (résine époxy ou polyuréthane) : solution sans joint, imperméable à 100%, excellente résistance chimique. Idéale pour les cuisines de grande surface. Durée de vie variable selon la qualité de la mise en œuvre. CB Sols ne réalise pas les résines mais peut vous orienter vers un partenaire spécialisé.",
       },
       {
         title: "L'importance des raccordements et remontées",
-        body: "Le sol seul ne suffit pas à garantir l'étanchéité d'une cuisine professionnelle. La jonction sol/mur est la zone la plus critique. Sans protection, les liquides, graisses et micro-organismes s'infiltrent sous le revêtement et dans les murs, créant des foyers bactériens invisibles.\n\nLa solution professionnelle : les remontées en cuvette. Le sol PVC remonte de 10 à 15 cm sur les murs, soudé à chaud dans les angles et au raccordement avec les équipements (plinthe de plan de travail, colonne de douche, siphon). Cette technique crée une cuvette étanche.\n\nCB Sols maîtrise cette technique et réalise les remontées en cuvette sur tous ses chantiers de cuisine professionnelle. C'est un savoir-faire qui demande de la précision et de l'expérience — les coins intérieurs et extérieurs sont les points les plus délicats.",
+        body: "Le sol seul ne suffit pas à garantir l'étanchéité d'une cuisine professionnelle. La jonction sol/mur est la zone la plus critique. Sans protection, les liquides, graisses et micro-organismes s'infiltrent sous le revêtement et dans les murs, créant des foyers bactériens invisibles.\n\nLa solution professionnelle : les remontées en cuvette. Le sol PVC remonte de 10 à 15 cm sur les murs, soudé à chaud dans les angles et au raccordement avec les équipements (plinthe de plan de travail, colonne de douche, siphon). Cette technique crée une cuvette étanche.\n\nCB Sols maîtrise cette technique et réalise les remontées en cuvette sur tous ses chantiers de cuisine professionnelle. Les coins intérieurs et extérieurs sont les points les plus délicats, c'est là que l'expérience fait la différence.",
       },
       {
         title: "Drainage et siphons de sol",
@@ -328,7 +328,7 @@ export const guides: Guide[] = [
   {
     slug: 'moquette-acoustique',
     title: 'La moquette acoustique : guide complet',
-    metaTitle: 'Moquette Acoustique — Guide Complet 2025 CB Sols',
+    metaTitle: 'Moquette Acoustique | Guide Complet 2025 CB Sols',
     metaDescription: "Tout savoir sur la moquette acoustique : performances, certifications, applications, prix. Guide expert par CB Sols, spécialiste en Charente-Maritime.",
     category: 'Guide Technique',
     headline: 'La moquette acoustique',
@@ -336,7 +336,7 @@ export const guides: Guide[] = [
     sections: [
       {
         title: "Comment la moquette absorbe le bruit",
-        body: "La moquette agit à deux niveaux acoustiques distincts. Premièrement, elle réduit les bruits d'impact : une chute d'objet, des pas, une chaise que l'on traîne. Ces vibrations sont amorties dans les fibres et la sous-couche avant même de se transmettre à la dalle ou au plancher. Les mesures de Δw (delta w) quantifient cette performance : une moquette de bureau moyenne atteint Δw 25 à 30 dB, les moquettes acoustiques spécialisées dépassent les 35 dB.\n\nDeuxièmement, la moquette contribue à l'absorption acoustique de la pièce elle-même. Elle réduit le temps de réverbération (TR60) en absorbant une partie de l'énergie sonore qui rebondirait sur un sol dur. Dans un restaurant ou une salle de réunion, cet effet réduit le niveau de bruit ambiant de 3 à 8 dB — une différence clairement perceptible à l'oreille.\n\nLa combinaison moquette + plafond acoustique + panneaux muraux crée les meilleures conditions de travail et de confort. CB Sols peut vous orienter vers des acousticiens partenaires pour des projets nécessitant une étude acoustique formelle.",
+        body: "La moquette agit à deux niveaux acoustiques distincts. Premièrement, elle réduit les bruits d'impact : une chute d'objet, des pas, une chaise que l'on traîne. Ces vibrations sont amorties dans les fibres et la sous-couche avant même de se transmettre à la dalle ou au plancher. Les mesures de Δw (delta w) quantifient cette performance : une moquette de bureau moyenne atteint Δw 25 à 30 dB, les moquettes acoustiques spécialisées dépassent les 35 dB.\n\nDeuxièmement, la moquette contribue à l'absorption acoustique de la pièce elle-même. Elle réduit le temps de réverbération (TR60) en absorbant une partie de l'énergie sonore qui rebondirait sur un sol dur. Dans un restaurant ou une salle de réunion, cet effet réduit le niveau de bruit ambiant de 3 à 8 dB, une différence clairement perceptible à l'oreille.\n\nLa combinaison moquette + plafond acoustique + panneaux muraux crée les meilleures conditions de travail et de confort. CB Sols peut vous orienter vers des acousticiens partenaires pour des projets nécessitant une étude acoustique formelle.",
       },
       {
         title: "Les paramètres qui influencent les performances",
@@ -348,7 +348,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Certifications et labels à connaître",
-        body: "En France, les moquettes acoustiques ne disposent pas d'un label unique officiel. Les performances se lisent dans les fiches techniques des fabricants.\n\nLe Δw (norme ISO 10140) mesure la réduction des bruits d'impact. Une valeur de 20 dB est correcte, 30 dB est performant, 35 dB et plus est excellent pour une moquette professionnelle.\n\nL'αw (facteur d'absorption) mesure l'absorption acoustique de la pièce. Une moquette épaisse atteint αw 0,15 à 0,30 — une contribution significative en complément des traitements de plafond.\n\nLes marques EGE, Balsan et Forbo publient systématiquement ces données dans leurs fiches techniques. CB Sols vous accompagne dans la lecture de ces données pour choisir le produit le plus adapté à votre objectif acoustique.",
+        body: "En France, les moquettes acoustiques ne disposent pas d'un label unique officiel. Les performances se lisent dans les fiches techniques des fabricants.\n\nLe Δw (norme ISO 10140) mesure la réduction des bruits d'impact. Une valeur de 20 dB est correcte, 30 dB est performant, 35 dB et plus est excellent pour une moquette professionnelle.\n\nL'αw (facteur d'absorption) mesure l'absorption acoustique de la pièce. Une moquette épaisse atteint αw 0,15 à 0,30, une contribution significative en complément des traitements de plafond.\n\nLes marques EGE, Balsan et Forbo publient systématiquement ces données dans leurs fiches techniques. CB Sols vous accompagne dans la lecture de ces données pour choisir le produit le plus adapté à votre objectif acoustique.",
       },
     ],
     faq: [

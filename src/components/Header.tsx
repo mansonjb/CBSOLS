@@ -104,7 +104,7 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile menu — animated slide */}
+      {/* Mobile menu - animated slide */}
       <div style={{
         maxHeight: open ? '520px' : '0',
         overflow: 'hidden',

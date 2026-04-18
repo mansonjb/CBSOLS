@@ -219,7 +219,7 @@ export default async function SolutionPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Pour aller plus loin — guides + FAQ */}
+        {/* Pour aller plus loin - guides + FAQ */}
         {(relatedGuides.length > 0 || relatedFaqs.length > 0) && (
           <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)' }}>
             <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -252,7 +252,7 @@ export default async function SolutionPage({ params }: Props) {
         <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)' }}>
           <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>
-              {solution.serviceName} — intervention locale
+              {solution.serviceName} - intervention locale
             </div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em' }}>
               Nous intervenons dans toute la Charente-Maritime

@@ -17,11 +17,11 @@ const projects = [
 
 const testimonials = [
   {
-    quote: "CB Sols a créé des tapis sur mesure avec un motif exclusif pour nos chambres. Ponctualité, qualité d'exécution irréprochable — nous les avons rappelés pour la deuxième phase.",
+    quote: "CB Sols a créé des tapis sur mesure avec un motif exclusif pour nos chambres. Ponctualité, qualité d'exécution irréprochable, nous les avons rappelés pour la deuxième phase.",
     name: "Véronique A.", role: "Directrice", company: "Hôtel La Baronnie", location: "Saint-Martin-de-Ré", stars: 5,
   },
   {
-    quote: "Refonte complète du clubhouse et des vestiaires — pose le week-end sans une heure d'interruption. L'équipe connaît les contraintes du secteur. Résultat impeccable.",
+    quote: "Refonte complète du clubhouse et des vestiaires. Pose le week-end sans une heure d'interruption. L'équipe connaît les contraintes du secteur. Résultat impeccable.",
     name: "Éric D.", role: "Directeur général", company: "Golf de la Prée", location: "La Couarde-sur-Mer", stars: 5,
   },
   {
@@ -39,7 +39,7 @@ const brandPartners = [
 ]
 
 const garanties = [
-  { title: 'Artisan certifié', desc: 'Qualification Qualibat — compétence vérifiée sur tous les revêtements de sol.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg> },
+  { title: 'Artisan certifié', desc: 'Qualification Qualibat : compétence vérifiée sur tous les revêtements de sol.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg> },
   { title: "25 ans d'expertise", desc: "Fondé en 1999. Plus de 500 chantiers à La Rochelle, l'Île de Ré et en Charente-Maritime.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg> },
   { title: 'Devis gratuit 48h', desc: 'Déplacement et mesures offerts. Chiffrage transparent, sans engagement.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg> },
   { title: 'Pose week-end', desc: "Intervention hors heures ouvrées pour les professionnels. Zéro interruption d'activité.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> },
@@ -48,7 +48,7 @@ const garanties = [
 const processSteps = [
   { num: '01', title: 'Contact & rendez-vous', desc: 'Appelez-nous ou remplissez le formulaire. Réponse sous 24h, RDV planifié.' },
   { num: '02', title: 'Visite & devis', desc: 'Déplacement gratuit partout en Charente-Maritime. Mesures précises et devis sous 48h.' },
-  { num: '03', title: 'Choix des matériaux', desc: '500+ échantillons en showroom — EGE, Gerflor, Tarkett. À emporter chez vous.' },
+  { num: '03', title: 'Choix des matériaux', desc: '500+ échantillons en showroom : EGE, Gerflor, Tarkett. À emporter chez vous.' },
   { num: '04', title: 'Pose & réception', desc: 'Artisans CB Sols uniquement, aucune sous-traitance. Garantie décennale.' },
 ]
 
@@ -71,7 +71,7 @@ const homeFaqSchema = {
     { '@type': 'Question', name: 'Le devis est-il vraiment gratuit, même pour une petite surface ?', acceptedAnswer: { '@type': 'Answer', text: "Oui, sans minimum de surface et sans engagement. CB Sols se déplace gratuitement dans toute la Charente-Maritime pour mesurer, évaluer l'état du support et vous remettre un devis détaillé sous 48h. Que ce soit pour 15 m² ou 1 500 m²." } },
     { '@type': 'Question', name: "Peut-on poser la moquette sans fermer l'hôtel ou le bureau ?", acceptedAnswer: { '@type': 'Answer', text: "Oui. CB Sols travaille en rotation dans les hôtels (chambre par chambre sur les libérations) et le week-end dans les bureaux. La grande majorité des chantiers professionnels se font sans interrompre une seule journée d'activité." } },
     { '@type': 'Question', name: 'Quelle est la différence entre la moquette contrat et la moquette résidentielle ?', acceptedAnswer: { '@type': 'Answer', text: "La moquette contrat est classée 32-33 selon la norme EN 1307, certifiée Bfl-s1 (incendie) et testée pour des centaines de milliers de passages. C'est la seule option légale dans un hôtel, des bureaux ou un ERP." } },
-    { '@type': 'Question', name: 'CB Sols sous-traite-t-il la pose ?', acceptedAnswer: { '@type': 'Answer', text: "Non. La pose est toujours réalisée par l'équipe CB Sols — aucune sous-traitance. Valentin Prévoteau supervise personnellement les chantiers. Garantie décennale incluse." } },
+    { '@type': 'Question', name: 'CB Sols sous-traite-t-il la pose ?', acceptedAnswer: { '@type': 'Answer', text: "Non. La pose est toujours réalisée par l'équipe CB Sols, aucune sous-traitance. Valentin Prévoteau supervise personnellement les chantiers. Garantie décennale incluse." } },
     { '@type': 'Question', name: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?", acceptedAnswer: { '@type': 'Answer', text: "Oui, régulièrement. CB Sols équipe des hôtels, campings et résidences sur les deux îles depuis 25 ans. Les contraintes insulaires sont parfaitement intégrées dans les devis et plannings." } },
   ],
 }
@@ -85,7 +85,7 @@ export default function Home() {
         <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 2rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center', minHeight: 'calc(100vh - 72px)', paddingTop: '3rem', paddingBottom: '4rem' }} className="hero-grid">
 
-            {/* Left — text */}
+            {/* Left - text */}
             <div>
               {/* Pill badge */}
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem 1.125rem', border: '1px solid var(--border-mid)', borderRadius: '999px', marginBottom: '2.5rem' }}>
@@ -93,7 +93,7 @@ export default function Home() {
                 <span style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--dark-2)', fontWeight: 500 }}>500+ projets réalisés</span>
               </div>
 
-              {/* Headline — bold sans + italic serif (NexArch pattern) */}
+              {/* Headline - bold sans + italic serif (NexArch pattern) */}
               <h1 style={{ fontSize: 'clamp(3rem, 5.5vw, 6.5rem)', lineHeight: 1.0, letterSpacing: '-0.03em', margin: '0 0 2rem', fontWeight: 800, color: 'var(--dark)' }}>
                 <span style={{ fontFamily: 'var(--font-sans, system-ui, sans-serif)', fontWeight: 800, display: 'block' }}>Le sol qui</span>
                 <span style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontWeight: 300, fontStyle: 'italic', display: 'block' }}>définit</span>
@@ -102,7 +102,7 @@ export default function Home() {
 
               {/* Description */}
               <p style={{ fontSize: 'clamp(0.9rem, 1.2vw, 1.05rem)', color: 'var(--dark-2)', lineHeight: 1.7, maxWidth: '440px', margin: '0 0 2.5rem' }}>
-                Moquette, sol PVC, tapis sur mesure — CB Sols accompagne particuliers, hôtels et entreprises en Charente-Maritime depuis <strong>25 ans</strong>.
+                Moquette, sol PVC, tapis sur mesure : CB Sols accompagne particuliers, hôtels et entreprises en Charente-Maritime depuis <strong>25 ans</strong>.
               </p>
 
               {/* CTAs */}
@@ -129,7 +129,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right — hero slider */}
+            {/* Right - hero slider */}
             <div style={{ position: 'relative' }} className="hero-photo-col">
               <div style={{ borderRadius: '24px', overflow: 'hidden', aspectRatio: '3/4', position: 'relative', maxHeight: '680px' }}>
                 <HeroSlider />
@@ -266,8 +266,8 @@ export default function Home() {
       <section style={{ padding: '0', overflow: 'hidden' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px', backgroundColor: 'var(--bg-inv)' }} className="materials-grid">
           {[
-            { img: '/images/moquette-bureau.jpg', label: 'Moquette', caption: 'Laine & synthétique — hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · Balsan · Interface' },
-            { img: '/images/cuisine-pro.jpg', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés — zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · Tarkett · Forbo' },
+            { img: '/images/moquette-bureau.jpg', label: 'Moquette', caption: 'Laine & synthétique : hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · Balsan · Interface' },
+            { img: '/images/cuisine-pro.jpg', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés : zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · Tarkett · Forbo' },
             { img: '/images/motif-tapis-hotel.jpg', label: 'Tapis sur mesure', caption: 'Motif exclusif, forme libre, coloris personnalisés', href: '/services/tapis-sur-mesure', brand: 'EGE · Balsan · Balta' },
           ].map(mat => (
             <Link key={mat.label} href={mat.href} style={{ textDecoration: 'none', display: 'block', position: 'relative', overflow: 'hidden', aspectRatio: '4/5' }} className="material-tile">
@@ -291,7 +291,7 @@ export default function Home() {
               Notre<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>méthode</em>
             </h2>
             <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '380px', margin: 0 }}>
-              De la prise de contact à la réception de chantier — un accompagnement complet, sans sous-traitance.
+              De la prise de contact à la réception de chantier : un accompagnement complet, sans sous-traitance.
             </p>
           </div>
 
@@ -353,7 +353,7 @@ export default function Home() {
               <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>depuis 1999.</em>
             </h2>
             <p style={{ fontSize: '0.9rem', color: 'rgba(240,235,227,0.6)', lineHeight: 1.8, maxWidth: '480px', marginBottom: '2rem' }}>
-              Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche — pas un commercial, pas un sous-traitant. 25 ans de métier, des centaines de chantiers en Charente-Maritime.
+              Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. 25 ans de métier, des centaines de chantiers en Charente-Maritime.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem' }}>
               {['Qualibat 6111', 'Décennale', 'Partenaire EGE', 'Partenaire Gerflor'].map(c => (
@@ -396,7 +396,7 @@ export default function Home() {
                 Par secteur<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300 }}>d'activité</em>
               </h2>
               <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Hôtel, restaurant, bureau ou EHPAD — chaque secteur a ses normes. CB Sols les connaît toutes.
+                Hôtel, restaurant, bureau ou EHPAD : chaque secteur a ses normes. CB Sols les connaît toutes.
               </p>
               <Link href="/secteurs" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 1.75rem', backgroundColor: 'var(--btn-inv-bg)', color: 'var(--btn-inv-text)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
                 Solutions pro →
@@ -462,7 +462,7 @@ export default function Home() {
       <section style={{ padding: '0', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }} className="showroom-grid">
           <div style={{ position: 'relative', minHeight: '520px', overflow: 'hidden', backgroundColor: 'var(--bg-alt)', borderRadius: '0 0 0 0' }}>
-            <Image src="/images/moquette-chambre.jpg" alt="Showroom CB Sols — échantillons moquette" fill style={{ objectFit: 'cover' }} sizes="50vw" />
+            <Image src="/images/moquette-chambre.jpg" alt="Showroom CB Sols, échantillons moquette" fill style={{ objectFit: 'cover' }} sizes="50vw" />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '5rem 4rem' }}>
             <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem', fontWeight: 500 }}>Showroom · Sur rendez-vous</p>
@@ -470,7 +470,7 @@ export default function Home() {
               Venez toucher, voir, <em style={{ color: 'var(--terra)', fontStyle: 'italic' }}>choisir.</em>
             </h2>
             <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.8, marginBottom: '0.875rem', maxWidth: '400px' }}>
-              500+ échantillons à Villedoux — 10 min de La Rochelle. Conseil par Valentin Prévoteau.
+              500+ échantillons à Villedoux, 10 min de La Rochelle. Conseil par Valentin Prévoteau.
             </p>
             <p style={{ fontSize: '0.8rem', color: 'var(--muted)', marginBottom: '2.5rem' }}>8 rue des Merises, 17230 Villedoux</p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -517,7 +517,7 @@ export default function Home() {
                 },
                 {
                   q: "CB Sols sous-traite-t-il la pose ?",
-                  a: "Non. La pose est toujours réalisée par l'équipe CB Sols — aucune sous-traitance. Valentin Prévoteau supervise personnellement les chantiers. C'est la garantie d'un résultat irréprochable et d'un interlocuteur unique du devis à la réception."
+                  a: "Non. La pose est toujours réalisée par l'équipe CB Sols, aucune sous-traitance. Valentin Prévoteau supervise personnellement les chantiers. C'est la garantie d'un résultat irréprochable et d'un interlocuteur unique du devis à la réception."
                 },
                 {
                   q: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?",

@@ -3,7 +3,7 @@ export const company = {
   legalName: 'CB SOLS REVÊTEMENTS',
   tagline: 'Artisan du sol depuis 25 ans',
   description:
-    'Spécialiste des revêtements de sol sur mesure en Charente-Maritime. Moquettes, sols PVC, tapis — posés par des artisans qualifiés pour particuliers et professionnels.',
+    'Spécialiste des revêtements de sol sur mesure en Charente-Maritime. Moquettes, sols PVC, tapis : posés par des artisans qualifiés pour particuliers et professionnels.',
   phone: '06 85 05 28 80',
   phoneClean: '+33685052880',
   email: 'contact@cbsols.fr',
@@ -22,7 +22,7 @@ export const company = {
   since: 1999,
   experience: '25 ans',
   showroom: {
-    description: 'Showroom sur rendez-vous — espace confidentiel avec plus de 500 échantillons',
+    description: 'Showroom sur rendez-vous : espace confidentiel avec plus de 500 échantillons',
     appointment: true,
   },
   zones: ['La Rochelle', "L'Île de Ré", 'Rochefort', 'Saintes', 'Royan', 'Charente-Maritime'],

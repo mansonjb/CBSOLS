@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { services } from '@/data/services'
 
 export const metadata: Metadata = {
-  title: 'Nos Services — Moquette, Sol PVC, Tapis Sur Mesure',
+  title: 'Nos Services | Moquette, Sol PVC, Tapis Sur Mesure',
   description:
     'Découvrez tous les services CB Sols : pose de moquette, sol PVC lames/dalles/lés, douches PVC, tapis sur mesure, tapis de propreté, nettoyage de moquette. Artisan certifié en Charente-Maritime.',
 }
@@ -20,7 +20,7 @@ export default function ServicesPage() {
               Nos services
             </h1>
             <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '560px', lineHeight: 1.7, margin: 0 }}>
-              Spécialiste du revêtement de sol depuis 25 ans en Charente-Maritime. CB Sols accompagne particuliers et professionnels de A à Z — conseil, fourniture, pose et entretien.
+              Spécialiste du revêtement de sol depuis 25 ans en Charente-Maritime. CB Sols accompagne particuliers et professionnels de A à Z : conseil, fourniture, pose et entretien.
             </p>
           </div>
         </section>

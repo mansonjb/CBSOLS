@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: 'À Propos — Valentin Prévoteau, Artisan Poseur CB Sols depuis 1999',
+  title: 'À Propos | Valentin Prévoteau, Artisan Poseur CB Sols depuis 1999',
   description:
     "Rencontrez Valentin Prévoteau, gérant et artisan poseur de CB Sols depuis 1999. Qualibat, assurance décennale, 500+ chantiers en Charente-Maritime. L'homme derrière chaque chantier.",
   alternates: { canonical: 'https://cbsols.fr/a-propos' },
@@ -41,7 +41,7 @@ const personSchema = {
   hasCredential: [
     {
       '@type': 'EducationalOccupationalCredential',
-      name: 'Qualification Qualibat 6111 — Revêtements de sol collés',
+      name: 'Qualification Qualibat 6111 : Revêtements de sol collés',
       recognizedBy: { '@type': 'Organization', name: 'Qualibat' },
     },
     {
@@ -53,11 +53,11 @@ const personSchema = {
 
 export default function AProposPage() {
   const credentials = [
-    { label: 'Qualibat 6111', desc: 'Revêtements de sol collés — qualification reconnue', icon: '✓' },
+    { label: 'Qualibat 6111', desc: 'Revêtements de sol collés : qualification reconnue', icon: '✓' },
     { label: 'Décennale', desc: 'Assurance responsabilité décennale en cours de validité', icon: '✓' },
-    { label: 'Partenaire EGE', desc: 'Poseur agréé EGE — moquette contract premium', icon: '✓' },
-    { label: 'Partenaire Gerflor', desc: 'Distributeur agréé — gamme complète sol PVC & LVT', icon: '✓' },
-    { label: 'Partenaire Forbo', desc: 'Poseur Forbo certifié — Marmoleum et vinyle', icon: '✓' },
+    { label: 'Partenaire EGE', desc: 'Poseur agréé EGE : moquette contract premium', icon: '✓' },
+    { label: 'Partenaire Gerflor', desc: 'Distributeur agréé : gamme complète sol PVC & LVT', icon: '✓' },
+    { label: 'Partenaire Forbo', desc: 'Poseur Forbo certifié : Marmoleum et vinyle', icon: '✓' },
     { label: 'Partenaire Tarkett', desc: 'Solutions sol PVC hétérogène et homogène', icon: '✓' },
   ]
 
@@ -83,7 +83,7 @@ export default function AProposPage() {
               <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>de vos sols.</em>
             </h1>
             <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '600px', lineHeight: 1.75, margin: 0 }}>
-              CB Sols est né en 1999 à Villedoux d'une passion pour les beaux matériaux et le travail bien fait. En 25 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime — des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille aux restaurants étoilés.
+              CB Sols est né en 1999 à Villedoux d'une passion pour les beaux matériaux et le travail bien fait. En 25 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime, des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille aux restaurants étoilés.
             </p>
           </div>
         </section>
@@ -122,7 +122,7 @@ export default function AProposPage() {
                   Ce qui distingue CB Sols, c'est cette présence personnelle : quand vous appelez le <a href={`tel:${company.phoneClean}`} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>{company.phone}</a>, c'est Valentin qui décroche. Quand un chantier démarre, c'est lui qui est là. Pas d'intermédiaire, pas de sous-traitant anonyme.
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.8 }}>
-                  Cette proximité avec le client, cette connaissance intime du terrain et des matériaux, c'est ce qui différencie CB Sols des grandes enseignes nationales — et ce qui explique pourquoi les hôteliers, gérants de camping et maîtres d'œuvre reviennent chantier après chantier.
+                  Cette proximité avec le client, cette connaissance intime du terrain et des matériaux, c'est ce qui différencie CB Sols des grandes enseignes nationales, et ce qui explique pourquoi les hôteliers, gérants de camping et maîtres d'œuvre reviennent chantier après chantier.
                 </p>
               </div>
 
@@ -130,11 +130,11 @@ export default function AProposPage() {
                 <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Parcours & milestones</div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
                   {[
-                    { year: '1999', label: 'Création de CB Sols', desc: "Lancement de l'activité revêtement de sol à Villedoux — premier chantier hôtelier sur l'Île de Ré dès l'année suivante." },
+                    { year: '1999', label: 'Création de CB Sols', desc: "Lancement de l'activité revêtement de sol à Villedoux, premier chantier hôtelier sur l'Île de Ré dès l'année suivante." },
                     { year: '2005', label: 'Ouverture du showroom', desc: 'Un espace dédié sur rendez-vous avec plus de 500 échantillons EGE, Gerflor, Forbo et Tarkett.' },
                     { year: '2010', label: 'Développement B2B', desc: "Premiers contrats cadres avec des groupes hôteliers et des collectivités sur l'Île de Ré et l'agglo rochelaise." },
-                    { year: '2018', label: 'Qualification Qualibat', desc: "Obtention de la qualification 6111 Revêtements de sol collés — gage de compétence reconnu par les maîtres d'ouvrage." },
-                    { year: '2020', label: 'Partenariats officiels', desc: "Agréments officiels EGE, Gerflor, Forbo et Tarkett — accès aux gammes contract et aux SAV fabricants." },
+                    { year: '2018', label: 'Qualification Qualibat', desc: "Obtention de la qualification 6111 Revêtements de sol collés : gage de compétence reconnu par les maîtres d'ouvrage." },
+                    { year: '2020', label: 'Partenariats officiels', desc: "Agréments officiels EGE, Gerflor, Forbo et Tarkett : accès aux gammes contract et aux SAV fabricants." },
                     { year: "Aujourd'hui", label: '500+ chantiers', desc: 'La Rochelle, Île de Ré, Île d\'Oléron, Rochefort, Saintes et toute la Charente-Maritime.' },
                   ].map((item, i, arr) => (
                     <div key={item.year} style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '1.25rem', padding: '1.5rem 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none' }}>
@@ -182,7 +182,7 @@ export default function AProposPage() {
               ))}
             </div>
             <p style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: '1.5rem', lineHeight: 1.65, maxWidth: '560px' }}>
-              Ces partenariats permettent à CB Sols d'accéder aux gammes professionnelles complètes, aux garanties fabricants et à l'assistance technique — bénéfices directs pour vos chantiers.
+              Ces partenariats permettent à CB Sols d'accéder aux gammes professionnelles complètes, aux garanties fabricants et à l'assistance technique : bénéfices directs pour vos chantiers.
             </p>
           </div>
         </section>
@@ -195,7 +195,7 @@ export default function AProposPage() {
               Parlons de votre chantier
             </h2>
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, fontSize: '1.1rem', color: 'var(--muted)', margin: '0 0 2.5rem' }}>
-              Valentin répond personnellement — devis gratuit sous 48h
+              Valentin répond personnellement, devis gratuit sous 48h
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>

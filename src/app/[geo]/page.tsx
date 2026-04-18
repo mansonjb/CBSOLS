@@ -200,7 +200,7 @@ export default async function GeoPage({ params }: Props) {
         <section style={{ padding: '4rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>
-              FAQ — {service.name} à {city.name}
+              FAQ - {service.name} à {city.name}
             </div>
             {faqItems.map((item, i) => (
               <div key={i} style={{ padding: '1.5rem 0', borderBottom: '1px solid var(--border)' }}>
