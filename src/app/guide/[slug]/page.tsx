@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { guides, getGuideBySlug } from '@/data/guides'
 import { solutions, getSolutionBySlug } from '@/data/solutions'
 import { company } from '@/data/company'
+import { faqs } from '@/data/faqs'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -32,6 +33,11 @@ export default async function GuidePage({ params }: Props) {
   const relatedSolutions = guide.relatedSolutions
     .map((s) => getSolutionBySlug(s))
     .filter(Boolean)
+
+  // FAQs that mention any of this guide's related solutions
+  const relatedFaqs = faqs.filter(f =>
+    guide.relatedSolutions.some(sol => f.relatedSolutions.includes(sol))
+  ).slice(0, 4)
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -129,6 +135,26 @@ export default async function GuidePage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* Related FAQ pages */}
+        {relatedFaqs.length > 0 && (
+          <section style={{ padding: '3rem 2rem', borderBottom: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.25rem' }}>Aller plus loin</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+                {relatedFaqs.map((f) => (
+                  <Link key={f.slug} href={`/faq/${f.slug}`} style={{ textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 0', borderBottom: '1px solid var(--border)' }}>
+                    <div>
+                      <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.2rem' }}>{f.category}</div>
+                      <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--dark)' }}>{f.question}</div>
+                    </div>
+                    <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', flexShrink: 0, marginLeft: '1rem' }}>Lire →</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Related solutions */}
         {relatedSolutions.length > 0 && (

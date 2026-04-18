@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import { solutions, getSolutionBySlug } from '@/data/solutions'
 import { cities } from '@/data/cities'
 import { company } from '@/data/company'
+import { guides } from '@/data/guides'
+import { faqs } from '@/data/faqs'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -30,6 +32,8 @@ export default async function SolutionPage({ params }: Props) {
   if (!solution) notFound()
 
   const relatedCities = cities.slice(0, 10)
+  const relatedGuides = guides.filter(g => g.relatedSolutions.includes(slug))
+  const relatedFaqs = faqs.filter(f => f.relatedSolutions.includes(slug))
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -214,6 +218,35 @@ export default async function SolutionPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* Pour aller plus loin — guides + FAQ */}
+        {(relatedGuides.length > 0 || relatedFaqs.length > 0) && (
+          <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Pour aller plus loin</div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '0.75rem' }}>
+                {relatedGuides.map((g) => (
+                  <Link key={g.slug} href={`/guide/${g.slug}`} style={{ textDecoration: 'none', display: 'flex', gap: '1rem', alignItems: 'flex-start', padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+                    <div style={{ fontSize: '1rem', flexShrink: 0, marginTop: '1px' }}>📖</div>
+                    <div>
+                      <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem' }}>Guide</div>
+                      <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--dark)', lineHeight: 1.4 }}>{g.title}</div>
+                    </div>
+                  </Link>
+                ))}
+                {relatedFaqs.map((f) => (
+                  <Link key={f.slug} href={`/faq/${f.slug}`} style={{ textDecoration: 'none', display: 'flex', gap: '1rem', alignItems: 'flex-start', padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+                    <div style={{ fontSize: '1rem', flexShrink: 0, marginTop: '1px' }}>❓</div>
+                    <div>
+                      <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem' }}>FAQ</div>
+                      <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--dark)', lineHeight: 1.4 }}>{f.question}</div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Geo links */}
         <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)' }}>
