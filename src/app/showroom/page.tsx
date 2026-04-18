@@ -34,7 +34,7 @@ export default function ShowroomPage() {
           style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center' }}
           priority
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, rgba(var(--bg-rgb,255,255,255),0.4) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, rgba(250,250,248,0.6) 100%)' }} />
       </section>
 
       <section style={{ padding: '5rem 2rem' }}>
