@@ -57,12 +57,12 @@ export function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav style={{ display: 'flex', gap: '2.5rem' }} className="desk-nav">
+          <nav style={{ display: 'flex', gap: '1.75rem' }} className="desk-nav">
             {nav.map(item => (
               <Link key={item.href} href={item.href} style={{
-                fontSize: '0.72rem', letterSpacing: '0.1em', textTransform: 'uppercase',
+                fontSize: '0.68rem', letterSpacing: '0.08em', textTransform: 'uppercase',
                 color: 'var(--dark-2)', textDecoration: 'none', fontWeight: 500,
-                transition: 'color 0.2s', position: 'relative',
+                transition: 'color 0.2s', position: 'relative', whiteSpace: 'nowrap',
               }}>
                 {item.label}
               </Link>
@@ -70,21 +70,21 @@ export function Header() {
           </nav>
 
           {/* Right CTA */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }} className="desk-nav">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }} className="desk-nav">
             <ColorSwitcher />
             <ThemeToggle />
             <a href={`tel:${company.phoneClean}`} style={{
-              fontSize: '0.8rem', color: 'var(--dark-2)', textDecoration: 'none',
-              fontWeight: 500, letterSpacing: '0.02em',
+              fontSize: '0.75rem', color: 'var(--dark-2)', textDecoration: 'none',
+              fontWeight: 500, letterSpacing: '0.02em', whiteSpace: 'nowrap',
             }}>
               {company.phone}
             </a>
             <Link href="/contact" style={{
-              display: 'inline-block', padding: '0.625rem 1.5rem',
+              display: 'inline-block', padding: '0.55rem 1.25rem',
               backgroundColor: 'var(--terra)', color: '#fff',
-              fontSize: '0.65rem', letterSpacing: '0.16em', textTransform: 'uppercase',
+              fontSize: '0.62rem', letterSpacing: '0.14em', textTransform: 'uppercase',
               textDecoration: 'none', fontWeight: 600, borderRadius: '999px',
-              transition: 'background-color 0.2s',
+              transition: 'background-color 0.2s', whiteSpace: 'nowrap',
             }}>
               Devis gratuit
             </Link>
@@ -133,8 +133,8 @@ export function Header() {
       </div>
 
       <style>{`
-        @media (max-width: 900px) { .desk-nav { display: none !important; } .mob-burger { display: flex !important; } }
-        @media (min-width: 901px) { .mob-burger { display: none !important; } .desk-nav { display: flex !important; } }
+        @media (max-width: 1100px) { .desk-nav { display: none !important; } .mob-burger { display: flex !important; } }
+        @media (min-width: 1101px) { .mob-burger { display: none !important; } .desk-nav { display: flex !important; } }
       `}</style>
     </header>
   )

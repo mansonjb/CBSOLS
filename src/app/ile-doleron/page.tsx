@@ -27,7 +27,7 @@ export default function IleDoleronPage() {
   const oleronCities = cities.filter(c => c.zone === 'ile-doleron')
   const nearbyZones = [
     { label: 'La Rochelle & agglomération', href: '/revetement-sol-la-rochelle' },
-    { label: 'Île de Ré', href: '/revetement-sol-saint-martin-de-re' },
+    { label: 'Île de Ré', href: '/ile-de-re' },
     { label: 'Rochefort', href: '/revetement-sol-rochefort' },
     { label: 'Royan', href: '/revetement-sol-royan' },
   ]

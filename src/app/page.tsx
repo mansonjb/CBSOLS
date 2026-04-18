@@ -396,7 +396,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
             {[
               { zone: 'la-rochelle', label: 'La Rochelle & agglo', desc: 'La Rochelle, Aytré, Lagord, Villedoux, Puilboreau…', href: '/revetement-sol-la-rochelle', count: cities.filter(c => c.zone === 'la-rochelle').length },
-              { zone: 'ile-de-re', label: 'Île de Ré', desc: 'Saint-Martin, La Flotte, Rivedoux, Ars-en-Ré…', href: '/revetement-sol-saint-martin-de-re', count: cities.filter(c => c.zone === 'ile-de-re').length },
+              { zone: 'ile-de-re', label: 'Île de Ré', desc: 'Saint-Martin, La Flotte, Rivedoux, Ars-en-Ré…', href: '/ile-de-re', count: cities.filter(c => c.zone === 'ile-de-re').length },
               { zone: 'ile-doleron', label: "Île d'Oléron", desc: 'Saint-Pierre, Saint-Georges, Le Château…', href: '/ile-doleron', count: cities.filter(c => c.zone === 'ile-doleron').length },
               { zone: 'charente-maritime', label: 'Charente-Maritime', desc: 'Rochefort, Saintes, Royan, Jonzac, Saujon…', href: '/zones', count: cities.filter(c => c.zone === 'charente-maritime').length },
             ].map(z => (
