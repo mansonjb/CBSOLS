@@ -15,6 +15,11 @@ const nav = [
   { href: '/showroom', label: 'Showroom' },
 ]
 
+const navMobileExtra = [
+  { href: '/a-propos', label: 'À propos' },
+  { href: '/zones', label: 'Zones' },
+]
+
 export function Header() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -107,7 +112,7 @@ export function Header() {
         backgroundColor: 'var(--bg-card)',
       }}>
         <div style={{ borderTop: '1px solid var(--border)', padding: '1.5rem 2rem 2rem' }}>
-          {nav.map(item => (
+          {[...nav, ...navMobileExtra].map(item => (
             <Link key={item.href} href={item.href} onClick={() => setOpen(false)} style={{
               display: 'block', padding: '0.875rem 0',
               borderBottom: '1px solid var(--border)',

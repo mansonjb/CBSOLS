@@ -38,6 +38,25 @@ export function Footer() {
             </div>
           </div>
 
+          {/* CB Sols */}
+          <div>
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.25rem' }}>CB Sols</div>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+              {[
+                { href: '/a-propos', label: 'Valentin & l\'équipe' },
+                { href: '/showroom', label: 'Showroom' },
+                { href: '/realisations', label: 'Réalisations' },
+                { href: '/tarifs', label: 'Tarifs indicatifs' },
+                { href: '/marques', label: 'Nos marques' },
+                { href: '/architectes', label: 'Architectes & MOE' },
+              ].map(i => (
+                <li key={i.href}>
+                  <Link href={i.href} style={{ fontSize: '0.8rem', color: 'rgba(240,235,227,0.55)', textDecoration: 'none' }}>{i.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Services */}
           <div>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.25rem' }}>Services</div>

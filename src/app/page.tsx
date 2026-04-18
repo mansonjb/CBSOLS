@@ -343,6 +343,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── VALENTIN ────────────────────────────────────────────── */}
+      <section style={{ padding: '6rem 2rem', backgroundColor: 'var(--bg-inv)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+          <div>
+            <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>L'artisan derrière chaque chantier</p>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#F0EBE3', letterSpacing: '-0.03em', lineHeight: 1.05, margin: '0 0 1.5rem' }}>
+              Valentin Prévoteau<br />
+              <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>depuis 1999.</em>
+            </h2>
+            <p style={{ fontSize: '0.9rem', color: 'rgba(240,235,227,0.6)', lineHeight: 1.8, maxWidth: '480px', marginBottom: '2rem' }}>
+              Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche — pas un commercial, pas un sous-traitant. 25 ans de métier, des centaines de chantiers en Charente-Maritime.
+            </p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem' }}>
+              {['Qualibat 6111', 'Décennale', 'Partenaire EGE', 'Partenaire Gerflor'].map(c => (
+                <span key={c} style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(240,235,227,0.55)', padding: '0.3rem 0.875rem', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '999px' }}>{c}</span>
+              ))}
+            </div>
+            <Link href="/a-propos" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', border: '1.5px solid rgba(196,113,74,0.6)', color: 'var(--terra)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px', transition: 'all 0.2s' }}>
+              Notre histoire →
+            </Link>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{ position: 'relative', width: '100%', maxWidth: '380px' }}>
+              <div style={{ aspectRatio: '4/5', backgroundColor: 'rgba(196,113,74,0.08)', border: '1px solid rgba(196,113,74,0.2)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                <div style={{ textAlign: 'center', padding: '3rem 2rem' }}>
+                  <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>👷</div>
+                  <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#F0EBE3', letterSpacing: '-0.02em' }}>Valentin Prévoteau</div>
+                  <div style={{ fontSize: '0.72rem', color: 'rgba(240,235,227,0.4)', marginTop: '0.4rem', letterSpacing: '0.06em' }}>Artisan poseur · CB Sols</div>
+                  <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(196,113,74,0.1)', borderRadius: '10px', borderLeft: '2px solid var(--terra)' }}>
+                    <p style={{ fontSize: '0.85rem', color: 'rgba(240,235,227,0.7)', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, lineHeight: 1.7, margin: 0 }}>
+                      "Un sol bien posé, c'est discret et dure des décennies. Un sol mal posé, ça se voit tout de suite."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div style={{ position: 'absolute', top: '-12px', right: '-12px', padding: '0.5rem 0.875rem', backgroundColor: 'var(--terra)', borderRadius: '999px', fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#fff', fontWeight: 600 }}>
+                500+ chantiers
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ─── B2B ─────────────────────────────────────────────────── */}
       <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
