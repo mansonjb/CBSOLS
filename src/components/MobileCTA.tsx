@@ -1,8 +1,20 @@
 'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { company } from '@/data/company'
+import { getCityBySlug } from '@/data/cities'
 
 export function MobileCTA() {
+  const pathname = usePathname() ?? ''
+  // Detect city context on /revetement-sol-[city] and /[service]-[city]
+  let contextCity: string | null = null
+  if (pathname.startsWith('/revetement-sol-')) {
+    const slug = pathname.replace('/revetement-sol-', '').split('/')[0]
+    contextCity = getCityBySlug(slug)?.name ?? null
+  }
+  const ctaHref = contextCity ? `/contact?city=${encodeURIComponent(contextCity)}` : '/contact'
+  const ctaLabel = contextCity ? `Devis ${contextCity}` : 'Devis gratuit 48h'
+
   return (
     <div className="mobile-cta-bar" style={{
       display: 'none',
@@ -42,7 +54,7 @@ export function MobileCTA() {
         Appeler
       </a>
       <Link
-        href="/contact"
+        href={ctaHref}
         style={{
           flex: 2,
           display: 'flex',
@@ -59,7 +71,7 @@ export function MobileCTA() {
           textTransform: 'uppercase',
         }}
       >
-        Devis gratuit 48h
+        {ctaLabel}
       </Link>
     </div>
   )

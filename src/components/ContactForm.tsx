@@ -1,6 +1,7 @@
 'use client'
 
 import { useActionState, useEffect, useRef } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { sendContactForm, type ContactState } from '@/app/actions/contact'
 
 const initial: ContactState = { status: 'idle', message: '' }
@@ -29,6 +30,8 @@ const labelStyle: React.CSSProperties = {
 export function ContactForm() {
   const [state, action, pending] = useActionState(sendContactForm, initial)
   const formRef = useRef<HTMLFormElement>(null)
+  const searchParams = useSearchParams()
+  const prefillCity = searchParams?.get('city') ?? ''
 
   useEffect(() => {
     if (state.status === 'success') {
@@ -147,6 +150,7 @@ export function ContactForm() {
             type="text"
             name="city"
             disabled={pending}
+            defaultValue={prefillCity}
             placeholder="La Rochelle, Île de Ré…"
             style={{ ...inputStyle, opacity: pending ? 0.6 : 1 }}
           />

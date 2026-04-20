@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import { company } from '@/data/company'
 import { ContactForm } from '@/components/ContactForm'
 
@@ -67,7 +68,9 @@ export default function ContactPage() {
             </div>
 
             {/* Right: real form with server action */}
-            <ContactForm />
+            <Suspense fallback={<div style={{ minHeight: 400 }} />}>
+              <ContactForm />
+            </Suspense>
           </div>
         </div>
       </section>
