@@ -18,7 +18,7 @@ export const cities: City[] = [
     population: 80000,
   },
   {
-    slug: 'aytré',
+    slug: 'aytre',
     name: 'Aytré',
     department: '17',
     zone: 'la-rochelle',

@@ -6,7 +6,7 @@ import { cities } from '@/data/cities'
 
 export function Footer() {
   const mainCities = cities.filter(c =>
-    ['la-rochelle','saint-martin-de-re','rochefort','saintes','royan','le-bois-plage-en-re','aytré','rivedoux-plage','lagord','puilboreau'].includes(c.slug)
+    ['la-rochelle','saint-martin-de-re','rochefort','saintes','royan','le-bois-plage-en-re','aytre','rivedoux-plage','lagord','puilboreau'].includes(c.slug)
   )
 
   return (
