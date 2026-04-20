@@ -27,7 +27,7 @@ export default function ShowroomPage() {
       {/* Photo showroom */}
       <section style={{ padding: '0', maxHeight: '480px', overflow: 'hidden', position: 'relative' }}>
         <Image
-          src="/images/showroom-interieur.png"
+          src="/images/showroom-interieur.webp"
           alt="Showroom CB Sols Villedoux — espace confidentiel avec plus de 500 échantillons"
           width={1024}
           height={509}

@@ -7,12 +7,12 @@ import { company } from '@/data/company'
 import { HeroSlider } from '@/components/HeroSlider'
 
 const projects = [
-  { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel-real.jpg' },
-  { title: 'Restaurant Coutanceau', type: 'Moquette gastronomique', sector: 'Restauration étoilée', surface: '220 m²', img: '/images/restaurant-etoile-real.jpg' },
-  { title: 'Golf de la Prée', type: 'Moquette + PVC vestiaires', sector: 'Sport & Loisirs', surface: '600 m²', img: '/images/golf-real.jpg' },
-  { title: 'Bistrot Grande Terrasse', type: 'Moquette acoustique', sector: 'Restauration', surface: '280 m²', img: '/images/bistrot-restaurant-real.jpg' },
-  { title: 'Bureaux Charente-Maritime', type: 'Dalles haute résistance', sector: 'Tertiaire', surface: '350 m²', img: '/images/moquette-bureau-real.jpg' },
-  { title: 'Cuisine Professionnelle', type: 'PVC soudé à chaud', sector: 'Pro & CHR', surface: '80 m²', img: '/images/cuisine-pro-real.jpg' },
+  { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel-real.webp' },
+  { title: 'Restaurant Coutanceau', type: 'Moquette gastronomique', sector: 'Restauration étoilée', surface: '220 m²', img: '/images/restaurant-etoile-real.webp' },
+  { title: 'Golf de la Prée', type: 'Moquette + PVC vestiaires', sector: 'Sport & Loisirs', surface: '600 m²', img: '/images/golf-real.webp' },
+  { title: 'Bistrot Grande Terrasse', type: 'Moquette acoustique', sector: 'Restauration', surface: '280 m²', img: '/images/bistrot-restaurant-real.webp' },
+  { title: 'Bureaux Charente-Maritime', type: 'Dalles haute résistance', sector: 'Tertiaire', surface: '350 m²', img: '/images/moquette-bureau-real.webp' },
+  { title: 'Cuisine Professionnelle', type: 'PVC soudé à chaud', sector: 'Pro & CHR', surface: '80 m²', img: '/images/cuisine-pro-real.webp' },
 ]
 
 const testimonials = [
@@ -31,11 +31,11 @@ const testimonials = [
 ]
 
 const brandPartners = [
-  { name: 'EGE', src: '/images/brands/ege.png', href: 'https://www.ege.dk/fr/' },
+  { name: 'EGE', src: '/images/brands/ege.webp', href: 'https://www.ege.dk/fr/' },
   { name: 'Gerflor', src: '/images/brands/gerflor.svg', href: 'https://www.gerflor.fr' },
   { name: 'Tarkett', src: '/images/brands/tarkett.svg', href: 'https://www.tarkett.fr' },
-  { name: 'Balsan', src: '/images/brands/balsan.png', href: 'https://www.balsan.com/fr/' },
-  { name: 'Interface', src: '/images/brands/interface.png', href: 'https://www.interface.com/EU/fr-FR/' },
+  { name: 'Balsan', src: '/images/brands/balsan.webp', href: 'https://www.balsan.com/fr/' },
+  { name: 'Interface', src: '/images/brands/interface.webp', href: 'https://www.interface.com/EU/fr-FR/' },
 ]
 
 const garanties = [
@@ -189,18 +189,18 @@ export default function Home() {
           <div style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '1.75rem', textAlign: 'center' }}>Ils nous font confiance</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center', justifyContent: 'center' }}>
             {[
-              { src: '/images/clients/Hotel_La_Baronnie.png', alt: 'Hôtel La Baronnie' },
-              { src: '/images/clients/LaGrandeTerrasse.png', alt: 'La Grande Terrasse' },
-              { src: '/images/clients/Logo_GolfDeLaPree.png', alt: 'Golf de la Prée' },
-              { src: '/images/clients/Logo_Gaya.png', alt: 'Restaurant Gaya' },
-              { src: '/images/clients/Masqhotel.png', alt: 'Masq Hôtel' },
-              { src: '/images/clients/LogoHotelGrandLarge.png', alt: 'Hôtel Grand Large' },
-              { src: '/images/clients/HotelSaintNicolas.png', alt: 'Hôtel Saint-Nicolas' },
-              { src: '/images/clients/CLR_Hotels.png', alt: 'CLR Hotels' },
-              { src: '/images/clients/Ibis.png', alt: 'Ibis' },
-              { src: '/images/clients/MammaMiaRestaurant.png', alt: 'Mamma Mia Restaurant' },
-              { src: '/images/clients/HotelLaMarine.png', alt: 'Hôtel La Marine' },
-              { src: '/images/clients/LogoMaisonDesAmbassadeurs.png', alt: 'Maison des Ambassadeurs' },
+              { src: '/images/clients/Hotel_La_Baronnie.webp', alt: 'Hôtel La Baronnie' },
+              { src: '/images/clients/LaGrandeTerrasse.webp', alt: 'La Grande Terrasse' },
+              { src: '/images/clients/Logo_GolfDeLaPree.webp', alt: 'Golf de la Prée' },
+              { src: '/images/clients/Logo_Gaya.webp', alt: 'Restaurant Gaya' },
+              { src: '/images/clients/Masqhotel.webp', alt: 'Masq Hôtel' },
+              { src: '/images/clients/LogoHotelGrandLarge.webp', alt: 'Hôtel Grand Large' },
+              { src: '/images/clients/HotelSaintNicolas.webp', alt: 'Hôtel Saint-Nicolas' },
+              { src: '/images/clients/CLR_Hotels.webp', alt: 'CLR Hotels' },
+              { src: '/images/clients/Ibis.webp', alt: 'Ibis' },
+              { src: '/images/clients/MammaMiaRestaurant.webp', alt: 'Mamma Mia Restaurant' },
+              { src: '/images/clients/HotelLaMarine.webp', alt: 'Hôtel La Marine' },
+              { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs' },
             ].map(c => (
               // eslint-disable-next-line @next/next/no-img-element
               <img key={c.alt} src={c.src} alt={c.alt} className="client-logo" style={{ height: '32px', width: 'auto', maxWidth: '110px', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.45, transition: 'opacity 0.2s' }} />
@@ -292,9 +292,9 @@ export default function Home() {
       <section style={{ padding: '0', overflow: 'hidden' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px', backgroundColor: 'var(--bg-inv)' }} className="materials-grid">
           {[
-            { img: '/images/moquette-bureau.jpg', label: 'Moquette', caption: 'Laine & synthétique : hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · Balsan · Interface' },
-            { img: '/images/cuisine-pro.jpg', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés : zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · Tarkett · Forbo' },
-            { img: '/images/motif-tapis-hotel.jpg', label: 'Tapis sur mesure', caption: 'Motif exclusif, forme libre, coloris personnalisés', href: '/services/tapis-sur-mesure', brand: 'EGE · Balsan · Balta' },
+            { img: '/images/moquette-bureau.webp', label: 'Moquette', caption: 'Laine & synthétique : hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · Balsan · Interface' },
+            { img: '/images/cuisine-pro.webp', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés : zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · Tarkett · Forbo' },
+            { img: '/images/motif-tapis-hotel.webp', label: 'Tapis sur mesure', caption: 'Motif exclusif, forme libre, coloris personnalisés', href: '/services/tapis-sur-mesure', brand: 'EGE · Balsan · Balta' },
           ].map(mat => (
             <Link key={mat.label} href={mat.href} style={{ textDecoration: 'none', display: 'block', position: 'relative', overflow: 'hidden', aspectRatio: '4/5' }} className="material-tile">
               <Image src={mat.img} alt={mat.label} fill style={{ objectFit: 'cover', transition: 'transform 0.6s ease' }} sizes="33vw" className="project-img" />
@@ -488,7 +488,7 @@ export default function Home() {
       <section style={{ padding: '0', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }} className="showroom-grid">
           <div style={{ position: 'relative', minHeight: '520px', overflow: 'hidden', backgroundColor: 'var(--bg-alt)', borderRadius: '0 0 0 0' }}>
-            <Image src="/images/moquette-chambre.jpg" alt="Showroom CB Sols, échantillons moquette" fill style={{ objectFit: 'cover' }} sizes="50vw" />
+            <Image src="/images/moquette-chambre.webp" alt="Showroom CB Sols, échantillons moquette" fill style={{ objectFit: 'cover' }} sizes="50vw" />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '5rem 4rem' }}>
             <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem', fontWeight: 500 }}>Showroom · Sur rendez-vous</p>

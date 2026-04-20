@@ -4,37 +4,37 @@ import Image from 'next/image'
 
 const slides = [
   {
-    img: '/images/tapis-hotel.jpg',
+    img: '/images/tapis-hotel.webp',
     project: 'Hôtel La Baronnie · Île de Ré',
     type: 'Tapis sur mesure',
     surface: '600 m²',
   },
   {
-    img: '/images/motif-tapis-hotel.jpg',
+    img: '/images/motif-tapis-hotel.webp',
     project: 'Lobby hôtelier · La Rochelle',
     type: 'Tapis motif exclusif',
     surface: '120 m²',
   },
   {
-    img: '/images/restaurant-coutanceau.jpg',
+    img: '/images/restaurant-coutanceau.webp',
     project: 'Restaurant Coutanceau · La Rochelle',
     type: 'Moquette gastronomique',
     surface: '220 m²',
   },
   {
-    img: '/images/moquette-chambre.jpg',
+    img: '/images/moquette-chambre.webp',
     project: 'Résidences · Île de Ré',
     type: 'Moquette chambre hôtelière',
     surface: '180 m²',
   },
   {
-    img: '/images/moquette-bureau.jpg',
+    img: '/images/moquette-bureau.webp',
     project: 'Bureaux · Charente-Maritime',
     type: 'Moquette dalles contrat',
     surface: '350 m²',
   },
   {
-    img: '/images/golf.jpg',
+    img: '/images/golf.webp',
     project: 'Golf de la Prée · Île de Ré',
     type: 'Moquette + PVC vestiaires',
     surface: '600 m²',
