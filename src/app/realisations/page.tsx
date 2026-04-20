@@ -89,12 +89,12 @@ export default function RealisationsPage() {
       </section>
 
       {/* Clients / références */}
-      <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>
+      <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-inv)', borderTop: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Références professionnelles</div>
-            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
-            <p style={{ fontSize: '0.9rem', color: 'var(--muted)', maxWidth: '520px', margin: '0 auto', lineHeight: 1.6 }}>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: '#F0EBE3', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
+            <p style={{ fontSize: '0.9rem', color: 'rgba(240,235,227,0.65)', maxWidth: '520px', margin: '0 auto', lineHeight: 1.6 }}>
               Hôtels, restaurants, architectes, collectivités : une sélection de clients qui nous ont confié leurs projets en Charente-Maritime.
             </p>
           </div>
@@ -117,19 +117,19 @@ export default function RealisationsPage() {
               { src: '/images/clients/Atelier715.webp', alt: 'Atelier 715' },
               { src: '/images/clients/ZestArchitecture.webp', alt: 'Zest Architecture' },
             ].map(c => (
-              <div key={c.alt} className="client-card" style={{ backgroundColor: '#fff', border: '1px solid rgba(0,0,0,0.06)', borderRadius: '8px', height: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', transition: 'transform 0.2s, box-shadow 0.2s' }}>
+              <div key={c.alt} className="client-card-dark" style={{ border: '1px solid rgba(240,235,227,0.08)', borderRadius: '8px', height: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', transition: 'border-color 0.2s, transform 0.2s' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={c.src} alt={c.alt} style={{ maxHeight: '48px', maxWidth: '100%', width: 'auto', objectFit: 'contain' }} />
+                <img src={c.src} alt={c.alt} style={{ maxHeight: '48px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.85 }} />
               </div>
             ))}
           </div>
 
-          <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center', paddingTop: '2rem', borderTop: '1px solid var(--border)' }}>
+          <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center', paddingTop: '2rem', borderTop: '1px solid rgba(240,235,227,0.1)' }}>
             <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--terra)', lineHeight: 1, marginBottom: '0.5rem' }}>&ldquo;</div>
-            <blockquote style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.15rem', color: 'var(--dark)', lineHeight: 1.6, margin: '0 0 1.5rem', fontWeight: 300 }}>
+            <blockquote style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.15rem', color: '#F0EBE3', lineHeight: 1.6, margin: '0 0 1.5rem', fontWeight: 300 }}>
               Valentin a su comprendre l&apos;atmosphère que nous voulions pour nos chambres. Le résultat est à la hauteur de nos attentes, et la pose a été impeccable, dans les délais.
             </blockquote>
-            <div style={{ fontSize: '0.75rem', color: 'var(--muted)', letterSpacing: '0.08em' }}>Hôtellerie · Île de Ré</div>
+            <div style={{ fontSize: '0.75rem', color: 'rgba(240,235,227,0.5)', letterSpacing: '0.08em' }}>Hôtellerie · Île de Ré</div>
           </div>
         </div>
       </section>
