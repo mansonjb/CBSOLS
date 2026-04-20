@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { brands, getBrandBySlug } from '@/data/brands'
 import { company } from '@/data/company'
+import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -40,6 +41,13 @@ export default async function BrandPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbLD
+        items={[
+          { name: 'CB Sols', url: 'https://cbsols.fr' },
+          { name: 'Marques', url: 'https://cbsols.fr/marques' },
+          { name: brand.name, url: `https://cbsols.fr/marques/${slug}` },
+        ]}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div style={{ paddingTop: '72px' }}>
 

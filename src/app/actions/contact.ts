@@ -18,12 +18,12 @@ export async function sendContactForm(
   const projectType = formData.get('project_type')?.toString().trim() ?? ''
   const message = formData.get('message')?.toString().trim() ?? ''
 
-  if (!name || !phone || !email) {
-    return { status: 'error', message: 'Nom, téléphone et email sont obligatoires.' }
+  if (!name || !phone) {
+    return { status: 'error', message: 'Nom et téléphone sont obligatoires.' }
   }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  if (!emailRegex.test(email)) {
+  if (email && !emailRegex.test(email)) {
     return { status: 'error', message: 'Adresse email invalide.' }
   }
 
@@ -96,17 +96,20 @@ export async function sendContactForm(
     await transporter.sendMail({
       from: process.env.CONTACT_FROM,
       to: process.env.CONTACT_TO,
-      replyTo: email,
+      replyTo: email || undefined,
       subject: `[CB Sols] Devis | ${projectType || 'Nouveau contact'} | ${name}`,
       html: htmlBody,
     })
 
-    await transporter.sendMail({
-      from: process.env.CONTACT_FROM,
-      to: email,
-      subject: 'CB Sols : Votre demande a bien été reçue',
-      html: autoReplyHtml,
-    })
+    // Only send auto-reply if we have an email
+    if (email) {
+      await transporter.sendMail({
+        from: process.env.CONTACT_FROM,
+        to: email,
+        subject: 'CB Sols : Votre demande a bien été reçue',
+        html: autoReplyHtml,
+      })
+    }
 
     return { status: 'success', message: 'Votre message a bien été envoyé. Nous vous répondrons sous 48h.' }
   } catch (err) {

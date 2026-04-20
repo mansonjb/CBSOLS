@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import { company } from '@/data/company'
-import { ContactForm } from '@/components/ContactForm'
+import { ContactFormSwitcher } from '@/components/ContactFormSwitcher'
 
 export const metadata: Metadata = {
   title: 'Contact & Devis Gratuit | CB Sols La Rochelle',
@@ -69,7 +69,7 @@ export default function ContactPage() {
 
             {/* Right: real form with server action */}
             <Suspense fallback={<div style={{ minHeight: 400 }} />}>
-              <ContactForm />
+              <ContactFormSwitcher />
             </Suspense>
           </div>
         </div>

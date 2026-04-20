@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { faqs, getFaqBySlug } from '@/data/faqs'
 import { getSolutionBySlug } from '@/data/solutions'
 import { company } from '@/data/company'
+import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -55,12 +56,21 @@ export default async function FaqPage({ params }: Props) {
     '@type': 'Article',
     headline: faq.question,
     description: faq.metaDescription,
+    datePublished: '2025-10-01',
+    dateModified: '2026-03-15',
     author: { '@type': 'Organization', name: company.legalName },
     publisher: { '@type': 'Organization', name: company.legalName },
   }
 
   return (
     <>
+      <BreadcrumbLD
+        items={[
+          { name: 'CB Sols', url: 'https://cbsols.fr' },
+          { name: 'FAQ', url: 'https://cbsols.fr/faq' },
+          { name: faq.question, url: `https://cbsols.fr/faq/${slug}` },
+        ]}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <div style={{ paddingTop: '72px' }}>

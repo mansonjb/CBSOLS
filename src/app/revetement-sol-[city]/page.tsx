@@ -7,6 +7,9 @@ import { services } from '@/data/services'
 import { sectors } from '@/data/sectors'
 import { company } from '@/data/company'
 import { getZoneContent, citySizeDescriptor, cityChantierCount } from '@/data/zones'
+import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { SectorTestimonials } from '@/components/SectorTestimonials'
+import { WhatsAppInlineCTA } from '@/components/WhatsAppInlineCTA'
 
 interface Props {
   params: Promise<{ city: string }>
@@ -41,15 +44,6 @@ export default async function CityHubPage({ params }: Props) {
     .slice(0, 8)
 
   // ── JSON-LD ────────────────────────────────────────────────
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://cbsols.fr' },
-      { '@type': 'ListItem', position: 2, name: cityZoneLabels[cityData.zone], item: `https://cbsols.fr/${cityData.zone === 'la-rochelle' ? 'zones' : cityData.zone}` },
-      { '@type': 'ListItem', position: 3, name: cityData.name, item: `https://cbsols.fr/revetement-sol-${city}` },
-    ],
-  }
 
   const serviceLd = {
     '@context': 'https://schema.org',
@@ -112,7 +106,13 @@ export default async function CityHubPage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <BreadcrumbLD
+        items={[
+          { name: 'CB Sols', url: 'https://cbsols.fr' },
+          { name: cityZoneLabels[cityData.zone], url: `https://cbsols.fr/${cityData.zone === 'la-rochelle' ? 'zones' : cityData.zone}` },
+          { name: cityData.name, url: `https://cbsols.fr/revetement-sol-${city}` },
+        ]}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
 
@@ -313,18 +313,22 @@ export default async function CityHubPage({ params }: Props) {
           </div>
         </section>
 
-        {/* ── TESTIMONIAL zone ────────────────────────────────── */}
-        <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-inv)', position: 'relative' }}>
-          <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
-            <div style={{ fontFamily: 'var(--font-serif)', fontSize: '3rem', color: 'var(--terra)', lineHeight: 1, marginBottom: '0.5rem' }}>&ldquo;</div>
-            <blockquote style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.1rem, 1.8vw, 1.35rem)', color: '#F0EBE3', lineHeight: 1.6, margin: '0 0 2rem', fontWeight: 300 }}>
-              {zoneContent.testimonial.quote}
-            </blockquote>
-            <div style={{ fontSize: '0.7rem', color: 'rgba(240,235,227,0.55)', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-              {zoneContent.testimonial.author}
-            </div>
+        {/* ── WhatsApp CTA inline ─────────────────────────────── */}
+        <section style={{ padding: '3rem 2rem' }}>
+          <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+            <WhatsAppInlineCTA context={cityData.name} />
           </div>
         </section>
+
+        {/* ── TESTIMONIALS secteur rotation ───────────────────── */}
+        <SectorTestimonials
+          zone={cityData.zone}
+          seed={`city-${city}`}
+          count={3}
+          dark
+          eyebrow="Paroles de clients"
+          title={`Ils ont choisi CB Sols en ${cityZoneLabels[cityData.zone]}`}
+        />
 
         {/* ── FAQ enrichie ─────────────────────────────────────── */}
         <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>

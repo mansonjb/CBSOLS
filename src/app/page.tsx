@@ -175,9 +175,9 @@ export default function Home() {
           <span style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--muted-light)', flexShrink: 0 }}>Fournitures agréées</span>
           <div style={{ width: '1px', height: '20px', backgroundColor: 'var(--border-mid)' }} className="brand-divider" />
           {brandPartners.map(b => (
-            <a key={b.name} href={b.href} target="_blank" rel="noopener noreferrer" className="brand-logo" style={{ opacity: 0.4, transition: 'opacity 0.2s' }}>
+            <a key={b.name} href={b.href} target="_blank" rel="noopener noreferrer" className="brand-logo">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={b.src} alt={b.name} style={{ height: '26px', width: 'auto', maxWidth: '100px', objectFit: 'contain', filter: 'grayscale(1)' }} />
+              <img src={b.src} alt={b.name} style={{ height: '28px', width: 'auto', maxWidth: '110px', objectFit: 'contain' }} />
             </a>
           ))}
         </div>

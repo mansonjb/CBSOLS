@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { services, getServiceBySlug } from '@/data/services'
 import { cities } from '@/data/cities'
 import { company } from '@/data/company'
+import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -53,6 +54,13 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbLD
+        items={[
+          { name: 'CB Sols', url: 'https://cbsols.fr' },
+          { name: 'Services', url: 'https://cbsols.fr/services' },
+          { name: service.name, url: `https://cbsols.fr/services/${slug}` },
+        ]}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div style={{ paddingTop: '72px' }}>
         {/* Hero */}

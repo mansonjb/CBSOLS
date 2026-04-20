@@ -6,6 +6,7 @@ import { cities } from '@/data/cities'
 import { company } from '@/data/company'
 import { guides } from '@/data/guides'
 import { faqs } from '@/data/faqs'
+import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -66,6 +67,13 @@ export default async function SolutionPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbLD
+        items={[
+          { name: 'CB Sols', url: 'https://cbsols.fr' },
+          { name: 'Solutions', url: 'https://cbsols.fr/solutions' },
+          { name: solution.title, url: `https://cbsols.fr/solutions/${slug}` },
+        ]}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div style={{ paddingTop: '72px' }}>

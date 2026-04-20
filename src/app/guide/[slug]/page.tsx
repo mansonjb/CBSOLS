@@ -5,6 +5,7 @@ import { guides, getGuideBySlug } from '@/data/guides'
 import { solutions, getSolutionBySlug } from '@/data/solutions'
 import { company } from '@/data/company'
 import { faqs } from '@/data/faqs'
+import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -54,6 +55,8 @@ export default async function GuidePage({ params }: Props) {
     '@type': 'Article',
     headline: guide.title,
     description: guide.metaDescription,
+    datePublished: '2025-10-01',
+    dateModified: '2026-03-15',
     author: {
       '@type': 'Organization',
       name: company.legalName,
@@ -66,6 +69,13 @@ export default async function GuidePage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbLD
+        items={[
+          { name: 'CB Sols', url: 'https://cbsols.fr' },
+          { name: 'Guides', url: 'https://cbsols.fr/guides' },
+          { name: guide.title, url: `https://cbsols.fr/guide/${slug}` },
+        ]}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <div style={{ paddingTop: '72px' }}>

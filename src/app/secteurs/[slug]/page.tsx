@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { sectors, getSectorBySlug } from '@/data/sectors'
 import { services, getServiceBySlug } from '@/data/services'
 import { company } from '@/data/company'
+import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -34,6 +35,14 @@ export default async function SecteurPage({ params }: Props) {
     .filter(Boolean)
 
   return (
+    <>
+    <BreadcrumbLD
+      items={[
+        { name: 'CB Sols', url: 'https://cbsols.fr' },
+        { name: 'Professionnels', url: 'https://cbsols.fr/secteurs' },
+        { name: sector.name, url: `https://cbsols.fr/secteurs/${slug}` },
+      ]}
+    />
     <div style={{ paddingTop: '72px' }}>
       {/* Hero */}
       <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
@@ -138,5 +147,6 @@ export default async function SecteurPage({ params }: Props) {
         </div>
       </section>
     </div>
+    </>
   )
 }
