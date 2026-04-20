@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
@@ -24,17 +23,28 @@ export default function ShowroomPage() {
         </div>
       </section>
 
-      {/* Photo showroom */}
-      <section style={{ padding: '0', maxHeight: '480px', overflow: 'hidden', position: 'relative' }}>
-        <Image
-          src="/images/showroom-interieur.webp"
-          alt="Showroom CB Sols Villedoux — espace confidentiel avec plus de 500 échantillons"
-          width={1024}
-          height={509}
-          style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center' }}
-          priority
-        />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, rgba(250,250,248,0.6) 100%)' }} />
+      {/* Déroulé d'une visite */}
+      <section style={{ padding: '4.5rem 2rem', backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Déroulé d&apos;une visite</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 700, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.02em', maxWidth: '640px', lineHeight: 1.15 }}>
+            Une heure pour comprendre votre projet, trois jours pour le chiffrer.
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem' }}>
+            {[
+              { num: '01', title: 'Échange initial', desc: 'Nous discutons de votre espace, de son usage, du trafic, de la lumière. Chaque contrainte oriente le choix du matériau.' },
+              { num: '02', title: 'Sélection des échantillons', desc: 'Nous sortons 5 à 10 références adaptées dans la matière, la couleur, la finition. Vous les touchez, les comparez à côté.' },
+              { num: '03', title: 'Échantillons à emporter', desc: 'Vous repartez avec vos 2 ou 3 préférés pour valider chez vous, à la lumière naturelle de la pièce.' },
+              { num: '04', title: 'Devis sous 48 à 72h', desc: 'Après visite technique si nécessaire, vous recevez un devis détaillé : fourniture, pose, préparation du sol, délais.' },
+            ].map((step) => (
+              <div key={step.num} style={{ borderTop: '2px solid var(--terra)', paddingTop: '1.5rem' }}>
+                <div style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: 'var(--terra)', fontWeight: 600, marginBottom: '0.75rem' }}>{step.num}</div>
+                <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.75rem', fontFamily: 'var(--font-sans)' }}>{step.title}</div>
+                <p style={{ fontSize: '0.85rem', color: 'var(--muted)', margin: 0, lineHeight: 1.65 }}>{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section style={{ padding: '5rem 2rem' }}>

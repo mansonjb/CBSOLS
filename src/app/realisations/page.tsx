@@ -87,6 +87,52 @@ export default function RealisationsPage() {
           </div>
         </div>
       </section>
+
+      {/* Clients / références */}
+      <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Références professionnelles</div>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
+            <p style={{ fontSize: '0.9rem', color: 'var(--muted)', maxWidth: '520px', margin: '0 auto', lineHeight: 1.6 }}>
+              Hôtels, restaurants, architectes, collectivités : une sélection de clients qui nous ont confié leurs projets en Charente-Maritime.
+            </p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
+            {[
+              { src: '/images/clients/Hotel_La_Baronnie.webp', alt: 'Hôtel La Baronnie' },
+              { src: '/images/clients/LaGrandeTerrasse.webp', alt: 'La Grande Terrasse' },
+              { src: '/images/clients/Logo_GolfDeLaPree.webp', alt: 'Golf de la Prée' },
+              { src: '/images/clients/Logo_Gaya.webp', alt: 'Restaurant Gaya' },
+              { src: '/images/clients/Masqhotel.webp', alt: 'Masq Hôtel' },
+              { src: '/images/clients/LogoHotelGrandLarge.webp', alt: 'Hôtel Grand Large' },
+              { src: '/images/clients/HotelSaintNicolas.webp', alt: 'Hôtel Saint-Nicolas' },
+              { src: '/images/clients/CLR_Hotels.webp', alt: 'CLR Hotels' },
+              { src: '/images/clients/Ibis.webp', alt: 'Ibis' },
+              { src: '/images/clients/MammaMiaRestaurant.webp', alt: 'Mamma Mia Restaurant' },
+              { src: '/images/clients/HotelLaMarine.webp', alt: 'Hôtel La Marine' },
+              { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs' },
+              { src: '/images/clients/ABP_Architectes.webp', alt: 'ABP Architectes' },
+              { src: '/images/clients/AnneBoulletStudio.webp', alt: 'Anne Boullet Studio' },
+              { src: '/images/clients/Atelier715.webp', alt: 'Atelier 715' },
+              { src: '/images/clients/ZestArchitecture.webp', alt: 'Zest Architecture' },
+            ].map(c => (
+              <div key={c.alt} className="client-card" style={{ backgroundColor: '#fff', border: '1px solid rgba(0,0,0,0.06)', borderRadius: '8px', height: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', transition: 'transform 0.2s, box-shadow 0.2s' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={c.src} alt={c.alt} style={{ maxHeight: '48px', maxWidth: '100%', width: 'auto', objectFit: 'contain' }} />
+              </div>
+            ))}
+          </div>
+
+          <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center', paddingTop: '2rem', borderTop: '1px solid var(--border)' }}>
+            <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--terra)', lineHeight: 1, marginBottom: '0.5rem' }}>&ldquo;</div>
+            <blockquote style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.15rem', color: 'var(--dark)', lineHeight: 1.6, margin: '0 0 1.5rem', fontWeight: 300 }}>
+              Valentin a su comprendre l&apos;atmosphère que nous voulions pour nos chambres. Le résultat est à la hauteur de nos attentes, et la pose a été impeccable, dans les délais.
+            </blockquote>
+            <div style={{ fontSize: '0.75rem', color: 'var(--muted)', letterSpacing: '0.08em' }}>Hôtellerie · Île de Ré</div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

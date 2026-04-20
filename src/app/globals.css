@@ -103,5 +103,6 @@ img { display: block; }
   body { padding-bottom: 76px; }
 }
 
-/* Client logos hover */
+/* Client logos */
 .client-logo:hover { opacity: 0.9 !important; filter: grayscale(0) !important; }
+.client-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-color: rgba(178,89,60,0.3) !important; }
