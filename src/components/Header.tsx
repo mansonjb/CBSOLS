@@ -106,12 +106,14 @@ export function Header() {
 
       {/* Mobile menu - animated slide */}
       <div style={{
-        maxHeight: open ? '520px' : '0',
-        overflow: 'hidden',
+        maxHeight: open ? 'calc(100vh - 72px)' : '0',
+        overflowY: open ? 'auto' : 'hidden',
+        overflowX: 'hidden',
         transition: 'max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1)',
         backgroundColor: 'var(--bg-card)',
+        WebkitOverflowScrolling: 'touch',
       }}>
-        <div style={{ borderTop: '1px solid var(--border)', padding: '1.5rem 2rem 2rem' }}>
+        <div style={{ borderTop: '1px solid var(--border)', padding: '1.5rem 2rem calc(2rem + env(safe-area-inset-bottom, 0px))' }}>
           {[...nav, ...navMobileExtra].map(item => (
             <Link key={item.href} href={item.href} onClick={() => setOpen(false)} style={{
               display: 'block', padding: '0.875rem 0',
