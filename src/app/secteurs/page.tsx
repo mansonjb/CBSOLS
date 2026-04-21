@@ -28,10 +28,10 @@ export default function SecteursPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
             {sectors.map((sector) => (
               <Link key={sector.slug} href={`/secteurs/${sector.slug}`} style={{ textDecoration: 'none', display: 'block' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', gap: '2rem', alignItems: 'center', padding: '2.5rem 0', borderBottom: '1px solid var(--border)', transition: 'all 0.2s' }}>
-                  <div style={{ fontSize: '2.5rem' }}>{sector.icon}</div>
+                <div className="sector-row" style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', gap: '2rem', alignItems: 'center', padding: '2.5rem 0', borderBottom: '1px solid var(--border)', transition: 'all 0.2s' }}>
+                  <div className="sector-row-icon" style={{ fontSize: '2.5rem' }}>{sector.icon}</div>
                   <div>
-                    <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.4rem', letterSpacing: '-0.03em' }}>
+                    <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.2rem, 3.5vw, 1.5rem)', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.4rem', letterSpacing: '-0.03em' }}>
                       {sector.name}
                     </h2>
                     <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', margin: '0 0 1rem', lineHeight: 1.6, maxWidth: '500px' }}>
@@ -39,11 +39,11 @@ export default function SecteursPage() {
                     </p>
                     <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                       {sector.recommendedServices.slice(0, 3).map((s) => (
-                        <span key={s} style={{ fontSize: '0.62rem', padding: '0.2rem 0.6rem', border: '1px solid var(--border)', color: 'var(--text-muted)' }}>{s.replace(/-/g, ' ')}</span>
+                        <span key={s} style={{ fontSize: '0.62rem', padding: '0.25rem 0.65rem', border: '1px solid var(--border)', color: 'var(--text-muted)', borderRadius: '999px' }}>{s.replace(/-/g, ' ')}</span>
                       ))}
                     </div>
                   </div>
-                  <div style={{ fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', whiteSpace: 'nowrap' }}>
+                  <div className="sector-row-cta" style={{ fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', whiteSpace: 'nowrap', fontWeight: 600 }}>
                     Découvrir →
                   </div>
                 </div>

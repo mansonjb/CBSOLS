@@ -138,8 +138,8 @@ export function Header() {
       </div>
 
       <style>{`
-        @media (max-width: 1100px) { .desk-nav { display: none !important; } .mob-burger { display: flex !important; } }
-        @media (min-width: 1101px) { .mob-burger { display: none !important; } .desk-nav { display: flex !important; } }
+        @media (max-width: 1024px) { .desk-nav { display: none !important; } .mob-burger { display: flex !important; } }
+        @media (min-width: 1025px) { .mob-burger { display: none !important; } .desk-nav { display: flex !important; } }
       `}</style>
     </header>
   )
