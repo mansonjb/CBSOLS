@@ -25,7 +25,7 @@ export const company = {
     description: 'Showroom sur rendez-vous : espace confidentiel avec plus de 500 échantillons',
     appointment: true,
   },
-  zones: ['La Rochelle', "L'Île de Ré", 'Rochefort', 'Saintes', 'Royan', 'Charente-Maritime'],
+  zones: ['La Rochelle', "L'Île de Ré", "L'Île d'Oléron", 'Rochefort', 'Saintes', 'Royan', 'Charente-Maritime'],
   brands: ['EGE', 'Gerflor', 'Forbo', 'Tarkett', 'Balsan', 'ObjectFlor', 'Bostik', 'Romus'],
   social: {
     instagram: 'https://www.instagram.com/cbsols',

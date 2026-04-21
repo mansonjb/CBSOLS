@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'CB Sols intervient dans 31 communes de Charente-Maritime : La Rochelle, Île de Ré, Rochefort, Saintes, Royan et environs. Revêtement de sol, moquette, PVC.',
 }
 
-const zones = ['la-rochelle', 'ile-de-re', 'charente-maritime'] as const
+const zones = ['la-rochelle', 'ile-de-re', 'ile-doleron', 'charente-maritime'] as const
 
 export default function ZonesPage() {
   return (
