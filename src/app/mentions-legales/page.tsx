@@ -106,7 +106,11 @@ export default function MentionsLegalesPage() {
         <div style={{ maxWidth: '860px', margin: '0 auto' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
             {sections.map((section) => (
-              <div key={section.title} style={{ borderTop: '2px solid var(--terra)', paddingTop: '2rem' }}>
+              <div
+                key={section.title}
+                id={section.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}
+                style={{ borderTop: '2px solid var(--terra)', paddingTop: '2rem', scrollMarginTop: '90px' }}
+              >
                 <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.25rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.02em' }}>
                   {section.title}
                 </h2>

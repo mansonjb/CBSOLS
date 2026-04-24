@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { MobileCTA } from '@/components/MobileCTA'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
+import { CookieBanner } from '@/components/CookieBanner'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { company } from '@/data/company'
 
@@ -111,6 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <MobileCTA />
         <WhatsAppButton />
+        <CookieBanner />
         <SpeedInsights />
       </body>
     </html>

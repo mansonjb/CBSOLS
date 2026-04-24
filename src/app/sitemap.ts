@@ -55,6 +55,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/marques`, lastModified: LAST.marques, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE_URL}/ile-doleron`, lastModified: LAST.iles, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/ile-de-re`, lastModified: LAST.iles, changeFrequency: 'monthly', priority: 0.85 },
+    // Content hub pages (lists)
+    { url: `${BASE_URL}/guide`, lastModified: LAST.guides, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/faq`, lastModified: LAST.faqs, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/solutions`, lastModified: LAST.solutions, changeFrequency: 'monthly', priority: 0.8 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
