@@ -71,6 +71,38 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* Service additionnel — Entretien */}
+        <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
+          <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+              <div>
+                <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Entretien · Service récurrent</div>
+                <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.025em', lineHeight: 1.2 }}>
+                  Nettoyage de moquettes <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>par injection-extraction.</em>
+                </h2>
+                <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', lineHeight: 1.75, marginBottom: '1.75rem' }}>
+                  Un entretien périodique double la durée de vie d&apos;une moquette. Hôtels, bureaux, EHPAD, restaurants : nous intervenons sans interrompre votre activité, avec contrats annuels possibles.
+                </p>
+                <Button href="/nettoyage-moquettes" variant="primary" size="md">
+                  Découvrir le service
+                </Button>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {[
+                  { val: '×2', label: 'Durée de vie de la moquette' },
+                  { val: '95 %', label: 'D\'allergènes extraits' },
+                  { val: '2 à 4 h', label: 'De séchage actif' },
+                ].map((s) => (
+                  <div key={s.label} style={{ padding: '1.25rem 1.5rem', border: '1px solid var(--border)', backgroundColor: 'var(--bg)', borderLeft: '3px solid var(--terra)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--dark)', fontWeight: 500 }}>{s.label}</span>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '1.25rem', fontWeight: 800, color: 'var(--terra)', lineHeight: 1, flexShrink: 0 }}>{s.val}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section style={{ padding: '4rem 2rem 6rem', textAlign: 'center' }}>
           <div style={{ maxWidth: '500px', margin: '0 auto' }}>

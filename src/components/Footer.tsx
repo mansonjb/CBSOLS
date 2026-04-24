@@ -52,6 +52,7 @@ export function Footer() {
                 { href: '/guide', label: 'Guides' },
                 { href: '/faq', label: 'FAQ' },
                 { href: '/solutions', label: 'Solutions' },
+                { href: '/nettoyage-moquettes', label: 'Nettoyage moquettes' },
               ].map(i => (
                 <li key={i.href}>
                   <Link href={i.href} style={{ fontSize: '0.8rem', color: 'var(--text-on-dark-muted)', textDecoration: 'none' }}>{i.label}</Link>

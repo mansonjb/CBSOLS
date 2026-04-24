@@ -32,6 +32,17 @@ const nextConfig: NextConfig = {
         destination: '/:service-aytre',
         permanent: true,
       },
+      // Ancienne URL WordPress du service nettoyage → nouvelle URL canonique
+      {
+        source: '/nettoyage-des-moquettes',
+        destination: '/nettoyage-moquettes',
+        permanent: true,
+      },
+      {
+        source: '/nettoyage-des-moquettes/',
+        destination: '/nettoyage-moquettes',
+        permanent: true,
+      },
     ];
   },
 };
