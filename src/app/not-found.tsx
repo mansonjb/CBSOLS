@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { company } from '@/data/company'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Page introuvable | CB Sols',
@@ -24,9 +25,7 @@ export default function NotFound() {
           L&apos;adresse que vous cherchez n&apos;existe pas ou a été déplacée. Vous pouvez retourner à l&apos;accueil ou nous contacter directement.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link href="/" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.72rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px' }}>
-            Retour à l&apos;accueil
-          </Link>
+          <Button href="/" variant="primary" size="lg">Retour à l&apos;accueil</Button>
           <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px', fontWeight: 500 }}>
             {company.phone}
           </a>

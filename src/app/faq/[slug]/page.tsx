@@ -5,6 +5,7 @@ import { faqs, getFaqBySlug } from '@/data/faqs'
 import { getSolutionBySlug } from '@/data/solutions'
 import { company } from '@/data/company'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { Button } from '@/components/Button'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -186,9 +187,7 @@ export default async function FaqPage({ params }: Props) {
               CB Sols répond sous 24h, devis gratuit sous 48h
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Devis gratuit
-              </Link>
+              <Button href="/contact" variant="primary" size="md">Devis gratuit</Button>
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
                 {company.phone}
               </a>

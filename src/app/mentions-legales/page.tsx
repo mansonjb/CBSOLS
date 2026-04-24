@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { company } from '@/data/company'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Mentions Légales | CB Sols Revêtements',
@@ -129,9 +130,7 @@ export default function MentionsLegalesPage() {
             <p style={{ fontSize: '0.85rem', color: 'var(--cream-muted)', margin: '0 0 1rem' }}>
               Une question sur vos données ou nos conditions d&apos;utilisation ?
             </p>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '0.75rem 1.75rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px' }}>
-              Nous contacter
-            </Link>
+            <Button href="/contact" variant="primary" size="md">Nous contacter</Button>
           </div>
         </div>
       </section>

@@ -7,6 +7,7 @@ import { company } from '@/data/company'
 import { guides } from '@/data/guides'
 import { faqs } from '@/data/faqs'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { Button } from '@/components/Button'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -111,9 +112,7 @@ export default async function SolutionPage({ params }: Props) {
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Devis gratuit
-              </Link>
+              <Button href="/contact" variant="primary" size="md">Devis gratuit</Button>
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
                 {company.phone}
               </a>
@@ -180,9 +179,7 @@ export default async function SolutionPage({ params }: Props) {
               ))}
             </div>
             <div style={{ marginTop: '2rem', textAlign: 'center' }}>
-              <Link href="/showroom" style={{ display: 'inline-block', padding: '0.75rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px' }}>
-                Voir tous les échantillons au showroom
-              </Link>
+              <Button href="/showroom" variant="outline" size="md">Voir tous les échantillons au showroom</Button>
             </div>
           </div>
         </section>
@@ -287,9 +284,7 @@ export default async function SolutionPage({ params }: Props) {
               Devis gratuit sous 48h, déplacement sur site inclus
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Demander un devis
-              </Link>
+              <Button href="/contact" variant="primary" size="md">Demander un devis</Button>
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
                 {company.phone}
               </a>

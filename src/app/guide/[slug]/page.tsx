@@ -6,6 +6,7 @@ import { solutions, getSolutionBySlug } from '@/data/solutions'
 import { company } from '@/data/company'
 import { faqs } from '@/data/faqs'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { Button } from '@/components/Button'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -209,12 +210,8 @@ export default async function GuidePage({ params }: Props) {
               CB Sols vous accompagne de la sélection à la pose
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Devis gratuit
-              </Link>
-              <Link href="/showroom" style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px' }}>
-                Voir le showroom
-              </Link>
+              <Button href="/contact" variant="primary" size="md">Devis gratuit</Button>
+              <Button href="/showroom" variant="outline" size="md">Voir le showroom</Button>
             </div>
           </div>
         </section>

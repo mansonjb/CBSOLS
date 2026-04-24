@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { company } from '@/data/company'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'À Propos | Valentin Prévoteau, Artisan Poseur CB Sols depuis 1999',
@@ -198,9 +199,7 @@ export default function AProposPage() {
               Valentin répond personnellement, devis gratuit sous 48h
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Demander un devis
-              </Link>
+              <Button href="/contact" variant="primary" size="md">Demander un devis</Button>
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
                 {company.phone}
               </a>

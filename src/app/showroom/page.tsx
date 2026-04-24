@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { company } from '@/data/company'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Showroom Revêtement Sol La Rochelle | CB Sols, Sur Rendez-vous',
@@ -91,15 +92,12 @@ export default function ShowroomPage() {
                 </div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                <a
-                  href={`tel:${company.phoneClean}`}
-                  style={{ display: 'block', textAlign: 'center', padding: '1rem 2rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.18em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500 }}
-                >
+                <Button href={`tel:${company.phoneClean}`} external variant="primary" size="md" style={{ display: 'flex', width: '100%' }}>
                   Appeler pour un RDV
-                </a>
-                <Link href="/contact" style={{ display: 'block', textAlign: 'center', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px' }}>
+                </Button>
+                <Button href="/contact" variant="outline" size="md" style={{ display: 'flex', width: '100%' }}>
                   Formulaire de contact
-                </Link>
+                </Button>
               </div>
             </div>
           </div>

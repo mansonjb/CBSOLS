@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { company } from '@/data/company'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Tarifs | Pourquoi Nous Ne Publions Pas de Grille de Prix — CB Sols',
@@ -76,9 +77,7 @@ export default function TarifsPage() {
             Notre engagement : <strong style={{ color: 'var(--dark)' }}>devis détaillé et gratuit sous 48 h</strong>, sans frais cachés ni révision post-signature.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.72rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px' }}>
-              Demander mon devis
-            </Link>
+            <Button href="/contact" variant="primary" size="lg">Demander mon devis</Button>
             <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px', fontWeight: 500 }}>
               {company.phone}
             </a>
@@ -162,12 +161,8 @@ export default function TarifsPage() {
             Décrivez-nous votre espace. Nous revenons vers vous sous 48 h avec un devis précis, sans surprise.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <Link href={`/contact?from=tarifs`} style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.72rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px' }}>
-              Demander un devis
-            </Link>
-            <Link href="/showroom" style={{ display: 'inline-block', padding: '0.95rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.72rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px', fontWeight: 600 }}>
-              Visiter le showroom
-            </Link>
+            <Button href={`/contact?from=tarifs`} variant="primary" size="lg">Demander un devis</Button>
+            <Button href="/showroom" variant="outline" size="md">Visiter le showroom</Button>
           </div>
         </div>
       </section>

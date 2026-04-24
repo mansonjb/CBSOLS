@@ -10,6 +10,7 @@ import { getZoneContent, citySizeDescriptor, cityChantierCount } from '@/data/zo
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 import { SectorTestimonials } from '@/components/SectorTestimonials'
 import { WhatsAppInlineCTA } from '@/components/WhatsAppInlineCTA'
+import { Button } from '@/components/Button'
 
 interface Props {
   params: Promise<{ city: string }>
@@ -191,9 +192,9 @@ export default async function CityHubPage({ params }: Props) {
             </div>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href={`/contact?city=${encodeURIComponent(cityData.name)}`} style={{ display: 'inline-block', padding: '0.95rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
+              <Button href={`/contact?city=${encodeURIComponent(cityData.name)}`} variant="primary" size="md">
                 Devis gratuit à {cityData.name}
-              </Link>
+              </Button>
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px', fontWeight: 500 }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.46 2 2 0 0 1 3.62 1.27h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.72 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 5.9 5.9l.99-1.04a2 2 0 0 1 2.11-.45c.9.36 1.85.59 2.81.72a2 2 0 0 1 1.72 2.02z"/>
@@ -362,12 +363,10 @@ export default async function CityHubPage({ params }: Props) {
               Décrivez-nous votre espace et votre usage. Nous revenons vers vous sous 48 h avec un premier chiffrage ou un RDV sur place.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <Link href={`/contact?city=${encodeURIComponent(cityData.name)}`} style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.72rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px' }}>
+              <Button href={`/contact?city=${encodeURIComponent(cityData.name)}`} variant="primary" size="lg">
                 Demander un devis
-              </Link>
-              <Link href="/showroom" style={{ display: 'inline-block', padding: '0.95rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.72rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px', fontWeight: 600 }}>
-                Visiter le showroom
-              </Link>
+              </Button>
+              <Button href="/showroom" variant="outline" size="md">Visiter le showroom</Button>
             </div>
           </div>
         </section>

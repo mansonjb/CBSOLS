@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { company } from '@/data/company'
 import { ThemeToggle } from './ThemeToggle'
 import { ColorSwitcher } from './ColorSwitcher'
+import { Button } from '@/components/Button'
 
 const nav = [
   { href: '/services', label: 'Services' },
@@ -94,15 +95,7 @@ export function Header() {
             }}>
               {company.phone}
             </a>
-            <Link href="/contact" style={{
-              display: 'inline-block', padding: '0.55rem 1.25rem',
-              backgroundColor: 'var(--terra)', color: '#fff',
-              fontSize: '0.62rem', letterSpacing: '0.14em', textTransform: 'uppercase',
-              textDecoration: 'none', fontWeight: 600, borderRadius: '999px',
-              transition: 'background-color 0.2s', whiteSpace: 'nowrap',
-            }}>
-              Devis gratuit
-            </Link>
+            <Button href="/contact" variant="primary" size="sm">Devis gratuit</Button>
           </div>
 
           {/* Burger */}
@@ -156,7 +149,17 @@ export function Header() {
             <a href={`tel:${company.phoneClean}`} style={{ fontSize: '1.4rem', color: 'var(--terra)', textDecoration: 'none', fontWeight: 800, fontFamily: 'var(--font-sans)' }}>
               {company.phone}
             </a>
-            <Link href="/contact" onClick={() => setOpen(false)} style={{ display: 'inline-block', padding: '0.875rem 1.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, textAlign: 'center', borderRadius: '999px' }}>
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                padding: '0.875rem 2rem',
+                backgroundColor: 'var(--terra)', color: '#fff',
+                fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase',
+                textDecoration: 'none', fontWeight: 700, borderRadius: '999px',
+              }}
+            >
               Devis gratuit
             </Link>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', paddingTop: '0.5rem' }}>

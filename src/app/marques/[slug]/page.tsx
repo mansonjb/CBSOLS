@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { brands, getBrandBySlug } from '@/data/brands'
 import { company } from '@/data/company'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { Button } from '@/components/Button'
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -81,12 +82,8 @@ export default async function BrandPage({ params }: Props) {
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Demander des échantillons
-              </Link>
-              <Link href="/showroom" style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px' }}>
-                Voir au showroom
-              </Link>
+              <Button href="/contact" variant="primary" size="md">Demander des échantillons</Button>
+              <Button href="/showroom" variant="outline" size="md">Voir au showroom</Button>
             </div>
           </div>
         </section>
@@ -159,9 +156,7 @@ export default async function BrandPage({ params }: Props) {
               Villedoux · 10 min de La Rochelle · Sur rendez-vous
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Prendre rendez-vous
-              </Link>
+              <Button href="/contact" variant="primary" size="md">Prendre rendez-vous</Button>
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
                 {company.phone}
               </a>

@@ -5,6 +5,7 @@ import { sectors } from '@/data/sectors'
 import { cities } from '@/data/cities'
 import { company } from '@/data/company'
 import { HeroSlider } from '@/components/HeroSlider'
+import { Button } from '@/components/Button'
 
 const projects = [
   { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel-real.webp' },
@@ -113,9 +114,7 @@ export default function Home() {
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </span>
                 </Link>
-                <Link href="/realisations" style={{ display: 'inline-flex', alignItems: 'center', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px' }}>
-                  Réalisations
-                </Link>
+                <Button href="/realisations" variant="outline" size="md">Réalisations</Button>
               </div>
 
               {/* Stats */}
@@ -221,9 +220,7 @@ export default function Home() {
               Nos<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>réalisations</em>
             </h2>
           </div>
-          <Link href="/realisations" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px', flexShrink: 0 }}>
-            Voir tout →
-          </Link>
+          <Button href="/realisations" variant="outline" size="md">Voir tout →</Button>
         </div>
 
         {/* Scroll container */}
@@ -269,9 +266,7 @@ export default function Home() {
                 Nos<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300 }}>spécialités</em>
               </h2>
             </div>
-            <Link href="/services" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px', flexShrink: 0 }}>
-              Tous les services →
-            </Link>
+            <Button href="/services" variant="outline" size="md">Tous les services →</Button>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
@@ -461,9 +456,7 @@ export default function Home() {
                 Nous intervenons<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>partout.</em>
               </h2>
             </div>
-            <Link href="/zones" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 500, borderRadius: '999px', flexShrink: 0 }}>
-              47 communes →
-            </Link>
+            <Button href="/zones" variant="outline" size="md">47 communes →</Button>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
             {[
@@ -503,9 +496,7 @@ export default function Home() {
             </p>
             <p style={{ fontSize: '0.8rem', color: 'var(--muted)', marginBottom: '2.5rem' }}>8 rue des Merises, 17230 Villedoux</p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/showroom" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 1.875rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Prendre rendez-vous
-              </Link>
+              <Button href="/showroom" variant="primary" size="md">Prendre rendez-vous</Button>
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.875rem 1.5rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.875rem', textDecoration: 'none', fontWeight: 500, borderRadius: '999px' }}>
                 {company.phone}
               </a>
@@ -526,9 +517,7 @@ export default function Home() {
               <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.75, marginBottom: '2rem' }}>
                 Des réponses claires, sans langue de bois. Pour aller plus loin, consultez nos guides.
               </p>
-              <Link href="/guide/choisir-sa-moquette" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 1.75rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Voir tous les guides →
-              </Link>
+              <Button href="/guide/choisir-sa-moquette" variant="outline" size="md">Voir tous les guides →</Button>
             </div>
             <div>
               {[
@@ -579,10 +568,10 @@ export default function Home() {
             Devis gratuit sous 48h. La Rochelle, Île de Ré, Charente-Maritime.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
+            <Button href="/contact" variant="primary" size="lg">
               Demander un devis
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </Link>
+            </Button>
             <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '1rem 2rem', border: '1.5px solid rgba(240,235,227,0.2)', color: 'var(--text-on-dark-muted)', fontSize: '0.9rem', textDecoration: 'none', fontWeight: 500, borderRadius: '999px' }}>
               {company.phone}
             </a>

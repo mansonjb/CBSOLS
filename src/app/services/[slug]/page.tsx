@@ -5,6 +5,7 @@ import { services, getServiceBySlug } from '@/data/services'
 import { cities } from '@/data/cities'
 import { company } from '@/data/company'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { Button } from '@/components/Button'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -82,9 +83,7 @@ export default async function ServicePage({ params }: Props) {
               {service.longDescription}
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-                Demander un devis
-              </Link>
+              <Button href="/contact" variant="primary" size="md">Demander un devis</Button>
               <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
                 {company.phone}
               </a>

@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import Link from 'next/link'
 import { company } from '@/data/company'
+import { Button } from '@/components/Button'
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   useEffect(() => {
@@ -23,15 +24,8 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
           Nos excuses pour ce désagrément. Vous pouvez réessayer, retourner à l&apos;accueil ou nous appeler directement.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <button
-            onClick={reset}
-            style={{ padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.72rem', letterSpacing: '0.15em', textTransform: 'uppercase', border: 'none', fontWeight: 700, borderRadius: '999px', cursor: 'pointer', fontFamily: 'inherit' }}
-          >
-            Réessayer
-          </button>
-          <Link href="/" style={{ display: 'inline-block', padding: '0.95rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.72rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px', fontWeight: 600 }}>
-            Accueil
-          </Link>
+          <Button onClick={reset} variant="primary" size="lg">Réessayer</Button>
+          <Button href="/" variant="outline" size="md">Accueil</Button>
           <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'underline' }}>
             {company.phone}
           </a>

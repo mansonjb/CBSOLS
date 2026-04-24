@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { faqs } from '@/data/faqs'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'FAQ Revêtement de Sol | CB Sols, Réponses d&apos;Artisan',
@@ -119,12 +120,8 @@ export default function FaqHubPage() {
               Posez-nous votre question directement, nous vous répondons sous 48 h.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.72rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px' }}>
-                Poser ma question
-              </Link>
-              <Link href="/guide" style={{ display: 'inline-block', padding: '0.95rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.72rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px', fontWeight: 600 }}>
-                Voir les guides
-              </Link>
+              <Button href="/contact" variant="primary" size="lg">Poser ma question</Button>
+              <Button href="/guide" variant="outline" size="md">Voir les guides</Button>
             </div>
           </div>
         </section>

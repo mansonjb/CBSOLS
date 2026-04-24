@@ -5,6 +5,7 @@ import { sectors, getSectorBySlug } from '@/data/sectors'
 import { services, getServiceBySlug } from '@/data/services'
 import { company } from '@/data/company'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { Button } from '@/components/Button'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -63,9 +64,7 @@ export default async function SecteurPage({ params }: Props) {
             {sector.description}
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-              Devis professionnel
-            </Link>
+            <Button href="/contact" variant="primary" size="md">Devis professionnel</Button>
             <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
               {company.phone}
             </a>
@@ -136,12 +135,8 @@ export default async function SecteurPage({ params }: Props) {
             ))}
           </div>
           <div style={{ marginTop: '3rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-              Obtenir un devis pro
-            </Link>
-            <Link href="/secteurs" style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px' }}>
-              Tous les secteurs
-            </Link>
+            <Button href="/contact" variant="primary" size="md">Obtenir un devis pro</Button>
+            <Button href="/secteurs" variant="outline" size="md">Tous les secteurs</Button>
           </div>
         </div>
       </section>

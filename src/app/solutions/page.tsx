@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { solutions } from '@/data/solutions'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Solutions Revêtement de Sol | CB Sols, Hôtels, Restaurants, Bureaux',
@@ -89,12 +90,8 @@ export default function SolutionsHubPage() {
               Nous traitons aussi les commerces, écoles, collectivités et bâtiments agricoles reconvertis. Décrivez-nous votre projet, on revient vers vous sous 48 h.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <Link href="/contact" style={{ display: 'inline-block', padding: '1rem 2.5rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.72rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px' }}>
-                Discuter de mon projet
-              </Link>
-              <Link href="/secteurs" style={{ display: 'inline-block', padding: '0.95rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.72rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px', fontWeight: 600 }}>
-                Voir par secteur
-              </Link>
+              <Button href="/contact" variant="primary" size="lg">Discuter de mon projet</Button>
+              <Button href="/secteurs" variant="outline" size="md">Voir par secteur</Button>
             </div>
           </div>
         </section>

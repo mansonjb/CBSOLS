@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { services } from '@/data/services'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Nos Services | Moquette, Sol PVC, Tapis Sur Mesure',
@@ -79,9 +80,7 @@ export default function ServicesPage() {
             <p style={{ fontSize: '0.875rem', color: 'var(--cream-muted)', lineHeight: 1.7, marginBottom: '2rem' }}>
               Décrivez votre projet, nous vous répondons sous 48h.
             </p>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-              Demander un devis
-            </Link>
+            <Button href="/contact" variant="primary" size="md">Demander un devis</Button>
           </div>
         </section>
       </div>
