@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Réalisations | Projets Moquette, Sol PVC & Tapis CB Sols',
@@ -43,7 +44,7 @@ export default function RealisationsPage() {
               <div
                 key={project.title}
                 style={{
-                  backgroundColor: '#1a1410',
+                  backgroundColor: 'var(--project-card-bg)',
                   border: '1px solid var(--border)',
                   display: 'flex',
                   flexDirection: 'column',
@@ -65,13 +66,13 @@ export default function RealisationsPage() {
                 <div style={{ padding: '2rem', position: 'relative', zIndex: 1 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
                     <span style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)' }}>{project.sector}</span>
-                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', color: 'rgba(240,235,227,0.45)' }}>{project.year} · {project.surface}</span>
+                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', color: 'var(--text-on-dark-faint)' }}>{project.year} · {project.surface}</span>
                   </div>
-                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.1rem', fontWeight: 400, color: '#F0EBE3', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
+                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.1rem', fontWeight: 400, color: 'var(--text-on-dark)', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
                     {project.title}
                   </h2>
                   <div style={{ fontSize: '0.75rem', color: 'var(--terra)', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>{project.type}</div>
-                  <p style={{ fontSize: '0.78rem', color: 'rgba(240,235,227,0.6)', margin: 0, lineHeight: 1.6 }}>{project.desc}</p>
+                  <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-muted)', margin: 0, lineHeight: 1.6 }}>{project.desc}</p>
                 </div>
               </div>
             ))}
@@ -81,9 +82,7 @@ export default function RealisationsPage() {
             <p style={{ fontSize: '0.875rem', color: 'var(--cream-muted)', marginBottom: '2rem' }}>
               Ces réalisations représentent une sélection de notre portfolio. Consultez-nous pour découvrir d'autres projets similaires au vôtre.
             </p>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-              Discuter de votre projet
-            </Link>
+            <Button href="/contact" variant="primary" size="md">Discuter de votre projet</Button>
           </div>
         </div>
       </section>
@@ -93,8 +92,8 @@ export default function RealisationsPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Références professionnelles</div>
-            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: '#F0EBE3', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
-            <p style={{ fontSize: '0.9rem', color: 'rgba(240,235,227,0.65)', maxWidth: '520px', margin: '0 auto', lineHeight: 1.6 }}>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: 'var(--text-on-dark)', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', maxWidth: '520px', margin: '0 auto', lineHeight: 1.6 }}>
               Hôtels, restaurants, architectes, collectivités : une sélection de clients qui nous ont confié leurs projets en Charente-Maritime.
             </p>
           </div>
@@ -126,10 +125,10 @@ export default function RealisationsPage() {
 
           <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center', paddingTop: '2rem', borderTop: '1px solid rgba(240,235,227,0.1)' }}>
             <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--terra)', lineHeight: 1, marginBottom: '0.5rem' }}>&ldquo;</div>
-            <blockquote style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.15rem', color: '#F0EBE3', lineHeight: 1.6, margin: '0 0 1.5rem', fontWeight: 300 }}>
+            <blockquote style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.15rem', color: 'var(--text-on-dark)', lineHeight: 1.6, margin: '0 0 1.5rem', fontWeight: 300 }}>
               Valentin a su comprendre l&apos;atmosphère que nous voulions pour nos chambres. Le résultat est à la hauteur de nos attentes, et la pose a été impeccable, dans les délais.
             </blockquote>
-            <div style={{ fontSize: '0.75rem', color: 'rgba(240,235,227,0.5)', letterSpacing: '0.08em' }}>Hôtellerie · Île de Ré</div>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-on-dark-faint)', letterSpacing: '0.08em' }}>Hôtellerie · Île de Ré</div>
           </div>
         </div>
       </section>

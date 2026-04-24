@@ -135,7 +135,7 @@ export default function Home() {
                 <HeroSlider />
               </div>
               {/* Location badge */}
-              <div style={{ position: 'absolute', top: '1.5rem', right: '-1rem', backgroundColor: 'var(--bg-inv)', color: 'rgba(240,235,227,0.7)', borderRadius: '999px', padding: '0.5rem 1rem', fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
+              <div style={{ position: 'absolute', top: '1.5rem', right: '-1rem', backgroundColor: 'var(--bg-inv)', color: 'var(--text-on-dark-muted)', borderRadius: '999px', padding: '0.5rem 1rem', fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
                 La Rochelle · Île de Ré · 17
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
       <div style={{ backgroundColor: 'var(--bg-inv)', padding: '0.75rem 0', overflow: 'hidden', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="marquee-track" style={{ display: 'flex', gap: '0', whiteSpace: 'nowrap' }}>
           {[0, 1, 2].map(i => (
-            <span key={i} style={{ display: 'inline-flex', gap: '2.5rem', paddingRight: '2.5rem', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,235,227,0.4)', flexShrink: 0 }}>
+            <span key={i} style={{ display: 'inline-flex', gap: '2.5rem', paddingRight: '2.5rem', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--text-on-dark-faint)', flexShrink: 0 }}>
               {['Moquette', 'Sol PVC', 'Tapis sur mesure', 'La Rochelle', 'Île de Ré', 'Charente-Maritime', 'Pose professionnelle', 'Devis 48h', 'Artisan certifié', 'Showroom Villedoux'].map(t => (
                 <span key={t}>{t} <span style={{ color: 'var(--terra)' }}>·</span></span>
               ))}
@@ -162,8 +162,8 @@ export default function Home() {
           {garanties.map((g, i) => (
             <div key={g.title} style={{ padding: '2rem 2.5rem', borderRight: i < garanties.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none' }} className="garantie-item">
               <div style={{ color: 'var(--terra)', marginBottom: '1.25rem' }}>{g.icon}</div>
-              <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.05rem', fontWeight: 400, color: '#F0EBE3', marginBottom: '0.625rem' }}>{g.title}</div>
-              <p style={{ fontSize: '0.78rem', color: 'rgba(240,235,227,0.5)', lineHeight: 1.65, margin: 0 }}>{g.desc}</p>
+              <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.05rem', fontWeight: 400, color: 'var(--text-on-dark)', marginBottom: '0.625rem' }}>{g.title}</div>
+              <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-faint)', lineHeight: 1.65, margin: 0 }}>{g.desc}</p>
             </div>
           ))}
         </div>
@@ -187,7 +187,7 @@ export default function Home() {
       <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-inv)', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', textAlign: 'center' }}>Références</div>
-          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: '#F0EBE3', margin: '0 0 2.5rem', textAlign: 'center', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: 'var(--text-on-dark)', margin: '0 0 2.5rem', textAlign: 'center', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
             {[
               { src: '/images/clients/Hotel_La_Baronnie.webp', alt: 'Hôtel La Baronnie' },
@@ -251,7 +251,7 @@ export default function Home() {
                 {/* Bottom info */}
                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '1.5rem 1.75rem' }}>
                   <div style={{ fontSize: '0.6rem', color: 'var(--terra)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '0.375rem' }}>{p.surface} · {p.type}</div>
-                  <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.2rem', color: '#F0EBE3', fontWeight: 400, lineHeight: 1.2 }}>{p.title}</div>
+                  <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.2rem', color: 'var(--text-on-dark)', fontWeight: 400, lineHeight: 1.2 }}>{p.title}</div>
                 </div>
               </div>
             </Link>
@@ -304,8 +304,8 @@ export default function Home() {
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(26,25,22,0.92) 0%, rgba(26,25,22,0.15) 55%, transparent 100%)' }} />
               <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '2rem 2rem 2.5rem' }}>
                 <div style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.5rem', fontWeight: 600 }}>{mat.brand}</div>
-                <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.5rem', fontWeight: 400, color: '#F0EBE3', marginBottom: '0.5rem', letterSpacing: '-0.02em' }}>{mat.label}</h3>
-                <p style={{ fontSize: '0.78rem', color: 'rgba(240,235,227,0.6)', margin: 0, lineHeight: 1.5 }}>{mat.caption}</p>
+                <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.5rem', fontWeight: 400, color: 'var(--text-on-dark)', marginBottom: '0.5rem', letterSpacing: '-0.02em' }}>{mat.label}</h3>
+                <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-muted)', margin: 0, lineHeight: 1.5 }}>{mat.caption}</p>
               </div>
             </Link>
           ))}
@@ -377,16 +377,16 @@ export default function Home() {
         <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           <div>
             <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>L'artisan derrière chaque chantier</p>
-            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#F0EBE3', letterSpacing: '-0.03em', lineHeight: 1.05, margin: '0 0 1.5rem' }}>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: 'var(--text-on-dark)', letterSpacing: '-0.03em', lineHeight: 1.05, margin: '0 0 1.5rem' }}>
               Valentin Prévoteau<br />
               <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>depuis 1999.</em>
             </h2>
-            <p style={{ fontSize: '0.9rem', color: 'rgba(240,235,227,0.6)', lineHeight: 1.8, maxWidth: '480px', marginBottom: '2rem' }}>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', lineHeight: 1.8, maxWidth: '480px', marginBottom: '2rem' }}>
               Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. 25 ans de métier, des centaines de chantiers en Charente-Maritime.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem' }}>
               {['Qualibat 6111', 'Décennale', 'Partenaire EGE', 'Partenaire Gerflor'].map(c => (
-                <span key={c} style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(240,235,227,0.55)', padding: '0.3rem 0.875rem', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '999px' }}>{c}</span>
+                <span key={c} style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-on-dark-muted)', padding: '0.3rem 0.875rem', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '999px' }}>{c}</span>
               ))}
             </div>
             <Link href="/a-propos" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', border: '1.5px solid rgba(196,113,74,0.6)', color: 'var(--terra)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px', transition: 'all 0.2s' }}>
@@ -398,10 +398,10 @@ export default function Home() {
               <div style={{ aspectRatio: '4/5', backgroundColor: 'rgba(196,113,74,0.08)', border: '1px solid rgba(196,113,74,0.2)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                 <div style={{ textAlign: 'center', padding: '3rem 2rem' }}>
                   <div style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontSize: '3rem', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)', lineHeight: 1, marginBottom: '1rem' }}>VP</div>
-                  <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#F0EBE3', letterSpacing: '-0.02em' }}>Valentin Prévoteau</div>
-                  <div style={{ fontSize: '0.72rem', color: 'rgba(240,235,227,0.5)', marginTop: '0.4rem', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 500 }}>Artisan poseur · CB Sols</div>
+                  <div style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-on-dark)', letterSpacing: '-0.02em' }}>Valentin Prévoteau</div>
+                  <div style={{ fontSize: '0.72rem', color: 'var(--text-on-dark-faint)', marginTop: '0.4rem', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 500 }}>Artisan poseur · CB Sols</div>
                   <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(196,113,74,0.1)', borderRadius: '10px', borderLeft: '2px solid var(--terra)' }}>
-                    <p style={{ fontSize: '0.85rem', color: 'rgba(240,235,227,0.7)', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, lineHeight: 1.7, margin: 0 }}>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-on-dark-muted)', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, lineHeight: 1.7, margin: 0 }}>
                       "Un sol bien posé, c'est discret et dure des décennies. Un sol mal posé, ça se voit tout de suite."
                     </p>
                   </div>
@@ -572,10 +572,10 @@ export default function Home() {
       <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--bg-inv)', textAlign: 'center' }}>
         <div style={{ maxWidth: '680px', margin: '0 auto' }}>
           <Image src="/images/logo-cbsols.png" alt="CB Sols" width={52} height={49} style={{ margin: '0 auto 2rem', opacity: 0.45 }} />
-          <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)', fontWeight: 800, color: '#F0EBE3', marginBottom: '1.25rem', lineHeight: 1.0, letterSpacing: '-0.03em' }}>
+          <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)', fontWeight: 800, color: 'var(--text-on-dark)', marginBottom: '1.25rem', lineHeight: 1.0, letterSpacing: '-0.03em' }}>
             Votre projet mérite<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>un artisan qui l'écoute.</em>
           </h2>
-          <p style={{ fontSize: '0.9rem', color: 'rgba(240,235,227,0.5)', lineHeight: 1.75, marginBottom: '2.5rem' }}>
+          <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-faint)', lineHeight: 1.75, marginBottom: '2.5rem' }}>
             Devis gratuit sous 48h. La Rochelle, Île de Ré, Charente-Maritime.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -583,7 +583,7 @@ export default function Home() {
               Demander un devis
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </Link>
-            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '1rem 2rem', border: '1.5px solid rgba(240,235,227,0.2)', color: 'rgba(240,235,227,0.7)', fontSize: '0.9rem', textDecoration: 'none', fontWeight: 500, borderRadius: '999px' }}>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '1rem 2rem', border: '1.5px solid rgba(240,235,227,0.2)', color: 'var(--text-on-dark-muted)', fontSize: '0.9rem', textDecoration: 'none', fontWeight: 500, borderRadius: '999px' }}>
               {company.phone}
             </a>
           </div>

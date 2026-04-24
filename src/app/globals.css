@@ -20,6 +20,19 @@
   --btn-inv-bg:   #1A1916;
   --btn-inv-text: #FFFFFF;
 
+  /* Couleurs sur fond sombre (sections dark/inv, cards projets) — fixes light/dark */
+  --text-on-dark:        #F0EBE3;
+  --text-on-dark-muted:  rgba(240, 235, 227, 0.65);
+  --text-on-dark-faint:  rgba(240, 235, 227, 0.45);
+  --border-on-dark:      rgba(240, 235, 227, 0.10);
+  --project-card-bg:     #1A1410;
+
+  /* Sémantique */
+  --error:    #C44A4A;
+  --error-bg: rgba(196, 74, 74, 0.10);
+  --error-fg: #E07070;
+  --whatsapp: #25D366;
+
   /* Compat aliases */
   --cream:        #1A1916;
   --cream-muted:  #8A8680;
@@ -48,6 +61,19 @@
   --bg-glass:     rgba(15, 14, 12, 0.90);
   --btn-inv-bg:   #EDE9E2;
   --btn-inv-text: #0A0908;
+
+  /* Couleurs sur fond sombre — restent identiques en dark mode (la section reste sombre) */
+  --text-on-dark:        #EDE9E2;
+  --text-on-dark-muted:  rgba(237, 233, 226, 0.65);
+  --text-on-dark-faint:  rgba(237, 233, 226, 0.45);
+  --border-on-dark:      rgba(237, 233, 226, 0.10);
+  --project-card-bg:     #0F0E0B;
+
+  /* Sémantique — même base mais saturée en dark */
+  --error:    #D86060;
+  --error-bg: rgba(216, 96, 96, 0.12);
+  --error-fg: #F08585;
+  --whatsapp: #25D366;
 
   /* Compat aliases */
   --cream:        #EDE9E2;

@@ -269,14 +269,14 @@ export default async function GeoPage({ params }: Props) {
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.25rem' }}>
               {highlights.map((project) => (
-                <div key={project.title} style={{ backgroundColor: '#1a1410', border: '1px solid var(--border)', position: 'relative', overflow: 'hidden', minHeight: '260px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+                <div key={project.title} style={{ backgroundColor: 'var(--project-card-bg)', border: '1px solid var(--border)', position: 'relative', overflow: 'hidden', minHeight: '260px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={project.img} alt={project.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }} />
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.92) 0%, rgba(13,12,10,0.2) 55%, transparent 100%)' }} />
                   <div style={{ padding: '1.75rem', position: 'relative', zIndex: 1 }}>
                     <div style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.5rem' }}>{project.sector} · {project.year}</div>
-                    <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', fontWeight: 400, color: '#F0EBE3', margin: '0 0 0.5rem' }}>{project.title}</h3>
-                    <p style={{ fontSize: '0.78rem', color: 'rgba(240,235,227,0.7)', margin: 0, lineHeight: 1.55 }}>{project.desc}</p>
+                    <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', fontWeight: 400, color: 'var(--text-on-dark)', margin: '0 0 0.5rem' }}>{project.title}</h3>
+                    <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-muted)', margin: 0, lineHeight: 1.55 }}>{project.desc}</p>
                   </div>
                 </div>
               ))}

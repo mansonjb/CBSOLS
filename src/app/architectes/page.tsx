@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { company } from '@/data/company'
+import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Architectes & Prescripteurs | CB Sols, Partenaire Revêtement de Sol',
@@ -81,12 +82,8 @@ export default function ArchitectesPage() {
             Vous prescrivez les matériaux, CB Sols les pose. Devis sous 24h, fiches techniques complètes, chantiers menés sans interruption d'activité. Un interlocuteur technique unique de votre brief jusqu'au DOE.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-              Contacter CB Sols
-            </Link>
-            <Link href="/showroom" style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '999px' }}>
-              Visiter le showroom
-            </Link>
+            <Button href="/contact?from=architectes" variant="primary" size="md">Contacter CB Sols</Button>
+            <Button href="/showroom" variant="outline" size="md">Visiter le showroom</Button>
           </div>
         </div>
       </section>
@@ -153,6 +150,65 @@ export default function ArchitectesPage() {
         </div>
       </section>
 
+      {/* Architectes partenaires */}
+      <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-inv)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Ils nous prescrivent</div>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--text-on-dark)', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>
+              Architectes &amp; agences partenaires
+            </h2>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', maxWidth: '560px', margin: '0 auto', lineHeight: 1.6 }}>
+              Plusieurs agences d&apos;architecture d&apos;intérieur de Charente-Maritime nous confient régulièrement leurs chantiers. Une sélection ci-dessous.
+            </p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
+            {[
+              { src: '/images/clients/ABP_Architectes.webp', alt: 'ABP Architectes' },
+              { src: '/images/clients/AnneBoulletStudio.webp', alt: 'Anne Boullet Studio' },
+              { src: '/images/clients/Atelier715.webp', alt: 'Atelier 715' },
+              { src: '/images/clients/ZestArchitecture.webp', alt: 'Zest Architecture' },
+              { src: '/images/clients/AgnesMagord.webp', alt: 'Agnès Magord' },
+            ].map(p => (
+              <div key={p.alt} className="client-card-dark" style={{ border: '1px solid var(--border-on-dark)', borderRadius: '8px', height: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.25rem', transition: 'border-color 0.2s, transform 0.2s' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={p.src} alt={p.alt} style={{ maxHeight: '80px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.9 }} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Programme partenaire */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '4rem', alignItems: 'start' }}>
+            <div>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Programme partenaire</div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
+                Une relation <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>longue durée.</em>
+              </h2>
+              <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', lineHeight: 1.8 }}>
+                Nous travaillons avec un cercle restreint d&apos;architectes et de bureaux d&apos;études en Charente-Maritime. Notre objectif : devenir votre partenaire sol par défaut, pas un sous-traitant ponctuel.
+              </p>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {[
+                { title: 'Conditions tarifaires négociées', desc: 'Marges réduites pour vos projets B2B récurrents. Conditions discutées en bilatéral.' },
+                { title: 'Délai de paiement adapté', desc: 'Facturation à 30 ou 45 jours selon volumes. Compatible avec vos cycles maître d\'ouvrage.' },
+                { title: 'Showroom dédié sur RDV', desc: 'Créneaux privés pour vos rendez-vous clients. Possibilité d\'accueillir vos prospects directement.' },
+                { title: 'Apporteur d\'affaires', desc: 'Si vous nous recommandez à un confrère ou un client hors prescription, nous proposons une commission négociable au cas par cas.' },
+              ].map((item) => (
+                <div key={item.title} style={{ padding: '1.25rem 1.5rem', border: '1px solid var(--border)', backgroundColor: 'var(--bg-card)', borderLeft: '3px solid var(--terra)' }}>
+                  <div style={{ fontSize: '0.92rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.4rem', fontFamily: 'var(--font-sans)' }}>{item.title}</div>
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.65 }}>{item.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact direct */}
       <section style={{ padding: '5rem 2rem' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
@@ -168,12 +224,8 @@ export default function ArchitectesPage() {
             <a href={`mailto:${company.email}`} style={{ color: 'var(--terra)', textDecoration: 'none' }}>{company.email}</a>
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '0.875rem 2.25rem', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
-              Envoyer un brief
-            </Link>
-            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-block', padding: '0.875rem 2rem', border: '1.5px solid var(--border-strong)', color: 'var(--dark-2)', fontSize: '0.82rem', textDecoration: 'none', borderRadius: '999px' }}>
-              {company.phone}
-            </a>
+            <Button href="/contact?from=architectes" variant="primary" size="md">Envoyer un brief</Button>
+            <Button href={`tel:${company.phoneClean}`} external variant="outline" size="md">{company.phone}</Button>
           </div>
         </div>
       </section>

@@ -27,11 +27,11 @@ export function SectorTestimonials({
 }: Props) {
   const items = pickTestimonials({ zone, preferSector, seed, count })
   const bg = dark ? 'var(--bg-inv)' : 'var(--bg)'
-  const headingColor = dark ? '#F0EBE3' : 'var(--dark)'
-  const quoteColor = dark ? '#F0EBE3' : 'var(--dark)'
-  const authorColor = dark ? 'rgba(240,235,227,0.55)' : 'var(--text-muted)'
+  const headingColor = dark ? 'var(--text-on-dark)' : 'var(--dark)'
+  const quoteColor = dark ? 'var(--text-on-dark)' : 'var(--dark)'
+  const authorColor = dark ? 'var(--text-on-dark-muted)' : 'var(--text-muted)'
   const cardBg = dark ? 'rgba(240,235,227,0.03)' : 'var(--bg-card)'
-  const cardBorder = dark ? 'rgba(240,235,227,0.1)' : 'var(--border)'
+  const cardBorder = dark ? 'var(--border-on-dark)' : 'var(--border)'
 
   return (
     <section style={{ padding: '5rem 2rem', backgroundColor: bg, borderTop: dark ? 'none' : '1px solid var(--border)' }}>
