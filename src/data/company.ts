@@ -28,11 +28,12 @@ export const company = {
   zones: ['La Rochelle', "L'Île de Ré", "L'Île d'Oléron", 'Rochefort', 'Saintes', 'Royan', 'Charente-Maritime'],
   brands: ['EGE', 'Gerflor', 'Forbo', 'Tarkett', 'Balsan', 'ObjectFlor', 'Bostik', 'Romus'],
   social: {
-    instagram: 'https://www.instagram.com/cbsols',
-    facebook: 'https://www.facebook.com/cbsols',
-    linkedin: 'https://www.linkedin.com/company/cb-sols',
+    instagram: 'https://www.instagram.com/cb.sols/',
+    facebook: 'https://www.facebook.com/people/SAS-CB-SOLS/100063907664837/',
+    linkedin: 'https://www.linkedin.com/company/cb-sols/',
   },
-  siret: null,
+  siret: '492 385 091 00029',
+  director: 'Valentin Prévoteau',
   schema: {
     type: 'HomeAndConstructionBusiness',
     priceRange: '€€',

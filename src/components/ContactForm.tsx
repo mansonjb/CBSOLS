@@ -107,6 +107,14 @@ export function ContactForm() {
       </div>
 
       <form ref={formRef} action={action} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        {/* Honeypot anti-bot : champ caché, ne doit jamais être rempli */}
+        <div style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }} aria-hidden="true">
+          <label>
+            Ne remplissez pas ce champ
+            <input type="text" name="website" tabIndex={-1} autoComplete="off" defaultValue="" />
+          </label>
+        </div>
+
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
           <div>
             <label style={labelStyle}>Nom *</label>
@@ -114,6 +122,7 @@ export function ContactForm() {
               type="text"
               name="name"
               required
+              maxLength={100}
               disabled={pending}
               placeholder="Jean Dupont"
               style={{ ...inputStyle, opacity: pending ? 0.6 : 1 }}
@@ -125,6 +134,7 @@ export function ContactForm() {
               type="tel"
               name="phone"
               required
+              maxLength={30}
               disabled={pending}
               placeholder="06 00 00 00 00"
               style={{ ...inputStyle, opacity: pending ? 0.6 : 1 }}
@@ -138,6 +148,7 @@ export function ContactForm() {
             type="email"
             name="email"
             required
+            maxLength={150}
             disabled={pending}
             placeholder="vous@exemple.fr"
             style={{ ...inputStyle, opacity: pending ? 0.6 : 1 }}
@@ -150,6 +161,7 @@ export function ContactForm() {
             type="text"
             name="city"
             disabled={pending}
+            maxLength={100}
             defaultValue={prefillCity}
             placeholder="La Rochelle, Île de Ré…"
             style={{ ...inputStyle, opacity: pending ? 0.6 : 1 }}
@@ -180,11 +192,16 @@ export function ContactForm() {
           <textarea
             name="message"
             rows={4}
+            maxLength={3000}
             disabled={pending}
             placeholder="Surface approximative, type de local, délai souhaité…"
             style={{ ...inputStyle, resize: 'vertical', opacity: pending ? 0.6 : 1 }}
           />
         </div>
+
+        <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', lineHeight: 1.55, margin: 0 }}>
+          En envoyant ce formulaire, vous acceptez que vos informations soient utilisées pour traiter votre demande. Elles ne sont ni vendues ni partagées. Conservation 3 ans, <a href="/mentions-legales" style={{ color: 'var(--terra)', textDecoration: 'underline' }}>voir mentions légales</a>.
+        </p>
 
         {state.status === 'error' && (
           <div

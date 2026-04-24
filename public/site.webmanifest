@@ -1,0 +1,17 @@
+{
+  "name": "CB Sols Revêtements",
+  "short_name": "CB Sols",
+  "description": "Artisan revêtement de sol à La Rochelle — moquette, sol PVC, tapis sur mesure.",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#C4714A",
+  "background_color": "#FAFAF8",
+  "display": "standalone",
+  "lang": "fr-FR",
+  "start_url": "/"
+}

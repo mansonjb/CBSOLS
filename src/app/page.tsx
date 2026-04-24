@@ -397,9 +397,9 @@ export default function Home() {
             <div style={{ position: 'relative', width: '100%', maxWidth: '380px' }}>
               <div style={{ aspectRatio: '4/5', backgroundColor: 'rgba(196,113,74,0.08)', border: '1px solid rgba(196,113,74,0.2)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                 <div style={{ textAlign: 'center', padding: '3rem 2rem' }}>
-                  <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>👷</div>
+                  <div style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontSize: '3rem', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)', lineHeight: 1, marginBottom: '1rem' }}>VP</div>
                   <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#F0EBE3', letterSpacing: '-0.02em' }}>Valentin Prévoteau</div>
-                  <div style={{ fontSize: '0.72rem', color: 'rgba(240,235,227,0.4)', marginTop: '0.4rem', letterSpacing: '0.06em' }}>Artisan poseur · CB Sols</div>
+                  <div style={{ fontSize: '0.72rem', color: 'rgba(240,235,227,0.5)', marginTop: '0.4rem', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 500 }}>Artisan poseur · CB Sols</div>
                   <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(196,113,74,0.1)', borderRadius: '10px', borderLeft: '2px solid var(--terra)' }}>
                     <p style={{ fontSize: '0.85rem', color: 'rgba(240,235,227,0.7)', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, lineHeight: 1.7, margin: 0 }}>
                       "Un sol bien posé, c'est discret et dure des décennies. Un sol mal posé, ça se voit tout de suite."

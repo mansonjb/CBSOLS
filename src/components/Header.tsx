@@ -30,6 +30,16 @@ export function Header() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // Close mobile menu on Escape key
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [open])
+
   return (
     <header style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
@@ -103,6 +113,24 @@ export function Header() {
           </button>
         </div>
       </div>
+
+      {/* Backdrop overlay — click to close */}
+      {open && (
+        <button
+          type="button"
+          aria-label="Fermer le menu"
+          onClick={() => setOpen(false)}
+          style={{
+            position: 'fixed',
+            inset: '72px 0 0 0',
+            zIndex: -1,
+            background: 'rgba(0,0,0,0.35)',
+            border: 'none',
+            cursor: 'pointer',
+            animation: 'fade-in 0.25s ease',
+          }}
+        />
+      )}
 
       {/* Mobile menu - animated slide */}
       <div style={{

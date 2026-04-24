@@ -85,12 +85,21 @@ export function QuickQuoteForm({ onSwitchToFull }: Props) {
 
   return (
     <form ref={formRef} action={action} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      {/* Honeypot anti-bot */}
+      <div style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }} aria-hidden="true">
+        <label>
+          Ne remplissez pas ce champ
+          <input type="text" name="website" tabIndex={-1} autoComplete="off" defaultValue="" />
+        </label>
+      </div>
+
       <div>
         <label style={labelStyle}>Votre nom</label>
         <input
           type="text"
           name="name"
           required
+          maxLength={100}
           disabled={pending}
           placeholder="Jean Dupont"
           style={{ ...inputStyle, borderColor: focusedField === 'name' ? 'var(--terra)' : 'var(--border)', opacity: pending ? 0.6 : 1 }}
@@ -105,6 +114,7 @@ export function QuickQuoteForm({ onSwitchToFull }: Props) {
           type="tel"
           name="phone"
           required
+          maxLength={30}
           disabled={pending}
           placeholder="06 00 00 00 00"
           style={{ ...inputStyle, borderColor: focusedField === 'phone' ? 'var(--terra)' : 'var(--border)', opacity: pending ? 0.6 : 1 }}
@@ -134,6 +144,10 @@ export function QuickQuoteForm({ onSwitchToFull }: Props) {
       {/* Hidden prefilled city + empty email to reuse existing action */}
       <input type="hidden" name="city" value={prefillCity} />
       <input type="hidden" name="email" value="" />
+
+      <p style={{ fontSize: '0.68rem', color: 'var(--text-muted)', lineHeight: 1.55, margin: '0.5rem 0 0' }}>
+        Données utilisées uniquement pour vous répondre. <a href="/mentions-legales" style={{ color: 'var(--terra)', textDecoration: 'underline' }}>Mentions légales</a>.
+      </p>
 
       <button
         type="submit"

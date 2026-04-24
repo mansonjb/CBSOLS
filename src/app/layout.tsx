@@ -14,7 +14,7 @@ const cormorant = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-ser
 export const metadata: Metadata = {
   title: {
     default: 'CB Sols | Artisan Revêtement de Sol La Rochelle & Île de Ré',
-    template: '%s | CB Sols',
+    template: '%s',
   },
   description:
     'CB Sols, artisan spécialiste du revêtement de sol depuis 25 ans en Charente-Maritime. Moquette, sol PVC, tapis sur mesure pour particuliers et professionnels à La Rochelle, Île de Ré et environs.',
@@ -32,6 +32,25 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-snippet': -1, 'max-image-preview': 'large' },
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180' },
+    ],
+  },
+  manifest: '/site.webmanifest',
+}
+
+export const viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FAFAF8' },
+    { media: '(prefers-color-scheme: dark)', color: '#0A0908' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
