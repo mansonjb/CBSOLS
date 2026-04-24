@@ -278,7 +278,7 @@ export default async function CityHubPage({ params }: Props) {
             <div style={{ marginTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
               {sectors.slice(0, 4).map((sector) => (
                 <Link key={sector.slug} href={`/secteurs/${sector.slug}`} style={{ display: 'inline-block', padding: '0.55rem 1rem', fontSize: '0.75rem', color: 'var(--terra)', textDecoration: 'none', border: '1px solid rgba(196,113,74,0.3)', borderRadius: '999px' }}>
-                  {sector.icon} {sector.name}
+                  {sector.name}
                 </Link>
               ))}
             </div>

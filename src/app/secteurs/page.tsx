@@ -26,10 +26,12 @@ export default function SecteursPage() {
       <section style={{ padding: '4rem 2rem 6rem' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-            {sectors.map((sector) => (
+            {sectors.map((sector, i) => (
               <Link key={sector.slug} href={`/secteurs/${sector.slug}`} style={{ textDecoration: 'none', display: 'block' }}>
                 <div className="sector-row" style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', gap: '2rem', alignItems: 'center', padding: '2.5rem 0', borderBottom: '1px solid var(--border)', transition: 'all 0.2s' }}>
-                  <div className="sector-row-icon" style={{ fontSize: '2.5rem' }}>{sector.icon}</div>
+                  <div className="sector-row-icon" style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontSize: '2.25rem', fontWeight: 300, color: 'var(--terra)', fontStyle: 'italic', lineHeight: 1 }}>
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
                   <div>
                     <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.2rem, 3.5vw, 1.5rem)', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.4rem', letterSpacing: '-0.03em' }}>
                       {sector.name}

@@ -234,21 +234,15 @@ export default async function SolutionPage({ params }: Props) {
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Pour aller plus loin</div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '0.75rem' }}>
                 {relatedGuides.map((g) => (
-                  <Link key={g.slug} href={`/guide/${g.slug}`} style={{ textDecoration: 'none', display: 'flex', gap: '1rem', alignItems: 'flex-start', padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
-                    <div style={{ fontSize: '1rem', flexShrink: 0, marginTop: '1px' }}>📖</div>
-                    <div>
-                      <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem' }}>Guide</div>
-                      <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--dark)', lineHeight: 1.4 }}>{g.title}</div>
-                    </div>
+                  <Link key={g.slug} href={`/guide/${g.slug}`} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem', padding: '1.25rem', border: '1px solid var(--border)', borderLeft: '3px solid var(--terra)', borderRadius: '4px', backgroundColor: 'var(--bg-card)' }}>
+                    <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 600 }}>Guide</div>
+                    <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--dark)', lineHeight: 1.4 }}>{g.title}</div>
                   </Link>
                 ))}
                 {relatedFaqs.map((f) => (
-                  <Link key={f.slug} href={`/faq/${f.slug}`} style={{ textDecoration: 'none', display: 'flex', gap: '1rem', alignItems: 'flex-start', padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
-                    <div style={{ fontSize: '1rem', flexShrink: 0, marginTop: '1px' }}>❓</div>
-                    <div>
-                      <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.3rem' }}>FAQ</div>
-                      <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--dark)', lineHeight: 1.4 }}>{f.question}</div>
-                    </div>
+                  <Link key={f.slug} href={`/faq/${f.slug}`} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem', padding: '1.25rem', border: '1px solid var(--border)', borderLeft: '3px solid var(--terra)', borderRadius: '4px', backgroundColor: 'var(--bg-card)' }}>
+                    <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 600 }}>Question</div>
+                    <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--dark)', lineHeight: 1.4 }}>{f.question}</div>
                   </Link>
                 ))}
               </div>

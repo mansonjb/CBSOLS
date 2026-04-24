@@ -53,8 +53,7 @@ export default async function SecteurPage({ params }: Props) {
             <span style={{ color: 'var(--border-hover)' }}>→</span>
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>{sector.name}</span>
           </div>
-          <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{sector.icon}</div>
-          <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
+          <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '1rem 0 0.75rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
             {sector.name}
           </h1>
           <p style={{ fontSize: '1.1rem', fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 1.5rem', fontFamily: 'var(--font-serif)', fontWeight: 300 }}>

@@ -98,7 +98,7 @@ export default function RealisationsPage() {
               Hôtels, restaurants, architectes, collectivités : une sélection de clients qui nous ont confié leurs projets en Charente-Maritime.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem', marginBottom: '3rem' }}>
             {[
               { src: '/images/clients/Hotel_La_Baronnie.webp', alt: 'Hôtel La Baronnie' },
               { src: '/images/clients/LaGrandeTerrasse.webp', alt: 'La Grande Terrasse' },
@@ -117,9 +117,9 @@ export default function RealisationsPage() {
               { src: '/images/clients/Atelier715.webp', alt: 'Atelier 715' },
               { src: '/images/clients/ZestArchitecture.webp', alt: 'Zest Architecture' },
             ].map(c => (
-              <div key={c.alt} className="client-card-dark" style={{ border: '1px solid rgba(240,235,227,0.08)', borderRadius: '8px', height: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', transition: 'border-color 0.2s, transform 0.2s' }}>
+              <div key={c.alt} className="client-card-dark" style={{ border: '1px solid rgba(240,235,227,0.08)', borderRadius: '8px', height: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.25rem', transition: 'border-color 0.2s, transform 0.2s' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={c.src} alt={c.alt} style={{ maxHeight: '48px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.85 }} />
+                <img src={c.src} alt={c.alt} style={{ maxHeight: '80px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.9 }} />
               </div>
             ))}
           </div>

@@ -175,10 +175,10 @@ export default function Home() {
           <span style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--muted-light)', flexShrink: 0 }}>Fournitures agréées</span>
           <div style={{ width: '1px', height: '20px', backgroundColor: 'var(--border-mid)' }} className="brand-divider" />
           {brandPartners.map(b => (
-            <a key={b.name} href={b.href} target="_blank" rel="noopener noreferrer" className="brand-logo">
+            <div key={b.name} className="brand-logo" aria-label={b.name}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={b.src} alt={b.name} style={{ height: '28px', width: 'auto', maxWidth: '110px', objectFit: 'contain' }} />
-            </a>
+            </div>
           ))}
         </div>
       </section>
@@ -188,7 +188,7 @@ export default function Home() {
         <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', textAlign: 'center' }}>Références</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: '#F0EBE3', margin: '0 0 2.5rem', textAlign: 'center', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
             {[
               { src: '/images/clients/Hotel_La_Baronnie.webp', alt: 'Hôtel La Baronnie' },
               { src: '/images/clients/LaGrandeTerrasse.webp', alt: 'La Grande Terrasse' },
@@ -203,9 +203,9 @@ export default function Home() {
               { src: '/images/clients/HotelLaMarine.webp', alt: 'Hôtel La Marine' },
               { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs' },
             ].map(c => (
-              <div key={c.alt} className="client-card-dark" style={{ border: '1px solid rgba(240,235,227,0.08)', borderRadius: '8px', height: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', transition: 'border-color 0.2s, transform 0.2s' }}>
+              <div key={c.alt} className="client-card-dark" style={{ border: '1px solid rgba(240,235,227,0.08)', borderRadius: '8px', height: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.25rem', transition: 'border-color 0.2s, transform 0.2s' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={c.src} alt={c.alt} style={{ maxHeight: '48px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.85 }} />
+                <img src={c.src} alt={c.alt} style={{ maxHeight: '80px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.9 }} />
               </div>
             ))}
           </div>
@@ -442,7 +442,7 @@ export default function Home() {
                       <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.25rem' }}>{s.name}</div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--muted)', fontStyle: 'italic' }}>{s.tagline}</div>
                     </div>
-                    <div style={{ fontSize: '1.25rem', flexShrink: 0 }}>{s.icon}</div>
+                    <div style={{ fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--terra)', flexShrink: 0, fontWeight: 600 }}>Voir →</div>
                   </div>
                 </Link>
               ))}

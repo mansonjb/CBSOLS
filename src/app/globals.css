@@ -131,7 +131,7 @@ img { display: block; }
 
 /* Client logos (dark wall) */
 .client-logo:hover { opacity: 0.9 !important; filter: grayscale(0) !important; }
-.client-card-dark:hover { transform: translateY(-2px); border-color: rgba(178,89,60,0.5) !important; }
+.client-card-dark:hover { transform: translateY(-2px); border-color: rgba(240,235,227,0.18) !important; }
 .client-card-dark:hover img { opacity: 1 !important; }
 
 /* Brand partners logos — theme aware */
