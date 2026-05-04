@@ -150,6 +150,104 @@ export default function TarifsPage() {
         </div>
       </section>
 
+      {/* Décryptage devis — 6 postes */}
+      <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Les 6 postes d&apos;un devis sérieux</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
+            Que doit contenir <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>un devis de pose de sol ?</em>
+          </h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', maxWidth: '720px', lineHeight: 1.7, marginBottom: '3rem' }}>
+            Nos devis suivent les indications du <strong style={{ color: 'var(--dark)' }}>DTU 53.12</strong>, référentiel national des bonnes pratiques pour la pose de revêtements de sol collés. Chaque poste est isolé pour que vous puissiez comparer rationnellement et comprendre où va votre argent.
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+            {[
+              {
+                num: '01',
+                title: 'La dépose',
+                body: "Différente selon le type de revêtement et son poids. Un parquet stratifié est un déchet lourd, plus coûteux au m² retraité qu'une moquette. Évacuation déchetterie incluse, attestation de retraitement disponible.",
+              },
+              {
+                num: '02',
+                title: 'La barrière anti-humidité',
+                body: "Obligatoire sur les rez-de-chaussée sans polyane sous chape, vide sanitaire ou cave ventilée. Sa présence ou non doit être explicite — sans elle, garantie décennale compromise.",
+              },
+              {
+                num: '03',
+                title: 'Le ragréage',
+                body: "Obligatoire dans la quasi-totalité des chantiers de rénovation. Type P3 standard pour les supports béton, fibré (plus cher) sur supports bois ou pour les fortes épaisseurs. Ce qui fait la différence entre une pose qui dure 15 ans et une qui marque dès 6 mois.",
+              },
+              {
+                num: '04',
+                title: 'La fourniture',
+                body: "Le prix varie avec le type (PVC lés/dalles/lames, moquette dalles ou en lès), la marque, et la quantité — plus c'est grand, moins c'est cher au m². Nous réceptionnons la matière, vérifions quantités et coloris (lots fabricant), débit en atelier.",
+              },
+              {
+                num: '05',
+                title: 'La pose',
+                body: "Variable selon le revêtement, la quantité, le type de pose (droite vs bâton rompu vs incrustation d'arrondis), les difficultés d'acheminement et le stationnement. Une pose simple et une pose technique n'ont rien à voir en temps passé.",
+              },
+              {
+                num: '06',
+                title: 'Accessoires & accessibilité',
+                body: "Nez de marche et barres de seuil selon la matière retenue : laiton (haut de gamme), aluminium (standard), inox brossé. Pour les ERP, mise en accessibilité PMR avec clous podotactiles obligatoires.",
+              },
+            ].map((p) => (
+              <div key={p.num} style={{ padding: '1.75rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderLeft: '3px solid var(--terra)', borderRadius: '8px' }}>
+                <div style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontSize: '1.4rem', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)', lineHeight: 1, marginBottom: '0.75rem' }}>
+                  {p.num}
+                </div>
+                <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.6rem', lineHeight: 1.3 }}>
+                  {p.title}
+                </h3>
+                <p style={{ fontSize: '0.85rem', color: 'var(--cream-muted)', lineHeight: 1.7, margin: 0 }}>
+                  {p.body}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Encart : équipe interne */}
+          <div style={{ marginTop: '2.5rem', padding: '2rem 2.25rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderLeft: '3px solid var(--terra)', borderRadius: '10px', display: 'grid', gridTemplateColumns: '1fr auto', gap: '2rem', alignItems: 'center' }} className="no-subcontract-card">
+            <div>
+              <div style={{ fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.5rem', fontWeight: 700 }}>
+                Le facteur humain
+              </div>
+              <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.15rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.6rem', letterSpacing: '-0.01em' }}>
+                Une équipe de soliers-moquettistes qualifiés. Aucun sous-traitant.
+              </h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--cream-muted)', lineHeight: 1.7, margin: 0, maxWidth: '640px' }}>
+                Chaque chantier CB Sols est posé par notre propre équipe, supervisé par Valentin Prévoteau. Cette continuité garantit le respect du cahier des charges initial, des plannings, et la levée rapide des réserves. Une entreprise qui sous-traite peut afficher un prix plus bas — l&apos;écart paie le sous-traitant et la marge intermédiaire.
+              </p>
+            </div>
+          </div>
+
+          {/* Lien vers guide complet */}
+          <div style={{ marginTop: '2.5rem', textAlign: 'center' }}>
+            <Link
+              href="/guide/comprendre-un-devis-pose-de-sol"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+                padding: '0.95rem 1.75rem',
+                border: '1.5px solid var(--terra)',
+                color: 'var(--terra)',
+                fontSize: '0.72rem', letterSpacing: '0.14em', textTransform: 'uppercase',
+                textDecoration: 'none', fontWeight: 700, borderRadius: '999px',
+              }}
+            >
+              Lire le guide complet — comment décrypter un devis →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <style>{`
+        @media (max-width: 720px) {
+          .no-subcontract-card { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
+
       {/* CTA final */}
       <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 100%, rgba(44, 85, 48, 0.1) 0%, transparent 60%)' }} />

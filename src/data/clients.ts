@@ -15,15 +15,13 @@ export interface ClientReference {
 export const clientLogos: ClientReference[] = [
   { src: '/images/clients/Hotel_La_Baronnie.webp',         alt: 'Hôtel La Baronnie',         href: 'https://www.hotel-labaronnie.com/' },
   { src: '/images/clients/LaGrandeTerrasse.webp',          alt: 'La Grande Terrasse',        href: 'https://www.la-grande-terrasse.com/' },
-  // Golf de la Prée — pas de site officiel public référencé, logo non cliquable
-  { src: '/images/clients/Logo_GolfDeLaPree.webp',         alt: 'Golf de la Prée' },
+  { src: '/images/clients/Logo_GolfDeLaPree.webp',         alt: 'Golf de la Prée',           href: 'https://golflarochelle.fr' },
   // Gaya est l'un des restaurants de La Grande Terrasse
   { src: '/images/clients/Logo_Gaya.webp',                 alt: 'Restaurant Gaya — La Grande Terrasse', href: 'https://www.la-grande-terrasse.com/' },
   { src: '/images/clients/Masqhotel.webp',                 alt: 'Masq Hôtel',                href: 'https://www.masqhotel.com/' },
   { src: '/images/clients/LogoHotelGrandLarge.webp',       alt: 'Hôtel Grand Large',         href: 'https://www.hotelgrandlarge.com/' },
   { src: '/images/clients/HotelSaintNicolas.webp',         alt: 'Hôtel Saint-Nicolas',       href: 'https://www.hotel-saint-nicolas.com/' },
-  // CLR Hotels — site non identifié, logo non cliquable
-  { src: '/images/clients/CLR_Hotels.webp',                alt: 'CLR Hotels' },
+  { src: '/images/clients/CLR_Hotels.webp',                alt: 'CLR Hotels',                href: 'http://www.clrhotels.fr/fr/' },
   // Ibis — chaîne (pas d'établissement spécifique identifié), logo non cliquable
   { src: '/images/clients/Ibis.webp',                      alt: 'Ibis' },
   { src: '/images/clients/MammaMiaRestaurant.webp',        alt: 'Mamma Mia Restaurant',      href: 'https://mammamia.fr/' },
@@ -35,8 +33,7 @@ export const clientLogos: ClientReference[] = [
 export const architectePartners: ClientReference[] = [
   { src: '/images/clients/ABP_Architectes.webp',   alt: 'ABP Architectes',     href: 'https://www.abp-architecture.fr/' },
   { src: '/images/clients/AnneBoulletStudio.webp', alt: 'Anne Boullet Studio', href: 'https://anneboullet.fr/' },
-  // Atelier 715 — site non identifié, logo non cliquable
-  { src: '/images/clients/Atelier715.webp',        alt: 'Atelier 715' },
+  { src: '/images/clients/Atelier715.webp',        alt: 'Atelier 715',         href: 'https://www.facebook.com/Atelier715/' },
   { src: '/images/clients/ZestArchitecture.webp',  alt: 'Zest Architecture',   href: 'https://www.atelierzest.com/' },
   { src: '/images/clients/AgnesMagord.webp',       alt: 'Agnès Magord',        href: 'https://agnes-magord.fr/' },
 ]

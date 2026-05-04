@@ -358,6 +358,62 @@ export const guides: Guide[] = [
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-restaurant', 'moquette-bureau'],
   },
+  {
+    slug: 'comprendre-un-devis-pose-de-sol',
+    title: 'Comprendre un devis de pose de sol',
+    metaTitle: 'Comment lire un devis de pose de sol | Guide CB Sols 2026',
+    metaDescription: "Apprenez à décrypter un devis de pose de sol ligne par ligne : préparation du support, dépose, ragréage, fourniture, pose, accessoires. Guide complet par un solier-moquettiste qualifié.",
+    category: 'Guide Tarifs',
+    headline: 'Comment lire et décrypter un devis de pose de sol',
+    intro: "Un devis de pose de revêtement de sol n'est pas un simple total à signer. C'est un document technique qui doit détailler chaque poste pour vous permettre de comparer ce qui est comparable et de comprendre où va votre argent. Voici, ligne par ligne, ce que doit contenir un devis sérieux et comment l'interpréter.",
+    sections: [
+      {
+        title: "Pourquoi un devis détaillé n'est pas un luxe",
+        body: "Un devis groupé en deux ou trois lignes (« fourniture + pose ») cache souvent des approximations. À l'inverse, un devis détaillé en 6 à 10 postes vous protège contre les mauvaises surprises et vous permet de comparer rationnellement plusieurs entreprises.\n\nLes devis chez CB Sols suivent les indications du DTU 53.12 (Document Technique Unifié — revêtements de sol collés textiles et plastiques), référentiel national qui encadre les bonnes pratiques de pose. Si un devis ne fait aucune référence au type de support à traiter, à la nature de la dépose ou à la classe de ragréage, il y a un risque que ces sujets soient laissés au hasard ou facturés en supplément.",
+      },
+      {
+        title: "1. La dépose de l'ancien revêtement",
+        body: "C'est souvent le poste le plus sous-estimé. La dépose varie selon le type de revêtement existant et son poids — un parquet stratifié est un déchet lourd, plus coûteux au m² à retraiter qu'une moquette légère.\n\nÀ vérifier dans le devis :\n• Le type de revêtement à déposer est-il précisé (moquette, PVC collé, parquet stratifié, carrelage…) ?\n• La surface concernée est-elle clarifiée (parfois différente de la surface à reposer) ?\n• L'évacuation des déchets en déchetterie est-elle incluse ? Avec attestation de retraitement pour les chantiers d'entreprise ?\n\nUn écart de 4 à 8 €/m² entre deux devis sur la dépose vient souvent de là : l'un inclut tout, l'autre vous laisse gérer l'évacuation.",
+      },
+      {
+        title: "2. La barrière anti-humidité",
+        body: "Poste obligatoire dans certains cas, et trop souvent oublié dans les devis bas de gamme. La barrière anti-humidité est imposée :\n• Sur les rez-de-chaussée qui ne disposent pas d'un film polyane anti-humidité sous la chape\n• Au-dessus d'un vide sanitaire ou d'une cave ventilée\n• Sur tout support présentant un taux d'humidité résiduelle supérieur aux seuils du DTU\n\nSi votre futur revêtement est posé sans cette barrière sur un support concerné, vous risquez : décollement de la moquette, cloques sur le PVC, moisissures sous le sol. Refus pur et simple de la garantie décennale.\n\nUn devis sérieux mentionne explicitement la mesure d'humidité préalable et l'application (ou non) d'un primaire d'accrochage anti-humidité.",
+      },
+      {
+        title: "3. Le ragréage du support",
+        body: "Indispensable dans la quasi-totalité des chantiers de rénovation pour garantir la planéité du support. C'est ce qui fait la différence entre une pose qui dure 15 ans et une pose qui marque les défauts du sol au bout de six mois.\n\nL'épaisseur et le type de ragréage varient selon le support :\n\n**Ragréage type P3** (autolissant standard) : 6 à 10 €/m² selon l'épaisseur. Pour les supports béton planéité moyenne, sans contrainte particulière.\n\n**Ragréage fibré** : 12 à 20 €/m². Obligatoire :\n• Sur support bois (parquet existant, dalles OSB)\n• Pour les fortes épaisseurs (>10 mm)\n• Sur supports présentant des micro-fissures\n\nMéfiez-vous des devis qui sautent purement et simplement le poste ragréage : soit votre support est exceptionnellement plan (rare), soit vous allez payer le rattrapage en SAV.",
+      },
+      {
+        title: "4. La fourniture (matériau)",
+        body: "Le prix dépend du type de revêtement, du fabricant, de la gamme et — surtout — du conditionnement.\n\n**Moquette en rouleau** : généralement vendue en lés de 4 m de large. Le métré doit prévoir les chutes de coupe. Sur des espaces étroits, la perte peut atteindre 20 %, sur de grandes surfaces régulières elle tombe à 5 %.\n\n**Moquette dalles** : pas de chute (sauf coupes en bordure). Plus chère au m² mais souvent moins de pose détruite.\n\n**Sol PVC en lés** : conditionnement 2 m ou 4 m de large.\n\n**Sol PVC en lames ou dalles** : pose sans chute, mais le calepinage demande plus de temps.\n\n**Effet quantité** : plus la surface est grande, moins le m² coûte cher (moins de manutention, négociation possible avec le fournisseur). Un même produit peut avoir un écart de 15 à 25 % entre 30 m² et 300 m².\n\n**Notre méthode chez CB Sols** : nous nous occupons de la réception de la matière, de la vérification des quantités et des coloris (lot fabricant, sens de pose). Le débit se fait dans notre atelier où chaque rouleau est contrôlé avant départ chantier.",
+      },
+      {
+        title: "5. La pose",
+        body: "Le prix de pose varie selon trois grandes catégories de variables :\n\n**Le revêtement et son mode de pose**\n• Moquette tendue : 10 à 18 €/m²\n• Moquette collée plein bain : 12 à 22 €/m²\n• PVC collé en lés avec soudures : 18 à 32 €/m² (les soudures à chaud sont chronophages)\n• PVC en lames clipsées : 15 à 25 €/m²\n\n**La complexité du calepinage**\n• Pose droite simple : tarif standard\n• Pose en bâton rompu : +15 à 30 %\n• Découpes spéciales (arrondis, incrustations, motifs sur mesure) : variable, souvent au temps passé\n\n**Les contraintes de chantier**\n• Difficultés d'acheminement (étage sans ascenseur, accès piéton)\n• Difficultés de stationnement en centre-ville\n• Pose en milieu occupé ou hors heures ouvrées\n• Petites quantités (un appartement) coûtent plus cher au m² qu'un grand chantier\n\nUn devis sérieux décompose ces variables au lieu de pratiquer un forfait \"pose\" opaque.",
+      },
+      {
+        title: "6. Accessoires et accessibilité",
+        body: "Les nez de marche, barres de seuils et profilés de finition sont des postes à part entière, souvent oubliés des comparatifs.\n\n**Matières disponibles**\n• Aluminium anodisé : standard, durable, économique\n• Laiton : finition haut de gamme, vieillit avec patine\n• Inox brossé : look industriel, très résistant\n• PVC : économique, vite marqué\n\n**Accessibilité PMR**\nDans les ERP, la mise en accessibilité impose des nez de marche contrastés et des clous podotactiles. C'est un poste qui peut représenter 5 à 15 % du chantier sur un escalier ou un amphithéâtre. Le devis doit le mentionner clairement avec la conformité aux normes.",
+      },
+      {
+        title: "Comment comparer deux devis honnêtement",
+        body: "Voici les vrais points à mettre côte à côte :\n\n• **Surface en m² posés et en m² déposés** (ce ne sont pas toujours les mêmes)\n• **Type et classe du ragréage prévu**\n• **Référence exacte du revêtement** (marque, gamme, lot, classement d'usage)\n• **Conditionnement de la fourniture** (rouleau de 4 m, dalles, lés)\n• **Mode de pose** (collée, tendue, libre, soudures)\n• **Accessoires détaillés** (nez de marche, barres de seuil, plinthes)\n• **Délai de garantie de la pose** (en plus de la décennale)\n• **Mode de calcul des pertes de coupe**\n• **Frais de déplacement** (inclus ou en sus)\n\nUn écart de 20 % entre deux devis qui semblent comparables vient presque toujours d'un de ces postes. Demandez la précision avant de signer.",
+      },
+      {
+        title: "Le facteur humain : un solier-moquettiste qualifié",
+        body: "Au-delà du prix, la question est : qui pose votre sol ?\n\nChez CB Sols, nous sommes une équipe de soliers-moquettistes qualifiés et passionnés, et nous ne prenons jamais de sous-traitant. Chaque chantier est posé par notre propre équipe, supervisé par Valentin Prévoteau. Cette continuité fait la différence sur :\n• La conformité au cahier des charges initial (un sous-traitant ne lit jamais les notes du devis aussi finement que celui qui l'a rédigé)\n• Le respect des plannings (nos équipes ne sont pas en concurrence avec un autre chantier)\n• La levée des réserves (nous revenons sur place sans renvoi de balle)\n\nUne entreprise qui sous-traite peut afficher un prix plus bas — l'écart paie le sous-traitant et la marge intermédiaire. Vérifiez ce point dans toute consultation : qui pose réellement le sol ?",
+      },
+    ],
+    faq: [
+      { q: "Faut-il toujours un ragréage avant la pose d'un sol ?", a: "Dans 90 % des chantiers de rénovation, oui. Le ragréage garantit la planéité requise par le DTU 53.12 pour la pose d'un revêtement souple. Sans ragréage, les défauts du support remonteront à travers le revêtement en quelques mois. Seuls les chantiers neufs avec chape ratissée parfaitement plane et sèche peuvent s'en passer." },
+      { q: "Pourquoi le ragréage fibré coûte-t-il plus cher ?", a: "Le ragréage fibré contient des fibres de polypropylène qui le rendent plus résistant aux micro-mouvements et aux fissures. Il est obligatoire sur supports bois (parquet existant, OSB) et pour les fortes épaisseurs. Comptez 12 à 20 €/m² contre 6 à 10 €/m² pour un P3 standard." },
+      { q: "La barrière anti-humidité est-elle systématique ?", a: "Non, elle est obligatoire seulement sur certains supports : rez-de-chaussée sans polyane sous chape, au-dessus de vide sanitaire ou cave ventilée, ou si la mesure d'humidité dépasse les seuils du DTU. Un solier qualifié mesure systématiquement l'humidité avant de chiffrer." },
+      { q: "Pourquoi le prix au m² baisse avec la surface ?", a: "Les frais fixes (déplacement, mobilisation d'équipe, livraison fournitures) se diluent sur une surface plus grande. Sur les fournitures, le fabricant peut accorder des remises volume. Sur la pose, l'effet d'apprentissage joue : les premiers m² sont les plus longs, les suivants vont plus vite." },
+      { q: "Que vérifier sur la fourniture annoncée ?", a: "Trois points : (1) la marque et la gamme exactes du revêtement (pas \"moquette équivalente\"), (2) le classement d'usage (32, 33, 34) qui doit correspondre à votre activité, (3) le numéro de lot fabricant qui garantit l'homogénéité de coloris. Un solier sérieux mentionne ces trois infos." },
+      { q: "Comment savoir si un devis sous-traite ?", a: "Demandez explicitement : « C'est vous ou une équipe extérieure qui pose ? ». Vérifiez aussi sur les attestations d'assurance décennale : elles doivent être nominatives à l'entreprise qui pose. Une entreprise qui sous-traite va souvent essayer d'esquiver la question — c'est le signal." },
+    ],
+    relatedSolutions: ['moquette-hotel', 'moquette-bureau', 'sol-pvc-restaurant'],
+  },
 ]
 
 export function getGuideBySlug(slug: string): Guide | undefined {
