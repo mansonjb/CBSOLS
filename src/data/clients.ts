@@ -24,7 +24,7 @@ export const clientLogos: ClientReference[] = [
   { src: '/images/clients/CLR_Hotels.webp',                alt: 'CLR Hotels',                href: 'http://www.clrhotels.fr/fr/' },
   // Ibis — chaîne (pas d'établissement spécifique identifié), logo non cliquable
   { src: '/images/clients/Ibis.webp',                      alt: 'Ibis' },
-  { src: '/images/clients/MammaMiaRestaurant.webp',        alt: 'Mamma Mia Restaurant',      href: 'https://mammamia.fr/' },
+  { src: '/images/clients/MammaMiaRestaurant.webp',        alt: 'Mamma Mia Restaurant',      href: 'https://mammamia-lr.com/' },
   { src: '/images/clients/HotelLaMarine.webp',             alt: 'Hôtel La Marine',           href: 'https://www.hotelmarine.fr/' },
   { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs',   href: 'https://maisondesambassadeurs.com/' },
 ]
