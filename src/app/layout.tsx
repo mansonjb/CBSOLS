@@ -45,10 +45,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#FAFAF8' },
-    { media: '(prefers-color-scheme: dark)', color: '#0A0908' },
-  ],
+  themeColor: '#F8F5EE',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -102,7 +99,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr" className={`${jakarta.variable} ${cormorant.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(t===null&&p)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();` }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body>

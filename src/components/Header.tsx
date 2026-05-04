@@ -3,8 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { company } from '@/data/company'
-import { ThemeToggle } from './ThemeToggle'
-import { ColorSwitcher } from './ColorSwitcher'
 import { Button } from '@/components/Button'
 
 const nav = [
@@ -87,8 +85,6 @@ export function Header() {
 
           {/* Right CTA */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }} className="desk-nav">
-            <ColorSwitcher />
-            <ThemeToggle />
             <a href={`tel:${company.phoneClean}`} style={{
               fontSize: '0.75rem', color: 'var(--dark-2)', textDecoration: 'none',
               fontWeight: 500, letterSpacing: '0.02em', whiteSpace: 'nowrap',
@@ -162,10 +158,6 @@ export function Header() {
             >
               Devis gratuit
             </Link>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', paddingTop: '0.5rem' }}>
-              <ThemeToggle />
-              <span style={{ fontSize: '0.72rem', color: 'var(--muted)', letterSpacing: '0.06em' }}>Thème sombre / clair</span>
-            </div>
           </div>
         </div>
       </div>

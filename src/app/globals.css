@@ -52,54 +52,6 @@
   --font-playfair: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
 }
 
-[data-theme="dark"] {
-  --bg:           #0A0908;
-  --bg-alt:       #111009;
-  --bg-card:      #171614;
-  --bg-subtle:    #0F0E0B;
-  --dark:         #EDE9E2;
-  --dark-2:       #B5B1AB;
-  --muted:        #726F6B;
-  --muted-light:  #4A4845;
-
-  /* Vert plus saturé/lumineux en dark mode pour rester lisible */
-  --terra:        #5BA365;
-  --terra-dark:   #3F7A45;
-  --green-100:    rgba(91, 163, 101, 0.15);
-  --green-200:    rgba(91, 163, 101, 0.30);
-  --green-400:    #5BA365;
-  --green-600:    #3F7A45;
-  --green-800:    #2C5530;
-  --green-900:    #1E3D22;
-
-  --border:       rgba(255, 255, 255, 0.07);
-  --border-mid:   rgba(255, 255, 255, 0.10);
-  --border-strong:rgba(255, 255, 255, 0.17);
-  --border-hover: rgba(91, 163, 101, 0.40);
-  --bg-inv:       #0D0C0B;
-  --bg-glass:     rgba(15, 14, 12, 0.90);
-  --btn-inv-bg:   #EDE9E2;
-  --btn-inv-text: #0A0908;
-
-  /* Couleurs sur fond sombre — restent identiques en dark mode (la section reste sombre) */
-  --text-on-dark:        #EDE9E2;
-  --text-on-dark-muted:  rgba(237, 233, 226, 0.65);
-  --text-on-dark-faint:  rgba(237, 233, 226, 0.45);
-  --border-on-dark:      rgba(237, 233, 226, 0.10);
-  --project-card-bg:     #0F0E0B;
-
-  /* Sémantique — même base mais saturée en dark */
-  --error:    #D86060;
-  --error-bg: rgba(216, 96, 96, 0.12);
-  --error-fg: #F08585;
-  --whatsapp: #25D366;
-
-  /* Compat aliases */
-  --cream:        #EDE9E2;
-  --cream-muted:  #726F6B;
-  --text-muted:   #726F6B;
-}
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -191,16 +143,6 @@ img { display: block; }
   filter: grayscale(0);
   opacity: 1;
 }
-/* Brand logos are dark-on-transparent PNGs — invert them in dark mode so they remain readable */
-[data-theme="dark"] .brand-logo img {
-  filter: grayscale(1) invert(1) brightness(1.15);
-  opacity: 0.75;
-}
-[data-theme="dark"] .brand-logo:hover img {
-  filter: grayscale(0) invert(1) brightness(1.15);
-  opacity: 1;
-}
-
 /* Fade-in keyframe utilisé par le backdrop du burger menu */
 @keyframes fade-in {
   from { opacity: 0; }
