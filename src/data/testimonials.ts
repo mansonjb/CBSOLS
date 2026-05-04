@@ -3,7 +3,6 @@ export type TestimonialSector =
   | 'restauration'
   | 'bureaux'
   | 'architecte'
-  | 'ehpad-sante'
   | 'residentiel'
   | 'camping'
   | 'collectivite'
@@ -66,11 +65,11 @@ export const testimonials: Testimonial[] = [
     author: 'Particulière · La Rochelle',
   },
   {
-    sector: 'ehpad-sante',
+    sector: 'collectivite',
     zone: 'charente-maritime',
     quote:
-      "Sol PVC conforme aux normes ERP, pose par zones pour ne pas interrompre le service. Les équipes CB Sols connaissent parfaitement les contraintes hygiéniques d'un EHPAD.",
-    author: 'EHPAD · Charente-Maritime',
+      "Sol PVC conforme aux normes ERP, pose par zones sans interrompre le service. Les équipes CB Sols connaissent parfaitement les contraintes des collectivités.",
+    author: 'Collectivité · Charente-Maritime',
   },
 ]
 

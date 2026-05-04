@@ -5,7 +5,7 @@ import { sectors } from '@/data/sectors'
 export const metadata: Metadata = {
   title: 'Solutions Pro | Hôtels, Restaurants, Bureaux, Collectivités',
   description:
-    'CB Sols, partenaire des professionnels de Charente-Maritime. Solutions revêtement de sol pour hôtellerie, restauration, bureaux, collectivités, commerces, campings et EHPAD.',
+    'CB Sols, partenaire des professionnels de Charente-Maritime. Solutions revêtement de sol pour hôtellerie, restauration, bureaux, collectivités, commerces et campings.',
 }
 
 export default function SecteursPage() {

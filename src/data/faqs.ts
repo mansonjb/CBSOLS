@@ -25,7 +25,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les certifications incendie : obligatoires en professionnel',
-        body: "La moquette résidentielle ne nécessite pas de certification incendie particulière. Pour les établissements recevant du public (hôtels, restaurants, bureaux, EHPAD), la réglementation française impose un classement incendie minimum.\n\nLe classement européen Euroclasse classe les revêtements de A1 (incombustible) à F (non testé). Pour la majorité des ERP, la moquette de sol doit être au minimum Cfl-s1 ou Bfl-s1 selon le type de bâtiment et l'étage.\n\nCB Sols fournit systématiquement les attestations de conformité incendie avec chaque chantier. Ces documents sont nécessaires lors des visites de la commission de sécurité.",
+        body: "La moquette résidentielle ne nécessite pas de certification incendie particulière. Pour les établissements recevant du public (hôtels, restaurants, bureaux, collectivités), la réglementation française impose un classement incendie minimum.\n\nLe classement européen Euroclasse classe les revêtements de A1 (incombustible) à F (non testé). Pour la majorité des ERP, la moquette de sol doit être au minimum Cfl-s1 ou Bfl-s1 selon le type de bâtiment et l'étage.\n\nCB Sols fournit systématiquement les attestations de conformité incendie avec chaque chantier. Ces documents sont nécessaires lors des visites de la commission de sécurité.",
       },
       {
         title: 'Construction et durabilité : ce qui se voit (et ne se voit pas)',
@@ -71,13 +71,13 @@ export const faqs: Faq[] = [
     slug: 'duree-vie-moquette-professionnelle',
     question: 'Quelle est la durée de vie d\'une moquette professionnelle ?',
     metaTitle: 'Durée de Vie Moquette Professionnelle | CB Sols',
-    metaDescription: "Combien de temps dure une moquette professionnelle ? Hôtel, bureau, EHPAD : durées de vie réelles selon l'usage et l'entretien. Guide CB Sols.",
+    metaDescription: "Combien de temps dure une moquette professionnelle ? Hôtel, bureau, collectivité : durées de vie réelles selon l'usage et l'entretien. Guide CB Sols.",
     category: 'Moquette',
     shortAnswer: "Une moquette professionnelle bien choisie et bien entretenue dure 8 à 15 ans selon l'usage. En hôtellerie : 8 à 12 ans en chambre, 5 à 8 ans en couloir. En bureau classement 33 : 12 à 15 ans.",
     sections: [
       {
         title: 'Durées de vie par secteur et type d\'usage',
-        body: "La durée de vie d'une moquette professionnelle varie considérablement selon l'intensité du trafic :\n\nHôtellerie, chambres (classement 33, grammage 600-800 g/m²) : 8 à 12 ans avec un entretien régulier. Les chambres à fort taux d'occupation (90%+) en haut de gamme sont à renouveler plus souvent pour maintenir l'image.\n\nHôtellerie, couloirs (classement 33-34, haute résistance) : 5 à 8 ans. Les couloirs subissent un trafic beaucoup plus intense que les chambres : chariots de ménage, bagages, va-et-vient constant.\n\nBureaux, open space (classement 33, dalles) : 10 à 15 ans avec aspirateur hebdomadaire et injection-extraction annuelle. Les dalles permettent le remplacement partiel des zones les plus usées.\n\nEHPAD, chambres (classement 33, spécial santé) : 8 à 12 ans. Les contraintes sanitaires imposent une vigilance particulière sur les taches et l'hygiène.\n\nCinémas et salles de spectacle (classement 34) : 12 à 18 ans. Malgré le fort trafic, les passages sont concentrés sur des plages horaires courtes et le nettoyage est régulier.",
+        body: "La durée de vie d'une moquette professionnelle varie considérablement selon l'intensité du trafic :\n\nHôtellerie, chambres (classement 33, grammage 600-800 g/m²) : 8 à 12 ans avec un entretien régulier. Les chambres à fort taux d'occupation (90%+) en haut de gamme sont à renouveler plus souvent pour maintenir l'image.\n\nHôtellerie, couloirs (classement 33-34, haute résistance) : 5 à 8 ans. Les couloirs subissent un trafic beaucoup plus intense que les chambres : chariots de ménage, bagages, va-et-vient constant.\n\nBureaux, open space (classement 33, dalles) : 10 à 15 ans avec aspirateur hebdomadaire et injection-extraction annuelle. Les dalles permettent le remplacement partiel des zones les plus usées.\n\nCinémas et salles de spectacle (classement 34) : 12 à 18 ans. Malgré le fort trafic, les passages sont concentrés sur des plages horaires courtes et le nettoyage est régulier.",
       },
       {
         title: 'Les facteurs qui allongent ou raccourcissent la durée de vie',
@@ -93,7 +93,7 @@ export const faqs: Faq[] = [
       },
     ],
     relatedFaqs: ['difference-moquette-contrat-particulier', 'pose-moquette-sur-carrelage'],
-    relatedSolutions: ['moquette-hotel', 'moquette-ehpad'],
+    relatedSolutions: ['moquette-hotel'],
   },
   {
     slug: 'sol-pvc-cuisine-professionnelle-norme',
@@ -121,7 +121,7 @@ export const faqs: Faq[] = [
       },
     ],
     relatedFaqs: ['sol-pvc-cuisine-professionnelle-norme', 'pose-moquette-sur-carrelage'],
-    relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-ehpad'],
+    relatedSolutions: ['sol-pvc-restaurant'],
   },
   {
     slug: 'devis-revetement-sol-gratuit',
@@ -141,11 +141,11 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Peut-on avoir une estimation sans visite ?',
-        body: "Oui, dans certains cas. Si vous disposez de plans précis avec les surfaces en m², des photos du support existant et des informations sur le type de revêtement souhaité, CB Sols peut établir une estimation budgétaire par email ou téléphone.\n\nCette estimation est donnée à titre indicatif avec une fourchette (+/- 20% selon l'état réel du support). Elle permet de valider la faisabilité du projet dans votre budget avant d'organiser une visite.\n\nPour les projets importants (hôtels, EHPAD, grandes surfaces de bureaux), la visite sur site est systématiquement nécessaire pour un devis précis et engageant.\n\nPour envoyer vos plans : contact@cbsols.fr ou via WhatsApp au 05 46 00 00 00.",
+        body: "Oui, dans certains cas. Si vous disposez de plans précis avec les surfaces en m², des photos du support existant et des informations sur le type de revêtement souhaité, CB Sols peut établir une estimation budgétaire par email ou téléphone.\n\nCette estimation est donnée à titre indicatif avec une fourchette (+/- 20% selon l'état réel du support). Elle permet de valider la faisabilité du projet dans votre budget avant d'organiser une visite.\n\nPour les projets importants (hôtels, grandes surfaces de bureaux), la visite sur site est systématiquement nécessaire pour un devis précis et engageant.\n\nPour envoyer vos plans : contact@cbsols.fr ou via WhatsApp au 05 46 00 00 00.",
       },
       {
         title: 'La zone d\'intervention : toute la Charente-Maritime et au-delà',
-        body: "CB Sols intervient dans toute la Charente-Maritime (département 17) : La Rochelle et son agglomération, Île de Ré, Île d'Oléron, Rochefort, Saintes, Royan, Jonzac et toutes les communes du département.\n\nPour les projets importants (hôtels, campings, EHPAD), CB Sols se déplace également dans les départements voisins : Charente (16), Vendée (85), Gironde (33). La logistique du déplacement est intégrée dans le devis sans surprise.\n\nLa distance n'est pas un obstacle : CB Sols a réalisé des chantiers sur toute la façade atlantique. L'Île de Ré, l'Île d'Oléron et les sites insulaires font partie de notre zone d'expertise habituelle.",
+        body: "CB Sols intervient dans toute la Charente-Maritime (département 17) : La Rochelle et son agglomération, Île de Ré, Île d'Oléron, Rochefort, Saintes, Royan, Jonzac et toutes les communes du département.\n\nPour les projets importants (hôtels, campings, collectivités), CB Sols se déplace également dans les départements voisins : Charente (16), Vendée (85), Gironde (33). La logistique du déplacement est intégrée dans le devis sans surprise.\n\nLa distance n'est pas un obstacle : CB Sols a réalisé des chantiers sur toute la façade atlantique. L'Île de Ré, l'Île d'Oléron et les sites insulaires font partie de notre zone d'expertise habituelle.",
       },
     ],
     relatedFaqs: ['difference-moquette-contrat-particulier', 'duree-vie-moquette-professionnelle'],

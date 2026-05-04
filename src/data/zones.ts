@@ -167,10 +167,10 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     tagline: 'Intervention sur toute la Charente-Maritime depuis Villedoux.',
     specificsTitle: 'Les chantiers du département',
     specificsBody:
-      "Au-delà du littoral, la Charente-Maritime compte des bureaux, collectivités, établissements scolaires, EHPAD, bâtiments agricoles reconvertis, et un tissu résidentiel varié. Les contraintes techniques diffèrent du littoral : moins d'humidité, plus de trafic piéton intensif en tertiaire, exigences acoustiques en milieu scolaire et EHPAD, normes ERP strictes. Nous intervenons sur l'ensemble du département pour les chantiers structurants, avec une logistique rodée pour les sites éloignés (Saintes, Royan, Cognac, Rochefort).",
+      "Au-delà du littoral, la Charente-Maritime compte des bureaux, collectivités, établissements scolaires, bâtiments agricoles reconvertis, et un tissu résidentiel varié. Les contraintes techniques diffèrent du littoral : moins d'humidité, plus de trafic piéton intensif en tertiaire, exigences acoustiques en milieu scolaire et normes ERP strictes. Nous intervenons sur l'ensemble du département pour les chantiers structurants, avec une logistique rodée pour les sites éloignés (Saintes, Royan, Cognac, Rochefort).",
     challenges: [
       { label: 'Tertiaire et bureaux', desc: 'Moquette dalles, résistance chaises à roulettes, acoustique.' },
-      { label: 'EHPAD et écoles', desc: 'Sols PVC ERP, classements feu, facilité d\'entretien.' },
+      { label: 'écoles', desc: 'Sols PVC ERP, classements feu, facilité d\'entretien.' },
       { label: 'Exploitations agricoles', desc: 'Conversions en gîtes, sols techniques salles d\'accueil.' },
       { label: 'Logistique départementale', desc: 'Déplacements optimisés, devis maintenu en clarté.' },
     ],
@@ -190,13 +190,13 @@ export const zones: Record<ZoneKey, ZoneContent> = {
         a: "Oui, nous couvrons toute la Charente-Maritime. Les frais de déplacement sont intégrés dans le devis de manière transparente, sans surprise. Pour les gros chantiers, ils sont souvent proportionnellement très faibles.",
       },
       {
-        q: "Travaillez-vous pour les collectivités et EHPAD ?",
+        q: "Travaillez-vous pour les collectivités ?",
         a: "Oui. Nous sommes référencés pour répondre aux appels d'offres publics et marchés privés de collectivité. Garantie décennale, assurances à jour.",
       },
     ],
     typicalEstablishments: [
       'Bureaux et sièges',
-      'EHPAD et cliniques',
+      'cliniques',
       'Écoles et collèges',
       'Bâtiments agricoles',
       'Commerces et boutiques',

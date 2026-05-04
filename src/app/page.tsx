@@ -420,7 +420,7 @@ export default function Home() {
                 Par secteur<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300 }}>d'activité</em>
               </h2>
               <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Hôtel, restaurant, bureau ou EHPAD : chaque secteur a ses normes. CB Sols les connaît toutes.
+                Hôtel, restaurant, bureau ou camping : chaque secteur a ses normes. CB Sols les connaît toutes.
               </p>
               <Link href="/secteurs" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.625rem', padding: '0.875rem 1.75rem', backgroundColor: 'var(--btn-inv-bg)', color: 'var(--btn-inv-text)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px' }}>
                 Solutions pro →

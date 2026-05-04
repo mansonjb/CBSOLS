@@ -53,7 +53,7 @@ const process = [
 const secteurs = [
   { label: 'Hôtellerie & tourisme', desc: 'Îles de Ré et Oléron, La Rochelle, Royan : hôtels 2 à 5 étoiles, résidences, campings' },
   { label: 'Bureaux & tertiaire', desc: 'Open spaces, salles de réunion, accueil : dalles acoustiques, LVT, moquette contrat' },
-  { label: 'EHPAD & santé', desc: 'Moquettes bactériostatiques, PVC homogènes certifiés, accessibilité PMR' },
+  { label: 'Cliniques et cabinets', desc: 'Moquettes bactériostatiques, PVC homogènes certifiés, accessibilité PMR' },
   { label: 'Restauration & CHR', desc: 'Cuisines pro R11 soudées, salles acoustiques, espaces mixtes' },
   { label: 'Collectivités & ERP', desc: 'Appels d\'offres, classements feu, accessibilité : dossiers conformes' },
 ]

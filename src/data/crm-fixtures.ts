@@ -35,7 +35,7 @@ export interface Lead {
   derniere_interaction: string // ISO
   prochaine_action?: string
   notes: { date: string; content: string; auteur: string }[]
-  segment: 'particulier' | 'hotel' | 'restaurant' | 'bureau' | 'ehpad' | 'architecte' | 'commerce' | 'camping'
+  segment: 'particulier' | 'hotel' | 'restaurant' | 'bureau' | 'collectivite' | 'architecte' | 'commerce' | 'camping'
 }
 
 export type ClientType = 'particulier' | 'pro'
@@ -184,16 +184,16 @@ export const leads: Lead[] = [
     id: 'L-2026-037',
     date: '2026-04-19T17:50:00',
     source: 'recommandation',
-    nom: 'EHPAD Les Tilleuls',
+    nom: 'Mairie de Saintes — Salle des fêtes',
     telephone: '05 46 27 14 88',
-    email: 'direction@ehpad-tilleuls.fr',
+    email: 'services-techniques@ville-saintes.fr',
     ville: 'Saintes',
-    type_projet: 'Réfection sol couloirs étage 2, PVC homogène certifié',
+    type_projet: 'Réfection sol salle polyvalente, PVC compact ERP',
     surface_estimee: '420 m²',
     budget_estime: '22 000 – 28 000 € HT',
     statut: 'converti',
     derniere_interaction: '2026-04-25T14:00:00',
-    segment: 'ehpad',
+    segment: 'commerce',
     notes: [
       { date: '2026-04-19T17:50:00', content: "Recommandé par M. Bernard (ancien chantier 2024). Devis demandé urgent.", auteur: 'VP' },
       { date: '2026-04-21T10:00:00', content: "Visite technique faite. Tarkett iQ Optima retenu. Pose en milieu occupé, 4 zones.", auteur: 'VP' },
@@ -376,21 +376,21 @@ export const clients: Client[] = [
   },
   {
     id: 'C-004',
-    nom: 'EHPAD Les Tilleuls',
+    nom: 'Mairie de Saintes',
     type: 'pro',
-    entreprise: 'EHPAD Les Tilleuls',
-    segment: 'ehpad',
-    contact_principal: 'Mme Lacroix (Direction)',
+    entreprise: 'Ville de Saintes',
+    segment: 'commerce',
+    contact_principal: 'Services Techniques',
     telephone: '05 46 27 14 88',
-    email: 'direction@ehpad-tilleuls.fr',
-    adresse: '14 rue des Tilleuls',
+    email: 'services-techniques@ville-saintes.fr',
+    adresse: '1 place Bassompierre',
     ville: 'Saintes',
     date_premier_contact: '2024-02-10',
     ca_total_ht: 41200,
     nombre_chantiers: 2,
     derniere_intervention: '2026-04-30',
-    tags: ['ehpad', 'sante', 'pose-en-milieu-occupe'],
-    notes: 'Chantier récurrent. Étage 2 fait en avril 2026, étage 3 prévu 2027.',
+    tags: ['collectivite', 'erp', 'marche-public'],
+    notes: 'Marché public récurrent. Salle polyvalente faite en avril 2026, salle des associations prévue 2027.',
   },
   {
     id: 'C-005',
@@ -470,9 +470,9 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-018',
     client_id: 'C-004',
-    titre: 'EHPAD Les Tilleuls — Étage 2',
+    titre: 'Mairie de Saintes — Salle polyvalente',
     ville: 'Saintes',
-    type_prestation: 'Sol PVC homogène certifié',
+    type_prestation: 'Sol PVC compact ERP',
     surface_m2: 420,
     montant_ht: 24800,
     statut: 'en_cours',
@@ -481,7 +481,7 @@ export const chantiers: Chantier[] = [
     date_fin: '2026-05-08',
     equipe: ['Valentin', 'Mehdi', 'Sébastien'],
     marque_principale: 'Tarkett iQ Optima',
-    notes: "Pose par zones. Étape 1 terminée (ailes Est). Étape 2 en cours.",
+    notes: "Pose par zones. Étape 1 terminée (entrée + scène). Étape 2 en cours.",
     marge_ht: 7200,
   },
   {

@@ -173,33 +173,6 @@ export const sectors: Sector[] = [
     recommendedServices: ['sol-pvc-lames-dalles', 'sol-pvc-les', 'tapis-de-proprete'],
   },
   {
-    slug: 'sante-ehpad',
-    name: 'Santé & EHPAD',
-    icon: '🏥',
-    tagline: 'Hygiène, confort et accessibilité',
-    description:
-      "Les établissements de santé et EHPAD imposent les standards les plus stricts en matière d'hygiène, de sécurité et d'accessibilité. CB Sols maîtrise les normes spécifiques à ces environnements et intervient en milieu ouvert avec des solutions sans perturbation.",
-    challenges: [
-      'Conformité normes RABC (hygiène)',
-      'Antidérapance obligatoire (sécurité)',
-      'Accessibilité PMR totale',
-      'Résistance aux produits désinfectants',
-      'Intervention en milieu occupé',
-    ],
-    solutions: [
-      'Douche intégrale PVC sans joints (EHPAD)',
-      'PVC en lés soudé à chaud pour les circulations',
-      'Revêtements certifiés R9/R10 (antidérapance)',
-      'Pose en zones, sans interruption de service',
-    ],
-    referencesExamples: [
-      'EHPAD Charente-Maritime',
-      'Cabinets médicaux La Rochelle',
-      'Cliniques régionales',
-    ],
-    recommendedServices: ['douche-integrale-pvc', 'sol-pvc-les', 'sol-pvc-lames-dalles'],
-  },
-  {
     slug: 'golf-sport',
     name: 'Golf & Espaces Sportifs',
     icon: '⛳',

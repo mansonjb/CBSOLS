@@ -16,7 +16,7 @@
 
 CB Sols pose et fourni les types de revêtements suivants :
 
-- **Moquette professionnelle** — hôtels, bureaux, cinémas, amphithéâtres, EHPAD. Gammes EGE et Balsan.
+- **Moquette professionnelle** — hôtels, bureaux, cinémas, amphithéâtres, collectivités. Gammes EGE et Balsan.
 - **Sol PVC hétérogène** — restauration collective, cuisine professionnelle, ERP, hôpitaux. Gammes Gerflor et Forbo.
 - **LVT (Luxury Vinyl Tile)** — résidentiel et tertiaire, pose flottante ou collée.
 - **Tapis sur mesure** — entrées d'immeubles, halls d'hôtels, zones de réception. Sur gabarit ou dimensions standard.
@@ -46,7 +46,7 @@ CB Sols travaille pour particuliers et professionnels :
 - **Campings & résidences de tourisme** — sols PVC résistants humidité, tapis entrée mobil-home
 - **Restauration & cuisine professionnelle** — sol PVC homogène antidérapant, norme HACCP
 - **Bureaux & tertiaire** — moquette acoustique, dalles textiles, LVT
-- **Collectivités & ERP** — EHPAD, écoles, gymnases, couloirs de collectivités
+- **Collectivités & ERP** — écoles, gymnases, mairies, couloirs de collectivités
 - **Particuliers** — moquette escalier, salon, chambre ; sol PVC salle de bain
 
 ## Showroom

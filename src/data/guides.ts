@@ -19,7 +19,7 @@ export const guides: Guide[] = [
     metaDescription: 'Guide complet pour choisir la bonne moquette professionnelle : critères de choix, classements, grammages, marques. Par CB Sols, spécialiste en Charente-Maritime.',
     category: 'Guide Moquette',
     headline: 'Choisir sa moquette professionnelle',
-    intro: 'Pas toutes les moquettes ne se valent. Entre une moquette de bureau, une moquette hôtelière et une moquette EHPAD, les exigences sont radicalement différentes. Ce guide vous aide à poser les bonnes questions avant de choisir.',
+    intro: 'Pas toutes les moquettes ne se valent. Entre une moquette de bureau, une moquette hôtelière et une moquette résidentielle, les exigences sont radicalement différentes. Ce guide vous aide à poser les bonnes questions avant de choisir.',
     sections: [
       {
         title: 'Les critères fondamentaux',
@@ -27,24 +27,24 @@ export const guides: Guide[] = [
       },
       {
         title: 'Les classements incendie à connaître',
-        body: "Pour les établissements recevant du public (ERP), les hôtels, les EHPAD et les bureaux accueillant plus de 50 personnes, le classement incendie est obligatoire. Le classement européen Euroclasse distingue les réactions au feu de A1 (incombustible) à F (sans performance déterminée).\n\nPour la majorité des établissements professionnels, le minimum requis est Cfl-s1 ou Bfl-s1 selon le type de bâtiment. CB Sols vous guide dans le choix selon votre ERP et vous fournit les attestations de conformité pour vos dossiers administratifs.\n\nAttention : un hôtel classé sans moquette certifiée Bfl-s1 en couloir risque la non-conformité lors de la visite de la commission de sécurité.",
+        body: "Pour les établissements recevant du public (ERP), les hôtels, les collectivités et les bureaux accueillant plus de 50 personnes, le classement incendie est obligatoire. Le classement européen Euroclasse distingue les réactions au feu de A1 (incombustible) à F (sans performance déterminée).\n\nPour la majorité des établissements professionnels, le minimum requis est Cfl-s1 ou Bfl-s1 selon le type de bâtiment. CB Sols vous guide dans le choix selon votre ERP et vous fournit les attestations de conformité pour vos dossiers administratifs.\n\nAttention : un hôtel classé sans moquette certifiée Bfl-s1 en couloir risque la non-conformité lors de la visite de la commission de sécurité.",
       },
       {
         title: 'Tuftée, tissée, aiguilletée : les différences',
-        body: "La moquette tuftée est la plus répandue. Les fils sont piqués dans un support primaire puis fixés avec un latex. Bonne résistance, large choix esthétique, rapport qualité/prix optimal pour l'hôtellerie et les bureaux.\n\nLa moquette tissée (Wilton ou Axminster) est plus noble et plus coûteuse. Le motif est intégré dans la structure même du tissu, ce qui lui confère une durabilité exceptionnelle. Idéale pour les lobbys d'hôtels haut de gamme ou les espaces de réception.\n\nLa moquette aiguilletée (ou velours aiguilleté) est plus rigide, souvent sans envers. Elle résiste mieux aux fauteuils roulants et aux chariots, ce qui la rend adaptée aux EHPAD, aux couloirs hospitaliers et aux locaux techniques.",
+        body: "La moquette tuftée est la plus répandue. Les fils sont piqués dans un support primaire puis fixés avec un latex. Bonne résistance, large choix esthétique, rapport qualité/prix optimal pour l'hôtellerie et les bureaux.\n\nLa moquette tissée (Wilton ou Axminster) est plus noble et plus coûteuse. Le motif est intégré dans la structure même du tissu, ce qui lui confère une durabilité exceptionnelle. Idéale pour les lobbys d'hôtels haut de gamme ou les espaces de réception.\n\nLa moquette aiguilletée (ou velours aiguilleté) est plus rigide, souvent sans envers. Elle résiste mieux aux fauteuils roulants et aux chariots, ce qui la rend adaptée aux collectivités et aux couloirs et aux locaux techniques.",
       },
       {
         title: 'Les marques de référence',
-        body: "CB Sols distribue les meilleures marques du marché contrat. EGE est la marque danoise de référence pour l'hôtellerie et les bureaux : gamme Hospitality, design scandinave, certifications environnementales. Balsan (groupe Tarkett) propose une gamme complète du bureau à l'hôtellerie avec un excellent rapport qualité/prix.\n\nInterfacee et Desso excellent dans les dalles de moquette pour bureaux avec des programmes de reprise en fin de vie. Pour les EHPAD et les établissements de santé, Forbo Tessera et Balta sont incontournables grâce à leurs certifications sanitaires.\n\nCB Sols dispose d'un showroom à Villedoux avec plusieurs centaines d'échantillons. Une visite vaut mieux que toutes les descriptions en ligne.",
+        body: "CB Sols distribue les meilleures marques du marché contrat. EGE est la marque danoise de référence pour l'hôtellerie et les bureaux : gamme Hospitality, design scandinave, certifications environnementales. Balsan (groupe Tarkett) propose une gamme complète du bureau à l'hôtellerie avec un excellent rapport qualité/prix.\n\nInterfacee et Desso excellent dans les dalles de moquette pour bureaux avec des programmes de reprise en fin de vie. Pour les collectivités, Forbo Tessera et Balta sont incontournables grâce à leurs certifications sanitaires.\n\nCB Sols dispose d'un showroom à Villedoux avec plusieurs centaines d'échantillons. Une visite vaut mieux que toutes les descriptions en ligne.",
       },
     ],
     faq: [
       { q: 'Quelle moquette pour un bureau open space ?', a: 'Pour un open space, optez pour une dalle de moquette classement 33, grammage 500-600 g/m², avec sous-couche intégrée pour le confort acoustique. Les dalles facilitent le remplacement en cas de détérioration localisée. EGE Carpets ou Interface sont de bonnes références.' },
       { q: 'Combien de temps dure une moquette professionnelle ?', a: 'Une moquette professionnelle bien choisie et bien entretenue dure 10 à 15 ans en bureaux, 8 à 12 ans en hôtellerie haute fréquentation. L\'entretien régulier par aspiration et le nettoyage annuel à l\'injection-extraction prolongent significativement sa durée de vie.' },
       { q: 'Peut-on poser la moquette sur du carrelage existant ?', a: 'Oui, sous conditions. Le carrelage doit être propre, plan (tolérances de 2mm sous la règle de 2m), et solidement ancré. Des résidus de colle ou des carreaux décollés nécessitent une remise à niveau préalable. CB Sols évalue systématiquement l\'état du support lors du devis.' },
-      { q: 'La moquette convient-elle aux personnes allergiques ?', a: 'Les moquettes modernes avec certifications IAQ (Indoor Air Quality) sont adaptées aux personnes allergiques. Les certifications Oeko-Tex, Cradle to Cradle et le label Asthma & Allergy Foundation garantissent des émissions très faibles en COV. CB Sols sélectionne des produits certifiés pour les EHPAD et les établissements de santé.' },
+      { q: 'La moquette convient-elle aux personnes allergiques ?', a: 'Les moquettes modernes avec certifications IAQ (Indoor Air Quality) sont adaptées aux personnes allergiques. Les certifications Oeko-Tex, Cradle to Cradle et le label Asthma & Allergy Foundation garantissent des émissions très faibles en COV. CB Sols sélectionne des produits certifiés pour les collectivités.' },
     ],
-    relatedSolutions: ['moquette-hotel', 'moquette-bureau', 'moquette-ehpad'],
+    relatedSolutions: ['moquette-hotel', 'moquette-bureau'],
   },
   {
     slug: 'sol-pvc-ou-moquette',
@@ -57,7 +57,7 @@ export const guides: Guide[] = [
     sections: [
       {
         title: "Confort acoustique : avantage moquette",
-        body: "La moquette est imbattable pour l'absorption acoustique. Elle réduit les bruits d'impact (chutes d'objets, pas) de 25 à 35 dB selon les produits, et contribue à l'absorption des bruits aériens dans la pièce. Dans un hôtel, la moquette en couloir et en chambre réduit considérablement les nuisances entre chambres.\n\nLe sol PVC (même avec sous-couche) ne peut pas atteindre ces performances. Il existe des systèmes avec sous-couche acoustique spécifique qui améliorent l'indice d'impact, mais restent en dessous de la moquette.\n\nVerdic : si le confort acoustique est une priorité (hôtels, bureaux open space, EHPAD), la moquette est supérieure.",
+        body: "La moquette est imbattable pour l'absorption acoustique. Elle réduit les bruits d'impact (chutes d'objets, pas) de 25 à 35 dB selon les produits, et contribue à l'absorption des bruits aériens dans la pièce. Dans un hôtel, la moquette en couloir et en chambre réduit considérablement les nuisances entre chambres.\n\nLe sol PVC (même avec sous-couche) ne peut pas atteindre ces performances. Il existe des systèmes avec sous-couche acoustique spécifique qui améliorent l'indice d'impact, mais restent en dessous de la moquette.\n\nVerdic : si le confort acoustique est une priorité (hôtels, bureaux open space, collectivités), la moquette est supérieure.",
       },
       {
         title: "Entretien et hygiène : avantage sol PVC",
@@ -74,10 +74,10 @@ export const guides: Guide[] = [
     ],
     faq: [
       { q: "Peut-on mettre du sol PVC dans une chambre d'hôtel ?", a: "Oui, notamment le LVT (Luxury Vinyl Tile) ou les lames vinyle haute qualité. Certains hôtels design préfèrent cette option pour une esthétique contemporaine. L'inconvénient : moins de confort acoustique et de chaleur qu'une moquette. Pour les hôtels haut de gamme, la moquette reste le standard." },
-      { q: "Sol PVC ou moquette pour un EHPAD ?", a: "Les deux sont utilisés en EHPAD selon les zones. Les chambres bénéficient de la moquette pour le confort et l'acoustique. Les couloirs et les espaces de vie peuvent recevoir du sol PVC pour faciliter le nettoyage industriel. Les zones médicales et les salles de bain imposent le sol PVC. CB Sols réalise régulièrement des EHPAD avec les deux matériaux." },
+      { q: "Sol PVC ou moquette pour une collectivité ?", a: "Les deux sont utilisés selon les zones. Les espaces calmes bénéficient de la moquette pour le confort acoustique. Les couloirs et les espaces de vie collectifs reçoivent du sol PVC pour faciliter le nettoyage. Les zones humides imposent systématiquement le sol PVC. CB Sols combine régulièrement les deux matériaux dans une même collectivité." },
       { q: "Quelle est la durée de vie d'un sol PVC professionnel ?", a: "Un sol PVC professionnel (classement 34 ou 43) correctement posé et entretenu dure 15 à 20 ans. Les lames vinyle LVT haut de gamme peuvent dépasser 25 ans. La durée de vie dépend surtout du classement choisi et de la fréquence d'entretien." },
     ],
-    relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel', 'sol-pvc-ehpad'],
+    relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
   },
   {
     slug: 'moquette-contrat-professionnelle',
@@ -94,7 +94,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Les certifications à exiger",
-        body: "Plusieurs certifications coexistent. La certification Cradle to Cradle (C2C) garantit que la moquette peut être recyclée en fin de vie, un critère de plus en plus demandé dans les appels d'offres publics. La certification Oeko-Tex Standard 100 garantit l'absence de substances nocives pour la santé, importante pour les EHPAD et les espaces fréquentés par des personnes vulnérables.\n\nLe label GUT (Gemeinschaft umweltfreundlicher Teppichboden) est une certification allemande reconnue pour les faibles émissions de COV. La norme ISO 9001 s'applique au processus de fabrication.\n\nCB Sols vous fournit systématiquement les fiches techniques et certificats de conformité avec chaque commande.",
+        body: "Plusieurs certifications coexistent. La certification Cradle to Cradle (C2C) garantit que la moquette peut être recyclée en fin de vie, un critère de plus en plus demandé dans les appels d'offres publics. La certification Oeko-Tex Standard 100 garantit l'absence de substances nocives pour la santé, importante pour les collectivités et les espaces fréquentés par des personnes vulnérables.\n\nLe label GUT (Gemeinschaft umweltfreundlicher Teppichboden) est une certification allemande reconnue pour les faibles émissions de COV. La norme ISO 9001 s'applique au processus de fabrication.\n\nCB Sols vous fournit systématiquement les fiches techniques et certificats de conformité avec chaque commande.",
       },
       {
         title: "Prix et budgets",
@@ -122,7 +122,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Fréquences recommandées par secteur",
-        body: "Hôtellerie (chambres) : aspiration quotidienne par le personnel de ménage + injection-extraction 1 à 2 fois par an selon l'occupation. Couloirs : injection-extraction 2 à 3 fois par an.\n\nBureaux : aspiration hebdomadaire + injection-extraction annuelle. Pour un open space à fort trafic, injection-extraction 2 fois par an.\n\nEHPAD et établissements de santé : aspiration quotidienne + injection-extraction trimestrielle minimum. Les protocoles sanitaires peuvent imposer des fréquences supérieures.\n\nRestaurants et hôtels avec espaces F&B : injection-extraction mensuelle recommandée compte tenu des projections alimentaires.",
+        body: "Hôtellerie (chambres) : aspiration quotidienne par le personnel de ménage + injection-extraction 1 à 2 fois par an selon l'occupation. Couloirs : injection-extraction 2 à 3 fois par an.\n\nBureaux : aspiration hebdomadaire + injection-extraction annuelle. Pour un open space à fort trafic, injection-extraction 2 fois par an.\n\nRestaurants et hôtels avec espaces F&B : injection-extraction mensuelle recommandée compte tenu des projections alimentaires.",
       },
       {
         title: "Les erreurs à éviter",
@@ -133,7 +133,7 @@ export const guides: Guide[] = [
       { q: "Combien coûte un nettoyage par injection-extraction ?", a: "Le nettoyage professionnel par injection-extraction coûte en général entre 3 et 8 €/m² selon la superficie, l'état de la moquette et les conditions d'accès. CB Sols propose des contrats d'entretien annuels pour les hôtels et établissements professionnels." },
       { q: "Peut-on faire l'injection-extraction soi-même ?", a: "Il existe des machines en location, mais les résultats sont rarement à la hauteur d'un professionnel équipé d'une machine traîneau haute pression. La qualité d'aspiration et la puissance de chauffage des machines de location sont très inférieures au matériel professionnel. Pour les surfaces importantes ou les moquettes hôtelières, faites appel à un professionnel." },
     ],
-    relatedSolutions: ['moquette-hotel', 'moquette-bureau', 'moquette-ehpad'],
+    relatedSolutions: ['moquette-hotel', 'moquette-bureau'],
   },
   {
     slug: 'sol-pvc-cuisines-professionnelles',
@@ -183,7 +183,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Ce qui influence le prix",
-        body: "La surface est le premier facteur : plus la surface est grande, plus le coût unitaire baisse. Un chantier de 20 m² coûte proportionnellement plus cher qu'un chantier de 200 m².\n\nL'état du support est souvent la variable cachée. Un ragréage sur 300 m² peut représenter 5 000 à 10 000 € supplémentaires. CB Sols préconise systématiquement lors du devis.\n\nLes contraintes de chantier (intervention de nuit, mobilier à déplacer, accès difficile, chantier en activité) entraînent des majorations de 10 à 30 %. CB Sols est habitué aux interventions sans arrêt d'activité dans les hôtels et les EHPAD.",
+        body: "La surface est le premier facteur : plus la surface est grande, plus le coût unitaire baisse. Un chantier de 20 m² coûte proportionnellement plus cher qu'un chantier de 200 m².\n\nL'état du support est souvent la variable cachée. Un ragréage sur 300 m² peut représenter 5 000 à 10 000 € supplémentaires. CB Sols préconise systématiquement lors du devis.\n\nLes contraintes de chantier (intervention de nuit, mobilier à déplacer, accès difficile, chantier en activité) entraînent des majorations de 10 à 30 %. CB Sols est habitué aux interventions sans arrêt d'activité dans les hôtels et les collectivités.",
       },
     ],
     faq: [
@@ -257,7 +257,7 @@ export const guides: Guide[] = [
       { q: "Peut-on avoir une estimation sans visite ?", a: "Oui. En nous envoyant vos plans (ou une estimation de surface) et des photos du support existant, CB Sols peut établir une estimation budgétaire par email. Cette estimation est sans engagement. La visite sur site reste nécessaire pour le devis définitif." },
       { q: "Les prix incluent-ils la TVA ?", a: "Les fourchettes de prix CB Sols sont exprimées HT. La TVA applicable est 20% pour les professionnels et 10% pour les travaux de rénovation dans des logements de plus de 2 ans (conformément à l'article 279-0 bis du CGI). Vos devis précisent toujours le détail HT/TTC." },
     ],
-    relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel', 'sol-pvc-ehpad'],
+    relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
   },
   {
     slug: 'moquette-vs-parquet-bureau',
@@ -344,7 +344,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Applications prioritaires : où la moquette acoustique s'impose",
-        body: "Hôtellerie : les couloirs et les chambres sont les zones où la moquette acoustique apporte la valeur la plus immédiate. Le silence nocturne conditionne directement les avis clients. Un hôtel bien insonorisé obtient des notes plus élevées sur les plateformes de réservation.\n\nBureaux open space : la cacophonie des grands open spaces est un facteur reconnu de stress et de baisse de productivité. La moquette acoustique, associée à des panneaux et à un plafond absorbant, est l'un des investissements les plus rentables pour améliorer les conditions de travail.\n\nEHPAD et santé : le silence la nuit est une condition médicale pour les résidents. La moquette dans les couloirs et les chambres réduit les nuisances sonores des passages de personnel et des équipements.\n\nCinémas et salles de spectacle : le sol contribue à l'équilibre acoustique de la salle. Une moquette haute densité dans les allées et l'espace entre les sièges améliore la qualité perçue du son.",
+        body: "Hôtellerie : les couloirs et les chambres sont les zones où la moquette acoustique apporte la valeur la plus immédiate. Le silence nocturne conditionne directement les avis clients. Un hôtel bien insonorisé obtient des notes plus élevées sur les plateformes de réservation.\n\nBureaux open space : la cacophonie des grands open spaces est un facteur reconnu de stress et de baisse de productivité. La moquette acoustique, associée à des panneaux et à un plafond absorbant, est l'un des investissements les plus rentables pour améliorer les conditions de travail.\n\nCollectivités et écoles : le confort acoustique des espaces partagés améliore la concentration et réduit la fatigue auditive. La moquette dans les couloirs et les espaces communs contribue directement au bien-être des usagers.\n\nCinémas et salles de spectacle : le sol contribue à l'équilibre acoustique de la salle. Une moquette haute densité dans les allées et l'espace entre les sièges améliore la qualité perçue du son.",
       },
       {
         title: "Certifications et labels à connaître",

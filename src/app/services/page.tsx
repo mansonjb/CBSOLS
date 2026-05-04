@@ -81,7 +81,7 @@ export default function ServicesPage() {
                   Nettoyage de moquettes <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>par injection-extraction.</em>
                 </h2>
                 <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', lineHeight: 1.75, marginBottom: '1.75rem' }}>
-                  Un entretien périodique double la durée de vie d&apos;une moquette. Hôtels, bureaux, EHPAD, restaurants : nous intervenons sans interrompre votre activité, avec contrats annuels possibles.
+                  Un entretien périodique double la durée de vie d&apos;une moquette. Hôtels, bureaux, restaurants : nous intervenons sans interrompre votre activité, avec contrats annuels possibles.
                 </p>
                 <Button href="/nettoyage-moquettes" variant="primary" size="md">
                   Découvrir le service

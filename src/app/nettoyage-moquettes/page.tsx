@@ -8,7 +8,7 @@ import { WhatsAppInlineCTA } from '@/components/WhatsAppInlineCTA'
 export const metadata: Metadata = {
   title: 'Nettoyage de Moquettes Professionnel | CB Sols La Rochelle',
   description:
-    "Nettoyage de moquettes par injection-extraction à La Rochelle, Île de Ré et Charente-Maritime. Hôtels, bureaux, EHPAD, particuliers. Devis gratuit, intervention sans interruption d'activité.",
+    "Nettoyage de moquettes par injection-extraction à La Rochelle, Île de Ré et Charente-Maritime. Hôtels, bureaux, restaurants, particuliers. Devis gratuit, intervention sans interruption d'activité.",
   alternates: { canonical: 'https://cbsols.fr/nettoyage-moquettes' },
   keywords: [
     'nettoyage moquette La Rochelle',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'nettoyage moquette hôtel',
     'nettoyage moquette bureau',
     'détachage moquette professionnelle',
-    'nettoyage moquette EHPAD',
+    
   ],
 }
 
@@ -34,7 +34,7 @@ const reasons = [
   {
     title: 'Améliorer la qualité de l\'air',
     body:
-      "Une moquette stocke 4 à 8 fois son poids en poussières, allergènes et squames. L'aspirateur n'extrait que la surface. L'injection-extraction sort les particules profondes — bénéfice direct pour les bureaux, hôtels et EHPAD.",
+      "Une moquette stocke 4 à 8 fois son poids en poussières, allergènes et squames. L'aspirateur n'extrait que la surface. L'injection-extraction sort les particules profondes — bénéfice direct pour les bureaux, hôtels.",
   },
   {
     title: 'Éliminer odeurs et taches',
@@ -49,7 +49,7 @@ const reasons = [
   {
     title: 'Préparer à l\'usage intensif',
     body:
-      "Avant la haute saison hôtelière, après un événement professionnel, à la rentrée scolaire pour les EHPAD/écoles : un nettoyage de fond redonne à la moquette toute sa résistance pour la période d'usage à venir.",
+      "Avant la haute saison hôtelière, après un événement professionnel, à la rentrée scolaire pour les écoles : un nettoyage de fond redonne à la moquette toute sa résistance pour la période d'usage à venir.",
   },
 ]
 
@@ -114,7 +114,7 @@ const frequences = [
     detail: "Vin, café, projections : la périodicité dépend du type de service. Détachage ponctuel inclus dans nos contrats annuels.",
   },
   {
-    secteur: 'EHPAD et établissements de santé',
+    secteur: 'établissements de santé',
     freq: '2 à 4 fois par an',
     detail: "Hygiène prioritaire. Nous travaillons en zones, sans fermeture du service. Produits compatibles avec normes RABC.",
   },
@@ -152,7 +152,7 @@ const faqItems = [
   },
   {
     q: "Proposez-vous des contrats annuels ?",
-    a: "Oui, pour les hôtels, restaurants, bureaux et EHPAD nous proposons des contrats annuels avec planning fixe (1 à 4 passages/an), tarifs négociés, intervention prioritaire en cas d'urgence (tache, événement). Demandez-nous une proposition sur mesure.",
+    a: "Oui, pour les hôtels, restaurants, bureaux nous proposons des contrats annuels avec planning fixe (1 à 4 passages/an), tarifs négociés, intervention prioritaire en cas d'urgence (tache, événement). Demandez-nous une proposition sur mesure.",
   },
   {
     q: "Intervenez-vous sur les tapis sur mesure ?",
@@ -175,7 +175,7 @@ const serviceLd = {
   '@type': 'Service',
   name: 'Nettoyage de moquettes professionnel',
   description:
-    "Nettoyage par injection-extraction de moquettes en hôtellerie, bureaux, EHPAD, restauration et résidentiel premium. La Rochelle, Île de Ré, Charente-Maritime.",
+    "Nettoyage par injection-extraction de moquettes en hôtellerie, bureaux, restauration et résidentiel premium. La Rochelle, Île de Ré, Charente-Maritime.",
   serviceType: 'Nettoyage et entretien de revêtement de sol',
   areaServed: { '@type': 'AdministrativeArea', name: 'Charente-Maritime' },
   provider: {
@@ -352,7 +352,7 @@ export default function NettoyageMoquettesPage() {
                   Pourquoi prévoir l&apos;entretien <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>plutôt que de subir.</em>
                 </h2>
                 <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                  Pour les hôtels, restaurants, bureaux et EHPAD, nous proposons des contrats d&apos;entretien annuels avec planning fixe (1 à 4 passages par an), tarifs négociés et intervention prioritaire en cas d&apos;urgence (tache, événement client).
+                  Pour les hôtels, restaurants, bureaux et nous proposons des contrats d&apos;entretien annuels avec planning fixe (1 à 4 passages par an), tarifs négociés et intervention prioritaire en cas d&apos;urgence (tache, événement client).
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--cream-muted)', lineHeight: 1.7, marginBottom: '2rem' }}>
                   Cette approche est trois à cinq fois moins coûteuse qu&apos;un remplacement complet, et elle préserve la garantie fabricant de votre revêtement.

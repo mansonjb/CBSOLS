@@ -91,7 +91,7 @@ export const services: Service[] = [
     icon: '◫',
     description: 'Système de douche 100% PVC, étanche, hygiénique, sans joints de carrelage.',
     longDescription:
-      "La douche intégrale en PVC révolutionne la salle de bain : aucun joint de carrelage susceptible de noircir, étanchéité totale garantie par la soudure à chaud, entretien réduit à son minimum. Solution privilégiée par les hôtels, résidences de tourisme et EHPAD pour sa durabilité et son esthétique contemporaine.",
+      "La douche intégrale en PVC révolutionne la salle de bain : aucun joint de carrelage susceptible de noircir, étanchéité totale garantie par la soudure à chaud, entretien réduit à son minimum. Solution privilégiée par les hôtels et résidences de tourisme pour sa durabilité et son esthétique contemporaine.",
     benefits: [
       'Zéro joint = zéro moisissure',
       'Étanchéité parfaite garantie',
@@ -99,12 +99,12 @@ export const services: Service[] = [
       'Pose rapide (1 à 2 jours)',
       'Adapté PMR (accessibilité)',
     ],
-    useCases: ['Hôtels & résidences', 'EHPAD & maisons de retraite', 'Campings premium', 'Particuliers en rénovation', 'Résidences de tourisme'],
+    useCases: ['Hôtels & résidences', 'Campings premium', 'Particuliers en rénovation', 'Résidences de tourisme'],
     brands: ['Altro', 'Gerflor', 'Forbo'],
     geoVerb: 'Douche intégrale PVC à',
     metaTitle: (city) => `Douche Intégrale PVC ${city} | CB Sols`,
     metaDescription: (city) =>
-      `Installation de douches intégrales PVC à ${city}. Étanchéité parfaite, sans joints, entretien facile. Idéal hôtels, EHPAD et rénovation. CB Sols, devis gratuit.`,
+      `Installation de douches intégrales PVC à ${city}. Étanchéité parfaite, sans joints, entretien facile. Idéal hôtels et rénovation. CB Sols, devis gratuit.`,
     h1: (city) => `Douche Intégrale PVC à ${city}`,
   },
   {
