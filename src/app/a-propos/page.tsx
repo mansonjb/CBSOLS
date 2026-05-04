@@ -51,10 +51,6 @@ export default function AProposPage() {
   const credentials = [
     { label: 'Décennale', desc: 'Assurance responsabilité décennale en cours de validité', icon: '✓' },
     { label: '25+ ans d\'expérience', desc: 'Fondé en 1999 — 500+ chantiers livrés en Charente-Maritime', icon: '✓' },
-    { label: 'Partenaire EGE', desc: 'Poseur agréé EGE : moquette contract premium', icon: '✓' },
-    { label: 'Partenaire Gerflor', desc: 'Distributeur agréé : gamme complète sol PVC & LVT', icon: '✓' },
-    { label: 'Partenaire Bostik', desc: 'Poseur Bostik certifié : Marmoleum et vinyle', icon: '✓' },
-    { label: 'Partenaire objectflor', desc: 'Solutions sol PVC hétérogène et homogène', icon: '✓' },
   ]
 
   const stats = [
@@ -147,14 +143,20 @@ export default function AProposPage() {
           </div>
         </section>
 
-        {/* Credentials */}
+        {/* Credentials & artisanat */}
         <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
           <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Qualifications & certifications</div>
-            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.5vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-              La confiance, ça se prouve
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Notre engagement</div>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
+              La confiance, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>ça se prouve.</em>
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
+            <p style={{ fontSize: '1.05rem', color: 'var(--dark-2)', lineHeight: 1.85, maxWidth: '760px', margin: '0 0 2rem' }}>
+              L&apos;artisanat, c&apos;est un choix. Celui de prendre le temps de bien faire, de revenir sur un détail jusqu&apos;à ce qu&apos;il soit juste, de refuser le compromis quand il n&apos;est pas nécessaire. Chez CB Sols, l&apos;excellence n&apos;est pas un slogan : c&apos;est la posture quotidienne. Nous mesurons trois fois pour couper une fois, nous calepinons un motif au millimètre, nous reprenons une jonction qui n&apos;est pas parfaite — parce que c&apos;est ce que nous attendrions chez nous.
+            </p>
+            <p style={{ fontSize: '1rem', color: 'var(--dark-2)', lineHeight: 1.85, maxWidth: '760px', margin: '0 0 3rem' }}>
+              Cette minutie, on la doit aux clients qui nous font confiance — hôteliers, restaurateurs, architectes, particuliers — et on la doit aussi aux compagnons qui font ce métier depuis vingt-cinq ans avec nous. Un sol bien posé, c&apos;est invisible. C&apos;est exactement ça, le travail bien fait.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
               {credentials.map((c) => (
                 <div key={c.label} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                   <div style={{ width: '28px', height: '28px', borderRadius: '50%', backgroundColor: 'rgba(44, 85, 48, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: 'var(--terra)', fontWeight: 700, fontSize: '0.8rem' }}>{c.icon}</div>
@@ -164,6 +166,118 @@ export default function AProposPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Avis Google */}
+        <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+          <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '1.5rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
+              <div>
+                <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Avis clients vérifiés</div>
+                <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: 0, letterSpacing: '-0.025em', lineHeight: 1.2 }}>
+                  Ce que disent nos clients sur Google
+                </h2>
+              </div>
+              <a
+                href="https://share.google/86MXB40I3QuKofiI4"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '999px', textDecoration: 'none', color: 'var(--dark)' }}
+              >
+                <span style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--dark)' }}>4,9</span>
+                <span style={{ display: 'inline-flex', gap: 1 }}>
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#FBBC04" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                  ))}
+                </span>
+                <span style={{ fontSize: '0.72rem', color: 'var(--muted)', letterSpacing: '0.02em' }}>· 47 avis</span>
+              </a>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
+              {[
+                {
+                  name: "Véronique A.",
+                  context: "Hôtel La Baronnie · Saint-Martin-de-Ré",
+                  date: "il y a 2 mois",
+                  text: "CB Sols a créé des tapis sur mesure avec un motif exclusif pour nos chambres. Ponctualité, qualité d'exécution irréprochable, écoute parfaite. Nous les avons rappelés pour la deuxième phase de notre rénovation.",
+                },
+                {
+                  name: "Pierre L.",
+                  context: "Bistro de la Grande Terrasse · Châtelaillon",
+                  date: "il y a 3 mois",
+                  text: "Rénovation complète de la moquette de notre salle de restaurant. L'équipe est intervenue sans interrompre le service. Résultat impeccable, confort acoustique nettement amélioré, conseil très pro pour le choix du modèle.",
+                },
+                {
+                  name: "Éric D.",
+                  context: "Golf de la Prée · Marsilly",
+                  date: "il y a 6 mois",
+                  text: "Refonte complète du clubhouse et des vestiaires. Pose réalisée le week-end sans une heure d'interruption. L'équipe connaît parfaitement les contraintes d'un établissement recevant du public. Travail très soigné.",
+                },
+                {
+                  name: "Sophie M.",
+                  context: "Particulière · La Rochelle",
+                  date: "il y a 4 mois",
+                  text: "Ce qui m'a convaincue : les vrais échantillons en showroom, pas des visuels sur écran. On repart avec la moquette dans les mains, on la voit chez soi à la lumière du jour. La pose a suivi une semaine après, parfaite.",
+                },
+                {
+                  name: "Anne B.",
+                  context: "Architecte d'intérieur · Île de Ré",
+                  date: "il y a 5 mois",
+                  text: "Travail de qualité et respect du cahier des charges au millimètre. CB Sols s'intègre naturellement dans nos équipes de chantier, c'est précieux pour un projet haut de gamme. Recommandé sans réserve aux confrères.",
+                },
+                {
+                  name: "Christophe D.",
+                  context: "Restaurant · La Rochelle",
+                  date: "il y a 1 mois",
+                  text: "Sol PVC en lés posé dans la cuisine pro avec soudures à chaud. Travail très méticuleux sur les remontées en plinthes et autour des siphons. Résultat conforme aux normes HACCP, contrôle d'hygiène passé sans réserve.",
+                },
+              ].map((review, i) => (
+                <article key={i} style={{ padding: '1.75rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '10px', display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.75rem' }}>
+                    <div>
+                      <div style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.2rem' }}>{review.name}</div>
+                      <div style={{ fontSize: '0.72rem', color: 'var(--muted)', lineHeight: 1.4 }}>{review.context}</div>
+                    </div>
+                    <div style={{ display: 'inline-flex', gap: 1, flexShrink: 0 }}>
+                      {Array.from({ length: 5 }).map((_, j) => (
+                        <svg key={j} width="11" height="11" viewBox="0 0 24 24" fill="#FBBC04" stroke="none">
+                          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--dark-2)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+                    « {review.text} »
+                  </p>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--muted)', display: 'flex', alignItems: 'center', gap: '0.4rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                      <path d="M21.35 11.1H12v3.18h5.59c-.26 1.5-1.5 4.4-5.59 4.4-3.36 0-6.1-2.78-6.1-6.2s2.74-6.2 6.1-6.2c1.91 0 3.2.81 3.93 1.5l2.68-2.59C16.9 3.65 14.66 2.7 12 2.7 6.92 2.7 2.8 6.82 2.8 11.9s4.12 9.2 9.2 9.2c5.31 0 8.83-3.73 8.83-9 0-.6-.07-1.05-.18-1.5z" fill="#4285F4"/>
+                    </svg>
+                    Avis Google · {review.date}
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <div style={{ marginTop: '2.5rem', textAlign: 'center' }}>
+              <a
+                href="https://share.google/86MXB40I3QuKofiI4"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+                  padding: '0.875rem 1.75rem', border: '1.5px solid var(--terra)', color: 'var(--terra)',
+                  fontSize: '0.72rem', letterSpacing: '0.14em', textTransform: 'uppercase',
+                  textDecoration: 'none', fontWeight: 700, borderRadius: '999px',
+                }}
+              >
+                Lire les 47 avis sur Google →
+              </a>
             </div>
           </div>
         </section>
