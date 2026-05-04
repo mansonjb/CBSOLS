@@ -90,7 +90,7 @@ export default async function CityHubPage({ params }: Props) {
     },
     {
       q: `Quels types de sols posez-vous à ${cityData.name} ?`,
-      a: `Nous posons tous types de revêtements à ${cityData.name} : moquette (en rouleau ou dalles), sol PVC (lames, dalles ou lés), douches intégrales PVC, tapis sur mesure et tapis de propreté. Conseil en showroom à 10 min de La Rochelle.`,
+      a: `Nous posons tous types de revêtements à ${cityData.name} : moquette (en rouleau ou dalles), sol PVC (lames, dalles ou lés), tapis sur mesure, tapis de propreté, ainsi que des aménagements spécifiques (salle de cinéma, coin lecture). Conseil en showroom à 10 min de La Rochelle.`,
     },
     ...zoneContent.zoneFaq,
   ]

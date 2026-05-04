@@ -85,29 +85,6 @@ export const services: Service[] = [
     h1: (city) => `Sol PVC en Lés à ${city}`,
   },
   {
-    slug: 'douche-integrale-pvc',
-    name: 'Douche Intégrale PVC',
-    shortName: 'Douche PVC',
-    icon: '◫',
-    description: 'Système de douche 100% PVC, étanche, hygiénique, sans joints de carrelage.',
-    longDescription:
-      "La douche intégrale en PVC révolutionne la salle de bain : aucun joint de carrelage susceptible de noircir, étanchéité totale garantie par la soudure à chaud, entretien réduit à son minimum. Solution privilégiée par les hôtels et résidences de tourisme pour sa durabilité et son esthétique contemporaine.",
-    benefits: [
-      'Zéro joint = zéro moisissure',
-      'Étanchéité parfaite garantie',
-      'Entretien ultra-simplifié',
-      'Pose rapide (1 à 2 jours)',
-      'Adapté PMR (accessibilité)',
-    ],
-    useCases: ['Hôtels & résidences', 'Campings premium', 'Particuliers en rénovation', 'Résidences de tourisme'],
-    brands: ['Altro', 'Gerflor', 'Forbo'],
-    geoVerb: 'Douche intégrale PVC à',
-    metaTitle: (city) => `Douche Intégrale PVC ${city} | CB Sols`,
-    metaDescription: (city) =>
-      `Installation de douches intégrales PVC à ${city}. Étanchéité parfaite, sans joints, entretien facile. Idéal hôtels et rénovation. CB Sols, devis gratuit.`,
-    h1: (city) => `Douche Intégrale PVC à ${city}`,
-  },
-  {
     slug: 'tapis-sur-mesure',
     name: 'Tapis Sur Mesure',
     shortName: 'Tapis Sur Mesure',
@@ -198,6 +175,52 @@ export const services: Service[] = [
     metaDescription: (city) =>
       `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis 25 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
     h1: (city) => `Revêtement de Sol à ${city}`,
+  },
+  {
+    slug: 'salle-cinema',
+    name: 'Salle de Cinéma',
+    shortName: 'Salle de cinéma',
+    icon: '◉',
+    description: 'Aménagement acoustique et esthétique des salles de cinéma privées et home-cinémas haut de gamme.',
+    longDescription:
+      "Une salle de cinéma exige un sol qui absorbe les bruits d'impact, qui ne réfléchit pas la lumière de l'écran et qui résiste aux passages fréquents avec sièges fixes. Nous installons des moquettes haute densité (classement 33-34), avec sous-couche acoustique renforcée et finitions sombres adaptées à la projection. CB Sols intervient sur les home-cinémas privés des résidences haut de gamme et sur les salles de projection professionnelles.",
+    benefits: [
+      'Absorption acoustique optimale (-15 à -25 dB d\'impact)',
+      'Finitions sombres anti-reflets pour la projection',
+      'Tenue parfaite sous sièges fixes et fauteuils inclinables',
+      'Couleurs sourdes pour ne pas perturber l\'œil',
+      'Sous-couche renforcée pour le confort longue durée',
+    ],
+    useCases: ['Home-cinémas privés', 'Salles de projection résidences', 'Espaces multimédia hôteliers', 'Salles de spectacle', 'Auditoriums'],
+    brands: ['EGE', 'Balsan', 'Forbo'],
+    geoVerb: 'Salle de cinéma à',
+    metaTitle: (city) => `Sol Salle de Cinéma ${city} | Moquette Acoustique CB Sols`,
+    metaDescription: (city) =>
+      `Aménagement sol pour salle de cinéma et home-cinéma à ${city}. CB Sols : moquette acoustique haute densité, finitions anti-reflets, sous-couche renforcée. Devis gratuit.`,
+    h1: (city) => `Sol pour salle de cinéma à ${city}`,
+  },
+  {
+    slug: 'coin-lecture',
+    name: 'Espace & Coin Lecture',
+    shortName: 'Coin lecture',
+    icon: '❍',
+    description: 'Création d\'espaces lecture cosy et acoustiquement maîtrisés en hôtellerie, résidences et bibliothèques privées.',
+    longDescription:
+      "Un coin lecture réussi se sent autant qu'il se voit. Le sol doit absorber les pas et les bruits ambiants, offrir une chaleur tactile et visuelle, et durer dans le temps. CB Sols sélectionne des moquettes en laine ou velours bouclé pour les espaces lecture résidentiels et hôteliers — couloirs littéraires, salons de lecture, bibliothèques privées, mezzanines en hôtels boutique. Possibilité de combiner avec un tapis sur mesure pour ancrer la zone.",
+    benefits: [
+      'Confort acoustique propice à la concentration',
+      'Chaleur tactile et visuelle',
+      'Couleurs et textures favorisant l\'apaisement',
+      'Définition d\'une zone par tapis sur mesure',
+      'Solutions adaptées aux espaces de standing',
+    ],
+    useCases: ['Salons de lecture hôteliers', 'Bibliothèques privées', 'Mezzanines en suites', 'Coins lecture résidentiels', 'Espaces étude haut de gamme'],
+    brands: ['EGE', 'Balsan', 'Atelier tapis sur mesure'],
+    geoVerb: 'Coin lecture à',
+    metaTitle: (city) => `Sol Espace Lecture ${city} | Coin Lecture CB Sols`,
+    metaDescription: (city) =>
+      `Création d'espaces et coins lecture à ${city}. Moquette feutrée, tapis sur mesure, ambiance cosy et acoustique maîtrisée. CB Sols, devis gratuit.`,
+    h1: (city) => `Coin lecture à ${city}`,
   },
 ]
 

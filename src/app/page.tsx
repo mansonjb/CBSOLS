@@ -6,6 +6,8 @@ import { cities } from '@/data/cities'
 import { company } from '@/data/company'
 import { HeroSlider } from '@/components/HeroSlider'
 import { Button } from '@/components/Button'
+import { ClientLogoCard } from '@/components/ClientLogoCard'
+import { clientLogos } from '@/data/clients'
 
 const projects = [
   { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel-real.webp' },
@@ -188,24 +190,8 @@ export default function Home() {
           <div style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', textAlign: 'center' }}>Références</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 700, color: 'var(--text-on-dark)', margin: '0 0 2.5rem', textAlign: 'center', letterSpacing: '-0.02em' }}>Ils nous ont fait confiance</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
-            {[
-              { src: '/images/clients/Hotel_La_Baronnie.webp', alt: 'Hôtel La Baronnie' },
-              { src: '/images/clients/LaGrandeTerrasse.webp', alt: 'La Grande Terrasse' },
-              { src: '/images/clients/Logo_GolfDeLaPree.webp', alt: 'Golf de la Prée' },
-              { src: '/images/clients/Logo_Gaya.webp', alt: 'Restaurant Gaya' },
-              { src: '/images/clients/Masqhotel.webp', alt: 'Masq Hôtel' },
-              { src: '/images/clients/LogoHotelGrandLarge.webp', alt: 'Hôtel Grand Large' },
-              { src: '/images/clients/HotelSaintNicolas.webp', alt: 'Hôtel Saint-Nicolas' },
-              { src: '/images/clients/CLR_Hotels.webp', alt: 'CLR Hotels' },
-              { src: '/images/clients/Ibis.webp', alt: 'Ibis' },
-              { src: '/images/clients/MammaMiaRestaurant.webp', alt: 'Mamma Mia Restaurant' },
-              { src: '/images/clients/HotelLaMarine.webp', alt: 'Hôtel La Marine' },
-              { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs' },
-            ].map(c => (
-              <div key={c.alt} className="client-card-dark" style={{ border: '1px solid rgba(240,235,227,0.08)', borderRadius: '8px', height: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.25rem', transition: 'border-color 0.2s, transform 0.2s' }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={c.src} alt={c.alt} style={{ maxHeight: '80px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.9 }} />
-              </div>
+            {clientLogos.map(c => (
+              <ClientLogoCard key={c.alt} client={c} />
             ))}
           </div>
         </div>

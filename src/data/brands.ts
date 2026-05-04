@@ -57,7 +57,7 @@ export const brands: Brand[] = [
       'LVT (Luxury Vinyl Tile) pour hôtellerie',
       'Revêtements de sol pour collectivités',
       'Solutions acoustiques',
-      'Systèmes de douche intégrale',
+      'Coins lecture et salles de cinéma',
     ],
     topCollections: [
       { name: 'Creation 55 Clic', desc: 'LVT haute résistance à clipser : aspect bois ou béton ultra-réaliste, 5,5mm d\'épaisseur', useCases: 'Hôtels, boutiques, bureaux' },
@@ -66,7 +66,7 @@ export const brands: Brand[] = [
     ],
     certifications: ['ISO 14001', 'Cradle to Cradle', 'FloorScore', 'NF Environnement', 'R10/R11 antidérapant'],
     why: 'Gerflor est le premier choix de CB Sols pour les projets cuisines professionnelles et zones humides. La gamme homogène offre la meilleure résistance chimique du marché, et le réseau technico-commercial Gerflor facilite les dossiers techniques pour les appels d\'offres.',
-    services: ['sol-pvc-les', 'sol-pvc-lames-dalles', 'douche-integrale-pvc'],
+    services: ['sol-pvc-les', 'sol-pvc-lames-dalles'],
   },
   {
     slug: 'tarkett',

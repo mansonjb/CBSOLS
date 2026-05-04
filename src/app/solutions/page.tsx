@@ -7,7 +7,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Solutions Revêtement de Sol | CB Sols, Hôtels, Restaurants, Bureaux',
   description:
-    "Solutions revêtement de sol par usage : moquette hôtel, sol PVC restaurant, moquette bureau, douches PVC. Choisissez par votre type d'établissement.",
+    "Solutions revêtement de sol par usage : moquette hôtel, sol PVC restaurant, moquette bureau, salle de cinéma, coin lecture. Choisissez par votre type d'établissement.",
   alternates: { canonical: 'https://cbsols.fr/solutions' },
 }
 

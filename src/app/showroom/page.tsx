@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Showroom Revêtement Sol La Rochelle | CB Sols, Sur Rendez-vous',
   description:
-    'Visitez le showroom CB Sols à Villedoux (10 min de La Rochelle). Plus de 500 échantillons de moquettes, sols PVC et tapis sur mesure. Sur rendez-vous.',
+    'Visitez le showroom CB Sols à Villedoux (10 min de La Rochelle). Catalogues complets EGE, Balsan, Gerflor, Tarkett, Forbo. Échantillons physiques disponibles sur commande. Sur rendez-vous.',
 }
 
 export default function ShowroomPage() {
@@ -34,9 +34,9 @@ export default function ShowroomPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem' }}>
             {[
               { num: '01', title: 'Échange initial', desc: 'Nous discutons de votre espace, de son usage, du trafic, de la lumière. Chaque contrainte oriente le choix du matériau.' },
-              { num: '02', title: 'Sélection des échantillons', desc: 'Nous sortons 5 à 10 références adaptées dans la matière, la couleur, la finition. Vous les touchez, les comparez à côté.' },
-              { num: '03', title: 'Échantillons à emporter', desc: 'Vous repartez avec vos 2 ou 3 préférés pour valider chez vous, à la lumière naturelle de la pièce.' },
-              { num: '04', title: 'Devis sous 48 à 72h', desc: 'Après visite technique si nécessaire, vous recevez un devis détaillé : fourniture, pose, préparation du sol, délais.' },
+              { num: '02', title: 'Sélection des échantillons', desc: 'Nous identifions 5 à 10 références adaptées dans la matière, la couleur, la finition. Les échantillons physiques sont disponibles sur commande auprès des fabricants.' },
+              { num: '03', title: 'Échantillons sur commande', desc: 'Nous commandons les échantillons sélectionnés directement chez les fabricants partenaires. Réception sous 5 à 10 jours selon les marques, à emporter pour valider chez vous.' },
+              { num: '04', title: 'Visite technique &amp; devis sous 48 à 72 h', desc: 'La visite technique sur site est obligatoire avant tout chiffrage : nous vérifions la planéité, l\'humidité résiduelle et l\'état du support. Vous recevez ensuite un devis détaillé : fourniture, pose, préparation, délais.' },
             ].map((step) => (
               <div key={step.num} style={{ borderTop: '2px solid var(--terra)', paddingTop: '1.5rem' }}>
                 <div style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: 'var(--terra)', fontWeight: 600, marginBottom: '0.75rem' }}>{step.num}</div>
@@ -55,11 +55,12 @@ export default function ShowroomPage() {
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Ce que vous trouverez</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 {[
-                  { label: '500+ échantillons', desc: 'Moquettes, lames PVC, dalles, vinyles en rouleaux, tapis : toute la gamme CB Sols' },
+                  { label: 'Catalogues complets en showroom', desc: 'Toutes les gammes EGE, Balsan, Gerflor, Tarkett, Forbo et Interface consultables sur place' },
                   { label: 'Conseil personnalisé', desc: 'Valentin Prévoteau ou un membre de son équipe vous accompagne dans votre choix' },
-                  { label: 'Échantillons à emporter', desc: 'Repartez avec vos coups de cœur pour les comparer chez vous à la lumière naturelle' },
+                  { label: 'Échantillons sur commande', desc: 'Les échantillons physiques de vos références sélectionnées sont commandés chez les fabricants — réception sous 5 à 10 jours, à emporter ou expédiés' },
                   { label: 'Visualisation in situ', desc: 'Nous vous aidons à projeter le rendu final dans votre espace avec des outils de visualisation' },
-                  { label: 'Devis immédiat', desc: 'Sur place ou dans les 48h suivant votre visite' },
+                  { label: 'Visite technique obligatoire', desc: 'Nous nous déplaçons systématiquement sur le site avant chiffrage pour évaluer le support et garantir un devis sans surprise' },
+                  { label: 'Devis sous 48 à 72 h', desc: 'Après la visite technique, devis détaillé envoyé par mail : fourniture, pose, préparation du support, délais' },
                 ].map((item) => (
                   <div key={item.label} style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start' }}>
                     <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: 'var(--terra)', marginTop: '0.5rem', flexShrink: 0 }} />

@@ -2,6 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { company } from '@/data/company'
 import { Button } from '@/components/Button'
+import { ClientLogoCard } from '@/components/ClientLogoCard'
+import { architectePartners } from '@/data/clients'
 
 export const metadata: Metadata = {
   title: 'Architectes & Prescripteurs | CB Sols, Partenaire Revêtement de Sol',
@@ -150,6 +152,115 @@ export default function ArchitectesPage() {
         </div>
       </section>
 
+      {/* Conseil adapté au projet */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ marginBottom: '3rem', maxWidth: '760px' }}>
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Conseil adapté au projet</div>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
+              Aider à <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>faire les bons choix.</em>
+            </h2>
+            <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', lineHeight: 1.75 }}>
+              Spécifier un revêtement, c&apos;est arbitrer entre acoustique, durabilité, esthétique, normes, budget et délais. Notre rôle de partenaire technique : décrypter ces arbitrages avec vous et proposer la solution qui tient sur tous les axes — y compris ceux que le maître d&apos;ouvrage ne voit pas encore.
+            </p>
+          </div>
+
+          {/* Grille des axes de conseil */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem', marginBottom: '3rem' }}>
+            {[
+              {
+                num: '01',
+                title: 'Lecture du programme',
+                desc: "Hôtel 4★, restaurant gastronomique, cabinet médical, bureau open-space : chaque typologie a ses exigences réglementaires (Bfl-s1, R10/R11, acoustique). Nous lisons votre programme et flaguons d'emblée les obligations qui orientent les choix.",
+              },
+              {
+                num: '02',
+                title: 'Sélection matières',
+                desc: "Trois propositions classées par usage, esthétique et budget — avec leurs limites assumées. Nous ne poussons jamais une seule référence : votre client doit pouvoir trancher en connaissance de cause.",
+              },
+              {
+                num: '03',
+                title: 'Acoustique &amp; confort',
+                desc: "Nous chiffrons l'impact acoustique attendu (réduction sonore en dB selon la moquette) et le confort thermique. Utile pour défendre une moquette face à un sol dur dans les arbitrages MOA.",
+              },
+              {
+                num: '04',
+                title: 'Pérennité &amp; entretien',
+                desc: "Coût total de possession sur 10 ans (pose + entretien périodique + remplacement), pas seulement le prix d'achat. Nous présentons les arbitrages durabilité vs budget initial.",
+              },
+              {
+                num: '05',
+                title: 'Compatibilité support',
+                desc: "Visite technique en amont du DCE pour vérifier la planéité, l'humidité résiduelle, le type de support. Nous identifions les travaux préparatoires nécessaires (ragréage, primaire, sous-couche).",
+              },
+              {
+                num: '06',
+                title: 'Phasage chantier',
+                desc: "Pose en milieu occupé, intervention week-end, étapes par zones : nous proposons un phasage compatible avec votre planning d'opération et celui de votre maître d'ouvrage.",
+              },
+            ].map((c) => (
+              <div key={c.num} style={{ padding: '1.75rem', border: '1px solid var(--border)', backgroundColor: 'var(--bg-card)', borderRadius: '10px', borderLeft: '3px solid var(--terra)' }}>
+                <div style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontSize: '1.25rem', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
+                <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.6rem', lineHeight: 1.3, letterSpacing: '-0.01em' }} dangerouslySetInnerHTML={{ __html: c.title }} />
+                <p style={{ fontSize: '0.85rem', color: 'var(--cream-muted)', lineHeight: 1.7, margin: 0 }}>{c.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Livrables conseil */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem', alignItems: 'start', padding: '2.5rem 0 0', borderTop: '1px solid var(--border)' }}>
+            <div>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Livrables type</div>
+              <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.15rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.01em' }}>
+                Ce que vous recevez en phase conseil
+              </h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                {[
+                  'Note de positionnement : 2 à 3 références argumentées par espace',
+                  'Fiches techniques fabricant (FDS, classements feu, certifications)',
+                  'Échantillons physiques expédiés à l\'agence ou au showroom',
+                  'Estimation budgétaire indicative au m² posé',
+                  'Avis sur la compatibilité avec le support existant',
+                  'Recommandations de phasage et délais réalistes',
+                ].map((it) => (
+                  <li key={it} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', fontSize: '0.85rem', color: 'var(--dark-2)', lineHeight: 1.6 }}>
+                    <span style={{ color: 'var(--terra)', fontWeight: 700, flexShrink: 0 }}>✓</span>
+                    {it}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div style={{ padding: '2rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', borderLeft: '3px solid var(--terra)' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Comment ça démarre</div>
+              <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1.1rem', counterReset: 'step' }}>
+                {[
+                  { t: 'Brief par mail ou téléphone', d: 'Programme, plans (DXF, PDF), exigences MOA, budget cible.' },
+                  { t: 'Analyse sous 4 h ouvrées', d: 'Vous recevez nos premières questions techniques et la confirmation que le projet est dans nos cordes.' },
+                  { t: 'Note de conseil sous 5 j', d: 'Sélection argumentée + alternatives. Vous restez maître de la prescription finale.' },
+                  { t: 'Devis chiffré sur demande', d: 'Quand le client a tranché, nous chiffrons en détail (CCTP-compatible).' },
+                ].map((s, i) => (
+                  <li key={s.t} style={{ display: 'flex', gap: '0.875rem', alignItems: 'flex-start' }}>
+                    <span style={{ width: 26, height: 26, borderRadius: '50%', backgroundColor: 'var(--terra)', color: '#fff', fontSize: '0.7rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 1 }}>
+                      {i + 1}
+                    </span>
+                    <div>
+                      <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.2rem' }}>{s.t}</div>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{s.d}</div>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              <div style={{ marginTop: '1.5rem', paddingTop: '1.25rem', borderTop: '1px solid var(--border)' }}>
+                <Button href="/contact?from=architectes-conseil" variant="primary" size="md">
+                  Démarrer un brief
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Architectes partenaires */}
       <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-inv)', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -163,17 +274,8 @@ export default function ArchitectesPage() {
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
-            {[
-              { src: '/images/clients/ABP_Architectes.webp', alt: 'ABP Architectes' },
-              { src: '/images/clients/AnneBoulletStudio.webp', alt: 'Anne Boullet Studio' },
-              { src: '/images/clients/Atelier715.webp', alt: 'Atelier 715' },
-              { src: '/images/clients/ZestArchitecture.webp', alt: 'Zest Architecture' },
-              { src: '/images/clients/AgnesMagord.webp', alt: 'Agnès Magord' },
-            ].map(p => (
-              <div key={p.alt} className="client-card-dark" style={{ border: '1px solid var(--border-on-dark)', borderRadius: '8px', height: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.25rem', transition: 'border-color 0.2s, transform 0.2s' }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.src} alt={p.alt} style={{ maxHeight: '80px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.9 }} />
-              </div>
+            {architectePartners.map((p) => (
+              <ClientLogoCard key={p.alt} client={p} />
             ))}
           </div>
         </div>

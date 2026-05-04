@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
+import { ClientLogoCard } from '@/components/ClientLogoCard'
+import { clientLogos, architectePartners } from '@/data/clients'
 
 export const metadata: Metadata = {
   title: 'Réalisations | Projets Moquette, Sol PVC & Tapis CB Sols',
@@ -98,28 +100,8 @@ export default function RealisationsPage() {
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem', marginBottom: '3rem' }}>
-            {[
-              { src: '/images/clients/Hotel_La_Baronnie.webp', alt: 'Hôtel La Baronnie' },
-              { src: '/images/clients/LaGrandeTerrasse.webp', alt: 'La Grande Terrasse' },
-              { src: '/images/clients/Logo_GolfDeLaPree.webp', alt: 'Golf de la Prée' },
-              { src: '/images/clients/Logo_Gaya.webp', alt: 'Restaurant Gaya' },
-              { src: '/images/clients/Masqhotel.webp', alt: 'Masq Hôtel' },
-              { src: '/images/clients/LogoHotelGrandLarge.webp', alt: 'Hôtel Grand Large' },
-              { src: '/images/clients/HotelSaintNicolas.webp', alt: 'Hôtel Saint-Nicolas' },
-              { src: '/images/clients/CLR_Hotels.webp', alt: 'CLR Hotels' },
-              { src: '/images/clients/Ibis.webp', alt: 'Ibis' },
-              { src: '/images/clients/MammaMiaRestaurant.webp', alt: 'Mamma Mia Restaurant' },
-              { src: '/images/clients/HotelLaMarine.webp', alt: 'Hôtel La Marine' },
-              { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs' },
-              { src: '/images/clients/ABP_Architectes.webp', alt: 'ABP Architectes' },
-              { src: '/images/clients/AnneBoulletStudio.webp', alt: 'Anne Boullet Studio' },
-              { src: '/images/clients/Atelier715.webp', alt: 'Atelier 715' },
-              { src: '/images/clients/ZestArchitecture.webp', alt: 'Zest Architecture' },
-            ].map(c => (
-              <div key={c.alt} className="client-card-dark" style={{ border: '1px solid rgba(240,235,227,0.08)', borderRadius: '8px', height: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.25rem', transition: 'border-color 0.2s, transform 0.2s' }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={c.src} alt={c.alt} style={{ maxHeight: '80px', maxWidth: '100%', width: 'auto', objectFit: 'contain', opacity: 0.9 }} />
-              </div>
+            {[...clientLogos, ...architectePartners].map(c => (
+              <ClientLogoCard key={c.alt} client={c} />
             ))}
           </div>
 

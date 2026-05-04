@@ -28,8 +28,8 @@ export const sectors: Sector[] = [
     solutions: [
       'Moquettes haut de gamme certifiées Bfl-s1 pour les chambres',
       'Sol PVC résistant pour les espaces communs et couloirs',
-      'Douches intégrales PVC sans joints pour les salles de bain',
       'Tapis sur mesure avec logo pour les lobbys',
+      'Espaces lecture &amp; salons feutrés acoustiques',
       'Contrat d\'entretien annuel (nettoyage injection-extraction)',
     ],
     referencesExamples: [
@@ -37,7 +37,7 @@ export const sectors: Sector[] = [
       'Résidences de tourisme La Rochelle',
       'Gîtes premium Charente-Maritime',
     ],
-    recommendedServices: ['pose-moquette', 'douche-integrale-pvc', 'tapis-sur-mesure', 'nettoyage-moquette'],
+    recommendedServices: ['pose-moquette', 'tapis-sur-mesure', 'nettoyage-moquette'],
   },
   {
     slug: 'restauration',

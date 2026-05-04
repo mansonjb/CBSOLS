@@ -180,9 +180,10 @@ export function ContactForm() {
               <option>Pose de moquette</option>
               <option>Sol PVC (lames ou dalles)</option>
               <option>Sol PVC en lés</option>
-              <option>Douche intégrale PVC</option>
               <option>Tapis sur mesure</option>
               <option>Tapis de propreté</option>
+              <option>Salle de cinéma</option>
+              <option>Coin lecture</option>
               <option>Nettoyage de moquette</option>
               <option>Autre / Conseil</option>
             </select>

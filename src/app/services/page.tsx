@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Nos Services | Moquette, Sol PVC, Tapis Sur Mesure',
   description:
-    'Découvrez tous les services CB Sols : pose de moquette, sol PVC lames/dalles/lés, douches PVC, tapis sur mesure, tapis de propreté, nettoyage de moquette. Artisan certifié en Charente-Maritime.',
+    'Découvrez tous les services CB Sols : pose de moquette, sol PVC lames/dalles/lés, tapis sur mesure, tapis de propreté, salle de cinéma, coin lecture, nettoyage de moquette. Artisan spécialiste en Charente-Maritime.',
 }
 
 export default function ServicesPage() {
