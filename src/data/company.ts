@@ -26,7 +26,7 @@ export const company = {
     appointment: true,
   },
   zones: ['La Rochelle', "L'Île de Ré", "L'Île d'Oléron", 'Rochefort', 'Saintes', 'Royan', 'Charente-Maritime'],
-  brands: ['EGE', 'Gerflor', 'Forbo', 'Tarkett', 'Balsan', 'ObjectFlor', 'Bostik', 'Romus'],
+  brands: ['EGE', 'Gerflor', 'objectflor', 'Bostik', 'Romus'],
   social: {
     instagram: 'https://www.instagram.com/cb.sols/',
     facebook: 'https://www.facebook.com/people/SAS-CB-SOLS/100063907664837/',

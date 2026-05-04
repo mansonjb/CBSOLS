@@ -22,7 +22,7 @@ export const services: Service[] = [
     icon: '▦',
     description: 'Moquettes haut de gamme sur mesure, pose professionnelle pour particuliers et professionnels.',
     longDescription:
-      "La moquette reste le revêtement de sol qui offre le meilleur confort acoustique et thermique. Seul revêtement capable d'empêcher la dispersion de particules fines, elle est idéale pour les espaces de vie, les hôtels et les bureaux. CB Sols sélectionne pour vous les meilleures collections des marques EGE et Balsan.",
+      "La moquette reste le revêtement de sol qui offre le meilleur confort acoustique et thermique. Seul revêtement capable d'empêcher la dispersion de particules fines, elle est idéale pour les espaces de vie, les hôtels et les bureaux. CB Sols sélectionne avec soin les meilleures collections des marques partenaires : EGE en tête de gamme, complétée par d'autres références choisies pour la spécificité de chaque projet.",
     benefits: [
       'Confort acoustique exceptionnel',
       'Isolation thermique naturelle',
@@ -31,7 +31,7 @@ export const services: Service[] = [
       'Durabilité professionnelle certifiée',
     ],
     useCases: ['Chambres d\'hôtel', 'Salles de réunion', 'Bureaux', 'Escaliers', 'Couloirs'],
-    brands: ['EGE', 'Balsan', 'Forbo', 'Balta'],
+    brands: ['EGE', 'objectflor'],
     geoVerb: 'Pose de moquette à',
     metaTitle: (city) => `Pose de Moquette ${city} | CB Sols, Artisan Certifié`,
     metaDescription: (city) =>
@@ -54,11 +54,11 @@ export const services: Service[] = [
       'Adapté aux passages intensifs',
     ],
     useCases: ['Commerces', 'Cuisines professionnelles', 'Couloirs', 'Open spaces', 'Rénovation rapide'],
-    brands: ['Gerflor', 'Tarkett', 'Forbo', 'Armstrong'],
+    brands: ['Gerflor', 'objectflor'],
     geoVerb: 'Sol PVC à',
     metaTitle: (city) => `Sol PVC Lames & Dalles ${city} | CB Sols`,
     metaDescription: (city) =>
-      `Pose de sol PVC lames et dalles à ${city}. CB Sols installe les meilleures marques (Gerflor, Tarkett) pour professionnels et particuliers. Devis gratuit.`,
+      `Pose de sol PVC lames et dalles à ${city}. CB Sols installe des marques sélectionnées avec soin (Gerflor, objectflor) pour professionnels et particuliers. Devis gratuit.`,
     h1: (city) => `Sol PVC Lames & Dalles à ${city}`,
   },
   {
@@ -77,7 +77,7 @@ export const services: Service[] = [
       'Longévité en milieu professionnel',
     ],
     useCases: ['Cuisines professionnelles', 'Établissements de santé', 'Laboratoires', 'Couloirs collectifs', 'Amphithéâtres'],
-    brands: ['Gerflor', 'Tarkett', 'Forbo Flooring', 'Altro'],
+    brands: ['Gerflor', 'objectflor'],
     geoVerb: 'PVC en lés à',
     metaTitle: (city) => `Sol PVC en Lés ${city} | Pose Professionnelle CB Sols`,
     metaDescription: (city) =>
@@ -100,7 +100,7 @@ export const services: Service[] = [
       'Résistance adaptée à l\'usage',
     ],
     useCases: ['Lobbys d\'hôtels', 'Restaurants gastronomiques', 'Salles de réception', 'Résidences de luxe', 'Boutiques premium'],
-    brands: ['EGE', 'Brintons', 'Balsan', 'Lano'],
+    brands: ['EGE', 'Atelier sur mesure CB Sols'],
     geoVerb: 'Tapis sur mesure à',
     metaTitle: (city) => `Tapis Sur Mesure ${city} | CB Sols, Création Sur-Mesure`,
     metaDescription: (city) =>
@@ -123,7 +123,7 @@ export const services: Service[] = [
       'Entretien professionnel disponible',
     ],
     useCases: ['Entrées d\'hôtels', 'Commerces', 'Bureaux & entreprises', 'Collectivités', 'Résidences'],
-    brands: ['Coba', 'Forbo', 'Coral', 'Notrax'],
+    brands: ['Romus', 'Coba'],
     geoVerb: 'Tapis de propreté à',
     metaTitle: (city) => `Tapis de Propreté ${city} | CB Sols, Sur Mesure`,
     metaDescription: (city) =>
@@ -169,7 +169,7 @@ export const services: Service[] = [
       'Garantie décennale',
     ],
     useCases: ['Maisons et appartements', 'Bureaux et commerces', 'Hôtels et restaurants', 'Collectivités', 'Chantiers neufs et rénovation'],
-    brands: ['Gerflor', 'Forbo', 'EGE', 'Tarkett', 'Balsan'],
+    brands: ['EGE', 'Gerflor', 'objectflor'],
     geoVerb: 'Revêtement de sol à',
     metaTitle: (city) => `Revêtement de Sol ${city} | CB Sols, Artisan Spécialiste`,
     metaDescription: (city) =>
@@ -192,7 +192,7 @@ export const services: Service[] = [
       'Sous-couche renforcée pour le confort longue durée',
     ],
     useCases: ['Home-cinémas privés', 'Salles de projection résidences', 'Espaces multimédia hôteliers', 'Salles de spectacle', 'Auditoriums'],
-    brands: ['EGE', 'Balsan', 'Forbo'],
+    brands: ['EGE'],
     geoVerb: 'Salle de cinéma à',
     metaTitle: (city) => `Sol Salle de Cinéma ${city} | Moquette Acoustique CB Sols`,
     metaDescription: (city) =>
@@ -215,7 +215,7 @@ export const services: Service[] = [
       'Solutions adaptées aux espaces de standing',
     ],
     useCases: ['Salons de lecture hôteliers', 'Bibliothèques privées', 'Mezzanines en suites', 'Coins lecture résidentiels', 'Espaces étude haut de gamme'],
-    brands: ['EGE', 'Balsan', 'Atelier tapis sur mesure'],
+    brands: ['EGE', 'Atelier tapis sur mesure CB Sols'],
     geoVerb: 'Coin lecture à',
     metaTitle: (city) => `Sol Espace Lecture ${city} | Coin Lecture CB Sols`,
     metaDescription: (city) =>

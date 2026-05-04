@@ -22,7 +22,7 @@ export const solutions: Solution[] = [
     slug: 'moquette-hotel',
     title: 'Moquette Hôtel',
     metaTitle: 'Moquette Hôtel Charente-Maritime | Pose Professionnelle CB Sols',
-    metaDescription: 'Pose de moquette hôtelière en Charente-Maritime. CB Sols équipe hôtels 2 à 5 étoiles : chambres, couloirs, lobbys. Certifié EGE & Balsan. Devis gratuit.',
+    metaDescription: 'Pose de moquette hôtelière en Charente-Maritime. CB Sols équipe hôtels 2 à 5 étoiles : chambres, couloirs, lobbys. Certifié EGE & objectflor. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
     sectorSlug: 'hotellerie',
@@ -38,7 +38,7 @@ export const solutions: Solution[] = [
       'Résistance aux chariots de ménage et bagagerie',
     ],
     ourApproach: [
-      'Sélection de moquettes EGE et Balsan certifiées Bfl-s1',
+      'Sélection de moquettes EGE et objectflor certifiées Bfl-s1',
       'Consultation showroom pour choisir motifs et coloris en coordination avec votre décorateur',
       'Devis détaillé avec planning d\'intervention chambre par chambre',
       'Pose nocturne ou en rotation pour maintenir l\'activité',
@@ -46,7 +46,7 @@ export const solutions: Solution[] = [
     ],
     keyProducts: [
       { name: 'EGE Hospitality Collection', desc: 'Moquettes conçues spécifiquement pour l\'hôtellerie, certifiées Bfl-s1, résistance au trafic intense' },
-      { name: 'Balsan Contract', desc: 'Large gamme de motifs et textures, excellente résistance, idéal pour les chambres et parties communes' },
+      { name: 'EGE Reform', desc: 'Large gamme de motifs et textures, excellente résistance, idéal pour les chambres et parties communes' },
       { name: 'Tapis sur mesure', desc: 'Création de tapis d\'accueil et de salon avec logo ou motif exclusif pour les lobbys et salons' },
     ],
     references: [
@@ -55,7 +55,7 @@ export const solutions: Solution[] = [
       'Hôtels La Rochelle centre : rénovation partielle par rotation, sans interruption d\'activité',
     ],
     faq: [
-      { q: 'Quelle moquette choisir pour un hôtel 4 étoiles ?', a: 'Pour un hôtel 4 étoiles, nous recommandons une moquette tuftée ou tissée de la gamme EGE Hospitality ou Balsan Contract, en classement Bfl-s1. Le grammage minimal est 800g/m² en couloir, 600g/m² en chambre. CB Sols vous présente des échantillons en showroom et peut créer un motif exclusif pour votre établissement.' },
+      { q: 'Quelle moquette choisir pour un hôtel 4 étoiles ?', a: 'Pour un hôtel 4 étoiles, nous recommandons une moquette tuftée ou tissée de la gamme EGE Hospitality ou EGE Reform, en classement Bfl-s1. Le grammage minimal est 800g/m² en couloir, 600g/m² en chambre. CB Sols vous présente des échantillons en showroom et peut créer un motif exclusif pour votre établissement.' },
       { q: 'Peut-on poser la moquette sans fermer l\'hôtel ?', a: 'Oui. CB Sols travaille en rotation : nous posons dans les chambres vides pendant que les autres restent occupées. Pour les couloirs, nous intervenons la nuit ou en semaine creuse selon votre planning. Zéro fermeture nécessaire pour la majorité des chantiers hôteliers.' },
       { q: 'Combien coûte la moquette hôtelière ?', a: 'Une moquette hôtelière de qualité coûte entre 35 et 80€/m² posée, selon le produit choisi et la surface. CB Sols établit un devis gratuit et détaillé après visite. Pour un hôtel 20 chambres de 18m² (couloir compris), comptez un budget de 25 000 à 45 000€ fourni posé.' },
       { q: 'CB Sols intervient-il sur toute la Charente-Maritime ?', a: "Oui, nous équipons des hôtels de La Rochelle à l'Île de Ré, l'Île d'Oléron, Royan et tout le département 17." },
@@ -87,7 +87,7 @@ export const solutions: Solution[] = [
       'Pose précise autour du mobilier sans déménagement complet',
     ],
     keyProducts: [
-      { name: 'Balsan Acoustic', desc: 'Moquette acoustique haute performance, traitement taches, idéale pour les salles de restaurant' },
+      { name: 'objectflor Acoustic', desc: 'Moquette acoustique haute performance, traitement taches, idéale pour les salles de restaurant' },
       { name: 'EGE Restaurant Collection', desc: 'Motifs discrets et résistants, absorption phonique certifiée, entretien facilité' },
       { name: 'Tapis de délimitation sur mesure', desc: 'Tapis sur mesure pour créer des zones (bar, salle privée, terrasse couverte)' },
     ],
@@ -99,7 +99,7 @@ export const solutions: Solution[] = [
     faq: [
       { q: 'La moquette est-elle hygiénique dans un restaurant ?', a: "Oui, avec les bons produits. Les moquettes professionnelles sont traitées anti-taches et anti-bactéries. Un nettoyage hebdomadaire à l'injection-extraction suffit pour maintenir une hygiène irréprochable. CB Sols vous recommande les produits d'entretien adaptés lors de la livraison." },
       { q: 'Peut-on poser en 1 nuit pour ne pas fermer le restaurant ?', a: "Oui pour les surfaces jusqu'à 150 m². Au-delà, nous intervenons sur 2 nuits consécutives. L'équipe CB Sols commence après le dernier service et finit avant l'ouverture. Zéro perturbation pour votre clientèle." },
-      { q: 'Quelle moquette choisir pour un restaurant gastronomique ?', a: "Pour un établissement gastronomique, nous recommandons une moquette tissée ou tuftée niveau de gamme supérieur (EGE Prestige ou Balsan Contract Premium), dans des tons sobres qui valorisent la mise en scène de la salle. Le choix du motif se fait en showroom avec des échantillons en conditions réelles." },
+      { q: 'Quelle moquette choisir pour un restaurant gastronomique ?', a: "Pour un établissement gastronomique, nous recommandons une moquette tissée ou tuftée niveau de gamme supérieur (EGE Prestige ou EGE Reform Premium), dans des tons sobres qui valorisent la mise en scène de la salle. Le choix du motif se fait en showroom avec des échantillons en conditions réelles." },
     ],
   },
   {
@@ -128,12 +128,12 @@ export const solutions: Solution[] = [
       'Conseil couleur et texture pour un espace de travail inspirant',
     ],
     keyProducts: [
-      { name: 'Interface Modular Collection', desc: 'Dalles moquette premium, résistance roulettes classe 33, nombreux coloris et motifs géométriques' },
+      { name: 'EGE Modular Collection', desc: 'Dalles moquette premium, résistance roulettes classe 33, nombreux coloris et motifs géométriques' },
       { name: 'EGE Office', desc: 'Moquette bureau haute résistance, certification GUT (sans émission), idéale open space' },
-      { name: 'Balsan Loop', desc: 'Boucle velours résistant aux roulettes, facile d\'entretien, nombreux coloris sobres et professionnels' },
+      { name: 'objectflor Loop', desc: 'Boucle velours résistant aux roulettes, facile d\'entretien, nombreux coloris sobres et professionnels' },
     ],
     references: [
-      'Bureaux Charente-Maritime, 350 m² : dalles moquette Interface, pose le week-end',
+      'Bureaux Charente-Maritime, 350 m² : dalles moquette EGE, pose le week-end',
       'Cabinets comptables La Rochelle : moquette rouleau intégral, 180 m²',
       'Open space PME La Rochelle : rénovation par zones sans interruption, 220 m²',
     ],
@@ -169,7 +169,7 @@ export const solutions: Solution[] = [
     ],
     keyProducts: [
       { name: 'Gerflor Taralay Premium', desc: 'PVC lés professionnel, R10/R11, résistance totale aux graisses et désinfectants, normes cuisine pro' },
-      { name: 'Forbo Novilon', desc: 'Sol vinyle haute résistance pour cuisines professionnelles, nombreuses certifications hygiène' },
+      { name: 'Bostik Novilon', desc: 'Sol vinyle haute résistance pour cuisines professionnelles, nombreuses certifications hygiène' },
     ],
     references: [
       'Cuisine professionnelle La Rochelle : PVC soudé à chaud 80 m², remontées plinthes',
@@ -207,7 +207,7 @@ export const solutions: Solution[] = [
     ],
     keyProducts: [
       { name: 'Gerflor Texline', desc: 'PVC lés premium, esthétique bois ou pierre, parfait pour les couloirs et zones de service hôtelières' },
-      { name: 'Tarkett iD Inspiration', desc: 'Lames PVC haut de gamme, résistance à l\'eau totale, nombreux décors contemporains' },
+      { name: 'objectflor Expona Commercial', desc: 'Lames PVC haut de gamme, résistance à l\'eau totale, nombreux décors contemporains' },
     ],
     references: [
       'Hôtels Île de Ré : sols PVC espaces communs + moquette chambres',
@@ -238,19 +238,19 @@ export const solutions: Solution[] = [
     ourApproach: [
       'Conception en collaboration avec votre décorateur ou architecte d\'intérieur',
       'Présentation de prototypes coloris avant fabrication',
-      'Fabrication sur mesure avec partenaires EGE et Balsan',
+      'Fabrication sur mesure avec partenaires EGE et objectflor',
       'Pose précise avec finitions bordures soignées',
     ],
     keyProducts: [
       { name: 'EGE Custom Collection', desc: 'Tapis sur mesure avec motif exclusif créé par vos soins ou par le studio design EGE' },
-      { name: 'Balsan Axminster', desc: 'Tapis tissés Axminster, motifs complexes possibles, qualité hôtelière internationale' },
+      { name: 'objectflor Axminster', desc: 'Tapis tissés Axminster, motifs complexes possibles, qualité hôtelière internationale' },
     ],
     references: [
       'Hôtel La Baronnie, Île de Ré : tapis motif exclusif pour espaces communs et chambres, 600 m²',
       'Résidences de tourisme Charente-Maritime : tapis lobby sur mesure',
     ],
     faq: [
-      { q: 'Quel est le délai pour un tapis hôtelier sur mesure ?', a: "Comptez 6 à 10 semaines entre la validation du motif et la pose. CB Sols coordonne la fabrication avec nos partenaires (EGE, Balsan) et intègre la livraison dans votre planning de rénovation." },
+      { q: 'Quel est le délai pour un tapis hôtelier sur mesure ?', a: "Comptez 6 à 10 semaines entre la validation du motif et la pose. CB Sols coordonne la fabrication avec nos partenaires (EGE et objectflor) et intègre la livraison dans votre planning de rénovation." },
       { q: 'Peut-on intégrer le logo de l\'hôtel dans un tapis ?', a: "Oui. Le logo peut être intégré dans le motif du tapis (technique de tissage ou impression) ou servir de point de départ pour créer un motif dérivé. CB Sols vous accompagne dans la définition du brief créatif." },
     ],
   },
@@ -279,7 +279,7 @@ export const solutions: Solution[] = [
       'Conseil gamme selon l\'étoilage du camping',
     ],
     keyProducts: [
-      { name: 'Tarkett Starfloor Click', desc: 'Lames PVC 100% waterproof, pose flottante, résistance élevée, nombreux décors bois' },
+      { name: 'objectflor Starfloor Click', desc: 'Lames PVC 100% waterproof, pose flottante, résistance élevée, nombreux décors bois' },
       { name: 'Gerflor Virtuo Lock', desc: 'Sol PVC clipsé premium, dalle et lame, résistance totale à l\'eau et UV' },
     ],
     references: [
@@ -318,9 +318,9 @@ export const solutions: Solution[] = [
       "Conseil gamme selon l'étoilage : de la moquette économique aux gammes hôtelières",
     ],
     keyProducts: [
-      { name: 'Balsan Contract Résidences', desc: 'Moquette boucle résistante, dos traité anti-humidité, entretien facilité, large choix coloris neutres' },
+      { name: 'EGE Reform Résidences', desc: 'Moquette boucle résistante, dos traité anti-humidité, entretien facilité, large choix coloris neutres' },
       { name: 'EGE Rustica', desc: 'Moquette aiguilletée robuste, résistance élevée au trafic, adaptée aux usages collectifs saisonniers' },
-      { name: 'Forbo Tessera', desc: 'Dalles moquette, remplacement partiel facile, certifiée milieu humide, référence campings 4/5 étoiles' },
+      { name: 'Gerflor', desc: 'Dalles moquette, remplacement partiel facile, certifiée milieu humide, référence campings 4/5 étoiles' },
     ],
     references: [
       "Campings 4 et 5 étoiles Île de Ré : rénovation moquette chalets et salles d'animation, 800+ m²",
@@ -361,8 +361,8 @@ export const solutions: Solution[] = [
     ],
     keyProducts: [
       { name: 'EGE Cinema Collection', desc: 'Moquette spécifique salles obscures, Bfl-s1, haute absorption acoustique, résistance aux passages intensifs' },
-      { name: 'Balsan Acoustic Pro', desc: 'Moquette tuftée haute densité, Delta w certifié, normes ERP, nombreux coloris' },
-      { name: 'Interface Diffuse Light', desc: "Dalles moquette acoustiques pour les espaces d'accueil et foyers des salles culturelles" },
+      { name: 'objectflor Acoustic Pro', desc: 'Moquette tuftée haute densité, Delta w certifié, normes ERP, nombreux coloris' },
+      { name: 'EGE Diffuse Light', desc: "Dalles moquette acoustiques pour les espaces d'accueil et foyers des salles culturelles" },
     ],
     references: [
       "Cinémas Charente-Maritime : rénovation allées, gradins et foyer, pose nocturne",
@@ -402,9 +402,9 @@ export const solutions: Solution[] = [
       "Finitions soignées : plinthes, seuils, raccordements nets",
     ],
     keyProducts: [
-      { name: 'Tarkett iQ Surface', desc: 'PVC hétérogène, résistance désinfectants certifiée, anti-fatigue, nombreux coloris professionnels' },
+      { name: 'Gerflor Mipolam Surface', desc: 'PVC hétérogène, résistance désinfectants certifiée, anti-fatigue, nombreux coloris professionnels' },
       { name: 'Gerflor Taralay Impression', desc: 'Sol PVC à faibles émissions COV, certifié lieux de santé, aspect contemporain' },
-      { name: 'Forbo Surestep', desc: 'Sol vinyle antidérapant R10, spécialement conçu pour les espaces sanitaires et commerciaux' },
+      { name: 'Bostik Surestep', desc: 'Sol vinyle antidérapant R10, spécialement conçu pour les espaces sanitaires et commerciaux' },
     ],
     references: [
       "Pharmacies La Rochelle : remplacement sol PVC officine et réserve, intervention dominicale",
@@ -446,7 +446,7 @@ export const solutions: Solution[] = [
     keyProducts: [
       { name: 'Coral Classic (Milliken)', desc: "Tapis de propreté haute performance, retient jusqu'à 95% des salissures, nombreuses dimensions et coloris" },
       { name: 'EGE Entrance Collection', desc: "Tapis d'entrée haut de gamme, certifié Bfl-s1, pour les copropriétés et immeubles de standing" },
-      { name: 'Balsan Contract Couloir', desc: "Moquette de couloir spécialement conçue pour les parties communes, résistance aux chariots et roulettes" },
+      { name: 'EGE Reform Couloir', desc: "Moquette de couloir spécialement conçue pour les parties communes, résistance aux chariots et roulettes" },
     ],
     references: [
       "Copropriétés La Rochelle : tapis d'entrée sur mesure et moquette couloirs, 15 immeubles équipés",
@@ -485,7 +485,7 @@ export const solutions: Solution[] = [
     ],
     keyProducts: [
       { name: 'EGE Contract Series', desc: 'Moquette contract certifiée Bfl-s1, haute résistance, documentée pour marchés publics' },
-      { name: 'Balsan Signature Collection', desc: 'Gamme collectivités, nombreuses certifications, excellent rapport qualité-durabilité-prix' },
+      { name: 'objectflor Signature Collection', desc: 'Gamme collectivités, nombreuses certifications, excellent rapport qualité-durabilité-prix' },
     ],
     references: [
       'Médiathèques Charente-Maritime : moquette acoustique salles de lecture',

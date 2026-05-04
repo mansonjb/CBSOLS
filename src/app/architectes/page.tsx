@@ -20,7 +20,7 @@ const atouts = [
   {
     num: '02',
     title: 'Showroom sur rendez-vous prescripteur',
-    desc: 'Visite privée du showroom à Villedoux. 500+ échantillons EGE, Balsan, Gerflor, Tarkett à emporter. Conseil technique de Valentin Prévoteau directement.',
+    desc: 'Visite privée du showroom à Villedoux. 500+ échantillons EGE, Gerflor, objectflor à emporter. Conseil technique de Valentin Prévoteau directement.',
   },
   {
     num: '03',

@@ -33,7 +33,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Le prix : un écart qui se justifie',
-        body: "La moquette contrat coûte plus cher à l'achat. Une moquette résidentielle peut se trouver à 8-15 €/m² fournie. Une moquette contrat de bureau standard est à 15-30 €/m², et une moquette hôtelière haut de gamme (EGE, Balsan) à 25-80 €/m².\n\nMais rapportée à la durée de vie, la moquette contrat est souvent moins chère. Si une moquette résidentielle dure 3 ans dans un usage professionnel (puis doit être remplacée) contre 12 ans pour une moquette contrat, le coût annuel est radicalement différent.\n\nCB Sols ne vend que de la moquette contrat pour les professionnels, jamais de la moquette résidentielle sur un chantier commercial. C'est une question de responsabilité.",
+        body: "La moquette contrat coûte plus cher à l'achat. Une moquette résidentielle peut se trouver à 8-15 €/m² fournie. Une moquette contrat de bureau standard est à 15-30 €/m², et une moquette hôtelière haut de gamme (EGE et objectflor) à 25-80 €/m².\n\nMais rapportée à la durée de vie, la moquette contrat est souvent moins chère. Si une moquette résidentielle dure 3 ans dans un usage professionnel (puis doit être remplacée) contre 12 ans pour une moquette contrat, le coût annuel est radicalement différent.\n\nCB Sols ne vend que de la moquette contrat pour les professionnels, jamais de la moquette résidentielle sur un chantier commercial. C'est une question de responsabilité.",
       },
     ],
     relatedFaqs: ['duree-vie-moquette-professionnelle', 'pose-moquette-sur-carrelage'],
@@ -101,7 +101,7 @@ export const faqs: Faq[] = [
     metaTitle: 'Normes Sol PVC Cuisine Professionnelle | CB Sols',
     metaDescription: 'Quelles normes pour le sol PVC en cuisine professionnelle ? HACCP, antidérapance R11, classement incendie, soudure à chaud. CB Sols explique.',
     category: 'Sol PVC',
-    shortAnswer: "Un sol PVC de cuisine professionnelle doit être classé R10 ou R11 (antidérapance), résistant aux graisses et désinfectants, soudé à chaud (zéro joint) et conforme aux exigences HACCP. Tarkett iQ Granit et Forbo Eternal sont les références.",
+    shortAnswer: "Un sol PVC de cuisine professionnelle doit être classé R10 ou R11 (antidérapance), résistant aux graisses et désinfectants, soudé à chaud (zéro joint) et conforme aux exigences HACCP. Gerflor Mipolam Granit et Bostik Eternal sont les références.",
     sections: [
       {
         title: 'La norme HACCP et ses implications sur le sol',
@@ -117,7 +117,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les produits de référence et leurs certifications',
-        body: "Trois familles de produits sont adaptées aux cuisines professionnelles :\n\nTarkett iQ Granit : sol PVC homogène, classement R10 standard (R11 sur demande), résistance chimique P2, certification NSF pour les espaces alimentaires. Grande gamme de coloris. Durée de vie : 20-30 ans.\n\nForbo Eternal Natural/Classic : sol PVC homogène, classement R10/R11, certifié lieux de restauration, émissions VOC très faibles (certification Indoor Air). Durée de vie comparable.\n\nGerflor Taralay Premium Contract : sol PVC hétérogène, R10, résistance chimique élevée, nombreux décors. Bonne option pour les cuisines où l'esthétique prime avec une résistance suffisante.\n\nCB Sols distribue ces trois marques et peut vous présenter des échantillons en showroom ou en visite sur site lors du devis.",
+        body: "Trois familles de produits sont adaptées aux cuisines professionnelles :\n\nGerflor Mipolam Granit : sol PVC homogène, classement R10 standard (R11 sur demande), résistance chimique P2, certification NSF pour les espaces alimentaires. Grande gamme de coloris. Durée de vie : 20-30 ans.\n\nBostik Eternal Natural/Classic : sol PVC homogène, classement R10/R11, certifié lieux de restauration, émissions VOC très faibles (certification Indoor Air). Durée de vie comparable.\n\nGerflor Taralay Premium Contract : sol PVC hétérogène, R10, résistance chimique élevée, nombreux décors. Bonne option pour les cuisines où l'esthétique prime avec une résistance suffisante.\n\nCB Sols distribue ces trois marques et peut vous présenter des échantillons en showroom ou en visite sur site lors du devis.",
       },
     ],
     relatedFaqs: ['sol-pvc-cuisine-professionnelle-norme', 'pose-moquette-sur-carrelage'],

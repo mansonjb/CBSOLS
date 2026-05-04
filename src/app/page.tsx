@@ -36,9 +36,9 @@ const testimonials = [
 const brandPartners = [
   { name: 'EGE', src: '/images/brands/ege.webp', href: 'https://www.ege.dk/fr/' },
   { name: 'Gerflor', src: '/images/brands/gerflor.svg', href: 'https://www.gerflor.fr' },
-  { name: 'Tarkett', src: '/images/brands/tarkett.svg', href: 'https://www.tarkett.fr' },
-  { name: 'Balsan', src: '/images/brands/balsan.webp', href: 'https://www.balsan.com/fr/' },
-  { name: 'Interface', src: '/images/brands/interface.webp', href: 'https://www.interface.com/EU/fr-FR/' },
+  { name: 'objectflor', src: '/images/brands/objectflor.svg', href: 'https://www.objectflor.de/fr/' },
+  { name: 'Bostik', src: '/images/brands/bostik.svg', href: 'https://www.bostik.com/france/fr/' },
+  { name: 'Romus', src: '/images/brands/romus.svg', href: 'https://www.romus.fr/' },
 ]
 
 const garanties = [
@@ -51,7 +51,7 @@ const garanties = [
 const processSteps = [
   { num: '01', title: 'Contact & rendez-vous', desc: 'Appelez-nous ou remplissez le formulaire. Réponse sous 24h, RDV planifié.' },
   { num: '02', title: 'Visite & devis', desc: 'Déplacement gratuit partout en Charente-Maritime. Mesures précises et devis sous 48h.' },
-  { num: '03', title: 'Choix des matériaux', desc: '500+ échantillons en showroom : EGE, Gerflor, Tarkett. À emporter chez vous.' },
+  { num: '03', title: 'Choix des matériaux', desc: 'Catalogues complets en showroom : EGE, Gerflor, objectflor. Échantillons disponibles sur commande chez les fabricants.' },
   { num: '04', title: 'Pose & réception', desc: 'Artisans CB Sols uniquement, aucune sous-traitance. Garantie décennale.' },
 ]
 
@@ -171,16 +171,22 @@ export default function Home() {
       </section>
 
       {/* ─── MARQUES ─────────────────────────────────────────────── */}
-      <section style={{ padding: '2.5rem 2rem', backgroundColor: 'var(--bg-alt)', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ maxWidth: '1320px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '3rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <span style={{ fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--muted-light)', flexShrink: 0 }}>Fournitures agréées</span>
-          <div style={{ width: '1px', height: '20px', backgroundColor: 'var(--border-mid)' }} className="brand-divider" />
-          {brandPartners.map(b => (
-            <div key={b.name} className="brand-logo" aria-label={b.name}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={b.src} alt={b.name} style={{ height: '28px', width: 'auto', maxWidth: '110px', objectFit: 'contain' }} />
-            </div>
-          ))}
+      <section style={{ padding: '3rem 2rem', backgroundColor: 'var(--bg-alt)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
+            <div style={{ fontSize: '0.58rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.6rem', fontWeight: 700 }}>Marques sélectionnées avec soin</div>
+            <p style={{ fontSize: '0.85rem', color: 'var(--muted)', maxWidth: '560px', margin: '0 auto', lineHeight: 1.6 }}>
+              Cinq partenaires choisis pour leur expertise sur chaque type d&apos;usage.
+            </p>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '3rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            {brandPartners.map(b => (
+              <div key={b.name} className="brand-logo" aria-label={b.name}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={b.src} alt={b.name} style={{ height: '28px', width: 'auto', maxWidth: '110px', objectFit: 'contain' }} />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -276,9 +282,9 @@ export default function Home() {
       <section style={{ padding: '0', overflow: 'hidden' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px', backgroundColor: 'var(--bg-inv)' }} className="materials-grid">
           {[
-            { img: '/images/moquette-bureau.webp', label: 'Moquette', caption: 'Laine & synthétique : hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · Balsan · Interface' },
-            { img: '/images/cuisine-pro.webp', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés : zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · Tarkett · Forbo' },
-            { img: '/images/motif-tapis-hotel.webp', label: 'Tapis sur mesure', caption: 'Motif exclusif, forme libre, coloris personnalisés', href: '/services/tapis-sur-mesure', brand: 'EGE · Balsan · Balta' },
+            { img: '/images/moquette-bureau.webp', label: 'Moquette', caption: 'Laine & synthétique : hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · objectflor' },
+            { img: '/images/cuisine-pro.webp', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés : zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · objectflor' },
+            { img: '/images/motif-tapis-hotel.webp', label: 'Tapis sur mesure', caption: 'Motif exclusif, forme libre, coloris personnalisés', href: '/services/tapis-sur-mesure', brand: 'EGE · Atelier sur mesure' },
           ].map(mat => (
             <Link key={mat.label} href={mat.href} style={{ textDecoration: 'none', display: 'block', position: 'relative', overflow: 'hidden', aspectRatio: '4/5' }} className="material-tile">
               <Image src={mat.img} alt={mat.label} fill style={{ objectFit: 'cover', transition: 'transform 0.6s ease' }} sizes="33vw" className="project-img" />

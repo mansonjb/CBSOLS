@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import { brands } from '@/data/brands'
 
 export const metadata: Metadata = {
-  title: 'Marques Partenaires | EGE, Gerflor, Tarkett, Balsan | CB Sols',
-  description: 'CB Sols est revendeur agréé des meilleures marques de revêtements de sol : EGE, Gerflor, Tarkett, Balsan, Interface. Showroom Villedoux, Charente-Maritime.',
+  title: 'Marques Partenaires | EGE, Gerflor, objectflor, Bostik, Romus | CB Sols',
+  description: 'CB Sols travaille avec 5 marques sélectionnées avec soin : EGE et objectflor (revêtements), Gerflor (PVC), Bostik (colles & supports), Romus (profilés). Showroom Villedoux.',
   alternates: { canonical: 'https://cbsols.fr/marques' },
 }
 
@@ -19,13 +19,14 @@ export default function MarquesPage() {
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Marques</span>
           </div>
           <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-            Marques partenaires
+            Marques sélectionnées<br />
+            <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>avec soin.</em>
           </h1>
           <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, fontSize: '1.2rem', color: 'var(--terra)', margin: '0 0 1.5rem' }}>
             Revendeur agréé en Charente-Maritime
           </p>
-          <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '600px', lineHeight: 1.75 }}>
-            CB Sols sélectionne ses marques partenaires selon un critère simple : la qualité que nous poserions chez nous. Chaque marque est disponible en échantillon dans notre showroom de Villedoux.
+          <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '640px', lineHeight: 1.75 }}>
+            Cinq partenaires choisis selon un critère simple : la qualité que nous poserions chez nous. <strong style={{ color: 'var(--dark)' }}>EGE et objectflor</strong> pour la moquette et le vinyle haut de gamme, <strong style={{ color: 'var(--dark)' }}>Gerflor</strong> pour le PVC professionnel, <strong style={{ color: 'var(--dark)' }}>Bostik</strong> pour les colles et préparations de support, <strong style={{ color: 'var(--dark)' }}>Romus</strong> pour les profilés et finitions. Chaque marque est consultable dans notre showroom de Villedoux.
           </p>
         </div>
       </section>

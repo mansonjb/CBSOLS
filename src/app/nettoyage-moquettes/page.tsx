@@ -406,7 +406,7 @@ export default function NettoyageMoquettesPage() {
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
               {[
-                { href: '/services/pose-moquette', title: 'Pose de moquette neuve', desc: 'EGE, Balsan, Interface : sélection en showroom, pose par notre équipe.' },
+                { href: '/services/pose-moquette', title: 'Pose de moquette neuve', desc: 'EGE et objectflor, EGE : sélection en showroom, pose par notre équipe.' },
                 { href: '/solutions/moquette-hotel', title: 'Moquette hôtelière', desc: 'Solutions dédiées chambres, couloirs, espaces communs.' },
                 { href: '/guide/entretien-moquette-professionnelle', title: 'Guide entretien moquette', desc: 'Aspirateur, taches, fréquences, produits : le guide complet.' },
                 { href: '/realisations', title: 'Voir nos réalisations', desc: 'Hôtel La Baronnie, Restaurant 3★, Golf de la Prée…' },

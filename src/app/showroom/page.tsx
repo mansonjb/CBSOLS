@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Showroom Revêtement Sol La Rochelle | CB Sols, Sur Rendez-vous',
   description:
-    'Visitez le showroom CB Sols à Villedoux (10 min de La Rochelle). Catalogues complets EGE, Balsan, Gerflor, Tarkett, Forbo. Échantillons physiques disponibles sur commande. Sur rendez-vous.',
+    'Visitez le showroom CB Sols à Villedoux (10 min de La Rochelle). Catalogues complets EGE, Gerflor, objectflor. Échantillons physiques disponibles sur commande. Sur rendez-vous.',
 }
 
 export default function ShowroomPage() {
@@ -55,7 +55,7 @@ export default function ShowroomPage() {
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Ce que vous trouverez</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 {[
-                  { label: 'Catalogues complets en showroom', desc: 'Toutes les gammes EGE, Balsan, Gerflor, Tarkett, Forbo et Interface consultables sur place' },
+                  { label: 'Catalogues complets en showroom', desc: 'Toutes les gammes EGE, Gerflor, objectflor, Bostik et Romus consultables sur place' },
                   { label: 'Conseil personnalisé', desc: 'Valentin Prévoteau ou un membre de son équipe vous accompagne dans votre choix' },
                   { label: 'Échantillons sur commande', desc: 'Les échantillons physiques de vos références sélectionnées sont commandés chez les fabricants — réception sous 5 à 10 jours, à emporter ou expédiés' },
                   { label: 'Visualisation in situ', desc: 'Nous vous aidons à projeter le rendu final dans votre espace avec des outils de visualisation' },

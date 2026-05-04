@@ -53,8 +53,8 @@ export default function AProposPage() {
     { label: '25+ ans d\'expérience', desc: 'Fondé en 1999 — 500+ chantiers livrés en Charente-Maritime', icon: '✓' },
     { label: 'Partenaire EGE', desc: 'Poseur agréé EGE : moquette contract premium', icon: '✓' },
     { label: 'Partenaire Gerflor', desc: 'Distributeur agréé : gamme complète sol PVC & LVT', icon: '✓' },
-    { label: 'Partenaire Forbo', desc: 'Poseur Forbo certifié : Marmoleum et vinyle', icon: '✓' },
-    { label: 'Partenaire Tarkett', desc: 'Solutions sol PVC hétérogène et homogène', icon: '✓' },
+    { label: 'Partenaire Bostik', desc: 'Poseur Bostik certifié : Marmoleum et vinyle', icon: '✓' },
+    { label: 'Partenaire objectflor', desc: 'Solutions sol PVC hétérogène et homogène', icon: '✓' },
   ]
 
   const stats = [
@@ -127,10 +127,10 @@ export default function AProposPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
                   {[
                     { year: '1999', label: 'Création de CB Sols', desc: "Lancement de l'activité revêtement de sol à Villedoux, premier chantier hôtelier sur l'Île de Ré dès l'année suivante." },
-                    { year: '2005', label: 'Ouverture du showroom', desc: 'Un espace dédié sur rendez-vous avec plus de 500 échantillons EGE, Gerflor, Forbo et Tarkett.' },
+                    { year: '2005', label: 'Ouverture du showroom', desc: 'Un espace dédié sur rendez-vous avec plus de 500 échantillons EGE, Gerflor, Bostik et objectflor.' },
                     { year: '2010', label: 'Développement B2B', desc: "Premiers contrats cadres avec des groupes hôteliers et des collectivités sur l'Île de Ré et l'agglo rochelaise." },
                     { year: '2018', label: 'Reconnaissance professionnelle', desc: "Adhésion aux fédérations professionnelles, intégration des normes les plus exigeantes pour les marchés ERP et hôteliers." },
-                    { year: '2020', label: 'Partenariats officiels', desc: "Agréments officiels EGE, Gerflor, Forbo et Tarkett : accès aux gammes contract et aux SAV fabricants." },
+                    { year: '2020', label: 'Partenariats officiels', desc: "Agréments officiels EGE, Gerflor, Bostik et objectflor : accès aux gammes contract et aux SAV fabricants." },
                     { year: "Aujourd'hui", label: '500+ chantiers', desc: 'La Rochelle, Île de Ré, Île d\'Oléron, Rochefort, Saintes et toute la Charente-Maritime.' },
                   ].map((item, i, arr) => (
                     <div key={item.year} style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '1.25rem', padding: '1.5rem 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none' }}>

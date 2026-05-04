@@ -41,7 +41,7 @@ const sections = [
     lines: [
       "L'ensemble du contenu présent sur le site cbsols.fr (textes, graphismes, images, logos, photographies de chantiers, vidéos, structure) est la propriété exclusive de CB Sols Revêtements, sauf mention contraire.",
       "Toute reproduction, représentation, modification, publication, transmission, dénaturation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit, est interdite sans autorisation écrite préalable.",
-      "Les logos des marques partenaires (EGE, Gerflor, Tarkett, Balsan, Interface, Forbo) restent la propriété de leurs détenteurs respectifs et sont affichés à titre informatif dans le cadre de la relation commerciale avec CB Sols Revêtements.",
+      "Les logos des marques partenaires (EGE, Gerflor, objectflor, EGE, Bostik) restent la propriété de leurs détenteurs respectifs et sont affichés à titre informatif dans le cadre de la relation commerciale avec CB Sols Revêtements.",
       "Les logos des clients affichés dans la section « Ils nous ont fait confiance » sont utilisés avec leur accord, dans le cadre de références professionnelles.",
     ],
   },
