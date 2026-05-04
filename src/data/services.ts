@@ -206,7 +206,7 @@ export const services: Service[] = [
     icon: '❍',
     description: 'Création d\'espaces lecture cosy et acoustiquement maîtrisés en hôtellerie, résidences et bibliothèques privées.',
     longDescription:
-      "Un coin lecture réussi se sent autant qu'il se voit. Le sol doit absorber les pas et les bruits ambiants, offrir une chaleur tactile et visuelle, et durer dans le temps. CB Sols sélectionne des moquettes en laine ou velours bouclé pour les espaces lecture résidentiels et hôteliers — couloirs littéraires, salons de lecture, bibliothèques privées, mezzanines en hôtels boutique. Possibilité de combiner avec un tapis sur mesure pour ancrer la zone.",
+      "Un coin lecture réussi se sent autant qu'il se voit. Le sol doit absorber les pas et les bruits ambiants, offrir une chaleur tactile et visuelle, et durer dans le temps. CB Sols sélectionne des moquettes en laine ou velours bouclé pour les espaces lecture résidentiels et hôteliers, couloirs littéraires, salons de lecture, bibliothèques privées, mezzanines en hôtels boutique. Possibilité de combiner avec un tapis sur mesure pour ancrer la zone.",
     benefits: [
       'Confort acoustique propice à la concentration',
       'Chaleur tactile et visuelle',

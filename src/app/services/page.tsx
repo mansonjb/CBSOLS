@@ -71,7 +71,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* Service additionnel — Entretien */}
+        {/* Service additionnel, Entretien */}
         <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
           <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>

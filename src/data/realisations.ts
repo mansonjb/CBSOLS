@@ -1,12 +1,12 @@
 /**
- * Réalisations CB Sols — données réelles récupérées depuis l'ancien site WP.
+ * Réalisations CB Sols, données réelles récupérées depuis l'ancien site WP.
  * Chaque projet a sa propre page /realisations/[slug] générée statiquement.
  */
 
 export interface Realisation {
   slug: string
   title: string
-  /** Phrase courte affichée sur la grille — meta description */
+  /** Phrase courte affichée sur la grille, meta description */
   description: string
   /** Image principale (WebP local) */
   image: string
@@ -14,15 +14,15 @@ export interface Realisation {
   date: string
   /** Année affichée */
   year: string
-  /** Secteur d'activité — utilisé pour filtre / badge */
+  /** Secteur d'activité, utilisé pour filtre / badge */
   sector: string
   /** Ville d'intervention */
   location: string
   /** Nom du client / lieu (peut rester vide pour particulier) */
   client?: string
-  /** Type de prestation principale — affiché en sous-titre */
+  /** Type de prestation principale, affiché en sous-titre */
   type: string
-  /** Surface estimée — quand connue */
+  /** Surface estimée, quand connue */
   surface?: string
   /** Paragraphes du contenu détaillé */
   body: string[]
@@ -33,7 +33,7 @@ export interface Realisation {
 export const realisations: Realisation[] = [
   {
     slug: 'tapis-sur-mesure-hotel-la-baronnie',
-    title: 'Tapis sur mesure — Hôtel La Baronnie',
+    title: 'Tapis sur mesure, Hôtel La Baronnie',
     description: "Confection d'un tapis sur mesure pour l'hôtel La Baronnie, au cœur de Saint-Martin-de-Ré.",
     image: '/images/projects/tapis-sur-mesure-hotel.webp',
     date: '2025-11-20',
@@ -50,7 +50,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'moquettes-sols-golf-de-la-pree',
-    title: 'Moquettes et sols — Golf de la Prée',
+    title: 'Moquettes et sols, Golf de la Prée',
     description: "Pose des moquettes et sols au Golf de la Prée à Marsilly. Clous podotactiles, nez de marche antidérapants, conformité accessibilité.",
     image: '/images/projects/moquettes-et-sols-golf.webp',
     date: '2025-11-19',
@@ -67,7 +67,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'pose-moquette-bistro-grande-terrasse',
-    title: 'Pose moquette — Bistro de la Grande Terrasse',
+    title: 'Pose moquette, Bistro de la Grande Terrasse',
     description: "Rénovation de la moquette du Bistro de la Grande Terrasse à Châtelaillon-Plage. Confort visuel et acoustique renforcé.",
     image: '/images/projects/pose-moquette-bistro-de-la-grande-terrasse.webp',
     date: '2025-12-05',
@@ -84,14 +84,14 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'moquettes-restaurant-gaya-grande-terrasse',
-    title: 'Moquettes — Restaurant Gaya, La Grande Terrasse',
+    title: 'Moquettes, Restaurant Gaya, La Grande Terrasse',
     description: "Pose des moquettes du Gaya, gastronomie de La Grande Terrasse à Châtelaillon. Création signée ABP Architectes.",
     image: '/images/projects/pose-des-moquettes-salle-de-restaurant.webp',
     date: '2024-07-09',
     year: '2024',
     sector: 'Restauration gastronomique',
     location: 'Châtelaillon-Plage',
-    client: 'Restaurant Gaya — La Grande Terrasse',
+    client: 'Restaurant Gaya, La Grande Terrasse',
     type: 'Moquette sur mesure salle',
     body: [
       "Nous avons mené un projet d'exception de pose des moquettes de la salle du restaurant Gaya, lieu de gastronomie niché à La Grande Terrasse de Châtelaillon-Plage. Pose complète de moquettes spécialement fabriquées pour le projet, afin d'offrir un revêtement entièrement sur mesure.",
@@ -101,7 +101,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'moquettes-restaurant-etoile-la-rochelle',
-    title: "Moquettes — Restaurant 3★ face à l'océan",
+    title: "Moquettes, Restaurant 3★ face à l'océan",
     description: "Moquettes sur mesure pour un restaurant gastronomique étoilé situé face à l'océan à La Rochelle.",
     image: '/images/projects/pose-des-moquettes-dun-restaurant-etoile.webp',
     date: '2025-11-14',
@@ -122,7 +122,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'pose-moquettes-circulations-grande-terrasse',
-    title: "Moquettes circulations — Hôtel La Grande Terrasse 4★",
+    title: "Moquettes circulations, Hôtel La Grande Terrasse 4★",
     description: "Pose des moquettes des circulations de l'hôtel 4★ La Grande Terrasse Hôtel & Spa à Châtelaillon-Plage.",
     image: '/images/projects/pose-des-moquettes-des-circulations.webp',
     date: '2023-12-11',
@@ -139,7 +139,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'sols-bureau-cabinet-comptable-groupe-excel',
-    title: 'Sols de bureau — Cabinet comptable Groupe Excel',
+    title: 'Sols de bureau, Cabinet comptable Groupe Excel',
     description: "Pose de lames PVC pour le sol de bureau du Groupe Excel à La Rochelle. Dessin par la décoratrice Anne Boullet.",
     image: '/images/projects/sols-de-bureau-cabinet-comptable.webp',
     date: '2024-01-11',
@@ -156,7 +156,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'pose-sols-cabinet-axa-la-rochelle',
-    title: "Pose des sols — Cabinet d'assurances AXA, La Rochelle",
+    title: "Pose des sols, Cabinet d'assurances AXA, La Rochelle",
     description: "Rénovation complète des revêtements du cabinet AXA Moiroud Labarrère à La Rochelle, avec tapis logo personnalisé.",
     image: '/images/projects/pose-sols-cabinet-dassurances.webp',
     date: '2025-11-20',
@@ -168,12 +168,12 @@ export const realisations: Realisation[] = [
     body: [
       "Nous sommes récemment intervenus pour poser les sols du cabinet d'assurances AXA Moiroud Labarrère. Il s'agit d'un projet complet de rénovation des revêtements de sol. L'objectif était clair : offrir à ce lieu très fréquenté un environnement à la fois élégant, résistant et parfaitement adapté aux exigences d'un espace professionnel accueillant du public au quotidien.",
       "Dès l'entrée, nous avons installé un tapis de propreté personnalisé, intégré dans la zone de passage. Ce tapis, conçu sur mesure, reprend fidèlement le logo de l'assurance AXA. Il renforce ainsi l'identité visuelle de l'agence dès le seuil franchi.",
-      "Pour les autres espaces — bureaux, salles de réunion, circulations — nous avons sélectionné des revêtements adaptés à chaque usage : moquette pour le confort acoustique des bureaux, sol PVC pour la résistance des zones à fort trafic.",
+      "Pour les autres espaces, bureaux, salles de réunion, circulations, nous avons sélectionné des revêtements adaptés à chaque usage : moquette pour le confort acoustique des bureaux, sol PVC pour la résistance des zones à fort trafic.",
     ],
   },
   {
     slug: 'pose-moquettes-sols-maison-de-maitre',
-    title: "Moquettes et sols — Maison de maître",
+    title: "Moquettes et sols, Maison de maître",
     description: "Projet complet de pose des moquettes et sols pour une maison de maître particulière, plusieurs typologies de pièces.",
     image: '/images/projects/pose-moquettes-et-sols-maison.webp',
     date: '2025-11-20',
@@ -205,7 +205,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'amphitheatre-pvc-podotactiles',
-    title: 'Amphithéâtre — PVC en lés, clous podotactiles, nez de marche',
+    title: 'Amphithéâtre, PVC en lés, clous podotactiles, nez de marche',
     description: "Habillage des marches d'amphithéâtre en PVC en lés avec clous podotactiles acier zingué et nez de marche aluminium.",
     image: '/images/projects/amphitheatre-en-pvc.webp',
     date: '2023-12-04',
@@ -221,7 +221,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'lames-plombantes-bureaux-multicolore',
-    title: 'Lames plombantes multi-coloris — Bureaux',
+    title: 'Lames plombantes multi-coloris, Bureaux',
     description: "Bureaux uniques avec pose de lames plombantes mêmes dimensions mais différents coloris, espace modulable et structuré.",
     image: '/images/projects/pose-de-lames-plombantes.webp',
     date: '2023-12-04',
@@ -237,7 +237,7 @@ export const realisations: Realisation[] = [
   },
   {
     slug: 'lames-pvc-multicolore-salon-cuisine',
-    title: 'Lames PVC multi-coloris — Séparation salon, cuisine, salle de bain',
+    title: 'Lames PVC multi-coloris, Séparation salon, cuisine, salle de bain',
     description: "Séparation salon / cuisine d'un habitat avec lames PVC de différents coloris. Délimitation sans cloison.",
     image: '/images/projects/pose-pvc-de-differents-coloris.webp',
     date: '2023-12-04',

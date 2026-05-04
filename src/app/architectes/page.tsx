@@ -161,7 +161,7 @@ export default function ArchitectesPage() {
               Aider à <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>faire les bons choix.</em>
             </h2>
             <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', lineHeight: 1.75 }}>
-              Spécifier un revêtement, c&apos;est arbitrer entre acoustique, durabilité, esthétique, normes, budget et délais. Notre rôle de partenaire technique : décrypter ces arbitrages avec vous et proposer la solution qui tient sur tous les axes — y compris ceux que le maître d&apos;ouvrage ne voit pas encore.
+              Spécifier un revêtement, c&apos;est arbitrer entre acoustique, durabilité, esthétique, normes, budget et délais. Notre rôle de partenaire technique : décrypter ces arbitrages avec vous et proposer la solution qui tient sur tous les axes, y compris ceux que le maître d&apos;ouvrage ne voit pas encore.
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function ArchitectesPage() {
               {
                 num: '02',
                 title: 'Sélection matières',
-                desc: "Trois propositions classées par usage, esthétique et budget — avec leurs limites assumées. Nous ne poussons jamais une seule référence : votre client doit pouvoir trancher en connaissance de cause.",
+                desc: "Trois propositions classées par usage, esthétique et budget, avec leurs limites assumées. Nous ne poussons jamais une seule référence : votre client doit pouvoir trancher en connaissance de cause.",
               },
               {
                 num: '03',

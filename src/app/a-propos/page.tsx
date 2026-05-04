@@ -50,7 +50,7 @@ const personSchema = {
 export default function AProposPage() {
   const credentials = [
     { label: 'Décennale', desc: 'Assurance responsabilité décennale en cours de validité', icon: '✓' },
-    { label: '25+ ans d\'expérience', desc: 'Fondé en 1999 — 500+ chantiers livrés en Charente-Maritime', icon: '✓' },
+    { label: '25+ ans d\'expérience', desc: 'Fondé en 1999, 500+ chantiers livrés en Charente-Maritime', icon: '✓' },
   ]
 
   const stats = [
@@ -151,10 +151,10 @@ export default function AProposPage() {
               La confiance, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>ça se prouve.</em>
             </h2>
             <p style={{ fontSize: '1.05rem', color: 'var(--dark-2)', lineHeight: 1.85, maxWidth: '760px', margin: '0 0 2rem' }}>
-              L&apos;artisanat, c&apos;est un choix. Celui de prendre le temps de bien faire, de revenir sur un détail jusqu&apos;à ce qu&apos;il soit juste, de refuser le compromis quand il n&apos;est pas nécessaire. Chez CB Sols, l&apos;excellence n&apos;est pas un slogan : c&apos;est la posture quotidienne. Nous mesurons trois fois pour couper une fois, nous calepinons un motif au millimètre, nous reprenons une jonction qui n&apos;est pas parfaite — parce que c&apos;est ce que nous attendrions chez nous.
+              L&apos;artisanat, c&apos;est un choix. Celui de prendre le temps de bien faire, de revenir sur un détail jusqu&apos;à ce qu&apos;il soit juste, de refuser le compromis quand il n&apos;est pas nécessaire. Chez CB Sols, l&apos;excellence n&apos;est pas un slogan : c&apos;est la posture quotidienne. Nous mesurons trois fois pour couper une fois, nous calepinons un motif au millimètre, nous reprenons une jonction qui n&apos;est pas parfaite, parce que c&apos;est ce que nous attendrions chez nous.
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--dark-2)', lineHeight: 1.85, maxWidth: '760px', margin: '0 0 3rem' }}>
-              Cette minutie, on la doit aux clients qui nous font confiance — hôteliers, restaurateurs, architectes, particuliers — et on la doit aussi aux compagnons qui font ce métier depuis vingt-cinq ans avec nous. Un sol bien posé, c&apos;est invisible. C&apos;est exactement ça, le travail bien fait.
+              Cette minutie, on la doit aux clients qui nous font confiance, hôteliers, restaurateurs, architectes, particuliers, et on la doit aussi aux compagnons qui font ce métier depuis vingt-cinq ans avec nous. Un sol bien posé, c&apos;est invisible. C&apos;est exactement ça, le travail bien fait.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
               {credentials.map((c) => (

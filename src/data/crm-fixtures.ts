@@ -1,5 +1,5 @@
 /**
- * CRM fake data — used by /admin prototype views.
+ * CRM fake data, used by /admin prototype views.
  * In production this would come from a database (Supabase/Postgres).
  */
 
@@ -147,7 +147,7 @@ export const leads: Lead[] = [
     id: 'L-2026-039',
     date: '2026-04-24T11:20:00',
     source: 'architecte',
-    nom: 'Atelier 715 — projet villa Île de Ré',
+    nom: 'Atelier 715, projet villa Île de Ré',
     telephone: '05 46 41 78 20',
     email: 'contact@atelier715.fr',
     ville: 'Le Bois-Plage-en-Ré',
@@ -184,7 +184,7 @@ export const leads: Lead[] = [
     id: 'L-2026-037',
     date: '2026-04-19T17:50:00',
     source: 'recommandation',
-    nom: 'Mairie de Saintes — Salle des fêtes',
+    nom: 'Mairie de Saintes, Salle des fêtes',
     telephone: '05 46 27 14 88',
     email: 'services-techniques@ville-saintes.fr',
     ville: 'Saintes',
@@ -268,7 +268,7 @@ export const leads: Lead[] = [
     telephone: '06 14 25 36 47',
     email: 'ac.vidal@studio-vidal.fr',
     ville: 'La Rochelle',
-    type_projet: 'Architecte d\'intérieur — chantier en cascade hôtel La Maline',
+    type_projet: 'Architecte d\'intérieur, chantier en cascade hôtel La Maline',
     surface_estimee: 'Multi-zones, à définir',
     statut: 'contacte',
     derniere_interaction: '2026-04-26T17:00:00',
@@ -470,7 +470,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-018',
     client_id: 'C-004',
-    titre: 'Mairie de Saintes — Salle polyvalente',
+    titre: 'Mairie de Saintes, Salle polyvalente',
     ville: 'Saintes',
     type_prestation: 'Sol PVC compact ERP',
     surface_m2: 420,
@@ -487,7 +487,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-017',
     client_id: 'C-008',
-    titre: 'Cabinet Marchais — Bureaux + accueil',
+    titre: 'Cabinet Marchais, Bureaux + accueil',
     ville: 'La Rochelle',
     type_prestation: 'Moquette dalles haute résistance',
     surface_m2: 210,
@@ -504,7 +504,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-016',
     client_id: 'C-006',
-    titre: 'Brasserie La Rotonde — Salle',
+    titre: 'Brasserie La Rotonde, Salle',
     ville: 'La Rochelle',
     type_prestation: 'Moquette acoustique salle restaurant',
     surface_m2: 215,
@@ -521,7 +521,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-015',
     client_id: 'C-005',
-    titre: 'Tapis sur mesure salon — Mme Marchand',
+    titre: 'Tapis sur mesure salon, Mme Marchand',
     ville: 'Aytré',
     type_prestation: 'Tapis sur mesure motif graphique',
     surface_m2: 24,
@@ -536,7 +536,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-014',
     client_id: 'C-001',
-    titre: 'Hôtel La Baronnie — 14 chambres saison 2027',
+    titre: 'Hôtel La Baronnie, 14 chambres saison 2027',
     ville: 'Saint-Martin-de-Ré',
     type_prestation: 'Moquette hôtelière chambres',
     surface_m2: 320,
@@ -549,7 +549,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-013',
     client_id: 'C-003',
-    titre: 'Golf de la Prée — Vestiaires hommes',
+    titre: 'Golf de la Prée, Vestiaires hommes',
     ville: 'La Couarde-sur-Mer',
     type_prestation: 'Sol PVC vestiaires',
     surface_m2: 95,
@@ -566,7 +566,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-012',
     client_id: 'C-002',
-    titre: 'Restaurant 3★ — Salle gastronomique',
+    titre: 'Restaurant 3★, Salle gastronomique',
     ville: 'La Rochelle',
     type_prestation: 'Moquette gastronomique sur mesure',
     surface_m2: 220,
@@ -576,14 +576,14 @@ export const chantiers: Chantier[] = [
     date_debut: '2025-11-03',
     date_fin: '2025-11-08',
     equipe: ['Valentin', 'Mehdi', 'Sébastien'],
-    marque_principale: 'EGE Carpets — Highline 80/20',
+    marque_principale: 'EGE Carpets, Highline 80/20',
     notes: 'Chantier prestige. Très belle référence. Photos à jour.',
     marge_ht: 8200,
   },
   {
     id: 'CH-2025-031',
     client_id: 'C-001',
-    titre: 'Hôtel La Baronnie — Tapis sur mesure espaces communs',
+    titre: 'Hôtel La Baronnie, Tapis sur mesure espaces communs',
     ville: 'Saint-Martin-de-Ré',
     type_prestation: 'Tapis sur mesure motif exclusif + moquette EGE chambres',
     surface_m2: 600,
@@ -600,7 +600,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-019',
     client_id: 'C-001',
-    titre: 'Hôtel La Baronnie — SAV moquette couloir nord',
+    titre: 'Hôtel La Baronnie, SAV moquette couloir nord',
     ville: 'Saint-Martin-de-Ré',
     type_prestation: 'Reprise pose moquette + nettoyage',
     surface_m2: 18,
@@ -615,7 +615,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-011',
     client_id: 'C-007',
-    titre: 'Apivia Mutuelle — Open space étage 3',
+    titre: 'Apivia Mutuelle, Open space étage 3',
     ville: 'La Rochelle',
     type_prestation: 'Moquette dalles open space',
     surface_m2: 350,
@@ -632,7 +632,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2026-020',
     client_id: 'C-005',
-    titre: 'Camping Les Pertuis — 12 mobil-homes',
+    titre: 'Camping Les Pertuis, 12 mobil-homes',
     ville: 'Saint-Pierre-d\'Oléron',
     type_prestation: 'Sol PVC effet bois mobil-homes',
     surface_m2: 380,
@@ -645,7 +645,7 @@ export const chantiers: Chantier[] = [
   {
     id: 'CH-2025-024',
     client_id: 'C-006',
-    titre: 'Bistrot Grande Terrasse — Salle',
+    titre: 'Bistrot Grande Terrasse, Salle',
     ville: 'La Rochelle',
     type_prestation: 'Moquette acoustique salle',
     surface_m2: 280,

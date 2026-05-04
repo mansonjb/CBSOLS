@@ -305,7 +305,7 @@ export default async function GeoPage({ params }: Props) {
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>FAQ</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.4vw, 1.9rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.02em', lineHeight: 1.2 }}>
-              {service.shortName} à {city.name} — questions fréquentes
+              {service.shortName} à {city.name}, questions fréquentes
             </h2>
             {faqItems.map((item, i) => (
               <details key={i} style={{ padding: '1.5rem 0', borderBottom: '1px solid var(--border)' }}>
@@ -342,7 +342,7 @@ export default async function GeoPage({ params }: Props) {
               </div>
               <div>
                 <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.25rem', fontWeight: 600 }}>
-                  {service.geoVerb} — autres communes
+                  {service.geoVerb}, autres communes
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                   {nearbyCities.map((c) => (

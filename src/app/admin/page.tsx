@@ -40,7 +40,7 @@ export default function AdminDashboard() {
           Tableau de bord
         </div>
         <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: 0, letterSpacing: '-0.025em' }}>
-          Bonjour Valentin <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>—</em> voici votre activité.
+          Bonjour Valentin <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>,</em> voici votre activité.
         </h1>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
           Vendredi 2 mai 2026 · {kpis.leads_actifs} prospects actifs · {kpis.chantiers_actifs} chantiers en cours ou planifiés
@@ -139,7 +139,7 @@ export default function AdminDashboard() {
                         {c.titre}
                       </div>
                       <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-                        {client?.nom ?? '—'} · {c.surface_m2} m² · {eur(c.montant_ht)}
+                        {client?.nom ?? ','} · {c.surface_m2} m² · {eur(c.montant_ht)}
                       </div>
                     </div>
                     <span style={{ fontSize: '0.62rem', color: status.color, fontWeight: 700, padding: '0.25rem 0.6rem', border: `1px solid ${status.color}`, borderRadius: '999px', whiteSpace: 'nowrap', textTransform: 'uppercase', letterSpacing: '0.08em' }}>

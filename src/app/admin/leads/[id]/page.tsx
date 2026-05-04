@@ -72,7 +72,7 @@ export default async function LeadDetailPage({ params }: { params: Promise<{ id:
             </h2>
             <dl style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.25rem', margin: 0 }}>
               <Field label="Téléphone" value={lead.telephone} />
-              <Field label="Email" value={lead.email ?? '—'} />
+              <Field label="Email" value={lead.email ?? ','} />
               <Field label="Ville" value={lead.ville} />
               <Field label="Segment" value={lead.segment} />
             </dl>

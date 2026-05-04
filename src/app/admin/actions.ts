@@ -3,7 +3,7 @@
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-const ADMIN_PASSWORD = 'CBSOLSCRM' // proto only — en prod : env var hashée + bcrypt
+const ADMIN_PASSWORD = 'CBSOLSCRM' // proto only, en prod : env var hashée + bcrypt
 const ADMIN_COOKIE = 'cbsols-admin-session'
 const ADMIN_TOKEN = 'cbsols-admin-ok-v1'
 const COOKIE_MAX_AGE = 60 * 60 * 8 // 8h

@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Tarifs | Pourquoi Nous Ne Publions Pas de Grille de Prix — CB Sols',
+  title: 'Tarifs | Pourquoi Nous Ne Publions Pas de Grille de Prix | CB Sols',
   description:
     "Chez CB Sols chaque projet est sur mesure : surface, matériau, support, accessibilité, contraintes locales. Plutôt qu'une grille trompeuse, nous faisons un vrai devis gratuit sous 48 h.",
   alternates: { canonical: 'https://cbsols.fr/tarifs' },
@@ -150,7 +150,7 @@ export default function TarifsPage() {
         </div>
       </section>
 
-      {/* Décryptage devis — 6 postes */}
+      {/* Décryptage devis, 6 postes */}
       <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Les 6 postes d&apos;un devis sérieux</div>
@@ -171,7 +171,7 @@ export default function TarifsPage() {
               {
                 num: '02',
                 title: 'La barrière anti-humidité',
-                body: "Obligatoire sur les rez-de-chaussée sans polyane sous chape, vide sanitaire ou cave ventilée. Sa présence ou non doit être explicite — sans elle, garantie décennale compromise.",
+                body: "Obligatoire sur les rez-de-chaussée sans polyane sous chape, vide sanitaire ou cave ventilée. Sa présence ou non doit être explicite, sans elle, garantie décennale compromise.",
               },
               {
                 num: '03',
@@ -181,7 +181,7 @@ export default function TarifsPage() {
               {
                 num: '04',
                 title: 'La fourniture',
-                body: "Le prix varie avec le type (PVC lés/dalles/lames, moquette dalles ou en lès), la marque, et la quantité — plus c'est grand, moins c'est cher au m². Nous réceptionnons la matière, vérifions quantités et coloris (lots fabricant), débit en atelier.",
+                body: "Le prix varie avec le type (PVC lés/dalles/lames, moquette dalles ou en lès), la marque, et la quantité, plus c'est grand, moins c'est cher au m². Nous réceptionnons la matière, vérifions quantités et coloris (lots fabricant), débit en atelier.",
               },
               {
                 num: '05',
@@ -218,7 +218,7 @@ export default function TarifsPage() {
                 Une équipe de soliers-moquettistes qualifiés. Aucun sous-traitant.
               </h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--cream-muted)', lineHeight: 1.7, margin: 0, maxWidth: '640px' }}>
-                Chaque chantier CB Sols est posé par notre propre équipe, supervisé par Valentin Prévoteau. Cette continuité garantit le respect du cahier des charges initial, des plannings, et la levée rapide des réserves. Une entreprise qui sous-traite peut afficher un prix plus bas — l&apos;écart paie le sous-traitant et la marge intermédiaire.
+                Chaque chantier CB Sols est posé par notre propre équipe, supervisé par Valentin Prévoteau. Cette continuité garantit le respect du cahier des charges initial, des plannings, et la levée rapide des réserves. Une entreprise qui sous-traite peut afficher un prix plus bas, l&apos;écart paie le sous-traitant et la marge intermédiaire.
               </p>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function TarifsPage() {
                 textDecoration: 'none', fontWeight: 700, borderRadius: '999px',
               }}
             >
-              Lire le guide complet — comment décrypter un devis →
+              Lire le guide complet : comment décrypter un devis →
             </Link>
           </div>
         </div>

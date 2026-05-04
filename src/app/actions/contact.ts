@@ -24,7 +24,7 @@ function sanitizeHeader(str: string): string {
   return String(str).replace(/[\r\n]+/g, ' ').slice(0, 200)
 }
 
-// Rate limiting en mémoire par IP — simple mais efficace pour un petit trafic
+// Rate limiting en mémoire par IP, simple mais efficace pour un petit trafic
 // Reset automatique à chaque redéploiement, suffisant pour un site vitrine artisan
 const submissions = new Map<string, { count: number; firstAt: number }>()
 const RATE_WINDOW_MS = 60 * 60 * 1000 // 1h

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { chantiers, getChantierById, getClientById, CHANTIER_STATUS_LABEL } from '@/data/crm-fixtures'
 
 const eur = (n: number) => n.toLocaleString('fr-FR') + ' € HT'
-const dt = (iso?: string) => (iso ? new Date(iso).toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' }) : '—')
+const dt = (iso?: string) => (iso ? new Date(iso).toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' }) : ',')
 
 export function generateStaticParams() {
   return chantiers.map((c) => ({ id: c.id }))
@@ -32,7 +32,7 @@ export default async function ChantierDetailPage({ params }: { params: Promise<{
             {ch.titre}
           </h1>
           <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: 0 }}>
-            {client ? <Link href={`/admin/clients/${client.id}`} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>{client.nom}</Link> : '—'} · {ch.ville}
+            {client ? <Link href={`/admin/clients/${client.id}`} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>{client.nom}</Link> : ','} · {ch.ville}
           </p>
         </div>
         <span style={{ fontSize: '0.7rem', color: status.color, fontWeight: 700, padding: '0.5rem 1rem', border: `1.5px solid ${status.color}`, borderRadius: '999px', whiteSpace: 'nowrap', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
@@ -45,7 +45,7 @@ export default async function ChantierDetailPage({ params }: { params: Promise<{
         <KPI label="Surface" value={`${ch.surface_m2} m²`} />
         <KPI label="Montant HT" value={eur(ch.montant_ht)} accent />
         {ch.marge_ht !== undefined && <KPI label="Marge HT" value={`${eur(ch.marge_ht)}${margePct ? ` (${margePct}%)` : ''}`} />}
-        <KPI label="Prix au m²" value={ch.surface_m2 > 0 ? `${Math.round(ch.montant_ht / ch.surface_m2)} €/m²` : '—'} />
+        <KPI label="Prix au m²" value={ch.surface_m2 > 0 ? `${Math.round(ch.montant_ht / ch.surface_m2)} €/m²` : ','} />
       </div>
 
       {/* Detail card */}

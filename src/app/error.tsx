@@ -7,7 +7,7 @@ import { Button } from '@/components/Button'
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   useEffect(() => {
-    // Log en console — en prod, Sentry/Datadog prendrait le relais ici
+    // Log en console, en prod, Sentry/Datadog prendrait le relais ici
     console.error('App error:', error)
   }, [error])
 

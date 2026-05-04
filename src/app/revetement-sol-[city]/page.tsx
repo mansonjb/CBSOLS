@@ -336,7 +336,7 @@ export default async function CityHubPage({ params }: Props) {
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Questions fréquentes</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
-              FAQ — {cityData.name}
+              FAQ, {cityData.name}
             </h2>
             <div>
               {faqItems.map((item, i) => (

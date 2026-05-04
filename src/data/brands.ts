@@ -95,7 +95,7 @@ export const brands: Brand[] = [
       { name: 'Polyflor Bloc', desc: 'PVC homogène 2 mm pour usage intensif : résistance chimique, facilité d\'entretien', useCases: 'Cuisines pro, ateliers, vestiaires' },
     ],
     certifications: ['EN 14041', 'Bfl-s1', 'EN 14904 (sols sportifs)', 'A+ COV', 'EU Ecolabel'],
-    why: "objectflor est le choix CB Sols quand l'esthétique compte autant que la résistance. La couche d'usure 0,7 mm d'Expona Commercial est l'une des plus épaisses du marché — durée de vie effective 20+ ans en bureau. Pour les projets architecte exigeants, c'est souvent la marque qui fait basculer le choix.",
+    why: "objectflor est le choix CB Sols quand l'esthétique compte autant que la résistance. La couche d'usure 0,7 mm d'Expona Commercial est l'une des plus épaisses du marché, durée de vie effective 20+ ans en bureau. Pour les projets architecte exigeants, c'est souvent la marque qui fait basculer le choix.",
     services: ['sol-pvc-lames-dalles', 'sol-pvc-les'],
   },
   {
@@ -147,7 +147,7 @@ export const brands: Brand[] = [
       { name: 'Inox brossé', desc: 'Look industriel et hygiène maximale : recommandé en milieu humide ou alimentaire', useCases: 'Cuisines pro, vestiaires, sols industriels' },
     ],
     certifications: ['NF Environnement', 'EN 13501-1 (réaction au feu)', 'NF P 98-351 (accessibilité PMR)'],
-    why: "Romus est notre partenaire pour la finition de chaque chantier. Un beau revêtement avec un nez de marche bas de gamme, c'est l'élément qui dévalue tout le reste. La gamme Romus permet d'aligner la finition sur le niveau du projet — du standard ERP au laiton hôtellerie prestige.",
+    why: "Romus est notre partenaire pour la finition de chaque chantier. Un beau revêtement avec un nez de marche bas de gamme, c'est l'élément qui dévalue tout le reste. La gamme Romus permet d'aligner la finition sur le niveau du projet, du standard ERP au laiton hôtellerie prestige.",
     services: ['pose-moquette', 'sol-pvc-lames-dalles'],
   },
 ]

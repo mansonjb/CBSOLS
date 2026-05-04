@@ -43,7 +43,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
         <KPI label="CA cumulé" value={eur(client.ca_total_ht)} accent />
         <KPI label="Chantiers" value={client.nombre_chantiers.toString()} />
-        <KPI label="Premier contact" value={client.date_premier_contact ? new Date(client.date_premier_contact).toLocaleDateString('fr-FR') : '—'} />
+        <KPI label="Premier contact" value={client.date_premier_contact ? new Date(client.date_premier_contact).toLocaleDateString('fr-FR') : ','} />
         <KPI label="Dernière intervention" value={client.derniere_intervention ? new Date(client.derniere_intervention).toLocaleDateString('fr-FR') : 'En cours'} />
       </div>
 

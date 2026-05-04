@@ -62,7 +62,7 @@ export default function ChantiersBoardPage() {
                           {ch.titre}
                         </div>
                         <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginBottom: '0.6rem' }}>
-                          {client?.nom ?? '—'} · {ch.ville}
+                          {client?.nom ?? ','} · {ch.ville}
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: '0.5rem', paddingTop: '0.6rem', borderTop: '1px solid var(--border)' }}>
                           <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>{ch.surface_m2} m²</span>

@@ -76,12 +76,12 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     key: 'ile-de-re',
     label: 'Île de Ré',
     photo: '/images/tapis-hotel-baronnie.webp',
-    tagline: 'Artisan rétais — 20 min via le pont depuis Villedoux.',
+    tagline: 'Artisan rétais, 20 min via le pont depuis Villedoux.',
     specificsTitle: "Les particularités des chantiers rétais",
     specificsBody:
-      "L'Île de Ré impose une exigence haut de gamme presque partout : hôtels de charme, maisons secondaires de standing, résidences avec architectes d'intérieur. La saisonnalité est centrale — l'essentiel des rénovations se fait entre octobre et avril, avec des délais courts. L'hygrométrie insulaire élevée toute l'année et les embruns salins orientent les choix matière : moquettes en laine mélangée, sols PVC stables dimensionnellement, traitements anti-humidité. Nous connaissons les communes, les artisans complémentaires, les règles d'urbanisme propres à chaque village.",
+      "L'Île de Ré impose une exigence haut de gamme presque partout : hôtels de charme, maisons secondaires de standing, résidences avec architectes d'intérieur. La saisonnalité est centrale, l'essentiel des rénovations se fait entre octobre et avril, avec des délais courts. L'hygrométrie insulaire élevée toute l'année et les embruns salins orientent les choix matière : moquettes en laine mélangée, sols PVC stables dimensionnellement, traitements anti-humidité. Nous connaissons les communes, les artisans complémentaires, les règles d'urbanisme propres à chaque village.",
     challenges: [
-      { label: "Saisonnalité", desc: "Chantiers concentrés hors saison — planning réservé tôt." },
+      { label: "Saisonnalité", desc: "Chantiers concentrés hors saison, planning réservé tôt." },
       { label: "Hygrométrie élevée", desc: "Matériaux et colles sélectionnés pour milieux humides." },
       { label: "Logistique pont", desc: "Livraisons matériaux coordonnées avec le passage du pont." },
       { label: "Exigences hôtelières", desc: "Hôtels de charme, villas : finitions irréprochables." },
@@ -99,7 +99,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     zoneFaq: [
       {
         q: "Pouvez-vous intervenir en saison sur l'Île de Ré ?",
-        a: "Oui, mais nous privilégions fortement la période d'octobre à avril pour les rénovations importantes. En haute saison, nous gérons les petites interventions et les dépannages — le planning se réserve plusieurs mois à l'avance.",
+        a: "Oui, mais nous privilégions fortement la période d'octobre à avril pour les rénovations importantes. En haute saison, nous gérons les petites interventions et les dépannages, le planning se réserve plusieurs mois à l'avance.",
       },
       {
         q: "Travaillez-vous avec les architectes d'intérieur rétais ?",
@@ -120,10 +120,10 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     key: 'ile-doleron',
     label: "Île d'Oléron",
     photo: '/images/golf-real.webp',
-    tagline: "Artisan oléronnais — pont gratuit, accès direct depuis la Rochelle.",
+    tagline: "Artisan oléronnais, pont gratuit, accès direct depuis la Rochelle.",
     specificsTitle: "Les spécificités oléronnaises",
     specificsBody:
-      "L'Île d'Oléron est la plus grande île française après la Corse. Les typologies sont variées : hôtels saisonniers, campings haut de gamme, résidences secondaires, commerces de villages. Comme sur Ré, la saisonnalité guide les plannings. Le sol sableux et la proximité immédiate de l'océan imposent des sols techniques pour les établissements d'accueil. Les campings multi-étoilés investissent dans des revêtements durables pour leurs mobil-homes et espaces communs — un segment où nous intervenons régulièrement.",
+      "L'Île d'Oléron est la plus grande île française après la Corse. Les typologies sont variées : hôtels saisonniers, campings haut de gamme, résidences secondaires, commerces de villages. Comme sur Ré, la saisonnalité guide les plannings. Le sol sableux et la proximité immédiate de l'océan imposent des sols techniques pour les établissements d'accueil. Les campings multi-étoilés investissent dans des revêtements durables pour leurs mobil-homes et espaces communs, un segment où nous intervenons régulièrement.",
     challenges: [
       { label: 'Campings haut de gamme', desc: 'PVC technique pour mobil-homes, sols acoustiques restauration.' },
       { label: 'Saisonnalité forte', desc: 'Rénovations concentrées novembre à mars.' },

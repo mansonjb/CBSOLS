@@ -33,7 +33,7 @@ const reasons = [
   {
     title: 'Restauration sans remplacement',
     body:
-      "Avant de décider de remplacer un sol, faites-le nettoyer professionnellement. Sur un PVC ou un carrelage de plus de 5 ans, le brossage mécanique récupère 70 à 90 % de l'aspect d'origine — pour 5 à 10 fois moins cher qu'une dépose / repose.",
+      "Avant de décider de remplacer un sol, faites-le nettoyer professionnellement. Sur un PVC ou un carrelage de plus de 5 ans, le brossage mécanique récupère 70 à 90 % de l'aspect d'origine, pour 5 à 10 fois moins cher qu'une dépose / repose.",
   },
   {
     title: 'Hygiène professionnelle documentée',
@@ -75,7 +75,7 @@ const processSteps = [
     num: '04',
     title: "Rinçage à l'eau déminéralisée",
     body:
-      "Rinçage final à l'eau déminéralisée pour ne laisser aucun résidu de détergent ni dépôt calcaire. C'est ce rinçage qui garantit que votre sol ne se ressalit pas deux fois plus vite — c'est aussi ce qui distingue un travail professionnel d'une location DIY.",
+      "Rinçage final à l'eau déminéralisée pour ne laisser aucun résidu de détergent ni dépôt calcaire. C'est ce rinçage qui garantit que votre sol ne se ressalit pas deux fois plus vite, c'est aussi ce qui distingue un travail professionnel d'une location DIY.",
   },
   {
     num: '05',
@@ -94,7 +94,7 @@ const processSteps = [
 const cas = [
   { secteur: 'Cuisine professionnelle', freq: '1 à 2× / an', detail: 'Décrassage profond des sols soudés à chaud, joints de remontée, raccords siphons. Hygiène HACCP-compatible.' },
   { secteur: 'Salles de restauration', freq: '2× / an', detail: 'Sols PVC, carrelage, parquet vitrifié : restauration des couleurs et élimination des taches alimentaires anciennes.' },
-  { secteur: 'Hôtels — circulations', freq: '2 à 3× / an', detail: 'Sols PVC effet bois, carrelage marbré, marbre : restauration de la brillance et préparation au cirage de protection.' },
+  { secteur: 'Hôtels, circulations', freq: '2 à 3× / an', detail: 'Sols PVC effet bois, carrelage marbré, marbre : restauration de la brillance et préparation au cirage de protection.' },
   { secteur: 'Bureaux', freq: '1× / an', detail: 'Décrassage des sols PVC, idéal en juillet-août pour repartir sur un sol propre à la rentrée.' },
   { secteur: 'Commerces & boutiques', freq: '1 à 2× / an', detail: 'Carrelage, pierre, béton ciré : redonne l\'image neuve aux espaces de vente, indispensable avant événements ou ouvertures.' },
   { secteur: 'Collectivités & ERP', freq: '2 à 4× / an', detail: 'Halls, couloirs, vestiaires : nettoyage profond avec certificat d\'intervention pour contrôles internes.' },
@@ -282,7 +282,7 @@ export default function NettoyageSolsPage() {
               ))}
             </div>
             <p style={{ marginTop: '2.5rem', fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.7, maxWidth: '720px', fontStyle: 'italic' }}>
-              Pour les <strong style={{ color: 'var(--dark)', fontStyle: 'normal' }}>moquettes</strong>, voir notre service dédié de <Link href="/nettoyage-moquettes" style={{ color: 'var(--terra)', textDecoration: 'underline' }}>nettoyage par injection-extraction</Link> — la technique est différente (eau injectée puis aspirée vs brossage mécanique).
+              Pour les <strong style={{ color: 'var(--dark)', fontStyle: 'normal' }}>moquettes</strong>, voir notre service dédié de <Link href="/nettoyage-moquettes" style={{ color: 'var(--terra)', textDecoration: 'underline' }}>nettoyage par injection-extraction</Link>, la technique est différente (eau injectée puis aspirée vs brossage mécanique).
             </p>
           </div>
         </section>
@@ -344,7 +344,7 @@ export default function NettoyageSolsPage() {
           <div style={{ maxWidth: '880px', margin: '0 auto' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Questions fréquentes</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
-              FAQ — Nettoyage de sols
+              FAQ, Nettoyage de sols
             </h2>
             {faqItems.map((item, i) => (
               <details key={i} style={{ padding: '1.5rem 0', borderBottom: '1px solid var(--border)' }}>

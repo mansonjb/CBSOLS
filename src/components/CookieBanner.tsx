@@ -30,7 +30,7 @@ function saveConsent(value: 'accepted' | 'declined') {
  * Bannière cookies CNIL-compliant.
  * Le site n'utilise que des cookies fonctionnels (préférence thème) et
  * Vercel Speed Insights (mesure de perf anonymisée).
- * Pas de Google Analytics, pas de remarketing — la bannière est donc
+ * Pas de Google Analytics, pas de remarketing, la bannière est donc
  * purement informative. L'utilisateur peut quand même refuser.
  */
 export function CookieBanner() {
@@ -143,7 +143,7 @@ export function CookieBanner() {
       <style>{`
         @keyframes cookie-slide-up {
           from { opacity: 0; transform: translateY(20px); }
-          to   { opacity: 1; transform: translateY(0); }
+          to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
     </div>

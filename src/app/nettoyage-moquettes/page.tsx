@@ -34,7 +34,7 @@ const reasons = [
   {
     title: 'Améliorer la qualité de l\'air',
     body:
-      "Une moquette stocke 4 à 8 fois son poids en poussières, allergènes et squames. L'aspirateur n'extrait que la surface. L'injection-extraction sort les particules profondes — bénéfice direct pour les bureaux, hôtels.",
+      "Une moquette stocke 4 à 8 fois son poids en poussières, allergènes et squames. L'aspirateur n'extrait que la surface. L'injection-extraction sort les particules profondes, bénéfice direct pour les bureaux, hôtels.",
   },
   {
     title: 'Éliminer odeurs et taches',
@@ -44,7 +44,7 @@ const reasons = [
   {
     title: 'Conformité hygiène professionnelle',
     body:
-      "En hôtellerie, restauration, santé et collectivités, le nettoyage périodique est documentable (certificat de passage) — utile pour les contrôles d'hygiène, les normes ISO, les audits de chaîne.",
+      "En hôtellerie, restauration, santé et collectivités, le nettoyage périodique est documentable (certificat de passage), utile pour les contrôles d'hygiène, les normes ISO, les audits de chaîne.",
   },
   {
     title: 'Préparer à l\'usage intensif',
@@ -76,7 +76,7 @@ const processSteps = [
     num: '04',
     title: "Rinçage à l'eau déminéralisée",
     body:
-      "Deuxième passe à l'eau déminéralisée pour éliminer tous les résidus de produit. L'eau déminéralisée évite les dépôts calcaires et le ternissement post-nettoyage. Sans cette étape, la moquette se ressalit deux fois plus vite — c'est ce qui distingue un nettoyage pro d'un loueur de machine grand public.",
+      "Deuxième passe à l'eau déminéralisée pour éliminer tous les résidus de produit. L'eau déminéralisée évite les dépôts calcaires et le ternissement post-nettoyage. Sans cette étape, la moquette se ressalit deux fois plus vite, c'est ce qui distingue un nettoyage pro d'un loueur de machine grand public.",
   },
   {
     num: '05',
@@ -94,12 +94,12 @@ const processSteps = [
 
 const frequences = [
   {
-    secteur: 'Hôtellerie — chambres',
+    secteur: 'Hôtellerie, chambres',
     freq: '1 à 2 fois par an',
     detail: "Après chaque haute saison + nettoyage de printemps. Détachage ponctuel entre deux passages selon les retours femmes de chambre.",
   },
   {
-    secteur: 'Hôtellerie — couloirs et halls',
+    secteur: 'Hôtellerie, couloirs et halls',
     freq: '2 à 4 fois par an',
     detail: "Trafic intensif, taches alimentaires fréquentes. Un planning trimestriel sécurise la durée de vie de la moquette.",
   },
@@ -109,7 +109,7 @@ const frequences = [
     detail: "Idéalement en juillet-août sur jours fériés ou pendant les fermetures. Possible en intervention week-end.",
   },
   {
-    secteur: 'Restauration — moquettes salle',
+    secteur: 'Restauration, moquettes salle',
     freq: '2 à 3 fois par an',
     detail: "Vin, café, projections : la périodicité dépend du type de service. Détachage ponctuel inclus dans nos contrats annuels.",
   },
@@ -136,7 +136,7 @@ const faqItems = [
   },
   {
     q: "Quelle différence avec un loueur de machine grand public ?",
-    a: "Trois différences majeures : (1) la maîtrise des paramètres techniques — pression maximum 9 bars et température maximum 20 °C, là où les loueurs grand public chauffent l'eau et appliquent des pressions hasardeuses qui dégradent les fibres ; (2) le rinçage à l'eau déminéralisée systématique (oublié dans 90 % des locations DIY, et l'eau du robinet laisse des dépôts calcaires) ; (3) les produits adaptés au type de fibre (laine, polyamide, polypropylène réagissent différemment).",
+    a: "Trois différences majeures : (1) la maîtrise des paramètres techniques, pression maximum 9 bars et température maximum 20 °C, là où les loueurs grand public chauffent l'eau et appliquent des pressions hasardeuses qui dégradent les fibres ; (2) le rinçage à l'eau déminéralisée systématique (oublié dans 90 % des locations DIY, et l'eau du robinet laisse des dépôts calcaires) ; (3) les produits adaptés au type de fibre (laine, polyamide, polypropylène réagissent différemment).",
   },
   {
     q: "Pouvez-vous intervenir sans fermer mon hôtel ou mon bureau ?",
@@ -251,8 +251,8 @@ export default function NettoyageMoquettesPage() {
             {[
               { val: '×2', label: 'Durée de vie de la moquette' },
               { val: '95 %', label: "D'allergènes extraits" },
-              { val: '9 bars', label: "Pression max — préserve les fibres" },
-              { val: '20 °C', label: 'Température max — efficacité optimale' },
+              { val: '9 bars', label: "Pression max, préserve les fibres" },
+              { val: '20 °C', label: 'Température max, efficacité optimale' },
             ].map((s) => (
               <div key={s.label} style={{ textAlign: 'center' }}>
                 <div style={{ fontFamily: 'var(--font-sans)', fontSize: '2rem', fontWeight: 800, color: 'var(--terra)', lineHeight: 1, marginBottom: '0.5rem' }}>{s.val}</div>
@@ -383,7 +383,7 @@ export default function NettoyageMoquettesPage() {
           <div style={{ maxWidth: '880px', margin: '0 auto' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Questions fréquentes</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.025em', lineHeight: 1.15 }}>
-              FAQ — Nettoyage de moquettes
+              FAQ, Nettoyage de moquettes
             </h2>
             {faqItems.map((item, i) => (
               <details key={i} style={{ padding: '1.5rem 0', borderBottom: '1px solid var(--border)' }}>

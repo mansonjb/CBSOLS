@@ -3,12 +3,12 @@ import React from 'react'
 /**
  * Petit renderer markdown-light pour le corps des guides.
  * Supporte :
- *   - Paragraphes séparés par double retour (\n\n)
- *   - Bold inline avec **texte**
- *   - Listes : lignes consécutives commençant par "• " ou "- "
- *   - Sous-titres "intra-section" : ligne se terminant par ":" et précédée d'une ligne vide
+ * - Paragraphes séparés par double retour (\n\n)
+ * - Bold inline avec **texte**
+ * - Listes : lignes consécutives commençant par "• " ou "- "
+ * - Sous-titres "intra-section" : ligne se terminant par ":" et précédée d'une ligne vide
  *
- * On évite volontairement une lib markdown lourde — les guides
+ * On évite volontairement une lib markdown lourde, les guides
  * ont un format restreint et stable. Ce parser couvre 100 % des cas.
  */
 function renderInline(text: string): React.ReactNode[] {
@@ -40,7 +40,7 @@ function parseBody(body: string): Block[] {
   for (const para of paragraphs) {
     const lines = para.split('\n').map((l) => l.trim()).filter(Boolean)
 
-    // Cas A — toutes les lignes sont des puces : liste pure
+    // Cas A, toutes les lignes sont des puces : liste pure
     if (lines.length > 1 && lines.every(isBullet)) {
       blocks.push({
         kind: 'list',
@@ -49,7 +49,7 @@ function parseBody(body: string): Block[] {
       continue
     }
 
-    // Cas B — paragraphe intro + suite de puces (ex: titre suivi d'une liste)
+    // Cas B, paragraphe intro + suite de puces (ex: titre suivi d'une liste)
     // On split au premier bullet rencontré
     const firstBulletIdx = lines.findIndex(isBullet)
     if (firstBulletIdx > 0 && lines.slice(firstBulletIdx).every(isBullet)) {
@@ -68,13 +68,13 @@ function parseBody(body: string): Block[] {
       continue
     }
 
-    // Cas C — Sous-titre court terminant par ":" ou en gras seul
+    // Cas C, Sous-titre court terminant par ":" ou en gras seul
     if (lines.length === 1 && lines[0].length < 80 && /^\*\*[^*]+\*\*\s*:?\s*$/.test(lines[0])) {
       blocks.push({ kind: 'subheading', content: lines[0].replace(/^\*\*|\*\*\s*:?$/g, '').trim() })
       continue
     }
 
-    // Cas D — paragraphe standard (rejoint les lignes)
+    // Cas D, paragraphe standard (rejoint les lignes)
     blocks.push({ kind: 'paragraph', content: lines.join(' ') })
   }
 

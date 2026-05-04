@@ -1,56 +1,56 @@
 @import "tailwindcss";
 
 :root {
-  /* Beige palette — fixée à 22% entre blanc neutre #FAFAF8 et beige soutenu #EFE3CC */
-  --bg:           #F8F5EE;
-  --bg-alt:       #F1EBE1;
-  --bg-card:      #FDFBF5;
-  --bg-subtle:    #F6F2EA;
-  --dark:         #1A1916;
-  --dark-2:       #3D3A35;
-  --muted:        #8A8680;
-  --muted-light:  #B8B5B0;
+  /* Beige palette, fixée à 22% entre blanc neutre #FAFAF8 et beige soutenu #EFE3CC */
+  --bg: #F8F5EE;
+  --bg-alt: #F1EBE1;
+  --bg-card: #FDFBF5;
+  --bg-subtle: #F6F2EA;
+  --dark: #1A1916;
+  --dark-2: #3D3A35;
+  --muted: #8A8680;
+  --muted-light: #B8B5B0;
 
-  /* Palette verte — inspirée Goyard (deep forest green) */
-  --terra:        #2C5530; /* Goyard green — fond clair */
-  --terra-dark:   #1E3D22;
+  /* Palette verte, inspirée Goyard (deep forest green) */
+  --terra: #2C5530; /* Goyard green, fond clair */
+  --terra-dark: #1E3D22;
   /* Variante lumineuse du vert pour les fonds sombres (cards projets, sections inv) */
   --terra-on-dark:#7FB287;
-  --green-100:    #E6EFE3;
-  --green-200:    #C7DAC0;
-  --green-400:    #5A8F60;
-  --green-600:    #2C5530;
-  --green-800:    #1E3D22;
-  --green-900:    #14291A;
+  --green-100: #E6EFE3;
+  --green-200: #C7DAC0;
+  --green-400: #5A8F60;
+  --green-600: #2C5530;
+  --green-800: #1E3D22;
+  --green-900: #14291A;
 
-  --border:       rgba(26, 25, 22, 0.1);
-  --border-mid:   rgba(26, 25, 22, 0.15);
+  --border: rgba(26, 25, 22, 0.1);
+  --border-mid: rgba(26, 25, 22, 0.15);
   --border-strong:rgba(26, 25, 22, 0.25);
   --border-hover: rgba(44, 85, 48, 0.32);
-  --bg-inv:       #1A1916;
-  --bg-glass:     rgba(255, 255, 255, 0.92);
-  --btn-inv-bg:   #1A1916;
+  --bg-inv: #1A1916;
+  --bg-glass: rgba(255, 255, 255, 0.92);
+  --btn-inv-bg: #1A1916;
   --btn-inv-text: #FFFFFF;
 
-  /* Couleurs sur fond sombre (sections dark/inv, cards projets) — fixes light/dark */
-  --text-on-dark:        #F0EBE3;
-  --text-on-dark-muted:  rgba(240, 235, 227, 0.65);
-  --text-on-dark-faint:  rgba(240, 235, 227, 0.45);
-  --border-on-dark:      rgba(240, 235, 227, 0.10);
-  --project-card-bg:     #1A1410;
+  /* Couleurs sur fond sombre (sections dark/inv, cards projets), fixes light/dark */
+  --text-on-dark: #F0EBE3;
+  --text-on-dark-muted: rgba(240, 235, 227, 0.65);
+  --text-on-dark-faint: rgba(240, 235, 227, 0.45);
+  --border-on-dark: rgba(240, 235, 227, 0.10);
+  --project-card-bg: #1A1410;
 
   /* Sémantique */
-  --error:    #C44A4A;
+  --error: #C44A4A;
   --error-bg: rgba(196, 74, 74, 0.10);
   --error-fg: #E07070;
   --whatsapp: #25D366;
 
   /* Compat aliases */
-  --cream:        #1A1916;
-  --cream-muted:  #8A8680;
-  --text-muted:   #8A8680;
-  --font-sans:   var(--font-sans, 'Plus Jakarta Sans', system-ui, sans-serif);
-  --font-serif:  var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  --cream: #1A1916;
+  --cream-muted: #8A8680;
+  --text-muted: #8A8680;
+  --font-sans: var(--font-sans, 'Plus Jakarta Sans', system-ui, sans-serif);
+  --font-serif: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
   --font-playfair: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
 }
 
@@ -110,7 +110,7 @@ img { display: block; }
   section { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
 }
 
-/* /secteurs page row cards — stack icon+content, keep "Découvrir" in a separate row */
+/* /secteurs page row cards, stack icon+content, keep "Découvrir" in a separate row */
 @media (max-width: 720px) {
   .sector-row { grid-template-columns: 56px 1fr !important; gap: 1rem !important; row-gap: 0.75rem !important; padding: 1.75rem 0 !important; }
   .sector-row-cta { grid-column: 1 / -1; padding-left: calc(56px + 1rem); }
@@ -118,7 +118,7 @@ img { display: block; }
 }
 
 @keyframes marquee {
-  0%   { transform: translateX(0); }
+  0% { transform: translateX(0); }
   100% { transform: translateX(-33.333%); }
 }
 .marquee-track { animation: marquee 28s linear infinite; }
@@ -135,7 +135,7 @@ img { display: block; }
 .client-card-dark:hover { transform: translateY(-2px); border-color: rgba(240,235,227,0.18) !important; }
 .client-card-dark:hover img { opacity: 1 !important; }
 
-/* Brand partners logos — theme aware */
+/* Brand partners logos, theme aware */
 .brand-logo img {
   filter: grayscale(1);
   opacity: 0.55;
@@ -148,10 +148,10 @@ img { display: block; }
 /* Fade-in keyframe utilisé par le backdrop du burger menu */
 @keyframes fade-in {
   from { opacity: 0; }
-  to   { opacity: 1; }
+  to { opacity: 1; }
 }
 
-/* Accessibilité — respect du motion-reduce système */
+/* Accessibilité, respect du motion-reduce système */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -166,7 +166,7 @@ img { display: block; }
   }
 }
 
-/* Focus visible global — navigation clavier propre */
+/* Focus visible global, navigation clavier propre */
 :focus-visible {
   outline: 2px solid var(--terra);
   outline-offset: 2px;

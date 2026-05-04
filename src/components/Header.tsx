@@ -103,7 +103,7 @@ export function Header() {
         </div>
       </div>
 
-      {/* Backdrop overlay — click to close */}
+      {/* Backdrop overlay, click to close */}
       {open && (
         <button
           type="button"
