@@ -1,34 +1,42 @@
 /**
  * Liste centralisée des clients référencés CB Sols.
  * Logos + lien vers leur site (utilisé sur home + /realisations).
+ *
+ * URLs vérifiées : seuls les sites accessibles sont liés. Les logos
+ * sans href restent non cliquables (évite tout 404 ou redirection cassée).
  */
 export interface ClientReference {
   src: string
   alt: string
-  /** URL du site officiel du client (clic → ouvre dans un nouvel onglet) */
+  /** URL du site officiel du client. Si absent : logo non cliquable. */
   href?: string
 }
 
 export const clientLogos: ClientReference[] = [
-  { src: '/images/clients/Hotel_La_Baronnie.webp', alt: 'Hôtel La Baronnie',         href: 'https://www.hotel-la-baronnie.com/' },
-  { src: '/images/clients/LaGrandeTerrasse.webp',  alt: 'La Grande Terrasse',        href: 'https://www.la-grande-terrasse-hotel-spa-la-rochelle.com/' },
-  { src: '/images/clients/Logo_GolfDeLaPree.webp', alt: 'Golf de la Prée',           href: 'https://www.golf-de-la-pree-larochelle.com/' },
-  { src: '/images/clients/Logo_Gaya.webp',         alt: 'Restaurant Gaya',           href: 'https://www.restaurant-gaya.com/' },
-  { src: '/images/clients/Masqhotel.webp',         alt: 'Masq Hôtel',                href: 'https://www.masqhotel.com/' },
-  { src: '/images/clients/LogoHotelGrandLarge.webp', alt: 'Hôtel Grand Large',       href: 'https://www.hotel-grand-large.com/' },
-  { src: '/images/clients/HotelSaintNicolas.webp',  alt: 'Hôtel Saint-Nicolas',      href: 'https://www.hotel-saint-nicolas.com/' },
-  { src: '/images/clients/CLR_Hotels.webp',         alt: 'CLR Hotels',                href: 'https://www.clr-hotels.com/' },
-  { src: '/images/clients/Ibis.webp',               alt: 'Ibis',                      href: 'https://all.accor.com/brands/ibis-hotels.fr.shtml' },
-  { src: '/images/clients/MammaMiaRestaurant.webp', alt: 'Mamma Mia Restaurant',     href: 'https://mammamia-larochelle.fr/' },
-  { src: '/images/clients/HotelLaMarine.webp',      alt: 'Hôtel La Marine',          href: 'https://www.hotel-lamarine-iledere.com/' },
-  { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs', href: 'https://www.maisondesambassadeurs.com/' },
+  { src: '/images/clients/Hotel_La_Baronnie.webp',         alt: 'Hôtel La Baronnie',         href: 'https://www.hotel-labaronnie.com/' },
+  { src: '/images/clients/LaGrandeTerrasse.webp',          alt: 'La Grande Terrasse',        href: 'https://www.la-grande-terrasse.com/' },
+  // Golf de la Prée — pas de site officiel public référencé, logo non cliquable
+  { src: '/images/clients/Logo_GolfDeLaPree.webp',         alt: 'Golf de la Prée' },
+  // Gaya est l'un des restaurants de La Grande Terrasse
+  { src: '/images/clients/Logo_Gaya.webp',                 alt: 'Restaurant Gaya — La Grande Terrasse', href: 'https://www.la-grande-terrasse.com/' },
+  { src: '/images/clients/Masqhotel.webp',                 alt: 'Masq Hôtel',                href: 'https://www.masqhotel.com/' },
+  { src: '/images/clients/LogoHotelGrandLarge.webp',       alt: 'Hôtel Grand Large',         href: 'https://www.hotelgrandlarge.com/' },
+  { src: '/images/clients/HotelSaintNicolas.webp',         alt: 'Hôtel Saint-Nicolas',       href: 'https://www.hotel-saint-nicolas.com/' },
+  // CLR Hotels — site non identifié, logo non cliquable
+  { src: '/images/clients/CLR_Hotels.webp',                alt: 'CLR Hotels' },
+  // Ibis — chaîne (pas d'établissement spécifique identifié), logo non cliquable
+  { src: '/images/clients/Ibis.webp',                      alt: 'Ibis' },
+  { src: '/images/clients/MammaMiaRestaurant.webp',        alt: 'Mamma Mia Restaurant',      href: 'https://mammamia.fr/' },
+  { src: '/images/clients/HotelLaMarine.webp',             alt: 'Hôtel La Marine',           href: 'https://www.hotelmarine.fr/' },
+  { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs',   href: 'https://maisondesambassadeurs.com/' },
 ]
 
 /** Architectes & studios partenaires affichés sur /architectes */
 export const architectePartners: ClientReference[] = [
-  { src: '/images/clients/ABP_Architectes.webp',  alt: 'ABP Architectes',     href: 'https://www.abp-architectes.fr/' },
-  { src: '/images/clients/AnneBoulletStudio.webp', alt: 'Anne Boullet Studio', href: 'https://www.anneboulletstudio.com/' },
-  { src: '/images/clients/Atelier715.webp',        alt: 'Atelier 715',         href: 'https://www.atelier715.fr/' },
-  { src: '/images/clients/ZestArchitecture.webp',  alt: 'Zest Architecture',   href: 'https://www.zest-architecture.com/' },
-  { src: '/images/clients/AgnesMagord.webp',       alt: 'Agnès Magord',        href: 'https://www.agnes-magord.com/' },
+  { src: '/images/clients/ABP_Architectes.webp',   alt: 'ABP Architectes',     href: 'https://www.abp-architecture.fr/' },
+  { src: '/images/clients/AnneBoulletStudio.webp', alt: 'Anne Boullet Studio', href: 'https://anneboullet.fr/' },
+  // Atelier 715 — site non identifié, logo non cliquable
+  { src: '/images/clients/Atelier715.webp',        alt: 'Atelier 715' },
+  { src: '/images/clients/ZestArchitecture.webp',  alt: 'Zest Architecture',   href: 'https://www.atelierzest.com/' },
+  { src: '/images/clients/AgnesMagord.webp',       alt: 'Agnès Magord',        href: 'https://agnes-magord.fr/' },
 ]

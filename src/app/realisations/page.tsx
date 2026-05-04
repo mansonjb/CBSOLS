@@ -4,25 +4,13 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { ClientLogoCard } from '@/components/ClientLogoCard'
 import { clientLogos, architectePartners } from '@/data/clients'
+import { realisations } from '@/data/realisations'
 
 export const metadata: Metadata = {
   title: 'Réalisations | Projets Moquette, Sol PVC & Tapis CB Sols',
   description:
     "Découvrez les réalisations de CB Sols : pose de moquette en hôtel, sol PVC en bureaux, tapis sur mesure en restaurant. Artisan revêtement de sol en Charente-Maritime.",
 }
-
-const projects = [
-  { title: 'Hôtel La Baronnie, Île de Ré', type: 'Tapis sur mesure & moquettes chambres', sector: 'Hôtellerie', year: '2025', surface: '600 m²', desc: "Création de tapis sur mesure au motif exclusif pour les espaces communs et chambres. Moquette EGE haut de gamme dans les chambres.", img: '/images/tapis-hotel-real.webp' },
-  { title: 'Bistrot de la Grande Terrasse', type: 'Moquette acoustique salle', sector: 'Restauration', year: '2026', surface: '280 m²', desc: "Rénovation complète du sol de la salle de restaurant. Moquette acoustique pour améliorer le confort sonore des convives.", img: '/images/bistrot-restaurant-real.webp' },
-  { title: 'Restaurant gastronomique 3★', type: 'Moquette gastronomique sur mesure', sector: 'Restauration étoilée', year: '2025', surface: '220 m²', desc: "Pose d'une moquette sur mesure dans un restaurant gastronomique de La Rochelle. Couleurs et motifs coordonnés à la décoration intérieure.", img: '/images/restaurant-etoile-real.webp' },
-  { title: 'Golf de la Prée', type: 'Moquette contrat + Sol PVC vestiaires', sector: 'Sport & Loisirs', year: '2023', surface: '600 m²', desc: "Refonte complète des sols du clubhouse avec moquette contrat résistante, et sols PVC étanches dans les vestiaires.", img: '/images/golf-real.webp' },
-  { title: 'Bureaux Charente-Maritime', type: 'Moquette dalles haute résistance', sector: 'Tertiaire', year: '2024', surface: '350 m²', desc: "Pose de moquette dalles adaptées aux chaises à roulettes. Pose le week-end sans interruption d'activité.", img: '/images/moquette-bureau-real.webp' },
-  { title: 'Cuisine Professionnelle', type: 'Sol PVC soudé à chaud', sector: 'Restauration Pro', year: '2024', surface: '80 m²', desc: "Pose de PVC en lés avec soudure à chaud. Aucun joint pour une hygiène maximale, nettoyage intensif facilité.", img: '/images/cuisine-pro-real.webp' },
-  { title: 'Restaurant Gaya, La Rochelle', type: 'Moquette salle de restaurant', sector: 'Restauration', year: '2025', surface: '180 m²', desc: "Réfection complète des sols de la salle principale avec moquette de qualité professionnelle.", img: '/images/restaurant-gaya.webp' },
-  { title: 'Tapis Hôtel La Baronnie, détail', type: 'Création tapis sur mesure', sector: 'Hôtellerie', year: '2025', surface: 'Motif exclusif', desc: "Motif exclusif créé sur mesure pour l'Hôtel La Baronnie. Design coordonné à l'identité visuelle de l'établissement.", img: '/images/tapis-hotel-baronnie.webp' },
-  { title: 'Chambre haut de gamme', type: 'Moquette résidentielle sur mesure', sector: 'Résidentiel', year: '2025', surface: '45 m²', desc: "Moquette avec motif graphique pour une chambre privée. Choix du motif et des couleurs réalisé en showroom.", img: '/images/moquette-chambre-motif.webp' },
-  { title: 'Chambre résidentielle', type: 'Moquette résidentielle', sector: 'Résidentiel', year: '2025', surface: '35 m²', desc: "Moquette coloris bleu pour une chambre particulier. Conseil personnalisé en showroom sur la teinte et la texture.", img: '/images/moquette-chambre-bleu.webp' },
-]
 
 export default function RealisationsPage() {
   return (
@@ -42,9 +30,10 @@ export default function RealisationsPage() {
       <section style={{ padding: '4rem 2rem 6rem' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '1.5rem' }}>
-            {projects.map((project) => (
-              <div
-                key={project.title}
+            {realisations.map((project) => (
+              <Link
+                key={project.slug}
+                href={`/realisations/${project.slug}`}
                 style={{
                   backgroundColor: 'var(--project-card-bg)',
                   border: '1px solid var(--border)',
@@ -54,29 +43,37 @@ export default function RealisationsPage() {
                   position: 'relative',
                   overflow: 'hidden',
                   minHeight: '320px',
-                  transition: 'border-color 0.2s',
+                  transition: 'transform 0.2s, border-color 0.2s, box-shadow 0.2s',
+                  textDecoration: 'none',
+                  color: 'inherit',
                 }}
+                className="project-card-link"
               >
                 <Image
-                  src={project.img}
+                  src={project.image}
                   alt={project.title}
                   fill
                   style={{ objectFit: 'cover', opacity: 0.65 }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.9) 0%, rgba(13,12,10,0.3) 50%, transparent 100%)', pointerEvents: 'none' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.92) 0%, rgba(13,12,10,0.35) 55%, transparent 100%)', pointerEvents: 'none' }} />
                 <div style={{ padding: '2rem', position: 'relative', zIndex: 1 }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem', gap: '0.75rem' }}>
                     <span style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)' }}>{project.sector}</span>
-                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', color: 'var(--text-on-dark-faint)' }}>{project.year} · {project.surface}</span>
+                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', color: 'var(--text-on-dark-faint)', whiteSpace: 'nowrap' }}>
+                      {project.year} · {project.location}
+                    </span>
                   </div>
-                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.1rem', fontWeight: 400, color: 'var(--text-on-dark)', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
+                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.15rem', fontWeight: 400, color: 'var(--text-on-dark)', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
                     {project.title}
                   </h2>
                   <div style={{ fontSize: '0.75rem', color: 'var(--terra)', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>{project.type}</div>
-                  <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-muted)', margin: 0, lineHeight: 1.6 }}>{project.desc}</p>
+                  <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-muted)', margin: 0, lineHeight: 1.6 }}>{project.description}</p>
+                  <div style={{ fontSize: '0.62rem', color: 'var(--terra)', marginTop: '1rem', letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 700 }}>
+                    Voir le projet →
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
