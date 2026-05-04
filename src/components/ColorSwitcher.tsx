@@ -1,30 +1,34 @@
 'use client'
 import { useState, useEffect } from 'react'
 
+/**
+ * Nuancier vert — déclinaisons inspirées Goyard (vert profond emblématique)
+ */
 const palettes = [
-  { id: 'terra',    label: 'Terra',    main: '#C4714A', dark: '#A85D38' },
-  { id: 'ardoise',  label: 'Ardoise',  main: '#4A80A8', dark: '#3A6588' },
-  { id: 'sauge',    label: 'Sauge',    main: '#6B8B5E', dark: '#557048' },
-  { id: 'bordeaux', label: 'Bordeaux', main: '#963D5A', dark: '#7A2E48' },
-  { id: 'encre',    label: 'Encre',    main: '#5C6BC0', dark: '#4555AA' },
+  { id: 'goyard',   label: 'Goyard',     main: '#2C5530', dark: '#1E3D22' },
+  { id: 'forest',   label: 'Forêt',      main: '#1E3D22', dark: '#14291A' },
+  { id: 'sauge',    label: 'Sauge',      main: '#6B8B5E', dark: '#557048' },
+  { id: 'olive',    label: 'Olive',      main: '#5C6E2E', dark: '#475624' },
+  { id: 'jade',     label: 'Jade',       main: '#3F7A45', dark: '#2C5530' },
+  { id: 'mousse',   label: 'Mousse',     main: '#4A6850', dark: '#3A523F' },
 ]
 
 export function ColorSwitcher() {
-  const [active, setActive] = useState('terra')
+  const [active, setActive] = useState('goyard')
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const saved = localStorage.getItem('accent') || 'terra'
+    const saved = localStorage.getItem('accent') || 'goyard'
     setActive(saved)
     applyPalette(saved)
   }, [])
 
   function applyPalette(id: string) {
-    const p = palettes.find(p => p.id === id)
-    if (!p) return
+    const p = palettes.find((p) => p.id === id) ?? palettes[0]
     document.documentElement.style.setProperty('--terra', p.main)
     document.documentElement.style.setProperty('--terra-dark', p.dark)
-    localStorage.setItem('accent', id)
+    localStorage.setItem('accent', p.id)
+    if (p.id !== id) setActive(p.id)
   }
 
   function pick(id: string) {
@@ -33,7 +37,7 @@ export function ColorSwitcher() {
     setOpen(false)
   }
 
-  const current = palettes.find(p => p.id === active)!
+  const current = palettes.find((p) => p.id === active) ?? palettes[0]
 
   return (
     <div style={{ position: 'relative' }}>

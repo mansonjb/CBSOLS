@@ -47,7 +47,7 @@ export default async function SecteurPage({ params }: Props) {
     <div style={{ paddingTop: '72px' }}>
       {/* Hero */}
       <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 80% 50%, rgba(196,113,74,0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 80% 50%, rgba(44, 85, 48, 0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
         <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative' }}>
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem' }}>
             <Link href="/secteurs" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-muted)', textDecoration: 'none' }}>Professionnels</Link>
@@ -92,7 +92,7 @@ export default async function SecteurPage({ params }: Props) {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {sector.solutions.map((s, i) => (
                   <div key={i} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                    <div style={{ width: '24px', height: '24px', backgroundColor: 'rgba(196,113,74,0.15)', border: '1px solid rgba(196,113,74,0.3)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div style={{ width: '24px', height: '24px', backgroundColor: 'rgba(44, 85, 48, 0.15)', border: '1px solid rgba(44, 85, 48, 0.3)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       <div style={{ width: '8px', height: '8px', backgroundColor: 'var(--terra)', borderRadius: '50%' }} />
                     </div>
                     <span style={{ fontSize: '0.85rem', color: 'var(--cream)', lineHeight: 1.6 }}>{s}</span>

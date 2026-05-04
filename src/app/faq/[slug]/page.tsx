@@ -78,7 +78,7 @@ export default async function FaqPage({ params }: Props) {
 
         {/* Hero */}
         <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 70% 30%, rgba(196,113,74,0.06) 0%, transparent 60%)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 70% 30%, rgba(44, 85, 48, 0.06) 0%, transparent 60%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative' }}>
             <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
               <Link href="/" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>CB Sols</Link>
@@ -86,7 +86,7 @@ export default async function FaqPage({ params }: Props) {
               <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>FAQ</span>
             </div>
 
-            <span style={{ display: 'inline-block', padding: '0.3rem 0.875rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(196,113,74,0.08)', fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', borderRadius: '999px', marginBottom: '1.5rem' }}>
+            <span style={{ display: 'inline-block', padding: '0.3rem 0.875rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(44, 85, 48, 0.08)', fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', borderRadius: '999px', marginBottom: '1.5rem' }}>
               {faq.category}
             </span>
 
@@ -95,7 +95,7 @@ export default async function FaqPage({ params }: Props) {
             </h1>
 
             {/* Short answer box */}
-            <div style={{ padding: '1.5rem 2rem', backgroundColor: 'rgba(196,113,74,0.06)', border: '1px solid rgba(196,113,74,0.2)', borderRadius: '12px', borderLeft: '3px solid var(--terra)' }}>
+            <div style={{ padding: '1.5rem 2rem', backgroundColor: 'rgba(44, 85, 48, 0.06)', border: '1px solid rgba(44, 85, 48, 0.2)', borderRadius: '12px', borderLeft: '3px solid var(--terra)' }}>
               <div style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Réponse courte</div>
               <p style={{ fontSize: '1rem', color: 'var(--dark-2)', lineHeight: 1.7, margin: 0, fontWeight: 500 }}>
                 {faq.shortAnswer}
@@ -162,7 +162,7 @@ export default async function FaqPage({ params }: Props) {
                   <Link key={solution.slug} href={`/solutions/${solution.slug}`} style={{ textDecoration: 'none' }}>
                     <div style={{ backgroundColor: 'var(--bg-card)', padding: '2rem', height: '100%' }} className="service-card">
                       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
-                        <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', padding: '0.2rem 0.625rem', border: '1px solid rgba(196,113,74,0.3)', borderRadius: '999px' }}>{solution.serviceName}</span>
+                        <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', padding: '0.2rem 0.625rem', border: '1px solid rgba(44, 85, 48, 0.3)', borderRadius: '999px' }}>{solution.serviceName}</span>
                         <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', padding: '0.2rem 0.625rem', border: '1px solid var(--border)', borderRadius: '999px' }}>{solution.sectorName}</span>
                       </div>
                       <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>{solution.headline}</h3>

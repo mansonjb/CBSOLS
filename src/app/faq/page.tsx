@@ -7,7 +7,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'FAQ Revêtement de Sol | CB Sols, Réponses d&apos;Artisan',
   description:
-    'Toutes vos questions sur la moquette, le sol PVC et la pose : délais, prix, normes, techniques, différences. Réponses claires d&apos;un artisan certifié Qualibat.',
+    'Toutes vos questions sur la moquette, le sol PVC et la pose : délais, prix, normes, techniques, différences. Réponses claires d&apos;un artisan spécialiste.',
   alternates: { canonical: 'https://cbsols.fr/faq' },
 }
 
@@ -47,7 +47,7 @@ export default function FaqHubPage() {
       <div style={{ paddingTop: '72px' }}>
         {/* Hero */}
         <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 80% 50%, rgba(196,113,74,0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 80% 50%, rgba(44, 85, 48, 0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: '920px', margin: '0 auto', position: 'relative' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Questions fréquentes</div>
             <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.05 }}>
@@ -67,7 +67,7 @@ export default function FaqHubPage() {
               <a
                 key={cat}
                 href={`#${cat.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                style={{ padding: '0.45rem 1rem', fontSize: '0.72rem', color: 'var(--terra)', textDecoration: 'none', border: '1px solid rgba(196,113,74,0.3)', borderRadius: '999px', fontWeight: 600 }}
+                style={{ padding: '0.45rem 1rem', fontSize: '0.72rem', color: 'var(--terra)', textDecoration: 'none', border: '1px solid rgba(44, 85, 48, 0.3)', borderRadius: '999px', fontWeight: 600 }}
               >
                 {cat}
               </a>

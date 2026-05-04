@@ -92,7 +92,7 @@ export const solutions: Solution[] = [
       { name: 'Tapis de délimitation sur mesure', desc: 'Tapis sur mesure pour créer des zones (bar, salle privée, terrasse couverte)' },
     ],
     references: [
-      'Restaurant Christopher Coutanceau, La Rochelle : moquette sur mesure, 220 m²',
+      'Restaurant gastronomique 3★, La Rochelle : moquette sur mesure, 220 m²',
       'Bistrot de la Grande Terrasse, La Rochelle : moquette acoustique, 280 m²',
       'Restaurant Gaya, La Rochelle : réfection complète salle principale, 180 m²',
     ],
@@ -568,7 +568,7 @@ export const solutions: Solution[] = [
       'Salles polyvalentes communes : rénovation en vacances scolaires',
     ],
     faq: [
-      { q: 'CB Sols peut-il répondre à un appel d\'offres ?', a: "Oui. CB Sols fournit tous les documents nécessaires aux marchés publics : fiches techniques certifiées, FDES, références similaires, attestation assurance décennale, Kbis et certifications Qualibat." },
+      { q: 'CB Sols peut-il répondre à un appel d\'offres ?', a: "Oui. CB Sols fournit tous les documents nécessaires aux marchés publics : fiches techniques certifiées, FDES, références similaires, attestation assurance décennale, Kbis." },
     ],
   },
 ]

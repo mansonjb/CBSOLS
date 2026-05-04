@@ -83,7 +83,7 @@ export default async function GuidePage({ params }: Props) {
 
         {/* Hero */}
         <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 70% 30%, rgba(196,113,74,0.06) 0%, transparent 60%)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 70% 30%, rgba(44, 85, 48, 0.06) 0%, transparent 60%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative' }}>
             <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
               <Link href="/" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>CB Sols</Link>
@@ -91,7 +91,7 @@ export default async function GuidePage({ params }: Props) {
               <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Guides</span>
             </div>
 
-            <span style={{ display: 'inline-block', padding: '0.3rem 0.875rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(196,113,74,0.08)', fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', borderRadius: '999px', marginBottom: '1.5rem' }}>
+            <span style={{ display: 'inline-block', padding: '0.3rem 0.875rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(44, 85, 48, 0.08)', fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', borderRadius: '999px', marginBottom: '1.5rem' }}>
               {guide.category}
             </span>
 
@@ -181,7 +181,7 @@ export default async function GuidePage({ params }: Props) {
                   <Link key={solution.slug} href={`/solutions/${solution.slug}`} style={{ textDecoration: 'none' }}>
                     <div style={{ backgroundColor: 'var(--bg-card)', padding: '2rem', height: '100%', transition: 'background-color 0.2s' }} className="service-card">
                       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
-                        <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', padding: '0.2rem 0.625rem', border: '1px solid rgba(196,113,74,0.3)', borderRadius: '999px' }}>{solution.serviceName}</span>
+                        <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', padding: '0.2rem 0.625rem', border: '1px solid rgba(44, 85, 48, 0.3)', borderRadius: '999px' }}>{solution.serviceName}</span>
                         <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', padding: '0.2rem 0.625rem', border: '1px solid var(--border)', borderRadius: '999px' }}>{solution.sectorName}</span>
                       </div>
                       <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>

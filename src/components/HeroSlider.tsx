@@ -16,8 +16,8 @@ const slides = [
     surface: '120 m²',
   },
   {
-    img: '/images/restaurant-coutanceau.webp',
-    project: 'Restaurant Coutanceau · La Rochelle',
+    img: '/images/restaurant-restaurant-etoile.webp',
+    project: 'Restaurant gastronomique 3★ · La Rochelle',
     type: 'Moquette gastronomique',
     surface: '220 m²',
   },

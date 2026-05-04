@@ -23,7 +23,7 @@ const sections = [
       'Forme juridique : Société',
       'TVA intracommunautaire : sur demande',
       'Activité : Pose de revêtements de sol (moquette, sol PVC, tapis sur mesure)',
-      'Qualification : Qualibat 6111 — Revêtements de sols souples',
+      'Expérience : 500+ chantiers livrés depuis 1999',
       'Assurance professionnelle et décennale souscrites.',
     ],
   },

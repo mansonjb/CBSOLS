@@ -9,7 +9,7 @@ import { Button } from '@/components/Button'
 
 const projects = [
   { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel-real.webp' },
-  { title: 'Restaurant Coutanceau', type: 'Moquette gastronomique', sector: 'Restauration étoilée', surface: '220 m²', img: '/images/restaurant-etoile-real.webp' },
+  { title: 'Restaurant 3★', type: 'Moquette gastronomique', sector: 'Restauration étoilée', surface: '220 m²', img: '/images/restaurant-etoile-real.webp' },
   { title: 'Golf de la Prée', type: 'Moquette + PVC vestiaires', sector: 'Sport & Loisirs', surface: '600 m²', img: '/images/golf-real.webp' },
   { title: 'Bistrot Grande Terrasse', type: 'Moquette acoustique', sector: 'Restauration', surface: '280 m²', img: '/images/bistrot-restaurant-real.webp' },
   { title: 'Bureaux Charente-Maritime', type: 'Dalles haute résistance', sector: 'Tertiaire', surface: '350 m²', img: '/images/moquette-bureau-real.webp' },
@@ -40,7 +40,7 @@ const brandPartners = [
 ]
 
 const garanties = [
-  { title: 'Artisan certifié', desc: 'Qualification Qualibat : compétence vérifiée sur tous les revêtements de sol.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg> },
+  { title: 'Artisan certifié', desc: 'Plus de 500 chantiers réalisés depuis 1999 en Charente-Maritime.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg> },
   { title: "25 ans d'expertise", desc: "Fondé en 1999. Plus de 500 chantiers à La Rochelle, l'Île de Ré et en Charente-Maritime.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg> },
   { title: 'Devis gratuit 48h', desc: 'Déplacement et mesures offerts. Chiffrage transparent, sans engagement.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg> },
   { title: 'Pose week-end', desc: "Intervention hors heures ouvrées pour les professionnels. Zéro interruption d'activité.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> },
@@ -380,22 +380,22 @@ export default function Home() {
               Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. 25 ans de métier, des centaines de chantiers en Charente-Maritime.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem' }}>
-              {['Qualibat 6111', 'Décennale', 'Partenaire EGE', 'Partenaire Gerflor'].map(c => (
+              {['Décennale', 'Assurance pro', 'Partenaire EGE', 'Partenaire Gerflor'].map(c => (
                 <span key={c} style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-on-dark-muted)', padding: '0.3rem 0.875rem', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '999px' }}>{c}</span>
               ))}
             </div>
-            <Link href="/a-propos" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', border: '1.5px solid rgba(196,113,74,0.6)', color: 'var(--terra)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px', transition: 'all 0.2s' }}>
+            <Link href="/a-propos" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', border: '1.5px solid rgba(44, 85, 48, 0.6)', color: 'var(--terra)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px', transition: 'all 0.2s' }}>
               Notre histoire →
             </Link>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <div style={{ position: 'relative', width: '100%', maxWidth: '380px' }}>
-              <div style={{ aspectRatio: '4/5', backgroundColor: 'rgba(196,113,74,0.08)', border: '1px solid rgba(196,113,74,0.2)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+              <div style={{ aspectRatio: '4/5', backgroundColor: 'rgba(44, 85, 48, 0.08)', border: '1px solid rgba(44, 85, 48, 0.2)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                 <div style={{ textAlign: 'center', padding: '3rem 2rem' }}>
                   <div style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontSize: '3rem', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)', lineHeight: 1, marginBottom: '1rem' }}>VP</div>
                   <div style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-on-dark)', letterSpacing: '-0.02em' }}>Valentin Prévoteau</div>
                   <div style={{ fontSize: '0.72rem', color: 'var(--text-on-dark-faint)', marginTop: '0.4rem', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 500 }}>Artisan poseur · CB Sols</div>
-                  <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(196,113,74,0.1)', borderRadius: '10px', borderLeft: '2px solid var(--terra)' }}>
+                  <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(44, 85, 48, 0.1)', borderRadius: '10px', borderLeft: '2px solid var(--terra)' }}>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-on-dark-muted)', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, lineHeight: 1.7, margin: 0 }}>
                       "Un sol bien posé, c'est discret et dure des décennies. Un sol mal posé, ça se voit tout de suite."
                     </p>
@@ -467,7 +467,7 @@ export default function Home() {
             ].map(z => (
               <Link key={z.zone} href={z.href} style={{ textDecoration: 'none', display: 'block' }}>
                 <div className="service-card" style={{ backgroundColor: 'var(--bg-card)', borderRadius: '16px', padding: '2rem', height: '100%', transition: 'transform 0.2s' }}>
-                  <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '50%', backgroundColor: 'rgba(196,113,74,0.1)', marginBottom: '1.25rem' }}>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '50%', backgroundColor: 'rgba(44, 85, 48, 0.1)', marginBottom: '1.25rem' }}>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--terra)" strokeWidth="1.5" strokeLinecap="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
                   </div>
                   <div style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.4rem', letterSpacing: '-0.02em' }}>{z.label}</div>

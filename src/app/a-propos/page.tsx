@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'À Propos | Valentin Prévoteau, Artisan Poseur CB Sols depuis 1999',
   description:
-    "Rencontrez Valentin Prévoteau, gérant et artisan poseur de CB Sols depuis 1999. Qualibat, assurance décennale, 500+ chantiers en Charente-Maritime. L'homme derrière chaque chantier.",
+    "Rencontrez Valentin Prévoteau, gérant et artisan poseur de CB Sols depuis 1999. Assurance décennale, 500+ chantiers en Charente-Maritime. L'homme derrière chaque chantier.",
   alternates: { canonical: 'https://cbsols.fr/a-propos' },
 }
 
@@ -42,11 +42,6 @@ const personSchema = {
   hasCredential: [
     {
       '@type': 'EducationalOccupationalCredential',
-      name: 'Qualification Qualibat 6111 : Revêtements de sol collés',
-      recognizedBy: { '@type': 'Organization', name: 'Qualibat' },
-    },
-    {
-      '@type': 'EducationalOccupationalCredential',
       name: 'Assurance responsabilité décennale',
     },
   ],
@@ -54,8 +49,8 @@ const personSchema = {
 
 export default function AProposPage() {
   const credentials = [
-    { label: 'Qualibat 6111', desc: 'Revêtements de sol collés : qualification reconnue', icon: '✓' },
     { label: 'Décennale', desc: 'Assurance responsabilité décennale en cours de validité', icon: '✓' },
+    { label: '25+ ans d\'expérience', desc: 'Fondé en 1999 — 500+ chantiers livrés en Charente-Maritime', icon: '✓' },
     { label: 'Partenaire EGE', desc: 'Poseur agréé EGE : moquette contract premium', icon: '✓' },
     { label: 'Partenaire Gerflor', desc: 'Distributeur agréé : gamme complète sol PVC & LVT', icon: '✓' },
     { label: 'Partenaire Forbo', desc: 'Poseur Forbo certifié : Marmoleum et vinyle', icon: '✓' },
@@ -76,7 +71,7 @@ export default function AProposPage() {
 
         {/* Hero */}
         <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 30% 50%, rgba(196,113,74,0.07) 0%, transparent 60%)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 30% 50%, rgba(44, 85, 48, 0.07) 0%, transparent 60%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Notre histoire</div>
             <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
@@ -111,7 +106,7 @@ export default function AProposPage() {
                 <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em' }}>
                   Valentin Prévoteau
                 </h2>
-                <blockquote style={{ margin: '0 0 1.5rem', padding: '1.5rem', borderLeft: '3px solid var(--terra)', backgroundColor: 'rgba(196,113,74,0.05)' }}>
+                <blockquote style={{ margin: '0 0 1.5rem', padding: '1.5rem', borderLeft: '3px solid var(--terra)', backgroundColor: 'rgba(44, 85, 48, 0.05)' }}>
                   <p style={{ fontSize: '1.1rem', color: 'var(--dark)', lineHeight: 1.8, margin: 0, fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>
                     "Un sol, c'est la base de tout espace. Bien choisi, bien posé, il dure des décennies et transforme un lieu."
                   </p>
@@ -134,7 +129,7 @@ export default function AProposPage() {
                     { year: '1999', label: 'Création de CB Sols', desc: "Lancement de l'activité revêtement de sol à Villedoux, premier chantier hôtelier sur l'Île de Ré dès l'année suivante." },
                     { year: '2005', label: 'Ouverture du showroom', desc: 'Un espace dédié sur rendez-vous avec plus de 500 échantillons EGE, Gerflor, Forbo et Tarkett.' },
                     { year: '2010', label: 'Développement B2B', desc: "Premiers contrats cadres avec des groupes hôteliers et des collectivités sur l'Île de Ré et l'agglo rochelaise." },
-                    { year: '2018', label: 'Qualification Qualibat', desc: "Obtention de la qualification 6111 Revêtements de sol collés : gage de compétence reconnu par les maîtres d'ouvrage." },
+                    { year: '2018', label: 'Reconnaissance professionnelle', desc: "Adhésion aux fédérations professionnelles, intégration des normes les plus exigeantes pour les marchés ERP et hôteliers." },
                     { year: '2020', label: 'Partenariats officiels', desc: "Agréments officiels EGE, Gerflor, Forbo et Tarkett : accès aux gammes contract et aux SAV fabricants." },
                     { year: "Aujourd'hui", label: '500+ chantiers', desc: 'La Rochelle, Île de Ré, Île d\'Oléron, Rochefort, Saintes et toute la Charente-Maritime.' },
                   ].map((item, i, arr) => (
@@ -162,7 +157,7 @@ export default function AProposPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
               {credentials.map((c) => (
                 <div key={c.label} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                  <div style={{ width: '28px', height: '28px', borderRadius: '50%', backgroundColor: 'rgba(196,113,74,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: 'var(--terra)', fontWeight: 700, fontSize: '0.8rem' }}>{c.icon}</div>
+                  <div style={{ width: '28px', height: '28px', borderRadius: '50%', backgroundColor: 'rgba(44, 85, 48, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: 'var(--terra)', fontWeight: 700, fontSize: '0.8rem' }}>{c.icon}</div>
                   <div>
                     <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.3rem' }}>{c.label}</div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.6 }}>{c.desc}</div>

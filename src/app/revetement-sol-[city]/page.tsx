@@ -50,7 +50,7 @@ export default async function CityHubPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: `Revêtement de Sol ${cityData.name}`,
-    description: `Pose de moquette, sol PVC, tapis sur mesure à ${cityData.name} par CB Sols, artisan certifié Qualibat depuis 1999.`,
+    description: `Pose de moquette, sol PVC, tapis sur mesure à ${cityData.name} par CB Sols, artisan spécialiste depuis 1999.`,
     serviceType: 'Revêtement de sol',
     areaServed: {
       '@type': 'City',
@@ -132,7 +132,7 @@ export default async function CityHubPage({ params }: Props) {
           />
           {/* Overlay gradient */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(110deg, var(--bg) 0%, var(--bg) 40%, rgba(var(--bg-rgb,250,250,248),0.85) 70%, rgba(var(--bg-rgb,250,250,248),0.6) 100%)', pointerEvents: 'none' }} />
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 80% 50%, rgba(196,113,74,0.12) 0%, transparent 60%)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 80% 50%, rgba(44, 85, 48, 0.12) 0%, transparent 60%)', pointerEvents: 'none' }} />
 
           <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '5rem 2rem', position: 'relative', width: '100%' }}>
             {/* Breadcrumb */}
@@ -145,7 +145,7 @@ export default async function CityHubPage({ params }: Props) {
             </nav>
 
             {/* Badge zone */}
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.75rem', padding: '0.35rem 0.9rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(196,113,74,0.08)', borderRadius: '999px' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.75rem', padding: '0.35rem 0.9rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(44, 85, 48, 0.08)', borderRadius: '999px' }}>
               <span style={{ width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--terra)', display: 'inline-block' }} />
               <span style={{ fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 600 }}>
                 {cityZoneLabels[cityData.zone]}
@@ -158,7 +158,7 @@ export default async function CityHubPage({ params }: Props) {
             </h1>
 
             <p style={{ fontSize: '1.05rem', color: 'var(--cream-muted)', maxWidth: '600px', lineHeight: 1.7, marginBottom: '2.5rem' }}>
-              {zoneContent.tagline} Moquette, sol PVC, tapis sur mesure posés par un artisan certifié Qualibat depuis 1999. Devis gratuit sous 48 h à {cityData.name}.
+              {zoneContent.tagline} Moquette, sol PVC, tapis sur mesure posés par un artisan spécialiste depuis 1999. Devis gratuit sous 48 h à {cityData.name}.
             </p>
 
             {/* Stats strip */}
@@ -278,7 +278,7 @@ export default async function CityHubPage({ params }: Props) {
             </div>
             <div style={{ marginTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
               {sectors.slice(0, 4).map((sector) => (
-                <Link key={sector.slug} href={`/secteurs/${sector.slug}`} style={{ display: 'inline-block', padding: '0.55rem 1rem', fontSize: '0.75rem', color: 'var(--terra)', textDecoration: 'none', border: '1px solid rgba(196,113,74,0.3)', borderRadius: '999px' }}>
+                <Link key={sector.slug} href={`/secteurs/${sector.slug}`} style={{ display: 'inline-block', padding: '0.55rem 1rem', fontSize: '0.75rem', color: 'var(--terra)', textDecoration: 'none', border: '1px solid rgba(44, 85, 48, 0.3)', borderRadius: '999px' }}>
                   {sector.name}
                 </Link>
               ))}
@@ -354,7 +354,7 @@ export default async function CityHubPage({ params }: Props) {
 
         {/* ── CTA final ───────────────────────────────────────── */}
         <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 100%, rgba(196,113,74,0.1) 0%, transparent 60%)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 100%, rgba(44, 85, 48, 0.1) 0%, transparent 60%)' }} />
           <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center', position: 'relative' }}>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
               Un projet à <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>{cityData.name}</em> ?

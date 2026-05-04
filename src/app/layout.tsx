@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     url: 'https://cbsols.fr',
     telephone: company.phoneClean,
     email: company.email,
-    description: 'Artisan spécialiste du revêtement de sol depuis 1999 en Charente-Maritime. Moquette professionnelle, sol PVC, tapis sur mesure. Certifié Qualibat. Intervention hôtels, campings, bureaux, EHPAD.',
+    description: 'Artisan spécialiste du revêtement de sol depuis 1999 en Charente-Maritime. Moquette professionnelle, sol PVC, tapis sur mesure. Intervention hôtels, campings, bureaux, EHPAD.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: company.address.street,
@@ -95,7 +95,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     },
     knowsAbout: ['Moquette professionnelle', 'Sol PVC', 'LVT', 'Tapis sur mesure', 'Moquette hôtelière', 'Sol PVC cuisine professionnelle', 'Revêtement de sol ERP'],
     hasCredential: [
-      { '@type': 'EducationalOccupationalCredential', name: 'Qualification Qualibat' },
       { '@type': 'EducationalOccupationalCredential', name: 'Assurance décennale' },
     ],
   }

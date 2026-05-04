@@ -1,20 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --bg:           #FAFAF8;
-  --bg-alt:       #F4F1EC;
-  --bg-card:      #FFFFFF;
-  --bg-subtle:    #F9F7F4;
+  /* Beige palette (~15% plus chaud que la version précédente) */
+  --bg:           #F4ECD9;
+  --bg-alt:       #EBE2CC;
+  --bg-card:      #FBF6EA;
+  --bg-subtle:    #EFE7D2;
   --dark:         #1A1916;
   --dark-2:       #3D3A35;
   --muted:        #8A8680;
   --muted-light:  #B8B5B0;
-  --terra:        #C4714A;
-  --terra-dark:   #A85D38;
+
+  /* Palette verte — inspirée Goyard (deep forest green) */
+  --terra:        #2C5530; /* Goyard green */
+  --terra-dark:   #1E3D22;
+  --green-100:    #E6EFE3;
+  --green-200:    #C7DAC0;
+  --green-400:    #5A8F60;
+  --green-600:    #2C5530;
+  --green-800:    #1E3D22;
+  --green-900:    #14291A;
+
   --border:       rgba(26, 25, 22, 0.1);
   --border-mid:   rgba(26, 25, 22, 0.15);
   --border-strong:rgba(26, 25, 22, 0.25);
-  --border-hover: rgba(196, 113, 74, 0.3);
+  --border-hover: rgba(44, 85, 48, 0.32);
   --bg-inv:       #1A1916;
   --bg-glass:     rgba(255, 255, 255, 0.92);
   --btn-inv-bg:   #1A1916;
@@ -51,12 +61,21 @@
   --dark-2:       #B5B1AB;
   --muted:        #726F6B;
   --muted-light:  #4A4845;
-  --terra:        #D17D56;
-  --terra-dark:   #BB6B42;
+
+  /* Vert plus saturé/lumineux en dark mode pour rester lisible */
+  --terra:        #5BA365;
+  --terra-dark:   #3F7A45;
+  --green-100:    rgba(91, 163, 101, 0.15);
+  --green-200:    rgba(91, 163, 101, 0.30);
+  --green-400:    #5BA365;
+  --green-600:    #3F7A45;
+  --green-800:    #2C5530;
+  --green-900:    #1E3D22;
+
   --border:       rgba(255, 255, 255, 0.07);
   --border-mid:   rgba(255, 255, 255, 0.10);
   --border-strong:rgba(255, 255, 255, 0.17);
-  --border-hover: rgba(209, 125, 86, 0.35);
+  --border-hover: rgba(91, 163, 101, 0.40);
   --bg-inv:       #0D0C0B;
   --bg-glass:     rgba(15, 14, 12, 0.90);
   --btn-inv-bg:   #EDE9E2;

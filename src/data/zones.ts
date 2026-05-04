@@ -31,7 +31,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
   'la-rochelle': {
     key: 'la-rochelle',
     label: 'Agglomération de La Rochelle',
-    photo: '/images/restaurant-coutanceau-real.webp',
+    photo: '/images/restaurant-restaurant-etoile-real.webp',
     tagline: 'Intervention rapide depuis Villedoux, à 10 min du centre-ville.',
     specificsTitle: "Les contraintes du bâti rochelais",
     specificsBody:
@@ -48,7 +48,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
       author: 'Hôtellerie · La Rochelle',
     },
     projectHighlights: [
-      { title: 'Restaurant Christopher Coutanceau', sector: 'Restauration étoilée', year: '2025', img: '/images/restaurant-etoile-real.webp', desc: 'Moquette sur mesure coordonnée à la décoration.' },
+      { title: 'Restaurant gastronomique 3★', sector: 'Restauration étoilée', year: '2025', img: '/images/restaurant-etoile-real.webp', desc: 'Moquette sur mesure coordonnée à la décoration.' },
       { title: 'Restaurant Gaya', sector: 'Restauration', year: '2025', img: '/images/restaurant-gaya.webp', desc: 'Réfection complète de la salle principale.' },
       { title: 'Bureaux Charente-Maritime', sector: 'Tertiaire', year: '2024', img: '/images/moquette-bureau-real.webp', desc: 'Moquette dalles haute résistance, pose week-end.' },
     ],
@@ -191,7 +191,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
       },
       {
         q: "Travaillez-vous pour les collectivités et EHPAD ?",
-        a: "Oui. Nous sommes référencés pour répondre aux appels d'offres publics et marchés privés de collectivité. Garantie décennale, qualification Qualibat, assurances à jour.",
+        a: "Oui. Nous sommes référencés pour répondre aux appels d'offres publics et marchés privés de collectivité. Garantie décennale, assurances à jour.",
       },
     ],
     typicalEstablishments: [

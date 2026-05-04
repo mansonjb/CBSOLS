@@ -73,7 +73,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
                 gap: '0.7rem',
                 padding: '0.7rem 0.85rem',
                 borderRadius: '8px',
-                backgroundColor: active ? 'rgba(196,113,74,0.10)' : 'transparent',
+                backgroundColor: active ? 'rgba(44, 85, 48, 0.10)' : 'transparent',
                 color: active ? 'var(--terra)' : 'var(--dark-2)',
                 textDecoration: 'none',
                 fontSize: '0.85rem',

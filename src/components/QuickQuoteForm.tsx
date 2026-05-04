@@ -61,7 +61,7 @@ export function QuickQuoteForm({ onSwitchToFull }: Props) {
             width: '48px',
             height: '48px',
             borderRadius: '50%',
-            backgroundColor: 'rgba(196,113,74,0.15)',
+            backgroundColor: 'rgba(44, 85, 48, 0.15)',
             border: '1px solid var(--terra)',
             display: 'flex',
             alignItems: 'center',

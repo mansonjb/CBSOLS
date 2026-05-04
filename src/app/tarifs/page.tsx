@@ -54,8 +54,8 @@ const garanties = [
   { title: 'Déplacement et devis gratuits', desc: "Partout en Charente-Maritime, Île de Ré et Île d'Oléron. Sans condition d'engagement." },
   { title: 'Prix ferme et définitif', desc: "Le chiffre du devis est celui de la facture. Pas de supplément surprise au milieu du chantier." },
   { title: 'Détail lisible', desc: 'Fourniture, pose, préparation support, TVA : chaque poste est isolé. Vous savez exactement ce que vous payez.' },
-  { title: 'Paiement à la fin', desc: 'Acompte raisonnable (20 à 30 %), solde à la réception du chantier après validation.' },
-  { title: 'Garantie décennale et Qualibat', desc: 'Toutes nos poses sont couvertes. Attestations fournies sur demande.' },
+  { title: 'Paiement à la fin', desc: 'Acompte de 30 %, solde à la réception du chantier après validation.' },
+  { title: 'Garantie décennale', desc: 'Toutes nos poses sont couvertes. Attestations fournies sur demande.' },
 ]
 
 export default function TarifsPage() {
@@ -63,7 +63,7 @@ export default function TarifsPage() {
     <div style={{ paddingTop: '72px' }}>
       {/* Hero */}
       <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 80% 50%, rgba(196,113,74,0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 80% 50%, rgba(44, 85, 48, 0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
         <div style={{ maxWidth: '920px', margin: '0 auto', position: 'relative' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Tarifs</div>
           <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.05 }}>
@@ -152,7 +152,7 @@ export default function TarifsPage() {
 
       {/* CTA final */}
       <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 100%, rgba(196,113,74,0.1) 0%, transparent 60%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 100%, rgba(44, 85, 48, 0.1) 0%, transparent 60%)' }} />
         <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center', position: 'relative' }}>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.025em', lineHeight: 1.1 }}>
             Parlons de <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>votre projet.</em>

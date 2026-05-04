@@ -106,7 +106,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
               </h3>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
                 {client.tags.map((t) => (
-                  <span key={t} style={{ fontSize: '0.7rem', color: 'var(--terra)', padding: '0.3rem 0.7rem', backgroundColor: 'rgba(196,113,74,0.08)', borderRadius: '999px', fontWeight: 500 }}>
+                  <span key={t} style={{ fontSize: '0.7rem', color: 'var(--terra)', padding: '0.3rem 0.7rem', backgroundColor: 'rgba(44, 85, 48, 0.08)', borderRadius: '999px', fontWeight: 500 }}>
                     {t}
                   </span>
                 ))}

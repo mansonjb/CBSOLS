@@ -81,7 +81,7 @@ export default async function SolutionPage({ params }: Props) {
 
         {/* Hero */}
         <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 70% 40%, rgba(196,113,74,0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 70% 40%, rgba(44, 85, 48, 0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative' }}>
             <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
               <Link href="/" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>CB Sols</Link>
@@ -92,7 +92,7 @@ export default async function SolutionPage({ params }: Props) {
             </div>
 
             <div style={{ display: 'flex', gap: '0.625rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.3rem 0.875rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(196,113,74,0.08)', borderRadius: '999px' }}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.3rem 0.875rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(44, 85, 48, 0.08)', borderRadius: '999px' }}>
                 <span style={{ width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--terra)', display: 'inline-block' }} />
                 <span style={{ fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)' }}>{solution.serviceName}</span>
               </span>
@@ -147,7 +147,7 @@ export default async function SolutionPage({ params }: Props) {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   {solution.ourApproach.map((step, i) => (
-                    <div key={i} style={{ padding: '1.125rem 1.375rem', backgroundColor: i === 0 ? 'rgba(196,113,74,0.06)' : 'var(--bg-card)', border: `1px solid ${i === 0 ? 'rgba(196,113,74,0.2)' : 'var(--border)'}` }}>
+                    <div key={i} style={{ padding: '1.125rem 1.375rem', backgroundColor: i === 0 ? 'rgba(44, 85, 48, 0.06)' : 'var(--bg-card)', border: `1px solid ${i === 0 ? 'rgba(44, 85, 48, 0.2)' : 'var(--border)'}` }}>
                       <span style={{ fontSize: '0.85rem', color: 'var(--dark-2)', lineHeight: 1.6 }}>{step}</span>
                     </div>
                   ))}
@@ -195,7 +195,7 @@ export default async function SolutionPage({ params }: Props) {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
                 {solution.references.map((ref, i) => (
                   <div key={i} style={{ padding: '1.25rem 0', borderBottom: '1px solid var(--border)', display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}>
-                    <div style={{ width: '28px', height: '28px', borderRadius: '50%', backgroundColor: 'rgba(196,113,74,0.1)', border: '1px solid rgba(196,113,74,0.2)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px' }}>
+                    <div style={{ width: '28px', height: '28px', borderRadius: '50%', backgroundColor: 'rgba(44, 85, 48, 0.1)', border: '1px solid rgba(44, 85, 48, 0.2)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px' }}>
                       <span style={{ fontSize: '0.6rem', fontWeight: 700, color: 'var(--terra)' }}>{i + 1}</span>
                     </div>
                     <span style={{ fontSize: '0.875rem', color: 'var(--dark-2)', lineHeight: 1.6 }}>{ref}</span>
@@ -266,7 +266,7 @@ export default async function SolutionPage({ params }: Props) {
                   {solution.serviceName} {city.name}
                 </Link>
               ))}
-              <Link href="/zones" style={{ display: 'inline-block', padding: '0.5rem 1rem', fontSize: '0.78rem', color: 'var(--terra)', textDecoration: 'none', border: '1px solid rgba(196,113,74,0.3)', borderRadius: '999px' }}>
+              <Link href="/zones" style={{ display: 'inline-block', padding: '0.5rem 1rem', fontSize: '0.78rem', color: 'var(--terra)', textDecoration: 'none', border: '1px solid rgba(44, 85, 48, 0.3)', borderRadius: '999px' }}>
                 Toutes les zones →
               </Link>
             </div>

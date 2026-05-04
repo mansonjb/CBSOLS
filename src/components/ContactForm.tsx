@@ -54,7 +54,7 @@ export function ContactForm() {
             width: '48px',
             height: '48px',
             borderRadius: '50%',
-            backgroundColor: 'rgba(196,113,74,0.15)',
+            backgroundColor: 'rgba(44, 85, 48, 0.15)',
             border: '1px solid var(--terra)',
             display: 'flex',
             alignItems: 'center',
@@ -63,7 +63,7 @@ export function ContactForm() {
           }}
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M4 10l4.5 4.5L16 6" stroke="#C4714A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M4 10l4.5 4.5L16 6" stroke="#2C5530" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
         <h3
