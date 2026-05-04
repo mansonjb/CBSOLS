@@ -168,23 +168,39 @@ export function ContactForm() {
           />
         </div>
 
-        <div>
-          <label style={labelStyle}>Type de projet</label>
-          <select
-            name="project_type"
-            disabled={pending}
-            style={{ ...inputStyle, appearance: 'none', opacity: pending ? 0.6 : 1 }}
-          >
-            <option value="">Choisir…</option>
-            <option>Pose de moquette</option>
-            <option>Sol PVC (lames ou dalles)</option>
-            <option>Sol PVC en lés</option>
-            <option>Douche intégrale PVC</option>
-            <option>Tapis sur mesure</option>
-            <option>Tapis de propreté</option>
-            <option>Nettoyage de moquette</option>
-            <option>Autre / Conseil</option>
-          </select>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div>
+            <label style={labelStyle}>Type de projet</label>
+            <select
+              name="project_type"
+              disabled={pending}
+              style={{ ...inputStyle, appearance: 'none', opacity: pending ? 0.6 : 1 }}
+            >
+              <option value="">Choisir…</option>
+              <option>Pose de moquette</option>
+              <option>Sol PVC (lames ou dalles)</option>
+              <option>Sol PVC en lés</option>
+              <option>Douche intégrale PVC</option>
+              <option>Tapis sur mesure</option>
+              <option>Tapis de propreté</option>
+              <option>Nettoyage de moquette</option>
+              <option>Autre / Conseil</option>
+            </select>
+          </div>
+          <div>
+            <label style={labelStyle}>Surface approximative (m²)</label>
+            <input
+              type="number"
+              name="surface_m2"
+              min={1}
+              max={100000}
+              step={1}
+              inputMode="numeric"
+              disabled={pending}
+              placeholder="Ex. 80"
+              style={{ ...inputStyle, opacity: pending ? 0.6 : 1 }}
+            />
+          </div>
         </div>
 
         <div>

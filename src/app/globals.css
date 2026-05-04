@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  /* Beige palette — base #FAFAF8 très légèrement réchauffée (~4% de plus de beige) */
-  --bg:           #F8F5EC;
-  --bg-alt:       #F2EDDE;
-  --bg-card:      #FDFAF2;
-  --bg-subtle:    #F5F1E5;
+  /* Beige palette — fixée à 22% entre blanc neutre #FAFAF8 et beige soutenu #EFE3CC */
+  --bg:           #F8F5EE;
+  --bg-alt:       #F1EBE1;
+  --bg-card:      #FDFBF5;
+  --bg-subtle:    #F6F2EA;
   --dark:         #1A1916;
   --dark-2:       #3D3A35;
   --muted:        #8A8680;

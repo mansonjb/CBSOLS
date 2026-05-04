@@ -81,6 +81,10 @@ export async function sendContactForm(
   const email = (formData.get('email')?.toString() ?? '').trim().slice(0, MAX_LEN.email)
   const city = (formData.get('city')?.toString() ?? '').trim().slice(0, MAX_LEN.city)
   const projectType = (formData.get('project_type')?.toString() ?? '').trim().slice(0, MAX_LEN.projectType)
+  // Surface : on ne garde que les chiffres (anti format libre / pollution)
+  const surfaceRaw = (formData.get('surface_m2')?.toString() ?? '').trim().slice(0, 10)
+  const surfaceDigits = surfaceRaw.replace(/[^\d]/g, '')
+  const surface = surfaceDigits ? `${surfaceDigits} m²` : ''
   const message = (formData.get('message')?.toString() ?? '').trim().slice(0, MAX_LEN.message)
 
   // ── Validation obligatoire ────────────────────────────────
@@ -139,6 +143,7 @@ export async function sendContactForm(
   const emailE = esc(email)
   const cityE = esc(city)
   const projectTypeE = esc(projectType)
+  const surfaceE = esc(surface)
   const messageE = esc(message).replace(/\n/g, '<br>')
 
   const htmlBody = `
@@ -163,6 +168,7 @@ export async function sendContactForm(
         </tr>` : ''}
         ${city ? `<tr><td style="padding: 12px 0; border-bottom: 1px solid rgba(240,235,227,0.08); color: #8A8070; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;">Ville</td><td style="padding: 12px 0; border-bottom: 1px solid rgba(240,235,227,0.08); color: #F0EBE3;">${cityE}</td></tr>` : ''}
         ${projectType ? `<tr><td style="padding: 12px 0; border-bottom: 1px solid rgba(240,235,227,0.08); color: #8A8070; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;">Type de projet</td><td style="padding: 12px 0; border-bottom: 1px solid rgba(240,235,227,0.08); color: #F0EBE3;">${projectTypeE}</td></tr>` : ''}
+        ${surface ? `<tr><td style="padding: 12px 0; border-bottom: 1px solid rgba(240,235,227,0.08); color: #8A8070; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;">Surface estimée</td><td style="padding: 12px 0; border-bottom: 1px solid rgba(240,235,227,0.08); color: #F0EBE3; font-weight: 600;">${surfaceE}</td></tr>` : ''}
       </table>
 
       ${message ? `
@@ -201,7 +207,7 @@ export async function sendContactForm(
       from: process.env.CONTACT_FROM,
       to: process.env.CONTACT_TO,
       replyTo: email || undefined,
-      subject: sanitizeHeader(`[CB Sols] Devis | ${projectType || 'Nouveau contact'} | ${name}`),
+      subject: sanitizeHeader(`[CB Sols] Devis | ${projectType || 'Nouveau contact'}${surface ? ` · ${surface}` : ''} | ${name}`),
       html: htmlBody,
     })
 
