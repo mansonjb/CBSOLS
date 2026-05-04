@@ -59,17 +59,17 @@ export default function RealisationsPage() {
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.92) 0%, rgba(13,12,10,0.35) 55%, transparent 100%)', pointerEvents: 'none' }} />
                 <div style={{ padding: '2rem', position: 'relative', zIndex: 1 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem', gap: '0.75rem' }}>
-                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)' }}>{project.sector}</span>
-                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', color: 'var(--text-on-dark-faint)', whiteSpace: 'nowrap' }}>
+                    <span style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra-on-dark)', fontWeight: 700 }}>{project.sector}</span>
+                    <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', color: 'var(--text-on-dark-muted)', whiteSpace: 'nowrap', fontWeight: 500 }}>
                       {project.year} · {project.location}
                     </span>
                   </div>
-                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.15rem', fontWeight: 400, color: 'var(--text-on-dark)', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
+                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.2rem', fontWeight: 500, color: 'var(--text-on-dark)', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
                     {project.title}
                   </h2>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--terra)', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>{project.type}</div>
-                  <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-muted)', margin: 0, lineHeight: 1.6 }}>{project.description}</p>
-                  <div style={{ fontSize: '0.62rem', color: 'var(--terra)', marginTop: '1rem', letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 700 }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--terra-on-dark)', marginBottom: '0.75rem', letterSpacing: '0.04em', fontWeight: 600 }}>{project.type}</div>
+                  <p style={{ fontSize: '0.82rem', color: 'var(--text-on-dark)', margin: 0, lineHeight: 1.6, opacity: 0.85 }}>{project.description}</p>
+                  <div style={{ fontSize: '0.65rem', color: 'var(--terra-on-dark)', marginTop: '1rem', letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 700 }}>
                     Voir le projet →
                   </div>
                 </div>

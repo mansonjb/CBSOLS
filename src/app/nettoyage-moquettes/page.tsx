@@ -68,15 +68,15 @@ const processSteps = [
   },
   {
     num: '03',
-    title: 'Injection-extraction haute pression',
+    title: 'Injection-extraction basse pression',
     body:
-      "Notre injecteur-extracteur professionnel (40 à 80 bars selon le textile) projette une solution chaude détergente dans la moquette puis l'aspire instantanément, en sortant la saleté en suspension. Une seule passe par 1,5 m² suffit.",
+      "Notre injecteur-extracteur professionnel projette une solution détergente à pression maîtrisée (9 bars maximum) et à température contrôlée (20 °C maximum). Trop de chaleur dégrade les fibres et fixe certaines taches : la basse température maximise l'efficacité du nettoyage. La machine aspire la solution instantanément en sortant la saleté en suspension.",
   },
   {
     num: '04',
-    title: 'Rinçage à l\'eau claire',
+    title: "Rinçage à l'eau déminéralisée",
     body:
-      "Deuxième passe à l'eau claire pour éliminer les résidus de produit. Sans cette étape, la moquette se ressalit deux fois plus vite. C'est ce qui distingue un nettoyage pro d'un loueur de machine grand public.",
+      "Deuxième passe à l'eau déminéralisée pour éliminer tous les résidus de produit. L'eau déminéralisée évite les dépôts calcaires et le ternissement post-nettoyage. Sans cette étape, la moquette se ressalit deux fois plus vite — c'est ce qui distingue un nettoyage pro d'un loueur de machine grand public.",
   },
   {
     num: '05',
@@ -136,7 +136,7 @@ const faqItems = [
   },
   {
     q: "Quelle différence avec un loueur de machine grand public ?",
-    a: "Trois différences majeures : (1) la pression d'extraction (40-80 bars vs 5-15 bars chez les loueurs grand public, donc moins d'humidité résiduelle et meilleur résultat) ; (2) le rinçage à l'eau claire systématique (oublié dans 90 % des locations DIY) ; (3) les produits adaptés au type de fibre (laine, polyamide, polypropylène réagissent différemment).",
+    a: "Trois différences majeures : (1) la maîtrise des paramètres techniques — pression maximum 9 bars et température maximum 20 °C, là où les loueurs grand public chauffent l'eau et appliquent des pressions hasardeuses qui dégradent les fibres ; (2) le rinçage à l'eau déminéralisée systématique (oublié dans 90 % des locations DIY, et l'eau du robinet laisse des dépôts calcaires) ; (3) les produits adaptés au type de fibre (laine, polyamide, polypropylène réagissent différemment).",
   },
   {
     q: "Pouvez-vous intervenir sans fermer mon hôtel ou mon bureau ?",
@@ -250,9 +250,9 @@ export default function NettoyageMoquettesPage() {
           <div style={{ maxWidth: '1080px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '2rem' }}>
             {[
               { val: '×2', label: 'Durée de vie de la moquette' },
-              { val: '95%', label: "D'allergènes extraits" },
-              { val: '40–80', label: 'Bars de pression d\'extraction' },
-              { val: '2–4 h', label: 'De séchage actif' },
+              { val: '95 %', label: "D'allergènes extraits" },
+              { val: '9 bars', label: "Pression max — préserve les fibres" },
+              { val: '20 °C', label: 'Température max — efficacité optimale' },
             ].map((s) => (
               <div key={s.label} style={{ textAlign: 'center' }}>
                 <div style={{ fontFamily: 'var(--font-sans)', fontSize: '2rem', fontWeight: 800, color: 'var(--terra)', lineHeight: 1, marginBottom: '0.5rem' }}>{s.val}</div>

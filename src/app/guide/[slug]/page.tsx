@@ -6,6 +6,7 @@ import { solutions, getSolutionBySlug } from '@/data/solutions'
 import { company } from '@/data/company'
 import { faqs } from '@/data/faqs'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { GuideContent } from '@/components/GuideContent'
 import { Button } from '@/components/Button'
 
 interface Props {
@@ -113,13 +114,7 @@ export default async function GuidePage({ params }: Props) {
                   <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em' }}>
                     {section.title}
                   </h2>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    {section.body.split('\n\n').map((para, j) => (
-                      <p key={j} style={{ fontSize: '0.925rem', color: 'var(--dark-2)', lineHeight: 1.8, margin: 0 }}>
-                        {para}
-                      </p>
-                    ))}
-                  </div>
+                  <GuideContent body={section.body} />
                   {i < guide.sections.length - 1 && (
                     <div style={{ marginTop: '3rem', height: '1px', backgroundColor: 'var(--border)' }} />
                   )}

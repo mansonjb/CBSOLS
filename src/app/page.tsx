@@ -233,8 +233,8 @@ export default function Home() {
 
                 {/* Bottom info */}
                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '1.5rem 1.75rem' }}>
-                  <div style={{ fontSize: '0.6rem', color: 'var(--terra)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '0.375rem' }}>{p.surface} · {p.type}</div>
-                  <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.2rem', color: 'var(--text-on-dark)', fontWeight: 400, lineHeight: 1.2 }}>{p.title}</div>
+                  <div style={{ fontSize: '0.65rem', color: 'var(--terra-on-dark)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '0.4rem', fontWeight: 700 }}>{p.surface} · {p.type}</div>
+                  <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.25rem', color: 'var(--text-on-dark)', fontWeight: 500, lineHeight: 1.2 }}>{p.title}</div>
                 </div>
               </div>
             </Link>

@@ -299,7 +299,7 @@ export default async function CityHubPage({ params }: Props) {
                   <Image src={project.img} alt={project.title} fill style={{ objectFit: 'cover', opacity: 0.6 }} sizes="(max-width: 768px) 100vw, 33vw" />
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.92) 0%, rgba(13,12,10,0.2) 55%, transparent 100%)' }} />
                   <div style={{ padding: '1.75rem', position: 'relative', zIndex: 1 }}>
-                    <div style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.5rem' }}>{project.sector} · {project.year}</div>
+                    <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra-on-dark)', marginBottom: '0.5rem', fontWeight: 700 }}>{project.sector} · {project.year}</div>
                     <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.15rem', fontWeight: 400, color: 'var(--text-on-dark)', margin: '0 0 0.5rem' }}>{project.title}</h3>
                     <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-muted)', margin: 0, lineHeight: 1.55 }}>{project.desc}</p>
                   </div>

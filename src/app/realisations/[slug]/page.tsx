@@ -95,20 +95,21 @@ export default async function RealisationDetailPage({ params }: Props) {
                 <span style={{ color: 'var(--text-on-dark-faint)' }}>/</span>
                 <Link href="/realisations" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-on-dark-muted)', textDecoration: 'none' }}>Réalisations</Link>
                 <span style={{ color: 'var(--text-on-dark-faint)' }}>/</span>
-                <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Projet</span>
+                <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra-on-dark)', fontWeight: 700 }}>Projet</span>
               </nav>
 
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', padding: '0.35rem 0.9rem', backgroundColor: 'rgba(44,85,48,0.85)', borderRadius: '999px', backdropFilter: 'blur(4px)' }}>
-                <span style={{ fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#fff', fontWeight: 600 }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(255,255,255,0.95)', borderRadius: '999px', backdropFilter: 'blur(4px)', boxShadow: '0 2px 8px rgba(0,0,0,0.15)' }}>
+                <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: 'var(--terra)' }} />
+                <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700 }}>
                   {r.sector} · {r.year}
                 </span>
               </div>
 
-              <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4.5vw, 3.5rem)', fontWeight: 800, color: 'var(--text-on-dark)', margin: '0 0 0.75rem', letterSpacing: '-0.025em', lineHeight: 1.05, maxWidth: '900px' }}>
+              <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4.5vw, 3.5rem)', fontWeight: 800, color: 'var(--text-on-dark)', margin: '0 0 0.75rem', letterSpacing: '-0.025em', lineHeight: 1.05, maxWidth: '900px', textShadow: '0 2px 12px rgba(0,0,0,0.4)' }}>
                 {r.title}
               </h1>
 
-              <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, fontSize: 'clamp(1rem, 1.5vw, 1.25rem)', color: 'var(--terra)', margin: 0 }}>
+              <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 'clamp(1.05rem, 1.6vw, 1.3rem)', color: 'var(--terra-on-dark)', margin: 0, textShadow: '0 1px 6px rgba(0,0,0,0.3)' }}>
                 {r.type}
               </p>
             </div>
@@ -140,6 +141,32 @@ export default async function RealisationDetailPage({ params }: Props) {
                 </p>
               ))}
             </div>
+
+            {r.clientLink && (
+              <div style={{ marginTop: '2.5rem', padding: '1.5rem 1.75rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderLeft: '3px solid var(--terra)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
+                <div>
+                  <div style={{ fontSize: '0.6rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.4rem', fontWeight: 700 }}>
+                    Voir le client
+                  </div>
+                  <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--dark)' }}>
+                    {r.clientLink.label}
+                  </div>
+                </div>
+                <a
+                  href={r.clientLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+                    padding: '0.7rem 1.4rem', backgroundColor: 'var(--terra)', color: '#fff',
+                    fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase',
+                    fontWeight: 700, borderRadius: '999px', textDecoration: 'none', whiteSpace: 'nowrap',
+                  }}
+                >
+                  Visiter le site →
+                </a>
+              </div>
+            )}
           </div>
         </section>
 
@@ -187,12 +214,12 @@ export default async function RealisationDetailPage({ params }: Props) {
                     }}
                     className="project-card-link"
                   >
-                    <Image src={p.image} alt={p.title} fill style={{ objectFit: 'cover', opacity: 0.6 }} sizes="(max-width: 768px) 100vw, 33vw" />
-                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.92) 0%, rgba(13,12,10,0.2) 55%, transparent 100%)' }} />
+                    <Image src={p.image} alt={p.title} fill style={{ objectFit: 'cover', opacity: 0.55 }} sizes="(max-width: 768px) 100vw, 33vw" />
+                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.95) 0%, rgba(13,12,10,0.4) 55%, transparent 100%)' }} />
                     <div style={{ padding: '1.75rem', position: 'relative', zIndex: 1 }}>
-                      <div style={{ fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.5rem' }}>{p.sector} · {p.year}</div>
-                      <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', fontWeight: 400, color: 'var(--text-on-dark)', margin: '0 0 0.5rem' }}>{p.title}</h3>
-                      <p style={{ fontSize: '0.78rem', color: 'var(--text-on-dark-muted)', margin: 0, lineHeight: 1.55 }}>{p.description.length > 90 ? p.description.slice(0, 90) + '…' : p.description}</p>
+                      <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra-on-dark)', marginBottom: '0.5rem', fontWeight: 700 }}>{p.sector} · {p.year}</div>
+                      <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.15rem', fontWeight: 500, color: 'var(--text-on-dark)', margin: '0 0 0.5rem' }}>{p.title}</h3>
+                      <p style={{ fontSize: '0.82rem', color: 'var(--text-on-dark)', margin: 0, lineHeight: 1.55, opacity: 0.85 }}>{p.description.length > 90 ? p.description.slice(0, 90) + '…' : p.description}</p>
                     </div>
                   </Link>
                 ))}

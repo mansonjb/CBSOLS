@@ -12,8 +12,10 @@
   --muted-light:  #B8B5B0;
 
   /* Palette verte — inspirée Goyard (deep forest green) */
-  --terra:        #2C5530; /* Goyard green */
+  --terra:        #2C5530; /* Goyard green — fond clair */
   --terra-dark:   #1E3D22;
+  /* Variante lumineuse du vert pour les fonds sombres (cards projets, sections inv) */
+  --terra-on-dark:#7FB287;
   --green-100:    #E6EFE3;
   --green-200:    #C7DAC0;
   --green-400:    #5A8F60;

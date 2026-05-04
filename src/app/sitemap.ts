@@ -60,8 +60,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/guide`, lastModified: LAST.guides, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/faq`, lastModified: LAST.faqs, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/solutions`, lastModified: LAST.solutions, changeFrequency: 'monthly', priority: 0.8 },
-    // Service entretien dédié
-    { url: `${BASE_URL}/nettoyage-moquettes`, lastModified: new Date('2026-04-24'), changeFrequency: 'monthly', priority: 0.85 },
+    // Services entretien dédiés
+    { url: `${BASE_URL}/nettoyage-moquettes`, lastModified: new Date('2026-05-04'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/nettoyage-sols`, lastModified: new Date('2026-05-04'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({

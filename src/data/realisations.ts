@@ -26,6 +26,8 @@ export interface Realisation {
   surface?: string
   /** Paragraphes du contenu détaillé */
   body: string[]
+  /** Lien externe vers le site officiel du client (CTA "Visiter le site du client") */
+  clientLink?: { url: string; label: string }
 }
 
 export const realisations: Realisation[] = [
@@ -113,6 +115,10 @@ export const realisations: Realisation[] = [
       "Dès les premières esquisses, nous avons collaboré étroitement avec l'architecte d'intérieur pour sélectionner des textures raffinées et des teintes évoquant subtilement l'univers marin tout en s'intégrant à l'élégance contemporaine de la salle.",
       "Cette intervention illustre notre capacité à intervenir sur des projets gastronomiques de très haut niveau, où l'exigence du résultat ne souffre aucun compromis.",
     ],
+    clientLink: {
+      url: 'https://christophercoutanceau.com/',
+      label: 'Restaurant Christopher Coutanceau',
+    },
   },
   {
     slug: 'pose-moquettes-circulations-grande-terrasse',
