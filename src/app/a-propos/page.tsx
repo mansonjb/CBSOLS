@@ -57,7 +57,7 @@ export default function AProposPage() {
     { value: '25+', label: "ans d'expérience", sub: 'depuis 1999' },
     { value: '500+', label: 'chantiers réalisés', sub: 'particuliers & pros' },
     { value: '47', label: 'communes couvertes', sub: 'Charente-Maritime' },
-    { value: '4.9/5', label: 'satisfaction client', sub: '47 avis vérifiés' },
+    { value: '4.9/5', label: 'satisfaction client', sub: '41 avis vérifiés' },
   ]
 
   return (
@@ -119,15 +119,17 @@ export default function AProposPage() {
               </div>
 
               <div>
-                <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Parcours & milestones</div>
+                <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Parcours</div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
                   {[
-                    { year: '1999', label: 'Création de CB Sols', desc: "Lancement de l'activité revêtement de sol à Villedoux, premier chantier hôtelier sur l'Île de Ré dès l'année suivante." },
-                    { year: '2005', label: 'Ouverture du showroom', desc: 'Un espace dédié sur rendez-vous avec plus de 500 échantillons EGE, Gerflor, Bostik et objectflor.' },
-                    { year: '2010', label: 'Développement B2B', desc: "Premiers contrats cadres avec des groupes hôteliers et des collectivités sur l'Île de Ré et l'agglo rochelaise." },
-                    { year: '2018', label: 'Reconnaissance professionnelle', desc: "Adhésion aux fédérations professionnelles, intégration des normes les plus exigeantes pour les marchés ERP et hôteliers." },
-                    { year: '2020', label: 'Partenariats officiels', desc: "Agréments officiels EGE, Gerflor, Bostik et objectflor : accès aux gammes contract et aux SAV fabricants." },
-                    { year: "Aujourd'hui", label: '500+ chantiers', desc: 'La Rochelle, Île de Ré, Île d\'Oléron, Rochefort, Saintes et toute la Charente-Maritime.' },
+                    { year: '1999', label: "Création de l'entreprise", desc: "Lancement de CB Sols à Villedoux, premiers chantiers de revêtement de sol en Charente-Maritime." },
+                    { year: '2003', label: 'Développement B2B', desc: "Premiers contrats avec des hôteliers et professionnels de l'Île de Ré et de l'agglo rochelaise." },
+                    { year: '2008', label: "Arrivée de Valentin Prévoteau", desc: "Valentin intègre la structure en tant qu'apprenti et apprend le métier directement sur les chantiers." },
+                    { year: '2012', label: 'Partenariats officiels', desc: "Agréments avec des marques de référence comme objectflor, EGE et Gerflor : accès aux gammes contract et au SAV fabricants." },
+                    { year: '2013', label: 'Nouveau dépôt à Villedoux', desc: "Création d'un nouveau dépôt à Villedoux pour stocker matériaux, échantillons et outillage de pose." },
+                    { year: '2023', label: "Reprise par Valentin Prévoteau", desc: "Après quinze ans dans l'entreprise, Valentin reprend la gérance de CB Sols et en devient le dirigeant." },
+                    { year: '2024', label: 'Showroom unique en France', desc: "Création d'un showroom unique en France à Villedoux : plus de 500 échantillons consultables sur rendez-vous." },
+                    { year: "Aujourd'hui", label: '500+ chantiers', desc: "La Rochelle, Île de Ré, Île d'Oléron, Rochefort, Saintes et toute la Charente-Maritime." },
                   ].map((item, i, arr) => (
                     <div key={item.year} style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '1.25rem', padding: '1.5rem 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none' }}>
                       <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.82rem', color: 'var(--terra)', fontWeight: 700, paddingTop: '0.1rem' }}>{item.year}</div>
@@ -194,47 +196,89 @@ export default function AProposPage() {
                     </svg>
                   ))}
                 </span>
-                <span style={{ fontSize: '0.72rem', color: 'var(--muted)', letterSpacing: '0.02em' }}>· 47 avis</span>
+                <span style={{ fontSize: '0.72rem', color: 'var(--muted)', letterSpacing: '0.02em' }}>· 41 avis</span>
               </a>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
               {[
                 {
-                  name: "Véronique A.",
-                  context: "Hôtel La Baronnie · Saint-Martin-de-Ré",
-                  date: "il y a 2 mois",
-                  text: "CB Sols a créé des tapis sur mesure avec un motif exclusif pour nos chambres. Ponctualité, qualité d'exécution irréprochable, écoute parfaite. Nous les avons rappelés pour la deuxième phase de notre rénovation.",
-                },
-                {
-                  name: "Pierre L.",
-                  context: "Bistro de la Grande Terrasse · Châtelaillon",
-                  date: "il y a 3 mois",
-                  text: "Rénovation complète de la moquette de notre salle de restaurant. L'équipe est intervenue sans interrompre le service. Résultat impeccable, confort acoustique nettement amélioré, conseil très pro pour le choix du modèle.",
-                },
-                {
-                  name: "Éric D.",
-                  context: "Golf de la Prée · Marsilly",
+                  name: "Audrey Chaigneau",
+                  context: "Visité en octobre 2025",
                   date: "il y a 6 mois",
-                  text: "Refonte complète du clubhouse et des vestiaires. Pose réalisée le week-end sans une heure d'interruption. L'équipe connaît parfaitement les contraintes d'un établissement recevant du public. Travail très soigné.",
+                  text: "Nous sommes absolument ravis d'avoir fait appel à l'entreprise CB Sols. Le travail réalisé est d'une qualité remarquable, avec une attention portée aux moindres détails. Valentin a su nous convaincre d'ajouter de la moquette : le résultat est non seulement esthétique, mais aussi très confortable au quotidien. Il est rare aujourd'hui de trouver une équipe de professionnels aussi consciencieux, et nous sommes heureux d'avoir fait le bon choix en leur accordant notre confiance. Je recommande les yeux fermés !",
                 },
                 {
-                  name: "Sophie M.",
-                  context: "Particulière · La Rochelle",
-                  date: "il y a 4 mois",
-                  text: "Ce qui m'a convaincue : les vrais échantillons en showroom, pas des visuels sur écran. On repart avec la moquette dans les mains, on la voit chez soi à la lumière du jour. La pose a suivi une semaine après, parfaite.",
+                  name: "David Labarrere",
+                  context: "Visité en septembre 2025",
+                  date: "il y a 7 mois",
+                  text: "Je recommande vivement CB Sols et son gérant Valentin ! Ils ont été incroyablement professionnels, toujours à l'écoute et de très bons conseils. Nous avions simplement besoin d'un parquet, mais Valentin a su nous convaincre d'ajouter de la moquette pour un résultat encore plus harmonieux et pratique. Son expertise et sa persuasivité ont été très appréciables. Le tout a été réalisé dans les délais prévus, sans aucune souci. Produits de très bonne qualité, service impeccable, rien à dire. Un grand merci à Valentin et à toute l'équipe de CB Sol !",
                 },
                 {
-                  name: "Anne B.",
-                  context: "Architecte d'intérieur · Île de Ré",
+                  name: "Alexiane Coulondre",
+                  context: "Visité en juillet 2024",
+                  date: "il y a un an",
+                  text: "Nous avons choisi CB SOLS pour effectuer les changements de nos sols de salon, salle à manger et cuisine. Le résultat est incroyable nous sommes ravis, notre maison a un nouveau look. Valentin a répondu à nos attentes et nous a guidé tout au long du projet. Nous avons eu affaire à une équipe très pro, à l'écoute et arrangeante. Merci pour votre travail ! Vous pouvez foncer les yeux fermés !",
+                },
+                {
+                  name: "Charlene Cottarelli",
+                  context: "Visité en mars 2025",
+                  date: "il y a 2 mois",
+                  text: "Très satisfait de mon tapis sur mesure pour mon entrée ! Qualité impeccable, belles finissions et excellent accompagnement du début à la fin. Je recommande vivement CB SOLS pour leur professionnalisme et leur sérieux.",
+                },
+                {
+                  name: "Nicolas Andrieux",
+                  context: "Visité en novembre 2025",
                   date: "il y a 5 mois",
-                  text: "Travail de qualité et respect du cahier des charges au millimètre. CB Sols s'intègre naturellement dans nos équipes de chantier, c'est précieux pour un projet haut de gamme. Recommandé sans réserve aux confrères.",
+                  text: "Très satisfait, comme d'habitude ! Valentin et son équipe font un travail soigné et de qualité. À recommander sans hésitation ! Merci",
                 },
                 {
-                  name: "Christophe D.",
-                  context: "Restaurant · La Rochelle",
-                  date: "il y a 1 mois",
-                  text: "Sol PVC en lés posé dans la cuisine pro avec soudures à chaud. Travail très méticuleux sur les remontées en plinthes et autour des siphons. Résultat conforme aux normes HACCP, contrôle d'hygiène passé sans réserve.",
+                  name: "Cedrick Poucineau",
+                  context: "Local Guide · Visité en décembre 2025",
+                  date: "il y a 3 mois",
+                  text: "Nous travaillons avec CB Sols depuis plusieurs années pour nos hotels sur la Rochelle. Une équipe réactive, attentive à nos attentes, soucieuse du travail bien fait.",
+                },
+                {
+                  name: "Catherine Dourdet",
+                  context: "Visité en juillet 2025",
+                  date: "il y a 9 mois",
+                  text: "La société CB sols est formidable Valentin le patron et son équipe font un travail remarquable et très professionnel avec des choix de moquettes à l'infini et personnalisé je recommande vivement pour vos prochains travaux merci à Valentin pour son suivi et son expérience et son exigences à faire un travail merveilleux",
+                },
+                {
+                  name: "Victor Sellier",
+                  context: "Local Guide · Visité en octobre 2025",
+                  date: "il y a 6 mois",
+                  text: "Super expérience avec CB SOLS. Une rénovation complète des sols de toute ma maison, du conseil à la pause c'était parfait !",
+                },
+                {
+                  name: "béatrice laurens",
+                  context: "Local Guide · Visité en février 2025",
+                  date: "il y a un an",
+                  text: "Nous sommes très satisfaits du travail réalisé par l'entreprise CB SOLS. Mr Prévoteau a été ponctuel, de bon conseil et le travail réalisé est de grande qualité. Nous recommandons vivement cette entreprise.",
+                },
+                {
+                  name: "Gouzien Florian",
+                  context: "Visité en août 2024",
+                  date: "il y a un an",
+                  text: "Très pro, à l'écoute de nos attentes et force de proposition, Valentin a su nous orienter vers le bon choix ! Nous sommes ravi du résultat, et la réalisation du chantier s'est très bien déroulée. Je conseille sans hésiter",
+                },
+                {
+                  name: "Atlantic Bureau",
+                  context: "Visité en septembre 2024",
+                  date: "il y a un an",
+                  text: "Superbe expérience avec Valentin de CB Sols ! J'ai fait appel à lui pour les revêtement de sol d'une nouvelle salle. Il n'y eu que des Waow ! Que se soit pour le conseil, pour l'accompagnement, la pose ou la post-installation, CB Sols a été un atout majeur pour mon projet. Encore bravo",
+                },
+                {
+                  name: "fabien chaigne",
+                  context: "Visité en avril 2024",
+                  date: "il y a 2 ans",
+                  text: "Merci Valentin pour le nettoyage de ce tapis. Ça faisait 4 ans que ce tapis n'avait pas été nettoyé. Voici en photo le résultat à mi-chemin du nettoyage du tapis. Vraiment satisfaisant",
+                },
+                {
+                  name: "Valérie Sorignet",
+                  context: "Visité en novembre 2023",
+                  date: "il y a 2 ans",
+                  text: "Nous remercions Valentin pour ce magnifique travail ! Nous sommes agréablement surpris de la qualité du produit qui donne un rendu très réaliste ! Le terrazzo et le bois s'associe à merveille dans la rénovation de cette ancienne demeure ! Le délai respecté et une fin de chantier propre !",
                 },
               ].map((review, i) => (
                 <article key={i} style={{ padding: '1.75rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '10px', display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
@@ -276,7 +320,7 @@ export default function AProposPage() {
                   textDecoration: 'none', fontWeight: 700, borderRadius: '999px',
                 }}
               >
-                Lire les 47 avis sur Google →
+                Lire les 41 avis sur Google →
               </a>
             </div>
           </div>
