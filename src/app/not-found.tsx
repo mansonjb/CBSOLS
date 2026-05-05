@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Page introuvable | CB Sols',
+  title: 'Page introuvable',
   robots: { index: false, follow: false },
 }
 

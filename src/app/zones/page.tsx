@@ -6,7 +6,8 @@ import { services } from '@/data/services'
 export const metadata: Metadata = {
   title: 'Zones d\'Intervention | CB Sols, Toute la Charente-Maritime',
   description:
-    'CB Sols intervient dans 31 communes de Charente-Maritime : La Rochelle, Île de Ré, Rochefort, Saintes, Royan et environs. Revêtement de sol, moquette, PVC.',
+    'CB Sols intervient dans 49 communes de Charente-Maritime : La Rochelle, Île de Ré, Rochefort, Saintes, Royan et environs. Revêtement de sol, moquette, PVC.',
+  alternates: { canonical: 'https://cbsols.fr/zones' },
 }
 
 const zones = ['la-rochelle', 'ile-de-re', 'ile-doleron', 'charente-maritime'] as const

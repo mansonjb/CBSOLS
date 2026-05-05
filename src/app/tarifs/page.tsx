@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Tarifs | Pourquoi Nous Ne Publions Pas de Grille de Prix | CB Sols',
+  title: 'Tarifs | Pourquoi Nous Ne Publions Pas de Grille de Prix',
   description:
     "Chez CB Sols chaque projet est sur mesure : surface, matériau, support, accessibilité, contraintes locales. Plutôt qu'une grille trompeuse, nous faisons un vrai devis gratuit sous 48 h.",
   alternates: { canonical: 'https://cbsols.fr/tarifs' },

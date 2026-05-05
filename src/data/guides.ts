@@ -35,7 +35,7 @@ export const guides: Guide[] = [
       },
       {
         title: 'Les marques de référence',
-        body: "CB Sols distribue les meilleures marques du marché contrat. EGE est la marque danoise de référence pour l'hôtellerie et les bureaux : gamme Hospitality, design scandinave, certifications environnementales. objectflor (groupe objectflor) propose une gamme complète du bureau à l'hôtellerie avec un excellent rapport qualité/prix.\n\nEGEe et Desso excellent dans les dalles de moquette pour bureaux avec des programmes de reprise en fin de vie. Pour les collectivités, Gerflor et Balta sont incontournables grâce à leurs certifications sanitaires.\n\nCB Sols dispose d'un showroom à Villedoux avec plusieurs centaines d'échantillons. Une visite vaut mieux que toutes les descriptions en ligne.",
+        body: "CB Sols distribue cinq marques sélectionnées avec soin pour le marché contrat. EGE est la marque danoise de référence pour l'hôtellerie et les bureaux : gamme Hospitality, design scandinave, certifications environnementales. objectflor propose une gamme complète du bureau à l'hôtellerie avec un excellent rapport qualité/prix, et excelle dans les dalles de moquette avec des programmes de reprise en fin de vie.\n\nPour les collectivités et les sols PVC, Gerflor est incontournable grâce à ses certifications sanitaires et sa résistance au trafic intensif. Bostik fournit les colles et préparations de support, Romus les profilés et finitions.\n\nCB Sols dispose d'un showroom à Villedoux avec plus de 500 échantillons. Une visite vaut mieux que toutes les descriptions en ligne.",
       },
     ],
     faq: [

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Réalisations | Projets Moquette, Sol PVC & Tapis CB Sols',
   description:
     "Découvrez les réalisations de CB Sols : pose de moquette en hôtel, sol PVC en bureaux, tapis sur mesure en restaurant. Artisan revêtement de sol en Charente-Maritime.",
+  alternates: { canonical: 'https://cbsols.fr/realisations' },
 }
 
 export default function RealisationsPage() {

@@ -6,7 +6,8 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Showroom Revêtement Sol La Rochelle | CB Sols, Sur Rendez-vous',
   description:
-    'Visitez le showroom CB Sols à Villedoux (10 min de La Rochelle). Catalogues complets EGE, Gerflor, objectflor. Échantillons physiques disponibles sur commande. Sur rendez-vous.',
+    'Visitez le showroom CB Sols à Villedoux (10 min de La Rochelle) : plus de 500 échantillons EGE, Gerflor, objectflor, Bostik, Romus consultables sur place. Sur rendez-vous.',
+  alternates: { canonical: 'https://cbsols.fr/showroom' },
 }
 
 export default function ShowroomPage() {
@@ -34,8 +35,8 @@ export default function ShowroomPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem' }}>
             {[
               { num: '01', title: 'Échange initial', desc: 'Nous discutons de votre espace, de son usage, du trafic, de la lumière. Chaque contrainte oriente le choix du matériau.' },
-              { num: '02', title: 'Sélection des échantillons', desc: 'Nous identifions 5 à 10 références adaptées dans la matière, la couleur, la finition. Les échantillons physiques sont disponibles sur commande auprès des fabricants.' },
-              { num: '03', title: 'Échantillons sur commande', desc: 'Nous commandons les échantillons sélectionnés directement chez les fabricants partenaires. Réception sous 5 à 10 jours selon les marques, à emporter pour valider chez vous.' },
+              { num: '02', title: 'Sélection des échantillons', desc: 'Nous identifions 5 à 10 références adaptées dans nos 500+ échantillons disponibles sur place : matière, couleur, finition.' },
+              { num: '03', title: 'Échantillons à emporter', desc: 'Vous repartez avec les échantillons retenus pour les voir chez vous, à la lumière de votre espace. Pour les références spécifiques non disponibles sur place, commande auprès des fabricants sous 5 à 10 jours.' },
               { num: '04', title: 'Visite technique &amp; devis sous 48 à 72 h', desc: 'La visite technique sur site est obligatoire avant tout chiffrage : nous vérifions la planéité, l\'humidité résiduelle et l\'état du support. Vous recevez ensuite un devis détaillé : fourniture, pose, préparation, délais.' },
             ].map((step) => (
               <div key={step.num} style={{ borderTop: '2px solid var(--terra)', paddingTop: '1.5rem' }}>
@@ -55,9 +56,9 @@ export default function ShowroomPage() {
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Ce que vous trouverez</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 {[
-                  { label: 'Catalogues complets en showroom', desc: 'Toutes les gammes EGE, Gerflor, objectflor, Bostik et Romus consultables sur place' },
+                  { label: 'Plus de 500 échantillons sur place', desc: 'Toutes les gammes EGE, Gerflor, objectflor, Bostik et Romus consultables et manipulables au showroom' },
                   { label: 'Conseil personnalisé', desc: 'Valentin Prévoteau ou un membre de son équipe vous accompagne dans votre choix' },
-                  { label: 'Échantillons sur commande', desc: 'Les échantillons physiques de vos références sélectionnées sont commandés chez les fabricants, réception sous 5 à 10 jours, à emporter ou expédiés' },
+                  { label: 'Échantillons à emporter', desc: 'Vous repartez avec les échantillons sélectionnés. Pour les références spécifiques non disponibles, commande chez le fabricant sous 5 à 10 jours' },
                   { label: 'Visualisation in situ', desc: 'Nous vous aidons à projeter le rendu final dans votre espace avec des outils de visualisation' },
                   { label: 'Visite technique obligatoire', desc: 'Nous nous déplaçons systématiquement sur le site avant chiffrage pour évaluer le support et garantir un devis sans surprise' },
                   { label: 'Devis sous 48 à 72 h', desc: 'Après la visite technique, devis détaillé envoyé par mail : fourniture, pose, préparation du support, délais' },

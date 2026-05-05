@@ -51,7 +51,7 @@ const garanties = [
 const processSteps = [
   { num: '01', title: 'Contact & rendez-vous', desc: 'Appelez-nous ou remplissez le formulaire. Réponse sous 24h, RDV planifié.' },
   { num: '02', title: 'Visite & devis', desc: 'Déplacement gratuit partout en Charente-Maritime. Mesures précises et devis sous 48h.' },
-  { num: '03', title: 'Choix des matériaux', desc: 'Catalogues complets en showroom : EGE, Gerflor, objectflor. Échantillons disponibles sur commande chez les fabricants.' },
+  { num: '03', title: 'Choix des matériaux', desc: 'Showroom Villedoux avec plus de 500 échantillons EGE, Gerflor, objectflor, Bostik et Romus. Échantillons à emporter pour valider chez vous.' },
   { num: '04', title: 'Pose & réception', desc: 'Artisans CB Sols uniquement, aucune sous-traitance. Garantie décennale.' },
 ]
 
@@ -448,7 +448,7 @@ export default function Home() {
                 Nous intervenons<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>partout.</em>
               </h2>
             </div>
-            <Button href="/zones" variant="outline" size="md">47 communes →</Button>
+            <Button href="/zones" variant="outline" size="md">49 communes →</Button>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
             {[

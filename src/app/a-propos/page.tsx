@@ -56,7 +56,7 @@ export default function AProposPage() {
   const stats = [
     { value: '25+', label: "ans d'expérience", sub: 'depuis 1999' },
     { value: '500+', label: 'chantiers réalisés', sub: 'particuliers & pros' },
-    { value: '47', label: 'communes couvertes', sub: 'Charente-Maritime' },
+    { value: '49', label: 'communes couvertes', sub: 'Charente-Maritime' },
     { value: '4.9/5', label: 'satisfaction client', sub: '41 avis vérifiés' },
   ]
 

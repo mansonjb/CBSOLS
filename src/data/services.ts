@@ -123,7 +123,7 @@ export const services: Service[] = [
       'Entretien professionnel disponible',
     ],
     useCases: ['Entrées d\'hôtels', 'Commerces', 'Bureaux & entreprises', 'Collectivités', 'Résidences'],
-    brands: ['Romus', 'Coba'],
+    brands: ['Romus'],
     geoVerb: 'Tapis de propreté à',
     metaTitle: (city) => `Tapis de Propreté ${city} | CB Sols, Sur Mesure`,
     metaDescription: (city) =>
@@ -146,7 +146,7 @@ export const services: Service[] = [
       'Traitement anti-tache possible',
     ],
     useCases: ['Hôtels entre saisons', 'Bureaux', 'Salles de conférence', 'Résidences', 'Campings premium'],
-    brands: ['Prochem', 'Karcher', 'Chemspec'],
+    brands: [],
     geoVerb: 'Nettoyage de moquette à',
     metaTitle: (city) => `Nettoyage de Moquette ${city} | CB Sols, Injection-Extraction`,
     metaDescription: (city) =>

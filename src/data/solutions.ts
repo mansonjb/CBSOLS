@@ -444,7 +444,7 @@ export const solutions: Solution[] = [
       "Garantie de pose et certificats de conformité incendie fournis",
     ],
     keyProducts: [
-      { name: 'Coral Classic (Milliken)', desc: "Tapis de propreté haute performance, retient jusqu'à 95% des salissures, nombreuses dimensions et coloris" },
+      { name: 'Tapis de propreté sur mesure', desc: "Tapis de propreté haute performance, retient jusqu'à 95% des salissures, nombreuses dimensions et coloris, logo intégrable" },
       { name: 'EGE Entrance Collection', desc: "Tapis d'entrée haut de gamme, certifié Bfl-s1, pour les copropriétés et immeubles de standing" },
       { name: 'EGE Reform Couloir', desc: "Moquette de couloir spécialement conçue pour les parties communes, résistance aux chariots et roulettes" },
     ],
