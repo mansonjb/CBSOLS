@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { company } from '@/data/company'
 import { Button } from '@/components/Button'
+import { AvisSlider } from '@/components/AvisSlider'
+import { avis } from '@/data/avis'
 
 export const metadata: Metadata = {
   title: 'À Propos | Valentin Prévoteau, Gérant CB Sols | Artisan poseur',
@@ -200,113 +202,7 @@ export default function AProposPage() {
               </a>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
-              {[
-                {
-                  name: "Audrey Chaigneau",
-                  context: "Visité en octobre 2025",
-                  date: "il y a 6 mois",
-                  text: "Nous sommes absolument ravis d'avoir fait appel à l'entreprise CB Sols. Le travail réalisé est d'une qualité remarquable, avec une attention portée aux moindres détails. Valentin a su nous convaincre d'ajouter de la moquette : le résultat est non seulement esthétique, mais aussi très confortable au quotidien. Il est rare aujourd'hui de trouver une équipe de professionnels aussi consciencieux, et nous sommes heureux d'avoir fait le bon choix en leur accordant notre confiance. Je recommande les yeux fermés !",
-                },
-                {
-                  name: "David Labarrere",
-                  context: "Visité en septembre 2025",
-                  date: "il y a 7 mois",
-                  text: "Je recommande vivement CB Sols et son gérant Valentin ! Ils ont été incroyablement professionnels, toujours à l'écoute et de très bons conseils. Nous avions simplement besoin d'un parquet, mais Valentin a su nous convaincre d'ajouter de la moquette pour un résultat encore plus harmonieux et pratique. Son expertise et sa persuasivité ont été très appréciables. Le tout a été réalisé dans les délais prévus, sans aucune souci. Produits de très bonne qualité, service impeccable, rien à dire. Un grand merci à Valentin et à toute l'équipe de CB Sol !",
-                },
-                {
-                  name: "Alexiane Coulondre",
-                  context: "Visité en juillet 2024",
-                  date: "il y a un an",
-                  text: "Nous avons choisi CB SOLS pour effectuer les changements de nos sols de salon, salle à manger et cuisine. Le résultat est incroyable nous sommes ravis, notre maison a un nouveau look. Valentin a répondu à nos attentes et nous a guidé tout au long du projet. Nous avons eu affaire à une équipe très pro, à l'écoute et arrangeante. Merci pour votre travail ! Vous pouvez foncer les yeux fermés !",
-                },
-                {
-                  name: "Charlene Cottarelli",
-                  context: "Visité en mars 2025",
-                  date: "il y a 2 mois",
-                  text: "Très satisfait de mon tapis sur mesure pour mon entrée ! Qualité impeccable, belles finissions et excellent accompagnement du début à la fin. Je recommande vivement CB SOLS pour leur professionnalisme et leur sérieux.",
-                },
-                {
-                  name: "Nicolas Andrieux",
-                  context: "Visité en novembre 2025",
-                  date: "il y a 5 mois",
-                  text: "Très satisfait, comme d'habitude ! Valentin et son équipe font un travail soigné et de qualité. À recommander sans hésitation ! Merci",
-                },
-                {
-                  name: "Cedrick Poucineau",
-                  context: "Local Guide · Visité en décembre 2025",
-                  date: "il y a 3 mois",
-                  text: "Nous travaillons avec CB Sols depuis plusieurs années pour nos hotels sur la Rochelle. Une équipe réactive, attentive à nos attentes, soucieuse du travail bien fait.",
-                },
-                {
-                  name: "Catherine Dourdet",
-                  context: "Visité en juillet 2025",
-                  date: "il y a 9 mois",
-                  text: "La société CB sols est formidable Valentin le patron et son équipe font un travail remarquable et très professionnel avec des choix de moquettes à l'infini et personnalisé je recommande vivement pour vos prochains travaux merci à Valentin pour son suivi et son expérience et son exigences à faire un travail merveilleux",
-                },
-                {
-                  name: "Victor Sellier",
-                  context: "Local Guide · Visité en octobre 2025",
-                  date: "il y a 6 mois",
-                  text: "Super expérience avec CB SOLS. Une rénovation complète des sols de toute ma maison, du conseil à la pause c'était parfait !",
-                },
-                {
-                  name: "béatrice laurens",
-                  context: "Local Guide · Visité en février 2025",
-                  date: "il y a un an",
-                  text: "Nous sommes très satisfaits du travail réalisé par l'entreprise CB SOLS. Mr Prévoteau a été ponctuel, de bon conseil et le travail réalisé est de grande qualité. Nous recommandons vivement cette entreprise.",
-                },
-                {
-                  name: "Gouzien Florian",
-                  context: "Visité en août 2024",
-                  date: "il y a un an",
-                  text: "Très pro, à l'écoute de nos attentes et force de proposition, Valentin a su nous orienter vers le bon choix ! Nous sommes ravi du résultat, et la réalisation du chantier s'est très bien déroulée. Je conseille sans hésiter",
-                },
-                {
-                  name: "Atlantic Bureau",
-                  context: "Visité en septembre 2024",
-                  date: "il y a un an",
-                  text: "Superbe expérience avec Valentin de CB Sols ! J'ai fait appel à lui pour les revêtement de sol d'une nouvelle salle. Il n'y eu que des Waow ! Que se soit pour le conseil, pour l'accompagnement, la pose ou la post-installation, CB Sols a été un atout majeur pour mon projet. Encore bravo",
-                },
-                {
-                  name: "fabien chaigne",
-                  context: "Visité en avril 2024",
-                  date: "il y a 2 ans",
-                  text: "Merci Valentin pour le nettoyage de ce tapis. Ça faisait 4 ans que ce tapis n'avait pas été nettoyé. Voici en photo le résultat à mi-chemin du nettoyage du tapis. Vraiment satisfaisant",
-                },
-                {
-                  name: "Valérie Sorignet",
-                  context: "Visité en novembre 2023",
-                  date: "il y a 2 ans",
-                  text: "Nous remercions Valentin pour ce magnifique travail ! Nous sommes agréablement surpris de la qualité du produit qui donne un rendu très réaliste ! Le terrazzo et le bois s'associe à merveille dans la rénovation de cette ancienne demeure ! Le délai respecté et une fin de chantier propre !",
-                },
-              ].map((review, i) => (
-                <article key={i} style={{ padding: '1.75rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '10px', display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.75rem' }}>
-                    <div>
-                      <div style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.2rem' }}>{review.name}</div>
-                      <div style={{ fontSize: '0.72rem', color: 'var(--muted)', lineHeight: 1.4 }}>{review.context}</div>
-                    </div>
-                    <div style={{ display: 'inline-flex', gap: 1, flexShrink: 0 }}>
-                      {Array.from({ length: 5 }).map((_, j) => (
-                        <svg key={j} width="11" height="11" viewBox="0 0 24 24" fill="#FBBC04" stroke="none">
-                          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
-                        </svg>
-                      ))}
-                    </div>
-                  </div>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--dark-2)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
-                    « {review.text} »
-                  </p>
-                  <div style={{ fontSize: '0.7rem', color: 'var(--muted)', display: 'flex', alignItems: 'center', gap: '0.4rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
-                      <path d="M21.35 11.1H12v3.18h5.59c-.26 1.5-1.5 4.4-5.59 4.4-3.36 0-6.1-2.78-6.1-6.2s2.74-6.2 6.1-6.2c1.91 0 3.2.81 3.93 1.5l2.68-2.59C16.9 3.65 14.66 2.7 12 2.7 6.92 2.7 2.8 6.82 2.8 11.9s4.12 9.2 9.2 9.2c5.31 0 8.83-3.73 8.83-9 0-.6-.07-1.05-.18-1.5z" fill="#4285F4"/>
-                    </svg>
-                    Avis Google · {review.date}
-                  </div>
-                </article>
-              ))}
-            </div>
+            <AvisSlider reviews={avis} />
 
             <div style={{ marginTop: '2.5rem', textAlign: 'center' }}>
               <a
