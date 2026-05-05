@@ -86,7 +86,7 @@ export default async function GeoPage({ params }: Props) {
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '4.9',
-        reviewCount: '47',
+        reviewCount: '41',
         bestRating: '5',
       },
     },

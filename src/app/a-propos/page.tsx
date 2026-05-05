@@ -4,9 +4,9 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'À Propos | Valentin Prévoteau, Artisan Poseur CB Sols depuis 1999',
+  title: 'À Propos | Valentin Prévoteau, Gérant CB Sols | Artisan poseur',
   description:
-    "Rencontrez Valentin Prévoteau, gérant et artisan poseur de CB Sols depuis 1999. Assurance décennale, 500+ chantiers en Charente-Maritime. L'homme derrière chaque chantier.",
+    "Rencontrez Valentin Prévoteau, gérant de CB Sols (entreprise fondée en 1999). Entré comme apprenti en 2008, repreneur en 2023. Assurance décennale, 500+ chantiers en Charente-Maritime.",
   alternates: { canonical: 'https://cbsols.fr/a-propos' },
 }
 
@@ -15,7 +15,7 @@ const personSchema = {
   '@type': 'Person',
   name: 'Valentin Prévoteau',
   jobTitle: 'Artisan poseur de revêtements de sol',
-  description: "Gérant de CB Sols depuis 1999, Valentin Prévoteau est spécialisé dans la pose de moquette professionnelle, sol PVC et tapis sur mesure en Charente-Maritime.",
+  description: "Gérant de CB Sols depuis 2023 (entreprise fondée en 1999), Valentin Prévoteau est spécialisé dans la pose de moquette professionnelle, sol PVC et tapis sur mesure en Charente-Maritime.",
   worksFor: {
     '@type': 'LocalBusiness',
     name: company.legalName,
@@ -108,7 +108,7 @@ export default function AProposPage() {
                   </p>
                 </blockquote>
                 <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
-                  Gérant de CB Sols depuis sa création en 1999, Valentin a d'abord appris le métier sur le terrain comme poseur avant de reprendre et développer l'entreprise en Charente-Maritime. Formé aux techniques de pose sur subjectile béton, carrelage et parquet existant, il maîtrise aussi bien la moquette contract des grands hôtels que le sol PVC cuisine des collectivités ou les tapis sur mesure des espaces de réception.
+                  Entré chez CB Sols en 2008 comme apprenti, Valentin a appris le métier sur le terrain, chantier après chantier, avant de reprendre la gérance de l'entreprise en 2023. Formé aux techniques de pose sur subjectile béton, carrelage et parquet existant, il maîtrise aussi bien la moquette contract des grands hôtels que le sol PVC cuisine des collectivités ou les tapis sur mesure des espaces de réception.
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
                   Ce qui distingue CB Sols, c'est cette présence personnelle : quand vous appelez le <a href={`tel:${company.phoneClean}`} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>{company.phone}</a>, c'est Valentin qui décroche. Quand un chantier démarre, c'est lui qui est là. Pas d'intermédiaire, pas de sous-traitant anonyme.

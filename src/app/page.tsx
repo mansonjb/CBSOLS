@@ -366,10 +366,10 @@ export default function Home() {
             <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>L'artisan derrière chaque chantier</p>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: 'var(--text-on-dark)', letterSpacing: '-0.03em', lineHeight: 1.05, margin: '0 0 1.5rem' }}>
               Valentin Prévoteau<br />
-              <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>depuis 1999.</em>
+              <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>gérant CB Sols.</em>
             </h2>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', lineHeight: 1.8, maxWidth: '480px', marginBottom: '2rem' }}>
-              Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. 25 ans de métier, des centaines de chantiers en Charente-Maritime.
+              Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. Entré dans l'entreprise en 2008, repreneur en 2023, des centaines de chantiers en Charente-Maritime.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem' }}>
               {['Décennale', 'Assurance pro', 'Partenaire EGE', 'Partenaire Gerflor'].map(c => (

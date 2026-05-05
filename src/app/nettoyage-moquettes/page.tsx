@@ -191,7 +191,7 @@ const serviceLd = {
       addressCountry: 'FR',
     },
     geo: { '@type': 'GeoCoordinates', latitude: company.geo.lat, longitude: company.geo.lng },
-    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '47', bestRating: '5' },
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '41', bestRating: '5' },
   },
 }
 

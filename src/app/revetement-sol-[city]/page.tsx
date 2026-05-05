@@ -73,7 +73,7 @@ export default async function CityHubPage({ params }: Props) {
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '4.9',
-        reviewCount: '47',
+        reviewCount: '41',
         bestRating: '5',
       },
     },
@@ -173,7 +173,7 @@ export default async function CityHubPage({ params }: Props) {
                 <div style={{ fontFamily: 'var(--font-sans)', fontSize: '1.5rem', fontWeight: 800, color: 'var(--terra)', lineHeight: 1 }}>
                   4,9<span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: 400 }}>/5</span>
                 </div>
-                <div style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-muted)', marginTop: '0.4rem' }}>47 avis Google</div>
+                <div style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-muted)', marginTop: '0.4rem' }}>41 avis Google</div>
               </div>
               <div>
                 <div style={{ fontFamily: 'var(--font-sans)', fontSize: '1.5rem', fontWeight: 800, color: 'var(--terra)', lineHeight: 1 }}>

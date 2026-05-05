@@ -31,7 +31,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
   'la-rochelle': {
     key: 'la-rochelle',
     label: 'Agglomération de La Rochelle',
-    photo: '/images/restaurant-restaurant-etoile-real.webp',
+    photo: '/images/restaurant-etoile-real.webp',
     tagline: 'Intervention rapide depuis Villedoux, à 10 min du centre-ville.',
     specificsTitle: "Les contraintes du bâti rochelais",
     specificsBody:
