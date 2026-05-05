@@ -238,20 +238,23 @@ export function ContactForm() {
           type="submit"
           disabled={pending}
           style={{
-            padding: '1rem 2.5rem',
+            padding: '1.05rem 1.5rem',
             backgroundColor: pending ? 'var(--text-muted)' : 'var(--terra)',
-            color: 'var(--cream)',
+            color: '#fff',
             border: 'none',
-            cursor: pending ? 'not-allowed' : 'pointer',
+            cursor: pending ? 'wait' : 'pointer',
+            opacity: pending ? 0.6 : 1,
             fontSize: '0.7rem',
-            letterSpacing: '0.2em',
+            letterSpacing: '0.16em',
             textTransform: 'uppercase',
-            fontWeight: 500,
+            fontWeight: 700,
             fontFamily: 'inherit',
-            transition: 'background-color 0.2s',
+            transition: 'background-color 0.2s, opacity 0.2s',
             display: 'flex',
             alignItems: 'center',
+            justifyContent: 'center',
             gap: '0.75rem',
+            borderRadius: '999px',
           }}
         >
           {pending ? (
