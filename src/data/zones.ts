@@ -50,7 +50,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     projectHighlights: [
       { title: 'Restaurant gastronomique 3★', sector: 'Restauration étoilée', year: '2025', img: '/images/restaurant-etoile-real.webp', desc: 'Moquette sur mesure coordonnée à la décoration.' },
       { title: 'Restaurant Gaya', sector: 'Restauration', year: '2025', img: '/images/restaurant-gaya.webp', desc: 'Réfection complète de la salle principale.' },
-      { title: 'Bureaux Charente-Maritime', sector: 'Tertiaire', year: '2024', img: '/images/moquette-bureau-real.webp', desc: 'Moquette dalles haute résistance, pose week-end.' },
+      { title: 'Bureaux Charente-Maritime', sector: 'Tertiaire', year: '2024', img: '/images/moquette-bureau-real.webp', desc: 'Moquette dalles haute résistance, pose en site occupé.' },
     ],
     zoneFaq: [
       {
@@ -180,7 +180,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
       author: 'Tertiaire · Charente-Maritime',
     },
     projectHighlights: [
-      { title: 'Bureaux Charente-Maritime', sector: 'Tertiaire', year: '2024', img: '/images/moquette-bureau-real.webp', desc: 'Moquette dalles, pose week-end sans interruption.' },
+      { title: 'Bureaux Charente-Maritime', sector: 'Tertiaire', year: '2024', img: '/images/moquette-bureau-real.webp', desc: 'Moquette dalles, pose en site occupé sans interruption.' },
       { title: 'Cuisine Professionnelle', sector: 'Restauration Pro', year: '2024', img: '/images/cuisine-pro-real.webp', desc: 'Sol PVC soudé, hygiène maximale.' },
       { title: 'Golf de la Prée', sector: 'Sport & Loisirs', year: '2023', img: '/images/golf-real.webp', desc: 'Refonte clubhouse et vestiaires.' },
     ],

@@ -84,7 +84,7 @@ export const sectors: Sector[] = [
       'Dalles de moquette (remplacement partiel possible)',
       'Sol PVC résistant aux roulettes de bureau',
       'Tapis de propreté à l\'entrée avec logo',
-      'Pose le week-end ou en phases pour ne pas interrompre l\'activité',
+      'Intervention en site occupé ou en phases pour ne pas interrompre l\'activité',
     ],
     referencesExamples: [
       'Cabinets comptables La Rochelle',

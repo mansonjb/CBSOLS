@@ -183,7 +183,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Ce qui influence le prix",
-        body: "La surface est le premier facteur : plus la surface est grande, plus le coût unitaire baisse. Un projet de 20 m² coûte proportionnellement plus cher qu'un projet de 200 m².\n\nL'état du support est souvent la variable cachée. Un ragréage sur 300 m² peut représenter 5 000 à 10 000 € supplémentaires. CB Sols préconise systématiquement lors du devis.\n\nLes contraintes de projet (intervention de nuit, mobilier à déplacer, accès difficile, projet en activité) entraînent des majorations de 10 à 30 %. CB Sols est habitué aux interventions sans arrêt d'activité dans les hôtels et les collectivités.",
+        body: "La surface est le premier facteur : plus la surface est grande, plus le coût unitaire baisse. Un projet de 20 m² coûte proportionnellement plus cher qu'un projet de 200 m².\n\nL'état du support est souvent la variable cachée. Un ragréage sur 300 m² peut représenter 5 000 à 10 000 € supplémentaires. CB Sols préconise systématiquement lors du devis.\n\nLes contraintes de projet (intervention en horaires décalés, mobilier à déplacer, accès difficile, projet en activité) entraînent des majorations de 10 à 30 %. CB Sols est habitué aux interventions sans arrêt d'activité dans les hôtels et les collectivités.",
       },
     ],
     faq: [

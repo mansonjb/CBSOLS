@@ -34,7 +34,7 @@ const reasons = [
   {
     title: "L'accessibilité joue sur les délais",
     body:
-      "Étage sans ascenseur, livraison en centre-ville piéton, horaires commerçants, pose de nuit en hôtel ouvert : ces contraintes ajoutent des heures et du matériel. Impossible à tarifer en théorie.",
+      "Étage sans ascenseur, livraison en centre-ville piéton, horaires commerçants, pose en site occupé en hôtel : ces contraintes ajoutent des heures et du matériel. Impossible à tarifer en théorie.",
   },
   {
     title: "Nous préférons l'honnêteté au clickbait",

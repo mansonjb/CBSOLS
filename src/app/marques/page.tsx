@@ -26,7 +26,7 @@ export default function MarquesPage() {
             Revendeur agréé en Charente-Maritime
           </p>
           <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '640px', lineHeight: 1.75 }}>
-            Cinq partenaires choisis selon un critère simple : la qualité que nous poserions chez nous. <strong style={{ color: 'var(--dark)' }}>EGE et objectflor</strong> pour la moquette et le vinyle haut de gamme, <strong style={{ color: 'var(--dark)' }}>Gerflor</strong> pour le PVC professionnel, <strong style={{ color: 'var(--dark)' }}>Bostik</strong> pour les colles et préparations de support, <strong style={{ color: 'var(--dark)' }}>Romus</strong> pour les profilés et finitions. Chaque marque est consultable dans notre showroom de Villedoux.
+            Cinq partenaires choisis selon un critère simple : la qualité que nous poserions chez nous. <strong style={{ color: 'var(--dark)' }}>EGE</strong> pour la moquette haut de gamme, <strong style={{ color: 'var(--dark)' }}>Gerflor et objectflor</strong> pour le sol PVC professionnel, <strong style={{ color: 'var(--dark)' }}>Bostik</strong> pour les colles et préparations de support, <strong style={{ color: 'var(--dark)' }}>Romus</strong> pour les profilés et finitions. Chaque marque est consultable dans notre showroom de Villedoux.
           </p>
         </div>
       </section>
