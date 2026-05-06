@@ -33,7 +33,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Le prix : un écart qui se justifie',
-        body: "La moquette contrat coûte plus cher à l'achat. Une moquette résidentielle peut se trouver à 8-15 €/m² fournie. Une moquette contrat de bureau standard est à 15-30 €/m², et une moquette hôtelière haut de gamme (EGE et objectflor) à 25-80 €/m².\n\nMais rapportée à la durée de vie, la moquette contrat est souvent moins chère. Si une moquette résidentielle dure 3 ans dans un usage professionnel (puis doit être remplacée) contre 12 ans pour une moquette contrat, le coût annuel est radicalement différent.\n\nCB Sols ne vend que de la moquette contrat pour les professionnels, jamais de la moquette résidentielle sur un chantier commercial. C'est une question de responsabilité.",
+        body: "La moquette contrat coûte plus cher à l'achat. Une moquette résidentielle peut se trouver à 8-15 €/m² fournie. Une moquette contrat de bureau standard est à 35-55 €/m², et une moquette hôtelière haut de gamme (EGE) à 35-85 €/m².\n\nMais rapportée à la durée de vie, la moquette contrat est souvent moins chère. Si une moquette résidentielle dure 3 ans dans un usage professionnel (puis doit être remplacée) contre 12 ans pour une moquette contrat, le coût annuel est radicalement différent.\n\nCB Sols ne vend que de la moquette contrat pour les professionnels, jamais de la moquette résidentielle sur un chantier commercial. C'est une question de responsabilité.",
       },
     ],
     relatedFaqs: ['duree-vie-moquette-professionnelle', 'pose-moquette-sur-carrelage'],
@@ -45,7 +45,7 @@ export const faqs: Faq[] = [
     metaTitle: 'Poser Moquette sur Carrelage | Conseils Expert CB Sols',
     metaDescription: 'Peut-on poser de la moquette sur du carrelage ? Conditions, méthodes, avantages et inconvénients. Guide technique par CB Sols en Charente-Maritime.',
     category: 'Technique de Pose',
-    shortAnswer: "Oui, sous conditions. Le carrelage doit être plan (tolérance 2mm sous règle de 2m), propre, sans carreau décollé et les joints en bon état. Un ragréage de surfaçage est souvent nécessaire pour effacer les reliefs des joints.",
+    shortAnswer: "Oui, sous conditions. Le carrelage doit être plan (tolérance 2mm sous règle de 2m), propre, sans carreau décollé et les joints en bon état. Un ragréage de surfaçage est obligatoire.",
     sections: [
       {
         title: 'Les conditions pour poser sur du carrelage',
@@ -53,15 +53,15 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les méthodes de fixation',
-        body: "Trois méthodes de fixation sont possibles pour la moquette sur carrelage :\n\nLa colle (méthode la plus courante en professionnel) : un adhésif de sol adapté est appliqué directement sur le carrelage. C'est la méthode la plus solide et la plus pérenne, recommandée pour les espaces à fort trafic et les moquettes lourdes.\n\nLes bandes gripper : des bandes striées sont clouées ou collées en périphérie de la pièce. La moquette est tendue dessus. Cette méthode est possible mais moins recommandée sur carrelage car l'ancrage des bandes est moins solide que sur béton.\n\nLa double-face : pour des poses temporaires ou sur de petites surfaces. Non recommandé pour les espaces professionnels.\n\nCB Sols détermine la meilleure méthode lors du devis, après évaluation du type de carrelage et de l'usage prévu.",
+        body: "Deux méthodes de fixation sont possibles pour la moquette sur carrelage :\n\nLa colle (méthode la plus courante en professionnel) : un adhésif de sol adapté est appliqué uniquement sur le ragréage préalablement réalisé. C'est la méthode la plus solide et la plus pérenne, recommandée pour les espaces à fort trafic et les moquettes lourdes.\n\nLes bandes gripper : des bandes striées sont clouées ou collées en périphérie de la pièce. La moquette est tendue dessus. Cette méthode est possible mais moins recommandée sur carrelage car l'ancrage des bandes est moins solide que sur béton.\n\nCB Sols détermine la meilleure méthode lors du devis, après évaluation du type de carrelage et de l'usage prévu.",
       },
       {
         title: 'Faut-il déposer le carrelage ?',
-        body: "Non, dans la majorité des cas. La dépose de carrelage est longue, coûteuse (4 à 8 €/m²), génère des gravats importants et risque d'endommager le support. Sauf si le carrelage est en très mauvais état (décollements multiples, fissurations profondes), il est préférable de poser la moquette dessus après préparation.\n\nLa seule situation où la dépose est impérative : si l'accumulation de niveaux (ancien carrelage + éventuel précédent revêtement + nouvelle moquette) crée un dénivelé inacceptable par rapport aux seuils de portes ou aux zones contiguës.\n\nCB Sols évalue systématiquement la hauteur des niveaux lors du devis pour anticiper ces problèmes.",
+        body: "Non, dans la majorité des cas. La dépose de carrelage est longue, coûteuse, génère des gravats importants et risque d'endommager le support. Sauf si le carrelage est en très mauvais état (décollements multiples, fissurations profondes), il est préférable de poser la moquette dessus après préparation.\n\nLa seule situation où la dépose est impérative : si l'accumulation de niveaux (ancien carrelage + éventuel précédent revêtement + nouvelle moquette) crée un dénivelé inacceptable par rapport aux seuils de portes ou aux zones contiguës.\n\nCB Sols évalue systématiquement la hauteur des niveaux lors du devis pour anticiper ces problèmes.",
       },
       {
-        title: 'Le ragréage de surfaçage : souvent incontournable',
-        body: "Même sur un carrelage propre et plan, les joints créent des reliefs (généralement 1 à 3 mm) qui se voient et s'usent prématurément sous la moquette. La solution : un ragréage de surfaçage fin (autolissant) appliqué sur l'ensemble du carrelage pour créer une surface parfaitement plane.\n\nCe ragréage coûte entre 8 et 15 €/m² selon l'épaisseur et la surface. Il sèche en 2 à 24 heures selon les produits. CB Sols réalise toujours la vérification de planéité après ragréage avant de passer à la pose.\n\nPour les chantiers où la rapidité est cruciale, il existe des ragréages à prise ultra-rapide (marchable en 30 minutes) qui permettent de poser la moquette dans la même journée.",
+        title: 'Le ragréage de surfaçage : incontournable',
+        body: "Même sur un carrelage propre et plan, les joints créent des reliefs (généralement 1 à 3 mm) qui se voient et s'usent prématurément sous la moquette. La solution : un ragréage de surfaçage fin (autolissant) appliqué sur l'ensemble du carrelage pour créer une surface parfaitement plane.\n\nCe ragréage est dimensionné selon l'épaisseur et la surface. Il sèche en 4 à 48 heures avant recouvrement selon les produits. CB Sols réalise toujours la vérification de planéité après ragréage avant de passer à la pose.\n\nPour les chantiers où la rapidité est cruciale, il existe des ragréages à prise ultra-rapide (marchable en 30 minutes).",
       },
     ],
     relatedFaqs: ['difference-moquette-contrat-particulier', 'duree-vie-moquette-professionnelle'],

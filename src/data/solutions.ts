@@ -38,10 +38,10 @@ export const solutions: Solution[] = [
       'Résistance aux chariots de ménage et bagagerie',
     ],
     ourApproach: [
-      'Sélection de moquettes EGE et objectflor certifiées Bfl-s1',
+      'Sélection de moquettes EGE certifiées Bfl-s1',
       'Consultation showroom pour choisir motifs et coloris en coordination avec votre décorateur',
       'Devis détaillé avec planning d\'intervention chambre par chambre',
-      'Pose nocturne ou en rotation pour maintenir l\'activité',
+      'Pose en rotation pour maintenir l\'activité',
       'Contrat d\'entretien annuel injection-extraction disponible',
     ],
     keyProducts: [
@@ -55,7 +55,7 @@ export const solutions: Solution[] = [
       'Hôtels La Rochelle centre : rénovation partielle par rotation, sans interruption d\'activité',
     ],
     faq: [
-      { q: 'Quelle moquette choisir pour un hôtel 4 étoiles ?', a: 'Pour un hôtel 4 étoiles, nous recommandons une moquette tuftée ou tissée de la gamme EGE Hospitality ou EGE Reform, en classement Bfl-s1. Le grammage minimal est 800g/m² en couloir, 600g/m² en chambre. CB Sols vous présente des échantillons en showroom et peut créer un motif exclusif pour votre établissement.' },
+      { q: 'Quelle moquette choisir pour un hôtel 4 étoiles ?', a: 'Pour un hôtel 4 étoiles, nous recommandons une moquette tuftée ou tissée de la gamme EGE Hospitality ou EGE Reform, en classement Bfl-s1. Le grammage minimal est 1100g/m² en couloir, 910g/m² en chambre. CB Sols vous présente des échantillons en showroom et peut créer un motif exclusif pour votre établissement.' },
       { q: 'Peut-on poser la moquette sans fermer l\'hôtel ?', a: 'Oui. CB Sols travaille en rotation : nous posons dans les chambres vides pendant que les autres restent occupées. Pour les couloirs, nous intervenons la nuit ou en semaine creuse selon votre planning. Zéro fermeture nécessaire pour la majorité des chantiers hôteliers.' },
       { q: 'Combien coûte la moquette hôtelière ?', a: 'Une moquette hôtelière de qualité coûte entre 35 et 80€/m² posée, selon le produit choisi et la surface. CB Sols établit un devis gratuit et détaillé après visite. Pour un hôtel 20 chambres de 18m² (couloir compris), comptez un budget de 25 000 à 45 000€ fourni posé.' },
       { q: 'CB Sols intervient-il sur toute la Charente-Maritime ?', a: "Oui, nous équipons des hôtels de La Rochelle à l'Île de Ré, l'Île d'Oléron, Royan et tout le département 17." },
@@ -106,14 +106,14 @@ export const solutions: Solution[] = [
     slug: 'moquette-bureau',
     title: 'Moquette Bureau & Open Space',
     metaTitle: 'Moquette Bureau Open Space | Pose Pro Charente-Maritime',
-    metaDescription: 'Moquette dalles ou rouleaux pour bureaux en Charente-Maritime. CB Sols : pose le week-end, sans interruption activité. Résistance roulettes. Devis gratuit.',
+    metaDescription: 'Moquette dalles ou rouleaux pour bureaux en Charente-Maritime. CB Sols : pose en rotation, sans interruption d\'activité. Résistance roulettes. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
     sectorSlug: 'bureaux-entreprises',
     sectorName: 'Bureaux & Entreprises',
     headline: 'Moquette pour bureaux',
     tagline: 'Concentrez-vous. Le sol travaille pour vous.',
-    intro: "En bureau, la moquette améliore la concentration, réduit la fatigue auditive et absorbe les bruits de pas : un impact direct sur la productivité. CB Sols installe des moquettes dalles et rouleaux dans les bureaux, open spaces, salles de réunion et cabinets de Charente-Maritime, avec pose le week-end pour ne jamais interrompre votre activité.",
+    intro: "En bureau, la moquette améliore la concentration, réduit la fatigue auditive et absorbe les bruits de pas : un impact direct sur la productivité. CB Sols installe des moquettes dalles et rouleaux dans les bureaux, open spaces, salles de réunion et cabinets de Charente-Maritime, pour ne jamais interrompre votre activité.",
     specificChallenges: [
       'Résistance aux roulettes de chaises de bureau (abrasion)',
       'Acoustique : réduction des bruits de pas et conversations',
@@ -124,7 +124,6 @@ export const solutions: Solution[] = [
     ourApproach: [
       'Dalles de moquette pour remplacement partiel facile',
       'Gammes spécifiques résistance roulettes (classe 33-34)',
-      'Pose le week-end : installation vendredi soir, livraison lundi matin',
       'Conseil couleur et texture pour un espace de travail inspirant',
     ],
     keyProducts: [
@@ -133,13 +132,12 @@ export const solutions: Solution[] = [
       { name: 'objectflor Loop', desc: 'Boucle velours résistant aux roulettes, facile d\'entretien, nombreux coloris sobres et professionnels' },
     ],
     references: [
-      'Bureaux Charente-Maritime, 350 m² : dalles moquette EGE, pose le week-end',
+      'Bureaux Charente-Maritime, 350 m² : dalles moquette EGE, pose en rotation',
       'Cabinets comptables La Rochelle : moquette rouleau intégral, 180 m²',
       'Open space PME La Rochelle : rénovation par zones sans interruption, 220 m²',
     ],
     faq: [
       { q: 'Dalles ou moquette en rouleau pour un bureau ?', a: "Les dalles sont idéales si vous avez des passages de câbles à prévoir ou si vous souhaitez pouvoir remplacer des zones usées sans refaire tout le sol. La moquette en rouleau est moins chère et donne un rendu plus homogène. CB Sols vous conseille selon votre budget et l'usage de vos espaces." },
-      { q: 'La pose peut-elle vraiment se faire en 1 week-end ?', a: "Oui. CB Sols est habitué aux chantiers de bureau réalisés intégralement en week-end. Pour un plateau de 300 m², une équipe de 2-3 poseurs travaille du vendredi soir au dimanche. Vous retrouvez vos bureaux opérationnels lundi matin." },
     ],
   },
   {
