@@ -43,7 +43,7 @@ export const services: Service[] = [
     name: 'Sol PVC Lames & Dalles',
     shortName: 'Sol PVC',
     icon: '▣',
-    description: 'Lames et dalles PVC haut de gamme, résistantes et esthétiques pour tous espaces.',
+    description: 'Lames et dalles PVC haut de gamme, résistantes et esthétiques. Pour particuliers et professionnels.',
     longDescription:
       "Les lames et dalles PVC de dernière génération combinent l'esthétique du bois ou de la pierre avec une résistance à l'eau et à l'usure incomparable. Idéales pour les commerces, résidences et espaces collectifs, elles supportent les passages intensifs tout en restant simples d'entretien.",
     benefits: [
@@ -66,7 +66,7 @@ export const services: Service[] = [
     name: 'Sol PVC en Lés',
     shortName: 'PVC en Lés',
     icon: '▬',
-    description: 'Revêtement vinyle en rouleaux, pose soignée avec plinthes et soudure à chaud.',
+    description: 'Revêtement vinyle en rouleaux, pose soignée avec plinthes et soudure à chaud. Pour particuliers et professionnels.',
     longDescription:
       "Le PVC en lés (ou vinyle en rouleaux) est le revêtement de référence pour les espaces professionnels exigeants. Sa pose en continuité sans joints, avec soudure à chaud, garantit une parfaite étanchéité : idéale pour les cuisines, salles de soins et espaces collectifs nécessitant un nettoyage intensif.",
     benefits: [
@@ -89,7 +89,7 @@ export const services: Service[] = [
     name: 'Tapis Sur Mesure',
     shortName: 'Tapis Sur Mesure',
     icon: '◈',
-    description: 'Création de tapis décoratifs sur mesure, finitions premium pour hôtels et espaces de prestige.',
+    description: 'Création de tapis décoratifs sur mesure, finitions premium. Pour hôtels, espaces de prestige et particuliers exigeants.',
     longDescription:
       "Le tapis sur mesure est la signature d'un espace de prestige. CB Sols collabore avec les designers et architectes d'intérieur pour concevoir des pièces uniques : forme, couleur, matière, finition de bords, tout est personnalisable. Idéal pour les lobbys d'hôtels, restaurants gastronomiques et résidences de luxe.",
     benefits: [
@@ -112,7 +112,7 @@ export const services: Service[] = [
     name: 'Tapis de Propreté',
     shortName: 'Tapis Propreté',
     icon: '▤',
-    description: "Tapis d'entrée professionnels, protection de vos sols intérieurs et image soignée.",
+    description: "Tapis d'entrée pour professionnels et particuliers, protection de vos sols intérieurs et image soignée.",
     longDescription:
       "Le tapis de propreté est le premier contact avec votre espace. Il protège vos revêtements intérieurs, retient 80% des salissures à l'entrée et contribue à l'image de votre établissement. CB Sols propose des solutions sur mesure aux dimensions exactes de vos sas d'entrée, avec logo intégré possible.",
     benefits: [
@@ -135,7 +135,7 @@ export const services: Service[] = [
     name: 'Nettoyage de Moquette',
     shortName: 'Nettoyage',
     icon: '◎',
-    description: 'Nettoyage professionnel par injection-extraction, redonne vie à vos moquettes.',
+    description: 'Nettoyage professionnel par injection-extraction, redonne vie à vos moquettes. Particuliers et professionnels.',
     longDescription:
       "Le nettoyage professionnel par injection-extraction est la méthode la plus efficace pour rénover vos moquettes sans les remplacer. CB Sols intervient avec un matériel professionnel qui injecte une solution nettoyante puis l'aspire avec les saletés incrustées. Résultat : moquette comme neuve, séchage en quelques heures.",
     benefits: [
@@ -158,7 +158,7 @@ export const services: Service[] = [
     name: 'Revêtement de Sol',
     shortName: 'Revêtement Sol',
     icon: '⬛',
-    description: 'Expertise complète en revêtement de sol : conseil, fourniture, pose et entretien.',
+    description: 'Expertise complète en revêtement de sol : conseil, fourniture, pose et entretien. Particuliers et professionnels.',
     longDescription:
       "Depuis plus de 25 ans, CB Sols accompagne particuliers et professionnels de Charente-Maritime dans tous leurs projets de revêtement de sol. De la sélection des matériaux en showroom jusqu'à la pose et l'entretien, CB Sols est votre interlocuteur unique pour un projet réussi de A à Z.",
     benefits: [

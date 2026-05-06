@@ -7,7 +7,7 @@ import { Button } from '@/components/Button'
 
 const nav = [
   { href: '/services', label: 'Services' },
-  { href: '/secteurs', label: 'Professionnels' },
+  { href: '/secteurs', label: 'Pros & Particuliers' },
   { href: '/marques', label: 'Marques' },
   { href: '/tarifs', label: 'Tarifs' },
   { href: '/realisations', label: 'Réalisations' },

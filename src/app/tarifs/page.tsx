@@ -71,10 +71,13 @@ export default function TarifsPage() {
             <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>de grille de prix.</em>
           </h1>
           <p style={{ fontSize: '1.1rem', color: 'var(--cream-muted)', lineHeight: 1.7, maxWidth: '680px', marginBottom: '2rem' }}>
-            Chez CB Sols, chaque projet est traité <strong style={{ color: 'var(--dark)' }}>individuellement</strong>. Afficher une fourchette générique serait au mieux imprécis, au pire trompeur. Nous préférons prendre le temps de comprendre votre projet avant de chiffrer.
+            Chez CB Sols, chaque projet est traité <strong style={{ color: 'var(--dark)' }}>individuellement</strong>, qu&apos;il soit pour un particulier ou un professionnel. Afficher une fourchette générique serait au mieux imprécis, au pire trompeur. Nous préférons prendre le temps de comprendre votre projet avant de chiffrer.
           </p>
-          <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', lineHeight: 1.7, maxWidth: '680px', marginBottom: '2.5rem' }}>
+          <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', lineHeight: 1.7, maxWidth: '680px', marginBottom: '1.25rem' }}>
             Notre engagement : <strong style={{ color: 'var(--dark)' }}>devis détaillé et gratuit sous 48 h</strong>, sans frais cachés ni révision post-signature.
+          </p>
+          <p style={{ fontSize: '0.9rem', color: 'var(--cream-muted)', lineHeight: 1.7, maxWidth: '680px', marginBottom: '2.5rem', fontStyle: 'italic' }}>
+            Pour vous aider à <strong style={{ color: 'var(--dark)', fontStyle: 'normal' }}>budgétiser en amont</strong>, nos <Link href="/guide" style={{ color: 'var(--terra)', textDecoration: 'underline' }}>guides chiffrés</Link> donnent les fourchettes du marché poste par poste (pose, ragréage, fourniture). Ce sont des repères pédagogiques, pas notre grille tarifaire : votre prix réel sortira du devis.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <Button href="/contact" variant="primary" size="lg">Demander mon devis</Button>
