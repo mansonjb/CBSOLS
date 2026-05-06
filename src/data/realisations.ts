@@ -117,7 +117,7 @@ export const realisations: Realisation[] = [
     ],
     clientLink: {
       url: 'https://christophercoutanceau.com/',
-      label: 'Restaurant Christopher Coutanceau',
+      label: 'Restaurant 3 étoiles',
     },
   },
   {

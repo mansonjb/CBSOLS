@@ -30,7 +30,7 @@ export function Footer() {
               Artisan du revêtement de sol depuis 25 ans. La Rochelle, Île de Ré, Charente-Maritime.
             </p>
             <div style={{ display: 'flex', gap: '0.5rem' }}>
-              {[{ href: company.social.instagram, l: 'IG' },{ href: company.social.facebook, l: 'FB' },{ href: company.social.linkedin, l: 'LI' }].map(s => (
+              {[{ href: company.social.instagram, l: 'IG' },{ href: company.social.linkedin, l: 'LI' }].map(s => (
                 <a key={s.l} href={s.href} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.6rem', letterSpacing: '0.1em', padding: '0.4rem 0.7rem', border: '1px solid rgba(255,255,255,0.15)', color: 'var(--text-on-dark-faint)', textDecoration: 'none', transition: 'all 0.2s' }}>
                   {s.l}
                 </a>
