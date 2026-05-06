@@ -121,7 +121,7 @@ export default function Home() {
 
               {/* Stats */}
               <div style={{ display: 'flex', gap: '0', marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid var(--border)', flexWrap: 'wrap' }}>
-                {[{ v: '+25', l: "ans d'expérience" }, { v: '500+', l: 'projets réalisés' }, { v: '47', l: 'communes couvertes' }, { v: '4.9★', l: 'note Google' }].map((s) => (
+                {[{ v: '+25', l: "ans d'expérience" }, { v: '500+', l: 'projets réalisés' }, { v: '49', l: 'communes couvertes' }, { v: '4.9★', l: 'note Google' }].map((s) => (
                   <div key={s.v} style={{ flex: '1 1 auto', minWidth: '100px', paddingRight: '2rem' }}>
                     <div style={{ fontFamily: 'var(--font-sans, system-ui)', fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', fontWeight: 800, color: 'var(--dark)', letterSpacing: '-0.04em', lineHeight: 1 }}>{s.v}</div>
                     <div style={{ fontSize: '0.62rem', color: 'var(--muted)', letterSpacing: '0.06em', marginTop: '0.4rem' }}>{s.l}</div>
@@ -282,7 +282,7 @@ export default function Home() {
       <section style={{ padding: '0', overflow: 'hidden' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px', backgroundColor: 'var(--bg-inv)' }} className="materials-grid">
           {[
-            { img: '/images/moquette-bureau.webp', label: 'Moquette', caption: 'Laine & synthétique : hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE · objectflor' },
+            { img: '/images/moquette-bureau.webp', label: 'Moquette', caption: 'Laine & synthétique : hôtellerie, bureaux, résidentiel', href: '/services/pose-moquette', brand: 'EGE' },
             { img: '/images/cuisine-pro.webp', label: 'Sol PVC & LVT', caption: 'Lames, dalles, lés soudés : zones humides incluses', href: '/services/sol-pvc-lames-dalles', brand: 'Gerflor · objectflor' },
             { img: '/images/motif-tapis-hotel.webp', label: 'Tapis sur mesure', caption: 'Motif exclusif, forme libre, coloris personnalisés', href: '/services/tapis-sur-mesure', brand: 'EGE · Atelier sur mesure' },
           ].map(mat => (

@@ -38,7 +38,7 @@ export const brands: Brand[] = [
       'Revêtements acoustiques haute performance',
     ],
     topCollections: [
-      { name: 'Hospitality', desc: "Collection phare pour l'hôtellerie : motifs élaborés, classement Bfl-s1, grammages de 700 à 1100 g/m²", useCases: 'Chambres, couloirs, lobbys hôteliers' },
+      { name: 'Hospitality', desc: "Collection phare pour l'hôtellerie : motifs élaborés, classement Bfl-s1, grammages de 910 à 2000 g/m²", useCases: 'Chambres, couloirs, lobbys hôteliers' },
       { name: 'Reform', desc: 'Dalles de moquette modulaires pour le tertiaire : recyclables, certifiées Cradle to Cradle Silver', useCases: 'Bureaux, open spaces, salles de réunion' },
       { name: 'Sense', desc: 'Collection résidentielle et hôtellerie douce : textures velours et boucles, coloris neutres', useCases: 'Chambres boutique-hôtel, résidences haut de gamme' },
     ],

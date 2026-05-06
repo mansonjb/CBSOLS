@@ -22,7 +22,7 @@ export const solutions: Solution[] = [
     slug: 'moquette-hotel',
     title: 'Moquette Hôtel',
     metaTitle: 'Moquette Hôtel Charente-Maritime | Pose Professionnelle CB Sols',
-    metaDescription: 'Pose de moquette hôtelière en Charente-Maritime. CB Sols équipe hôtels 2 à 5 étoiles : chambres, couloirs, lobbys. Certifié EGE & objectflor. Devis gratuit.',
+    metaDescription: 'Pose de moquette hôtelière en Charente-Maritime. CB Sols équipe hôtels 2 à 5 étoiles : chambres, couloirs, lobbys. Partenaire EGE. Devis gratuit.',
     serviceSlug: 'pose-moquette',
     serviceName: 'Pose de Moquette',
     sectorSlug: 'hotellerie',
@@ -129,7 +129,7 @@ export const solutions: Solution[] = [
     keyProducts: [
       { name: 'EGE Modular Collection', desc: 'Dalles moquette premium, résistance roulettes classe 33, nombreux coloris et motifs géométriques' },
       { name: 'EGE Office', desc: 'Moquette bureau haute résistance, certification GUT (sans émission), idéale open space' },
-      { name: 'objectflor Loop', desc: 'Boucle velours résistant aux roulettes, facile d\'entretien, nombreux coloris sobres et professionnels' },
+      { name: 'EGE Highline 1100', desc: 'Moquette boucle velours résistant aux roulettes, facile d\'entretien, nombreux coloris sobres et professionnels' },
     ],
     references: [
       'Bureaux Charente-Maritime, 350 m² : dalles moquette EGE, pose en rotation',
