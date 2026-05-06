@@ -29,7 +29,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Construction et durabilité : ce qui se voit (et ne se voit pas)',
-        body: "Visuellement, une moquette contrat et une moquette résidentielle peuvent se ressembler. Les différences sont dans la construction :\n\n- Grammage plus élevé (600-900 g/m² en contrat vs 300-500 g/m² en résidentiel)\n- Dos renforcé (latex double couche, jute ou feutre)\n- Fibres plus robustes (nylon résistant vs polyester économique)\n- Traitements anti-taches et anti-bactériens\n\nUne moquette résidentielle posée dans un couloir d'hôtel sera usée en 2 à 3 ans. La même surface avec une moquette EGE Hospitality classement 33 tiendra 10 à 15 ans.",
+        body: "Visuellement, une moquette contrat et une moquette résidentielle peuvent se ressembler. Les différences sont dans la construction :\n\n- Grammage plus élevé (910-2000 g/m² en contrat hôtelier vs 300-500 g/m² en résidentiel)\n- Dos renforcé (latex double couche, jute ou feutre)\n- Fibres plus robustes (nylon résistant vs polyester économique)\n- Traitements anti-taches et anti-bactériens\n\nUne moquette résidentielle posée dans un couloir d'hôtel sera usée en 2 à 3 ans. La même surface avec une moquette EGE Hospitality classement 33 tiendra 10 à 15 ans.",
       },
       {
         title: 'Le prix : un écart qui se justifie',
@@ -61,7 +61,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Le ragréage de surfaçage : incontournable',
-        body: "Même sur un carrelage propre et plan, les joints créent des reliefs (généralement 1 à 3 mm) qui se voient et s'usent prématurément sous la moquette. La solution : un ragréage de surfaçage fin (autolissant) appliqué sur l'ensemble du carrelage pour créer une surface parfaitement plane.\n\nCe ragréage coûte entre 8 et 25 €/m² selon l'épaisseur et la surface. Il sèche en 4 à 48 heures avant recouvrement selon les produits. CB Sols réalise toujours la vérification de planéité après ragréage avant de passer à la pose.\n\nPour les projets où la rapidité est cruciale, il existe des ragréages à prise ultra-rapide (marchable en 30 minutes).",
+        body: "Même sur un carrelage propre et plan, les joints créent des reliefs (généralement 1 à 3 mm) qui se voient et s'usent prématurément sous la moquette. La solution : un ragréage de surfaçage fin (autolissant) appliqué sur l'ensemble du carrelage pour créer une surface parfaitement plane.\n\nCe ragréage coûte entre 8 et 25 €/m² (P3 standard 6-10 €/m², fibré 12-30 €/m² sur bois ou fortes épaisseurs). Il sèche en 4 à 48 heures avant recouvrement selon les produits. CB Sols réalise toujours la vérification de planéité après ragréage avant de passer à la pose.\n\nPour les projets où la rapidité est cruciale, il existe des ragréages à prise ultra-rapide (marchable en 30 minutes).",
       },
     ],
     relatedFaqs: ['difference-moquette-contrat-particulier', 'duree-vie-moquette-professionnelle'],
@@ -81,7 +81,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les facteurs qui allongent ou raccourcissent la durée de vie',
-        body: "L'entretien est le facteur numéro 1. Une moquette mal entretenue (aspiration irrégulière, taches non traitées, pas d'injection-extraction) peut voir sa durée de vie divisée par deux. Inversement, un programme d'entretien rigoureux prolonge significativement sa vie.\n\nLe produit choisi est déterminant. Un grammage supérieur (800 g/m² vs 500 g/m²) fait une différence notable en couloir hôtelier. Le type de fibre aussi : le nylon 6.6 est plus résistant à l'abrasion que le nylon 6, lui-même supérieur au polyester.\n\nLe support et la pose influencent la tenue dans le temps. Une moquette mal collée se décolle aux bords et forme des plis, causes d'usure prématurée et de risques de chute. CB Sols prépare toujours le support et choisit l'adhésif adapté pour garantir une tenue dans la durée.\n\nLes conditions climatiques locales jouent aussi un rôle en Charente-Maritime. L'hygrométrie élevée en zone côtière peut affecter le dos de la moquette si le sous-sol n'est pas parfaitement sec.",
+        body: "L'entretien est le facteur numéro 1. Une moquette mal entretenue (aspiration irrégulière, taches non traitées, pas d'injection-extraction) peut voir sa durée de vie divisée par deux. Inversement, un programme d'entretien rigoureux prolonge significativement sa vie.\n\nLe produit choisi est déterminant. Un grammage supérieur (1100 g/m² vs 700 g/m²) fait une différence notable en couloir hôtelier. Le type de fibre aussi : le nylon 6.6 est plus résistant à l'abrasion que le nylon 6, lui-même supérieur au polyester.\n\nLe support et la pose influencent la tenue dans le temps. Une moquette mal collée se décolle aux bords et forme des plis, causes d'usure prématurée et de risques de chute. CB Sols prépare toujours le support et choisit l'adhésif adapté pour garantir une tenue dans la durée.\n\nLes conditions climatiques locales jouent aussi un rôle en Charente-Maritime. L'hygrométrie élevée en zone côtière peut affecter le dos de la moquette si le sous-sol n'est pas parfaitement sec.",
       },
       {
         title: 'Les signes qui indiquent qu\'il faut remplacer',
@@ -101,7 +101,7 @@ export const faqs: Faq[] = [
     metaTitle: 'Normes Sol PVC Cuisine Professionnelle | CB Sols',
     metaDescription: 'Quelles normes pour le sol PVC en cuisine professionnelle ? HACCP, antidérapance R11, classement incendie, soudure à chaud. CB Sols explique.',
     category: 'Sol PVC',
-    shortAnswer: "Un sol PVC de cuisine professionnelle doit être classé R10 ou R11 (antidérapance), résistant aux graisses et désinfectants, soudé à chaud (zéro joint) et conforme aux exigences HACCP. Gerflor Mipolam Granit et Bostik Eternal sont les références.",
+    shortAnswer: "Un sol PVC de cuisine professionnelle doit être classé R10 ou R11 (antidérapance), résistant aux graisses et désinfectants, soudé à chaud (zéro joint) et conforme aux exigences HACCP. Gerflor Mipolam Granit et Taralay Premium sont les références.",
     sections: [
       {
         title: 'La norme HACCP et ses implications sur le sol',
@@ -117,7 +117,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les produits de référence et leurs certifications',
-        body: "Trois familles de produits sont adaptées aux cuisines professionnelles :\n\nGerflor Mipolam Granit : sol PVC homogène, classement R10 standard (R11 sur demande), résistance chimique P2, certification NSF pour les espaces alimentaires. Grande gamme de coloris. Durée de vie : 20-30 ans.\n\nBostik Eternal Natural/Classic : sol PVC homogène, classement R10/R11, certifié lieux de restauration, émissions VOC très faibles (certification Indoor Air). Durée de vie comparable.\n\nGerflor Taralay Premium Contract : sol PVC hétérogène, R10, résistance chimique élevée, nombreux décors. Bonne option pour les cuisines où l'esthétique prime avec une résistance suffisante.\n\nCB Sols distribue ces trois marques et peut vous présenter des échantillons en showroom ou en visite sur site lors du devis.",
+        body: "Trois familles de produits sont adaptées aux cuisines professionnelles :\n\nGerflor Mipolam Granit : sol PVC homogène, classement R10 standard (R11 sur demande), résistance chimique P2, certification NSF pour les espaces alimentaires. Grande gamme de coloris. Durée de vie : 20-30 ans.\n\nGerflor Taralay Premium Contract : sol PVC homogène, classement R10/R11, certifié lieux de restauration, émissions VOC très faibles (certification Indoor Air). Durée de vie comparable.\n\nGerflor Taralay Premium Contract : sol PVC hétérogène, R10, résistance chimique élevée, nombreux décors. Bonne option pour les cuisines où l'esthétique prime avec une résistance suffisante.\n\nCB Sols distribue ces trois marques et peut vous présenter des échantillons en showroom ou en visite sur site lors du devis.",
       },
     ],
     relatedFaqs: ['sol-pvc-cuisine-professionnelle-norme', 'pose-moquette-sur-carrelage'],
@@ -133,7 +133,7 @@ export const faqs: Faq[] = [
     sections: [
       {
         title: 'Le process CB Sols : du premier contact au devis',
-        body: "Obtenir un devis avec CB Sols est simple et rapide. Voici le processus :\n\n1. Premier contact : appelez le 05 46 00 00 00, remplissez le formulaire sur cbsols.fr/contact ou envoyez un email à contact@cbsols.fr avec une description de votre projet. Si vous avez des plans ou des photos, joignez-les.\n\n2. Prise de rendez-vous : CB Sols vous rappelle sous 24h en semaine pour convenir d'un rendez-vous sur site. Pour les projets avec des plans précis, une estimation peut être fournie par email avant la visite.\n\n3. Visite sur site : Valentin Prévoteau ou un membre de l'équipe se déplace gratuitement dans toute la Charente-Maritime. La visite dure 30 à 60 minutes selon la complexité du projet. Nous mesurons, évaluons l'état du support, discutons de vos attentes esthétiques et techniques.\n\n4. Remise du devis : le devis est remis par email dans les 48h suivant la visite. Il est détaillé poste par poste : fourniture, dépose éventuelle, préparation du support, pose et finitions. Rien de caché.",
+        body: "Obtenir un devis avec CB Sols est simple et rapide. Voici le processus :\n\n1. Premier contact : appelez le 06 85 05 28 80, remplissez le formulaire sur cbsols.fr/contact ou envoyez un email à contact@cbsols.fr avec une description de votre projet. Si vous avez des plans ou des photos, joignez-les.\n\n2. Prise de rendez-vous : CB Sols vous rappelle sous 24h en semaine pour convenir d'un rendez-vous sur site. Pour les projets avec des plans précis, une estimation peut être fournie par email avant la visite.\n\n3. Visite sur site : Valentin Prévoteau ou un membre de l'équipe se déplace gratuitement dans toute la Charente-Maritime. La visite dure 30 à 60 minutes selon la complexité du projet. Nous mesurons, évaluons l'état du support, discutons de vos attentes esthétiques et techniques.\n\n4. Remise du devis : le devis est remis par email dans les 48h suivant la visite. Il est détaillé poste par poste : fourniture, dépose éventuelle, préparation du support, pose et finitions. Rien de caché.",
       },
       {
         title: 'Ce que comprend le devis CB Sols',
@@ -141,7 +141,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Peut-on avoir une estimation sans visite ?',
-        body: "Oui, dans certains cas. Si vous disposez de plans précis avec les surfaces en m², des photos du support existant et des informations sur le type de revêtement souhaité, CB Sols peut établir une estimation budgétaire par email ou téléphone.\n\nCette estimation est donnée à titre indicatif avec une fourchette (+/- 20% selon l'état réel du support). Elle permet de valider la faisabilité du projet dans votre budget avant d'organiser une visite.\n\nPour les projets importants (hôtels, grandes surfaces de bureaux), la visite sur site est systématiquement nécessaire pour un devis précis et engageant.\n\nPour envoyer vos plans : contact@cbsols.fr ou via WhatsApp au 05 46 00 00 00.",
+        body: "Oui, dans certains cas. Si vous disposez de plans précis avec les surfaces en m², des photos du support existant et des informations sur le type de revêtement souhaité, CB Sols peut établir une estimation budgétaire par email ou téléphone.\n\nCette estimation est donnée à titre indicatif avec une fourchette (+/- 20% selon l'état réel du support). Elle permet de valider la faisabilité du projet dans votre budget avant d'organiser une visite.\n\nPour les projets importants (hôtels, grandes surfaces de bureaux), la visite sur site est systématiquement nécessaire pour un devis précis et engageant.\n\nPour envoyer vos plans : contact@cbsols.fr ou via WhatsApp au 06 85 05 28 80.",
       },
       {
         title: 'La zone d\'intervention : toute la Charente-Maritime et au-delà',

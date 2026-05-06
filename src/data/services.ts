@@ -31,11 +31,11 @@ export const services: Service[] = [
       'Durabilité professionnelle certifiée',
     ],
     useCases: ['Chambres d\'hôtel', 'Salles de réunion', 'Bureaux', 'Escaliers', 'Couloirs'],
-    brands: ['EGE', 'objectflor'],
+    brands: ['EGE'],
     geoVerb: 'Pose de moquette à',
     metaTitle: (city) => `Pose de Moquette ${city} | CB Sols, Artisan Certifié`,
     metaDescription: (city) =>
-      `Pose de moquette professionnelle à ${city} et environs. CB Sols : artisan spécialiste depuis 25 ans, devis gratuit. Hôtels, bureaux, particuliers.`,
+      `Pose de moquette professionnelle à ${city} et environs. CB Sols : artisan spécialiste depuis 27 ans, devis gratuit. Hôtels, bureaux, particuliers.`,
     h1: (city) => `Pose de Moquette à ${city}`,
   },
   {
@@ -160,7 +160,7 @@ export const services: Service[] = [
     icon: '⬛',
     description: 'Expertise complète en revêtement de sol : conseil, fourniture, pose et entretien. Particuliers et professionnels.',
     longDescription:
-      "Depuis plus de 25 ans, CB Sols accompagne particuliers et professionnels de Charente-Maritime dans tous leurs projets de revêtement de sol. De la sélection des matériaux en showroom jusqu'à la pose et l'entretien, CB Sols est votre interlocuteur unique pour un projet réussi de A à Z.",
+      "Depuis plus de 27 ans, CB Sols accompagne particuliers et professionnels de Charente-Maritime dans tous leurs projets de revêtement de sol. De la sélection des matériaux en showroom jusqu'à la pose et l'entretien, CB Sols est votre interlocuteur unique pour un projet réussi de A à Z.",
     benefits: [
       'Interlocuteur unique de A à Z',
       'Showroom avec 500+ échantillons',
@@ -173,7 +173,7 @@ export const services: Service[] = [
     geoVerb: 'Revêtement de sol à',
     metaTitle: (city) => `Revêtement de Sol ${city} | CB Sols, Artisan Spécialiste`,
     metaDescription: (city) =>
-      `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis 25 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
+      `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis 27 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
     h1: (city) => `Revêtement de Sol à ${city}`,
   },
   {

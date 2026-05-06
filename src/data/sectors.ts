@@ -17,7 +17,7 @@ export const sectors: Sector[] = [
     icon: '🏨',
     tagline: 'Des sols à la hauteur de vos étoiles',
     description:
-      "L'hôtellerie exige des revêtements de sol qui allient esthétique irréprochable, résistance aux passages intensifs et facilité d'entretien quotidien. CB Sols travaille avec des hôtels 2 à 5 étoiles, résidences de tourisme et gîtes premium en Charente-Maritime depuis plus de 25 ans.",
+      "L'hôtellerie exige des revêtements de sol qui allient esthétique irréprochable, résistance aux passages intensifs et facilité d'entretien quotidien. CB Sols travaille avec des hôtels 2 à 5 étoiles, résidences de tourisme et gîtes premium en Charente-Maritime depuis plus de 27 ans.",
     challenges: [
       'Passages intensifs en couloirs et parties communes',
       'Maintenance rapide entre deux occupants',

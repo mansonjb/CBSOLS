@@ -48,7 +48,7 @@ const process = [
   { step: 'Brief', desc: 'Envoyez vos plans, votre programme et vos exigences techniques. CB Sols analyse la faisabilité et vous rappelle sous 4h.' },
   { step: 'Proposition', desc: 'Sélection de produits adaptés à vos spécifications (classements, esthétique, budget maître d\'ouvrage) avec alternatives.' },
   { step: 'Devis CCTP', desc: 'Devis détaillé par poste, compatible avec votre CCTP, incluant fiches techniques et références normatives.' },
-  { step: 'Projet', desc: 'Pose par l\'équipe CB Sols, pas de sous-traitance. Planning respect, photos d\'avancement si souhaité.' },
+  { step: 'Projet', desc: 'Pose par l\'équipe CB Sols, pas de sous-traitance. Respect du planning, photos d\'avancement si souhaité.' },
   { step: 'DOE', desc: 'Remise du dossier des ouvrages exécutés complet : produits posés, fiches techniques, attestations, garanties.' },
 ]
 

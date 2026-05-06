@@ -43,7 +43,7 @@ const brandPartners = [
 
 const garanties = [
   { title: 'Artisan certifié', desc: 'Plus de 500 projets réalisés depuis 1999 en Charente-Maritime.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg> },
-  { title: "25 ans d'expertise", desc: "Fondé en 1999. Plus de 500 projets à La Rochelle, l'Île de Ré et en Charente-Maritime.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg> },
+  { title: "27 ans d'expertise", desc: "Fondé en 1999. Plus de 500 projets à La Rochelle, l'Île de Ré et en Charente-Maritime.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg> },
   { title: 'Devis gratuit 48h', desc: 'Déplacement et mesures offerts. Chiffrage transparent, sans engagement.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg> },
   { title: 'Travaux en site occupé', desc: "Solutions adaptées pour les professionnels en activité : pose en rotation, par zones ou en horaires décalés.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> },
 ]
@@ -75,7 +75,7 @@ const homeFaqSchema = {
     { '@type': 'Question', name: "Peut-on poser la moquette sans fermer l'hôtel ou le bureau ?", acceptedAnswer: { '@type': 'Answer', text: "Oui. CB Sols travaille en rotation dans les hôtels (chambre par chambre sur les libérations) et en site occupé dans les bureaux. La grande majorité des projets professionnels se font sans interrompre une seule journée d'activité." } },
     { '@type': 'Question', name: 'Quelle est la différence entre la moquette contrat et la moquette résidentielle ?', acceptedAnswer: { '@type': 'Answer', text: "La moquette contrat est classée 32-33 selon la norme EN 1307, certifiée Bfl-s1 (incendie) et testée pour des centaines de milliers de passages. C'est la seule option légale dans un hôtel, des bureaux ou un ERP." } },
     { '@type': 'Question', name: 'CB Sols sous-traite-t-il la pose ?', acceptedAnswer: { '@type': 'Answer', text: "Non. La pose est toujours réalisée par l'équipe CB Sols, aucune sous-traitance. Valentin Prévoteau supervise personnellement les projets. Garantie décennale incluse." } },
-    { '@type': 'Question', name: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?", acceptedAnswer: { '@type': 'Answer', text: "Oui, régulièrement. CB Sols équipe des hôtels, campings et résidences sur les deux îles depuis 25 ans. Les contraintes insulaires sont parfaitement intégrées dans les devis et plannings." } },
+    { '@type': 'Question', name: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?", acceptedAnswer: { '@type': 'Answer', text: "Oui, régulièrement. CB Sols équipe des hôtels, campings et résidences sur les deux îles depuis 27 ans. Les contraintes insulaires sont parfaitement intégrées dans les devis et plannings." } },
   ],
 }
 
@@ -105,7 +105,7 @@ export default function Home() {
 
               {/* Description */}
               <p style={{ fontSize: 'clamp(0.9rem, 1.2vw, 1.05rem)', color: 'var(--dark-2)', lineHeight: 1.7, maxWidth: '440px', margin: '0 0 2.5rem' }}>
-                Moquette, sol PVC, tapis sur mesure : CB Sols accompagne particuliers, hôtels et entreprises en Charente-Maritime depuis <strong>25 ans</strong>.
+                Moquette, sol PVC, tapis sur mesure : CB Sols accompagne particuliers, hôtels et entreprises en Charente-Maritime depuis <strong>27 ans</strong>.
               </p>
 
               {/* CTAs */}
@@ -121,7 +121,7 @@ export default function Home() {
 
               {/* Stats */}
               <div style={{ display: 'flex', gap: '0', marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid var(--border)', flexWrap: 'wrap' }}>
-                {[{ v: '+25', l: "ans d'expérience" }, { v: '500+', l: 'projets réalisés' }, { v: '49', l: 'communes couvertes' }, { v: '4.9★', l: 'note Google' }].map((s) => (
+                {[{ v: '+27', l: "ans d'expérience" }, { v: '500+', l: 'projets réalisés' }, { v: '49', l: 'communes couvertes' }, { v: '4.9★', l: 'note Google' }].map((s) => (
                   <div key={s.v} style={{ flex: '1 1 auto', minWidth: '100px', paddingRight: '2rem' }}>
                     <div style={{ fontFamily: 'var(--font-sans, system-ui)', fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', fontWeight: 800, color: 'var(--dark)', letterSpacing: '-0.04em', lineHeight: 1 }}>{s.v}</div>
                     <div style={{ fontSize: '0.62rem', color: 'var(--muted)', letterSpacing: '0.06em', marginTop: '0.4rem' }}>{s.l}</div>
@@ -531,7 +531,7 @@ export default function Home() {
                 },
                 {
                   q: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?",
-                  a: "Oui, régulièrement. CB Sols équipe des hôtels, campings et résidences sur les deux îles depuis 25 ans. Les contraintes insulaires (logistique, hygrométrie, saisonnalité) sont parfaitement intégrées dans nos devis et plannings."
+                  a: "Oui, régulièrement. CB Sols équipe des hôtels, campings et résidences sur les deux îles depuis 27 ans. Les contraintes insulaires (logistique, hygrométrie, saisonnalité) sont parfaitement intégrées dans nos devis et plannings."
                 },
               ].map((item, i) => (
                 <div key={i} style={{ padding: '1.75rem 0', borderBottom: '1px solid var(--border)' }}>

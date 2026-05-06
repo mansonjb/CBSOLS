@@ -52,11 +52,11 @@ const personSchema = {
 export default function AProposPage() {
   const credentials = [
     { label: 'Décennale', desc: 'Assurance responsabilité décennale en cours de validité', icon: '✓' },
-    { label: '25+ ans d\'expérience', desc: 'Fondé en 1999, 500+ projets livrés en Charente-Maritime', icon: '✓' },
+    { label: '27+ ans d\'expérience', desc: 'Fondé en 1999, 500+ projets livrés en Charente-Maritime', icon: '✓' },
   ]
 
   const stats = [
-    { value: '25+', label: "ans d'expérience", sub: 'depuis 1999' },
+    { value: '27+', label: "ans d'expérience", sub: 'depuis 1999' },
     { value: '500+', label: 'projets réalisés', sub: 'particuliers & pros' },
     { value: '49', label: 'communes couvertes', sub: 'Charente-Maritime' },
     { value: '4.9/5', label: 'satisfaction client', sub: '41 avis vérifiés' },
@@ -73,11 +73,11 @@ export default function AProposPage() {
           <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Notre histoire</div>
             <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-              25 ans au service<br />
+              27 ans au service<br />
               <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>de vos sols.</em>
             </h1>
             <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '600px', lineHeight: 1.75, margin: 0 }}>
-              CB Sols est né en 1999 à Villedoux d'une passion pour les beaux matériaux et le travail bien fait. En 25 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime, des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille aux restaurants étoilés.
+              CB Sols est né en 1999 à Villedoux d'une passion pour les beaux matériaux et le travail bien fait. En 27 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime, des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille aux restaurants étoilés.
             </p>
           </div>
         </section>
@@ -128,7 +128,7 @@ export default function AProposPage() {
                     { year: '2003', label: 'Développement B2B', desc: "Premiers contrats avec des hôteliers et professionnels de l'Île de Ré et de l'agglo rochelaise." },
                     { year: '2008', label: "Arrivée de Valentin Prévoteau", desc: "Valentin intègre la structure en tant qu'apprenti et apprend le métier directement sur les projets." },
                     { year: '2012', label: 'Partenariats officiels', desc: "Agréments avec des marques de référence comme objectflor, EGE et Gerflor : accès aux gammes contract et au SAV fabricants." },
-                    { year: '2013', label: 'Nouveau atelier à Villedoux', desc: "Création d'un nouveau atelier à Villedoux pour stocker matériaux, échantillons et outillage de pose." },
+                    { year: '2013', label: 'Nouvel atelier à Villedoux', desc: "Création d'un nouvel atelier à Villedoux pour stocker matériaux, échantillons et outillage de pose." },
                     { year: '2023', label: "Reprise par Valentin Prévoteau", desc: "Après quinze ans dans l'entreprise, Valentin reprend la gérance de CB Sols et en devient le dirigeant." },
                     { year: '2024', label: 'Showroom unique en France', desc: "Création d'un showroom unique en France à Villedoux : plus de 500 échantillons consultables sur rendez-vous." },
                     { year: "Aujourd'hui", label: '500+ projets', desc: "La Rochelle, Île de Ré, Île d'Oléron, Rochefort, Saintes et toute la Charente-Maritime." },
@@ -158,7 +158,7 @@ export default function AProposPage() {
               L&apos;artisanat, c&apos;est un choix. Celui de prendre le temps de bien faire, de revenir sur un détail jusqu&apos;à ce qu&apos;il soit juste, de refuser le compromis quand il n&apos;est pas nécessaire. Chez CB Sols, l&apos;excellence n&apos;est pas un slogan : c&apos;est la posture quotidienne. Nous mesurons trois fois pour couper une fois, nous calepinons un motif au millimètre, nous reprenons une jonction qui n&apos;est pas parfaite, parce que c&apos;est ce que nous attendrions chez nous.
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--dark-2)', lineHeight: 1.85, maxWidth: '760px', margin: '0 0 3rem' }}>
-              Cette minutie, on la doit aux clients qui nous font confiance, hôteliers, restaurateurs, architectes, particuliers, et on la doit aussi aux compagnons qui font ce métier depuis vingt-cinq ans avec nous. Un sol bien posé, c&apos;est invisible. C&apos;est exactement ça, le travail bien fait.
+              Cette minutie, on la doit aux clients qui nous font confiance, hôteliers, restaurateurs, architectes, particuliers, et on la doit aussi aux compagnons qui font ce métier depuis vingt-sept ans avec nous. Un sol bien posé, c&apos;est invisible. C&apos;est exactement ça, le travail bien fait.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
               {credentials.map((c) => (

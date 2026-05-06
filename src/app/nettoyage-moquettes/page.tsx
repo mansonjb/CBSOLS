@@ -76,7 +76,7 @@ const processSteps = [
     num: '04',
     title: "Rinçage à l'eau déminéralisée",
     body:
-      "Deuxième passe à l'eau déminéralisée pour éliminer tous les résidus de produit. L'eau déminéralisée évite les ateliers calcaires et le ternissement post-nettoyage. Sans cette étape, la moquette se ressalit deux fois plus vite, c'est ce qui distingue un nettoyage pro d'un loueur de machine grand public.",
+      "Deuxième passe à l'eau déminéralisée pour éliminer tous les résidus de produit. L'eau déminéralisée évite les auréoles calcaires et le ternissement post-nettoyage. Sans cette étape, la moquette se ressalit deux fois plus vite, c'est ce qui distingue un nettoyage pro d'un loueur de machine grand public.",
   },
   {
     num: '05',
@@ -136,7 +136,7 @@ const faqItems = [
   },
   {
     q: "Quelle différence avec un loueur de machine grand public ?",
-    a: "Trois différences majeures : (1) la maîtrise des paramètres techniques, pression maximum 9 bars et température maximum 20 °C, là où les loueurs grand public chauffent l'eau et appliquent des pressions hasardeuses qui dégradent les fibres ; (2) le rinçage à l'eau déminéralisée systématique (oublié dans 90 % des locations DIY, et l'eau du robinet laisse des ateliers calcaires) ; (3) les produits adaptés au type de fibre (laine, polyamide, polypropylène réagissent différemment).",
+    a: "Trois différences majeures : (1) la maîtrise des paramètres techniques, pression maximum 9 bars et température maximum 20 °C, là où les loueurs grand public chauffent l'eau et appliquent des pressions hasardeuses qui dégradent les fibres ; (2) le rinçage à l'eau déminéralisée systématique (oublié dans 90 % des locations DIY, et l'eau du robinet laisse des auréoles calcaires) ; (3) les produits adaptés au type de fibre (laine, polyamide, polypropylène réagissent différemment).",
   },
   {
     q: "Pouvez-vous intervenir sans fermer mon hôtel ou mon bureau ?",
@@ -352,7 +352,7 @@ export default function NettoyageMoquettesPage() {
                   Pourquoi prévoir l&apos;entretien <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>plutôt que de subir.</em>
                 </h2>
                 <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                  Pour les hôtels, restaurants, bureaux et nous proposons des contrats d&apos;entretien annuels avec planning fixe (1 à 4 passages par an), tarifs négociés et intervention prioritaire en cas d&apos;urgence (tache, événement client).
+                  Pour les hôtels, restaurants et bureaux, nous proposons des contrats d&apos;entretien annuels avec planning fixe (1 à 4 passages par an), tarifs négociés et intervention prioritaire en cas d&apos;urgence (tache, événement client).
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--cream-muted)', lineHeight: 1.7, marginBottom: '2rem' }}>
                   Cette approche est trois à cinq fois moins coûteuse qu&apos;un remplacement complet, et elle préserve la garantie fabricant de votre revêtement.

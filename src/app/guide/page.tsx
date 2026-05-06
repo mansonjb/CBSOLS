@@ -42,7 +42,7 @@ export default function GuidesHubPage() {
               Guides &amp; <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>conseils.</em>
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--cream-muted)', lineHeight: 1.7, margin: 0, maxWidth: '640px' }}>
-              25 ans de projets résumés en guides pratiques. Comment choisir une moquette professionnelle, comparer sol PVC et carrelage en cuisine pro, entretenir un sol contrat pour qu&apos;il dure. Sans baratin.
+              27 ans de projets résumés en guides pratiques. Comment choisir une moquette professionnelle, comparer sol PVC et carrelage en cuisine pro, entretenir un sol contrat pour qu&apos;il dure. Sans baratin.
             </p>
           </div>
         </section>

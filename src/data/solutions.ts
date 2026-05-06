@@ -29,7 +29,7 @@ export const solutions: Solution[] = [
     sectorName: 'Hôtellerie',
     headline: 'Moquette hôtelière',
     tagline: 'Des sols à la hauteur de vos étoiles',
-    intro: "La moquette hôtelière n'est pas une moquette ordinaire. Elle doit absorber le bruit entre les chambres, résister à des milliers de passages par an, se nettoyer en 2h d'injection-extraction sans fermeture, et raconter l'identité visuelle de votre établissement. CB Sols installe des moquettes hôtelières en Charente-Maritime depuis 25 ans, de l'Île de Ré à Royan.",
+    intro: "La moquette hôtelière n'est pas une moquette ordinaire. Elle doit absorber le bruit entre les chambres, résister à des milliers de passages par an, se nettoyer en 2h d'injection-extraction sans fermeture, et raconter l'identité visuelle de votre établissement. CB Sols installe des moquettes hôtelières en Charente-Maritime depuis 27 ans, de l'Île de Ré à Royan.",
     specificChallenges: [
       'Passages intensifs en couloirs (200+ allers-retours/jour)',
       'Normes incendie obligatoires : Bfl-s1 (classement EU)',
@@ -87,7 +87,7 @@ export const solutions: Solution[] = [
       'Pose précise autour du mobilier sans déménagement complet',
     ],
     keyProducts: [
-      { name: 'objectflor Acoustic', desc: 'Moquette acoustique haute performance, traitement taches, idéale pour les salles de restaurant' },
+      { name: 'EGE Sound Reduction', desc: 'Moquette acoustique haute performance, traitement taches, idéale pour les salles de restaurant' },
       { name: 'EGE Restaurant Collection', desc: 'Motifs discrets et résistants, absorption phonique certifiée, entretien facilité' },
       { name: 'Tapis de délimitation sur mesure', desc: 'Tapis sur mesure pour créer des zones (bar, salle privée, terrasse couverte)' },
     ],
@@ -156,7 +156,7 @@ export const solutions: Solution[] = [
       'Hygiène HACCP : zéro joint, zéro rétention bactérienne',
       'Résistance aux graisses, acides et produits de nettoyage industriels',
       'Antidérapance obligatoire (R10/R11 en cuisine chaude)',
-      'Remontes en plinthe pour étanchéité totale',
+      'Remontées en plinthes pour étanchéité totale',
       'Durabilité face aux équipements roulants lourds',
     ],
     ourApproach: [
@@ -167,7 +167,7 @@ export const solutions: Solution[] = [
     ],
     keyProducts: [
       { name: 'Gerflor Taralay Premium', desc: 'PVC lés professionnel, R10/R11, résistance totale aux graisses et désinfectants, normes cuisine pro' },
-      { name: 'Bostik Novilon', desc: 'Sol vinyle haute résistance pour cuisines professionnelles, nombreuses certifications hygiène' },
+      { name: 'Gerflor Tarasafe', desc: 'Sol vinyle haute résistance pour cuisines professionnelles, nombreuses certifications hygiène' },
     ],
     references: [
       'Cuisine professionnelle La Rochelle : PVC soudé à chaud 80 m², remontées plinthes',
@@ -219,7 +219,7 @@ export const solutions: Solution[] = [
     slug: 'tapis-sur-mesure-hotel',
     title: 'Tapis Sur Mesure Hôtel',
     metaTitle: 'Tapis Sur Mesure Hôtel Charente-Maritime | Création Exclusive CB Sols',
-    metaDescription: 'Création de tapis sur mesure pour hôtels en Charente-Maritime. Motif exclusif, logo, dimensions custom. CB Sols : 25 ans d\'expertise. Devis gratuit.',
+    metaDescription: 'Création de tapis sur mesure pour hôtels en Charente-Maritime. Motif exclusif, logo, dimensions custom. CB Sols : 27 ans d\'expertise. Devis gratuit.',
     serviceSlug: 'tapis-sur-mesure',
     serviceName: 'Tapis sur mesure',
     sectorSlug: 'hotellerie',
@@ -236,19 +236,19 @@ export const solutions: Solution[] = [
     ourApproach: [
       'Conception en collaboration avec votre décorateur ou architecte d\'intérieur',
       'Présentation de prototypes coloris avant fabrication',
-      'Fabrication sur mesure avec partenaires EGE et objectflor',
+      'Fabrication sur mesure avec EGE Carpets',
       'Pose précise avec finitions bordures soignées',
     ],
     keyProducts: [
       { name: 'EGE Custom Collection', desc: 'Tapis sur mesure avec motif exclusif créé par vos soins ou par le studio design EGE' },
-      { name: 'objectflor Axminster', desc: 'Tapis tissés Axminster, motifs complexes possibles, qualité hôtelière internationale' },
+      { name: 'EGE Axminster Custom', desc: 'Tapis tissés Axminster, motifs complexes possibles, qualité hôtelière internationale' },
     ],
     references: [
       'Hôtel La Baronnie, Île de Ré : tapis motif exclusif pour espaces communs et chambres, 600 m²',
       'Résidences de tourisme Charente-Maritime : tapis lobby sur mesure',
     ],
     faq: [
-      { q: 'Quel est le délai pour un tapis hôtelier sur mesure ?', a: "Comptez 6 à 10 semaines entre la validation du motif et la pose. CB Sols coordonne la fabrication avec nos partenaires (EGE et objectflor) et intègre la livraison dans votre planning de rénovation." },
+      { q: 'Quel est le délai pour un tapis hôtelier sur mesure ?', a: "Comptez 6 à 10 semaines entre la validation du motif et la pose. CB Sols coordonne la fabrication avec EGE et intègre la livraison dans votre planning de rénovation." },
       { q: 'Peut-on intégrer le logo de l\'hôtel dans un tapis ?', a: "Oui. Le logo peut être intégré dans le motif du tapis (technique de tissage ou impression) ou servir de point de départ pour créer un motif dérivé. CB Sols vous accompagne dans la définition du brief créatif." },
     ],
   },
@@ -347,7 +347,7 @@ export const solutions: Solution[] = [
       "Classement incendie strict ERP de type L : Bfl-s1 obligatoire",
       "Acoustique : absorption maximale des bruits d'impact et de réverbération",
       "Trafic intense par séances (entrées et sorties rapides)",
-      "Pose sans fermeture prolongée (intervention de nuit)",
+      "Pose sans fermeture prolongée (intervention en site occupé)",
       "Entretien industriel entre les séances : aspirateurs puissants",
     ],
     ourApproach: [
@@ -359,7 +359,7 @@ export const solutions: Solution[] = [
     ],
     keyProducts: [
       { name: 'EGE Cinema Collection', desc: 'Moquette spécifique salles obscures, Bfl-s1, haute absorption acoustique, résistance aux passages intensifs' },
-      { name: 'objectflor Acoustic Pro', desc: 'Moquette tuftée haute densité, Delta w certifié, normes ERP, nombreux coloris' },
+      { name: 'EGE Acoustic Pro', desc: 'Moquette tuftée haute densité, Delta w certifié, normes ERP, nombreux coloris' },
       { name: 'EGE Diffuse Light', desc: "Dalles moquette acoustiques pour les espaces d'accueil et foyers des salles culturelles" },
     ],
     references: [
@@ -402,7 +402,7 @@ export const solutions: Solution[] = [
     keyProducts: [
       { name: 'Gerflor Mipolam Surface', desc: 'PVC hétérogène, résistance désinfectants certifiée, anti-fatigue, nombreux coloris professionnels' },
       { name: 'Gerflor Taralay Impression', desc: 'Sol PVC à faibles émissions COV, certifié lieux de santé, aspect contemporain' },
-      { name: 'Bostik Surestep', desc: 'Sol vinyle antidérapant R10, spécialement conçu pour les espaces sanitaires et commerciaux' },
+      { name: 'Gerflor Tarasafe Standard', desc: 'Sol vinyle antidérapant R10, spécialement conçu pour les espaces sanitaires et commerciaux' },
     ],
     references: [
       "Pharmacies La Rochelle : remplacement sol PVC officine et réserve, intervention dominicale",
@@ -483,7 +483,7 @@ export const solutions: Solution[] = [
     ],
     keyProducts: [
       { name: 'EGE Contract Series', desc: 'Moquette contract certifiée Bfl-s1, haute résistance, documentée pour marchés publics' },
-      { name: 'objectflor Signature Collection', desc: 'Gamme collectivités, nombreuses certifications, excellent rapport qualité-durabilité-prix' },
+      { name: 'Gerflor Taralay Premium', desc: 'PVC hétérogène collectivités, classement 43/34, nombreuses certifications, excellent rapport qualité-durabilité-prix' },
     ],
     references: [
       'Médiathèques Charente-Maritime : moquette acoustique salles de lecture',

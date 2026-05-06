@@ -24,7 +24,7 @@ const reasons = [
   {
     title: 'Les matériaux ont 20 niveaux de gamme',
     body:
-      "Moquette bureau premier prix : 22 €/m² posé. Moquette EGE Contract sur mesure pour suite hôtelière 5★ : 150 €/m² posé. Même service, 7× d'écart. Une fourchette moyenne n'aurait aucun sens.",
+      "Moquette bureau premier prix : 30 €/m² posé. Moquette EGE Contract sur mesure pour suite hôtelière 5★ : 150 €/m² posé. Même service, 7× d'écart. Une fourchette moyenne n'aurait aucun sens.",
   },
   {
     title: 'La surface change le prix au m²',
@@ -184,7 +184,7 @@ export default function TarifsPage() {
               {
                 num: '04',
                 title: 'La fourniture',
-                body: "Le prix varie avec le type (PVC lés/dalles/lames, moquette dalles ou en lès), la marque, et la quantité, plus c'est grand, moins c'est cher au m². Nous réceptionnons la matière, vérifions quantités et coloris (lots fabricant), débit en atelier.",
+                body: "Le prix varie avec le type (PVC lés/dalles/lames, moquette dalles ou en lés), la marque, et la quantité, plus c'est grand, moins c'est cher au m². Nous réceptionnons la matière, vérifions quantités et coloris (lots fabricant), débit en atelier.",
               },
               {
                 num: '05',
