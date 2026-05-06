@@ -7,7 +7,7 @@ import { architectePartners } from '@/data/clients'
 
 export const metadata: Metadata = {
   title: 'Architectes & Prescripteurs | CB Sols, Partenaire Revêtement de Sol',
-  description: 'CB Sols accompagne architectes, décorateurs et maîtres d\'œuvre en Charente-Maritime. Fiches techniques, nuanciers, suivi de chantier dédié. Devis prescripteur sous 24h.',
+  description: 'CB Sols accompagne architectes, décorateurs et maîtres d\'œuvre en Charente-Maritime. Fiches techniques, nuanciers, suivi de projet dédié. Devis prescripteur sous 24h.',
   alternates: { canonical: 'https://cbsols.fr/architectes' },
 }
 
@@ -30,11 +30,11 @@ const atouts = [
   {
     num: '04',
     title: 'Intervention sans interruption d\'activité',
-    desc: 'CB Sols organise les chantiers en rotation ou de nuit pour respecter le planning de votre maître d\'ouvrage. Zéro retard de livraison de notre fait.',
+    desc: 'CB Sols organise les projets en rotation ou de nuit pour respecter le planning de votre maître d\'ouvrage. Zéro retard de livraison de notre fait.',
   },
   {
     num: '05',
-    title: 'Suivi de chantier dédié',
+    title: 'Suivi de projet dédié',
     desc: 'Un interlocuteur unique du devis à la réception. Photos d\'avancement, compte rendu de pose, réserves levées dans les délais contractuels.',
   },
   {
@@ -48,7 +48,7 @@ const process = [
   { step: 'Brief', desc: 'Envoyez vos plans, votre programme et vos exigences techniques. CB Sols analyse la faisabilité et vous rappelle sous 4h.' },
   { step: 'Proposition', desc: 'Sélection de produits adaptés à vos spécifications (classements, esthétique, budget maître d\'ouvrage) avec alternatives.' },
   { step: 'Devis CCTP', desc: 'Devis détaillé par poste, compatible avec votre CCTP, incluant fiches techniques et références normatives.' },
-  { step: 'Chantier', desc: 'Pose par l\'équipe CB Sols, pas de sous-traitance. Planning respect, photos d\'avancement si souhaité.' },
+  { step: 'Projet', desc: 'Pose par l\'équipe CB Sols, pas de sous-traitance. Planning respect, photos d\'avancement si souhaité.' },
   { step: 'DOE', desc: 'Remise du dossier des ouvrages exécutés complet : produits posés, fiches techniques, attestations, garanties.' },
 ]
 
@@ -81,7 +81,7 @@ export default function ArchitectesPage() {
             <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>votre partenaire sol.</em>
           </h1>
           <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '620px', lineHeight: 1.75, marginBottom: '2.5rem' }}>
-            Vous prescrivez les matériaux, CB Sols les pose. Devis sous 24h, fiches techniques complètes, chantiers menés sans interruption d'activité. Un interlocuteur technique unique de votre brief jusqu'au DOE.
+            Vous prescrivez les matériaux, CB Sols les pose. Devis sous 24h, fiches techniques complètes, projets menés sans interruption d'activité. Un interlocuteur technique unique de votre brief jusqu'au DOE.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <Button href="/contact?from=architectes" variant="primary" size="md">Contacter CB Sols</Button>
@@ -195,8 +195,8 @@ export default function ArchitectesPage() {
               },
               {
                 num: '06',
-                title: 'Phasage chantier',
-                desc: "Pose en milieu occupé, intervention week-end, étapes par zones : nous proposons un phasage compatible avec votre planning d'opération et celui de votre maître d'ouvrage.",
+                title: 'Phasage projet',
+                desc: "Pose en milieu occupé, étapes par zones, horaires décalés : nous proposons un phasage compatible avec votre planning d'opération et celui de votre maître d'ouvrage.",
               },
             ].map((c) => (
               <div key={c.num} style={{ padding: '1.75rem', border: '1px solid var(--border)', backgroundColor: 'var(--bg-card)', borderRadius: '10px', borderLeft: '3px solid var(--terra)' }}>
@@ -270,7 +270,7 @@ export default function ArchitectesPage() {
               Architectes &amp; agences partenaires
             </h2>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', maxWidth: '560px', margin: '0 auto', lineHeight: 1.6 }}>
-              Plusieurs agences d&apos;architecture d&apos;intérieur de Charente-Maritime nous confient régulièrement leurs chantiers. Une sélection ci-dessous.
+              Plusieurs agences d&apos;architecture d&apos;intérieur de Charente-Maritime nous confient régulièrement leurs projets. Une sélection ci-dessous.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>

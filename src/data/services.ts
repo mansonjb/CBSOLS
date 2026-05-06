@@ -168,7 +168,7 @@ export const services: Service[] = [
       'Pose par des artisans qualifiés',
       'Garantie décennale',
     ],
-    useCases: ['Maisons et appartements', 'Bureaux et commerces', 'Hôtels et restaurants', 'Collectivités', 'Chantiers neufs et rénovation'],
+    useCases: ['Maisons et appartements', 'Bureaux et commerces', 'Hôtels et restaurants', 'Collectivités', 'Projets neufs et rénovation'],
     brands: ['EGE', 'Gerflor', 'objectflor'],
     geoVerb: 'Revêtement de sol à',
     metaTitle: (city) => `Revêtement de Sol ${city} | CB Sols, Artisan Spécialiste`,

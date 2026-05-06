@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { clients, getClientById, getChantiersForClient, CHANTIER_STATUS_LABEL } from '@/data/crm-fixtures'
+import { clients, getClientById, getProjetsForClient, CHANTIER_STATUS_LABEL } from '@/data/crm-fixtures'
 
 const eur = (n: number) => n.toLocaleString('fr-FR') + ' € HT'
 
@@ -13,7 +13,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
   const client = getClientById(id)
   if (!client) notFound()
 
-  const chantiers = getChantiersForClient(id).sort((a, b) =>
+  const chantiers = getProjetsForClient(id).sort((a, b) =>
     new Date(b.date_devis || '0').getTime() - new Date(a.date_devis || '0').getTime()
   )
 
@@ -42,7 +42,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
       {/* KPIs client */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
         <KPI label="CA cumulé" value={eur(client.ca_total_ht)} accent />
-        <KPI label="Chantiers" value={client.nombre_chantiers.toString()} />
+        <KPI label="Chantiers" value={client.nombre_projets.toString()} />
         <KPI label="Premier contact" value={client.date_premier_contact ? new Date(client.date_premier_contact).toLocaleDateString('fr-FR') : ','} />
         <KPI label="Dernière intervention" value={client.derniere_intervention ? new Date(client.derniere_intervention).toLocaleDateString('fr-FR') : 'En cours'} />
       </div>

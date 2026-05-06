@@ -43,7 +43,7 @@ export default function AdminDashboard() {
           Bonjour Valentin <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>,</em> voici votre activité.
         </h1>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
-          Vendredi 2 mai 2026 · {kpis.leads_actifs} prospects actifs · {kpis.chantiers_actifs} chantiers en cours ou planifiés
+          Vendredi 2 mai 2026 · {kpis.leads_actifs} prospects actifs · {kpis.projets_actifs} chantiers en cours ou planifiés
         </p>
       </div>
 

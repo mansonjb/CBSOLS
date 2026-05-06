@@ -1,7 +1,18 @@
+// Auto-calcul de l'expérience : années depuis août 1999, incrémenté chaque août
+function computeExperience(): number {
+  const founded = new Date(1999, 7, 1) // août = mois 7 (0-indexed)
+  const now = new Date()
+  let years = now.getFullYear() - founded.getFullYear()
+  if (now.getMonth() < founded.getMonth()) years -= 1
+  return years
+}
+
+const yearsOfExperience = computeExperience()
+
 export const company = {
   name: 'CB Sols',
   legalName: 'CB SOLS REVÊTEMENTS',
-  tagline: 'Artisan du sol depuis 25 ans',
+  tagline: `Artisan solier moquettiste depuis ${yearsOfExperience} ans`,
   description:
     'Spécialiste des revêtements de sol sur mesure en Charente-Maritime. Moquettes, sols PVC, tapis : posés par des artisans qualifiés pour particuliers et professionnels.',
   phone: '06 85 05 28 80',
@@ -20,7 +31,8 @@ export const company = {
   },
   contact: 'Valentin Prévoteau',
   since: 1999,
-  experience: '25 ans',
+  yearsOfExperience,
+  experience: `${yearsOfExperience} ans`,
   showroom: {
     description: 'Showroom sur rendez-vous : espace confidentiel avec plus de 500 échantillons',
     appointment: true,
@@ -29,7 +41,6 @@ export const company = {
   brands: ['EGE', 'Gerflor', 'objectflor', 'Bostik', 'Romus'],
   social: {
     instagram: 'https://www.instagram.com/cb.sols/',
-    facebook: 'https://www.facebook.com/people/SAS-CB-SOLS/100063907664837/',
     linkedin: 'https://www.linkedin.com/company/cb-sols/',
   },
   siret: '492 385 091 00029',

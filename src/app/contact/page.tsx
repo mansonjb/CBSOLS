@@ -24,7 +24,7 @@ export default function ContactPage() {
                 Parlons de<br /><em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>votre projet.</em>
               </h1>
               <p style={{ fontSize: '0.875rem', color: 'var(--cream-muted)', lineHeight: 1.7, marginBottom: '3rem' }}>
-                Devis gratuit sous 48h. Nous nous déplaçons sur l'ensemble de la Charente-Maritime pour évaluer votre chantier.
+                Devis gratuit sous 48h. Nous nous déplaçons sur l'ensemble de la Charente-Maritime pour évaluer votre projet.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>

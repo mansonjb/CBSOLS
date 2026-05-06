@@ -99,7 +99,7 @@ export default async function GeoPage({ params }: Props) {
     },
     {
       q: `Quel est le prix d'une ${service.name.toLowerCase()} à ${city.name} ?`,
-      a: `Le tarif d'une ${service.name.toLowerCase()} à ${city.name} dépend de la surface, du matériau choisi et des spécificités du chantier. CB Sols réalise des devis gratuits et détaillés sous 48 h.`,
+      a: `Le tarif d'une ${service.name.toLowerCase()} à ${city.name} dépend de la surface, du matériau choisi et des spécificités du projet. CB Sols réalise des devis gratuits et détaillés sous 48 h.`,
     },
     {
       q: `Quels matériaux proposez-vous pour la ${service.name.toLowerCase()} à ${city.name} ?`,

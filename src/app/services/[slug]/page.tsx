@@ -173,15 +173,15 @@ export default async function ServicePage({ params }: Props) {
               {[
                 {
                   q: `Quel est le délai pour une pose de ${service.shortName.toLowerCase()} ?`,
-                  a: `Selon la surface et la complexité du chantier, une pose de ${service.shortName.toLowerCase()} prend généralement 1 à 3 jours. CB Sols vous communique un planning précis lors du devis.`,
+                  a: `Selon la surface et la complexité du projet, une pose de ${service.shortName.toLowerCase()} prend généralement 1 à 3 jours. CB Sols vous communique un planning précis lors du devis.`,
                 },
                 {
-                  q: 'Vous intervenez sur les chantiers neufs et en rénovation ?',
-                  a: 'Oui, CB Sols intervient aussi bien sur des constructions neuves que sur des projets de rénovation. Nous adaptons nos méthodes à chaque contexte de chantier.',
+                  q: 'Vous intervenez sur les projets neufs et en rénovation ?',
+                  a: 'Oui, CB Sols intervient aussi bien sur des constructions neuves que sur des projets de rénovation. Nous adaptons nos méthodes à chaque contexte de projet.',
                 },
                 {
                   q: 'Proposez-vous une garantie sur vos travaux ?',
-                  a: 'Tous nos travaux sont couverts par la garantie décennale. Les matériaux bénéficient également des garanties constructeur des marques que nous distribuons.',
+                  a: 'Tous nos travaux sont couverts par la garantie décennale. Les matériaux bénéficient également des garanties fabricant des marques que nous distribuons.',
                 },
                 {
                   q: 'Comment obtenir un devis ?',

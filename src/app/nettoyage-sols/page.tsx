@@ -75,7 +75,7 @@ const processSteps = [
     num: '04',
     title: "Rinçage à l'eau déminéralisée",
     body:
-      "Rinçage final à l'eau déminéralisée pour ne laisser aucun résidu de détergent ni dépôt calcaire. C'est ce rinçage qui garantit que votre sol ne se ressalit pas deux fois plus vite, c'est aussi ce qui distingue un travail professionnel d'une location DIY.",
+      "Rinçage final à l'eau déminéralisée pour ne laisser aucun résidu de détergent ni atelier calcaire. C'est ce rinçage qui garantit que votre sol ne se ressalit pas deux fois plus vite, c'est aussi ce qui distingue un travail professionnel d'une location DIY.",
   },
   {
     num: '05',
@@ -107,7 +107,7 @@ const faqItems = [
   },
   {
     q: "Combien de temps avant de pouvoir remarcher dessus ?",
-    a: "La Rotowash extrait l'eau au fur et à mesure du brossage. Le sol est utilisable entre 30 minutes et 1 heure après l'intervention. Pour les chantiers professionnels, nous adaptons toujours notre planning à vos contraintes d'exploitation.",
+    a: "La Rotowash extrait l'eau au fur et à mesure du brossage. Le sol est utilisable entre 30 minutes et 1 heure après l'intervention. Pour les projets professionnels, nous adaptons toujours notre planning à vos contraintes d'exploitation.",
   },
   {
     q: "Le brossage mécanique abîme-t-il le sol ?",

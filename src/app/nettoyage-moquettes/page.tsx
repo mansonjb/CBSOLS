@@ -76,13 +76,13 @@ const processSteps = [
     num: '04',
     title: "Rinçage à l'eau déminéralisée",
     body:
-      "Deuxième passe à l'eau déminéralisée pour éliminer tous les résidus de produit. L'eau déminéralisée évite les dépôts calcaires et le ternissement post-nettoyage. Sans cette étape, la moquette se ressalit deux fois plus vite, c'est ce qui distingue un nettoyage pro d'un loueur de machine grand public.",
+      "Deuxième passe à l'eau déminéralisée pour éliminer tous les résidus de produit. L'eau déminéralisée évite les ateliers calcaires et le ternissement post-nettoyage. Sans cette étape, la moquette se ressalit deux fois plus vite, c'est ce qui distingue un nettoyage pro d'un loueur de machine grand public.",
   },
   {
     num: '05',
     title: 'Brossage et séchage',
     body:
-      "Brossage des fibres dans le sens du poil pour redresser la mèche, suivi d'un séchage actif (ventilation 2 à 4 h). La pièce redevient utilisable en demi-journée pour la majorité des chantiers.",
+      "Brossage des fibres dans le sens du poil pour redresser la mèche, suivi d'un séchage actif (ventilation 2 à 4 h). La pièce redevient utilisable en demi-journée pour la majorité des projets.",
   },
   {
     num: '06',
@@ -106,7 +106,7 @@ const frequences = [
   {
     secteur: 'Bureaux et open spaces',
     freq: '1 fois par an',
-    detail: "Idéalement en juillet-août sur jours fériés ou pendant les fermetures. Possible en intervention week-end.",
+    detail: "Idéalement en juillet-août sur jours fériés ou pendant les fermetures. Possible en intervention en site occupé.",
   },
   {
     secteur: 'Restauration, moquettes salle',
@@ -136,7 +136,7 @@ const faqItems = [
   },
   {
     q: "Quelle différence avec un loueur de machine grand public ?",
-    a: "Trois différences majeures : (1) la maîtrise des paramètres techniques, pression maximum 9 bars et température maximum 20 °C, là où les loueurs grand public chauffent l'eau et appliquent des pressions hasardeuses qui dégradent les fibres ; (2) le rinçage à l'eau déminéralisée systématique (oublié dans 90 % des locations DIY, et l'eau du robinet laisse des dépôts calcaires) ; (3) les produits adaptés au type de fibre (laine, polyamide, polypropylène réagissent différemment).",
+    a: "Trois différences majeures : (1) la maîtrise des paramètres techniques, pression maximum 9 bars et température maximum 20 °C, là où les loueurs grand public chauffent l'eau et appliquent des pressions hasardeuses qui dégradent les fibres ; (2) le rinçage à l'eau déminéralisée systématique (oublié dans 90 % des locations DIY, et l'eau du robinet laisse des ateliers calcaires) ; (3) les produits adaptés au type de fibre (laine, polyamide, polypropylène réagissent différemment).",
   },
   {
     q: "Pouvez-vous intervenir sans fermer mon hôtel ou mon bureau ?",

@@ -104,7 +104,7 @@ export const sectors: Sector[] = [
       'Conformité aux normes incendie (Euroclasse)',
       'Résistance aux passages très intensifs',
       'Budget maîtrisé (marchés publics)',
-      'Délais de chantier contraints (vacances scolaires)',
+      'Délais de projet contraints (vacances scolaires)',
       'Accessibilité PMR obligatoire',
     ],
     solutions: [

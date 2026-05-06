@@ -10,11 +10,11 @@ import { ClientLogoCard } from '@/components/ClientLogoCard'
 import { clientLogos } from '@/data/clients'
 
 const projects = [
-  { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '600 m²', img: '/images/tapis-hotel-real.webp' },
+  { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '20 m²', img: '/images/tapis-hotel-real.webp' },
   { title: 'Restaurant 3★', type: 'Moquette gastronomique', sector: 'Restauration étoilée', surface: '220 m²', img: '/images/restaurant-etoile-real.webp' },
   { title: 'Golf de la Prée', type: 'Moquette + PVC vestiaires', sector: 'Sport & Loisirs', surface: '600 m²', img: '/images/golf-real.webp' },
   { title: 'Bistrot Grande Terrasse', type: 'Moquette acoustique', sector: 'Restauration', surface: '280 m²', img: '/images/bistrot-restaurant-real.webp' },
-  { title: 'Bureaux Charente-Maritime', type: 'Dalles haute résistance', sector: 'Tertiaire', surface: '350 m²', img: '/images/moquette-bureau-real.webp' },
+  { title: 'Bureaux Charente-Maritime', type: 'Dalles haute résistance', sector: 'Tertiaire', surface: '170 m²', img: '/images/moquette-bureau-real.webp' },
   { title: 'Cuisine Professionnelle', type: 'PVC soudé à chaud', sector: 'Pro & CHR', surface: '80 m²', img: '/images/cuisine-pro-real.webp' },
 ]
 
@@ -24,7 +24,7 @@ const testimonials = [
     name: "Véronique A.", role: "Directrice", company: "Hôtel La Baronnie", location: "Saint-Martin-de-Ré", stars: 5,
   },
   {
-    quote: "Refonte complète du clubhouse et des vestiaires. Pose le week-end sans une heure d'interruption. L'équipe connaît les contraintes du secteur. Résultat impeccable.",
+    quote: "Refonte complète du clubhouse et des vestiaires. Pose en site occupé sans une heure d'interruption. L'équipe connaît les contraintes du secteur. Résultat impeccable.",
     name: "Éric D.", role: "Directeur général", company: "Golf de la Prée", location: "La Couarde-sur-Mer", stars: 5,
   },
   {
@@ -42,8 +42,8 @@ const brandPartners = [
 ]
 
 const garanties = [
-  { title: 'Artisan certifié', desc: 'Plus de 500 chantiers réalisés depuis 1999 en Charente-Maritime.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg> },
-  { title: "25 ans d'expertise", desc: "Fondé en 1999. Plus de 500 chantiers à La Rochelle, l'Île de Ré et en Charente-Maritime.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg> },
+  { title: 'Artisan certifié', desc: 'Plus de 500 projets réalisés depuis 1999 en Charente-Maritime.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg> },
+  { title: "25 ans d'expertise", desc: "Fondé en 1999. Plus de 500 projets à La Rochelle, l'Île de Ré et en Charente-Maritime.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg> },
   { title: 'Devis gratuit 48h', desc: 'Déplacement et mesures offerts. Chiffrage transparent, sans engagement.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg> },
   { title: 'Travaux en site occupé', desc: "Solutions adaptées pour les professionnels en activité : pose en rotation, par zones ou en horaires décalés.", icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> },
 ]
@@ -72,9 +72,9 @@ const homeFaqSchema = {
   '@type': 'FAQPage',
   mainEntity: [
     { '@type': 'Question', name: 'Le devis est-il vraiment gratuit, même pour une petite surface ?', acceptedAnswer: { '@type': 'Answer', text: "Oui, sans minimum de surface et sans engagement. CB Sols se déplace gratuitement dans toute la Charente-Maritime pour mesurer, évaluer l'état du support et vous remettre un devis détaillé sous 48h. Que ce soit pour 15 m² ou 1 500 m²." } },
-    { '@type': 'Question', name: "Peut-on poser la moquette sans fermer l'hôtel ou le bureau ?", acceptedAnswer: { '@type': 'Answer', text: "Oui. CB Sols travaille en rotation dans les hôtels (chambre par chambre sur les libérations) et le week-end dans les bureaux. La grande majorité des chantiers professionnels se font sans interrompre une seule journée d'activité." } },
+    { '@type': 'Question', name: "Peut-on poser la moquette sans fermer l'hôtel ou le bureau ?", acceptedAnswer: { '@type': 'Answer', text: "Oui. CB Sols travaille en rotation dans les hôtels (chambre par chambre sur les libérations) et en site occupé dans les bureaux. La grande majorité des projets professionnels se font sans interrompre une seule journée d'activité." } },
     { '@type': 'Question', name: 'Quelle est la différence entre la moquette contrat et la moquette résidentielle ?', acceptedAnswer: { '@type': 'Answer', text: "La moquette contrat est classée 32-33 selon la norme EN 1307, certifiée Bfl-s1 (incendie) et testée pour des centaines de milliers de passages. C'est la seule option légale dans un hôtel, des bureaux ou un ERP." } },
-    { '@type': 'Question', name: 'CB Sols sous-traite-t-il la pose ?', acceptedAnswer: { '@type': 'Answer', text: "Non. La pose est toujours réalisée par l'équipe CB Sols, aucune sous-traitance. Valentin Prévoteau supervise personnellement les chantiers. Garantie décennale incluse." } },
+    { '@type': 'Question', name: 'CB Sols sous-traite-t-il la pose ?', acceptedAnswer: { '@type': 'Answer', text: "Non. La pose est toujours réalisée par l'équipe CB Sols, aucune sous-traitance. Valentin Prévoteau supervise personnellement les projets. Garantie décennale incluse." } },
     { '@type': 'Question', name: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?", acceptedAnswer: { '@type': 'Answer', text: "Oui, régulièrement. CB Sols équipe des hôtels, campings et résidences sur les deux îles depuis 25 ans. Les contraintes insulaires sont parfaitement intégrées dans les devis et plannings." } },
   ],
 }
@@ -307,7 +307,7 @@ export default function Home() {
               Notre<br /><em style={{ fontFamily: 'var(--font-serif, Georgia, serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>méthode</em>
             </h2>
             <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '380px', margin: 0 }}>
-              De la prise de contact à la réception de chantier : un accompagnement complet, sans sous-traitance.
+              De la prise de contact à la réception de projet : un accompagnement complet, sans sous-traitance.
             </p>
           </div>
 
@@ -363,13 +363,13 @@ export default function Home() {
       <section style={{ padding: '6rem 2rem', backgroundColor: 'var(--bg-inv)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           <div>
-            <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>L'artisan derrière chaque chantier</p>
+            <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>L'artisan derrière chaque projet</p>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: 'var(--text-on-dark)', letterSpacing: '-0.03em', lineHeight: 1.05, margin: '0 0 1.5rem' }}>
               Valentin Prévoteau<br />
               <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>gérant CB Sols.</em>
             </h2>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', lineHeight: 1.8, maxWidth: '480px', marginBottom: '2rem' }}>
-              Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. Entré dans l'entreprise en 2008, repreneur en 2023, des centaines de chantiers en Charente-Maritime.
+              Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. Entré dans l'entreprise en 2008, repreneur en 2023, des centaines de projets en Charente-Maritime.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem' }}>
               {['Décennale', 'Assurance pro', 'Partenaire EGE', 'Partenaire Gerflor'].map(c => (
@@ -395,7 +395,7 @@ export default function Home() {
                 </div>
               </div>
               <div style={{ position: 'absolute', top: '-12px', right: '-12px', padding: '0.5rem 0.875rem', backgroundColor: 'var(--terra)', borderRadius: '999px', fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#fff', fontWeight: 600 }}>
-                500+ chantiers
+                500+ projets
               </div>
             </div>
           </div>
@@ -519,15 +519,15 @@ export default function Home() {
                 },
                 {
                   q: "Peut-on poser la moquette sans fermer l'hôtel ou le bureau ?",
-                  a: "Oui. CB Sols travaille en rotation dans les hôtels (chambre par chambre sur les libérations) et le week-end dans les bureaux. La grande majorité des chantiers professionnels se font sans interrompre une seule journée d'activité."
+                  a: "Oui. CB Sols travaille en rotation dans les hôtels (chambre par chambre sur les libérations) et en site occupé dans les bureaux. La grande majorité des projets professionnels se font sans interrompre une seule journée d'activité."
                 },
                 {
                   q: "Quelle est la différence entre la moquette contrat et la moquette résidentielle ?",
-                  a: "La moquette contrat est classée 32-33 selon la norme EN 1307, certifiée Bfl-s1 (incendie) et testée pour des centaines de milliers de passages. C'est la seule option légale dans un hôtel, des bureaux ou un ERP. CB Sols ne pose que de la moquette contrat sur les chantiers professionnels."
+                  a: "La moquette contrat est classée 32-33 selon la norme EN 1307, certifiée Bfl-s1 (incendie) et testée pour des centaines de milliers de passages. C'est la seule option légale dans un hôtel, des bureaux ou un ERP. CB Sols ne pose que de la moquette contrat sur les projets professionnels."
                 },
                 {
                   q: "CB Sols sous-traite-t-il la pose ?",
-                  a: "Non. La pose est toujours réalisée par l'équipe CB Sols, aucune sous-traitance. Valentin Prévoteau supervise personnellement les chantiers. C'est la garantie d'un résultat irréprochable et d'un interlocuteur unique du devis à la réception."
+                  a: "Non. La pose est toujours réalisée par l'équipe CB Sols, aucune sous-traitance. Valentin Prévoteau supervise personnellement les projets. C'est la garantie d'un résultat irréprochable et d'un interlocuteur unique du devis à la réception."
                 },
                 {
                   q: "CB Sols intervient-il sur l'Île de Ré et l'Île d'Oléron ?",

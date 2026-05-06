@@ -53,13 +53,13 @@ export interface Client {
   ville: string
   date_premier_contact: string // ISO
   ca_total_ht: number
-  nombre_chantiers: number
+  nombre_projets: number
   derniere_intervention: string // ISO
   notes?: string
   tags: string[]
 }
 
-export type ChantierStatut =
+export type ProjetStatut =
   | 'devis_en_cours'
   | 'devis_envoye'
   | 'planifie'
@@ -68,7 +68,7 @@ export type ChantierStatut =
   | 'sav'
   | 'annule'
 
-export interface Chantier {
+export interface Projet {
   id: string
   client_id: string
   titre: string
@@ -76,7 +76,7 @@ export interface Chantier {
   type_prestation: string
   surface_m2: number
   montant_ht: number
-  statut: ChantierStatut
+  statut: ProjetStatut
   date_devis: string
   date_debut?: string
   date_fin?: string
@@ -195,7 +195,7 @@ export const leads: Lead[] = [
     derniere_interaction: '2026-04-25T14:00:00',
     segment: 'commerce',
     notes: [
-      { date: '2026-04-19T17:50:00', content: "Recommandé par M. Bernard (ancien chantier 2024). Devis demandé urgent.", auteur: 'VP' },
+      { date: '2026-04-19T17:50:00', content: "Recommandé par M. Bernard (ancien projet 2024). Devis demandé urgent.", auteur: 'VP' },
       { date: '2026-04-21T10:00:00', content: "Visite technique faite. objectflor Polyflor retenu. Pose en milieu occupé, 4 zones.", auteur: 'VP' },
       { date: '2026-04-25T14:00:00', content: "Devis signé. Acompte 30% reçu. Démarrage 15 mai.", auteur: 'VP' },
     ],
@@ -268,7 +268,7 @@ export const leads: Lead[] = [
     telephone: '06 14 25 36 47',
     email: 'ac.vidal@studio-vidal.fr',
     ville: 'La Rochelle',
-    type_projet: 'Architecte d\'intérieur, chantier en cascade hôtel La Maline',
+    type_projet: 'Architecte d\'intérieur, projet en cascade hôtel La Maline',
     surface_estimee: 'Multi-zones, à définir',
     statut: 'contacte',
     derniere_interaction: '2026-04-26T17:00:00',
@@ -294,7 +294,7 @@ export const leads: Lead[] = [
     derniere_interaction: '2026-04-18T10:00:00',
     segment: 'bureau',
     notes: [
-      { date: '2026-04-02T16:00:00', content: "Recommandé par CB Sols (ancien chantier 2022 du voisin de palier).", auteur: 'VP' },
+      { date: '2026-04-02T16:00:00', content: "Recommandé par CB Sols (ancien projet 2022 du voisin de palier).", auteur: 'VP' },
       { date: '2026-04-08T14:00:00', content: "Devis 10 540 € HT envoyé.", auteur: 'VP' },
       { date: '2026-04-18T10:00:00', content: "Devis signé. Pose les 17-18 mai (week-end).", auteur: 'VP' },
     ],
@@ -333,7 +333,7 @@ export const clients: Client[] = [
     ville: 'Saint-Martin-de-Ré',
     date_premier_contact: '2024-09-12',
     ca_total_ht: 84500,
-    nombre_chantiers: 3,
+    nombre_projets: 3,
     derniere_intervention: '2026-03-15',
     tags: ['hotellerie', 'ile-de-re', 'haut-de-gamme', 'recurrent'],
     notes: 'Client référence Île de Ré. Très satisfait, recommande activement. Possible 2e phase fin 2026.',
@@ -351,7 +351,7 @@ export const clients: Client[] = [
     ville: 'La Rochelle',
     date_premier_contact: '2025-03-20',
     ca_total_ht: 28400,
-    nombre_chantiers: 1,
+    nombre_projets: 1,
     derniere_intervention: '2025-11-08',
     tags: ['restauration-etoilee', 'la-rochelle', 'prestige'],
     notes: 'Restaurant 2 étoiles Michelin. Exigence très haute sur les finitions. Client à mettre en avant en référence.',
@@ -369,7 +369,7 @@ export const clients: Client[] = [
     ville: 'La Couarde-sur-Mer',
     date_premier_contact: '2023-04-05',
     ca_total_ht: 47800,
-    nombre_chantiers: 2,
+    nombre_projets: 2,
     derniere_intervention: '2026-02-12',
     tags: ['ile-de-re', 'sport-loisirs', 'recurrent'],
     notes: 'Clubhouse 2023 + vestiaires 2026. Très bonne relation. Intervention week-end systématique.',
@@ -387,7 +387,7 @@ export const clients: Client[] = [
     ville: 'Saintes',
     date_premier_contact: '2024-02-10',
     ca_total_ht: 41200,
-    nombre_chantiers: 2,
+    nombre_projets: 2,
     derniere_intervention: '2026-04-30',
     tags: ['collectivite', 'erp', 'marche-public'],
     notes: 'Marché public récurrent. Salle polyvalente faite en avril 2026, salle des associations prévue 2027.',
@@ -404,7 +404,7 @@ export const clients: Client[] = [
     ville: 'Aytré',
     date_premier_contact: '2026-04-26',
     ca_total_ht: 3240,
-    nombre_chantiers: 1,
+    nombre_projets: 1,
     derniere_intervention: '',
     tags: ['particulier', 'tapis-sur-mesure'],
     notes: 'Tapis sur mesure en cours. Devis signé le 30/04.',
@@ -422,7 +422,7 @@ export const clients: Client[] = [
     ville: 'La Rochelle',
     date_premier_contact: '2025-09-18',
     ca_total_ht: 18750,
-    nombre_chantiers: 1,
+    nombre_projets: 1,
     derniere_intervention: '2026-01-12',
     tags: ['restauration', 'la-rochelle', 'moquette-acoustique'],
     notes: 'Très satisfait du résultat acoustique (-10 dB mesuré). Recommandation potentielle.',
@@ -440,7 +440,7 @@ export const clients: Client[] = [
     ville: 'La Rochelle',
     date_premier_contact: '2024-06-12',
     ca_total_ht: 33500,
-    nombre_chantiers: 1,
+    nombre_projets: 1,
     derniere_intervention: '2024-08-25',
     tags: ['tertiaire', 'la-rochelle', 'pose-week-end'],
     notes: 'Pose 350 m² sur 2 week-ends sans interruption. Possible extension 2027.',
@@ -458,7 +458,7 @@ export const clients: Client[] = [
     ville: 'La Rochelle',
     date_premier_contact: '2026-04-02',
     ca_total_ht: 10540,
-    nombre_chantiers: 1,
+    nombre_projets: 1,
     derniere_intervention: '',
     tags: ['tertiaire', 'la-rochelle'],
     notes: 'Pose programmée week-end 17-18 mai.',
@@ -466,7 +466,7 @@ export const clients: Client[] = [
 ]
 
 // ── CHANTIERS (12 across all states) ──────────────────────────────
-export const chantiers: Chantier[] = [
+export const projets: Projet[] = [
   {
     id: 'CH-2026-018',
     client_id: 'C-004',
@@ -560,7 +560,7 @@ export const chantiers: Chantier[] = [
     date_fin: '2026-02-12',
     equipe: ['Valentin', 'Mehdi'],
     marque_principale: 'Gerflor Tarasafe Plus',
-    notes: 'Chantier livré conforme. Réception sans réserve.',
+    notes: 'Projet livré conforme. Réception sans réserve.',
     marge_ht: 2050,
   },
   {
@@ -577,7 +577,7 @@ export const chantiers: Chantier[] = [
     date_fin: '2025-11-08',
     equipe: ['Valentin', 'Mehdi', 'Sébastien'],
     marque_principale: 'EGE Carpets, Highline 80/20',
-    notes: 'Chantier prestige. Très belle référence. Photos à jour.',
+    notes: 'Projet prestige. Très belle référence. Photos à jour.',
     marge_ht: 8200,
   },
   {
@@ -594,7 +594,7 @@ export const chantiers: Chantier[] = [
     date_fin: '2025-11-15',
     equipe: ['Valentin', 'Mehdi', 'Sébastien'],
     marque_principale: 'EGE + tapis atelier',
-    notes: 'Le chantier référence du portfolio. Photos publiées.',
+    notes: 'Le projet référence du portfolio. Photos publiées.',
     marge_ht: 15800,
   },
   {
@@ -668,11 +668,11 @@ export function getLeadById(id: string): Lead | undefined {
 export function getClientById(id: string): Client | undefined {
   return clients.find((c) => c.id === id)
 }
-export function getChantierById(id: string): Chantier | undefined {
-  return chantiers.find((c) => c.id === id)
+export function getProjetById(id: string): Projet | undefined {
+  return projets.find((c) => c.id === id)
 }
-export function getChantiersForClient(clientId: string): Chantier[] {
-  return chantiers.filter((c) => c.client_id === clientId)
+export function getProjetsForClient(clientId: string): Projet[] {
+  return projets.filter((c) => c.client_id === clientId)
 }
 
 // ── KPI agrégés (pour dashboard) ──────────────────────────────────
@@ -682,11 +682,11 @@ export function computeKPIs() {
   const startNextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1)
   const endNextMonth = new Date(now.getFullYear(), now.getMonth() + 2, 0)
 
-  const ca_mois_en_cours = chantiers
+  const ca_mois_en_cours = projets
     .filter((c) => c.date_fin && new Date(c.date_fin) >= startMonth && new Date(c.date_fin) < startNextMonth && c.statut === 'termine')
     .reduce((s, c) => s + c.montant_ht, 0)
 
-  const ca_planifie_mois_prochain = chantiers
+  const ca_planifie_mois_prochain = projets
     .filter((c) => c.date_debut && new Date(c.date_debut) >= startNextMonth && new Date(c.date_debut) <= endNextMonth)
     .reduce((s, c) => s + c.montant_ht, 0)
 
@@ -704,7 +704,7 @@ export function computeKPIs() {
   ).length
   const taux_conversion = total_leads_ce_mois > 0 ? Math.round((conversions_ce_mois / total_leads_ce_mois) * 100) : 0
 
-  const chantiers_actifs = chantiers.filter((c) => c.statut === 'en_cours' || c.statut === 'planifie').length
+  const projets_actifs = projets.filter((c) => c.statut === 'en_cours' || c.statut === 'planifie').length
 
   const top_sources: Record<string, number> = {}
   for (const l of leads) {
@@ -717,7 +717,7 @@ export function computeKPIs() {
     leads_a_relancer,
     leads_actifs,
     taux_conversion,
-    chantiers_actifs,
+    projets_actifs,
     total_clients: clients.length,
     top_sources,
   }
@@ -733,7 +733,7 @@ export const LEAD_STATUS_LABEL: Record<LeadStatus, { label: string; color: strin
   perdu: { label: 'Perdu', color: '#999' },
 }
 
-export const CHANTIER_STATUS_LABEL: Record<ChantierStatut, { label: string; color: string }> = {
+export const CHANTIER_STATUS_LABEL: Record<ProjetStatut, { label: string; color: string }> = {
   devis_en_cours: { label: 'Devis en cours', color: '#999' },
   devis_envoye: { label: 'Devis envoyé', color: '#7A6FCC' },
   planifie: { label: 'Planifié', color: '#5C8CB5' },
@@ -742,6 +742,11 @@ export const CHANTIER_STATUS_LABEL: Record<ChantierStatut, { label: string; colo
   sav: { label: 'SAV', color: '#D9802F' },
   annule: { label: 'Annulé', color: '#999' },
 }
+
+// Alias rétro-compatibilité (admin CRM utilise encore "chantier")
+export const chantiers = projets
+export type ChantierStatut = ProjetStatut
+export const getChantierById = getProjetById
 
 export const SOURCE_LABEL: Record<LeadSource, string> = {
   site_web: 'Site web',

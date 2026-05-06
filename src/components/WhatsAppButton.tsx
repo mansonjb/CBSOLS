@@ -3,7 +3,7 @@ import { company } from '@/data/company'
 
 export function WhatsAppButton() {
   const waNumber = company.phoneClean.replace('+', '')
-  const message = encodeURIComponent('Bonjour CB Sols, je souhaite un devis pour mon chantier.')
+  const message = encodeURIComponent('Bonjour CB Sols, je souhaite un devis pour mon projet.')
 
   return (
     <a

@@ -117,11 +117,11 @@ export const brands: Brand[] = [
     ],
     topCollections: [
       { name: 'Stickoflex', desc: "Colle acrylique haute performance : pour moquettes lourdes en lés ou dalles, séchage rapide", useCases: 'Moquette hôtels, bureaux, dalles modulaires' },
-      { name: 'Solplan', desc: 'Ragréage auto-lissant P3 fibré : épaisseurs 1 à 30 mm, support bois ou béton', useCases: 'Tous chantiers de rénovation' },
+      { name: 'Solplan', desc: 'Ragréage auto-lissant P3 fibré : épaisseurs 1 à 30 mm, support bois ou béton', useCases: 'Tous projets de rénovation' },
       { name: 'Eponal', desc: 'Résine époxy barrière anti-humidité : protège contre les remontées capillaires', useCases: 'Rez-de-chaussée sur vide sanitaire ou cave' },
     ],
     certifications: ['EMICODE EC1 Plus (très faibles émissions)', 'NF DTU 53.12', 'A+ qualité de l\'air', 'Bfl-s1 (système complet)'],
-    why: "Bostik est notre partenaire colles et préparation depuis l'origine de CB Sols. Le bon revêtement avec une mauvaise colle, c'est un chantier raté. Bostik garantit la compatibilité système (colle + ragréage + primaire) pour engager notre garantie décennale en toute sérénité.",
+    why: "Bostik est notre partenaire colles et préparation depuis l'origine de CB Sols. Le bon revêtement avec une mauvaise colle, c'est un projet raté. Bostik garantit la compatibilité système (colle + ragréage + primaire) pour engager notre garantie décennale en toute sérénité.",
     services: ['pose-moquette', 'sol-pvc-les', 'sol-pvc-lames-dalles'],
   },
   {
@@ -131,7 +131,7 @@ export const brands: Brand[] = [
     country: 'France',
     logoSrc: '/images/brands/romus.svg',
     metaTitle: 'Romus | Profilés et Accessoires Sol, Partenaire CB Sols',
-    metaDescription: "Romus fournit les profilés, nez de marche et barres de seuil utilisés par CB Sols : aluminium, laiton, inox. Pour finition pro de tous les chantiers.",
+    metaDescription: "Romus fournit les profilés, nez de marche et barres de seuil utilisés par CB Sols : aluminium, laiton, inox. Pour finition pro de tous les projets.",
     tagline: 'Profilés et accessoires de finition de référence',
     intro: "Romus est le fabricant français spécialisé dans les profilés de finition pour revêtements de sol : nez de marche, barres de seuil, joints de dilatation, profilés d'angle. Fondé en 1973, l'entreprise basée près de Saint-Étienne fournit les soliers professionnels avec une gamme complète en aluminium anodisé, laiton, inox et PVC. CB Sols travaille avec Romus depuis ses débuts.",
     expertise: [
@@ -147,7 +147,7 @@ export const brands: Brand[] = [
       { name: 'Inox brossé', desc: 'Look industriel et hygiène maximale : recommandé en milieu humide ou alimentaire', useCases: 'Cuisines pro, vestiaires, sols industriels' },
     ],
     certifications: ['NF Environnement', 'EN 13501-1 (réaction au feu)', 'NF P 98-351 (accessibilité PMR)'],
-    why: "Romus est notre partenaire pour la finition de chaque chantier. Un beau revêtement avec un nez de marche bas de gamme, c'est l'élément qui dévalue tout le reste. La gamme Romus permet d'aligner la finition sur le niveau du projet, du standard ERP au laiton hôtellerie prestige.",
+    why: "Romus est notre partenaire pour la finition de chaque projet. Un beau revêtement avec un nez de marche bas de gamme, c'est l'élément qui dévalue tout le reste. La gamme Romus permet d'aligner la finition sur le niveau du projet, du standard ERP au laiton hôtellerie prestige.",
     services: ['pose-moquette', 'sol-pvc-lames-dalles'],
   },
 ]

@@ -8,7 +8,7 @@ import { avis } from '@/data/avis'
 export const metadata: Metadata = {
   title: 'À Propos | Valentin Prévoteau, Gérant CB Sols | Artisan poseur',
   description:
-    "Rencontrez Valentin Prévoteau, gérant de CB Sols (entreprise fondée en 1999). Entré comme apprenti en 2008, repreneur en 2023. Assurance décennale, 500+ chantiers en Charente-Maritime.",
+    "Rencontrez Valentin Prévoteau, gérant de CB Sols (entreprise fondée en 1999). Entré comme apprenti en 2008, repreneur en 2023. Assurance décennale, 500+ projets en Charente-Maritime.",
   alternates: { canonical: 'https://cbsols.fr/a-propos' },
 }
 
@@ -52,12 +52,12 @@ const personSchema = {
 export default function AProposPage() {
   const credentials = [
     { label: 'Décennale', desc: 'Assurance responsabilité décennale en cours de validité', icon: '✓' },
-    { label: '25+ ans d\'expérience', desc: 'Fondé en 1999, 500+ chantiers livrés en Charente-Maritime', icon: '✓' },
+    { label: '25+ ans d\'expérience', desc: 'Fondé en 1999, 500+ projets livrés en Charente-Maritime', icon: '✓' },
   ]
 
   const stats = [
     { value: '25+', label: "ans d'expérience", sub: 'depuis 1999' },
-    { value: '500+', label: 'chantiers réalisés', sub: 'particuliers & pros' },
+    { value: '500+', label: 'projets réalisés', sub: 'particuliers & pros' },
     { value: '49', label: 'communes couvertes', sub: 'Charente-Maritime' },
     { value: '4.9/5', label: 'satisfaction client', sub: '41 avis vérifiés' },
   ]
@@ -100,7 +100,7 @@ export default function AProposPage() {
           <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '5rem', alignItems: 'start' }}>
               <div>
-                <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>L'artisan derrière chaque chantier</div>
+                <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>L'artisan derrière chaque projet</div>
                 <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em' }}>
                   Valentin Prévoteau
                 </h2>
@@ -110,13 +110,13 @@ export default function AProposPage() {
                   </p>
                 </blockquote>
                 <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
-                  Entré chez CB Sols en 2008 comme apprenti, Valentin a appris le métier sur le terrain, chantier après chantier, avant de reprendre la gérance de l'entreprise en 2023. Formé aux techniques de pose sur subjectile béton, carrelage et parquet existant, il maîtrise aussi bien la moquette contract des grands hôtels que le sol PVC cuisine des collectivités ou les tapis sur mesure des espaces de réception.
+                  Entré chez CB Sols en 2008 comme apprenti, Valentin a appris le métier sur le terrain, projet après projet, avant de reprendre la gérance de l'entreprise en 2023. Formé aux techniques de pose sur subjectile béton, carrelage et parquet existant, il maîtrise aussi bien la moquette contract des grands hôtels que le sol PVC cuisine des collectivités ou les tapis sur mesure des espaces de réception.
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
-                  Ce qui distingue CB Sols, c'est cette présence personnelle : quand vous appelez le <a href={`tel:${company.phoneClean}`} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>{company.phone}</a>, c'est Valentin qui décroche. Quand un chantier démarre, c'est lui qui est là. Pas d'intermédiaire, pas de sous-traitant anonyme.
+                  Ce qui distingue CB Sols, c'est cette présence personnelle : quand vous appelez le <a href={`tel:${company.phoneClean}`} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>{company.phone}</a>, c'est Valentin qui décroche. Quand un projet démarre, c'est lui qui est là. Pas d'intermédiaire, pas de sous-traitant anonyme.
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.8 }}>
-                  Cette proximité avec le client, cette connaissance intime du terrain et des matériaux, c'est ce qui différencie CB Sols des grandes enseignes nationales, et ce qui explique pourquoi les hôteliers, gérants de camping et maîtres d'œuvre reviennent chantier après chantier.
+                  Cette proximité avec le client, cette connaissance intime du terrain et des matériaux, c'est ce qui différencie CB Sols des grandes enseignes nationales, et ce qui explique pourquoi les hôteliers, gérants de camping et maîtres d'œuvre reviennent projet après projet.
                 </p>
               </div>
 
@@ -124,14 +124,14 @@ export default function AProposPage() {
                 <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Parcours</div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
                   {[
-                    { year: '1999', label: "Création de l'entreprise", desc: "Lancement de CB Sols à Villedoux, premiers chantiers de revêtement de sol en Charente-Maritime." },
+                    { year: '1999', label: "Création de l'entreprise", desc: "Lancement de CB Sols, premiers projets de revêtement de sol en Charente-Maritime." },
                     { year: '2003', label: 'Développement B2B', desc: "Premiers contrats avec des hôteliers et professionnels de l'Île de Ré et de l'agglo rochelaise." },
-                    { year: '2008', label: "Arrivée de Valentin Prévoteau", desc: "Valentin intègre la structure en tant qu'apprenti et apprend le métier directement sur les chantiers." },
+                    { year: '2008', label: "Arrivée de Valentin Prévoteau", desc: "Valentin intègre la structure en tant qu'apprenti et apprend le métier directement sur les projets." },
                     { year: '2012', label: 'Partenariats officiels', desc: "Agréments avec des marques de référence comme objectflor, EGE et Gerflor : accès aux gammes contract et au SAV fabricants." },
-                    { year: '2013', label: 'Nouveau dépôt à Villedoux', desc: "Création d'un nouveau dépôt à Villedoux pour stocker matériaux, échantillons et outillage de pose." },
+                    { year: '2013', label: 'Nouveau atelier à Villedoux', desc: "Création d'un nouveau atelier à Villedoux pour stocker matériaux, échantillons et outillage de pose." },
                     { year: '2023', label: "Reprise par Valentin Prévoteau", desc: "Après quinze ans dans l'entreprise, Valentin reprend la gérance de CB Sols et en devient le dirigeant." },
                     { year: '2024', label: 'Showroom unique en France', desc: "Création d'un showroom unique en France à Villedoux : plus de 500 échantillons consultables sur rendez-vous." },
-                    { year: "Aujourd'hui", label: '500+ chantiers', desc: "La Rochelle, Île de Ré, Île d'Oléron, Rochefort, Saintes et toute la Charente-Maritime." },
+                    { year: "Aujourd'hui", label: '500+ projets', desc: "La Rochelle, Île de Ré, Île d'Oléron, Rochefort, Saintes et toute la Charente-Maritime." },
                   ].map((item, i, arr) => (
                     <div key={item.year} style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '1.25rem', padding: '1.5rem 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none' }}>
                       <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.82rem', color: 'var(--terra)', fontWeight: 700, paddingTop: '0.1rem' }}>{item.year}</div>
@@ -232,7 +232,7 @@ export default function AProposPage() {
               ))}
             </div>
             <p style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: '1.5rem', lineHeight: 1.65, maxWidth: '560px' }}>
-              Ces partenariats permettent à CB Sols d'accéder aux gammes professionnelles complètes, aux garanties fabricants et à l'assistance technique : bénéfices directs pour vos chantiers.
+              Ces partenariats permettent à CB Sols d'accéder aux gammes professionnelles complètes, aux garanties fabricants et à l'assistance technique : bénéfices directs pour vos projets.
             </p>
           </div>
         </section>
@@ -242,7 +242,7 @@ export default function AProposPage() {
           <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Votre projet</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
-              Parlons de votre chantier
+              Parlons de votre projet
             </h2>
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, fontSize: '1.1rem', color: 'var(--muted)', margin: '0 0 2.5rem' }}>
               Valentin répond personnellement, devis gratuit sous 48h

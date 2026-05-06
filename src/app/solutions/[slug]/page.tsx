@@ -190,7 +190,7 @@ export default async function SolutionPage({ params }: Props) {
             <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Références</div>
               <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.03em' }}>
-                Chantiers réalisés
+                Projets réalisés
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
                 {solution.references.map((ref, i) => (
@@ -278,7 +278,7 @@ export default async function SolutionPage({ params }: Props) {
           <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Votre projet</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
-              Parlons de votre chantier
+              Parlons de votre projet
             </h2>
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, fontSize: '1.1rem', color: 'var(--muted)', margin: '0 0 2.5rem' }}>
               Devis gratuit sous 48h, déplacement sur site inclus

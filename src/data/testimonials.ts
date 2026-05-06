@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
     sector: 'hotellerie',
     zone: 'la-rochelle',
     quote:
-      "Équipe ponctuelle, chantier livré dans les temps malgré la saison haute. Le showroom en amont a vraiment aidé à choisir la bonne matière pour notre clientèle.",
+      "Équipe ponctuelle, projet livré dans les temps malgré la saison haute. Le showroom en amont a vraiment aidé à choisir la bonne matière pour notre clientèle.",
     author: 'Hôtellerie · La Rochelle',
   },
   {
@@ -40,14 +40,14 @@ export const testimonials: Testimonial[] = [
     sector: 'bureaux',
     zone: 'charente-maritime',
     quote:
-      "Chantier de 350 m² en bureaux, pose sur un week-end, aucune gêne pour les équipes. Travail soigné, matériau conforme au choix fait en showroom.",
+      "Projet de 350 m² en bureaux, pose sur un week-end, aucune gêne pour les équipes. Travail soigné, matériau conforme au choix fait en showroom.",
     author: 'Tertiaire · Charente-Maritime',
   },
   {
     sector: 'architecte',
     zone: 'ile-de-re',
     quote:
-      "Travail de qualité et respect du cahier des charges. CB Sols s'intègre naturellement dans nos équipes de chantier, c'est précieux pour un projet haut de gamme.",
+      "Travail de qualité et respect du cahier des charges. CB Sols s'intègre naturellement dans nos équipes de projet, c'est précieux pour un projet haut de gamme.",
     author: "Architecte d'intérieur · Île de Ré",
   },
   {

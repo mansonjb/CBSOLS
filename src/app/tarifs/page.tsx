@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const reasons = [
   {
-    title: 'Chaque chantier a ses contraintes',
+    title: 'Chaque projet a ses contraintes',
     body:
       "Un sol PVC en cuisine de restaurant (plinthes relevées, soudure à chaud, norme EN 13845) n'a rien à voir avec un LVT posé en bureau. Appliquer une même fourchette serait trompeur.",
   },
@@ -29,7 +29,7 @@ const reasons = [
   {
     title: 'La surface change le prix au m²',
     body:
-      "50 m² dans un appartement en ville vs 800 m² dans un hall d'hôtel : le tarif au mètre carré peut varier de 30 %. Le déplacement, la logistique, la mobilisation d'équipe sont proportionnés à la taille du chantier.",
+      "50 m² dans un appartement en ville vs 800 m² dans un hall d'hôtel : le tarif au mètre carré peut varier de 30 %. Le déplacement, la logistique, la mobilisation d'équipe sont proportionnés à la taille du projet.",
   },
   {
     title: "L'accessibilité joue sur les délais",
@@ -52,9 +52,9 @@ const steps = [
 
 const garanties = [
   { title: 'Déplacement et devis gratuits', desc: "Partout en Charente-Maritime, Île de Ré et Île d'Oléron. Sans condition d'engagement." },
-  { title: 'Prix ferme et définitif', desc: "Le chiffre du devis est celui de la facture. Pas de supplément surprise au milieu du chantier." },
+  { title: 'Prix ferme et définitif', desc: "Le chiffre du devis est celui de la facture. Pas de supplément surprise au milieu du projet." },
   { title: 'Détail lisible', desc: 'Fourniture, pose, préparation support, TVA : chaque poste est isolé. Vous savez exactement ce que vous payez.' },
-  { title: 'Paiement à la fin', desc: 'Acompte de 30 %, solde à la réception du chantier après validation.' },
+  { title: 'Paiement à la fin', desc: 'Acompte de 30 %, solde à la réception du projet après validation.' },
   { title: 'Garantie décennale', desc: 'Toutes nos poses sont couvertes. Attestations fournies sur demande.' },
 ]
 
@@ -71,7 +71,7 @@ export default function TarifsPage() {
             <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>de grille de prix.</em>
           </h1>
           <p style={{ fontSize: '1.1rem', color: 'var(--cream-muted)', lineHeight: 1.7, maxWidth: '680px', marginBottom: '2rem' }}>
-            Chez CB Sols, chaque projet est traité <strong style={{ color: 'var(--dark)' }}>individuellement</strong>. Afficher une fourchette générique serait au mieux imprécis, au pire trompeur. Nous préférons prendre le temps de comprendre votre chantier avant de chiffrer.
+            Chez CB Sols, chaque projet est traité <strong style={{ color: 'var(--dark)' }}>individuellement</strong>. Afficher une fourchette générique serait au mieux imprécis, au pire trompeur. Nous préférons prendre le temps de comprendre votre projet avant de chiffrer.
           </p>
           <p style={{ fontSize: '0.95rem', color: 'var(--cream-muted)', lineHeight: 1.7, maxWidth: '680px', marginBottom: '2.5rem' }}>
             Notre engagement : <strong style={{ color: 'var(--dark)' }}>devis détaillé et gratuit sous 48 h</strong>, sans frais cachés ni révision post-signature.
@@ -176,7 +176,7 @@ export default function TarifsPage() {
               {
                 num: '03',
                 title: 'Le ragréage',
-                body: "Obligatoire dans la quasi-totalité des chantiers de rénovation. Type P3 standard pour les supports béton, fibré (plus cher) sur supports bois ou pour les fortes épaisseurs. Ce qui fait la différence entre une pose qui dure 15 ans et une qui marque dès 6 mois.",
+                body: "Obligatoire dans la quasi-totalité des projets de rénovation. Type P3 standard pour les supports béton, fibré (plus cher) sur supports bois ou pour les fortes épaisseurs. Ce qui fait la différence entre une pose qui dure 15 ans et une qui marque dès 6 mois.",
               },
               {
                 num: '04',
@@ -218,7 +218,7 @@ export default function TarifsPage() {
                 Une équipe de soliers-moquettistes qualifiés. Aucun sous-traitant.
               </h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--cream-muted)', lineHeight: 1.7, margin: 0, maxWidth: '640px' }}>
-                Chaque chantier CB Sols est posé par notre propre équipe, supervisé par Valentin Prévoteau. Cette continuité garantit le respect du cahier des charges initial, des plannings, et la levée rapide des réserves. Une entreprise qui sous-traite peut afficher un prix plus bas, l&apos;écart paie le sous-traitant et la marge intermédiaire.
+                Chaque projet CB Sols est posé par notre propre équipe, supervisé par Valentin Prévoteau. Cette continuité garantit le respect du cahier des charges initial, des plannings, et la levée rapide des réserves. Une entreprise qui sous-traite peut afficher un prix plus bas, l&apos;écart paie le sous-traitant et la marge intermédiaire.
               </p>
             </div>
           </div>

@@ -6,7 +6,7 @@ import { cities, getCityBySlug, cityZoneLabels } from '@/data/cities'
 import { services } from '@/data/services'
 import { sectors } from '@/data/sectors'
 import { company } from '@/data/company'
-import { getZoneContent, citySizeDescriptor, cityChantierCount } from '@/data/zones'
+import { getZoneContent, citySizeDescriptor, cityProjetCount } from '@/data/zones'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 import { SectorTestimonials } from '@/components/SectorTestimonials'
 import { WhatsAppInlineCTA } from '@/components/WhatsAppInlineCTA'
@@ -38,7 +38,7 @@ export default async function CityHubPage({ params }: Props) {
 
   const zoneContent = getZoneContent(cityData.zone)
   const sizeDescriptor = citySizeDescriptor(cityData.population)
-  const chantiersCount = cityChantierCount(cityData)
+  const projetsCount = cityProjetCount(cityData)
 
   const nearbyCities = cities
     .filter((c) => c.slug !== city && c.zone === cityData.zone)
@@ -165,9 +165,9 @@ export default async function CityHubPage({ params }: Props) {
             <div style={{ display: 'flex', gap: '2.5rem', flexWrap: 'wrap', marginBottom: '2.5rem', padding: '1.5rem 0', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)', maxWidth: '760px' }}>
               <div>
                 <div style={{ fontFamily: 'var(--font-sans)', fontSize: '1.5rem', fontWeight: 800, color: 'var(--terra)', lineHeight: 1 }}>
-                  {chantiersCount}+
+                  {projetsCount}+
                 </div>
-                <div style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-muted)', marginTop: '0.4rem' }}>Chantiers en {cityZoneLabels[cityData.zone].replace('Agglomération de ', '').replace("Charente-Maritime (17)", 'Charente-Maritime')}</div>
+                <div style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-muted)', marginTop: '0.4rem' }}>Projets en {cityZoneLabels[cityData.zone].replace('Agglomération de ', '').replace("Charente-Maritime (17)", 'Charente-Maritime')}</div>
               </div>
               <div>
                 <div style={{ fontFamily: 'var(--font-sans)', fontSize: '1.5rem', fontWeight: 800, color: 'var(--terra)', lineHeight: 1 }}>
@@ -264,7 +264,7 @@ export default async function CityHubPage({ params }: Props) {
         {/* ── TYPES D'ÉTABLISSEMENTS typiques ─────────────────── */}
         <section style={{ padding: '4rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
           <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Typologies de chantiers</div>
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Typologies de projets</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.02em', lineHeight: 1.15, maxWidth: '700px' }}>
               Ce que nous posons régulièrement en {cityZoneLabels[cityData.zone]}
             </h2>
@@ -291,7 +291,7 @@ export default async function CityHubPage({ params }: Props) {
           <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Réalisations récentes</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.025em', lineHeight: 1.15, maxWidth: '700px' }}>
-              Nos chantiers en {cityZoneLabels[cityData.zone]}
+              Nos projets en {cityZoneLabels[cityData.zone]}
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
               {zoneContent.projectHighlights.map((project) => (

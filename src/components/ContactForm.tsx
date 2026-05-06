@@ -156,7 +156,7 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label style={labelStyle}>Ville / Lieu du chantier</label>
+          <label style={labelStyle}>Ville / Lieu du projet</label>
           <input
             type="text"
             name="city"

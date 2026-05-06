@@ -39,12 +39,12 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     challenges: [
       { label: 'Bâti ancien en pierre', desc: 'Planchers irréguliers, ragréage fibré souvent requis avant pose.' },
       { label: 'Humidité côtière', desc: 'Produits de pose et sous-couches spécifiques aux environnements marins.' },
-      { label: 'Chantiers urbains', desc: 'Accès parking, horaires commerçants, copropriétés : logistique adaptée.' },
+      { label: 'Projets urbains', desc: 'Accès parking, horaires commerçants, copropriétés : logistique adaptée.' },
       { label: 'Forte densité ERP', desc: 'Hôtels, restaurants, bureaux : normes incendie M3/M4 maîtrisées.' },
     ],
     testimonial: {
       quote:
-        "Équipe ponctuelle, chantier livré dans les temps malgré la saison haute. Le showroom en amont a vraiment aidé à choisir la bonne matière pour notre clientèle.",
+        "Équipe ponctuelle, projet livré dans les temps malgré la saison haute. Le showroom en amont a vraiment aidé à choisir la bonne matière pour notre clientèle.",
       author: 'Hôtellerie · La Rochelle',
     },
     projectHighlights: [
@@ -59,7 +59,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
       },
       {
         q: "Pouvez-vous poser sans interrompre l'activité d'un commerce ?",
-        a: "Oui. Pour les restaurants, hôtels et commerces de La Rochelle, nous proposons des interventions en site occupé : pose par zones, en rotation ou en horaires décalés. La moquette dalles est particulièrement adaptée à ce type de chantier.",
+        a: "Oui. Pour les restaurants, hôtels et commerces de La Rochelle, nous proposons des interventions en site occupé : pose par zones, en rotation ou en horaires décalés. La moquette dalles est particulièrement adaptée à ce type de projet.",
       },
     ],
     typicalEstablishments: [
@@ -77,11 +77,11 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     label: 'Île de Ré',
     photo: '/images/tapis-hotel-baronnie.webp',
     tagline: 'Artisan rétais, 20 min via le pont depuis Villedoux.',
-    specificsTitle: "Les particularités des chantiers rétais",
+    specificsTitle: "Les particularités des projets rétais",
     specificsBody:
       "L'Île de Ré impose une exigence haut de gamme presque partout : hôtels de charme, maisons secondaires de standing, résidences avec architectes d'intérieur. La saisonnalité est centrale, l'essentiel des rénovations se fait entre octobre et avril, avec des délais courts. L'hygrométrie insulaire élevée toute l'année et les embruns salins orientent les choix matière : moquettes en laine mélangée, sols PVC stables dimensionnellement, traitements anti-humidité. Nous connaissons les communes, les artisans complémentaires, les règles d'urbanisme propres à chaque village.",
     challenges: [
-      { label: "Saisonnalité", desc: "Chantiers concentrés hors saison, planning réservé tôt." },
+      { label: "Saisonnalité", desc: "Projets concentrés hors saison, planning réservé tôt." },
       { label: "Hygrométrie élevée", desc: "Matériaux et colles sélectionnés pour milieux humides." },
       { label: "Logistique pont", desc: "Livraisons matériaux coordonnées avec le passage du pont." },
       { label: "Exigences hôtelières", desc: "Hôtels de charme, villas : finitions irréprochables." },
@@ -146,8 +146,8 @@ export const zones: Record<ZoneKey, ZoneContent> = {
         a: "Oui, c'est une part significative de notre activité insulaire. Nous posons des sols PVC techniques dans les mobil-homes, des moquettes acoustiques dans les espaces communs, et des tapis de propreté aux entrées.",
       },
       {
-        q: "Quels délais pour un chantier saisonnier sur Oléron ?",
-        a: "Pour les campings et hôtels, nous calons les interventions entre octobre et mars. Un devis demandé en été est généralement planifié pour l'automne suivant. Pour les petits chantiers résidentiels, les délais sont plus courts (4 à 6 semaines).",
+        q: "Quels délais pour un projet saisonnier sur Oléron ?",
+        a: "Pour les campings et hôtels, nous calons les interventions entre octobre et mars. Un devis demandé en été est généralement planifié pour l'automne suivant. Pour les petits projets résidentiels, les délais sont plus courts (4 à 6 semaines).",
       },
     ],
     typicalEstablishments: [
@@ -165,9 +165,9 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     label: 'Charente-Maritime (17)',
     photo: '/images/moquette-bureau-real.webp',
     tagline: 'Intervention sur toute la Charente-Maritime depuis Villedoux.',
-    specificsTitle: 'Les chantiers du département',
+    specificsTitle: 'Les projets du département',
     specificsBody:
-      "Au-delà du littoral, la Charente-Maritime compte des bureaux, collectivités, établissements scolaires, bâtiments agricoles reconvertis, et un tissu résidentiel varié. Les contraintes techniques diffèrent du littoral : moins d'humidité, plus de trafic piéton intensif en tertiaire, exigences acoustiques en milieu scolaire et normes ERP strictes. Nous intervenons sur l'ensemble du département pour les chantiers structurants, avec une logistique rodée pour les sites éloignés (Saintes, Royan, Cognac, Rochefort).",
+      "Au-delà du littoral, la Charente-Maritime compte des bureaux, collectivités, établissements scolaires, bâtiments agricoles reconvertis, et un tissu résidentiel varié. Les contraintes techniques diffèrent du littoral : moins d'humidité, plus de trafic piéton intensif en tertiaire, exigences acoustiques en milieu scolaire et normes ERP strictes. Nous intervenons sur l'ensemble du département pour les projets structurants, avec une logistique rodée pour les sites éloignés (Saintes, Royan, Cognac, Rochefort).",
     challenges: [
       { label: 'Tertiaire et bureaux', desc: 'Moquette dalles, résistance chaises à roulettes, acoustique.' },
       { label: 'écoles', desc: 'Sols PVC ERP, classements feu, facilité d\'entretien.' },
@@ -176,7 +176,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     ],
     testimonial: {
       quote:
-        "Chantier de 350 m² en bureaux, pose sur un week-end, aucune gêne pour les équipes. Travail soigné, matériau conforme au choix fait en showroom.",
+        "Projet de 350 m² en bureaux, pose sur un week-end, aucune gêne pour les équipes. Travail soigné, matériau conforme au choix fait en showroom.",
       author: 'Tertiaire · Charente-Maritime',
     },
     projectHighlights: [
@@ -187,7 +187,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
     zoneFaq: [
       {
         q: "Intervenez-vous loin de La Rochelle (Saintes, Royan, Rochefort) ?",
-        a: "Oui, nous couvrons toute la Charente-Maritime. Les frais de déplacement sont intégrés dans le devis de manière transparente, sans surprise. Pour les gros chantiers, ils sont souvent proportionnellement très faibles.",
+        a: "Oui, nous couvrons toute la Charente-Maritime. Les frais de déplacement sont intégrés dans le devis de manière transparente, sans surprise. Pour les gros projets, ils sont souvent proportionnellement très faibles.",
       },
       {
         q: "Travaillez-vous pour les collectivités ?",
@@ -220,8 +220,8 @@ export function citySizeDescriptor(pop?: number): string {
 }
 
 /** Approximate project count by zone for credibility counter */
-export function cityChantierCount(city: City): number {
-  // Base chantiers par zone + bonus selon population
+export function cityProjetCount(city: City): number {
+  // Base projets par zone + bonus selon population
   const base: Record<ZoneKey, number> = {
     'la-rochelle': 180,
     'ile-de-re': 95,

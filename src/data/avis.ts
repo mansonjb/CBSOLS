@@ -64,7 +64,7 @@ export const avis: Avis[] = [
     name: "Gouzien Florian",
     context: "Visité en août 2024",
     date: "il y a un an",
-    text: "Très pro, à l'écoute de nos attentes et force de proposition, Valentin a su nous orienter vers le bon choix ! Nous sommes ravi du résultat, et la réalisation du chantier s'est très bien déroulée. Je conseille sans hésiter",
+    text: "Très pro, à l'écoute de nos attentes et force de proposition, Valentin a su nous orienter vers le bon choix ! Nous sommes ravi du résultat, et la réalisation du projet s'est très bien déroulée. Je conseille sans hésiter",
   },
   {
     name: "Atlantic Bureau",
@@ -82,6 +82,6 @@ export const avis: Avis[] = [
     name: "Valérie Sorignet",
     context: "Visité en novembre 2023",
     date: "il y a 2 ans",
-    text: "Nous remercions Valentin pour ce magnifique travail ! Nous sommes agréablement surpris de la qualité du produit qui donne un rendu très réaliste ! Le terrazzo et le bois s'associe à merveille dans la rénovation de cette ancienne demeure ! Le délai respecté et une fin de chantier propre !",
+    text: "Nous remercions Valentin pour ce magnifique travail ! Nous sommes agréablement surpris de la qualité du produit qui donne un rendu très réaliste ! Le terrazzo et le bois s'associe à merveille dans la rénovation de cette ancienne demeure ! Le délai respecté et une fin de projet propre !",
   },
 ]

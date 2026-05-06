@@ -56,7 +56,7 @@ export const solutions: Solution[] = [
     ],
     faq: [
       { q: 'Quelle moquette choisir pour un hôtel 4 étoiles ?', a: 'Pour un hôtel 4 étoiles, nous recommandons une moquette tuftée ou tissée de la gamme EGE Hospitality ou EGE Reform, en classement Bfl-s1. Le grammage minimal est 1100g/m² en couloir, 910g/m² en chambre. CB Sols vous présente des échantillons en showroom et peut créer un motif exclusif pour votre établissement.' },
-      { q: 'Peut-on poser la moquette sans fermer l\'hôtel ?', a: 'Oui. CB Sols travaille en rotation : nous posons dans les chambres vides pendant que les autres restent occupées. Pour les couloirs, nous intervenons la nuit ou en semaine creuse selon votre planning. Zéro fermeture nécessaire pour la majorité des chantiers hôteliers.' },
+      { q: 'Peut-on poser la moquette sans fermer l\'hôtel ?', a: 'Oui. CB Sols travaille en rotation : nous posons dans les chambres vides pendant que les autres restent occupées. Pour les couloirs, nous intervenons en semaine creuse selon votre planning. Zéro fermeture nécessaire pour la majorité des projets hôteliers.' },
       { q: 'Combien coûte la moquette hôtelière ?', a: 'Une moquette hôtelière de qualité coûte entre 35 et 80€/m² posée, selon le produit choisi et la surface. CB Sols établit un devis gratuit et détaillé après visite. Pour un hôtel 20 chambres de 18m² (couloir compris), comptez un budget de 25 000 à 45 000€ fourni posé.' },
       { q: 'CB Sols intervient-il sur toute la Charente-Maritime ?', a: "Oui, nous équipons des hôtels de La Rochelle à l'Île de Ré, l'Île d'Oléron, Royan et tout le département 17." },
     ],
@@ -200,7 +200,7 @@ export const solutions: Solution[] = [
     ourApproach: [
       'Lames ou dalles PVC imitation bois/pierre pour les espaces communs',
       'PVC en lés soudé à chaud pour les zones humides (spa, cuisines)',
-      'Coordination avec la pose moquette pour un chantier unique',
+      'Coordination avec la pose moquette pour un projet unique',
       'Pose par rotation sans fermeture de l\'hôtel',
     ],
     keyProducts: [
@@ -286,7 +286,7 @@ export const solutions: Solution[] = [
     ],
     faq: [
       { q: 'Quel sol pour un mobil-home au bord de la mer ?', a: "Le sol PVC clipsé waterproof est la référence pour les mobil-homes en zone côtière. Il résiste à 100% à l'humidité, ne gonfle pas, se pose sans colle et se remplace facilement. CB Sols recommande des gammes class 33 (usage intensif) pour les locations saisonnières." },
-      { q: 'CB Sols peut-il rénover 20 mobil-homes en intersaison ?', a: "Oui. CB Sols est habitué aux chantiers de parc locatif. Nous établissons un planning sur 4 à 8 semaines selon la surface totale, avec une équipe dédiée. Devis global avec tarif dégressif." },
+      { q: 'CB Sols peut-il rénover 20 mobil-homes en intersaison ?', a: "Oui. CB Sols est habitué aux projets de parc locatif. Nous établissons un planning sur 4 à 8 semaines selon la surface totale, avec une équipe dédiée. Devis global avec tarif dégressif." },
     ],
   },
   {
@@ -311,7 +311,7 @@ export const solutions: Solution[] = [
     ourApproach: [
       "Sélection de moquettes résistantes à l'humidité avec dos protégé",
       "Pose avec adhésif anti-humidité adapté aux environnements côtiers",
-      "Intervention sur l'intégralité du parc locatif en un seul chantier intersaison",
+      "Intervention sur l'intégralité du parc locatif en un seul projet intersaison",
       "Tarifs dégressifs selon le nombre d'hébergements à rénover",
       "Conseil gamme selon l'étoilage : de la moquette économique aux gammes hôtelières",
     ],
@@ -322,7 +322,7 @@ export const solutions: Solution[] = [
     ],
     references: [
       "Campings 4 et 5 étoiles Île de Ré : rénovation moquette chalets et salles d'animation, 800+ m²",
-      "Résidences de tourisme Île d'Oléron : chambres et espaces communs, chantier intersaison",
+      "Résidences de tourisme Île d'Oléron : chambres et espaces communs, projet intersaison",
       "Camping La Rochelle agglomération : renouvellement complet bungalows haut de gamme, 12 hébergements",
     ],
     faq: [
@@ -368,9 +368,9 @@ export const solutions: Solution[] = [
       "Auditorium collectivité : requalification complète, normes ERP type L",
     ],
     faq: [
-      { q: "Quelle norme de classement incendie pour une moquette de cinéma ?", a: "Un cinéma classé ERP de type L impose une moquette de sol classée Bfl-s1 minimum (Euroclasse européenne). CB Sols fournit l'attestation de conformité avec chaque chantier pour vos dossiers de commission de sécurité." },
+      { q: "Quelle norme de classement incendie pour une moquette de cinéma ?", a: "Un cinéma classé ERP de type L impose une moquette de sol classée Bfl-s1 minimum (Euroclasse européenne). CB Sols fournit l'attestation de conformité avec chaque projet pour vos dossiers de commission de sécurité." },
       { q: "La moquette améliore-t-elle vraiment l'acoustique d'un cinéma ?", a: "Oui, de façon significative. Une moquette haute densité avec sous-couche absorbante réduit les bruits d'impact de 20 à 30 dB et absorbe une partie de l'énergie sonore réfléchie, améliorant la clarté des dialogues et la qualité musicale. En complément du traitement des murs et plafonds, c'est un élément clé du confort acoustique." },
-      { q: "Peut-on rénover la moquette d'un cinéma sans interrompre les séances ?", a: "Oui. CB Sols intervient la nuit, entre la dernière séance et l'ouverture du lendemain. Pour les grands halls, nous découpons le chantier en zones accessibles progressivement. Dans la grande majorité des cas, zéro fermeture n'est nécessaire." },
+      { q: "Peut-on rénover la moquette d'un cinéma sans interrompre les séances ?", a: "Oui. CB Sols intervient la nuit, entre la dernière séance et l'ouverture du lendemain. Pour les grands halls, nous découpons le projet en zones accessibles progressivement. Dans la grande majorité des cas, zéro fermeture n'est nécessaire." },
     ],
   },
   {

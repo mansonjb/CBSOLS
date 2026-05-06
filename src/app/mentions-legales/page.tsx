@@ -23,7 +23,7 @@ const sections = [
       'Forme juridique : Société',
       'TVA intracommunautaire : sur demande',
       'Activité : Pose de revêtements de sol (moquette, sol PVC, tapis sur mesure)',
-      'Expérience : 500+ chantiers livrés depuis 1999',
+      'Expérience : 500+ projets livrés depuis 1999',
       'Assurance professionnelle et décennale souscrites.',
     ],
   },
@@ -39,7 +39,7 @@ const sections = [
   {
     title: 'Propriété intellectuelle',
     lines: [
-      "L'ensemble du contenu présent sur le site cbsols.fr (textes, graphismes, images, logos, photographies de chantiers, vidéos, structure) est la propriété exclusive de CB Sols Revêtements, sauf mention contraire.",
+      "L'ensemble du contenu présent sur le site cbsols.fr (textes, graphismes, images, logos, photographies de projets, vidéos, structure) est la propriété exclusive de CB Sols Revêtements, sauf mention contraire.",
       "Toute reproduction, représentation, modification, publication, transmission, dénaturation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit, est interdite sans autorisation écrite préalable.",
       "Les logos des marques partenaires (EGE, Gerflor, objectflor, Bostik, Romus) restent la propriété de leurs détenteurs respectifs et sont affichés à titre informatif dans le cadre de la relation commerciale avec CB Sols Revêtements.",
       "Les logos des clients affichés dans la section « Ils nous font confiance » sont utilisés avec leur accord, dans le cadre de références professionnelles.",
@@ -74,7 +74,7 @@ const sections = [
     title: 'Responsabilité',
     lines: [
       "CB Sols Revêtements s'efforce de fournir sur le site cbsols.fr des informations aussi précises que possible. Toutefois, nous ne saurions être tenus responsables des omissions, inexactitudes ou carences dans la mise à jour des informations, qu'elles proviennent de nous ou de tiers partenaires.",
-      "Les photographies de réalisations présentes sur le site sont publiées avec l'accord des clients concernés, et à titre d'illustration. Les projets réels peuvent différer selon les contraintes du chantier, le choix des matériaux et les préférences du client.",
+      "Les photographies de réalisations présentes sur le site sont publiées avec l'accord des clients concernés, et à titre d'illustration. Les projets réels peuvent différer selon les contraintes du projet, le choix des matériaux et les préférences du client.",
     ],
   },
   {

@@ -44,7 +44,7 @@ export default function ClientsListPage() {
                 </div>
                 <div>
                   <div style={{ fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: 600, marginBottom: '0.3rem' }}>Chantiers</div>
-                  <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--dark)', fontFamily: 'var(--font-sans)' }}>{c.nombre_chantiers}</div>
+                  <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--dark)', fontFamily: 'var(--font-sans)' }}>{c.nombre_projets}</div>
                 </div>
               </div>
 

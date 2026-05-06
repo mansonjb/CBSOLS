@@ -25,7 +25,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les certifications incendie : obligatoires en professionnel',
-        body: "La moquette résidentielle ne nécessite pas de certification incendie particulière. Pour les établissements recevant du public (hôtels, restaurants, bureaux, collectivités), la réglementation française impose un classement incendie minimum.\n\nLe classement européen Euroclasse classe les revêtements de A1 (incombustible) à F (non testé). Pour la majorité des ERP, la moquette de sol doit être au minimum Cfl-s1 ou Bfl-s1 selon le type de bâtiment et l'étage.\n\nCB Sols fournit systématiquement les attestations de conformité incendie avec chaque chantier. Ces documents sont nécessaires lors des visites de la commission de sécurité.",
+        body: "La moquette résidentielle ne nécessite pas de certification incendie particulière. Pour les établissements recevant du public (hôtels, restaurants, bureaux, collectivités), la réglementation française impose un classement incendie minimum.\n\nLe classement européen Euroclasse classe les revêtements de A1 (incombustible) à F (non testé). Pour la majorité des ERP, la moquette de sol doit être au minimum Cfl-s1 ou Bfl-s1 selon le type de bâtiment et l'étage.\n\nCB Sols fournit systématiquement les attestations de conformité incendie avec chaque projet. Ces documents sont nécessaires lors des visites de la commission de sécurité.",
       },
       {
         title: 'Construction et durabilité : ce qui se voit (et ne se voit pas)',
@@ -33,7 +33,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Le prix : un écart qui se justifie',
-        body: "La moquette contrat coûte plus cher à l'achat. Une moquette résidentielle peut se trouver à 8-15 €/m² fournie. Une moquette contrat de bureau standard est à 35-55 €/m², et une moquette hôtelière haut de gamme (EGE) à 35-85 €/m².\n\nMais rapportée à la durée de vie, la moquette contrat est souvent moins chère. Si une moquette résidentielle dure 3 ans dans un usage professionnel (puis doit être remplacée) contre 12 ans pour une moquette contrat, le coût annuel est radicalement différent.\n\nCB Sols ne vend que de la moquette contrat pour les professionnels, jamais de la moquette résidentielle sur un chantier commercial. C'est une question de responsabilité.",
+        body: "La moquette contrat coûte plus cher à l'achat. Une moquette résidentielle peut se trouver à 8-15 €/m² fournie. Une moquette contrat de bureau standard est à 35-55 €/m², et une moquette hôtelière haut de gamme (EGE) à 35-85 €/m².\n\nMais rapportée à la durée de vie, la moquette contrat est souvent moins chère. Si une moquette résidentielle dure 3 ans dans un usage professionnel (puis doit être remplacée) contre 12 ans pour une moquette contrat, le coût annuel est radicalement différent.\n\nCB Sols ne vend que de la moquette contrat pour les professionnels, jamais de la moquette résidentielle sur un projet commercial. C'est une question de responsabilité.",
       },
     ],
     relatedFaqs: ['duree-vie-moquette-professionnelle', 'pose-moquette-sur-carrelage'],
@@ -61,7 +61,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Le ragréage de surfaçage : incontournable',
-        body: "Même sur un carrelage propre et plan, les joints créent des reliefs (généralement 1 à 3 mm) qui se voient et s'usent prématurément sous la moquette. La solution : un ragréage de surfaçage fin (autolissant) appliqué sur l'ensemble du carrelage pour créer une surface parfaitement plane.\n\nCe ragréage coûte entre 8 et 25 €/m² selon l'épaisseur et la surface. Il sèche en 4 à 48 heures avant recouvrement selon les produits. CB Sols réalise toujours la vérification de planéité après ragréage avant de passer à la pose.\n\nPour les chantiers où la rapidité est cruciale, il existe des ragréages à prise ultra-rapide (marchable en 30 minutes).",
+        body: "Même sur un carrelage propre et plan, les joints créent des reliefs (généralement 1 à 3 mm) qui se voient et s'usent prématurément sous la moquette. La solution : un ragréage de surfaçage fin (autolissant) appliqué sur l'ensemble du carrelage pour créer une surface parfaitement plane.\n\nCe ragréage coûte entre 8 et 25 €/m² selon l'épaisseur et la surface. Il sèche en 4 à 48 heures avant recouvrement selon les produits. CB Sols réalise toujours la vérification de planéité après ragréage avant de passer à la pose.\n\nPour les projets où la rapidité est cruciale, il existe des ragréages à prise ultra-rapide (marchable en 30 minutes).",
       },
     ],
     relatedFaqs: ['difference-moquette-contrat-particulier', 'duree-vie-moquette-professionnelle'],
@@ -113,7 +113,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'La soudure à chaud : technique et nécessité',
-        body: "La soudure à chaud est une technique qui consiste à créer une jonction étanche entre deux lés de sol PVC en faisant fondre un cordon de soudure (de même composition que le sol) dans la gorge usinée entre les deux lés.\n\nPourquoi c'est obligatoire en cuisine : sans soudure, la jonction entre deux lés est un joint qui, même très serré, permet aux liquides, graisses et micro-organismes de s'infiltrer sous le revêtement. En cuisine professionnelle, soumise à des nettoyages haute pression, cette infiltration est inévitable et rapide.\n\nLa soudure à chaud nécessite un matériel spécifique (pistolet de soudure et bus calibrés) et une formation technique. CB Sols forme ses poseurs à cette technique et réalise la soudure sur tous ses chantiers cuisine professionnelle.\n\nLes remontées en plinthes (le sol PVC soudé qui remonte de 10 à 15 cm sur les murs) complètent le dispositif d'étanchéité en éliminant la jonction sol/mur, autre point critique de contamination.",
+        body: "La soudure à chaud est une technique qui consiste à créer une jonction étanche entre deux lés de sol PVC en faisant fondre un cordon de soudure (de même composition que le sol) dans la gorge usinée entre les deux lés.\n\nPourquoi c'est obligatoire en cuisine : sans soudure, la jonction entre deux lés est un joint qui, même très serré, permet aux liquides, graisses et micro-organismes de s'infiltrer sous le revêtement. En cuisine professionnelle, soumise à des nettoyages haute pression, cette infiltration est inévitable et rapide.\n\nLa soudure à chaud nécessite un matériel spécifique (pistolet de soudure et bus calibrés) et une formation technique. CB Sols forme ses poseurs à cette technique et réalise la soudure sur tous ses projets cuisine professionnelle.\n\nLes remontées en plinthes (le sol PVC soudé qui remonte de 10 à 15 cm sur les murs) complètent le dispositif d'étanchéité en éliminant la jonction sol/mur, autre point critique de contamination.",
       },
       {
         title: 'Les produits de référence et leurs certifications',
@@ -133,7 +133,7 @@ export const faqs: Faq[] = [
     sections: [
       {
         title: 'Le process CB Sols : du premier contact au devis',
-        body: "Obtenir un devis avec CB Sols est simple et rapide. Voici le processus :\n\n1. Premier contact : appelez le 05 46 00 00 00, remplissez le formulaire sur cbsols.fr/contact ou envoyez un email à contact@cbsols.fr avec une description de votre projet. Si vous avez des plans ou des photos, joignez-les.\n\n2. Prise de rendez-vous : CB Sols vous rappelle sous 24h en semaine pour convenir d'un rendez-vous sur site. Pour les projets avec des plans précis, une estimation peut être fournie par email avant la visite.\n\n3. Visite sur site : Valentin Prévoteau ou un membre de l'équipe se déplace gratuitement dans toute la Charente-Maritime. La visite dure 30 à 60 minutes selon la complexité du chantier. Nous mesurons, évaluons l'état du support, discutons de vos attentes esthétiques et techniques.\n\n4. Remise du devis : le devis est remis par email dans les 48h suivant la visite. Il est détaillé poste par poste : fourniture, dépose éventuelle, préparation du support, pose et finitions. Rien de caché.",
+        body: "Obtenir un devis avec CB Sols est simple et rapide. Voici le processus :\n\n1. Premier contact : appelez le 05 46 00 00 00, remplissez le formulaire sur cbsols.fr/contact ou envoyez un email à contact@cbsols.fr avec une description de votre projet. Si vous avez des plans ou des photos, joignez-les.\n\n2. Prise de rendez-vous : CB Sols vous rappelle sous 24h en semaine pour convenir d'un rendez-vous sur site. Pour les projets avec des plans précis, une estimation peut être fournie par email avant la visite.\n\n3. Visite sur site : Valentin Prévoteau ou un membre de l'équipe se déplace gratuitement dans toute la Charente-Maritime. La visite dure 30 à 60 minutes selon la complexité du projet. Nous mesurons, évaluons l'état du support, discutons de vos attentes esthétiques et techniques.\n\n4. Remise du devis : le devis est remis par email dans les 48h suivant la visite. Il est détaillé poste par poste : fourniture, dépose éventuelle, préparation du support, pose et finitions. Rien de caché.",
       },
       {
         title: 'Ce que comprend le devis CB Sols',
@@ -145,7 +145,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'La zone d\'intervention : toute la Charente-Maritime et au-delà',
-        body: "CB Sols intervient dans toute la Charente-Maritime (département 17) : La Rochelle et son agglomération, Île de Ré, Île d'Oléron, Rochefort, Saintes, Royan, Jonzac et toutes les communes du département.\n\nPour les projets importants (hôtels, campings, collectivités), CB Sols se déplace également dans les départements voisins : Charente (16), Vendée (85), Gironde (33). La logistique du déplacement est intégrée dans le devis sans surprise.\n\nLa distance n'est pas un obstacle : CB Sols a réalisé des chantiers sur toute la façade atlantique. L'Île de Ré, l'Île d'Oléron et les sites insulaires font partie de notre zone d'expertise habituelle.",
+        body: "CB Sols intervient dans toute la Charente-Maritime (département 17) : La Rochelle et son agglomération, Île de Ré, Île d'Oléron, Rochefort, Saintes, Royan, Jonzac et toutes les communes du département.\n\nPour les projets importants (hôtels, campings, collectivités), CB Sols se déplace également dans les départements voisins : Charente (16), Vendée (85), Gironde (33). La logistique du déplacement est intégrée dans le devis sans surprise.\n\nLa distance n'est pas un obstacle : CB Sols a réalisé des projets sur toute la façade atlantique. L'Île de Ré, l'Île d'Oléron et les sites insulaires font partie de notre zone d'expertise habituelle.",
       },
     ],
     relatedFaqs: ['difference-moquette-contrat-particulier', 'duree-vie-moquette-professionnelle'],

@@ -54,7 +54,7 @@ export default function FaqHubPage() {
               FAQ <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>revêtement de sol.</em>
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--cream-muted)', lineHeight: 1.7, margin: 0, maxWidth: '640px' }}>
-              Les questions qui reviennent le plus souvent sur nos chantiers, classées par thème. Chaque réponse est rédigée à partir de cas réels traités en Charente-Maritime.
+              Les questions qui reviennent le plus souvent sur nos projets, classées par thème. Chaque réponse est rédigée à partir de cas réels traités en Charente-Maritime.
             </p>
           </div>
         </section>

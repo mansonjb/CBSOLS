@@ -27,7 +27,7 @@ export function Footer() {
               </div>
             </div>
             <p style={{ fontSize: '0.8rem', lineHeight: 1.7, marginBottom: '1.5rem', maxWidth: '220px' }}>
-              Artisan du revêtement de sol depuis 25 ans. La Rochelle, Île de Ré, Charente-Maritime.
+              Artisan solier moquettiste depuis {company.yearsOfExperience} ans. La Rochelle, Île de Ré, Charente-Maritime.
             </p>
             <div style={{ display: 'flex', gap: '0.5rem' }}>
               {[{ href: company.social.instagram, l: 'IG' },{ href: company.social.linkedin, l: 'LI' }].map(s => (
