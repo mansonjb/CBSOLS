@@ -138,7 +138,7 @@ export const sectors: Sector[] = [
       'Sol PVC lames/dalles haute résistance',
       'Moquette bouclée très résistante pour boutiques',
       'Tapis de propreté avec logo à l\'entrée',
-      'Intervention nocturne ou week-end',
+      'Intervention en site occupé',
     ],
     referencesExamples: [
       'Boutiques centre-ville La Rochelle',

@@ -59,7 +59,7 @@ export const zones: Record<ZoneKey, ZoneContent> = {
       },
       {
         q: "Pouvez-vous poser sans interrompre l'activité d'un commerce ?",
-        a: "Oui. Pour les restaurants, hôtels et commerces de La Rochelle, nous proposons des interventions nocturnes, en week-end ou par zones. La moquette dalles est particulièrement adaptée à ce type de chantier.",
+        a: "Oui. Pour les restaurants, hôtels et commerces de La Rochelle, nous proposons des interventions en site occupé : pose par zones, en rotation ou en horaires décalés. La moquette dalles est particulièrement adaptée à ce type de chantier.",
       },
     ],
     typicalEstablishments: [

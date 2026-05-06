@@ -354,7 +354,7 @@ export const solutions: Solution[] = [
       "Sélection de moquettes certifiées Bfl-s1 avec Δw acoustique élevé",
       "Choix de la construction (tuftée haute densité ou aiguilletée) selon l'usage",
       "Devis avec attestation de conformité ERP incluse",
-      "Intervention nocturne pour ne pas interrompre la programmation",
+      "Intervention en site occupé pour ne pas interrompre la programmation",
       "Conseil coloris et motifs pour valoriser l'identité de la salle",
     ],
     keyProducts: [
@@ -363,7 +363,7 @@ export const solutions: Solution[] = [
       { name: 'EGE Diffuse Light', desc: "Dalles moquette acoustiques pour les espaces d'accueil et foyers des salles culturelles" },
     ],
     references: [
-      "Cinémas Charente-Maritime : rénovation allées, gradins et foyer, pose nocturne",
+      "Cinémas Charente-Maritime : rénovation allées, gradins et foyer, pose en site occupé",
       "Salle de spectacle La Rochelle : moquette acoustique murale et sol, 400 m²",
       "Auditorium collectivité : requalification complète, normes ERP type L",
     ],
@@ -410,7 +410,7 @@ export const solutions: Solution[] = [
       "Centre médical groupé : rénovation complète 5 cabinets, poses en rotation",
     ],
     faq: [
-      { q: "Peut-on rénover le sol d'une pharmacie sans la fermer ?", a: "Oui dans la majorité des cas. CB Sols intervient le dimanche (jour de fermeture légal) ou en horaires nocturnes. Pour une surface standard d'officine (60 à 120 m²), la pose complète se réalise en une journée. La pharmacie peut rouvrir le lendemain matin." },
+      { q: "Peut-on rénover le sol d'une pharmacie sans la fermer ?", a: "Oui dans la majorité des cas. CB Sols intervient le dimanche (jour de fermeture légal) ou en horaires décalés. Pour une surface standard d'officine (60 à 120 m²), la pose complète se réalise en une journée. La pharmacie peut rouvrir le lendemain matin." },
       { q: "Quel sol PVC est recommandé pour une pharmacie ?", a: "CB Sols recommande un sol PVC hétérogène classement 34, certifié résistant aux désinfectants courants, avec finition polyuréthane protectrice. Pour les zones de préparation et les sanitaires, un sol soudé à chaud avec remontées est préférable. Le classement anti-fatigue est un critère important pour le bien-être du personnel." },
       { q: "Le sol PVC est-il compatible avec les fauteuils roulants et les personnes à mobilité réduite ?", a: "Oui. Les sols PVC professionnels sont conçus pour répondre aux normes PMR : coefficient de frottement adapté, absence de seuil lors de la pose, transitions douces. CB Sols réalise les finitions nécessaires à l'accessibilité conformément à la réglementation." },
     ],
