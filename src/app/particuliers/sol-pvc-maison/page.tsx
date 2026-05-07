@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 const cas = [
-  { title: 'Salle de bains & douche', desc: 'PVC en lés soudés à chaud : 100% étanche, pas de joints qui noircissent, marche pieds nus, antidérapant R10 ou R11 selon usage.' },
+  { title: 'Salle de bains & douche', desc: 'Vinyles design ou lame PVC : 100% étanche, pas de joints qui noircissent, marche pieds nus, antidérapant R10 ou R11 selon usage.' },
   { title: 'Cuisine ouverte ou fermée', desc: 'Imitation parquet, béton ciré ou pierre, en lames LVT haute résistance. Hygiène maximale, nettoyage facile, durée de vie 15-20 ans.' },
   { title: 'Buanderie, cellier, sous-sol', desc: 'Résiste à l\'humidité, aux produits ménagers, à la machine à laver qui vibre. Une fois posé, vous l\'oubliez.' },
   { title: 'Garage aménagé, atelier maison', desc: 'PVC industriel résistant aux roulettes, aux tâches d\'huile, aux variations de température. Idéal home gym, atelier, espace bricolage.' },
@@ -25,15 +25,15 @@ const produits = [
 const process = [
   { step: 'Visite', desc: 'État des lieux du support actuel (carrelage, dalle béton, ancien lino), prise de mesures, identification des contraintes.' },
   { step: 'Showroom', desc: 'Choix du produit en showroom : pose à plat des lames, comparaison des veinages, test de la sensation pieds nus.' },
-  { step: 'Devis', desc: 'Devis sous 48h, ragréage inclus si nécessaire. Décomposition claire : produit, préparation support, pose, finitions.' },
-  { step: 'Pose', desc: 'Préparation support, ragréage P3 ou fibré selon support, pose collée ou flottante, soudure à chaud pour les pièces humides.' },
+  { step: 'Devis', desc: 'Devis sous 48h, ragréage inclus. Décomposition claire : produit, préparation support, pose, finitions.' },
+  { step: 'Pose', desc: 'Préparation support, ragréage P3 ou fibré selon support, pose collée ou plombante, soudure à chaud pour les pièces humides.' },
   { step: 'Réception', desc: 'Visite avec vous, contrôle des soudures et finitions, remise des certificats produits et conseils d\'entretien.' },
 ]
 
 const faq = [
   { q: 'Le PVC est-il un produit haut de gamme ?', a: "Le PVC d'entrée de gamme est médiocre — c'est ce qu'on trouve en grande surface. Les gammes professionnelles que nous posons (Gerflor Taralay, objectflor LVT) sont à un autre niveau : épaisseur 5-8 mm, couche d'usure 0,55 à 0,8 mm, durée de vie 15-25 ans. Visuellement et tactilement, c'est très loin du lino bas de gamme." },
   { q: 'Peut-on poser du PVC sur du carrelage existant ?', a: "Oui, dans la majorité des cas. Le carrelage doit être plan, propre et stable. Un ragréage de surfaçage est presque toujours nécessaire pour neutraliser les joints (sinon ils ressortent à travers le PVC). Nous évaluons cela à la visite." },
-  { q: 'Le PVC en salle de bains, c\'est vraiment étanche ?', a: "Oui, à condition d'utiliser du PVC en lés (rouleaux) avec soudure à chaud des joints. Les lames LVT (clipsées) ne sont pas adaptées à la douche italienne. Nous vous orientons vers le bon produit selon votre configuration." },
+  { q: 'Le PVC en salle de bains, c\'est vraiment étanche ?', a: "Oui, à condition d'utiliser du PVC en lés (rouleaux) avec soudure à chaud des joints. Les lames LVT ne sont pas adaptées à la douche italienne. Nous vous orientons vers le bon produit selon votre configuration." },
   { q: 'Compatibilité chauffage au sol ?', a: "Oui, la plupart des PVC professionnels sont compatibles chauffage au sol (résistance thermique faible). À vérifier sur la fiche produit : nous ne posons que des produits validés." },
   { q: 'Combien coûte un PVC pour une salle de bains de 8 m² ?', a: "À titre indicatif, comptez 60 à 130 €/m² posé pour du PVC pièces humides haut de gamme (produit + ragréage + pose + soudure). Le devis précis est gratuit après visite." },
 ]
@@ -59,7 +59,7 @@ export default function SolPvcMaisonPage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>100% waterproof.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Salle de bains, cuisine, buanderie, sous-sol, garage aménagé : nous posons les gammes Gerflor et objectflor que nous installons aussi en cuisine professionnelle. Étanche, esthétique, durable. Pas de PVC discount, pas de pose à l&apos;arrache.
+                Salle de bains, cuisine, buanderie, sous-sol, garage aménagé : nous posons les gammes Gerflor et objectflor que nous installons aussi en cuisine professionnelle. Étanche, esthétique, durable. Pas de PVC discount, pas de pose bâclée.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=sol-pvc-maison" variant="primary" size="md">Demander un devis</Button>

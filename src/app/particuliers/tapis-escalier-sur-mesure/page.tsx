@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const cas = [
   { title: 'Escalier en bois', desc: 'Tapis sur mesure découpé et posé marche par marche, contremarche tendue, profilés Romus en laiton ou inox pour le nez de marche. Préserve le bois, étouffe le bruit, donne du caractère.' },
   { title: 'Escalier en pierre ou béton', desc: 'Pose collée avec contremarches habillées. Idéal en résidence secondaire ou maison ancienne où l\'escalier est froid et sonore. Rendu hôtellerie de charme.' },
-  { title: 'Entrée & couloir', desc: 'Tapis sur mesure aux dimensions exactes de votre entrée, avec finition surjet ou bordure tissée. Possibilité de logo ou motif personnalisé en collection EGE Custom.' },
+  { title: 'Entrée & couloir', desc: 'Tapis sur mesure aux dimensions exactes de votre entrée, avec finition surjet ou bordure tissée. Possibilité de motif personnalisé en collection EGE Custom.' },
   { title: 'Salon, bibliothèque, chambre', desc: 'Grand tapis sur mesure pour délimiter un espace, feutrer un salon, créer une zone lecture. Découpe, finition et livraison à domicile.' },
 ]
 
@@ -27,7 +27,7 @@ const process = [
   { step: 'Showroom', desc: 'Sélection du matériau et des profilés en conditions réelles. Comparaison de plusieurs gammes et coloris sous lumière naturelle.' },
   { step: 'Devis', desc: 'Devis détaillé : matériau au m², profilés, fabrication sur mesure, pose. Délai de fabrication communiqué dès la commande.' },
   { step: 'Fabrication', desc: 'Découpe et confection chez le fabricant ou en atelier (selon la gamme). Délai 3 à 10 semaines selon le produit choisi.' },
-  { step: 'Pose', desc: 'Pose marche par marche avec colle adaptée, tension précise des contremarches, fixation des profilés. Travail méticuleux, fini cousu main.' },
+  { step: 'Pose', desc: 'Pose marche par marche avec colle adaptée, tension précise des contremarches, fixation des profilés. Travail méticuleux, finitions soignées.' },
 ]
 
 const faq = [
@@ -55,8 +55,8 @@ export default function TapisEscalierPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-                Tapis sur mesure<br />
-                <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>cousu main.</em>
+                Tapis & escalier<br />
+                <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>sur mesure.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
                 Habiller un escalier en bois ou en pierre, créer une entrée d&apos;exception, feutrer un salon : un savoir-faire artisanal rare, que nous pratiquons depuis 27 ans pour les hôtels de charme et les maisons de famille de la région.

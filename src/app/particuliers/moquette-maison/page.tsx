@@ -19,14 +19,13 @@ const cas = [
 const produits = [
   { name: 'EGE Hospitality', desc: 'La référence danoise des moquettes hôtelières haut de gamme. Grammage 910 à 2000 g/m², classement feu Bfl-s1, durée de vie 10 à 15 ans.' },
   { name: 'EGE Highline & Reform', desc: 'Collections design pour intérieurs résidentiels exigeants. Coloris contemporains, motifs personnalisables.' },
-  { name: 'Gerflor Tarkett dalles moquette', desc: 'Solution dalle pour bureaux à domicile : remplacement partiel possible si tache ou usure localisée.' },
 ]
 
 const process = [
   { step: 'Visite & relevé', desc: 'Nous venons mesurer, examiner le support existant (parquet, carrelage, ancien revêtement) et discuter de votre projet en conditions réelles.' },
   { step: 'Showroom', desc: 'Vous venez à Villedoux choisir le matériau parmi 500+ échantillons. Test couleur sous différentes lumières, comparaison des grammages.' },
   { step: 'Devis détaillé', desc: 'Devis sous 48h : produit, m² posé, préparation du support, dépose éventuelle, garantie. Pas de surprise en fin de projet.' },
-  { step: 'Pose', desc: "Préparation du support (ragréage si nécessaire), pose par l'équipe CB Sols, finition au cordeau et plinthe. Aucune sous-traitance." },
+  { step: 'Pose', desc: "Préparation du support (ragréage si nécessaire), pose par l'équipe CB Sols. Aucune sous-traitance." },
   { step: 'Réception', desc: 'Visite de réception avec vous, remise des certificats produits et de l\'attestation décennale. Conseils d\'entretien personnalisés.' },
 ]
 
@@ -34,7 +33,7 @@ const faq = [
   { q: 'Peut-on poser de la moquette sur du parquet ou du carrelage ?', a: "Oui, sous conditions. Le support doit être plan (tolérance 2 mm sous règle de 2 m), propre et stable. Sur carrelage, un ragréage de surfaçage est presque toujours nécessaire pour neutraliser les joints. Nous évaluons cela à la visite." },
   { q: 'La moquette est-elle compatible avec un chauffage au sol ?', a: "Oui, à condition de choisir un produit certifié compatible chauffage au sol (la résistance thermique doit être inférieure à 0,15 m².K/W). Nous vous indiquons les gammes adaptées en showroom." },
   { q: 'Quelle est la durée de vie d\'une moquette particulier haut de gamme ?', a: "Une moquette contrat (la même que celle posée chez les hôteliers) installée chez un particulier dure 12 à 20 ans selon l'usage. Une moquette résidentielle bas de gamme : 3 à 5 ans. C'est pourquoi nous ne posons que du contrat." },
-  { q: 'Est-ce hygiénique d\'avoir de la moquette dans une chambre ?', a: "Oui. Les moquettes professionnelles modernes sont traitées anti-acariens et anti-bactéries. Un aspirateur hebdomadaire et un nettoyage à l'injection-extraction tous les 2 à 3 ans suffisent à maintenir une hygiène irréprochable." },
+  { q: 'Est-ce hygiénique d\'avoir de la moquette dans une chambre ?', a: "Oui. La moquette est aujourd'hui le seul revêtement de sol qui empêche la dispersion des poussières, et donc des allergènes, dans l'air. Un aspirateur hebdomadaire et un nettoyage à l'injection-extraction tous les 2 à 3 ans suffisent à maintenir une hygiène irréprochable." },
   { q: 'Combien coûte la pose d\'une moquette dans une chambre de 15 m² ?', a: "Impossible de chiffrer sans voir : tout dépend de la marque et de la gamme choisies, du support à préparer et de l'accessibilité. À titre indicatif, comptez entre 50 et 110 €/m² posé pour de la moquette contrat haut de gamme. Le devis est gratuit et précis." },
 ]
 
@@ -59,7 +58,7 @@ export default function MoquetteMaisonPage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>qualité hôtel.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Chambre, suite parentale, étage entier, dressing, bibliothèque : nous posons chez les particuliers exigeants la même moquette contrat qu&apos;à l&apos;hôtel 4★ d&apos;à côté. Marques EGE, Gerflor. Pas d&apos;entrée de gamme. Pas de raccourci.
+                Chambre, suite parentale, étage entier, dressing, bibliothèque : nous posons chez les particuliers exigeants la même moquette contrat qu&apos;à l&apos;hôtel 4★ d&apos;à côté. Marque EGE. Pas d&apos;entrée de gamme. Pas de raccourci.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=moquette-maison" variant="primary" size="md">Demander un devis</Button>
