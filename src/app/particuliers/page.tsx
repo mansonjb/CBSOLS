@@ -249,10 +249,14 @@ export default function ParticuliersPage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem' }}>
             {[
+              { src: '/images/particuliers/photo-7.jpg', alt: 'Cuisine ouverte avec sol PVC parquet et zone terrazzo' },
               { src: '/images/particuliers/photo-3.jpg', alt: 'Transition PVC terrazzo et parquet, cuisine particulier' },
+              { src: '/images/particuliers/photo-9.jpg', alt: 'Transition diagonale terrazzo / parquet à un seuil de porte' },
               { src: '/images/particuliers/photo-5.jpg', alt: 'Détail finition entre parquet et sol PVC terrazzo' },
-              { src: '/images/particuliers/photo-6.jpg', alt: 'Sol parquet avec bande terrazzo, salon contemporain' },
+              { src: '/images/particuliers/photo-8.jpg', alt: 'Caisses bois sur sol parquet, ambiance maison' },
               { src: '/images/particuliers/photo-1.jpg', alt: 'Couloir parquet maison ancienne avec portail fer forgé' },
+              { src: '/images/particuliers/photo-6.jpg', alt: 'Sol parquet avec bande terrazzo, salon contemporain' },
+              { src: '/images/particuliers/photo-4.jpg', alt: 'Salon vue parquet vers porte ancienne, transition terrazzo' },
             ].map((p, i) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img key={i} src={p.src} alt={p.alt} style={{ width: '100%', height: '320px', objectFit: 'cover', borderRadius: '10px', display: 'block' }} />
