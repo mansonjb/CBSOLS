@@ -67,7 +67,7 @@ export default function ResidenceSecondairePage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>gérée en votre absence.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Vous habitez Paris, Nantes, Bordeaux, Lyon : votre maison sur l&apos;Île de Ré, à Oléron ou à La Rochelle a besoin d&apos;un nouveau sol. Nous gérons le projet de bout en bout, photos d&apos;avancement régulières, livraison clé en main. Vous découvrez le résultat à votre prochaine venue.
+                Vous habitez Paris, Nantes, Bordeaux, Lyon : votre maison sur l&apos;Île de Ré, à Oléron ou à La Rochelle a besoin d&apos;un nouveau sol. Nous gérons le projet de A à Z, photos d&apos;avancement régulières, livraison clé en main. Vous découvrez le résultat à votre prochaine venue.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=residence-secondaire" variant="primary" size="md">Demander un devis</Button>
