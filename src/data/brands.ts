@@ -29,7 +29,7 @@ export const brands: Brand[] = [
     metaTitle: 'EGE Carpets | Revendeur agréé CB Sols, La Rochelle & Île de Ré',
     metaDescription: 'CB Sols est revendeur agréé EGE Carpets en Charente-Maritime. Moquettes hôtelières et bureaux de référence danoise. Showroom à Villedoux. Devis gratuit.',
     tagline: 'La référence danoise de la moquette hôtelière',
-    intro: "EGE est le fabricant danois de moquettes le plus reconnu dans l'hôtellerie et le tertiaire haut de gamme en Europe. Fondée en 1938 à Herning (Danemark), la marque équipe les plus grands hôtels et sièges sociaux du monde. CB Sols est revendeur agréé EGE en Charente-Maritime depuis plus de 15 ans.",
+    intro: "EGE est le fabricant danois de moquettes le plus reconnu dans l'hôtellerie et le tertiaire haut de gamme en Europe. Fondée en 1938 à Herning (Danemark), la marque équipe les plus grands hôtels et sièges sociaux du monde. CB Sols est revendeur agréé EGE en Charente-Maritime depuis 2012.",
     expertise: [
       'Moquette hôtelière Hospitality Collection',
       'Moquette bureaux et tertiaire',
@@ -87,7 +87,7 @@ export const brands: Brand[] = [
       'Dalles vinyle modulaires pour le tertiaire',
       'Solutions sol PVC heterogene Expona',
       'Effets bois, pierre, béton ciré, textile',
-      'Collections sur mesure pour projets B2B',
+      'Collections sur mesure pour projets professionnels',
     ],
     topCollections: [
       { name: 'Expona Commercial', desc: 'Lames vinyle premium 3 mm : couche d\'usure 0,7 mm, classement 33/42, +130 décors', useCases: "Hôtels, bureaux, commerces, restaurants" },

@@ -77,12 +77,12 @@ export const solutions: Solution[] = [
       'Niveau sonore excessif (bruit de couverts, conversations, cuisine)',
       'Résistance aux taches : vin, sauces, café',
       'Facilité de nettoyage intensif quotidien',
-      'Durée de pose minimale : fermeture 1 à 2 nuits maximum',
+      'Durée de pose minimale en site occupé, sans interruption de service',
       'Esthétique adaptée au positionnement (gastro, brasserie, bistrot)',
     ],
     ourApproach: [
       'Sélection de produits hydrofuges traitement Scotchgard ou équivalent',
-      'Devis sous 48h, pose en 1 à 2 nuits selon la surface',
+      'Devis sous 48h, pose en site occupé hors heures d\'exploitation',
       'Conseil esthétique en showroom : coloris, texture, niveau de structure',
       'Pose précise autour du mobilier sans déménagement complet',
     ],
@@ -98,7 +98,7 @@ export const solutions: Solution[] = [
     ],
     faq: [
       { q: 'La moquette est-elle hygiénique dans un restaurant ?', a: "Oui, avec les bons produits. Les moquettes professionnelles sont traitées anti-taches et anti-bactéries. Un nettoyage hebdomadaire à l'injection-extraction suffit pour maintenir une hygiène irréprochable. CB Sols vous recommande les produits d'entretien adaptés lors de la livraison." },
-      { q: 'Peut-on poser en 1 nuit pour ne pas fermer le restaurant ?', a: "Oui pour les surfaces jusqu'à 150 m². Au-delà, nous intervenons sur 2 nuits consécutives. L'équipe CB Sols commence après le dernier service et finit avant l'ouverture. Zéro perturbation pour votre clientèle." },
+      { q: 'Peut-on poser sans fermer le restaurant ?', a: "Oui. CB Sols intervient en site occupé, hors heures de service : nous démarrons après la fermeture et finissons avant la prochaine ouverture. Pour les surfaces supérieures à 150 m², l'intervention s'étale sur plusieurs créneaux consécutifs. Zéro perturbation pour votre clientèle." },
       { q: 'Quelle moquette choisir pour un restaurant gastronomique ?', a: "Pour un établissement gastronomique, nous recommandons une moquette tissée ou tuftée niveau de gamme supérieur (EGE Prestige ou EGE Reform Premium), dans des tons sobres qui valorisent la mise en scène de la salle. Le choix du motif se fait en showroom avec des échantillons en conditions réelles." },
     ],
   },
@@ -370,7 +370,7 @@ export const solutions: Solution[] = [
     faq: [
       { q: "Quelle norme de classement incendie pour une moquette de cinéma ?", a: "Un cinéma classé ERP de type L impose une moquette de sol classée Bfl-s1 minimum (Euroclasse européenne). CB Sols fournit l'attestation de conformité avec chaque projet pour vos dossiers de commission de sécurité." },
       { q: "La moquette améliore-t-elle vraiment l'acoustique d'un cinéma ?", a: "Oui, de façon significative. Une moquette haute densité avec sous-couche absorbante réduit les bruits d'impact de 20 à 30 dB et absorbe une partie de l'énergie sonore réfléchie, améliorant la clarté des dialogues et la qualité musicale. En complément du traitement des murs et plafonds, c'est un élément clé du confort acoustique." },
-      { q: "Peut-on rénover la moquette d'un cinéma sans interrompre les séances ?", a: "Oui. CB Sols intervient la nuit, entre la dernière séance et l'ouverture du lendemain. Pour les grands halls, nous découpons le projet en zones accessibles progressivement. Dans la grande majorité des cas, zéro fermeture n'est nécessaire." },
+      { q: "Peut-on rénover la moquette d'un cinéma sans interrompre les séances ?", a: "Oui. CB Sols intervient en site occupé, entre la dernière séance et l'ouverture du lendemain. Pour les grands halls, nous découpons le projet en zones accessibles progressivement. Dans la grande majorité des cas, zéro fermeture n'est nécessaire." },
     ],
   },
   {

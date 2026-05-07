@@ -140,7 +140,7 @@ const faqItems = [
   },
   {
     q: "Pouvez-vous intervenir sans fermer mon hôtel ou mon bureau ?",
-    a: "Oui. Pour les hôtels, nous travaillons chambre par chambre sur les libérations, ou par étage en basse saison. Pour les bureaux, intervention le week-end ou le soir après 18 h. Aucune perte d'exploitation.",
+    a: "Oui. Pour les hôtels, nous travaillons chambre par chambre sur les libérations, ou par étage en basse saison. Pour les bureaux, intervention en site occupé hors heures d'exploitation. Aucune perte d'exploitation.",
   },
   {
     q: "Combien coûte un nettoyage de moquette professionnel ?",

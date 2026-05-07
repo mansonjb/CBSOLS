@@ -249,7 +249,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Comment obtenir le meilleur prix",
-        body: "Plusieurs leviers permettent d'optimiser le coût total d'un projet de sol PVC :\n\nLa surface est votre principal levier. CB Sols applique des tarifs dégressifs significatifs à partir de 200 m², et davantage à partir de 500 m². Regrouper plusieurs zones ou plusieurs hébergements dans un même bon de commande est toujours rentable.\n\nLe timing est également important. Les projets planifiés 2 à 3 mois à l'avance permettent à CB Sols d'optimiser ses achats de matériaux. À l'inverse, les urgences ou les projets de nuit sont légitimement majorés.\n\nEnfin, le choix du produit. CB Sols ne cherche pas à vous vendre le produit le plus cher mais le mieux adapté à votre usage. Un LVT classe 33 suffit pour des bureaux à fréquentation normale : inutile de payer pour du classe 34. Le devis gratuit inclut systématiquement des alternatives de gamme.",
+        body: "Plusieurs leviers permettent d'optimiser le coût total d'un projet de sol PVC :\n\nLa surface est votre principal levier. CB Sols applique des tarifs dégressifs significatifs à partir de 200 m², et davantage à partir de 500 m². Regrouper plusieurs zones ou plusieurs hébergements dans un même bon de commande est toujours rentable.\n\nLe timing est également important. Les projets planifiés 2 à 3 mois à l'avance permettent à CB Sols d'optimiser ses achats de matériaux. À l'inverse, les urgences ou les interventions hors horaires sont légitimement majorées.\n\nEnfin, le choix du produit. CB Sols ne cherche pas à vous vendre le produit le plus cher mais le mieux adapté à votre usage. Un LVT classe 33 suffit pour des bureaux à fréquentation normale : inutile de payer pour du classe 34. Le devis gratuit inclut systématiquement des alternatives de gamme.",
       },
     ],
     faq: [
@@ -321,7 +321,7 @@ export const guides: Guide[] = [
     faq: [
       { q: "Le carrelage est-il autorisé dans une cuisine professionnelle ?", a: "Oui, à condition que les joints soient en résine époxy (imperméable) et non en ciment (poreux et bactérien). Les carreaux doivent être antidérapants R11 minimum. CB Sols ne pose pas de carrelage, mais recommande le sol PVC soudé pour sa supériorité sanitaire et sa facilité d'entretien." },
       { q: "Peut-on poser du sol PVC sur du carrelage dans une cuisine ?", a: "Oui, si le carrelage est parfaitement plan (tolérance 2mm sous règle de 2m), en bon état, sans carreau décollé et sans joints hauts. Un ragréage de surfaçage est souvent nécessaire pour effacer les reliefs des joints. CB Sols évalue ce point lors du devis." },
-      { q: "Combien de temps dure la pose d'un sol cuisine professionnelle ?", a: "Pour une cuisine de 50 m², comptez 1 journée pour la préparation du support et la pose, plus demi-journée pour la soudure et les finitions. CB Sols intervient le dimanche ou la nuit pour les cuisines en activité. La cuisine peut être utilisée dès le lendemain de la finition." },
+      { q: "Combien de temps dure la pose d'un sol cuisine professionnelle ?", a: "Pour une cuisine de 50 m², comptez 1 journée pour la préparation du support et la pose, plus demi-journée pour la soudure et les finitions. CB Sols intervient en site occupé, hors heures de service, pour les cuisines en activité. La cuisine peut être utilisée dès le lendemain de la finition." },
     ],
     relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
   },

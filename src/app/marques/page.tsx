@@ -4,7 +4,7 @@ import { brands } from '@/data/brands'
 
 export const metadata: Metadata = {
   title: 'Marques Partenaires | EGE, Gerflor, objectflor, Bostik, Romus',
-  description: 'CB Sols travaille avec 5 marques sélectionnées avec soin : EGE et objectflor (revêtements), Gerflor (PVC), Bostik (colles & supports), Romus (profilés). Showroom Villedoux.',
+  description: 'CB Sols travaille avec 5 marques sélectionnées avec soin : EGE (moquette), Gerflor et objectflor (PVC), Bostik (colles & préparations), Romus (profilés). Showroom Villedoux.',
   alternates: { canonical: 'https://cbsols.fr/marques' },
 }
 

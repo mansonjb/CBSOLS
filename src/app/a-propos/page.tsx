@@ -77,7 +77,7 @@ export default function AProposPage() {
               <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>de vos sols.</em>
             </h1>
             <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '600px', lineHeight: 1.75, margin: 0 }}>
-              CB Sols est né en 1999 à Villedoux d'une passion pour les beaux matériaux et le travail bien fait. En 27 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime, des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille aux restaurants étoilés.
+              CB Sols est né en 1999 à Villedoux d'une passion pour les beaux matériaux et le travail bien fait. En 27 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime, des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille au restaurant étoilé.
             </p>
           </div>
         </section>
@@ -125,12 +125,12 @@ export default function AProposPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
                   {[
                     { year: '1999', label: "Création de l'entreprise", desc: "Lancement de CB Sols, premiers projets de revêtement de sol en Charente-Maritime." },
-                    { year: '2003', label: 'Développement B2B', desc: "Premiers contrats avec des hôteliers et professionnels de l'Île de Ré et de l'agglo rochelaise." },
+                    { year: '2003', label: 'Premiers contrats professionnels', desc: "Premiers contrats avec des hôteliers et professionnels de l'Île de Ré et de l'agglo rochelaise." },
                     { year: '2008', label: "Arrivée de Valentin Prévoteau", desc: "Valentin intègre la structure en tant qu'apprenti et apprend le métier directement sur les projets." },
                     { year: '2012', label: 'Partenariats officiels', desc: "Agréments avec des marques de référence comme objectflor, EGE et Gerflor : accès aux gammes contract et au SAV fabricants." },
                     { year: '2013', label: 'Nouvel atelier à Villedoux', desc: "Création d'un nouvel atelier à Villedoux pour stocker matériaux, échantillons et outillage de pose." },
                     { year: '2023', label: "Reprise par Valentin Prévoteau", desc: "Après quinze ans dans l'entreprise, Valentin reprend la gérance de CB Sols et en devient le dirigeant." },
-                    { year: '2024', label: 'Showroom unique en France', desc: "Création d'un showroom unique en France à Villedoux : plus de 500 échantillons consultables sur rendez-vous." },
+                    { year: '2024', label: 'Showroom à Villedoux', desc: "Ouverture d'un showroom dédié à Villedoux : plus de 500 échantillons consultables sur rendez-vous." },
                     { year: "Aujourd'hui", label: '500+ projets', desc: "La Rochelle, Île de Ré, Île d'Oléron, Rochefort, Saintes et toute la Charente-Maritime." },
                   ].map((item, i, arr) => (
                     <div key={item.year} style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '1.25rem', padding: '1.5rem 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none' }}>

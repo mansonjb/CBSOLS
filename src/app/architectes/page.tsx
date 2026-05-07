@@ -30,7 +30,7 @@ const atouts = [
   {
     num: '04',
     title: 'Intervention sans interruption d\'activité',
-    desc: 'CB Sols organise les projets en rotation ou de nuit pour respecter le planning de votre maître d\'ouvrage. Zéro retard de livraison de notre fait.',
+    desc: 'CB Sols organise les projets en site occupé, par phasage et rotation pour respecter le planning de votre maître d\'ouvrage. Zéro retard de livraison de notre fait.',
   },
   {
     num: '05',
@@ -296,7 +296,7 @@ export default function ArchitectesPage() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {[
-                { title: 'Conditions tarifaires négociées', desc: 'Marges réduites pour vos projets B2B récurrents. Conditions discutées en bilatéral.' },
+                { title: 'Conditions tarifaires négociées', desc: 'Marges réduites pour vos projets professionnels récurrents. Conditions discutées en bilatéral.' },
                 { title: 'Délai de paiement adapté', desc: 'Facturation à 30 ou 45 jours selon volumes. Compatible avec vos cycles maître d\'ouvrage.' },
                 { title: 'Showroom dédié sur RDV', desc: 'Créneaux privés pour vos rendez-vous clients. Possibilité d\'accueillir vos prospects directement.' },
                 { title: 'Apporteur d\'affaires', desc: 'Si vous nous recommandez à un confrère ou un client hors prescription, nous proposons une commission négociable au cas par cas.' },

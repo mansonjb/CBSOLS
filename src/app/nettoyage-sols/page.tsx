@@ -123,7 +123,7 @@ const faqItems = [
   },
   {
     q: "Pouvez-vous intervenir sans interrompre l'activité ?",
-    a: "Oui. Pour les commerces et restaurants, nous intervenons hors horaires d'ouverture. Pour les hôtels, par zones. Pour les bureaux, le week-end ou en soirée. Le séchage rapide (30 à 60 min) facilite ces interventions sans interruption.",
+    a: "Oui. Pour les commerces et restaurants, nous intervenons hors horaires d'ouverture. Pour les hôtels, par zones. Pour les bureaux, hors heures d'exploitation. Le séchage rapide (30 à 60 min) facilite ces interventions sans interruption.",
   },
   {
     q: "Proposez-vous des contrats annuels ?",
