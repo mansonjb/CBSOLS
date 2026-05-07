@@ -32,13 +32,13 @@ const cas = [
     href: '/particuliers/moquette-maison',
   },
   {
-    img: '/images/tapis-hotel-baronnie.webp',
+    img: '/images/particuliers/photo-1.jpg',
     title: 'Résidence secondaire (Île de Ré, Oléron)',
     desc: "Vous habitez Paris, Bordeaux, Nantes : nous gérons le projet en votre absence, photos d'avancement, livraison clé en main. Spécialité maisons de l'Île de Ré.",
     href: '/particuliers/residence-secondaire',
   },
   {
-    img: '/images/cuisine-pro.webp',
+    img: '/images/particuliers/photo-2.jpg',
     title: 'Rénovation soignée pièce par pièce',
     desc: 'Un sol à refaire dans la cuisine, la salle de bains, une chambre, un dressing : nous intervenons sur des projets ciblés sans imposer une rénovation globale.',
     href: '/particuliers/sol-pvc-maison',
@@ -235,6 +235,27 @@ export default function ParticuliersPage() {
                   <div style={{ fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', flexShrink: 0 }}>→</div>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Galerie réalisations particuliers */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Quelques réalisations chez les particuliers</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
+            Le détail <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>se voit.</em>
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem' }}>
+            {[
+              { src: '/images/particuliers/photo-3.jpg', alt: 'Transition PVC terrazzo et parquet, cuisine particulier' },
+              { src: '/images/particuliers/photo-5.jpg', alt: 'Détail finition entre parquet et sol PVC terrazzo' },
+              { src: '/images/particuliers/photo-6.jpg', alt: 'Sol parquet avec bande terrazzo, salon contemporain' },
+              { src: '/images/particuliers/photo-1.jpg', alt: 'Couloir parquet maison ancienne avec portail fer forgé' },
+            ].map((p, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={i} src={p.src} alt={p.alt} style={{ width: '100%', height: '320px', objectFit: 'cover', borderRadius: '10px', display: 'block' }} />
             ))}
           </div>
         </div>

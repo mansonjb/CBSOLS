@@ -67,7 +67,7 @@ export default function SolPvcMaisonPage() {
               </div>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/cuisine-pro-real.webp" alt="Sol PVC dans une cuisine" style={{ width: '100%', height: '380px', objectFit: 'cover', borderRadius: '12px' }} />
+            <img src="/images/particuliers/photo-2.jpg" alt="Sol PVC parquet dans une cuisine ouverte" style={{ width: '100%', height: '380px', objectFit: 'cover', borderRadius: '12px' }} />
           </div>
         </div>
       </section>

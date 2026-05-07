@@ -75,7 +75,7 @@ export default function ResidenceSecondairePage() {
               </div>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/tapis-hotel-real.webp" alt="Résidence secondaire Île de Ré" style={{ width: '100%', height: '380px', objectFit: 'cover', borderRadius: '12px' }} />
+            <img src="/images/particuliers/photo-4.jpg" alt="Résidence secondaire avec parquet et terrazzo" style={{ width: '100%', height: '380px', objectFit: 'cover', borderRadius: '12px' }} />
           </div>
         </div>
       </section>
