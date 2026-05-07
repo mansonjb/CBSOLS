@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Moquette Maison Particulier | Pose Soignée La Rochelle, Île de Ré',
-  description: "Pose de moquette haut de gamme pour particuliers : chambre, suite parentale, étage, dressing. Marques EGE, Gerflor. La même qualité que pour les hôtels 4★. Devis sur mesure.",
+  description: "Pose de moquette haut de gamme pour particuliers : chambre, suite parentale, étage, dressing. Marques EGE, Gerflor. La même qualité que pour les hôtels 5★. Devis sur mesure.",
   alternates: { canonical: 'https://cbsols.fr/particuliers/moquette-maison' },
 }
 
@@ -58,7 +58,7 @@ export default function MoquetteMaisonPage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>qualité hôtel.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Chambre, suite parentale, étage entier, dressing, bibliothèque : nous posons chez les particuliers exigeants la même moquette contrat qu&apos;à l&apos;hôtel 4★ d&apos;à côté. Marque EGE. Pas d&apos;entrée de gamme. Pas de raccourci.
+                Chambre, suite parentale, étage entier, dressing, bibliothèque : nous posons chez les particuliers exigeants la même moquette contrat qu&apos;à l&apos;hôtel 5★ d&apos;à côté. Marque EGE. Pas d&apos;entrée de gamme. Pas de raccourci.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=moquette-maison" variant="primary" size="md">Demander un devis</Button>

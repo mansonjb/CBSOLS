@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Particuliers | CB Sols, Artisan-Poseur Haut de Gamme La Rochelle, Île de Ré',
-  description: "L'artisan qui pose la moquette des hôtels 4★ de la région intervient aussi chez les particuliers exigeants : maison principale, résidence secondaire, escalier, rénovation soignée. Devis sur mesure, jamais de grille au m².",
+  description: "L'artisan qui pose la moquette des hôtels 5★ de la région intervient aussi chez les particuliers exigeants : maison principale, résidence secondaire, escalier, rénovation soignée. Devis sur mesure, jamais de grille au m².",
   alternates: { canonical: 'https://cbsols.fr/particuliers' },
 }
 
@@ -135,7 +135,7 @@ export default function ParticuliersPage() {
             Pour les projets particuliers exigeants
           </span>
           <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-            L&apos;exigence des hôtels 4★<br />
+            L&apos;exigence des hôtels 5★<br />
             <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>chez vous.</em>
           </h1>
           <p style={{ fontSize: '1.05rem', color: 'var(--muted)', maxWidth: '680px', lineHeight: 1.75, marginBottom: '2rem' }}>
