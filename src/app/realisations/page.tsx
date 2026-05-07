@@ -30,50 +30,52 @@ export default function RealisationsPage() {
 
       <section style={{ padding: '4rem 2rem 6rem' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.5rem' }}>
             {realisations.map((project) => (
               <Link
                 key={project.slug}
                 href={`/realisations/${project.slug}`}
-                style={{
-                  backgroundColor: 'var(--project-card-bg)',
-                  border: '1px solid var(--border)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'flex-end',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  minHeight: '320px',
-                  transition: 'transform 0.2s, border-color 0.2s, box-shadow 0.2s',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                }}
-                className="project-card-link"
+                style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
               >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  style={{ objectFit: 'cover', opacity: 0.65 }}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.92) 0%, rgba(13,12,10,0.35) 55%, transparent 100%)', pointerEvents: 'none' }} />
-                <div style={{ padding: '2rem', position: 'relative', zIndex: 1 }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem', gap: '0.75rem' }}>
-                    <span style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra-on-dark)', fontWeight: 700 }}>{project.sector}</span>
-                    <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', color: 'var(--text-on-dark-muted)', whiteSpace: 'nowrap', fontWeight: 500 }}>
-                      {project.year} · {project.location}
-                    </span>
+                <article
+                  className="service-card"
+                  style={{
+                    backgroundColor: 'var(--bg-card)',
+                    border: '1px solid var(--border)',
+                    borderRadius: '16px',
+                    overflow: 'hidden',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: '100%',
+                    transition: 'border-color 0.2s, box-shadow 0.2s, transform 0.2s',
+                  }}
+                >
+                  <div style={{ position: 'relative', width: '100%', aspectRatio: '4 / 3', overflow: 'hidden' }}>
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                   </div>
-                  <h2 style={{ fontFamily: 'var(--font-playfair, Georgia, serif)', fontSize: '1.2rem', fontWeight: 500, color: 'var(--text-on-dark)', margin: '0 0 0.5rem', lineHeight: 1.3 }}>
-                    {project.title}
-                  </h2>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--terra-on-dark)', marginBottom: '0.75rem', letterSpacing: '0.04em', fontWeight: 600 }}>{project.type}</div>
-                  <p style={{ fontSize: '0.82rem', color: 'var(--text-on-dark)', margin: 0, lineHeight: 1.6, opacity: 0.85 }}>{project.description}</p>
-                  <div style={{ fontSize: '0.65rem', color: 'var(--terra-on-dark)', marginTop: '1rem', letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 700 }}>
-                    Voir le projet →
+                  <div style={{ padding: '1.5rem 1.5rem 1.75rem', display: 'flex', flexDirection: 'column', gap: '0.65rem', flexGrow: 1 }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: '0.75rem' }}>
+                      <span style={{ fontSize: '0.58rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700 }}>{project.sector}</span>
+                      <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'var(--muted)', whiteSpace: 'nowrap' }}>
+                        {project.year} · {project.location}
+                      </span>
+                    </div>
+                    <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.1rem', fontWeight: 700, color: 'var(--dark)', margin: 0, lineHeight: 1.3, letterSpacing: '-0.01em' }}>
+                      {project.title}
+                    </h2>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--terra)', fontStyle: 'italic', fontFamily: 'var(--font-serif)', fontWeight: 300 }}>{project.type}</div>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--muted)', margin: 0, lineHeight: 1.65, flexGrow: 1 }}>{project.description}</p>
+                    <div style={{ fontSize: '0.62rem', color: 'var(--terra)', marginTop: '0.5rem', letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 700 }}>
+                      Voir le projet →
+                    </div>
                   </div>
-                </div>
+                </article>
               </Link>
             ))}
           </div>
