@@ -170,6 +170,38 @@ export default async function RealisationDetailPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Galerie photos */}
+        {r.gallery && r.gallery.length > 0 && (
+          <section style={{ padding: '4rem 2rem 5rem', borderTop: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem', fontWeight: 600 }}>Galerie</div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.025em', lineHeight: 1.2 }}>
+                Photos du <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>projet.</em>
+              </h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
+                {r.gallery.map((photo, i) => (
+                  <figure key={i} style={{ margin: 0 }}>
+                    <div style={{ position: 'relative', width: '100%', borderRadius: '14px', overflow: 'hidden', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={photo.src}
+                        alt={photo.caption || `${r.title} – photo ${i + 1}`}
+                        loading="lazy"
+                        style={{ width: '100%', height: 'auto', display: 'block' }}
+                      />
+                    </div>
+                    {photo.caption && (
+                      <figcaption style={{ marginTop: '0.85rem', fontSize: '0.82rem', color: 'var(--muted)', fontStyle: 'italic', fontFamily: 'var(--font-serif)', fontWeight: 400, lineHeight: 1.6, textAlign: 'center' }}>
+                        {photo.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA */}
         <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>
           <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center' }}>

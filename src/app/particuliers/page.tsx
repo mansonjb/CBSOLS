@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Particuliers | CB Sols, Artisan-Poseur Haut de Gamme La Rochelle, Île de Ré',
-  description: "L'artisan qui pose la moquette des hôtels 5★ de la région intervient aussi chez les particuliers exigeants : maison principale, résidence secondaire, escalier, rénovation soignée. Devis sur mesure, jamais de grille au m².",
+  description: "L'artisan qui pose la moquette des hôtels 5★ de la région intervient aussi chez les particuliers : maison principale, résidence secondaire, escalier sur mesure, rénovation pièce par pièce. Devis sur mesure, jamais de grille au m².",
   alternates: { canonical: 'https://cbsols.fr/particuliers' },
 }
 
@@ -19,8 +19,8 @@ const filtres = [
     desc: "Chaque projet est différent : surface, support, contraintes, accès. Nous nous déplaçons, nous regardons, nous chiffrons. Le devis est gratuit, détaillé et sans engagement.",
   },
   {
-    title: 'Nous nous déplaçons pour les projets soignés',
-    desc: "Suite parentale, étage complet, escalier en bois, résidence secondaire, rénovation où la qualité de finition compte : c'est notre terrain. Pour un besoin plus standard à prix serré, les grandes enseignes sont mieux positionnées — nous vous le dirons.",
+    title: 'Le type de projets sur lesquels nous intervenons',
+    desc: "Suite parentale, étage complet, escalier sur mesure en bois ou en pierre, résidence secondaire, maison ancienne à rénover. Pour un besoin plus standard à prix serré, les grandes enseignes sont mieux positionnées — nous vous le dirons.",
   },
 ]
 
@@ -39,7 +39,7 @@ const cas = [
   },
   {
     img: '/images/particuliers/photo-2.jpg',
-    title: 'Rénovation soignée pièce par pièce',
+    title: 'Rénovation pièce par pièce',
     desc: 'Un sol à refaire dans la cuisine, la salle de bains, une chambre, un dressing : nous intervenons sur des projets ciblés sans imposer une rénovation globale.',
     href: '/particuliers/sol-pvc-maison',
   },
@@ -94,7 +94,7 @@ const services = [
 const faq = [
   {
     q: 'Quels types de projets prenez-vous ?',
-    a: "Notre métier prend tout son sens sur les projets où la qualité du matériau et de la pose est centrale : suite parentale, escalier sur mesure, résidence soignée, rénovation où chaque détail compte. Pour un projet plus standard recherchant le prix le plus bas, des enseignes nationales sont mieux positionnées — nous vous le dirons honnêtement.",
+    a: "Suite parentale, étage entier, escalier sur mesure, résidence secondaire, maison ancienne à rénover, projet où le matériau compte vraiment : c'est notre terrain. Pour un projet plus standard recherchant le prix le plus bas, des enseignes nationales sont mieux positionnées — nous vous le dirons honnêtement.",
   },
   {
     q: 'Vous déplacez-vous sur l\'Île de Ré ?',
@@ -132,14 +132,14 @@ export default function ParticuliersPage() {
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Particuliers</span>
           </div>
           <span style={{ display: 'inline-block', padding: '0.3rem 0.875rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(44, 85, 48, 0.08)', fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', borderRadius: '999px', marginBottom: '1.5rem' }}>
-            Pour les projets particuliers exigeants
+            Pour les projets particuliers
           </span>
           <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
             L&apos;exigence des hôtels 5★<br />
             <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>chez vous.</em>
           </h1>
           <p style={{ fontSize: '1.05rem', color: 'var(--muted)', maxWidth: '680px', lineHeight: 1.75, marginBottom: '2rem' }}>
-            Le même artisan qui pose la moquette des hôtels et restaurants étoilés de la région peut poser la vôtre. Sous une condition : que le projet ait du sens. Un beau matériau, une pose soignée, un devis sur mesure.
+            Le même artisan qui pose la moquette des hôtels et restaurants étoilés de la région peut poser la vôtre. Sous une condition : que le projet ait du sens. Un beau matériau, un devis sur mesure, une visite à votre domicile avant tout chiffrage.
           </p>
           <p style={{ fontSize: '0.95rem', color: 'var(--dark-2)', maxWidth: '680px', lineHeight: 1.75, marginBottom: '2.5rem', fontStyle: 'italic' }}>
             Nous ne posons pas d&apos;entrée de gamme. Nous n&apos;avons pas de grille au m². Nous nous déplaçons pour vous voir, comprendre votre projet, et proposer la solution juste.

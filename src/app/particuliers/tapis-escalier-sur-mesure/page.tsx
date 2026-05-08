@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Tapis & Escalier sur Mesure | Pose Artisanale La Rochelle, Île de Ré',
-  description: "Pose de tapis sur mesure pour escalier en bois ou en pierre, entrée, salon. Fabrication & pose artisanale, marques EGE & Romus (profilés). Le bon savoir-faire pour un rendu impeccable.",
+  description: "Pose de tapis sur mesure pour escalier en bois ou en pierre, entrée, salon. Fabrication & pose artisanale, marques EGE & Romus (profilés). Un savoir-faire que nous pratiquons depuis 27 ans pour les hôtels de charme et les maisons de famille.",
   alternates: { canonical: 'https://cbsols.fr/particuliers/tapis-escalier-sur-mesure' },
 }
 
@@ -27,7 +27,7 @@ const process = [
   { step: 'Showroom', desc: 'Sélection du matériau et des profilés en conditions réelles. Comparaison de plusieurs gammes et coloris sous lumière naturelle.' },
   { step: 'Devis', desc: 'Devis détaillé : matériau au m², profilés, fabrication sur mesure, pose. Délai de fabrication communiqué dès la commande.' },
   { step: 'Fabrication', desc: 'Découpe et confection chez le fabricant ou en atelier (selon la gamme). Délai 3 à 10 semaines selon le produit choisi.' },
-  { step: 'Pose', desc: 'Pose marche par marche avec colle adaptée, tension précise des contremarches, fixation des profilés. Travail méticuleux, finitions soignées.' },
+  { step: 'Pose', desc: 'Pose marche par marche avec colle adaptée, tension précise des contremarches, fixation des profilés.' },
 ]
 
 const faq = [

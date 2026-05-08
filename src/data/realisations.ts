@@ -28,6 +28,8 @@ export interface Realisation {
   body: string[]
   /** Lien externe vers le site officiel du client (CTA "Visiter le site du client") */
   clientLink?: { url: string; label: string }
+  /** Galerie de photos additionnelles, affichée en plein-largeur sous le body */
+  gallery?: { src: string; caption?: string }[]
 }
 
 export const realisations: Realisation[] = [
@@ -185,6 +187,17 @@ export const realisations: Realisation[] = [
       "Nous sommes intervenus récemment sur un projet complet regroupant plusieurs types de travaux de pose des moquettes et sols pour une maison de maître.",
       "Nous avons posé les sols dans la cuisine. Le revêtement choisi est résistant, facile à entretenir et adapté à un usage quotidien. Nous avons préparé le support, nivelé les zones irrégulières et appliqué le sol avec soin.",
       "Dans la salle de bain, nous avons posé une moquette spécialement conçue pour résister à l'humidité. Le matériau choisi est adapté aux pièces d'eau. Il offre un confort agréable sous le pied et une grande durabilité. Ce projet illustre notre capacité à adapter chaque revêtement aux contraintes spécifiques de chaque espace.",
+    ],
+    gallery: [
+      { src: '/images/particuliers/photo-7.jpg', caption: "Vue d'ensemble de la cuisine ouverte avec sol PVC parquet et zone terrazzo" },
+      { src: '/images/particuliers/photo-2.jpg', caption: "Cuisine équipée, sol PVC effet parquet avec délimitation terrazzo sous l'îlot" },
+      { src: '/images/particuliers/photo-3.jpg', caption: "Détail de la transition terrazzo / parquet sous l'îlot central" },
+      { src: '/images/particuliers/photo-9.jpg', caption: "Transition diagonale terrazzo / parquet à un seuil de porte" },
+      { src: '/images/particuliers/photo-5.jpg', caption: "Plongée sur la finition entre parquet et terrazzo" },
+      { src: '/images/particuliers/photo-6.jpg', caption: "Espace repas, lame PVC effet bois et bande terrazzo" },
+      { src: '/images/particuliers/photo-4.jpg', caption: "Vue depuis la cuisine vers le salon, parquet continu" },
+      { src: '/images/particuliers/photo-1.jpg', caption: "Couloir de la maison ancienne, parquet PVC posé sur l'existant" },
+      { src: '/images/particuliers/photo-8.jpg', caption: "Détail de la pose au pied d'un meuble, parquet PVC continu" },
     ],
   },
   {

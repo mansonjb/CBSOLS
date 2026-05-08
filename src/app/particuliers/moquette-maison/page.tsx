@@ -18,7 +18,7 @@ const cas = [
 
 const produits = [
   { name: 'EGE Hospitality', desc: 'La référence danoise des moquettes hôtelières haut de gamme. Grammage 910 à 2000 g/m², classement feu Bfl-s1, durée de vie 10 à 15 ans.' },
-  { name: 'EGE Highline & Reform', desc: 'Collections design pour intérieurs résidentiels exigeants. Coloris contemporains, motifs personnalisables.' },
+  { name: 'EGE Highline & Reform', desc: 'Collections design pour intérieurs résidentiels haut de gamme. Coloris contemporains, motifs personnalisables.' },
 ]
 
 const process = [
@@ -58,7 +58,7 @@ export default function MoquetteMaisonPage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>qualité hôtel.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Chambre, suite parentale, étage entier, dressing, bibliothèque : nous posons chez les particuliers exigeants la même moquette contrat qu&apos;à l&apos;hôtel 5★ d&apos;à côté. Marque EGE. Pas d&apos;entrée de gamme. Pas de raccourci.
+                Chambre, suite parentale, étage entier, dressing, bibliothèque : nous posons chez les particuliers la même moquette contrat qu&apos;à l&apos;hôtel 5★ d&apos;à côté. Marque EGE. Pas d&apos;entrée de gamme. Pas de raccourci.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=moquette-maison" variant="primary" size="md">Demander un devis</Button>
