@@ -11,16 +11,12 @@ export const metadata: Metadata = {
 
 const filtres = [
   {
-    title: 'Pas de produits d\'entrée de gamme',
-    desc: "Nous posons exclusivement EGE, Gerflor, objectflor : les marques que nous installons chez les hôteliers et restaurateurs de la région. Pas de moquette discount, pas de PVC bas de gamme.",
-  },
-  {
     title: 'Pas de grille de prix au m²',
     desc: "Chaque projet est différent : surface, support, contraintes, accès. Nous nous déplaçons, nous regardons, nous chiffrons. Le devis est gratuit, détaillé et sans engagement.",
   },
   {
     title: 'Le type de projets sur lesquels nous intervenons',
-    desc: "Suite parentale, étage complet, escalier sur mesure en bois ou en pierre, résidence secondaire, maison ancienne à rénover. Pour un besoin plus standard à prix serré, les grandes enseignes sont mieux positionnées — nous vous le dirons.",
+    desc: "Suite parentale, chambre d'enfant, bibliothèque, dressing, étage complet, escalier sur mesure en bois ou en pierre, résidence principale ou secondaire, maison ancienne à rénover.",
   },
 ]
 
@@ -94,7 +90,7 @@ const services = [
 const faq = [
   {
     q: 'Quels types de projets prenez-vous ?',
-    a: "Suite parentale, étage entier, escalier sur mesure, résidence secondaire, maison ancienne à rénover, projet où le matériau compte vraiment : c'est notre terrain. Pour un projet plus standard recherchant le prix le plus bas, des enseignes nationales sont mieux positionnées — nous vous le dirons honnêtement.",
+    a: "Chambre d'enfant, résidence principale ou secondaire, bibliothèque, suite parentale, étage entier, escalier sur mesure, maison ancienne à rénover, projet où le matériau compte vraiment : c'est notre terrain.",
   },
   {
     q: 'Vous déplacez-vous sur l\'Île de Ré ?',
@@ -102,7 +98,7 @@ const faq = [
   },
   {
     q: 'Faites-vous les petits projets (une seule pièce) ?',
-    a: "Oui, à condition que le projet ait du sens : une suite parentale, une chambre d'hôte, un escalier, une entrée, une salle de bains qui mérite un beau matériau. Nous préférons un projet ciblé bien réalisé qu'une rénovation globale au rabais.",
+    a: "Oui. Une suite parentale, une chambre d'enfant, une chambre d'hôte, un dressing, un escalier, une entrée, une salle de bains, une bibliothèque, ou encore une pièce de réception : nous intervenons sur des projets ciblés sans imposer une rénovation globale.",
   },
   {
     q: 'Quel est le délai entre le devis et la pose ?',
@@ -156,7 +152,7 @@ export default function ParticuliersPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Notre positionnement</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em', maxWidth: '720px' }}>
-            Trois principes <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>qui clarifient le cadre.</em>
+            Deux principes <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>qui clarifient le cadre.</em>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
             {filtres.map((f, i) => (

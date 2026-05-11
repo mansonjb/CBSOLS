@@ -151,6 +151,54 @@ export const faqs: Faq[] = [
     relatedFaqs: ['difference-moquette-contrat-particulier', 'duree-vie-moquette-professionnelle'],
     relatedSolutions: ['moquette-hotel', 'sol-pvc-restaurant'],
   },
+  {
+    slug: 'moquette-allergenes-entretien',
+    question: 'Moquette et allergènes : que faut-il savoir sur l\'entretien ?',
+    metaTitle: 'Moquette & Allergènes | Hygiène, Entretien | CB Sols',
+    metaDescription: "Moquette et allergies : idées reçues, réalité scientifique et entretien adapté. Guide CB Sols pour profiter d'une moquette saine en Charente-Maritime.",
+    category: 'Moquette',
+    shortAnswer: "Contrairement aux idées reçues, la moquette est le seul revêtement de sol capable de piéger les particules fines (poussières, pollens, allergènes) au lieu de les laisser circuler dans l'air. Avec un entretien adapté (aspirateur HEPA hebdomadaire, injection-extraction tous les 2 à 3 ans), elle convient parfaitement aux personnes allergiques.",
+    sections: [
+      {
+        title: 'Pourquoi la moquette est en réalité l\'alliée des allergiques',
+        body: "L'idée reçue selon laquelle la moquette serait néfaste pour les allergiques vient des moquettes résidentielles bas de gamme mal entretenues. Les études récentes (notamment l'étude DAAB en Allemagne et plusieurs publications scientifiques européennes) démontrent l'inverse : la moquette piège les particules fines au sol au lieu de les laisser circuler dans l'air.\n\nSur un sol dur (carrelage, parquet, PVC), chaque déplacement remet en suspension les poussières, pollens et acariens présents au sol. Sur une moquette, ces particules sont retenues dans les fibres, où l'aspirateur peut les capturer définitivement.\n\nLe résultat mesuré : l'air d'une pièce moquettée bien entretenue contient en moyenne deux fois moins de particules fines en suspension qu'une pièce avec sol dur équivalent.",
+      },
+      {
+        title: 'L\'entretien adapté pour une moquette saine',
+        body: "Pour qu'une moquette joue pleinement son rôle d'aspirateur passif, l'entretien suit trois principes :\n\n1. Aspirateur HEPA hebdomadaire : un aspirateur équipé d'un filtre HEPA (norme EN 1822) capture 99,97% des particules de 0,3 microns. Aspirez chaque pièce une fois par semaine, deux fois en chambre si vous êtes allergique.\n\n2. Nettoyage par injection-extraction tous les 2 à 3 ans : ce nettoyage en profondeur extrait l'eau souillée et les particules incrustées. CB Sols propose un service annuel ou bisannuel selon vos besoins. Séchage 4 à 6 heures.\n\n3. Traitement préventif : les moquettes professionnelles (gammes EGE, classement 33) sont traitées en usine contre les acariens et les bactéries. Ce traitement reste actif 10 à 15 ans.",
+      },
+      {
+        title: 'Le bon choix de moquette pour une chambre',
+        body: "Pour une chambre, particulièrement une chambre d'enfant ou une chambre de personne allergique, nous recommandons une moquette :\n\n- Tuftée bouclée ou velours coupé court (les fibres longues retiennent davantage de poussière difficile à extraire)\n- Avec traitement antiacarien et antibactérien certifié\n- Grammage entre 700 et 1100 g/m² (compromis confort / facilité d'aspiration)\n- Compatible chauffage au sol si applicable\n\nLes gammes EGE Hospitality et EGE Highline répondent à ces critères et sont les références que nous posons aussi bien chez les hôteliers que chez les particuliers.",
+      },
+    ],
+    relatedFaqs: ['difference-moquette-contrat-particulier', 'duree-vie-moquette-professionnelle'],
+    relatedSolutions: ['moquette-hotel', 'moquette-bureau'],
+  },
+  {
+    slug: 'pvc-salle-de-bains-particulier',
+    question: 'Peut-on poser du PVC dans une salle de bains (moins froid, moins glissant) ?',
+    metaTitle: 'Sol PVC en Salle de Bains | Étanche, Antidérapant | CB Sols',
+    metaDescription: "Sol PVC en salle de bains : 100% étanche, antidérapant R10/R11, chaleur sous les pieds. Guide CB Sols pour particuliers en Charente-Maritime.",
+    category: 'Sol PVC',
+    shortAnswer: "Oui. Le PVC professionnel en lés soudés à chaud (Gerflor Taralay, objectflor) est 100% étanche, antidérapant R10 ou R11 selon la gamme, et nettement moins froid qu'un carrelage. C'est une excellente alternative pour une salle de bains particulier.",
+    sections: [
+      {
+        title: 'Pourquoi le PVC en salle de bains a du sens',
+        body: "Le PVC moderne n'a plus rien à voir avec le lino bas de gamme. Les gammes professionnelles que nous posons en salle de bains présentent trois avantages clés face au carrelage :\n\n1. Confort thermique : le PVC est nettement moins froid au contact pieds nus que le carrelage ou la pierre. Sa conductivité thermique est environ trois fois inférieure. Idéal en sortie de douche ou de bain.\n\n2. Sécurité : les gammes salle de bains sont classées R10 ou R11 (antidérapant en présence d'eau). Pour comparaison, un carrelage standard est R9 voire moins une fois mouillé.\n\n3. Étanchéité parfaite : posé en lés (rouleaux) avec soudure à chaud des joints, le PVC est 100% étanche. Pas de joints en ciment qui noircissent avec le temps, pas de risque d'infiltration sous la douche.",
+      },
+      {
+        title: 'Les gammes adaptées à la SDB particulier',
+        body: "Pour une salle de bains particulier, deux options principales :\n\nPVC en lés (rouleaux) : c'est la solution la plus sûre, surtout en cas de douche italienne. Gerflor Taralay Premium ou objectflor expona : épaisseur 2-3 mm, R10/R11, soudure à chaud invisible, durée de vie 15-25 ans.\n\nLames LVT clipsées : pour une salle de bains avec douche à receveur ou baignoire (sans douche italienne), on peut utiliser des lames LVT premium. Esthétique parquet ou pierre très réaliste, pose plus rapide. Gerflor Creation 55 ou objectflor LooseLay : durée de vie 20+ ans, mais l'étanchéité dépend de la qualité des jonctions.\n\nNous évaluons à la visite quelle solution est la mieux adaptée à votre SDB.",
+      },
+      {
+        title: 'Préparation du support et pose',
+        body: "Une SDB particulier se prépare avec rigueur :\n\n1. Dépose éventuelle de l'ancien carrelage si trop irrégulier (rare, le PVC se pose souvent dessus après ragréage)\n2. Ragréage de surfaçage P3 fibré pour neutraliser les joints et créer une surface parfaitement plane (tolérance 2 mm sous règle de 2 m)\n3. Primaire d'accrochage adapté\n4. Pose collée du PVC en lés ou pose flottante clipsée des LVT\n5. Soudure à chaud des joints (PVC en lés uniquement) avec cordon de soudure assorti à la couleur\n6. Finitions : remontée en plinthe (sur 5 à 10 cm) ou plinthe rapportée, joint silicone sanitaire au pourtour de la douche/baignoire\n\nCompter 1 à 2 jours selon la surface. La SDB peut être utilisée 24h après la pose.",
+      },
+    ],
+    relatedFaqs: ['sol-pvc-cuisine-professionnelle-norme', 'pose-moquette-sur-carrelage'],
+    relatedSolutions: ['sol-pvc-hotel', 'sol-pvc-cuisine'],
+  },
 ]
 
 export function getFaqBySlug(slug: string): Faq | undefined {
