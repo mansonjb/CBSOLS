@@ -37,7 +37,7 @@ export default function ShowroomPage() {
               { num: '01', title: 'Échange initial', desc: 'Nous discutons de votre espace, de son usage, du trafic, de la lumière. Chaque contrainte oriente le choix du matériau.' },
               { num: '02', title: 'Sélection des échantillons', desc: 'Nous identifions 5 à 10 références adaptées dans nos 500+ échantillons disponibles sur place : matière, couleur, finition.' },
               { num: '03', title: 'Mise en situation', desc: "Pour les projets sur mesure, nous vous apportons les échantillons pour une mise en situation sur place, à la lumière de votre espace. Pour les références spécifiques non disponibles, commande auprès des fabricants sous 5 à 10 jours." },
-              { num: '04', title: 'Visite technique &amp; devis sous 48 à 72 h', desc: 'La visite technique sur site est obligatoire avant tout chiffrage : nous vérifions la planéité, l\'humidité résiduelle et l\'état du support. Vous recevez ensuite un devis détaillé : fourniture, pose, préparation, délais.' },
+              { num: '04', title: 'Visite technique et devis sous 48 à 72 h', desc: 'La visite technique sur site est obligatoire avant tout chiffrage : nous vérifions la planéité, l\'humidité résiduelle et l\'état du support. Vous recevez ensuite un devis détaillé : fourniture, pose, préparation, délais.' },
             ].map((step) => (
               <div key={step.num} style={{ borderTop: '2px solid var(--terra)', paddingTop: '1.5rem' }}>
                 <div style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: 'var(--terra)', fontWeight: 600, marginBottom: '0.75rem' }}>{step.num}</div>
