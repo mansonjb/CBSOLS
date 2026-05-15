@@ -5,7 +5,7 @@ import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'FAQ Revêtement de Sol | CB Sols, Réponses d&apos;Artisan',
+  title: "FAQ Revêtement de Sol | CB Sols, Réponses d'Artisan",
   description:
     'Toutes vos questions sur la moquette, le sol PVC et la pose : délais, prix, normes, techniques, différences. Réponses claires d&apos;un artisan spécialiste.',
   alternates: { canonical: 'https://cbsols.fr/faq' },

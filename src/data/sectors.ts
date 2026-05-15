@@ -29,7 +29,7 @@ export const sectors: Sector[] = [
       'Moquettes haut de gamme certifiées Bfl-s1 pour les chambres',
       'Sol PVC résistant pour les espaces communs et couloirs',
       'Tapis sur mesure avec logo pour les lobbys',
-      'Espaces lecture &amp; salons feutrés acoustiques',
+      'Espaces lecture & salons feutrés acoustiques',
       'Contrat d\'entretien annuel (nettoyage injection-extraction)',
     ],
     referencesExamples: [

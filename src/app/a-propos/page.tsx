@@ -110,7 +110,7 @@ export default function AProposPage() {
                   </p>
                 </blockquote>
                 <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
-                  Entré chez CB Sols en 2008 comme apprenti, Valentin a appris le métier sur le terrain, projet après projet, avant de reprendre la gérance de l'entreprise en 2023. Formé aux techniques de pose sur subjectile béton, carrelage et parquet existant, il maîtrise aussi bien la moquette contract des grands hôtels que le sol PVC cuisine des collectivités ou les tapis sur mesure des espaces de réception.
+                  Entré chez CB Sols en 2008 comme apprenti, Valentin a appris le métier sur le terrain, projet après projet, avant de reprendre la gérance de l'entreprise en 2023. Formé aux techniques de pose sur subjectile béton, carrelage et parquet existant, il maîtrise aussi bien la moquette contrat des grands hôtels que le sol PVC cuisine des collectivités ou les tapis sur mesure des espaces de réception.
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
                   Ce qui distingue CB Sols, c'est cette présence personnelle : quand vous appelez le <a href={`tel:${company.phoneClean}`} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>{company.phone}</a>, c'est Valentin qui décroche. Quand un projet démarre, c'est lui qui est là. Pas d'intermédiaire, pas de sous-traitant anonyme.
@@ -127,7 +127,7 @@ export default function AProposPage() {
                     { year: '1999', label: "Création de l'entreprise", desc: "Lancement de CB Sols, premiers projets de revêtement de sol en Charente-Maritime." },
                     { year: '2003', label: 'Premiers contrats professionnels', desc: "Premiers contrats avec des hôteliers et professionnels de l'Île de Ré et de l'agglo rochelaise." },
                     { year: '2008', label: "Arrivée de Valentin Prévoteau", desc: "Valentin intègre la structure en tant qu'apprenti et apprend le métier directement sur les projets." },
-                    { year: '2012', label: 'Partenariats officiels', desc: "Agréments avec des marques de référence comme objectflor, EGE et Gerflor : accès aux gammes contract et au SAV fabricants." },
+                    { year: '2012', label: 'Partenariats officiels', desc: "Agréments avec des marques de référence comme objectflor, EGE et Gerflor : accès aux gammes contrat et au SAV fabricants." },
                     { year: '2013', label: 'Nouvel atelier à Villedoux', desc: "Création d'un nouvel atelier à Villedoux pour stocker matériaux, échantillons et outillage de pose." },
                     { year: '2023', label: "Reprise par Valentin Prévoteau", desc: "Après quinze ans dans l'entreprise, Valentin reprend la gérance de CB Sols et en devient le dirigeant." },
                     { year: '2024', label: 'Showroom à Villedoux', desc: "Ouverture d'un showroom dédié à Villedoux : plus de 500 échantillons consultables sur rendez-vous." },

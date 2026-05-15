@@ -18,7 +18,7 @@ const cas = [
 
 const produits = [
   { name: 'Gerflor Taralay Premium', desc: 'PVC en lés soudés à chaud, classement U4P3, antidérapant R10. La solution pièces humides et zones à fort passage.' },
-  { name: 'objectflor LVT (Lames & Dalles)', desc: 'Imitations bois, pierre, béton de très haute qualité visuelle. Pose en pose libre ou collée selon le projet.' },
+  { name: 'objectflor LVT (Lames & Dalles)', desc: 'Imitations bois, pierre, béton de très haute qualité visuelle. Pose libre ou collée selon le projet.' },
   { name: 'Gerflor Insight & Creation', desc: 'Lames LVT premium pour pièces de vie. Esthétique parquet sans les contraintes du bois (humidité, entretien).' },
 ]
 
