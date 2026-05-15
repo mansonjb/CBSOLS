@@ -138,7 +138,7 @@ export default function ParticuliersPage() {
             Le même artisan qui pose la moquette des hôtels et restaurants étoilés de la région peut poser la vôtre. Sous une condition : que le projet ait du sens. Un beau matériau, un devis sur mesure, une visite à votre domicile avant tout chiffrage.
           </p>
           <p style={{ fontSize: '0.95rem', color: 'var(--dark-2)', maxWidth: '680px', lineHeight: 1.75, marginBottom: '2.5rem', fontStyle: 'italic' }}>
-            Nous ne posons pas d&apos;entrée de gamme. Nous n&apos;avons pas de grille au m². Nous nous déplaçons pour vous voir, comprendre votre projet, et proposer la solution juste.
+            Nous posons les mêmes marques que celles installées dans les hôtels et restaurants de la région. Nous n&apos;avons pas de grille au m² : nous nous déplaçons pour vous voir, comprendre votre projet, et proposer la solution juste.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <Button href="/contact?from=particuliers" variant="primary" size="md">Demander un devis sur mesure</Button>
