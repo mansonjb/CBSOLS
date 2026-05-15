@@ -183,7 +183,7 @@ export const realisations: Realisation[] = [
     ],
     gallery: [
       { src: '/images/projects/pose-moquettes-circulations-grande-terrasse/01.jpg', caption: 'Moquette des circulations de l\'hôtel La Grande Terrasse' },
-      { src: '/images/projects/pose-moquettes-circulations-grande-terrasse/02.jpg', caption: 'Pose moquette dans les couloirs de l\'hôtel 4 étoiles' },
+      { src: '/images/projects/pose-moquettes-circulations-grande-terrasse/02.jpg', caption: "Salon d'accueil de l'hôtel, vue en perspective sur la moquette à motifs et le tapis nid d'abeille" },
     ],
   },
   {
