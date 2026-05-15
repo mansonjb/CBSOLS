@@ -27,6 +27,12 @@ export const clientLogos: ClientReference[] = [
   { src: '/images/clients/MammaMiaRestaurant.webp', alt: 'Mamma Mia Restaurant', href: 'https://mammamia-lr.com/' },
   { src: '/images/clients/HotelLaMarine.webp', alt: 'Hôtel La Marine', href: 'https://www.hotelmarine.fr/' },
   { src: '/images/clients/LogoMaisonDesAmbassadeurs.webp', alt: 'Maison des Ambassadeurs', href: 'https://maisondesambassadeurs.com/' },
+  { src: '/images/clients/AmauryLafonta.png', alt: 'Amaury Lafonta Pâtisserie', href: 'https://www.amaury-lafonta.com/' },
+  { src: '/images/clients/CointetAssocies.png', alt: 'Cointet Associés' },
+  { src: '/images/clients/AtlantiqueBureau.png', alt: 'Atlantique Bureau', href: 'https://www.atlantiquebureau.com/' },
+  { src: '/images/clients/ApiviaMutuelle.png', alt: 'Apivia Mutuelle', href: 'https://www.apivia-mutuelle.fr/' },
+  { src: '/images/clients/Amel.png', alt: 'Amel' },
+  { src: '/images/clients/AXA_Logo.png', alt: 'AXA' },
 ]
 
 /** Architectes & studios partenaires affichés sur /architectes */
@@ -36,4 +42,6 @@ export const architectePartners: ClientReference[] = [
   { src: '/images/clients/Atelier715.webp', alt: 'Atelier 715', href: 'https://www.facebook.com/Atelier715/' },
   { src: '/images/clients/ZestArchitecture.webp', alt: 'Zest Architecture', href: 'https://www.atelierzest.com/' },
   { src: '/images/clients/AgnesMagord.webp', alt: 'Agnès Magord', href: 'https://agnes-magord.fr/' },
+  { src: '/images/clients/DUOConcept.png', alt: 'DUO Concept' },
+  { src: '/images/clients/GRASSIN.png', alt: 'Grassin Décors' },
 ]
