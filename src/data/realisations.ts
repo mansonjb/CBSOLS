@@ -203,7 +203,10 @@ export const realisations: Realisation[] = [
       "Le motif imaginé par la décoratrice a été reproduit avec précision : chaque lame a été positionnée en suivant un calepinage rigoureux pour respecter le dessin d'origine.",
     ],
     gallery: [
-      { src: '/images/projects/sols-bureau-cabinet-comptable-groupe-excel/01.jpg', caption: 'Lames PVC imitation bois, bureau du Groupe Excel' },
+      { src: '/images/projects/sols-bureau-cabinet-comptable-groupe-excel/01.jpg', caption: "Couloir de bureaux avec cloisons vitrées, lames PVC effet bois en calepinage continu" },
+      { src: '/images/projects/sols-bureau-cabinet-comptable-groupe-excel/02.jpg', caption: "Espace pause et cafétéria, lames PVC chêne posées en parquet pour adoucir l'ambiance" },
+      { src: '/images/projects/sols-bureau-cabinet-comptable-groupe-excel/04.jpg', caption: "Circulation entre bureaux, lames PVC imitation bois et cloisons vitrées noires" },
+      { src: '/images/projects/sols-bureau-cabinet-comptable-groupe-excel/03.jpg', caption: "Détail du motif : pose en chevrons inversés selon le calepinage de la décoratrice" },
     ],
   },
   {
