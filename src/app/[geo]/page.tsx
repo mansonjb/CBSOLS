@@ -229,6 +229,33 @@ export default async function GeoPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Contexte local spécifique à la ville */}
+        {city.localContext && (
+          <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '860px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>
+                Contexte local
+              </div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.4vw, 1.9rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.025em', lineHeight: 1.2 }}>
+                {service.name} à {city.name} : ce que nous observons sur le terrain
+              </h2>
+              <p style={{ fontSize: '1rem', color: 'var(--dark-2)', lineHeight: 1.85, marginBottom: city.localFootnote ? '1.75rem' : 0 }}>
+                {city.localContext}
+              </p>
+              {city.localFootnote && (
+                <div style={{ padding: '1.25rem 1.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderLeft: '3px solid var(--terra)', borderRadius: '8px' }}>
+                  <div style={{ fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.4rem', fontWeight: 700 }}>
+                    Point technique
+                  </div>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--dark)', lineHeight: 1.65, margin: 0 }}>
+                    {city.localFootnote}
+                  </p>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
         {/* Spécificités de la zone */}
         <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
           <div style={{ maxWidth: '1280px', margin: '0 auto' }}>

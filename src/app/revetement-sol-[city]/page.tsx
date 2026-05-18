@@ -233,6 +233,33 @@ export default async function CityHubPage({ params }: Props) {
           </div>
         </section>
 
+        {/* ── CONTEXTE LOCAL spécifique à la ville ─────────────── */}
+        {cityData.localContext && (
+          <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '860px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>
+                Contexte local
+              </div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.025em', lineHeight: 1.2 }}>
+                Ce que nous observons à {cityData.name}
+              </h2>
+              <p style={{ fontSize: '1.02rem', color: 'var(--dark-2)', lineHeight: 1.85, marginBottom: cityData.localFootnote ? '1.75rem' : 0 }}>
+                {cityData.localContext}
+              </p>
+              {cityData.localFootnote && (
+                <div style={{ padding: '1.25rem 1.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderLeft: '3px solid var(--terra)', borderRadius: '8px' }}>
+                  <div style={{ fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.4rem', fontWeight: 700 }}>
+                    Point technique
+                  </div>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--dark)', lineHeight: 1.65, margin: 0 }}>
+                    {cityData.localFootnote}
+                  </p>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
         {/* ── SPÉCIFICITÉS de la zone ─────────────────────────── */}
         <section style={{ padding: '5rem 2rem' }}>
           <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
