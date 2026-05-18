@@ -7,7 +7,9 @@ import { company } from '@/data/company'
 import { HeroSlider } from '@/components/HeroSlider'
 import { Button } from '@/components/Button'
 import { ClientLogoCard } from '@/components/ClientLogoCard'
+import { AvisSlider } from '@/components/AvisSlider'
 import { clientLogos } from '@/data/clients'
+import { avis } from '@/data/avis'
 
 const projects = [
   { title: 'Hôtel La Baronnie', type: 'Tapis sur mesure', sector: 'Hôtellerie', surface: '20 m²', img: '/images/tapis-hotel-real.webp' },
@@ -18,20 +20,6 @@ const projects = [
   { title: 'Cuisine Professionnelle', type: 'PVC soudé à chaud', sector: 'Pro & CHR', surface: '80 m²', img: '/images/cuisine-pro-real.webp' },
 ]
 
-const testimonials = [
-  {
-    quote: "CB Sols a créé des tapis sur mesure avec un motif exclusif pour nos chambres. Ponctualité, qualité d'exécution irréprochable, nous les avons rappelés pour la deuxième phase.",
-    name: "Véronique A.", role: "Directrice", company: "Hôtel La Baronnie", location: "Saint-Martin-de-Ré", stars: 5,
-  },
-  {
-    quote: "Refonte complète du clubhouse et des vestiaires. Pose en site occupé sans une heure d'interruption. L'équipe connaît les contraintes du secteur. Résultat impeccable.",
-    name: "Éric D.", role: "Directeur général", company: "Golf de la Prée", location: "La Couarde-sur-Mer", stars: 5,
-  },
-  {
-    quote: "Ce qui m'a convaincue : les vrais échantillons en showroom, pas des visuels sur écran. On repart avec la moquette dans les mains. La pose a suivi une semaine après.",
-    name: "Sophie M.", role: "Particulière", company: "", location: "La Rochelle", stars: 5,
-  },
-]
 
 const brandPartners = [
   { name: 'EGE', src: '/images/brands/ege.webp', href: 'https://www.ege.dk/fr/' },
@@ -341,21 +329,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }} className="temoignages-grid">
-            {testimonials.map((t, i) => (
-              <div key={i} style={{ padding: '2.25rem', backgroundColor: 'var(--bg-card)', borderRadius: '16px', display: 'flex', flexDirection: 'column', boxShadow: '0 1px 4px rgba(0,0,0,0.08)' }}>
-                <Stars n={t.stars} />
-                <blockquote style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '0.95rem', fontStyle: 'italic', color: 'var(--dark)', lineHeight: 1.75, margin: '0 0 1.75rem', flex: 1 }}>
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <div style={{ paddingTop: '1.25rem', borderTop: '1px solid var(--border)' }}>
-                  <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.2rem' }}>{t.name}</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--terra)' }}>{t.role}{t.company ? ` · ${t.company}` : ''}</div>
-                  <div style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: '0.1rem' }}>{t.location}</div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <AvisSlider reviews={avis} />
         </div>
       </section>
 
