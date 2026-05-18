@@ -79,18 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  // Seules les 12 communes à fort volume de recherche sont indexées + sitemap.
-  // Les autres restent générées (maillage interne + UX) mais en noindex
-  // (anti-risque "scaled content abuse" Google).
-  const INDEXED_CITY_SLUGS = new Set([
-    'la-rochelle', 'aytre', 'chatelaillon-plage', 'lagord',
-    'saint-martin-de-re', 'la-flotte', 'le-bois-plage-en-re',
-    'rochefort', 'saintes', 'royan',
-    'saint-pierre-doleron', 'saint-georges-doleron',
-  ])
-  const indexedCities = cities.filter((c) => INDEXED_CITY_SLUGS.has(c.slug))
-
-  const cityHubPages: MetadataRoute.Sitemap = indexedCities.map((city) => ({
+  const cityHubPages: MetadataRoute.Sitemap = cities.map((city) => ({
     url: `${BASE_URL}/revetement-sol-${city.slug}`,
     lastModified: LAST.cityHubs,
     changeFrequency: 'monthly',
@@ -99,7 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const geoPages: MetadataRoute.Sitemap = []
   for (const service of services) {
-    for (const city of indexedCities) {
+    for (const city of cities) {
       geoPages.push({
         url: `${BASE_URL}/${service.slug}-${city.slug}`,
         lastModified: LAST.geo,

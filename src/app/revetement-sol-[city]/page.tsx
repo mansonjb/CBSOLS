@@ -20,40 +20,14 @@ export async function generateStaticParams() {
   return cities.map((c) => ({ city: c.slug }))
 }
 
-/**
- * Villes prioritaires : pages réellement indexées par Google (12 communes à fort
- * volume de recherche local + zones touristiques). Les ~37 autres communes
- * restent générées (utiles pour le maillage interne et l'expérience visiteur),
- * mais en noindex pour éviter le risque "scaled content abuse" — chaque page
- * partage en effet le même template avec peu de contenu unique par commune.
- */
-const INDEXED_CITY_SLUGS = new Set([
-  'la-rochelle',
-  'aytre',
-  'chatelaillon-plage',
-  'lagord',
-  'saint-martin-de-re',
-  'la-flotte',
-  'le-bois-plage-en-re',
-  'rochefort',
-  'saintes',
-  'royan',
-  'saint-pierre-doleron',
-  'saint-georges-doleron',
-])
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city } = await params
   const cityData = getCityBySlug(city)
   if (!cityData) return {}
-  const isIndexed = INDEXED_CITY_SLUGS.has(city)
   return {
     title: `Revêtement de Sol ${cityData.name} | CB Sols, Artisan Certifié`,
     description: `Pose de revêtement de sol à ${cityData.name} par CB Sols. Spécialiste moquette, sol PVC et tapis depuis 1999. Devis gratuit, intervention rapide en ${cityZoneLabels[cityData.zone]}.`,
     alternates: { canonical: `https://cbsols.fr/revetement-sol-${city}` },
-    ...(isIndexed
-      ? {}
-      : { robots: { index: false, follow: true, googleBot: { index: false, follow: true } } }),
   }
 }
 

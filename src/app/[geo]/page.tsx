@@ -35,39 +35,15 @@ export async function generateStaticParams() {
   return params
 }
 
-/**
- * Mêmes villes prioritaires que /revetement-sol-[city] : on n'indexe les pages
- * service × ville que pour les 12 communes à fort volume de recherche, pour
- * éviter le signal "scaled content" sur 8 services × 49 villes = 392 pages.
- */
-const INDEXED_CITY_SLUGS = new Set([
-  'la-rochelle',
-  'aytre',
-  'chatelaillon-plage',
-  'lagord',
-  'saint-martin-de-re',
-  'la-flotte',
-  'le-bois-plage-en-re',
-  'rochefort',
-  'saintes',
-  'royan',
-  'saint-pierre-doleron',
-  'saint-georges-doleron',
-])
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { geo } = await params
   const parsed = parseGeoSlug(geo)
   if (!parsed || !parsed.service || !parsed.city) return {}
   const { service, city } = parsed
-  const isIndexed = INDEXED_CITY_SLUGS.has(city.slug)
   return {
     title: service.metaTitle(city.name),
     description: service.metaDescription(city.name),
     alternates: { canonical: `https://cbsols.fr/${geo}` },
-    ...(isIndexed
-      ? {}
-      : { robots: { index: false, follow: true, googleBot: { index: false, follow: true } } }),
   }
 }
 
