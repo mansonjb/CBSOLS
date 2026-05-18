@@ -226,33 +226,35 @@ export default async function RealisationDetailPage({ params }: Props) {
               <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.5vw, 1.85rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.02em' }}>
                 À découvrir aussi
               </h2>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
                 {related.map((p) => (
                   <Link
                     key={p.slug}
                     href={`/realisations/${p.slug}`}
-                    style={{
-                      backgroundColor: 'var(--project-card-bg)',
-                      border: '1px solid var(--border)',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'flex-end',
-                      position: 'relative',
-                      overflow: 'hidden',
-                      minHeight: '260px',
-                      textDecoration: 'none',
-                      color: 'inherit',
-                      transition: 'transform 0.2s, box-shadow 0.2s',
-                    }}
-                    className="project-card-link"
+                    style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
                   >
-                    <Image src={p.image} alt={p.title} fill style={{ objectFit: 'cover', opacity: 0.55 }} sizes="(max-width: 768px) 100vw, 33vw" />
-                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(13,12,10,0.95) 0%, rgba(13,12,10,0.4) 55%, transparent 100%)' }} />
-                    <div style={{ padding: '1.75rem', position: 'relative', zIndex: 1 }}>
-                      <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra-on-dark)', marginBottom: '0.5rem', fontWeight: 700 }}>{p.sector} · {p.year}</div>
-                      <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.15rem', fontWeight: 500, color: 'var(--text-on-dark)', margin: '0 0 0.5rem' }}>{p.title}</h3>
-                      <p style={{ fontSize: '0.82rem', color: 'var(--text-on-dark)', margin: 0, lineHeight: 1.55, opacity: 0.85 }}>{p.description.length > 90 ? p.description.slice(0, 90) + '…' : p.description}</p>
-                    </div>
+                    <article
+                      className="service-card"
+                      style={{
+                        backgroundColor: 'var(--bg-card)',
+                        border: '1px solid var(--border)',
+                        borderRadius: '16px',
+                        overflow: 'hidden',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        height: '100%',
+                        transition: 'border-color 0.2s, box-shadow 0.2s, transform 0.2s',
+                      }}
+                    >
+                      <div style={{ position: 'relative', width: '100%', aspectRatio: '4 / 3', overflow: 'hidden' }}>
+                        <Image src={p.image} alt={p.title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" />
+                      </div>
+                      <div style={{ padding: '1.5rem 1.5rem 1.75rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', flexGrow: 1 }}>
+                        <div style={{ fontSize: '0.58rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700 }}>{p.sector} · {p.year}</div>
+                        <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.05rem', fontWeight: 700, color: 'var(--dark)', margin: 0, lineHeight: 1.3, letterSpacing: '-0.01em' }}>{p.title}</h3>
+                        <p style={{ fontSize: '0.85rem', color: 'var(--muted)', margin: 0, lineHeight: 1.65, flexGrow: 1 }}>{p.description.length > 100 ? p.description.slice(0, 100) + '…' : p.description}</p>
+                      </div>
+                    </article>
                   </Link>
                 ))}
               </div>

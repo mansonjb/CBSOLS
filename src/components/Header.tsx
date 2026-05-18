@@ -9,12 +9,13 @@ const nav = [
   { href: '/services', label: 'Services' },
   { href: '/secteurs', label: 'Professionnels' },
   { href: '/particuliers', label: 'Particuliers' },
-  { href: '/marques', label: 'Marques' },
+  { href: '/architectes', label: 'Architectes' },
   { href: '/realisations', label: 'Réalisations' },
   { href: '/showroom', label: 'Showroom' },
 ]
 
 const navMobileExtra = [
+  { href: '/marques', label: 'Marques' },
   { href: '/a-propos', label: 'À propos' },
   { href: '/zones', label: 'Zones' },
 ]
