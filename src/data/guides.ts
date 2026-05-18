@@ -9,6 +9,13 @@ export interface Guide {
   sections: { title: string; body: string }[]
   faq: { q: string; a: string }[]
   relatedSolutions: string[]
+  datePublished?: string
+  dateModified?: string
+  howToMeta?: {
+    totalTime: string
+    tools?: string[]
+    supplies?: string[]
+  }
 }
 
 export const guides: Guide[] = [
@@ -45,6 +52,8 @@ export const guides: Guide[] = [
       { q: 'La moquette convient-elle aux personnes allergiques ?', a: 'Les moquettes modernes avec certifications IAQ (Indoor Air Quality) sont adaptées aux personnes allergiques. Les certifications Oeko-Tex, Cradle to Cradle et le label Asthma & Allergy Foundation garantissent des émissions très faibles en COV. CB Sols sélectionne des produits certifiés pour les collectivités. À noter : la moquette est aujourd\'hui le seul revêtement de sol qui empêche la dispersion des poussières et donc des allergènes dans l\'air.' },
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-bureau'],
+    datePublished: '2025-06-12',
+    dateModified: '2026-02-08',
   },
   {
     slug: 'sol-pvc-ou-moquette',
@@ -78,6 +87,8 @@ export const guides: Guide[] = [
       { q: "Quelle est la durée de vie d'un sol PVC professionnel ?", a: "Un sol PVC professionnel (classement 34 ou 43) correctement posé et entretenu dure 15 à 20 ans. Les lames vinyle LVT haut de gamme peuvent dépasser 25 ans. La durée de vie dépend surtout du classement choisi et de la fréquence d'entretien." },
     ],
     relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
+    datePublished: '2025-07-03',
+    dateModified: '2026-01-22',
   },
   {
     slug: 'moquette-contrat-professionnelle',
@@ -106,6 +117,8 @@ export const guides: Guide[] = [
       { q: "Peut-on obtenir une moquette contrat sur mesure ?", a: "Oui. CB Sols propose des moquettes sur mesure avec motif exclusif ou logo intégré, en tisssage Axminster ou tuftage. Cette option est particulièrement prisée pour les lobbys d'hôtels et les espaces de réception haut de gamme. Délai : 6 à 12 semaines selon le fabricant." },
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-bureau', 'moquette-collectivite'],
+    datePublished: '2025-07-24',
+    dateModified: '2026-03-05',
   },
   {
     slug: 'entretien-moquette-professionnelle',
@@ -134,6 +147,13 @@ export const guides: Guide[] = [
       { q: "Peut-on faire l'injection-extraction soi-même ?", a: "Il existe des machines en location, mais les résultats sont rarement à la hauteur d'un professionnel équipé d'une machine traîneau haute pression. La qualité d'aspiration des machines de location est très inférieure au matériel professionnel. Pour les surfaces importantes ou les moquettes hôtelières, faites appel à un professionnel." },
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-bureau'],
+    datePublished: '2025-08-14',
+    dateModified: '2026-04-02',
+    howToMeta: {
+      totalTime: 'PT1H30M',
+      tools: ['Aspirateur professionnel', 'Machine à injection-extraction', 'Brosse douce'],
+      supplies: ['Détachant moquette pH neutre', 'Eau tiède', 'Chiffon microfibre blanc'],
+    },
   },
   {
     slug: 'sol-pvc-cuisines-professionnelles',
@@ -163,6 +183,8 @@ export const guides: Guide[] = [
       { q: "Combien coûte un sol cuisine professionnelle ?", a: "Un sol PVC professionnel pour cuisine coûte entre 45 et 90 €/m² fourni posé, selon la qualité du produit, la surface et la complexité de la pose (remontées, soudure, mobilier à déplacer). CB Sols établit un devis gratuit et détaillé après visite." },
     ],
     relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
+    datePublished: '2025-09-02',
+    dateModified: '2026-02-19',
   },
   {
     slug: 'cout-pose-revetement-sol',
@@ -192,6 +214,8 @@ export const guides: Guide[] = [
       { q: "Y a-t-il un minimum de surface pour faire appel à CB Sols ?", a: "Non, il n'y a pas de surface minimum. CB Sols intervient pour des réparations ponctuelles comme pour des projets de plusieurs milliers de mètres carrés. Nous ajustons notre organisation à votre projet." },
     ],
     relatedSolutions: ['moquette-hotel', 'sol-pvc-restaurant', 'tapis-sur-mesure-hotel'],
+    datePublished: '2025-09-23',
+    dateModified: '2026-03-28',
   },
   {
     slug: 'entretien-moquette-hotel',
@@ -225,6 +249,13 @@ export const guides: Guide[] = [
       { q: "Existe-t-il des traitements préventifs pour la moquette d'hôtel ?", a: "Oui. Le traitement anti-tache Teflon ou Scotchgard appliqué après la pose ou après un nettoyage en profondeur crée une barrière invisible qui repousse les liquides et facilite l'absorption des taches. CB Sols propose ce traitement en option lors de chaque pose et chaque nettoyage annuel." },
     ],
     relatedSolutions: ['moquette-hotel', 'tapis-sur-mesure-hotel'],
+    datePublished: '2025-10-11',
+    dateModified: '2026-04-15',
+    howToMeta: {
+      totalTime: 'PT2H',
+      tools: ['Aspirateur professionnel', 'Machine à injection-extraction', 'Pulvérisateur'],
+      supplies: ['Détachant à pH neutre', 'Pré-spray hôtelier', 'Chiffons microfibre'],
+    },
   },
   {
     slug: 'prix-pose-sol-pvc',
@@ -258,6 +289,8 @@ export const guides: Guide[] = [
       { q: "Les prix incluent-ils la TVA ?", a: "Les fourchettes de prix CB Sols sont exprimées HT. La TVA applicable est 20% pour les professionnels et 10% pour les travaux de rénovation dans des logements de plus de 2 ans (conformément à l'article 279-0 bis du CGI). Vos devis précisent toujours le détail HT/TTC." },
     ],
     relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
+    datePublished: '2025-11-04',
+    dateModified: '2026-03-12',
   },
   {
     slug: 'moquette-vs-parquet-bureau',
@@ -291,6 +324,8 @@ export const guides: Guide[] = [
       { q: "Quel revêtement choisir pour un espace coworking ?", a: "Pour un espace coworking, CB Sols recommande souvent une combinaison : dalles moquette dans les espaces de travail (acoustique + remplacement partiel facile) et sol PVC dans les zones de passage, cuisine et reception (entretien simplifié). Cette approche combine les avantages des deux univers." },
     ],
     relatedSolutions: ['moquette-bureau', 'sol-pvc-hotel'],
+    datePublished: '2025-11-25',
+    dateModified: '2026-02-26',
   },
   {
     slug: 'choisir-revetement-sol-cuisine-pro',
@@ -324,6 +359,8 @@ export const guides: Guide[] = [
       { q: "Combien de temps dure la pose d'un sol cuisine professionnelle ?", a: "Pour une cuisine de 50 m², comptez 1 journée pour la préparation du support et la pose, plus demi-journée pour la soudure et les finitions. CB Sols intervient en site occupé, hors heures de service, pour les cuisines en activité. La cuisine peut être utilisée dès le lendemain de la finition." },
     ],
     relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
+    datePublished: '2025-12-16',
+    dateModified: '2026-04-08',
   },
   {
     slug: 'moquette-acoustique',
@@ -357,6 +394,8 @@ export const guides: Guide[] = [
       { q: "La moquette acoustique s'entretient-elle différemment ?", a: "Non. L'entretien d'une moquette acoustique est identique à celui d'une moquette classique : aspiration régulière et injection-extraction annuelle. La sous-couche n'est pas affectée par le nettoyage en surface si le protocole est respecté (humidité contrôlée, séchage rapide)." },
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-restaurant', 'moquette-bureau'],
+    datePublished: '2026-01-08',
+    dateModified: '2026-03-20',
   },
   {
     slug: 'comprendre-un-devis-pose-de-sol',
@@ -413,6 +452,11 @@ export const guides: Guide[] = [
       { q: "Comment savoir si un devis sous-traite ?", a: "Demandez explicitement : « C'est vous ou une équipe extérieure qui pose ? ». Vérifiez aussi sur les attestations d'assurance décennale : elles doivent être nominatives à l'entreprise qui pose. Une entreprise qui sous-traite va souvent essayer d'esquiver la question, c'est le signal." },
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-bureau', 'sol-pvc-restaurant'],
+    datePublished: '2026-01-29',
+    dateModified: '2026-04-18',
+    howToMeta: {
+      totalTime: 'PT30M',
+    },
   },
 ]
 

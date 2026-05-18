@@ -57,8 +57,8 @@ export default async function GuidePage({ params }: Props) {
     '@type': 'Article',
     headline: guide.title,
     description: guide.metaDescription,
-    datePublished: '2025-10-01',
-    dateModified: '2026-03-15',
+    datePublished: guide.datePublished ?? '2025-10-01',
+    dateModified: guide.dateModified ?? '2026-03-15',
     author: {
       '@type': 'Organization',
       name: company.legalName,
@@ -68,6 +68,27 @@ export default async function GuidePage({ params }: Props) {
       name: company.legalName,
     },
   }
+
+  const howToSchema = guide.howToMeta
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: guide.title,
+        description: guide.intro,
+        totalTime: guide.howToMeta.totalTime,
+        ...(guide.howToMeta.tools && guide.howToMeta.tools.length > 0
+          ? { tool: guide.howToMeta.tools.map((t) => ({ '@type': 'HowToTool', name: t })) }
+          : {}),
+        ...(guide.howToMeta.supplies && guide.howToMeta.supplies.length > 0
+          ? { supply: guide.howToMeta.supplies.map((s) => ({ '@type': 'HowToSupply', name: s })) }
+          : {}),
+        step: guide.sections.map((section) => ({
+          '@type': 'HowToStep',
+          name: section.title,
+          text: section.body.replace(/\s+/g, ' ').trim().slice(0, 300),
+        })),
+      }
+    : null
 
   return (
     <>
@@ -80,6 +101,9 @@ export default async function GuidePage({ params }: Props) {
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {howToSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      )}
       <div style={{ paddingTop: '72px' }}>
 
         {/* Hero */}

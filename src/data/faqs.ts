@@ -8,6 +8,8 @@ export interface Faq {
   sections: { title: string; body: string }[]
   relatedFaqs: string[]
   relatedSolutions: string[]
+  datePublished?: string
+  dateModified?: string
 }
 
 export const faqs: Faq[] = [
@@ -38,9 +40,13 @@ export const faqs: Faq[] = [
     ],
     relatedFaqs: ['duree-vie-moquette-professionnelle', 'pose-moquette-sur-carrelage'],
     relatedSolutions: ['moquette-hotel', 'moquette-bureau'],
+    datePublished: '2025-06-20',
+    dateModified: '2026-01-15',
   },
   {
     slug: 'pose-moquette-sur-carrelage',
+    datePublished: '2025-08-08',
+    dateModified: '2026-02-28',
     question: 'Peut-on poser de la moquette sur du carrelage existant ?',
     metaTitle: 'Poser Moquette sur Carrelage | Conseils Expert CB Sols',
     metaDescription: 'Peut-on poser de la moquette sur du carrelage ? Conditions, méthodes, avantages et inconvénients. Guide technique par CB Sols en Charente-Maritime.',
@@ -69,6 +75,8 @@ export const faqs: Faq[] = [
   },
   {
     slug: 'duree-vie-moquette-professionnelle',
+    datePublished: '2025-09-15',
+    dateModified: '2026-03-10',
     question: 'Quelle est la durée de vie d\'une moquette professionnelle ?',
     metaTitle: 'Durée de Vie Moquette Professionnelle | CB Sols',
     metaDescription: "Combien de temps dure une moquette professionnelle ? Hôtel, bureau, collectivité : durées de vie réelles selon l'usage et l'entretien. Guide CB Sols.",
@@ -97,6 +105,8 @@ export const faqs: Faq[] = [
   },
   {
     slug: 'sol-pvc-cuisine-professionnelle-norme',
+    datePublished: '2025-10-30',
+    dateModified: '2026-03-25',
     question: 'Quelles sont les normes du sol PVC pour une cuisine professionnelle ?',
     metaTitle: 'Normes Sol PVC Cuisine Professionnelle | CB Sols',
     metaDescription: 'Quelles normes pour le sol PVC en cuisine professionnelle ? HACCP, antidérapance R11, classement incendie, soudure à chaud. CB Sols explique.',
@@ -125,6 +135,8 @@ export const faqs: Faq[] = [
   },
   {
     slug: 'devis-revetement-sol-gratuit',
+    datePublished: '2025-12-02',
+    dateModified: '2026-04-05',
     question: 'Comment obtenir un devis gratuit pour son revêtement de sol ?',
     metaTitle: 'Devis Revêtement de Sol Gratuit | CB Sols Charente-Maritime',
     metaDescription: 'Comment obtenir un devis gratuit pour votre revêtement de sol ? Process CB Sols, délais, ce qui est inclus. Devis sous 48h en Charente-Maritime.',
@@ -153,6 +165,8 @@ export const faqs: Faq[] = [
   },
   {
     slug: 'moquette-allergenes-entretien',
+    datePublished: '2026-01-18',
+    dateModified: '2026-04-12',
     question: 'Moquette et allergènes : que faut-il savoir sur l\'entretien ?',
     metaTitle: 'Moquette & Allergènes | Hygiène, Entretien | CB Sols',
     metaDescription: "Moquette et allergies : idées reçues, réalité scientifique et entretien adapté. Guide CB Sols pour profiter d'une moquette saine en Charente-Maritime.",
@@ -177,6 +191,8 @@ export const faqs: Faq[] = [
   },
   {
     slug: 'pvc-salle-de-bains-particulier',
+    datePublished: '2026-02-22',
+    dateModified: '2026-04-20',
     question: 'Peut-on poser du PVC dans une salle de bains (moins froid, moins glissant) ?',
     metaTitle: 'Sol PVC en Salle de Bains | Étanche, Antidérapant | CB Sols',
     metaDescription: "Sol PVC en salle de bains : 100% étanche, antidérapant R10/R11, chaleur sous les pieds. Guide CB Sols pour particuliers en Charente-Maritime.",

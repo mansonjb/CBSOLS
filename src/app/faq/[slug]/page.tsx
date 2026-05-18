@@ -57,8 +57,8 @@ export default async function FaqPage({ params }: Props) {
     '@type': 'Article',
     headline: faq.question,
     description: faq.metaDescription,
-    datePublished: '2025-10-01',
-    dateModified: '2026-03-15',
+    datePublished: faq.datePublished ?? '2025-10-01',
+    dateModified: faq.dateModified ?? '2026-03-15',
     author: { '@type': 'Organization', name: company.legalName },
     publisher: { '@type': 'Organization', name: company.legalName },
   }
