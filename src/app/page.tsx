@@ -450,7 +450,7 @@ export default function Home() {
       <section style={{ padding: '0', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }} className="showroom-grid">
           <div style={{ position: 'relative', minHeight: '520px', overflow: 'hidden', backgroundColor: 'var(--bg-alt)', borderRadius: '0 0 0 0' }}>
-            <Image src="/images/moquette-chambre.webp" alt="Showroom CB Sols, échantillons moquette" fill style={{ objectFit: 'cover' }} sizes="50vw" />
+            <Image src="/images/projects/pose-moquettes-sols-maison-de-maitre/10.jpg" alt="Détail d'un parquet géométrique posé par CB Sols, motif chêne losanges" fill style={{ objectFit: 'cover' }} sizes="50vw" />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '5rem 4rem' }}>
             <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem', fontWeight: 500 }}>Showroom · Sur rendez-vous</p>
