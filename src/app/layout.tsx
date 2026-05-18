@@ -8,6 +8,7 @@ import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { CookieBanner } from '@/components/CookieBanner'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { company } from '@/data/company'
+import { avis } from '@/data/avis'
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-sans', display: 'swap', weight: ['400', '500', '600', '700', '800'] })
 const cormorant = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-serif', display: 'swap', weight: ['300', '400'], style: ['normal', 'italic'] })
@@ -53,14 +54,30 @@ export const viewport = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const featuredReviews = avis.slice(0, 5).map((a) => ({
+    '@type': 'Review',
+    author: { '@type': 'Person', name: a.name },
+    reviewBody: a.text,
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '5',
+      bestRating: '5',
+    },
+    itemReviewed: { '@id': 'https://cbsols.fr/#localbusiness' },
+  }))
+
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'HomeAndConstructionBusiness',
+    '@type': 'LocalBusiness',
+    '@id': 'https://cbsols.fr/#localbusiness',
+    additionalType: 'HomeAndConstructionBusiness',
     name: company.legalName,
     legalName: company.legalName,
     url: 'https://cbsols.fr',
     telephone: company.phoneClean,
     email: company.email,
+    image: 'https://cbsols.fr/images/logo-cbsols.png',
+    logo: 'https://cbsols.fr/images/logo-cbsols.png',
     description: 'Artisan spécialiste du revêtement de sol depuis 1999 en Charente-Maritime. Moquette professionnelle, sol PVC, tapis sur mesure. Intervention hôtels, campings, bureaux.',
     address: {
       '@type': 'PostalAddress',
@@ -77,14 +94,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       { '@type': 'AdministrativeArea', name: 'Charente-Maritime' },
     ],
     hasMap: 'https://share.google/86MXB40I3QuKofiI4',
-    priceRange: '€€',
+    priceRange: '€€€',
     foundingDate: '1999',
+    sameAs: [
+      company.social.instagram,
+      company.social.linkedin,
+    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
       reviewCount: '41',
       bestRating: '5',
     },
+    review: featuredReviews,
     employee: {
       '@type': 'Person',
       name: 'Valentin Prévoteau',
