@@ -273,7 +273,7 @@ export default function ArchitectesPage() {
               Plusieurs agences d&apos;architecture d&apos;intérieur de Charente-Maritime nous confient régulièrement leurs projets. Une sélection ci-dessous.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.25rem', justifyContent: 'center' }}>
             {architectePartners.map((p) => (
               <ClientLogoCard key={p.alt} client={p} />
             ))}
