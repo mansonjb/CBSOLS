@@ -176,3 +176,12 @@ button:focus-visible,
 a:focus-visible {
   outline-offset: 3px;
 }
+
+/* Mobile : retrait des borderRight orphelins des step-flows */
+@media (max-width: 640px) {
+  /* Process steps : la borderRight n'a plus de sens en 1 colonne, on bascule en borderBottom */
+  [data-flow="steps"] > *:not(:last-child) {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border);
+  }
+}
