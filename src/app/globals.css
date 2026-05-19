@@ -185,3 +185,12 @@ a:focus-visible {
     border-bottom: 1px solid var(--border);
   }
 }
+
+/* Logos partenaires en mode dark : forcer en blanc monochrome uniforme.
+   brightness(0) ramène toute couleur à du noir, invert(1) le retourne en blanc.
+   Pour les PNG sans transparence (Igloo, Contrast Design), on garde un opacity
+   raisonnable + mix-blend-mode lighten en complément. */
+.client-card-dark img {
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
