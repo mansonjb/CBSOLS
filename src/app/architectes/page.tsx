@@ -299,7 +299,6 @@ export default function ArchitectesPage() {
                 { title: 'Conditions tarifaires négociées', desc: 'Marges réduites pour vos projets professionnels récurrents. Conditions discutées en bilatéral.' },
                 { title: 'Délai de paiement adapté', desc: 'Facturation à 30 ou 45 jours selon volumes. Compatible avec vos cycles maître d\'ouvrage.' },
                 { title: 'Showroom dédié sur RDV', desc: 'Créneaux privés pour vos rendez-vous clients. Possibilité d\'accueillir vos prospects directement.' },
-                { title: 'Apporteur d\'affaires', desc: 'Si vous nous recommandez à un confrère ou un client hors prescription, nous proposons une commission négociable au cas par cas.' },
               ].map((item) => (
                 <div key={item.title} style={{ padding: '1.25rem 1.5rem', border: '1px solid var(--border)', backgroundColor: 'var(--bg-card)', borderLeft: '3px solid var(--terra)' }}>
                   <div style={{ fontSize: '0.92rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.4rem', fontFamily: 'var(--font-sans)' }}>{item.title}</div>

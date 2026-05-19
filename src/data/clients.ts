@@ -44,4 +44,11 @@ export const architectePartners: ClientReference[] = [
   { src: '/images/clients/AgnesMagord.webp', alt: 'Agnès Magord', href: 'https://agnes-magord.fr/' },
   { src: '/images/clients/DUOConcept.png', alt: 'DUO Concept' },
   { src: '/images/clients/GRASSIN.png', alt: 'Grassin Décors' },
+  { src: '/images/clients/AtlantiqueBureau.png', alt: 'Atlantique Bureau', href: 'https://www.atlantiquebureau.com/' },
+  { src: '/images/clients/Cohea.png', alt: 'COHEA Architectes', href: 'https://cohea.fr/' },
+  { src: '/images/clients/ContrastDesign.png', alt: 'Contrast Design', href: 'https://contrast-design.fr/' },
+  { src: '/images/clients/GdvArchitectes.png', alt: 'GDV Architectes', href: 'https://www.gdvarchitecture.com/' },
+  { src: '/images/clients/Igloo.png', alt: 'IGLOO Architecte d’intérieur', href: 'https://www.ig-loo.fr/' },
+  { src: '/images/clients/MpArchitecte.png', alt: 'MP Architecte', href: 'https://www.mp-architecte.com/' },
+  { src: '/images/clients/Sok.png', alt: 'SOK Architecture d’intérieur', href: 'https://www.sok-architecture-interieur.com/' },
 ]
