@@ -43,6 +43,18 @@ const nextConfig: NextConfig = {
         destination: '/nettoyage-moquettes',
         permanent: true,
       },
+
+      // ── Anciennes URLs WordPress (cbsols.fr) → nouvelles URLs ──
+      // Listing projets
+      { source: '/projets', destination: '/realisations', permanent: true },
+
+      // Projets individuels (ancien permalien WP → /realisations/[slug])
+      { source: '/pose-moquette-bistro-de-la-grande-terrasse', destination: '/realisations/pose-moquette-bistro-grande-terrasse', permanent: true },
+      { source: '/pose-sols-cabinet-dassurances', destination: '/realisations/pose-sols-cabinet-axa-la-rochelle', permanent: true },
+      { source: '/tapis-sur-mesure-hotel', destination: '/realisations/tapis-sur-mesure-hotel-la-baronnie', permanent: true },
+      { source: '/pose-moquettes-et-sols-maison', destination: '/realisations/pose-moquettes-sols-maison-de-maitre', permanent: true },
+      { source: '/moquettes-et-sols-golf', destination: '/realisations/moquettes-sols-golf-de-la-pree', permanent: true },
+      { source: '/pose-des-moquettes-dun-restaurant-etoile', destination: '/realisations/moquettes-restaurant-etoile-la-rochelle', permanent: true },
     ];
   },
 };
