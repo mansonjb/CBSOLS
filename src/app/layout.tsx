@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Plus_Jakarta_Sans, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
@@ -190,6 +191,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body>
+        {/* Google Analytics (gtag.js) — G-0HSR55DW27 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0HSR55DW27"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0HSR55DW27');
+          `}
+        </Script>
         <Header />
         <main>{children}</main>
         <Footer />
