@@ -69,6 +69,9 @@ export const viewport = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // ⚠️ NE PAS ajouter itemReviewed sur ces Review : ils sont déjà imbriqués
+  // dans le LocalBusiness via le champ `review`. Google rejette l'imbrication
+  // avec itemReviewed (conflit de direction, WNC-10030322).
   const featuredReviews = avis.slice(0, 5).map((a) => ({
     '@type': 'Review',
     author: { '@type': 'Person', name: a.name },
@@ -78,7 +81,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       ratingValue: '5',
       bestRating: '5',
     },
-    itemReviewed: { '@id': 'https://cbsols.fr/#localbusiness' },
   }))
 
   const jsonLd = {
