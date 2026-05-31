@@ -616,3 +616,19 @@ export const cityZoneLabels: Record<City['zone'], string> = {
 export function getCityBySlug(slug: string): City | undefined {
   return cities.find((c) => c.slug === slug)
 }
+
+/**
+ * Renvoie le label de zone précédé de la bonne préposition avec élision le cas échéant.
+ * Exemple : zoneWithPrep('la-rochelle', 'de') → "de l'Agglomération de La Rochelle"
+ *          zoneWithPrep('charente-maritime', 'de') → "de la Charente-Maritime"
+ *          zoneWithPrep('la-rochelle', 'dans') → "dans l'Agglomération de La Rochelle"
+ */
+export function zoneWithPrep(zone: City['zone'], prep: 'de' | 'dans'): string {
+  const label = cityZoneLabels[zone]
+  const startsWithVowel = /^[aeiouyàâäéèêëîïôöùûüAEIOUYÀÂÄÉÈÊËÎÏÔÖÙÛÜ]/.test(label)
+  if (prep === 'de') {
+    return startsWithVowel ? `de l'${label}` : `de la ${label}`
+  }
+  // 'dans'
+  return startsWithVowel ? `dans l'${label}` : `dans la ${label}`
+}

@@ -2,6 +2,12 @@ export interface Service {
   slug: string
   name: string
   shortName: string
+  /** Label utilisé dans les phrases "À propos {aboutLabel}" — inclut l'article (ex. "de la moquette", "du PVC en lés", "du tapis sur mesure"). */
+  aboutLabel: string
+  /** Étiquette générique pour CTA WhatsApp etc. — inclut un article indéfini ou défini (ex. "une pose de moquette", "un sol PVC", "un nettoyage de moquette"). */
+  ctaLabel: string
+  /** Vrai si le service correspond à un produit avec échantillons exposables en showroom. */
+  hasShowroom: boolean
   icon: string
   description: string
   longDescription: string
@@ -19,6 +25,9 @@ export const services: Service[] = [
     slug: 'pose-moquette',
     name: 'Pose de Moquette',
     shortName: 'Moquette',
+    aboutLabel: 'de la moquette',
+    ctaLabel: 'une pose de moquette',
+    hasShowroom: true,
     icon: '▦',
     description: 'Moquettes haut de gamme sur mesure, pose professionnelle pour particuliers et professionnels.',
     longDescription:
@@ -42,6 +51,9 @@ export const services: Service[] = [
     slug: 'sol-pvc-lames-dalles',
     name: 'Sol PVC Lames & Dalles',
     shortName: 'Sol PVC',
+    aboutLabel: 'du sol PVC',
+    ctaLabel: 'un sol PVC',
+    hasShowroom: true,
     icon: '▣',
     description: 'Lames et dalles PVC haut de gamme, résistantes et esthétiques. Pour particuliers et professionnels.',
     longDescription:
@@ -65,6 +77,9 @@ export const services: Service[] = [
     slug: 'sol-pvc-les',
     name: 'Sol PVC en Lés',
     shortName: 'PVC en Lés',
+    aboutLabel: 'du PVC en lés',
+    ctaLabel: 'un sol PVC en lés',
+    hasShowroom: true,
     icon: '▬',
     description: 'Revêtement vinyle en rouleaux, pose soignée avec plinthes et soudure à chaud. Pour particuliers et professionnels.',
     longDescription:
@@ -88,6 +103,9 @@ export const services: Service[] = [
     slug: 'tapis-sur-mesure',
     name: 'Tapis Sur Mesure',
     shortName: 'Tapis Sur Mesure',
+    aboutLabel: 'du tapis sur mesure',
+    ctaLabel: 'un tapis sur mesure',
+    hasShowroom: true,
     icon: '◈',
     description: 'Création de tapis décoratifs sur mesure, finitions premium. Pour hôtels, espaces de prestige et particuliers exigeants.',
     longDescription:
@@ -111,6 +129,9 @@ export const services: Service[] = [
     slug: 'tapis-de-proprete',
     name: 'Tapis de Propreté',
     shortName: 'Tapis Propreté',
+    aboutLabel: 'du tapis de propreté',
+    ctaLabel: 'un tapis de propreté',
+    hasShowroom: true,
     icon: '▤',
     description: "Tapis d'entrée pour professionnels et particuliers, protection de vos sols intérieurs et image soignée.",
     longDescription:
@@ -134,6 +155,9 @@ export const services: Service[] = [
     slug: 'nettoyage-moquette',
     name: 'Nettoyage de Moquette',
     shortName: 'Nettoyage',
+    aboutLabel: 'du nettoyage de moquette',
+    ctaLabel: 'un nettoyage de moquette',
+    hasShowroom: false,
     icon: '◎',
     description: 'Nettoyage professionnel par injection-extraction, redonne vie à vos moquettes. Particuliers et professionnels.',
     longDescription:
@@ -157,6 +181,9 @@ export const services: Service[] = [
     slug: 'revetement-sol',
     name: 'Revêtement de Sol',
     shortName: 'Revêtement Sol',
+    aboutLabel: 'du revêtement de sol',
+    ctaLabel: 'un revêtement de sol',
+    hasShowroom: true,
     icon: '⬛',
     description: 'Expertise complète en revêtement de sol : conseil, fourniture, pose et entretien. Particuliers et professionnels.',
     longDescription:
@@ -180,6 +207,9 @@ export const services: Service[] = [
     slug: 'salle-cinema',
     name: 'Salle de Cinéma',
     shortName: 'Salle de cinéma',
+    aboutLabel: 'de la salle de cinéma',
+    ctaLabel: 'un sol pour salle de cinéma',
+    hasShowroom: false,
     icon: '◉',
     description: 'Aménagement acoustique et esthétique des salles de cinéma privées et home-cinémas haut de gamme.',
     longDescription:
@@ -203,6 +233,9 @@ export const services: Service[] = [
     slug: 'coin-lecture',
     name: 'Espace & Coin Lecture',
     shortName: 'Coin lecture',
+    aboutLabel: 'du coin lecture',
+    ctaLabel: 'un aménagement coin lecture',
+    hasShowroom: false,
     icon: '❍',
     description: 'Création d\'espaces lecture cosy et acoustiquement maîtrisés en hôtellerie, résidences et bibliothèques privées.',
     longDescription:

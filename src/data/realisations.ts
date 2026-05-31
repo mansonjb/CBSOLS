@@ -45,7 +45,7 @@ export const realisations: Realisation[] = [
     client: 'Hôtel La Baronnie',
     type: 'Tapis sur mesure',
     body: [
-      "Nous avons récemment eu le plaisir de réaliser un projet aussi technique que prestigieux : la confection d'un tapis sur mesure destiné à l'hôtel La Baronnie, au cœur de Saint-Martin-de-Ré, sur l'île de Ré. C'est un établissement chargé d'histoire qui exigeait un produit élégant, durable et parfaitement intégré à son décor.",
+      "Nous avons récemment eu le plaisir de réaliser un projet aussi technique que prestigieux : la confection d'un tapis sur mesure destiné à l'hôtel La Baronnie, au cœur de Saint-Martin-de-Ré, sur l'Île de Ré. C'est un établissement chargé d'histoire qui exigeait un produit élégant, durable et parfaitement intégré à son décor.",
       "Le tapis a été pensé pour répondre aux contraintes d'un espace hôtelier haut de gamme : résistance au passage, élégance des finitions, harmonie avec la décoration existante. Chaque dimension a été relevée sur site et chaque matière sélectionnée pour s'inscrire dans la durée.",
       "Notre savoir-faire en confection sur mesure permet d'offrir aux hôteliers et résidences de prestige une pièce unique, parfaitement intégrée à leur identité visuelle.",
     ],

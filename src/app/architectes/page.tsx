@@ -171,7 +171,7 @@ export default function ArchitectesPage() {
               {
                 num: '01',
                 title: 'Lecture du programme',
-                desc: "Hôtel 4★, restaurant gastronomique, cabinet médical, bureau open-space : chaque typologie a ses exigences réglementaires (Bfl-s1, R10/R11, acoustique). Nous lisons votre programme et flaguons d'emblée les obligations qui orientent les choix.",
+                desc: "Hôtel 4★, restaurant gastronomique, cabinet médical, bureau open-space : chaque typologie a ses exigences réglementaires (Bfl-s1, R10/R11, acoustique). Nous lisons votre programme et repérons d'emblée les obligations qui orientent les choix.",
               },
               {
                 num: '02',

@@ -75,7 +75,7 @@ const processSteps = [
     num: '04',
     title: "Rinçage à l'eau déminéralisée",
     body:
-      "Rinçage final à l'eau déminéralisée pour ne laisser aucun résidu de détergent ni atelier calcaire. C'est ce rinçage qui garantit que votre sol ne se ressalit pas deux fois plus vite, c'est aussi ce qui distingue un travail professionnel d'une location DIY.",
+      "Rinçage final à l'eau déminéralisée pour ne laisser aucun résidu de détergent ni voile calcaire. C'est ce rinçage qui garantit que votre sol ne se ressalit pas deux fois plus vite, c'est aussi ce qui distingue un travail professionnel d'une location DIY.",
   },
   {
     num: '05',

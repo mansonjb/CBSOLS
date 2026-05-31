@@ -152,7 +152,7 @@ export const sectors: Sector[] = [
     icon: '⛺',
     tagline: 'La qualité d\'accueil, du sol au plafond',
     description:
-      "La Charente-Maritime compte parmi les régions les plus campées de France. CB Sols équipe les mobil-homes haut de gamme, les bungalows et les espaces communs des campings 4 et 5 étoiles avec des revêtements résistants à l'humidité et adaptés aux usages intensifs saisonniers.",
+      "La Charente-Maritime compte parmi les régions qui comptent le plus de campings en France. CB Sols équipe les mobil-homes haut de gamme, les bungalows et les espaces communs des campings 4 et 5 étoiles avec des revêtements résistants à l'humidité et adaptés aux usages intensifs saisonniers.",
     challenges: [
       'Humidité et variations de température',
       'Passages intensifs en période estivale',

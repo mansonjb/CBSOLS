@@ -19,7 +19,7 @@ const reasons = [
   {
     title: 'Le support conditionne 30 % du prix',
     body:
-      "Un ragréage fibré sur vieux plancher bois, un DPE humide, une chape défaillante : ces préparations invisibles peuvent doubler le poste de pose. Impossible à chiffrer sans avoir vu le support.",
+      "Un ragréage fibré sur vieux plancher bois, un support humide, une chape défaillante : ces préparations invisibles peuvent doubler le poste de pose. Impossible à chiffrer sans avoir vu le support.",
   },
   {
     title: 'Les matériaux ont 20 niveaux de gamme',

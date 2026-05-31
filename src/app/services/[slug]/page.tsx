@@ -155,21 +155,27 @@ export default async function ServicePage({ params }: Props) {
                 </div>
               </div>
               <div>
-                <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Marques partenaires</div>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                  {service.brands.map((b) => (
-                    <span key={b} style={{ padding: '0.5rem 1rem', border: '1px solid var(--border)', fontSize: '0.75rem', color: 'var(--cream-muted)', letterSpacing: '0.05em' }}>{b}</span>
-                  ))}
-                </div>
-                <div style={{ marginTop: '2rem', padding: '1.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-                  <div style={{ fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Showroom</div>
-                  <p style={{ fontSize: '0.8rem', color: 'var(--cream-muted)', margin: '0 0 1rem', lineHeight: 1.6 }}>
-                    Venez découvrir tous nos échantillons de {service.shortName.toLowerCase()} dans notre showroom de Villedoux.
-                  </p>
-                  <Link href="/showroom" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', textDecoration: 'none' }}>
-                    Prendre rendez-vous →
-                  </Link>
-                </div>
+                {service.brands.length > 0 && (
+                  <>
+                    <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Marques partenaires</div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                      {service.brands.map((b) => (
+                        <span key={b} style={{ padding: '0.5rem 1rem', border: '1px solid var(--border)', fontSize: '0.75rem', color: 'var(--cream-muted)', letterSpacing: '0.05em' }}>{b}</span>
+                      ))}
+                    </div>
+                  </>
+                )}
+                {service.hasShowroom && (
+                  <div style={{ marginTop: service.brands.length > 0 ? '2rem' : 0, padding: '1.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+                    <div style={{ fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Showroom</div>
+                    <p style={{ fontSize: '0.8rem', color: 'var(--cream-muted)', margin: '0 0 1rem', lineHeight: 1.6 }}>
+                      Venez découvrir tous nos échantillons de {service.shortName.toLowerCase().replace(/pvc/g, 'PVC')} dans notre showroom de Villedoux.
+                    </p>
+                    <Link href="/showroom" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', textDecoration: 'none' }}>
+                      Prendre rendez-vous →
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -205,7 +211,7 @@ export default async function ServicePage({ params }: Props) {
             <div style={{ maxWidth: '900px', margin: '0 auto' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Questions fréquentes</div>
               <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-                À propos de {service.shortName.toLowerCase()}, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>nos réponses claires.</em>
+                À propos {service.aboutLabel}, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>nos réponses claires.</em>
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {contextualFaqs.map((f) => (

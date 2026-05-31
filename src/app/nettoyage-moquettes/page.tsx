@@ -114,7 +114,7 @@ const frequences = [
     detail: "Vin, café, projections : la périodicité dépend du type de service. Détachage ponctuel inclus dans nos contrats annuels.",
   },
   {
-    secteur: 'établissements de santé',
+    secteur: 'Établissements de santé',
     freq: '2 à 4 fois par an',
     detail: "Hygiène prioritaire. Nous travaillons en zones, sans fermeture du service. Produits compatibles avec normes RABC.",
   },
@@ -235,7 +235,7 @@ export default function NettoyageMoquettesPage() {
             </h1>
 
             <p style={{ fontSize: '1.1rem', color: 'var(--cream-muted)', maxWidth: '700px', lineHeight: 1.7, marginBottom: '2.5rem' }}>
-              Restaurer une moquette professionnelle plutôt que la remplacer. Une intervention périodique préserve la fibre, restaure les couleurs, élimine 95 % des allergènes et double la durée de vie de votre revêtement. Nous intervenons à La Rochelle, sur l&apos;Île de Ré, Île d&apos;Oléron et toute la Charente-Maritime.
+              Restaurer une moquette professionnelle plutôt que la remplacer. Une intervention périodique préserve la fibre, restaure les couleurs, élimine 95 % des allergènes et prolonge la durée de vie de votre revêtement de 30 à 50 %. Nous intervenons à La Rochelle, sur l&apos;Île de Ré, l&apos;Île d&apos;Oléron et toute la Charente-Maritime.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

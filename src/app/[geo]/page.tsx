@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { cities, getCityBySlug, cityZoneLabels } from '@/data/cities'
+import { cities, getCityBySlug, cityZoneLabels, zoneWithPrep } from '@/data/cities'
 import { services, getServiceBySlug } from '@/data/services'
 import { company } from '@/data/company'
 import { getZoneContent } from '@/data/zones'
@@ -94,15 +94,15 @@ export default async function GeoPage({ params }: Props) {
 
   const faqItems = [
     {
-      q: `CB Sols intervient-il pour la ${service.name.toLowerCase()} à ${city.name} ?`,
-      a: `Oui, CB Sols intervient régulièrement pour la ${service.name.toLowerCase()} à ${city.name}, ${city.description}. Notre équipe basée à Villedoux couvre l'ensemble de la ${cityZoneLabels[city.zone]}.`,
+      q: `CB Sols intervient-il pour ${service.ctaLabel} à ${city.name} ?`,
+      a: `Oui, CB Sols intervient régulièrement pour ${service.ctaLabel} à ${city.name}, ${city.description}. Notre équipe basée à Villedoux couvre l'ensemble ${zoneWithPrep(city.zone, 'de')}.`,
     },
     {
-      q: `Quel est le prix d'une ${service.name.toLowerCase()} à ${city.name} ?`,
-      a: `Le tarif d'une ${service.name.toLowerCase()} à ${city.name} dépend de la surface, du matériau choisi et des spécificités du projet. CB Sols réalise des devis gratuits et détaillés sous 48 h.`,
+      q: `Quel est le prix pour ${service.ctaLabel} à ${city.name} ?`,
+      a: `Le tarif ${service.aboutLabel} à ${city.name} dépend de la surface, du matériau choisi et des spécificités du projet. CB Sols réalise des devis gratuits et détaillés sous 48 h.`,
     },
     {
-      q: `Quels matériaux proposez-vous pour la ${service.name.toLowerCase()} à ${city.name} ?`,
+      q: `Quels matériaux proposez-vous pour ${service.ctaLabel} à ${city.name} ?`,
       a: `CB Sols distribue les meilleures marques : ${service.brands.join(', ')}. Pour votre projet à ${city.name}, nos experts vous conseilleront le matériau le mieux adapté à votre usage et à votre budget.`,
     },
     {
@@ -164,8 +164,8 @@ export default async function GeoPage({ params }: Props) {
             </h1>
 
             <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '680px', lineHeight: 1.7, marginBottom: '2.5rem' }}>
-              CB Sols, artisan spécialiste depuis 1999, intervient pour la {service.name.toLowerCase()} à {city.name} et dans toute la {cityZoneLabels[city.zone]}.
-              {service.longDescription.split('.')[0]}. Devis gratuit sous 48 h.
+              CB Sols, artisan spécialiste depuis 1999, intervient pour {service.ctaLabel} à {city.name} et {zoneWithPrep(city.zone, 'dans').replace(/^dans /, 'dans toute ')}.
+              {' '}{service.longDescription.split('.')[0]}. Devis gratuit sous 48 h.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -284,7 +284,7 @@ export default async function GeoPage({ params }: Props) {
         {/* WhatsApp CTA inline */}
         <section style={{ padding: '3rem 2rem' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-            <WhatsAppInlineCTA context={`${service.name.toLowerCase()} à ${city.name}`} />
+            <WhatsAppInlineCTA context={city.name} serviceLabel={service.ctaLabel} />
           </div>
         </section>
 

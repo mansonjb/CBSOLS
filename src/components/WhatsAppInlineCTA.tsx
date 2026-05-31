@@ -1,17 +1,25 @@
 import { company } from '@/data/company'
 
 interface Props {
-  /** Pre-filled context in the WhatsApp message */
+  /**
+   * Contexte ville utilisé pour le message pré-rempli WhatsApp.
+   * Si omis : message générique "un revêtement de sol".
+   */
   context?: string
+  /**
+   * Étiquette du service à insérer dans le message (ex. "un nettoyage de moquette").
+   * Par défaut : "un revêtement de sol".
+   */
+  serviceLabel?: string
 }
 
 /**
  * Inline WhatsApp CTA block, server component.
  * Placed on geo/city pages to cut the funnel to 1 click.
  */
-export function WhatsAppInlineCTA({ context }: Props) {
+export function WhatsAppInlineCTA({ context, serviceLabel = 'un revêtement de sol' }: Props) {
   const waNumber = company.phoneClean.replace(/[^0-9]/g, '')
-  const baseMessage = "Bonjour, je souhaite un devis pour un revêtement de sol"
+  const baseMessage = `Bonjour, je souhaite un devis pour ${serviceLabel}`
   const message = context ? `${baseMessage} à ${context}.` : `${baseMessage}.`
   const href = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`
 

@@ -94,7 +94,7 @@ const faq = [
   },
   {
     q: 'Vous déplacez-vous sur l\'Île de Ré ?',
-    a: "Oui, c'est même un de nos terrains principaux. Nous équipons hôteliers, restaurateurs, gîtes et résidences secondaires sur toute l'île. Le déplacement est inclus pour les projets sur l'île de Ré, Île d'Oléron, La Rochelle et toute la Charente-Maritime.",
+    a: "Oui, c'est même un de nos terrains principaux. Nous équipons hôteliers, restaurateurs, gîtes et résidences secondaires sur toute l'île. Le déplacement est inclus pour les projets sur l'Île de Ré, l'Île d'Oléron, La Rochelle et toute la Charente-Maritime.",
   },
   {
     q: 'Faites-vous les petits projets (une seule pièce) ?',

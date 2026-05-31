@@ -30,14 +30,14 @@ export default function ShowroomPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Déroulé d&apos;une visite</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 700, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.02em', maxWidth: '640px', lineHeight: 1.15 }}>
-            Une heure pour comprendre votre projet, trois jours pour le chiffrer.
+            Une heure pour comprendre votre projet, 48 h pour le chiffrer.
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem' }}>
             {[
               { num: '01', title: 'Échange initial', desc: 'Nous discutons de votre espace, de son usage, du trafic, de la lumière. Chaque contrainte oriente le choix du matériau.' },
               { num: '02', title: 'Sélection des échantillons', desc: 'Nous identifions 5 à 10 références adaptées dans nos 500+ échantillons disponibles sur place : matière, couleur, finition.' },
               { num: '03', title: 'Mise en situation', desc: "Pour les projets sur mesure, nous vous apportons les échantillons pour une mise en situation sur place, à la lumière de votre espace. Pour les références spécifiques non disponibles, commande auprès des fabricants sous 5 à 10 jours." },
-              { num: '04', title: 'Visite technique et devis sous 48 à 72 h', desc: 'La visite technique sur site est obligatoire avant tout chiffrage : nous vérifions la planéité, l\'humidité résiduelle et l\'état du support. Vous recevez ensuite un devis détaillé : fourniture, pose, préparation, délais.' },
+              { num: '04', title: 'Visite technique et devis sous 48 h', desc: 'La visite technique sur site est obligatoire avant tout chiffrage : nous vérifions la planéité, l\'humidité résiduelle et l\'état du support. Vous recevez ensuite un devis détaillé : fourniture, pose, préparation, délais.' },
             ].map((step) => (
               <div key={step.num} style={{ borderTop: '2px solid var(--terra)', paddingTop: '1.5rem' }}>
                 <div style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: 'var(--terra)', fontWeight: 600, marginBottom: '0.75rem' }}>{step.num}</div>
@@ -61,7 +61,7 @@ export default function ShowroomPage() {
                   { label: 'Échantillons à emporter', desc: 'Vous repartez avec les échantillons sélectionnés. Pour les références spécifiques non disponibles, commande chez le fabricant sous 5 à 10 jours' },
                   { label: 'Visualisation in situ', desc: 'Nous vous aidons à projeter le rendu final dans votre espace avec des outils de visualisation' },
                   { label: 'Visite technique obligatoire', desc: 'Nous nous déplaçons systématiquement sur le site avant chiffrage pour évaluer le support et garantir un devis sans surprise' },
-                  { label: 'Devis sous 48 à 72 h', desc: 'Après la visite technique, devis détaillé envoyé par mail : fourniture, pose, préparation du support, délais' },
+                  { label: 'Devis sous 48 h', desc: 'Après la visite technique, devis détaillé envoyé par mail : fourniture, pose, préparation du support, délais' },
                 ].map((item) => (
                   <div key={item.label} style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start' }}>
                     <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: 'var(--terra)', marginTop: '0.5rem', flexShrink: 0 }} />

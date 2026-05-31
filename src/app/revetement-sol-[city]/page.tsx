@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
-import { cities, getCityBySlug, cityZoneLabels } from '@/data/cities'
+import { cities, getCityBySlug, cityZoneLabels, zoneWithPrep } from '@/data/cities'
 import { services } from '@/data/services'
 import { sectors } from '@/data/sectors'
 import { company } from '@/data/company'
@@ -82,11 +82,11 @@ export default async function CityHubPage({ params }: Props) {
   const faqItems = [
     {
       q: `CB Sols intervient-il bien à ${cityData.name} ?`,
-      a: `Oui, CB Sols intervient régulièrement à ${cityData.name}, ${cityData.description}. Basé à Villedoux (Charente-Maritime), nous couvrons l'ensemble de la ${cityZoneLabels[cityData.zone]}.`,
+      a: `Oui, CB Sols intervient régulièrement à ${cityData.name}, ${cityData.description}. Basé à Villedoux (Charente-Maritime), nous couvrons l'ensemble ${zoneWithPrep(cityData.zone, 'de')}.`,
     },
     {
       q: `Quel est le délai d'intervention à ${cityData.name} ?`,
-      a: `Nous nous déplaçons à ${cityData.name} pour un devis sous 48 à 72 h. La réalisation des travaux est planifiée selon votre calendrier et notre plan de charge, généralement sous 3 à 6 semaines.`,
+      a: `Nous nous déplaçons à ${cityData.name} pour un devis sous 48 h. La réalisation des travaux est planifiée selon votre calendrier et notre plan de charge, généralement sous 3 à 6 semaines.`,
     },
     {
       q: `Quels types de sols posez-vous à ${cityData.name} ?`,
