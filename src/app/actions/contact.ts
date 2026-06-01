@@ -1,7 +1,9 @@
 'use server'
 
 import nodemailer from 'nodemailer'
+import { headers } from 'next/headers'
 import { company } from '@/data/company'
+import { sql, ensureSchema } from '@/lib/db'
 
 export interface ContactState {
   status: 'idle' | 'success' | 'error'
@@ -220,9 +222,70 @@ export async function sendContactForm(
       })
     }
 
+    // ── Persistance du lead en DB Neon (non-bloquant : un échec DB ne
+    //    doit pas casser l'expérience utilisateur — l'email a été envoyé) ──
+    try {
+      await ensureSchema()
+      const q = sql()
+      const h = await headers()
+      const ua = h.get('user-agent')?.slice(0, 500) ?? null
+      const referer = h.get('referer')?.slice(0, 500) ?? null
+      const ipRaw = (h.get('x-forwarded-for') ?? '').split(',')[0].trim() || (h.get('x-real-ip') ?? '')
+      // On hash l'IP : on garde une trace anti-doublon mais on ne stocke pas
+      // de PII identifiante (RGPD-friendly)
+      const ipHash = ipRaw ? await sha256(ipRaw) : null
+
+      const id = generateLeadId()
+      const segment = inferSegment(projectType)
+
+      await q`
+        INSERT INTO leads (
+          id, source, nom, telephone, email, ville, type_projet, surface,
+          message, segment, ua, referer, ip_hash
+        ) VALUES (
+          ${id}, 'site_web', ${name}, ${phone}, ${email || null},
+          ${city || null}, ${projectType || null}, ${surface || null},
+          ${message || null}, ${segment}, ${ua}, ${referer}, ${ipHash}
+        )
+      `
+    } catch (dbErr) {
+      // Logué côté serveur, l'utilisateur ne le voit pas — l'email passe quand
+      // même donc le lead n'est pas perdu pour Valentin
+      console.error('Lead persist error (non-bloquant):', dbErr)
+    }
+
     return { status: 'success', message: 'Votre message a bien été envoyé. Nous vous répondrons sous 48 h.' }
   } catch (err) {
     console.error('Email error:', err)
     return { status: 'error', message: `Une erreur est survenue. Appelez-nous directement au ${company.phone}.` }
   }
+}
+
+// ── Helpers persistance ─────────────────────────────────────────────────
+
+function generateLeadId(): string {
+  // id lisible : ld_<8 chars random base36> pour pouvoir les retrouver
+  // facilement dans les URLs admin
+  const random = Math.random().toString(36).slice(2, 10)
+  return `ld_${Date.now().toString(36)}${random}`
+}
+
+async function sha256(input: string): Promise<string> {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(input))
+  return Array.from(new Uint8Array(buf))
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('')
+}
+
+function inferSegment(projectType: string | undefined): string {
+  if (!projectType) return 'particulier'
+  const p = projectType.toLowerCase()
+  if (p.includes('hôtel') || p.includes('hotel')) return 'hotel'
+  if (p.includes('restaurant') || p.includes('brasserie')) return 'restaurant'
+  if (p.includes('bureau') || p.includes('open')) return 'bureau'
+  if (p.includes('camping') || p.includes('mobil')) return 'camping'
+  if (p.includes('collectivité') || p.includes('école') || p.includes('mairie')) return 'collectivite'
+  if (p.includes('commerce') || p.includes('boutique')) return 'commerce'
+  if (p.includes('architecte')) return 'architecte'
+  return 'particulier'
 }
