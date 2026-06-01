@@ -52,6 +52,37 @@ const tableau = [
   { type: 'Péniche', surfaces: 'Espace appartement, salons larges, surfaces planes', enjeu: 'Humidité fluviale forte, poids OK, ERP si commercial', materiau: 'Polypropylène ou laine selon usage, PVC soudé en humide' },
 ]
 
+const glossaire = [
+  { term: 'Bfl-s1', def: "Classement européen de réaction au feu pour revêtements de sol (norme EN 13501-1) : B = très faible contribution à l'incendie, fl = floor, s1 = émission de fumée faible. Base minimale pour la plaisance." },
+  { term: 'IMO FTP Code 2010', def: 'International Maritime Organization, Fire Test Procedures. Référence mondiale des essais feu marins. La partie 5 concerne spécifiquement les revêtements de sol des navires à passagers et commerciaux.' },
+  { term: 'MED / Wheelmark', def: "Marine Equipment Directive 2014/90/UE. Marquage roue de gouvernail apposé sur les matériaux conformes pour la navigation commerciale en Europe. Obligatoire pour le charter pro et l'événementiel à bord." },
+  { term: 'ISO 9239-1', def: "Essai au panneau radiant pour mesurer le flux critique de propagation de flamme d'un revêtement de sol. Plus la valeur kW/m² est haute, plus le matériau résiste." },
+  { term: 'Classement M0–M4', def: "Ancien classement français de réaction au feu (M0 incombustible, M4 facilement inflammable). Toujours cité dans les dossiers ERP fluvial. Équivalence approximative : M1 ≈ Bfl-s1, M2 ≈ Cfl-s1." },
+  { term: 'FRP', def: 'Fiber Reinforced Polymer. Le composite polyester/fibre de verre qui constitue 90% des coques de plaisance modernes. Support non poreux qui exige un primaire spécifique avant collage.' },
+  { term: 'Tuftage', def: "Procédé de fabrication par aiguilles qui plantent la fibre dans un dossier primaire, puis fixation par latex ou dossier secondaire. La majorité des moquettes contract et marine sont tuftées." },
+  { term: 'Axminster / Wilton', def: "Tissages haut de gamme historiquement britanniques. Axminster = motif au mètre, idéal pour les yachts à grand salon. Wilton = velours bouclé dense, durée de vie 15-25 ans." },
+  { term: 'Polypropylène (PP)', def: "Fibre synthétique 100% hydrophobe (taux de reprise d'humidité < 0,05%). Insensible au sel, séchage en quelques heures. La fibre de référence en marine." },
+  { term: 'Polyamide 6.6 (PA 6.6)', def: "Nylon technique, résistance à l'abrasion supérieure au PP mais reprise d'humidité 4-5%. Réservé aux carrés ventilés et aux salons climatisés." },
+  { term: 'Soudure à chaud', def: "Technique d'étanchéité des joints sur sols PVC marine : un cordon thermofusible est inséré dans une rainure puis fondu à 200°C avec un fer à souder. Le joint devient continu, étanche." },
+  { term: 'Colle PU bi-composant', def: "Colle polyuréthane à deux composants (résine + durcisseur) avec un pot de vie de 30 à 60 minutes. Tient sous variations thermiques (-20 à +80°C), élastique, résiste au sel. La référence marine." },
+]
+
+const materiaux = [
+  { fibre: 'Polypropylène 100%', humidite: 'Insensible (< 0,05% reprise)', feu: 'Bfl-s1 / IMO partie 5', prix: '€€', vie: '8-12 ans', confort: 'Sec, ferme' },
+  { fibre: 'Polyamide 6.6 traité', humidite: 'Sensible (4-5% reprise)', feu: 'Bfl-s1 / M1', prix: '€€€', vie: '10-15 ans', confort: 'Doux, résilient' },
+  { fibre: 'Laine vierge ignifugée', humidite: 'Très sensible (15-20%)', feu: 'M1 / Bfl-s1', prix: '€€€€', vie: '15-20 ans', confort: 'Chaud, noble' },
+  { fibre: 'PVC marine soudé', humidite: 'Totalement étanche', feu: 'Bfl-s1 / MED', prix: '€€€', vie: '10-15 ans', confort: 'Froid, technique' },
+]
+
+const ports = [
+  { nom: 'Port des Minimes — La Rochelle', detail: "Plus grand port de plaisance de la façade atlantique, 5000 anneaux. Interventions hebdomadaires sur catamarans Lagoon, Bali, Fountaine Pajot des flottes de location." },
+  { nom: 'La Pallice — La Rochelle', detail: 'Port de commerce et chantier naval. Cale sèche disponible pour les refits complets. Accès facile depuis Villedoux en 15 minutes.' },
+  { nom: 'Saint-Martin-de-Ré & La Flotte', detail: "Ports de plaisance Île de Ré, flotte de voiliers privés et yachts moteur. Pose à quai entre marées hautes, planning calé sur les coefficients." },
+  { nom: 'Bourcefranc-le-Chapus & Marennes', detail: "Bassin de Marennes-Oléron, chantiers ostréicoles reconvertis en plaisance, plus quelques péniches habitées sur le bassin." },
+  { nom: "Saint-Denis-d'Oléron & Boyardville", detail: "Ports de la côte ouest de l'île. Interventions saisonnières, principalement sur voiliers de croisière et catamarans de propriétaires." },
+  { nom: 'Charente fluviale & Sèvre niortaise', detail: "Péniches habitées et péniches restaurant sur Saintes, Rochefort, Tonnay-Charente, Marans. Logistique terrestre simplifiée par rapport à la plaisance mer." },
+]
+
 export default function SolsMarinePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -132,6 +163,23 @@ export default function SolsMarinePage() {
                 <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>{c.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA inline après cas d'usage */}
+      <section style={{ padding: '3rem 2rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', margin: '3rem auto', maxWidth: '900px' }}>
+        <div style={{ textAlign: 'center' }}>
+          <p style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Un projet en tête ?</p>
+          <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.25rem, 2.4vw, 1.75rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+            Chaque bateau demande sa réponse.
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', maxWidth: '520px', margin: '0 auto 1.5rem', lineHeight: 1.7 }}>
+            Catamaran, yacht ou péniche : Valentin Prévoteau se déplace à quai pour relever les cotes et chiffrer juste.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Button href="/contact?from=sols-marine" variant="primary" size="md">Demander un devis</Button>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
           </div>
         </div>
       </section>
@@ -220,6 +268,102 @@ export default function SolsMarinePage() {
         </div>
       </section>
 
+      {/* Comparatif matériaux détaillé */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Comparatif matériaux marine</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
+            Quatre fibres, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>quatre logiques de pose.</em>
+          </h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
+            On compare ce qui compte vraiment en milieu marin : la reprise d&apos;humidité (qui détermine la durée de vie sous le sol), le classement feu maximum atteignable, et le confort sous les pieds nus. Le prix est indicatif, du moins cher (€) au plus haut de gamme (€€€€).
+          </p>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '2px solid var(--terra)' }}>
+                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Fibre</th>
+                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Humidité</th>
+                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Feu max</th>
+                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Prix</th>
+                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Durée de vie</th>
+                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Confort</th>
+                </tr>
+              </thead>
+              <tbody>
+                {materiaux.map((m, i) => (
+                  <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--dark)', fontWeight: 600 }}>{m.fibre}</td>
+                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.humidite}</td>
+                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.feu}</td>
+                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.prix}</td>
+                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.vie}</td>
+                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.confort}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Citation milieu de page (CTA léger) */}
+      <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <div style={{ borderLeft: '3px solid var(--terra)', paddingLeft: '2rem' }}>
+            <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
+              « Chaque bateau est différent. Aucun calque ne se réutilise. Une visite à quai s&apos;impose avant tout chiffrage sérieux. »
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
+              <Button href="/contact?from=sols-marine-inline" variant="primary" size="md">Prendre rendez-vous</Button>
+              <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Déplacement gratuit dans les ports charentais</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Glossaire technique */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Glossaire marine</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
+            Douze termes <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>à connaître avant tout devis.</em>
+          </h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
+            Le vocabulaire marine peut sembler hermétique. Voici les normes, fibres et techniques qu&apos;on cite couramment dans un devis ou un dossier ERP fluvial. Ce sont aussi les questions que pose toute commission de sécurité sérieuse.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.25rem' }}>
+            {glossaire.map((g, i) => (
+              <div key={i} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--terra)', marginBottom: '0.5rem' }}>{g.term}</div>
+                <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{g.def}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ports & zone d'intervention */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Zone d&apos;intervention nautique</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
+            Les ports que nous couvrons <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>régulièrement.</em>
+          </h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
+            Atelier basé à Villedoux, à 10 minutes du Port des Minimes. Déplacement systématique pour la visite et la pose. Pour les chantiers importants hors zone (Bretagne sud, Arcachon, canaux du Centre), devis sur demande.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
+            {ports.map((p, i) => (
+              <div key={i} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.6rem' }}>{p.nom}</div>
+                <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{p.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -260,6 +404,23 @@ export default function SolsMarinePage() {
                 <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.75, margin: '1rem 0 0' }}>{f.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA après FAQ */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Une question restée sans réponse ?</p>
+          <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.6vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+            Décrivez votre bateau, on revient sous 48h.
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', maxWidth: '560px', margin: '0 auto 1.75rem', lineHeight: 1.7 }}>
+            Modèle, longueur, port d&apos;attache, surfaces concernées : ces quatre éléments suffisent pour démarrer un échange utile.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Button href="/contact?from=sols-marine-faq" variant="primary" size="md">Demander un devis</Button>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
           </div>
         </div>
       </section>

@@ -159,6 +159,23 @@ export default function MoquettePenichePage() {
         </div>
       </section>
 
+      {/* CTA inline après comparatif habitation vs commerciale */}
+      <section style={{ padding: '3rem 2rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', margin: '3rem auto', maxWidth: '900px' }}>
+        <div style={{ textAlign: 'center' }}>
+          <p style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Projet en tête ?</p>
+          <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.25rem, 2.4vw, 1.75rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+            Habitation ou ERP, on connaît.
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', maxWidth: '500px', margin: '0 auto 1.5rem', lineHeight: 1.7 }}>
+            Péniche habitée, péniche restaurant, hôtel flottant : visite à quai et dossier matériaux préparé pour la commission de sécurité.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Button href="/contact?source=moquette-peniche" variant="primary" size="md">Demander un devis</Button>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
+          </div>
+        </div>
+      </section>
+
       {/* Spécificités péniche */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -206,6 +223,80 @@ export default function MoquettePenichePage() {
         </div>
       </section>
 
+      {/* Réglementation ERP fluvial */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Réglementation ERP fluvial</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
+            Péniche commerciale : <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>la commission de sécurité demande des PV.</em>
+          </h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
+            Pour une péniche restaurant, salle de réception ou hôtel flottant, le classement ERP fluvial impose une traçabilité matériau complète. Voici les pièces que la commission de sécurité demandera, et que nous fournissons dans le dossier de pose.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>PV feu Bfl-s1</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Procès-verbal d&apos;essai feu délivré par un laboratoire accrédité (Efectis, LNE) selon EN 13501-1. Document obligatoire pour tout revêtement de sol en ERP. Validité 5 ans, à renouveler lors d&apos;une rénovation.</p>
+            </div>
+            <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Fiche technique fabricant</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Référence produit, composition fibre, grammage, classement feu, classement usage (UPEC, durabilité ISO). Permet de prouver l&apos;adéquation entre l&apos;usage commercial et le matériau posé.</p>
+            </div>
+            <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Attestation de pose</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Document signé par le poseur certifiant que le matériau a été mis en œuvre conformément aux prescriptions du fabricant (colle, sous-couche, préparation support). Le PV feu n&apos;a pas de valeur sans cette attestation.</p>
+            </div>
+            <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Décennale & responsabilité civile</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Attestation d&apos;assurance décennale et RC pro de l&apos;entreprise de pose. CB Sols les fournit systématiquement avec le devis pour toute péniche commerciale, sans demande spécifique.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Préparation du support spécifique péniche */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Préparation du support fluvial</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
+            L&apos;humidité du fond de cale, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>premier ennemi du sol.</em>
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Diagnostic des supports</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur une péniche aménagée, le sol existant est généralement un plancher en contreplaqué marine 18-22 mm posé sur lambourdes bois ou métal, parfois un parquet massif sur dalles flottantes. Première étape : sondage acoustique au maillet pour détecter les zones creuses (lambourde décollée, contreplaqué détrempé). Une zone creuse refaite à neuf coûte moins qu&apos;un sol qui s&apos;effondre 18 mois après pose.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Mesure d&apos;humidité résiduelle</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Testeur capacitif sur 8 à 15 points par pièce, seuil tolérance 4% sur bois, 2,5% CM sur ragréage ciment. Au-delà : déshumidificateur 48 à 72h avant pose. Sur péniche acier ancienne, l&apos;humidité provient parfois d&apos;une rouille interne du fond — diagnostic complémentaire nécessaire avec un menuisier de marine.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Ragréage et mise à niveau</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Les supports de péniche sont rarement plans à 2 mm près. Ragréage autolissant fibré, épaisseur 3 à 8 mm selon les écarts. Sur péniche ancienne réaménagée, repose parfois sur un système plancher technique surélevé pour neutraliser les ondulations de coque acier. Cette préparation représente 15 à 25% du budget total chantier sur les supports compliqués.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Barrière vapeur sur zones critiques</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Au-dessus des cuves d&apos;eau, des sanitaires, des compartiments machine, on installe systématiquement une barrière vapeur polyéthylène 200 microns avant la sous-couche. Sans cette barrière, l&apos;humidité du compartiment technique remonte par capillarité et détruit la moquette en 2-3 ans.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Citation milieu CTA */}
+      <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <div style={{ borderLeft: '3px solid var(--terra)', paddingLeft: '2rem' }}>
+            <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
+              « Une péniche, c&apos;est rarement plat et c&apos;est toujours humide. Une visite à quai s&apos;impose avant tout chiffrage : sans ça, on chiffre à l&apos;aveugle. »
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
+              <Button href="/contact?source=moquette-peniche-inline" variant="primary" size="md">Prendre rendez-vous</Button>
+              <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Charente-Maritime, Charente, Dordogne</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -246,6 +337,51 @@ export default function MoquettePenichePage() {
                 <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.75, margin: '1rem 0 0' }}>{f.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Entretien péniche */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Entretien long terme</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
+            Sur péniche, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>l&apos;humidité ne se voit pas, elle s&apos;anticipe.</em>
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Aspiration et nettoyage courant</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Aspiration deux fois par semaine en péniche habitée à plein temps. Sur péniche restaurant, aspiration quotidienne en fin de service avec aspirateur professionnel à filtration HEPA pour les zones accueil et salle.</p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Injection-extraction annuelle</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Nettoyage à l&apos;injection-extraction une fois par an sur péniche habitée, deux fois par an en péniche restaurant. Produit neutre sans rinçage, séchage forcé avec ventilateur pour éviter toute reprise d&apos;humidité dans la sous-couche.</p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Traitement antimicrobien</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur péniche stationnée en eau calme l&apos;hiver (Saintes, Marans, canaux Centre), traitement antimicrobien préventif en pulvérisation tous les 2 ans. Lutte contre l&apos;apparition de moisissures sous le sol — risque réel sur les supports bois insuffisamment ventilés.</p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Surveillance des jonctions humides</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Contrôle visuel annuel des jonctions moquette / PVC marine soudé en zones humides (salle de bain, cuisine). Une jonction qui se relève ou un joint qui blanchit annonce une infiltration. Réparation locale possible si détectée tôt, refonte complète si laissée filer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA après FAQ */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Péniche à équiper ?</p>
+          <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.6vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+            Devis sous 48h, dossier ERP inclus si besoin.
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', maxWidth: '560px', margin: '0 auto 1.75rem', lineHeight: 1.7 }}>
+            Habitation, restaurant, événementiel : visite à quai en Charente-Maritime, Charente et au-delà sur devis.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Button href="/contact?source=moquette-peniche-faq" variant="primary" size="md">Demander un devis</Button>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
           </div>
         </div>
       </section>

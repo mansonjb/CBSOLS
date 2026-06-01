@@ -36,6 +36,17 @@ const process = [
   { step: 'Pose à quai', desc: "1 à 3 jours sur le bateau selon surface : Port des Minimes, La Pallice, La Flotte, Saint-Martin. Colle polyuréthane marine, soudure à chaud, finitions, restitution propre." },
 ]
 
+const refitSteps = [
+  { n: '01', t: 'Audit à quai (J0)', d: "Inspection du carré, des quatre cabines et des coursives. Mesure d'humidité du support composite (testeur capacitif, seuil 4%). Photos de chaque trappe technique, chaque bavette, chaque jonction de cloison." },
+  { n: '02', t: 'Calque et calepinage (J0-J2)', d: "Calque papier kraft par zone, transfert sur les plans atelier. Calepinage des lés en tenant compte du sens de fibre, des raccords sur la poutre centrale et des chutes minimisées." },
+  { n: '03', t: 'Dépose ancien revêtement (J3-J4)', d: "Retrait de l'ancien sol, raclage des résidus de colle acrylique sur le contreplaqué marine ou le gel coat. Diagnostic d'éventuelles infiltrations sous le sol." },
+  { n: '04', t: 'Préparation du support (J4)', d: "Dégraissage à l'alcool isopropylique, ponçage léger, application d'un primaire polyuréthane compatible polyester. Séchage 2 à 4 heures selon température." },
+  { n: '05', t: 'Confection atelier (J5-J10)', d: "Découpe des lés selon calque, pré-assemblage, contrôle dimensionnel. Soudure à chaud des joints en atelier sur les grandes pièces du carré." },
+  { n: '06', t: 'Pose à quai (J11-J13)', d: "Encollage zone par zone, marouflage au rouleau lourd, remise en place des trappes de visite. Soudure à chaud des joints restants directement sur le bateau." },
+  { n: '07', t: 'Finitions et seuils (J13)', d: "Joints de finition à la jonction des cloisons, profilés inox sur les seuils de cabines, nettoyage à l'aspirateur professionnel. Aucune trace de colle visible." },
+  { n: '08', t: 'Réception (J14)', d: "Visite avec le propriétaire ou skipper. Remise des PV feu matériaux, fiche d'entretien personnalisée, garantie pose 2 ans. Bateau utilisable sous 24h." },
+]
+
 const faq = [
   { q: 'Quels modèles de catamaran avez-vous déjà équipés ?', a: "Nous intervenons régulièrement sur les Lagoon (380, 42, 46, 50), les Bali (4.2, 4.6, 5.4), les Fountaine Pajot (Astrea, Saona, Elba), ainsi que sur des Catana et Outremer pour la croisière hauturière. Chaque modèle a ses spécificités : la poutre centrale Lagoon est différente d’une Bali à plancher ouvert, le calepinage change complètement." },
   { q: 'Faut-il déposer l’ancienne moquette avant pose ?', a: "Oui, systématiquement. La dépose permet d’inspecter le support, vérifier qu’il n’y a pas eu d’infiltration ou de moisissure, traiter si besoin. Une pose par-dessus ancienne moquette est un raccourci qui se paie 18 mois plus tard. Nous comptons la dépose dans le devis, sans surfacturer." },
@@ -157,6 +168,23 @@ export default function MoquetteCatamaranPage() {
         </div>
       </section>
 
+      {/* CTA inline après spécificités */}
+      <section style={{ padding: '3rem 2rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', margin: '3rem auto', maxWidth: '900px' }}>
+        <div style={{ textAlign: 'center' }}>
+          <p style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Projet en tête ?</p>
+          <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.25rem, 2.4vw, 1.75rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+            Parlons-en directement.
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', maxWidth: '500px', margin: '0 auto 1.5rem', lineHeight: 1.7 }}>
+            Chaque catamaran a ses contraintes. Valentin Prévoteau se déplace au Port des Minimes ou La Flotte pour relever les cotes.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Button href="/contact?source=moquette-catamaran" variant="primary" size="md">Demander un devis</Button>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
+          </div>
+        </div>
+      </section>
+
       {/* Marques de catamaran */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -201,6 +229,21 @@ export default function MoquetteCatamaranPage() {
         </div>
       </section>
 
+      {/* Citation milieu CTA */}
+      <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <div style={{ borderLeft: '3px solid var(--terra)', paddingLeft: '2rem' }}>
+            <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
+              « Sur un Lagoon 42 ou un Bali 4.6, je peux deviner le calepinage avant même de monter à bord. Mais je le valide toujours sur place. Rien ne remplace une visite à quai. »
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
+              <Button href="/contact?source=moquette-catamaran-inline" variant="primary" size="md">Prendre rendez-vous</Button>
+              <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>— Valentin Prévoteau, 27 ans d&apos;expérience</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -224,6 +267,79 @@ export default function MoquetteCatamaranPage() {
         </div>
       </section>
 
+      {/* Étude de cas : refit catamaran 45' */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Type de chantier : refit complet catamaran 45 pieds</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
+            Huit étapes, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>quatorze jours de bout en bout.</em>
+          </h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
+            Pour un Lagoon 45 ou équivalent (carré 22 m² + 4 cabines de 8 à 10 m² + coursives), voici le déroulé type d&apos;un refit complet. La durée varie selon l&apos;état du support, la dépose à effectuer et le choix matériau. Surface totale traitée : environ 75 à 90 m².
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
+            {refitSteps.map((s) => (
+              <div key={s.n} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+                <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>{s.n} — {s.t}</div>
+                <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{s.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Préparation du support */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Préparation du support</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '720px' }}>
+            Sur catamaran, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>tout se joue avant la colle.</em>
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Gel coat et contreplaqué marine</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Le sol d&apos;un catamaran moderne combine deux supports : du gel coat polyester sur les zones du carré et du contreplaqué marine multiplis dans les cabines. Chacun exige une préparation différente. Sur gel coat : ponçage doux à l&apos;abrasif 180, dégraissage à l&apos;alcool isopropylique pour neutraliser les résidus de cire de démoulage. Sur contreplaqué : vérification de l&apos;humidité (seuil 4%), traitement d&apos;une zone humide au déshumidificateur 24h avant pose si nécessaire.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Primaire d&apos;accrochage polyester</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une colle polyuréthane n&apos;adhère pas directement à un gel coat poli. Nous appliquons un primaire spécifique polyester (généralement à base d&apos;époxy modifié) au rouleau, en deux passes croisées. Temps de séchage entre passes : 2 heures à 20°C. Délai avant collage : 4 à 6 heures. Cette étape, souvent zappée par les poseurs non spécialistes, est la cause numéro un des décollements à 18 mois.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Trappes de visite et passages techniques</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Chaque catamaran a ses trappes : accès cales, batteries, vannes de coque, water-makers. Nous les démontons systématiquement avant pose, calepinons le revêtement par-dessus, puis recoupons proprement au cutter sur place avec joint de finition. Une trappe ré-encadrée d&apos;un profilé inox sur mesure devient invisible — c&apos;est une signature de chantier soigné.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Joints de dilatation et courbures</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur les zones où le pont s&apos;échauffe au soleil (carré tribord, devant les baies vitrées), nous laissons un jeu de dilatation de 2 à 3 mm en périphérie, masqué par les plinthes ou la finition murale. Pour les courbures complexes (entrée de descente, mainfold), confection en plusieurs lés avec joint soudé à chaud en gorge — plus discret qu&apos;un seul lé tendu qui finit toujours par marquer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Entretien et durée de vie */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Entretien long terme</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '720px' }}>
+            Dix ans de moquette, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>c&apos;est aussi un entretien adapté.</em>
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Aspiration hebdomadaire</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Aspirateur à brosse rotative, filtration HEPA. Sur un catamaran utilisé, le sel cristallise dans les fibres après chaque navigation : sans aspiration régulière, il abrase la fibre par friction sous les pas. Une aspiration sérieuse par semaine d&apos;utilisation suffit à doubler la durée de vie effective du revêtement.</p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Nettoyage profond annuel</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une fois par an, en début ou fin de saison, nettoyage à l&apos;injection-extraction avec produit neutre sans rinçage. Sur polypropylène marine, la technique est sûre (la fibre ne reprend pas d&apos;eau). Sur laine traitée, préférer le shampoing à sec qui n&apos;altère pas le traitement ignifuge. Séchage à pleine ventilation 24 à 48h.</p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Hivernage et anti-moisissure</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Pour un catamaran hiverné fermé (octobre-mars), traitement antimicrobien en pulvérisation et ouverture des trappes de cabines pour ventilation forcée par déshumidificateur. Pose de tapis absorbants amovibles devant les descentes intérieures — ils captent l&apos;eau de pluie qui rentre par la capote et protègent la moquette du carré.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
@@ -241,6 +357,23 @@ export default function MoquetteCatamaranPage() {
                 <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.75, margin: '1rem 0 0' }}>{f.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA après FAQ */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Catamaran à équiper ?</p>
+          <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.6vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+            Devis sous 48h après visite à quai.
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', maxWidth: '560px', margin: '0 auto 1.75rem', lineHeight: 1.7 }}>
+            Modèle, port d&apos;attache, état du sol actuel : trois informations suffisent pour caler une visite.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Button href="/contact?source=moquette-catamaran-faq" variant="primary" size="md">Demander un devis</Button>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
           </div>
         </div>
       </section>

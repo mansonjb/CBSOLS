@@ -157,6 +157,23 @@ export default function MoquetteYachtPage() {
         </div>
       </section>
 
+      {/* CTA inline après spécificités */}
+      <section style={{ padding: '3rem 2rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', margin: '3rem auto', maxWidth: '900px' }}>
+        <div style={{ textAlign: 'center' }}>
+          <p style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Projet en tête ?</p>
+          <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.25rem, 2.4vw, 1.75rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+            Discrétion garantie, devis chiffré.
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', maxWidth: '500px', margin: '0 auto 1.5rem', lineHeight: 1.7 }}>
+            Visite confidentielle à quai, échange direct avec le commandant ou l&apos;architecte d&apos;intérieur. Aucune communication sans accord écrit.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Button href="/contact?source=moquette-yacht" variant="primary" size="md">Demander un devis</Button>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
+          </div>
+        </div>
+      </section>
+
       {/* Marques yacht */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -228,6 +245,107 @@ export default function MoquetteYachtPage() {
         </div>
       </section>
 
+      {/* Calepinage et confection */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Calepinage et confection atelier</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
+            La pose à quai ne dure que trois jours. <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>Tout se prépare avant.</em>
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Prise de cotes au calque</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur un yacht à carène pleine, la prise de cotes au mètre est inopérante : chaque cloison s&apos;arrondit, chaque seuil suit la courbure du pont. Nous travaillons au calque papier kraft épais, posé puis tracé à la main au feutre marin, repère par repère. Sur les yachts récents (Sunseeker, Princess) un calque laser complète le calque manuel pour les grandes surfaces du salon. Précision visée : 1 à 2 mm.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Confection en atelier Villedoux</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Tous les calques sont transférés sur les rouleaux en atelier. Découpe à la lame circulaire ou au cutter selon les angles. Le pré-assemblage permet de tester l&apos;ajustement à blanc sur le sol atelier avant transport. Sur un refit complet 50 pieds, 4 à 7 jours en atelier pour une pose finale en 2-3 jours à bord — c&apos;est ce qui permet de tenir un planning serré quand le propriétaire ne libère le bateau que sur une semaine.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Gestion des chutes et raccords motif</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur une laine vierge à motif (Wilton à dessin, Axminster custom), l&apos;optimisation des chutes change la facture : un raccord motif strict peut imposer 15 à 25% de chute supplémentaire. Le calepinage rigoureux limite la casse. Sur une laine custom commandée à dimension finale, aucune chute possible — chaque erreur de cote équivaut à recommencer une commande de 6 à 12 semaines de délai usine.</p>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Tapis sur mesure assortis</div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Pour les salons principaux, un tapis sur mesure découpé dans la même fibre que la moquette environnante, avec bordure cousue main (galon coton ou cuir) et fixation antidérapante adaptée bateau. Possibilité de monogramme discret ou d&apos;intégration des armoiries du bateau au tuftage. Confection 3 à 5 semaines selon dimensions et complexité de bordure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Marine vs civil : différences */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Marine vs civil</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
+            Pourquoi un poseur civil ne pose pas <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>un sol de yacht.</em>
+          </h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2rem' }}>
+            La tentation est grande, sur un budget serré, de confier la pose à un poseur d&apos;intérieur classique. C&apos;est l&apos;erreur la plus fréquente que nous corrigeons en seconde intervention.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Les colles ne tiennent pas</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Les colles acryliques d&apos;intérieur, formulées pour un environnement à 50-60% d&apos;humidité et 18-22°C, se rétractent et durcissent en milieu salin. Décollement garanti en 12 à 24 mois. Une colle PU bi-composant marine coûte 4 à 6 fois plus cher mais c&apos;est non négociable.</p>
+            </div>
+            <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Les sous-couches piègent l&apos;humidité</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une sous-couche feutre standard absorbe la condensation et la stocke contre le support. Six mois plus tard : moisissure, odeur, décollement. La mousse à cellules fermées spécifique marine reste sèche.</p>
+            </div>
+            <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Le classement feu n&apos;est pas le même</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une moquette Cfl-s1 acceptée en logement civil ne respecte ni les exigences IMO FTP pour un yacht en navigation commerciale, ni les standards d&apos;assurance pour un yacht privé. La traçabilité matière exigée par les compagnies type Pantaenius ou Generali Yacht n&apos;est pas fournie sur des produits civils.</p>
+            </div>
+            <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Le calepinage des courbes</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Un poseur civil pose en lés droits. Sur un yacht, ça n&apos;existe pas. Les méthodes de calque, de découpe atelier et de soudure des joints en gorge demandent une formation spécifique et une habitude que seuls les ateliers spécialisés contract et marine conservent.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Délais et planification */}
+      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Délais et planification</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
+            Du premier appel à la livraison, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>compter 6 à 14 semaines.</em>
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
+            {[
+              { etape: 'Devis', delai: '5 jours', detail: 'Visite à quai sous 1 semaine après contact. Devis chiffré 48h après visite, validation matière en showroom.' },
+              { etape: 'Commande matière', delai: '1-2 semaines', detail: 'Polypropylène en stock fournisseur, laine custom ou Axminster sur commande 6-12 semaines selon usine.' },
+              { etape: 'Confection atelier', delai: '3-8 semaines', detail: 'Selon surface et complexité. Refit yacht 50 pieds complet = 5-7 semaines atelier en parallèle commande tapis sur mesure.' },
+              { etape: 'Pose à quai', delai: '2-5 jours', detail: 'Selon surface. Pose calée sur disponibilité bateau, idéalement hors saison (octobre-avril) avec bateau au sec.' },
+            ].map((p) => (
+              <div key={p.etape} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+                <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{p.etape}</div>
+                <div style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--dark)', marginBottom: '0.6rem' }}>{p.delai}</div>
+                <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{p.detail}</p>
+              </div>
+            ))}
+          </div>
+          <p style={{ marginTop: '2rem', fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px' }}>
+            Périodes idéales : octobre à avril, bateau hiverné à sec ou en cale sèche. Accès facilité, pas de pression de saison, possibilité de coordonner avec ébéniste, sellier, peintre sur un même chantier mutualisé.
+          </p>
+        </div>
+      </section>
+
+      {/* Citation milieu CTA */}
+      <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <div style={{ borderLeft: '3px solid var(--terra)', paddingLeft: '2rem' }}>
+            <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
+              « Un yacht ne se chiffre pas au téléphone. Il faut monter à bord, sentir l&apos;ambiance, repérer les boiseries. Le devis ne vient qu&apos;après. »
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
+              <Button href="/contact?source=moquette-yacht-inline" variant="primary" size="md">Prendre rendez-vous</Button>
+              <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Confidentialité totale par défaut</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
@@ -245,6 +363,23 @@ export default function MoquetteYachtPage() {
                 <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.75, margin: '1rem 0 0' }}>{f.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA après FAQ */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 600 }}>Refit en réflexion ?</p>
+          <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.6vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
+            Discussion confidentielle, sans engagement.
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', maxWidth: '560px', margin: '0 auto 1.75rem', lineHeight: 1.7 }}>
+            Un échange de 20 minutes suffit pour clarifier les options matières, le calendrier réaliste et un ordre de grandeur budgétaire.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Button href="/contact?source=moquette-yacht-faq" variant="primary" size="md">Demander un devis</Button>
+            <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
           </div>
         </div>
       </section>
