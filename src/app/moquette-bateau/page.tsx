@@ -4,14 +4,14 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Sols Marine & Moquette Bateau | La Rochelle — CB Sols',
-  description: "Spécialiste revêtement de sol marine en Charente-Maritime : moquette catamaran, yacht, péniche. Normes IMO FTP, MED, Bfl-s1. Confection atelier, pose à quai. Devis.",
-  alternates: { canonical: 'https://cbsols.fr/sols-marine' },
+  title: 'Moquette Bateau | Pose Marine sur Mesure | CB Sols La Rochelle',
+  description: "Spécialiste moquette bateau en Charente-Maritime : catamaran, yacht, péniche. Normes IMO FTP, MED, Bfl-s1. Confection atelier, pose à quai. Devis.",
+  alternates: { canonical: 'https://cbsols.fr/moquette-bateau' },
   openGraph: {
-    title: 'Sols Marine & Moquette Bateau | La Rochelle',
-    description: "Revêtements de sol marine sur mesure : catamaran, yacht, péniche. Normes feu IMO, humidité saline, colles polyuréthane marine.",
+    title: 'Moquette Bateau | Pose Marine sur Mesure | La Rochelle',
+    description: "Moquette bateau sur mesure : catamaran, yacht, péniche. Normes feu IMO, humidité saline, colles polyuréthane marine.",
     type: 'website',
-    images: [{ url: 'https://cbsols.fr/og/sols-marine.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://cbsols.fr/og/moquette-bateau.jpg', width: 1200, height: 630 }],
   },
 }
 
@@ -67,20 +67,19 @@ const glossaire = [
   { term: 'Colle PU bi-composant', def: "Colle polyuréthane à deux composants (résine + durcisseur) avec un pot de vie de 30 à 60 minutes. Tient sous variations thermiques (-20 à +80°C), élastique, résiste au sel. La référence marine." },
 ]
 
-const materiaux = [
-  { fibre: 'Polypropylène 100%', humidite: 'Insensible (< 0,05% reprise)', feu: 'Bfl-s1 / IMO partie 5', prix: '€€', vie: '8-12 ans', confort: 'Sec, ferme' },
-  { fibre: 'Polyamide 6.6 traité', humidite: 'Sensible (4-5% reprise)', feu: 'Bfl-s1 / M1', prix: '€€€', vie: '10-15 ans', confort: 'Doux, résilient' },
-  { fibre: 'Laine vierge ignifugée', humidite: 'Très sensible (15-20%)', feu: 'M1 / Bfl-s1', prix: '€€€€', vie: '15-20 ans', confort: 'Chaud, noble' },
-  { fibre: 'PVC marine soudé', humidite: 'Totalement étanche', feu: 'Bfl-s1 / MED', prix: '€€€', vie: '10-15 ans', confort: 'Froid, technique' },
-]
-
 const ports = [
-  { nom: 'Port des Minimes — La Rochelle', detail: "Plus grand port de plaisance de la façade atlantique, 5000 anneaux. Interventions hebdomadaires sur catamarans Lagoon, Bali, Fountaine Pajot des flottes de location." },
-  { nom: 'La Pallice — La Rochelle', detail: 'Port de commerce et chantier naval. Cale sèche disponible pour les refits complets. Accès facile depuis Villedoux en 15 minutes.' },
-  { nom: 'Saint-Martin-de-Ré & La Flotte', detail: "Ports de plaisance Île de Ré, flotte de voiliers privés et yachts moteur. Pose à quai entre marées hautes, planning calé sur les coefficients." },
-  { nom: 'Bourcefranc-le-Chapus & Marennes', detail: "Bassin de Marennes-Oléron, chantiers ostréicoles reconvertis en plaisance, plus quelques péniches habitées sur le bassin." },
-  { nom: "Saint-Denis-d'Oléron & Boyardville", detail: "Ports de la côte ouest de l'île. Interventions saisonnières, principalement sur voiliers de croisière et catamarans de propriétaires." },
-  { nom: 'Charente fluviale & Sèvre niortaise', detail: "Péniches habitées et péniches restaurant sur Saintes, Rochefort, Tonnay-Charente, Marans. Logistique terrestre simplifiée par rapport à la plaisance mer." },
+  { nom: 'Monaco', detail: 'Port Hercule et Port de Fontvieille. Interventions sur yachts de propriétaires et unités de charter premium.' },
+  { nom: 'Cannes', detail: 'Vieux-Port et Port Canto. Refits hivernaux pendant les arrêts techniques entre saisons.' },
+  { nom: 'Saint-Tropez', detail: 'Port Saint-Tropez. Coordination avec ébénistes et selliers locaux pour les chantiers de finition complète.' },
+  { nom: 'Antibes', detail: "Port Vauban, premier port d'Europe pour les grands yachts. Confection atelier et pose à quai sur planning serré." },
+  { nom: 'Nice', detail: 'Port Lympia. Plaisance privée et yachts moteur de croisière côtière.' },
+  { nom: 'Hyères et Porquerolles', detail: 'Port de la Capte et port d’Hyères. Bases voile et accès aux îles d’Or.' },
+  { nom: 'Marseille', detail: 'Vieux-Port, Estaque, Pointe Rouge. Refits voiliers de croisière et catamarans charter.' },
+  { nom: 'La Rochelle, notre base', detail: 'Port des Minimes, plus grand port de plaisance de la façade atlantique. Atelier à Villedoux, à 10 minutes.' },
+  { nom: 'Saint-Malo', detail: 'Port des Sablons. Plaisance Manche et grands voiliers de croisière.' },
+  { nom: 'Deauville et Trouville', detail: 'Port-Deauville. Interventions sur yachts et unités hivernées en Normandie.' },
+  { nom: 'Lorient', detail: 'Port de plaisance de Larmor-Plage. Bretagne sud, base course-croisière historique.' },
+  { nom: 'Arcachon', detail: 'Port de plaisance d’Arcachon. Bassin et façade atlantique sud.' },
 ]
 
 export default function SolsMarinePage() {
@@ -89,12 +88,12 @@ export default function SolsMarinePage() {
     '@graph': [
       {
         '@type': 'Service',
-        '@id': 'https://cbsols.fr/sols-marine#service',
-        name: 'Revêtements de sol marine et nautique',
+        '@id': 'https://cbsols.fr/moquette-bateau#service',
+        name: 'Moquette bateau et revêtements de sol marine',
         provider: { '@id': 'https://cbsols.fr/#localbusiness' },
-        areaServed: ['La Rochelle', 'Île de Ré', 'Île d’Oléron', 'Rochefort', 'Royan', 'Charente-Maritime'],
+        areaServed: ['La Rochelle', 'Île de Ré', 'Île d’Oléron', 'Monaco', 'Cannes', 'Antibes', 'Saint-Tropez', 'Marseille', 'Nice', 'Saint-Malo', 'France'],
         serviceType: 'Pose de moquette et sol PVC marine pour bateaux, yachts, catamarans, péniches',
-        description: 'Conception, confection atelier et pose à quai de revêtements de sol marine conformes aux normes IMO FTP et MED.',
+        description: 'Conception, confection atelier et pose à quai de moquette bateau et revêtements marine conformes aux normes IMO FTP et MED. Intervention partout en France et à Monaco.',
       },
       {
         '@type': 'FAQPage',
@@ -104,7 +103,7 @@ export default function SolsMarinePage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Sols marine', item: 'https://cbsols.fr/sols-marine' },
+          { '@type': 'ListItem', position: 2, name: 'Moquette bateau', item: 'https://cbsols.fr/moquette-bateau' },
         ],
       },
     ],
@@ -120,19 +119,19 @@ export default function SolsMarinePage() {
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <Link href="/" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>CB Sols</Link>
             <span style={{ color: 'var(--border-hover)' }}>→</span>
-            <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Sols marine</span>
+            <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Moquette bateau</span>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-                Revêtements de sol marine,<br />
-                <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>posés à quai.</em>
+                Moquette bateau,<br />
+                <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>posée à quai.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
                 Catamaran, yacht, péniche : nous concevons en atelier à Villedoux et posons à quai à La Rochelle, La Flotte, Rochefort. Matériaux conformes IMO FTP et MED, colles polyuréthane marine, soudure à chaud des joints. {company.experience} d&apos;expérience artisan.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <Button href="/contact?from=sols-marine" variant="primary" size="md">Demander un devis</Button>
+                <Button href="/contact?from=moquette-bateau" variant="primary" size="md">Demander un devis</Button>
                 <Button href="/showroom" variant="outline" size="md">Voir le showroom</Button>
               </div>
             </div>
@@ -140,9 +139,9 @@ export default function SolsMarinePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Le détail qui change tout</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Une moquette d&apos;intérieur posée à la colle acrylique tient 18 mois sur un bateau. Une moquette marine bien posée tient 10 ans. La différence n&apos;est pas le tissu — c&apos;est tout ce qui est sous le tissu. »
+                « Une moquette d&apos;intérieur posée à la colle acrylique tient 18 mois sur un bateau. Une moquette marine bien posée tient 10 ans. La différence n&apos;est pas le tissu, c&apos;est tout ce qui se trouve sous le tissu. »
               </p>
-              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>— Valentin Prévoteau, CB Sols</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
           </div>
         </div>
@@ -178,7 +177,7 @@ export default function SolsMarinePage() {
             Catamaran, yacht ou péniche : Valentin Prévoteau se déplace à quai pour relever les cotes et chiffrer juste.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <Button href="/contact?from=sols-marine" variant="primary" size="md">Demander un devis</Button>
+            <Button href="/contact?from=moquette-bateau" variant="primary" size="md">Demander un devis</Button>
             <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
           </div>
         </div>
@@ -193,27 +192,27 @@ export default function SolsMarinePage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             <div>
-              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>1 — Humidité saline permanente</div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>1. Humidité saline permanente</div>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>L&apos;air à bord oscille entre 80 et 95% d&apos;humidité relative. Le sel se dépose en surface puis migre dans les fibres. Sur un revêtement non adapté, la moisissure apparaît sous le sol en 12 à 18 mois. Le polypropylène, lui, n&apos;absorbe quasiment rien.</p>
             </div>
             <div>
-              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>2 — Normes feu strictes</div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>2. Normes feu strictes</div>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>En cas d&apos;incendie à bord, l&apos;évacuation prend du temps. Le code IMO FTP impose des seuils de toxicité de fumée et de vitesse de propagation. Pour la plaisance privée, Bfl-s1 est la base. Pour le charter et le commercial, certification IMO partie 5 obligatoire.</p>
             </div>
             <div>
-              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>3 — Poids restreint</div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>3. Poids restreint</div>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur une unité de plaisance, chaque kilo embarqué impacte la ligne de flottaison, la consommation, le comportement à la mer. Nous privilégions les moquettes grammage 800-1100 g/m², sans sous-couche feutre lourde mais avec mousse fermée fine.</p>
             </div>
             <div>
-              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>4 — Surfaces courbes</div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>4. Surfaces courbes</div>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Carène arrondie, mainfold, formes complexes des cabines : la pose en lé droit standard est impossible. Calepinage sur calque, découpe atelier au millimètre, soudure à chaud des joints pour éviter toute infiltration.</p>
             </div>
             <div>
-              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>5 — Colle polyuréthane marine</div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>5. Colle polyuréthane marine</div>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une colle acrylique standard d&apos;intérieur sèche, se rétracte avec les variations de température et lâche sous l&apos;effet du sel. Nous utilisons exclusivement des colles polyuréthane mono ou bi-composant certifiées marine, conformes à l&apos;ISO 9239.</p>
             </div>
             <div>
-              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>6 — Vibrations & température</div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>6. Vibrations et température</div>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Vibrations moteur, dilatations thermiques entre cale fraîche et pont chauffé au soleil : un sol marine doit absorber sans se décoller. Sous-couche mousse à cellules fermées, colle élastique, joints flexibles. C&apos;est aussi pour ça que la pose se fait en atelier puis ajustée à quai, jamais improvisée.</p>
             </div>
           </div>
@@ -225,7 +224,7 @@ export default function SolsMarinePage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Comparatif rapide</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-            Catamaran, yacht, péniche — <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>vue d&apos;ensemble.</em>
+            Catamaran, yacht, péniche, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>une vue d&apos;ensemble.</em>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             {tableau.map((t, i) => (
@@ -268,45 +267,6 @@ export default function SolsMarinePage() {
         </div>
       </section>
 
-      {/* Comparatif matériaux détaillé */}
-      <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Comparatif matériaux marine</div>
-          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
-            Quatre fibres, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>quatre logiques de pose.</em>
-          </h2>
-          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
-            On compare ce qui compte vraiment en milieu marin : la reprise d&apos;humidité (qui détermine la durée de vie sous le sol), le classement feu maximum atteignable, et le confort sous les pieds nus. Le prix est indicatif, du moins cher (€) au plus haut de gamme (€€€€).
-          </p>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid var(--terra)' }}>
-                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Fibre</th>
-                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Humidité</th>
-                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Feu max</th>
-                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Prix</th>
-                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Durée de vie</th>
-                  <th style={{ padding: '0.85rem 0.75rem', textAlign: 'left', color: 'var(--dark)', fontWeight: 700 }}>Confort</th>
-                </tr>
-              </thead>
-              <tbody>
-                {materiaux.map((m, i) => (
-                  <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--dark)', fontWeight: 600 }}>{m.fibre}</td>
-                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.humidite}</td>
-                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.feu}</td>
-                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.prix}</td>
-                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.vie}</td>
-                    <td style={{ padding: '0.85rem 0.75rem', color: 'var(--muted)' }}>{m.confort}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
       {/* Citation milieu de page (CTA léger) */}
       <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
@@ -315,7 +275,7 @@ export default function SolsMarinePage() {
               « Chaque bateau est différent. Aucun calque ne se réutilise. Une visite à quai s&apos;impose avant tout chiffrage sérieux. »
             </p>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
-              <Button href="/contact?from=sols-marine-inline" variant="primary" size="md">Prendre rendez-vous</Button>
+              <Button href="/contact?from=moquette-bateau-inline" variant="primary" size="md">Prendre rendez-vous</Button>
               <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Déplacement gratuit dans les ports charentais</span>
             </div>
           </div>
@@ -343,15 +303,15 @@ export default function SolsMarinePage() {
         </div>
       </section>
 
-      {/* Ports & zone d'intervention */}
+      {/* Plus beaux ports de France et Monaco */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Zone d&apos;intervention nautique</div>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Là où nous intervenons</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
-            Les ports que nous couvrons <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>régulièrement.</em>
+            Les plus beaux ports de France <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>et Monaco.</em>
           </h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
-            Atelier basé à Villedoux, à 10 minutes du Port des Minimes. Déplacement systématique pour la visite et la pose. Pour les chantiers importants hors zone (Bretagne sud, Arcachon, canaux du Centre), devis sur demande.
+            Notre atelier est basé à Villedoux, près de La Rochelle. Nous nous déplaçons partout en France et jusqu&apos;à Monaco pour les projets premium. Les déplacements sont organisés selon les projets, avec une équipe mobile pour les chantiers haut de gamme hors zone.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
             {ports.map((p, i) => (
@@ -392,7 +352,7 @@ export default function SolsMarinePage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Questions fréquentes</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-            Sols marine, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses techniques.</em>
+            Moquette bateau, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses techniques.</em>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {faq.map((f, i) => (
@@ -419,7 +379,7 @@ export default function SolsMarinePage() {
             Modèle, longueur, port d&apos;attache, surfaces concernées : ces quatre éléments suffisent pour démarrer un échange utile.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <Button href="/contact?from=sols-marine-faq" variant="primary" size="md">Demander un devis</Button>
+            <Button href="/contact?from=moquette-bateau-faq" variant="primary" size="md">Demander un devis</Button>
             <a href={`tel:${company.phoneClean}`} style={{ display: 'inline-flex', alignItems: 'center', padding: '0.75rem 1.5rem', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>{company.phone}</a>
           </div>
         </div>
@@ -450,7 +410,7 @@ export default function SolsMarinePage() {
             Visite à quai dans les ports de La Rochelle, Île de Ré, Rochefort. Devis sur mesure après relevé précis.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <Button href="/contact?from=sols-marine" variant="primary" size="md">Demander un devis</Button>
+            <Button href="/contact?from=moquette-bateau" variant="primary" size="md">Demander un devis</Button>
             <Button href="/showroom" variant="outline" size="md">RDV showroom</Button>
           </div>
           <div style={{ marginTop: '2rem', fontSize: '0.85rem', color: 'rgba(248, 245, 238, 0.6)' }}>

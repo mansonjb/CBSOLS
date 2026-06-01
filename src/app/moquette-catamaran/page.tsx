@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Moquette Catamaran | Carré, Cabines, Coques — CB Sols La Rochelle',
+  title: 'Moquette Catamaran | Carré, Cabines, Coques | CB Sols La Rochelle',
   description: "Pose de moquette marine pour catamaran à La Rochelle : Lagoon, Bali, Fountaine Pajot, Catana, Outremer. Polypropylène Bfl-s1, colle polyuréthane, soudure à chaud.",
   alternates: { canonical: 'https://cbsols.fr/moquette-catamaran' },
   openGraph: {
@@ -23,7 +23,7 @@ const zones = [
 ]
 
 const produits = [
-  { name: 'Moquette polypropylène marine 1100 g/m²', desc: "Standard catamaran de croisière. Insensible à l’humidité, séchage rapide, classement feu Bfl-s1. Coloris sable, gris, anthracite — les classiques qui supportent le rythme charter ou famille." },
+  { name: 'Moquette polypropylène marine 1100 g/m²', desc: "Standard catamaran de croisière. Insensible à l’humidité, séchage rapide, classement feu Bfl-s1. Coloris sable, gris, anthracite : des classiques qui supportent le rythme charter ou famille." },
   { name: 'Moquette polyamide nylon traité', desc: "Pour les propriétaires qui veulent un toucher plus doux dans le carré. Traitement ignifuge intégré, résistance aux UV améliorée. À réserver aux unités bien ventilées et climatisées." },
   { name: 'Sol PVC marine soudé pour cuisine de bord', desc: "Galley exposée à l’eau, aux projections, à la chaleur. Sous-couche mousse fermée, joints soudés à chaud à 200°C, étanchéité totale. Compatible MED pour usage charter commercial." },
 ]
@@ -52,7 +52,7 @@ const faq = [
   { q: 'Faut-il déposer l’ancienne moquette avant pose ?', a: "Oui, systématiquement. La dépose permet d’inspecter le support, vérifier qu’il n’y a pas eu d’infiltration ou de moisissure, traiter si besoin. Une pose par-dessus ancienne moquette est un raccourci qui se paie 18 mois plus tard. Nous comptons la dépose dans le devis, sans surfacturer." },
   { q: 'Combien de temps prend la pose sur un Lagoon 42 ou équivalent ?', a: "Pour un catamaran de 12-14 mètres avec carré + 4 cabines + coursives, comptez 5 à 7 jours en atelier (confection) puis 2 à 3 jours à quai pour la pose. Le bateau est utilisable à partir du soir de la dernière journée de pose (séchage colle polyuréthane 24h)." },
   { q: 'La moquette est-elle compatible avec un usage charter intensif ?', a: "Oui, à condition de monter en grammage (1100 à 1400 g/m²) et de choisir un coloris foncé qui pardonne. Pour les flottes de charter à La Rochelle, nous proposons des cycles d’entretien (injection-extraction) tous les 2 ans pour préserver l’investissement." },
-  { q: 'Que se passe-t-il en cas de dégât d’eau localisé ?', a: "C’est l’avantage du polypropylène : il sèche en 24-48h à l’air et au ventilateur sans se déformer. Si la zone est trop atteinte (eau croupie sous le sol pendant des semaines), nous pouvons remplacer uniquement le lé concerné — d’où l’intérêt du calepinage par zone." },
+  { q: 'Que se passe-t-il en cas de dégât d’eau localisé ?', a: "C’est l’avantage du polypropylène : il sèche en 24-48h à l’air et au ventilateur sans se déformer. Si la zone est trop atteinte (eau croupie sous le sol pendant des semaines), nous pouvons remplacer uniquement le lé concerné. C’est tout l’intérêt du calepinage par zone." },
   { q: 'Posez-vous aussi sur catamaran neuf en sortie de chantier ?', a: "Oui. Plusieurs propriétaires nous confient le revêtement de leur catamaran neuf dès la livraison, pour remplacer la moquette d’origine (souvent posée pour respecter un cahier des charges générique, pas optimale pour l’usage qu’ils en feront)." },
   { q: 'Intervenez-vous hors saison estivale ?', a: "C’est même préférable. La haute saison (mai-septembre) est compliquée pour les propriétaires utilisateurs. Nous faisons la majorité de nos chantiers catamaran entre octobre et avril, en parallèle de l’hivernage ou de l’arrêt technique annuel." },
 ]
@@ -78,7 +78,7 @@ export default function MoquetteCatamaranPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Sols marine', item: 'https://cbsols.fr/sols-marine' },
+          { '@type': 'ListItem', position: 2, name: 'Moquette bateau', item: 'https://cbsols.fr/moquette-bateau' },
           { '@type': 'ListItem', position: 3, name: 'Moquette catamaran', item: 'https://cbsols.fr/moquette-catamaran' },
         ],
       },
@@ -95,7 +95,7 @@ export default function MoquetteCatamaranPage() {
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <Link href="/" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>CB Sols</Link>
             <span style={{ color: 'var(--border-hover)' }}>→</span>
-            <Link href="/sols-marine" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>Sols marine</Link>
+            <Link href="/moquette-bateau" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>Moquette bateau</Link>
             <span style={{ color: 'var(--border-hover)' }}>→</span>
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Moquette catamaran</span>
           </div>
@@ -110,7 +110,7 @@ export default function MoquetteCatamaranPage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=moquette-catamaran" variant="primary" size="md">Demander un devis</Button>
-                <Button href="/sols-marine" variant="outline" size="md">Voir tous les sols marine</Button>
+                <Button href="/moquette-bateau" variant="outline" size="md">Voir la page moquette bateau</Button>
               </div>
             </div>
             {/* TODO: ajouter photo carré catamaran */}
@@ -119,7 +119,7 @@ export default function MoquetteCatamaranPage() {
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
                 « Sur un catamaran, l&apos;humidité ne vient pas que de la mer. Elle vient aussi du carré qui respire pour deux coques. C&apos;est pour ça qu&apos;on ne pose jamais de feutre. »
               </p>
-              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>— Valentin Prévoteau, CB Sols</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
           </div>
         </div>
@@ -238,7 +238,7 @@ export default function MoquetteCatamaranPage() {
             </p>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <Button href="/contact?source=moquette-catamaran-inline" variant="primary" size="md">Prendre rendez-vous</Button>
-              <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>— Valentin Prévoteau, 27 ans d&apos;expérience</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, 27 ans d&apos;expérience</span>
             </div>
           </div>
         </div>
@@ -280,7 +280,7 @@ export default function MoquetteCatamaranPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
             {refitSteps.map((s) => (
               <div key={s.n} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
-                <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>{s.n} — {s.t}</div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>{s.n}. {s.t}</div>
                 <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{s.d}</p>
               </div>
             ))}
@@ -306,11 +306,11 @@ export default function MoquetteCatamaranPage() {
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Trappes de visite et passages techniques</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Chaque catamaran a ses trappes : accès cales, batteries, vannes de coque, water-makers. Nous les démontons systématiquement avant pose, calepinons le revêtement par-dessus, puis recoupons proprement au cutter sur place avec joint de finition. Une trappe ré-encadrée d&apos;un profilé inox sur mesure devient invisible — c&apos;est une signature de chantier soigné.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Chaque catamaran a ses trappes : accès cales, batteries, vannes de coque, water-makers. Nous les démontons systématiquement avant pose, calepinons le revêtement par-dessus, puis recoupons proprement au cutter sur place avec joint de finition. Une trappe ré-encadrée d&apos;un profilé inox sur mesure devient invisible. C&apos;est une signature de chantier soigné.</p>
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Joints de dilatation et courbures</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur les zones où le pont s&apos;échauffe au soleil (carré tribord, devant les baies vitrées), nous laissons un jeu de dilatation de 2 à 3 mm en périphérie, masqué par les plinthes ou la finition murale. Pour les courbures complexes (entrée de descente, mainfold), confection en plusieurs lés avec joint soudé à chaud en gorge — plus discret qu&apos;un seul lé tendu qui finit toujours par marquer.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur les zones où le pont s&apos;échauffe au soleil (carré tribord, devant les baies vitrées), nous laissons un jeu de dilatation de 2 à 3 mm en périphérie, masqué par les plinthes ou la finition murale. Pour les courbures complexes (entrée de descente, mainfold), confection en plusieurs lés avec joint soudé à chaud en gorge, plus discret qu&apos;un seul lé tendu qui finit toujours par marquer.</p>
             </div>
           </div>
         </div>
@@ -334,7 +334,7 @@ export default function MoquetteCatamaranPage() {
             </div>
             <div>
               <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Hivernage et anti-moisissure</h3>
-              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Pour un catamaran hiverné fermé (octobre-mars), traitement antimicrobien en pulvérisation et ouverture des trappes de cabines pour ventilation forcée par déshumidificateur. Pose de tapis absorbants amovibles devant les descentes intérieures — ils captent l&apos;eau de pluie qui rentre par la capote et protègent la moquette du carré.</p>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Pour un catamaran hiverné fermé (octobre-mars), traitement antimicrobien en pulvérisation et ouverture des trappes de cabines pour ventilation forcée par déshumidificateur. Pose de tapis absorbants amovibles devant les descentes intérieures : ils captent l&apos;eau de pluie qui rentre par la capote et protègent la moquette du carré.</p>
             </div>
           </div>
         </div>
@@ -383,7 +383,7 @@ export default function MoquetteCatamaranPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Voir aussi</div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1rem' }}>
-            <Link href="/sols-marine" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Sols marine (hub) →</Link>
+            <Link href="/moquette-bateau" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette bateau (hub) →</Link>
             <Link href="/moquette-yacht" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette yacht →</Link>
             <Link href="/moquette-peniche" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette péniche →</Link>
             <Link href="/services/pose-moquette" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Pose de moquette →</Link>

@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Moquette Péniche | Habitation & Commerce Fluvial — CB Sols',
+  title: 'Moquette Péniche | Habitation et Commerce Fluvial | CB Sols',
   description: "Pose de moquette pour péniche habitée et péniche commerciale (restaurant, événementiel) en Charente-Maritime. Humidité fluviale, classement feu ERP fluvial, surfaces planes.",
   alternates: { canonical: 'https://cbsols.fr/moquette-peniche' },
   openGraph: {
@@ -38,7 +38,7 @@ const process = [
 
 const faq = [
   { q: 'Quelle différence entre une péniche habitée et un appartement ?', a: "Trois différences principales pour le revêtement de sol. Premièrement, l’humidité ambiante est plus forte (proximité de l’eau, condensation), même sans sel. Deuxièmement, le poids embarqué importe moins qu’en plaisance (la péniche est à quai en permanence) : on peut monter en grammage et en confort. Troisièmement, les supports sont souvent moins plans qu’un appartement : ragréage local fréquent, parfois remise à niveau." },
-  { q: 'Faut-il un classement feu spécifique sur une péniche d’habitation ?', a: "Pour une péniche d’habitation privée à quai, la réglementation est moins stricte qu’en plaisance mer (pas d’IMO FTP). Nous recommandons néanmoins Bfl-s1 par sécurité — un incendie sur péniche est un risque réel, l’évacuation par une seule passerelle complique tout. Pour une péniche commerciale (restaurant, salle de réception, hôtel), le classement feu ERP fluvial s’applique : Bfl-s1 minimum, justificatifs à fournir à la commission de sécurité." },
+  { q: 'Faut-il un classement feu spécifique sur une péniche d’habitation ?', a: "Pour une péniche d’habitation privée à quai, la réglementation est moins stricte qu’en plaisance mer (pas d’IMO FTP). Nous recommandons néanmoins Bfl-s1 par sécurité, un incendie sur péniche est un risque réel, l’évacuation par une seule passerelle complique tout. Pour une péniche commerciale (restaurant, salle de réception, hôtel), le classement feu ERP fluvial s’applique : Bfl-s1 minimum, justificatifs à fournir à la commission de sécurité." },
   { q: 'Peut-on poser de la moquette sur tout le sol d’une péniche ?', a: "Non, et c’est une erreur courante. La cuisine de bord et la salle de bain doivent rester en sol PVC marine soudé, étanche. Le reste (salon, cabines, coursives) peut être en moquette. Cette répartition garantit la longévité de l’ensemble : la moquette ne supporte pas l’eau stagnante, point." },
   { q: 'Comment gérer l’humidité du fond de cale ?', a: "Avant toute pose, nous vérifions le support. Si l’humidité du support dépasse 4% (mesure au testeur capacitif), on temporise ou on installe une barrière vapeur. Sur péniche acier ancienne, il arrive de devoir traiter la corrosion intérieure avant pose : ce n’est pas notre métier mais nous coordonnons avec le menuisier de marine concerné." },
   { q: 'Combien de temps prend une pose sur une péniche entière ?', a: "Pour une péniche habitée de 25-30 mètres avec 3-4 chambres, salon, cuisine, salle de bain : comptez 4 à 6 jours en atelier (confection) puis 3 à 5 jours sur place. Le timing dépend beaucoup de l’état du support et de la dépose éventuelle de l’ancien revêtement." },
@@ -67,7 +67,7 @@ export default function MoquettePenichePage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Sols marine', item: 'https://cbsols.fr/sols-marine' },
+          { '@type': 'ListItem', position: 2, name: 'Moquette bateau', item: 'https://cbsols.fr/moquette-bateau' },
           { '@type': 'ListItem', position: 3, name: 'Moquette péniche', item: 'https://cbsols.fr/moquette-peniche' },
         ],
       },
@@ -84,7 +84,7 @@ export default function MoquettePenichePage() {
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <Link href="/" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>CB Sols</Link>
             <span style={{ color: 'var(--border-hover)' }}>→</span>
-            <Link href="/sols-marine" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>Sols marine</Link>
+            <Link href="/moquette-bateau" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>Moquette bateau</Link>
             <span style={{ color: 'var(--border-hover)' }}>→</span>
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Moquette péniche</span>
           </div>
@@ -99,7 +99,7 @@ export default function MoquettePenichePage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=moquette-peniche" variant="primary" size="md">Demander un devis</Button>
-                <Button href="/sols-marine" variant="outline" size="md">Voir tous les sols marine</Button>
+                <Button href="/moquette-bateau" variant="outline" size="md">Voir la page moquette bateau</Button>
               </div>
             </div>
             {/* TODO: ajouter photo intérieur péniche */}
@@ -108,7 +108,7 @@ export default function MoquettePenichePage() {
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
                 « Une péniche, ce n&apos;est ni tout à fait un bateau ni tout à fait un appartement. C&apos;est un appartement humide qui flotte. Le sol doit faire le pont entre ces deux mondes. »
               </p>
-              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>— Valentin Prévoteau, CB Sols</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function MoquettePenichePage() {
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Pas de roulis, poids non limitant</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une péniche à quai en eau calme ne roule pas. Cela autorise des moquettes plus épaisses, plus confortables, avec sous-couche plus généreuse — impensable en plaisance mer pour des raisons de poids et de comportement. C&apos;est un vrai gain pour le confort de vie à bord.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une péniche à quai en eau calme ne roule pas. Cela autorise des moquettes plus épaisses, plus confortables, avec sous-couche plus généreuse, impensable en plaisance mer pour des raisons de poids et de comportement. C&apos;est un vrai gain pour le confort de vie à bord.</p>
             </div>
           </div>
         </div>
@@ -268,7 +268,7 @@ export default function MoquettePenichePage() {
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Mesure d&apos;humidité résiduelle</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Testeur capacitif sur 8 à 15 points par pièce, seuil tolérance 4% sur bois, 2,5% CM sur ragréage ciment. Au-delà : déshumidificateur 48 à 72h avant pose. Sur péniche acier ancienne, l&apos;humidité provient parfois d&apos;une rouille interne du fond — diagnostic complémentaire nécessaire avec un menuisier de marine.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Testeur capacitif sur 8 à 15 points par pièce, seuil tolérance 4% sur bois, 2,5% CM sur ragréage ciment. Au-delà : déshumidificateur 48 à 72h avant pose. Sur péniche acier ancienne, l&apos;humidité provient parfois d&apos;une rouille interne du fond, diagnostic complémentaire nécessaire avec un menuisier de marine.</p>
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Ragréage et mise à niveau</div>
@@ -359,7 +359,7 @@ export default function MoquettePenichePage() {
             </div>
             <div>
               <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Traitement antimicrobien</h3>
-              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur péniche stationnée en eau calme l&apos;hiver (Saintes, Marans, canaux Centre), traitement antimicrobien préventif en pulvérisation tous les 2 ans. Lutte contre l&apos;apparition de moisissures sous le sol — risque réel sur les supports bois insuffisamment ventilés.</p>
+              <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur péniche stationnée en eau calme l&apos;hiver (Saintes, Marans, canaux Centre), traitement antimicrobien préventif en pulvérisation tous les 2 ans. Lutte contre l&apos;apparition de moisissures sous le sol, risque réel sur les supports bois insuffisamment ventilés.</p>
             </div>
             <div>
               <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Surveillance des jonctions humides</h3>
@@ -391,7 +391,7 @@ export default function MoquettePenichePage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Voir aussi</div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1rem' }}>
-            <Link href="/sols-marine" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Sols marine (hub) →</Link>
+            <Link href="/moquette-bateau" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette bateau (hub) →</Link>
             <Link href="/moquette-catamaran" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette catamaran →</Link>
             <Link href="/moquette-yacht" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette yacht →</Link>
             <Link href="/services/pose-moquette" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Pose de moquette →</Link>

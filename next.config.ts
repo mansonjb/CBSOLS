@@ -32,6 +32,17 @@ const nextConfig: NextConfig = {
         destination: '/:service-aytre',
         permanent: true,
       },
+      // Ancien slug hub marine → nouveau slug SEO
+      {
+        source: '/sols-marine',
+        destination: '/moquette-bateau',
+        permanent: true,
+      },
+      {
+        source: '/sols-marine/',
+        destination: '/moquette-bateau',
+        permanent: true,
+      },
       // Ancienne URL WordPress du service nettoyage → nouvelle URL canonique
       {
         source: '/nettoyage-des-moquettes',

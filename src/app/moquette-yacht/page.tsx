@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Moquette Yacht & Voilier Luxe | La Rochelle — CB Sols',
+  title: 'Moquette Yacht et Voilier Luxe | La Rochelle | CB Sols',
   description: "Pose de moquette et tapis sur mesure pour yacht moteur et voilier luxe : Sunseeker, Princess, Beneteau, Jeanneau. Laine traitée anti-feu, finitions premium, vibrations moteur.",
   alternates: { canonical: 'https://cbsols.fr/moquette-yacht' },
   openGraph: {
@@ -38,7 +38,7 @@ const process = [
 
 const faq = [
   { q: 'Quelles marques de yacht avez-vous équipées ?', a: "Sans nommer les propriétaires, nous sommes intervenus sur des Sunseeker, Princess, Azimut côté yachts à moteur, et sur des Beneteau Oceanis, Jeanneau Sun Odyssey, Hanse côté voiliers de croisière haut de gamme. La méthode change selon le type, le calepinage aussi : un Sunseeker 60 n’a rien à voir avec un Oceanis 51." },
-  { q: 'La laine est-elle vraiment adaptée à un bateau ?', a: "Oui, à deux conditions. Premièrement, le bateau doit être climatisé et ventilé en permanence (yacht à moteur, grand voilier de croisière avec ventilation contrôlée). Deuxièmement, le traitement ignifuge doit être en cœur de fibre, pas en surface — sinon il s’efface en 2 ans. La laine apporte un toucher et une noblesse qu’aucune fibre synthétique n’atteint encore. Mais sur un voilier de course-croisière humide, on bascule sur du polypropylène premium." },
+  { q: 'La laine est-elle vraiment adaptée à un bateau ?', a: "Oui, à deux conditions. Premièrement, le bateau doit être climatisé et ventilé en permanence (yacht à moteur, grand voilier de croisière avec ventilation contrôlée). Deuxièmement, le traitement ignifuge doit être en cœur de fibre, pas en surface, sinon il s’efface en 2 ans. La laine apporte un toucher et une noblesse qu’aucune fibre synthétique n’atteint encore. Mais sur un voilier de course-croisière humide, on bascule sur du polypropylène premium." },
   { q: 'Comment gérez-vous la coordination avec les autres corps de métier ?', a: "Un refit de yacht implique souvent ébéniste, sellier, peintre, électricien. Nous calons notre intervention en dernier ou avant-dernier rang pour éviter qu’un autre corps de métier ne pose ses caisses à outils sur la moquette neuve. Nous travaillons en chantier mutualisé en bonne entente avec les artisans habitués au secteur nautique de La Rochelle." },
   { q: 'Faites-vous aussi les tapis sur mesure du salon ?', a: "Oui, c’est même fréquent : moquette + tapis sur mesure forment un ensemble. Tapis confectionné en atelier Villedoux selon vos dimensions exactes, bordures cousues main, fixation antidérapante marine. Nous proposons aussi le marquage discret au monogramme du bateau ou aux initiales du propriétaire sur demande." },
   { q: 'Quelle durée de vie sur un yacht ?', a: "Sur un yacht à usage privé saisonnier bien entretenu, comptez 8 à 12 ans pour une moquette laine traitée. Sur un yacht à usage permanent (résidence à bord), 5 à 7 ans. Les tapis sur mesure se remplacent plus souvent (3 à 6 ans) car ce sont les zones d’usure visible." },
@@ -67,7 +67,7 @@ export default function MoquetteYachtPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Sols marine', item: 'https://cbsols.fr/sols-marine' },
+          { '@type': 'ListItem', position: 2, name: 'Moquette bateau', item: 'https://cbsols.fr/moquette-bateau' },
           { '@type': 'ListItem', position: 3, name: 'Moquette yacht', item: 'https://cbsols.fr/moquette-yacht' },
         ],
       },
@@ -84,7 +84,7 @@ export default function MoquetteYachtPage() {
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <Link href="/" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>CB Sols</Link>
             <span style={{ color: 'var(--border-hover)' }}>→</span>
-            <Link href="/sols-marine" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>Sols marine</Link>
+            <Link href="/moquette-bateau" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>Moquette bateau</Link>
             <span style={{ color: 'var(--border-hover)' }}>→</span>
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)' }}>Moquette yacht</span>
           </div>
@@ -99,16 +99,16 @@ export default function MoquetteYachtPage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=moquette-yacht" variant="primary" size="md">Demander un devis</Button>
-                <Button href="/sols-marine" variant="outline" size="md">Voir tous les sols marine</Button>
+                <Button href="/moquette-bateau" variant="outline" size="md">Voir la page moquette bateau</Button>
               </div>
             </div>
             {/* TODO: ajouter photo salon yacht */}
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>L&apos;exigence yacht</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Un yacht se voit dans les détails. Le sol est l&apos;un d&apos;eux. La couture du tapis sur mesure dit immédiatement si le bateau a été pensé ou bâclé. »
+                « Un yacht se voit dans les détails. Le sol en fait partie. Une couture impeccable, un calepinage juste, c&apos;est ce qui signe une finition haut de gamme. »
               </p>
-              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>— Valentin Prévoteau, CB Sols</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
           </div>
         </div>
@@ -259,11 +259,11 @@ export default function MoquetteYachtPage() {
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Confection en atelier Villedoux</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Tous les calques sont transférés sur les rouleaux en atelier. Découpe à la lame circulaire ou au cutter selon les angles. Le pré-assemblage permet de tester l&apos;ajustement à blanc sur le sol atelier avant transport. Sur un refit complet 50 pieds, 4 à 7 jours en atelier pour une pose finale en 2-3 jours à bord — c&apos;est ce qui permet de tenir un planning serré quand le propriétaire ne libère le bateau que sur une semaine.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Tous les calques sont transférés sur les rouleaux en atelier. Découpe à la lame circulaire ou au cutter selon les angles. Le pré-assemblage permet de tester l&apos;ajustement à blanc sur le sol atelier avant transport. Sur un refit complet 50 pieds, 4 à 7 jours en atelier pour une pose finale en 2-3 jours à bord. C&apos;est ce qui permet de tenir un planning serré quand le propriétaire ne libère le bateau que sur une semaine.</p>
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Gestion des chutes et raccords motif</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur une laine vierge à motif (Wilton à dessin, Axminster custom), l&apos;optimisation des chutes change la facture : un raccord motif strict peut imposer 15 à 25% de chute supplémentaire. Le calepinage rigoureux limite la casse. Sur une laine custom commandée à dimension finale, aucune chute possible — chaque erreur de cote équivaut à recommencer une commande de 6 à 12 semaines de délai usine.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur une laine vierge à motif (Wilton à dessin, Axminster custom), l&apos;optimisation des chutes change la facture : un raccord motif strict peut imposer 15 à 25% de chute supplémentaire. Le calepinage rigoureux limite la casse. Sur une laine custom commandée à dimension finale, aucune chute possible : chaque erreur de cote équivaut à recommencer une commande de 6 à 12 semaines de délai usine.</p>
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Tapis sur mesure assortis</div>
@@ -273,32 +273,32 @@ export default function MoquetteYachtPage() {
         </div>
       </section>
 
-      {/* Marine vs civil : différences */}
+      {/* Quatre exigences spécifiques au yacht */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Marine vs civil</div>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Notre approche du sur-mesure premium</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
-            Pourquoi un poseur civil ne pose pas <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>un sol de yacht.</em>
+            Quatre exigences <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>spécifiques au yacht.</em>
           </h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2rem' }}>
-            La tentation est grande, sur un budget serré, de confier la pose à un poseur d&apos;intérieur classique. C&apos;est l&apos;erreur la plus fréquente que nous corrigeons en seconde intervention.
+            Travailler dans les contraintes du haut de gamme suppose une boîte à outils adaptée. Voici ce qui rend la pose en yacht spécifique, et la façon dont nous l&apos;abordons sur chaque chantier.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
             <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
-              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Les colles ne tiennent pas</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Les colles acryliques d&apos;intérieur, formulées pour un environnement à 50-60% d&apos;humidité et 18-22°C, se rétractent et durcissent en milieu salin. Décollement garanti en 12 à 24 mois. Une colle PU bi-composant marine coûte 4 à 6 fois plus cher mais c&apos;est non négociable.</p>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Colles polyuréthane marine</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Nous travaillons exclusivement avec des colles PU bi-composant certifiées marine, formulées pour rester élastiques en milieu salin et sous variations de température. Leur coût matière est 4 à 6 fois supérieur à une colle acrylique d&apos;intérieur, mais c&apos;est la condition d&apos;une pose qui tient 10 ans à bord.</p>
             </div>
             <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
-              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Les sous-couches piègent l&apos;humidité</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une sous-couche feutre standard absorbe la condensation et la stocke contre le support. Six mois plus tard : moisissure, odeur, décollement. La mousse à cellules fermées spécifique marine reste sèche.</p>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Sous-couches adaptées</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur un yacht, la sous-couche fait autant que la moquette. Nous utilisons des mousses à cellules fermées spécifiques marine, qui ne stockent pas la condensation contre le support. Le revêtement respire, le bois reste sec, l&apos;ensemble reste sain dans la durée.</p>
             </div>
             <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
-              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Le classement feu n&apos;est pas le même</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une moquette Cfl-s1 acceptée en logement civil ne respecte ni les exigences IMO FTP pour un yacht en navigation commerciale, ni les standards d&apos;assurance pour un yacht privé. La traçabilité matière exigée par les compagnies type Pantaenius ou Generali Yacht n&apos;est pas fournie sur des produits civils.</p>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Classement feu et traçabilité</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Nous posons des matériaux dont les PV feu sont fournis sur demande : Bfl-s1 pour la plaisance privée, IMO FTP partie 5 pour le charter commercial. Cette traçabilité matière est attendue par les compagnies d&apos;assurance type Pantaenius ou Generali Yacht et nous la documentons à chaque chantier.</p>
             </div>
             <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
-              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Le calepinage des courbes</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Un poseur civil pose en lés droits. Sur un yacht, ça n&apos;existe pas. Les méthodes de calque, de découpe atelier et de soudure des joints en gorge demandent une formation spécifique et une habitude que seuls les ateliers spécialisés contract et marine conservent.</p>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Calepinage des courbes</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur un yacht, les sols droits n&apos;existent pas. Notre méthode repose sur le calque papier kraft, la découpe atelier au millimètre et la soudure des joints en gorge. Ces gestes demandent l&apos;habitude des ateliers contract et marine, c&apos;est ce que CB Sols pratique depuis 27 ans.</p>
             </div>
           </div>
         </div>
@@ -389,7 +389,7 @@ export default function MoquetteYachtPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Voir aussi</div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1rem' }}>
-            <Link href="/sols-marine" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Sols marine (hub) →</Link>
+            <Link href="/moquette-bateau" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette bateau (hub) →</Link>
             <Link href="/moquette-catamaran" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette catamaran →</Link>
             <Link href="/moquette-peniche" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Moquette péniche →</Link>
             <Link href="/services/pose-moquette" style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)', textDecoration: 'none', color: 'var(--dark)', fontWeight: 600, fontSize: '0.9rem' }}>Pose de moquette →</Link>
