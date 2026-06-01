@@ -63,6 +63,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Services entretien dédiés
     { url: `${BASE_URL}/nettoyage-moquettes`, lastModified: new Date('2026-05-04'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/nettoyage-sols`, lastModified: new Date('2026-05-04'), changeFrequency: 'monthly', priority: 0.85 },
+    // Sols marine / niche bateaux
+    { url: `${BASE_URL}/sols-marine`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/moquette-catamaran`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/moquette-yacht`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/moquette-peniche`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.8 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
