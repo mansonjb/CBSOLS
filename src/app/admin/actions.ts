@@ -4,7 +4,7 @@ import { cookies, headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { createSessionToken, timingSafeEqual } from '@/lib/admin-session'
 
-export const ADMIN_COOKIE = 'cbsols-admin-session'
+const ADMIN_COOKIE = 'cbsols-admin-session'
 const COOKIE_MAX_AGE_S = 60 * 60 * 8 // 8h
 
 // ── Rate-limit du login : 5 tentatives / IP / 15 min ─────────────

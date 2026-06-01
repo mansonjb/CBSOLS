@@ -55,6 +55,13 @@ const nextConfig: NextConfig = {
       { source: '/pose-moquettes-et-sols-maison', destination: '/realisations/pose-moquettes-sols-maison-de-maitre', permanent: true },
       { source: '/moquettes-et-sols-golf', destination: '/realisations/moquettes-sols-golf-de-la-pree', permanent: true },
       { source: '/pose-des-moquettes-dun-restaurant-etoile', destination: '/realisations/moquettes-restaurant-etoile-la-rochelle', permanent: true },
+
+      // Autres URLs WordPress remontées par Search Console
+      { source: '/sol-de-bureau-cabinet-comptable', destination: '/realisations/sols-bureau-cabinet-comptable-groupe-excel', permanent: true },
+      { source: '/lames-pvc-de-differents-coloris', destination: '/realisations/lames-pvc-multicolore-salon-cuisine', permanent: true },
+      { source: '/salle-de-bain-en-lames-plombantes', destination: '/realisations/lames-plombantes-bureaux-multicolore', permanent: true },
+      { source: '/pose-dune-moquette', destination: '/services/pose-moquette', permanent: true },
+      { source: '/remontee-en-plinthes', destination: '/services/pose-moquette', permanent: true },
     ];
   },
 };
