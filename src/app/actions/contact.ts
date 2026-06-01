@@ -148,61 +148,106 @@ export async function sendContactForm(
   const surfaceE = esc(surface)
   const messageE = esc(message).replace(/\n/g, '<br>')
 
-  const htmlBody = `
-    <div style="font-family: Georgia, 'Times New Roman', serif; max-width: 600px; margin: 0 auto; background: #ffffff; color: #1a1916; padding: 40px;">
-      <div style="border-bottom: 2px solid #2C5530; padding-bottom: 20px; margin-bottom: 30px;">
-        <h1 style="font-size: 24px; color: #2C5530; margin: 0;">Nouvelle demande de devis</h1>
-        <p style="color: #6b6155; margin: 8px 0 0; font-size: 14px;">CB Sols, cbsols.fr</p>
-      </div>
+  /**
+   * Wrapper HTML email avec forçage du mode clair sur tous les clients
+   * (iOS Mail / Gmail / Outlook), pour empêcher l'inversion automatique
+   * des couleurs en dark mode qui rend le vert CB Sols délavé/illisible.
+   *
+   * Trois mécanismes cumulés :
+   * 1. meta color-scheme="light only" (Apple Mail, Gmail récent)
+   * 2. CSS :root color-scheme light only
+   * 3. Couleurs hex slightly off-pure (#fefefe au lieu de #ffffff) →
+   *    iOS Mail ne déclenche pas son auto-darkening sur ces nuances
+   */
+  const wrap = (content: string) => `<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light only">
+  <meta name="supported-color-schemes" content="light only">
+  <title>CB Sols</title>
+  <style>
+    :root { color-scheme: light only; supported-color-schemes: light only; }
+    body { margin: 0; padding: 0; background: #f5f0e6; }
+    /* Outlook dark mode override */
+    [data-ogsc] .light-bg { background: #fefefe !important; }
+    [data-ogsc] .dark-text { color: #1a1916 !important; }
+    [data-ogsc] .green-text { color: #2C5530 !important; }
+  </style>
+</head>
+<body style="margin:0; padding:0; background:#f5f0e6;">
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background:#f5f0e6;">
+    <tr><td align="center" style="padding:24px 12px;">
+      ${content}
+    </td></tr>
+  </table>
+</body>
+</html>`
 
-      <table style="width: 100%; border-collapse: collapse;">
-        <tr>
-          <td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #6b6155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; width: 140px;">Nom</td>
-          <td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #1a1916; font-size: 15px; font-weight: 600;">${nameE}</td>
-        </tr>
-        <tr>
-          <td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #6b6155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;">Téléphone</td>
-          <td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5;"><a href="tel:${phoneE}" style="color: #2C5530; font-size: 18px; font-weight: bold; text-decoration: none;">${phoneE}</a></td>
-        </tr>
-        ${email ? `<tr>
-          <td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #6b6155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;">Email</td>
-          <td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5;"><a href="mailto:${emailE}" style="color: #2C5530; text-decoration: none;">${emailE}</a></td>
-        </tr>` : ''}
-        ${city ? `<tr><td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #6b6155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;">Ville</td><td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #1a1916;">${cityE}</td></tr>` : ''}
-        ${projectType ? `<tr><td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #6b6155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;">Type de projet</td><td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #1a1916;">${projectTypeE}</td></tr>` : ''}
-        ${surface ? `<tr><td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #6b6155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;">Surface estimée</td><td style="padding: 12px 0; border-bottom: 1px solid #e8e2d5; color: #1a1916; font-weight: 600;">${surfaceE}</td></tr>` : ''}
-      </table>
+  const htmlBody = wrap(`
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="light-bg" style="max-width:600px; width:100%; background:#fefefe; font-family: Georgia, 'Times New Roman', serif; color:#1a1916; border-radius:8px;">
+      <tr><td style="padding:40px;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-bottom:2px solid #2C5530; padding-bottom:20px; margin-bottom:30px;">
+          <tr><td>
+            <h1 class="green-text" style="font-size:24px; color:#2C5530; margin:0; font-family: Georgia, 'Times New Roman', serif;">Nouvelle demande de devis</h1>
+            <p style="color:#6b6155; margin:8px 0 0; font-size:14px; font-family: Georgia, 'Times New Roman', serif;">CB Sols, cbsols.fr</p>
+          </td></tr>
+        </table>
 
-      ${message ? `
-      <div style="margin-top: 30px; padding: 20px; background: #f8f5ee; border-left: 3px solid #2C5530; border-radius: 4px;">
-        <div style="color: #6b6155; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px;">Message</div>
-        <p style="color: #1a1916; line-height: 1.7; margin: 0; font-size: 14px;">${messageE}</p>
-      </div>` : ''}
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-collapse:collapse; margin-top:24px;">
+          <tr>
+            <td style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#6b6155; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; width:140px; font-family: Georgia, serif;">Nom</td>
+            <td class="dark-text" style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#1a1916; font-size:15px; font-weight:600; font-family: Georgia, serif;">${nameE}</td>
+          </tr>
+          <tr>
+            <td style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#6b6155; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; font-family: Georgia, serif;">Téléphone</td>
+            <td style="padding:12px 0; border-bottom:1px solid #e8e2d5;"><a href="tel:${phoneE}" class="green-text" style="color:#2C5530; font-size:18px; font-weight:bold; text-decoration:none; font-family: Georgia, serif;">${phoneE}</a></td>
+          </tr>
+          ${email ? `<tr>
+            <td style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#6b6155; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; font-family: Georgia, serif;">Email</td>
+            <td style="padding:12px 0; border-bottom:1px solid #e8e2d5;"><a href="mailto:${emailE}" class="green-text" style="color:#2C5530; text-decoration:none; font-family: Georgia, serif;">${emailE}</a></td>
+          </tr>` : ''}
+          ${city ? `<tr><td style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#6b6155; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; font-family: Georgia, serif;">Ville</td><td class="dark-text" style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#1a1916; font-family: Georgia, serif;">${cityE}</td></tr>` : ''}
+          ${projectType ? `<tr><td style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#6b6155; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; font-family: Georgia, serif;">Type de projet</td><td class="dark-text" style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#1a1916; font-family: Georgia, serif;">${projectTypeE}</td></tr>` : ''}
+          ${surface ? `<tr><td style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#6b6155; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; font-family: Georgia, serif;">Surface estimée</td><td class="dark-text" style="padding:12px 0; border-bottom:1px solid #e8e2d5; color:#1a1916; font-weight:600; font-family: Georgia, serif;">${surfaceE}</td></tr>` : ''}
+        </table>
 
-      <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e8e2d5; color: #6b6155; font-size: 11px;">
-        Reçu le ${new Date().toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
-      </div>
-    </div>
-  `
+        ${message ? `
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:30px; background:#f5f0e6; border-left:3px solid #2C5530; border-radius:4px;">
+          <tr><td style="padding:20px;">
+            <div style="color:#6b6155; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:12px; font-family: Georgia, serif;">Message</div>
+            <p class="dark-text" style="color:#1a1916; line-height:1.7; margin:0; font-size:14px; font-family: Georgia, serif;">${messageE}</p>
+          </td></tr>
+        </table>` : ''}
 
-  const autoReplyHtml = `
-    <div style="font-family: Georgia, 'Times New Roman', serif; max-width: 600px; margin: 0 auto; background: #ffffff; color: #1a1916; padding: 40px;">
-      <h1 style="font-size: 24px; color: #2C5530; margin: 0 0 8px;">Votre demande a bien été reçue</h1>
-      <p style="color: #6b6155; font-size: 14px; margin: 0 0 30px;">CB Sols · Revêtements de sol en Charente-Maritime</p>
+        <div style="margin-top:40px; padding-top:20px; border-top:1px solid #e8e2d5; color:#6b6155; font-size:11px; font-family: Georgia, serif;">
+          Reçu le ${new Date().toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+        </div>
+      </td></tr>
+    </table>
+  `)
 
-      <p style="color: #1a1916; line-height: 1.7; font-size: 15px;">Bonjour ${nameE},</p>
-      <p style="color: #1a1916; line-height: 1.7; font-size: 15px;">
-        Nous avons bien reçu votre demande${projectType ? ` concernant : <strong style="color: #2C5530;">${projectTypeE}</strong>` : ''}.
-        Valentin Prévoteau vous recontactera sous <strong style="color: #2C5530;">48 h ouvrées</strong> pour faire le point sur votre projet.
-      </p>
-      <p style="color: #1a1916; line-height: 1.7; font-size: 15px;">
-        En attendant, n&#39;hésitez pas à nous appeler directement au <a href="tel:${company.phoneClean}" style="color: #2C5530; text-decoration: none; font-weight: 600;">${company.phone}</a>.
-      </p>
-      <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e8e2d5;">
-        <p style="color: #6b6155; font-size: 12px; margin: 0; line-height: 1.6;">CB Sols Revêtements<br>${company.address.full}<br><a href="mailto:${company.email}" style="color: #2C5530; text-decoration: none;">${company.email}</a></p>
-      </div>
-    </div>
-  `
+  const autoReplyHtml = wrap(`
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="light-bg" style="max-width:600px; width:100%; background:#fefefe; font-family: Georgia, 'Times New Roman', serif; color:#1a1916; border-radius:8px;">
+      <tr><td style="padding:40px;">
+        <h1 class="green-text" style="font-size:24px; color:#2C5530; margin:0 0 8px; font-family: Georgia, 'Times New Roman', serif;">Votre demande a bien été reçue</h1>
+        <p style="color:#6b6155; font-size:14px; margin:0 0 30px; font-family: Georgia, serif;">CB Sols · Revêtements de sol en Charente-Maritime</p>
+
+        <p class="dark-text" style="color:#1a1916; line-height:1.7; font-size:15px; font-family: Georgia, serif;">Bonjour ${nameE},</p>
+        <p class="dark-text" style="color:#1a1916; line-height:1.7; font-size:15px; font-family: Georgia, serif;">
+          Nous avons bien reçu votre demande${projectType ? ` concernant : <strong class="green-text" style="color:#2C5530;">${projectTypeE}</strong>` : ''}.
+          Valentin Prévoteau vous recontactera sous <strong class="green-text" style="color:#2C5530;">48 h ouvrées</strong> pour faire le point sur votre projet.
+        </p>
+        <p class="dark-text" style="color:#1a1916; line-height:1.7; font-size:15px; font-family: Georgia, serif;">
+          En attendant, n&#39;hésitez pas à nous appeler directement au <a href="tel:${company.phoneClean}" class="green-text" style="color:#2C5530; text-decoration:none; font-weight:600; font-family: Georgia, serif;">${company.phone}</a>.
+        </p>
+        <div style="margin-top:40px; padding-top:20px; border-top:1px solid #e8e2d5;">
+          <p style="color:#6b6155; font-size:12px; margin:0; line-height:1.6; font-family: Georgia, serif;">CB Sols Revêtements<br>${company.address.full}<br><a href="mailto:${company.email}" class="green-text" style="color:#2C5530; text-decoration:none;">${company.email}</a></p>
+        </div>
+      </td></tr>
+    </table>
+  `)
 
   try {
     await transporter.sendMail({
