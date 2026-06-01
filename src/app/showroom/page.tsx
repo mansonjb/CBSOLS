@@ -58,7 +58,7 @@ export default function ShowroomPage() {
                 {[
                   { label: 'Plus de 500 échantillons sur place', desc: 'Une très large gamme EGE, Gerflor, objectflor, Bostik et Romus consultables et manipulables au showroom' },
                   { label: 'Conseil personnalisé', desc: 'Valentin Prévoteau ou un membre de son équipe vous accompagne dans votre choix' },
-                  { label: 'Échantillons à emporter', desc: 'Vous repartez avec les échantillons sélectionnés. Pour les références spécifiques non disponibles, commande chez le fabricant sous 5 à 10 jours' },
+                  { label: 'Échantillons commandés sur demande', desc: 'Pour les références qui vous intéressent et qui ne sont pas en stock au showroom, nous les commandons chez le fabricant sous 5 à 10 jours pour validation finale.' },
                   { label: 'Visualisation in situ', desc: 'Nous vous aidons à projeter le rendu final dans votre espace avec des outils de visualisation' },
                   { label: 'Visite technique obligatoire', desc: 'Nous nous déplaçons systématiquement sur le site avant chiffrage pour évaluer le support et garantir un devis sans surprise' },
                   { label: 'Devis sous 48 h', desc: 'Après la visite technique, devis détaillé envoyé par mail : fourniture, pose, préparation du support, délais' },
