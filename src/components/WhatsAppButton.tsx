@@ -1,7 +1,10 @@
 'use client'
+import { usePathname } from 'next/navigation'
 import { company } from '@/data/company'
 
 export function WhatsAppButton() {
+  const pathname = usePathname() ?? ''
+  if (pathname.startsWith('/admin')) return null
   const waNumber = company.phoneClean.replace('+', '')
   const message = encodeURIComponent('Bonjour CB Sols, je souhaite un devis pour mon projet.')
 

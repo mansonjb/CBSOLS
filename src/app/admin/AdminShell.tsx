@@ -7,9 +7,7 @@ import { logoutAction } from './actions'
 
 const NAV = [
   { href: '/admin', label: 'Tableau de bord', exact: true, icon: 'dashboard' },
-  { href: '/admin/leads', label: 'Prospects', icon: 'leads' },
-  { href: '/admin/clients', label: 'Clients', icon: 'clients' },
-  { href: '/admin/chantiers', label: 'Chantiers', icon: 'chantiers' },
+  { href: '/admin/leads', label: 'Demandes', icon: 'leads' },
 ]
 
 function Icon({ name }: { name: string }) {

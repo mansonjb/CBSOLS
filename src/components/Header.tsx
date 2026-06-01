@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
@@ -21,8 +22,12 @@ const navMobileExtra = [
 ]
 
 export function Header() {
+  const pathname = usePathname() ?? ''
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+
+  // Pas de header public sur /admin/* (interface admin a son propre layout)
+  if (pathname.startsWith('/admin')) return null
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)

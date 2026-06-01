@@ -6,6 +6,7 @@ import { getCityBySlug } from '@/data/cities'
 
 export function MobileCTA() {
   const pathname = usePathname() ?? ''
+  if (pathname.startsWith('/admin')) return null
   // Detect city context on /revetement-sol-[city] and /[service]-[city]
   let contextCity: string | null = null
   if (pathname.startsWith('/revetement-sol-')) {
