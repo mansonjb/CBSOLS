@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { sql, ensureSchema, type LeadRow } from '@/lib/db'
 import { LEAD_STATUS_LABEL, SOURCE_LABEL } from '@/data/crm-fixtures'
-import { updateLeadStatus, addLeadNote } from '../actions'
+import { updateLeadStatus, addLeadNote, archiveLead, unarchiveLead } from '../actions'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
@@ -17,7 +17,7 @@ async function getLeadById(id: string): Promise<LeadRow | null> {
     SELECT
       id, created_at, updated_at, source, nom, telephone, email, ville,
       type_projet, surface, message, statut, derniere_interaction,
-      prochaine_action, notes, segment, ua, referer, ip_hash
+      prochaine_action, notes, segment, ua, referer, ip_hash, archived
     FROM leads
     WHERE id = ${id}
     LIMIT 1
@@ -272,6 +272,40 @@ export default async function LeadDetailPage({ params }: { params: Promise<{ id:
               )}
               <Field label="Identifiant" value={lead.id} monospace />
             </div>
+          </section>
+
+          {/* Archiver / désarchiver */}
+          <section style={{ padding: '1.5rem', backgroundColor: lead.archived ? '#fef6ef' : 'var(--bg-card)', border: `1px solid ${lead.archived ? '#d9802f' : 'var(--border)'}`, borderRadius: '10px' }}>
+            <h3 style={{ fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: lead.archived ? '#D9802F' : 'var(--text-muted)', marginBottom: '0.75rem', fontWeight: 700 }}>
+              {lead.archived ? 'Archivée' : 'Archivage'}
+            </h3>
+            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.55, margin: '0 0 1rem' }}>
+              {lead.archived
+                ? "Cette demande est archivée et n'apparaît plus dans la liste ni dans les statistiques du tableau de bord."
+                : "Archiver une demande (test, doublon, spam). Elle sera retirée de la liste et exclue des statistiques."}
+            </p>
+            <form action={lead.archived ? unarchiveLead : archiveLead} style={{ margin: 0 }}>
+              <input type="hidden" name="id" value={lead.id} />
+              <button
+                type="submit"
+                style={{
+                  width: '100%',
+                  padding: '0.65rem 0.9rem',
+                  border: lead.archived ? '1px solid var(--terra)' : '1px solid #d9802f',
+                  backgroundColor: lead.archived ? 'var(--terra)' : 'transparent',
+                  color: lead.archived ? '#fff' : '#d9802f',
+                  borderRadius: '999px',
+                  fontSize: '0.72rem',
+                  fontFamily: 'inherit',
+                  cursor: 'pointer',
+                  fontWeight: 700,
+                  letterSpacing: '0.06em',
+                  textTransform: 'uppercase',
+                }}
+              >
+                {lead.archived ? 'Désarchiver' : 'Archiver cette demande'}
+              </button>
+            </form>
           </section>
         </aside>
       </div>

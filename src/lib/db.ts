@@ -61,9 +61,15 @@ export async function ensureSchema() {
       ip_hash       TEXT
     );
   `
-  // Index pour les requêtes de listing par date / statut
+  // Migration progressive : ajoute la colonne archived sur les bases déjà
+  // créées avant l'introduction de l'archivage (les demandes test ne doivent
+  // pas polluer les stats).
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS archived BOOLEAN NOT NULL DEFAULT FALSE;`
+
+  // Index pour les requêtes de listing par date / statut / archivage
   await q`CREATE INDEX IF NOT EXISTS leads_created_at_idx ON leads (created_at DESC);`
   await q`CREATE INDEX IF NOT EXISTS leads_statut_idx ON leads (statut);`
+  await q`CREATE INDEX IF NOT EXISTS leads_archived_idx ON leads (archived);`
 
   _migrated = true
 }
@@ -88,4 +94,5 @@ export type LeadRow = {
   ua: string | null
   referer: string | null
   ip_hash: string | null
+  archived: boolean
 }

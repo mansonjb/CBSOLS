@@ -11,12 +11,14 @@ const daysSince = (iso: string) =>
 async function getAllLeads(): Promise<LeadRow[]> {
   await ensureSchema()
   const q = sql()
+  // Les leads archivés (tests, doublons, spam) sont exclus des stats.
   const rows = (await q`
     SELECT
       id, created_at, updated_at, source, nom, telephone, email, ville,
       type_projet, surface, message, statut, derniere_interaction,
-      prochaine_action, notes, segment, ua, referer, ip_hash
+      prochaine_action, notes, segment, ua, referer, ip_hash, archived
     FROM leads
+    WHERE archived = FALSE
     ORDER BY created_at DESC
   `) as unknown as LeadRow[]
   return rows

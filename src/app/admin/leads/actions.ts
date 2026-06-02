@@ -49,6 +49,37 @@ export async function updateLeadStatus(formData: FormData): Promise<void> {
 }
 
 /**
+ * Archive un lead (test, doublon, spam). Les leads archivés :
+ *  - n'apparaissent plus dans la liste par défaut (filtrable)
+ *  - sont exclus de toutes les stats du dashboard
+ *  - restent consultables individuellement (URL /admin/leads/[id] OK)
+ *  - peuvent être désarchivés à tout moment
+ */
+export async function archiveLead(formData: FormData): Promise<void> {
+  const id = formData.get('id')?.toString().trim() ?? ''
+  if (!id || !id.startsWith('ld_')) return
+
+  await ensureSchema()
+  const q = sql()
+  await q`UPDATE leads SET archived = TRUE, updated_at = NOW() WHERE id = ${id}`
+  revalidatePath('/admin')
+  revalidatePath('/admin/leads')
+  revalidatePath(`/admin/leads/${id}`)
+}
+
+export async function unarchiveLead(formData: FormData): Promise<void> {
+  const id = formData.get('id')?.toString().trim() ?? ''
+  if (!id || !id.startsWith('ld_')) return
+
+  await ensureSchema()
+  const q = sql()
+  await q`UPDATE leads SET archived = FALSE, updated_at = NOW() WHERE id = ${id}`
+  revalidatePath('/admin')
+  revalidatePath('/admin/leads')
+  revalidatePath(`/admin/leads/${id}`)
+}
+
+/**
  * Ajoute une note à un lead (append au tableau JSONB `notes`).
  */
 export async function addLeadNote(formData: FormData): Promise<void> {

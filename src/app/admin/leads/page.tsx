@@ -9,23 +9,44 @@ export const revalidate = 0
 const daysSince = (iso: string) =>
   Math.round((Date.now() - new Date(iso).getTime()) / (1000 * 60 * 60 * 24))
 
-async function getLeads(): Promise<LeadRow[]> {
+async function getLeads(showArchived: boolean): Promise<LeadRow[]> {
   await ensureSchema()
   const q = sql()
-  const rows = (await q`
-    SELECT
-      id, created_at, updated_at, source, nom, telephone, email, ville,
-      type_projet, surface, message, statut, derniere_interaction,
-      prochaine_action, notes, segment, ua, referer, ip_hash
-    FROM leads
-    ORDER BY created_at DESC
-    LIMIT 500
-  `) as unknown as LeadRow[]
+  const rows = showArchived
+    ? ((await q`
+        SELECT
+          id, created_at, updated_at, source, nom, telephone, email, ville,
+          type_projet, surface, message, statut, derniere_interaction,
+          prochaine_action, notes, segment, ua, referer, ip_hash, archived
+        FROM leads
+        WHERE archived = TRUE
+        ORDER BY created_at DESC
+        LIMIT 500
+      `) as unknown as LeadRow[])
+    : ((await q`
+        SELECT
+          id, created_at, updated_at, source, nom, telephone, email, ville,
+          type_projet, surface, message, statut, derniere_interaction,
+          prochaine_action, notes, segment, ua, referer, ip_hash, archived
+        FROM leads
+        WHERE archived = FALSE
+        ORDER BY created_at DESC
+        LIMIT 500
+      `) as unknown as LeadRow[])
   return rows
 }
 
-export default async function LeadsListPage() {
-  const leads = await getLeads()
+async function getArchivedCount(): Promise<number> {
+  await ensureSchema()
+  const q = sql()
+  const rows = (await q`SELECT COUNT(*)::int AS n FROM leads WHERE archived = TRUE`) as unknown as { n: number }[]
+  return rows[0]?.n ?? 0
+}
+
+export default async function LeadsListPage({ searchParams }: { searchParams: Promise<{ view?: string }> }) {
+  const { view } = await searchParams
+  const showArchived = view === 'archive'
+  const [leads, archivedCount] = await Promise.all([getLeads(showArchived), getArchivedCount()])
   const counts = leads.reduce<Record<string, number>>((acc, l) => {
     acc[l.statut] = (acc[l.statut] || 0) + 1
     return acc
@@ -33,16 +54,32 @@ export default async function LeadsListPage() {
 
   return (
     <div style={{ padding: '2.5rem', maxWidth: '1400px' }}>
-      <div style={{ marginBottom: '2.5rem' }}>
-        <div style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.5rem' }}>Prospects</div>
-        <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: 0, letterSpacing: '-0.025em' }}>
-          Demandes de devis
-        </h1>
-        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
-          {leads.length === 0
-            ? 'Aucune demande pour le moment. Les nouveaux leads via le formulaire apparaîtront ici automatiquement.'
-            : `${leads.length} entrée${leads.length > 1 ? 's' : ''} au total`}
-        </p>
+      <div style={{ marginBottom: '2.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
+        <div>
+          <div style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: showArchived ? 'var(--text-muted)' : 'var(--terra)', marginBottom: '0.5rem' }}>
+            {showArchived ? 'Archives' : 'Prospects'}
+          </div>
+          <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: 0, letterSpacing: '-0.025em' }}>
+            {showArchived ? 'Demandes archivées' : 'Demandes de devis'}
+          </h1>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
+            {leads.length === 0
+              ? (showArchived ? 'Aucune demande archivée.' : 'Aucune demande pour le moment. Les nouveaux leads via le formulaire apparaîtront ici automatiquement.')
+              : `${leads.length} entrée${leads.length > 1 ? 's' : ''}${showArchived ? ' archivée' : ''}${leads.length > 1 ? 's' : ''}`}
+          </p>
+        </div>
+        {/* Toggle archive */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          {showArchived ? (
+            <Link href="/admin/leads" style={{ fontSize: '0.72rem', color: 'var(--terra)', textDecoration: 'none', fontWeight: 600, letterSpacing: '0.06em', padding: '0.55rem 1rem', border: '1px solid var(--terra)', borderRadius: '999px' }}>
+              ← Retour aux demandes actives
+            </Link>
+          ) : archivedCount > 0 ? (
+            <Link href="/admin/leads?view=archive" style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textDecoration: 'none', fontWeight: 600, letterSpacing: '0.06em', padding: '0.55rem 1rem', border: '1px solid var(--border)', borderRadius: '999px' }}>
+              Voir les archives ({archivedCount})
+            </Link>
+          ) : null}
+        </div>
       </div>
 
       {/* Filtres rapides */}
