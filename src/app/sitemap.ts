@@ -68,6 +68,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/moquette-catamaran`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/moquette-yacht`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/moquette-peniche`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.8 },
+    // Niches premium hors marine
+    { url: `${BASE_URL}/moquette-jet-prive`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/moquette-chateau`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
