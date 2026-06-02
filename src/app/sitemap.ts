@@ -72,6 +72,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/moquette-jet-prive`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/moquette-chateau`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/sols-monaco`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
+    // Long-tail collectivités scolaires
+    { url: `${BASE_URL}/sol-pvc-ecole`, lastModified: new Date('2026-06-02'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/sol-pvc-college-lycee`, lastModified: new Date('2026-06-02'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/sol-pvc-creche`, lastModified: new Date('2026-06-02'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
