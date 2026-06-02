@@ -68,7 +68,7 @@ const glossaire = [
 ]
 
 const ports = [
-  { nom: 'Monaco', detail: 'Port Hercule et Port de Fontvieille. Interventions sur yachts de propriétaires et unités de charter premium.' },
+  { nom: 'Monaco', detail: 'Port Hercule et Port de Fontvieille. Interventions sur yachts de propriétaires et unités de charter premium.', href: '/sols-monaco' },
   { nom: 'Cannes', detail: 'Vieux-Port et Port Canto. Refits hivernaux pendant les arrêts techniques entre saisons.' },
   { nom: 'Saint-Tropez', detail: 'Port Saint-Tropez. Coordination avec ébénistes et selliers locaux pour les chantiers de finition complète.' },
   { nom: 'Antibes', detail: "Port Vauban, premier port d'Europe pour les grands yachts. Confection atelier et pose à quai sur planning serré." },
@@ -314,12 +314,19 @@ export default function SolsMarinePage() {
             Notre atelier est basé à Villedoux, près de La Rochelle. Nous nous déplaçons partout en France et jusqu&apos;à Monaco pour les projets premium. Les déplacements sont organisés selon les projets, avec une équipe mobile pour les chantiers haut de gamme hors zone.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
-            {ports.map((p, i) => (
-              <div key={i} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
-                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.6rem' }}>{p.nom}</div>
-                <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{p.detail}</p>
-              </div>
-            ))}
+            {ports.map((p, i) => {
+              const hasHref = 'href' in p && typeof p.href === 'string'
+              return (
+                <div key={i} style={{ padding: '1.5rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
+                  <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', marginBottom: '0.6rem' }}>
+                    {hasHref ? (
+                      <Link href={(p as { href: string }).href} style={{ color: 'var(--terra)', textDecoration: 'none' }}>{p.nom} →</Link>
+                    ) : p.nom}
+                  </div>
+                  <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{p.detail}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>

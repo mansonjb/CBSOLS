@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Niches premium hors marine
     { url: `${BASE_URL}/moquette-jet-prive`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/moquette-chateau`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/sols-monaco`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
