@@ -72,6 +72,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/moquette-jet-prive`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/moquette-chateau`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/sols-monaco`, lastModified: new Date('2026-06-01'), changeFrequency: 'monthly', priority: 0.85 },
+    // Gironde / Bassin d'Arcachon
+    { url: `${BASE_URL}/revetement-sol-bordeaux`, lastModified: new Date('2026-06-03'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-cap-ferret`, lastModified: new Date('2026-06-03'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-saint-emilion`, lastModified: new Date('2026-06-03'), changeFrequency: 'monthly', priority: 0.8 },
     // Long-tail collectivités scolaires
     { url: `${BASE_URL}/sol-pvc-ecole`, lastModified: new Date('2026-06-02'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/sol-pvc-college-lycee`, lastModified: new Date('2026-06-02'), changeFrequency: 'monthly', priority: 0.85 },
