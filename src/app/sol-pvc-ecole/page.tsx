@@ -5,10 +5,10 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Sol PVC École Maternelle et Primaire | Pose Établissements Scolaires | CB Sols',
-  description: "Pose de sol PVC en école maternelle et primaire. Conformité ERP (Bfl-s1, U4P3, R10/R11), pose en vacances scolaires, marchés publics. CB Sols accompagne mairies et écoles privées depuis 27 ans.",
+  description: "Pose de sol PVC en école maternelle et primaire. Conformité ERP (Bfl-s1, U4P3, R10/R11), pose pendant les vacances scolaires, marchés publics. CB Sols accompagne mairies et écoles privées depuis 27 ans.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-ecole' },
   openGraph: {
-    title: 'Sol PVC École Maternelle et Primaire | Pose Établissements Scolaires',
+    title: "Sol PVC en école maternelle et primaire | Pose en établissements scolaires",
     description: "Sol PVC pour salles de classe, dortoirs maternelle, restaurants scolaires. Normes ERP, label A+, pose pendant les vacances scolaires.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/sol-pvc-ecole.jpg', width: 1200, height: 630 }],
@@ -23,9 +23,9 @@ const cas = [
 ]
 
 const produits = [
-  { name: 'Sol PVC hétérogène en lés', desc: "Référence des écoles : Gerflor Taralay Premium, Tarkett iQ Granit, Forbo Sphera, Tarkett Acczent Excellence. Couche d'usure 0,7 à 1 mm, classement U4P3, glissance R10, label A+, traitement de surface anti-tache. Pose en lés 2 mètres soudés à chaud, durée de vie 15 à 20 ans en usage scolaire." },
-  { name: 'Sol PVC compact homogène', desc: "Pour zones très sollicitées : Tarkett iQ Optima, Gerflor Mipolam Symbioz, Polyflor XL. Couche d'usure dans la masse pour ponçage de rénovation possible après 10 ans. Idéal pour circulations principales et restaurants scolaires." },
-  { name: 'Sol PVC sécurité antidérapant', desc: "Pour sanitaires, vestiaires, abords de fontaines à eau : Gerflor Tarasafe Standard, Forbo Surestep, Polyflor Polysafe. Glissance R11 voire R12, granulats anti-glisse dans la couche d'usure. Plinthes à gorge associées." },
+  { name: 'Sol PVC hétérogène en lés', desc: "Référence des écoles, en couche d'usure 0,7 à 1 mm, classement U4P3, glissance R10, label A+, traitement de surface anti-tache. Pose en lés 2 mètres soudés à chaud, durée de vie 15 à 20 ans en usage scolaire. Principales gammes mobilisées : Gerflor Taralay Premium et Tarkett iQ Granit." },
+  { name: 'Sol PVC compact homogène', desc: "Pour les zones très sollicitées : couche d'usure dans la masse, ponçage de rénovation possible après 10 ans. Idéal pour circulations principales et restaurants scolaires. Gammes mobilisées : Tarkett iQ Optima et Gerflor Mipolam Symbioz." },
+  { name: 'Sol PVC sécurité antidérapant', desc: "Pour sanitaires, vestiaires, abords de fontaines à eau. Glissance R11 voire R12, granulats anti-glisse dans la couche d'usure. Plinthes à gorge associées. Gammes mobilisées : Gerflor Tarasafe Standard et Forbo Surestep." },
 ]
 
 const process = [
@@ -107,7 +107,7 @@ export default function SolPvcEcolePage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Sol PVC école', item: 'https://cbsols.fr/sol-pvc-ecole' },
+          { '@type': 'ListItem', position: 2, name: 'Sol PVC en école', item: 'https://cbsols.fr/sol-pvc-ecole' },
         ],
       },
     ],
@@ -128,7 +128,7 @@ export default function SolPvcEcolePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-                Sol PVC école,<br />
+                Sol PVC en école,<br />
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>le sol qui dure une génération.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
@@ -142,7 +142,7 @@ export default function SolPvcEcolePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>La règle d&apos;or scolaire</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Une école, ça se rénove en juillet-août, point. En 27 ans, je n&apos;ai jamais raté une rentrée. C&apos;est la première promesse qu&apos;on fait au directeur ou à la mairie, et c&apos;est non négociable. »
+                « Une école, ça se rénove en juillet-août, point. En 27 ans, CB Sols n&apos;a jamais raté une rentrée. C&apos;est la première promesse qu&apos;on fait au directeur ou à la mairie, et c&apos;est non négociable. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -332,7 +332,7 @@ export default function SolPvcEcolePage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Questions fréquentes</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-            Sol PVC école, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses détaillées.</em>
+            Sol PVC en école, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses détaillées.</em>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {faq.map((f, i) => (

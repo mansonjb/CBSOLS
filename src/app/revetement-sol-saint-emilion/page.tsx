@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-emilion' },
   keywords: ['revêtement sol Saint-Émilion', 'moquette château viticole', 'sol PVC chai dégustation', 'tapis sur mesure Libournais', 'artisan sol Gironde'],
   openGraph: {
-    title: "Revêtement de sol Saint-Émilion, le sol des grands crus",
-    description: "Moquette, sol PVC et tapis sur mesure pour châteaux viticoles de Saint-Émilion et du Libournais. CB Sols, 27 ans de savoir-faire.",
+    title: "Revêtement de sol à Saint-Émilion, le sol des grands crus",
+    description: "Moquette, sol PVC et tapis sur mesure pour châteaux viticoles à Saint-Émilion et dans le Libournais. CB Sols, 27 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-saint-emilion.jpg', width: 1200, height: 630 }],
   },
@@ -78,7 +78,7 @@ const process = [
 const faq = [
   { q: "Comment se passe une intervention dans un château viticole de Saint-Émilion ?", a: "Notre atelier de Villedoux, près de La Rochelle, est à environ 2h15 de Saint-Émilion par l'autoroute. C'est une distance raisonnable que nous gérons en deux temps : une visite de prise de cotes en début de projet, puis une intervention de pose calée sur le calendrier viticole du domaine. L'hébergement et la logistique sont inclus dans le devis. La fenêtre idéale d'intervention est généralement entre janvier et mars (après les fêtes, avant les primeurs d'avril), ou en juillet-août selon le rythme du domaine. Nous calons systématiquement notre planning en coordination étroite avec le régisseur ou le maître de chai, pour ne pas interférer avec la vie viticole du château." },
   { q: "Pourquoi le calendrier viticole est-il déterminant pour vos chantiers ?", a: "Un château viticole vit au rythme des vignes, pas au rythme du calendrier civil. Les vendanges en septembre-octobre mobilisent toute la propriété et rendent toute intervention impossible. La vinification, jusqu'en décembre, occupe les chais et les équipes. Les primeurs en avril remplissent les caveaux de courtiers et de journalistes du monde entier. L'embouteillage en été mobilise les chais. Les fenêtres réellement disponibles pour un chantier de revêtement de sol sont donc étroites, généralement de janvier à mars, et parfois de juillet à août. Valentin Prévoteau et son équipe planifient toujours très en amont, parfois 6 à 12 mois avant l'intervention, pour caler une fenêtre sereine pour le domaine." },
-  { q: "Travaillez-vous sur les Premiers Grands Crus Classés A ?", a: "Oui, et c'est un terrain où notre savoir-faire prend tout son sens. Cheval Blanc, Ausone, Pavie, Angélus et les autres Premiers Grands Crus Classés A imposent des exigences absolues, comparables à celles de nos chantiers de Monaco ou des châteaux historiques que nous avons couverts ailleurs en France. Discrétion totale, NDA signé sur demande, finitions millimétrées, coordination avec un architecte d'intérieur souvent parisien ou international. Notre 27 ans de savoir-faire nous permet d'intervenir sur ces domaines avec la sérénité nécessaire et la documentation technique exigée par ce niveau de prestige." },
+  { q: "Travaillez-vous sur les Premiers Grands Crus Classés A ?", a: "Oui, et c'est un terrain où notre savoir-faire prend tout son sens. Cheval Blanc, Ausone, Pavie, Angélus et les autres Premiers Grands Crus Classés A imposent des exigences absolues, comparables à celles de nos chantiers de Monaco ou des châteaux historiques que nous avons couverts ailleurs en France. Discrétion totale, NDA signé sur demande, finitions millimétrées, coordination avec un architecte d'intérieur souvent parisien ou international. Les 27 ans de savoir-faire de CB Sols nous permettent d'intervenir sur ces domaines avec la sérénité nécessaire et la documentation technique exigée par ce niveau de prestige." },
   { q: "Pouvez-vous intégrer le blason ou le motif identitaire du domaine ?", a: "Oui, c'est même un de nos terrains de prédilection. Une moquette Axminster custom permet jusqu'à 36 couleurs dans un même motif, ce qui suffit largement pour reproduire un blason familial, une feuille de vigne stylisée, une grappe d'identité ou un monogramme. Le motif est validé en amont sur cartouche couleur, avec parfois une à deux épreuves intermédiaires pour ajuster les teintes. Pour les tapis sur mesure Aubusson ou Hereke, le motif est tissé main et offre une finesse d'exécution supérieure encore, à condition d'accepter le délai de 10 à 16 semaines de tissage." },
   { q: "Quels matériaux pour un caveau de dégustation ?", a: "Un caveau de dégustation accueille du public et impose donc un classement feu (Bfl-s1 au minimum) pour les revêtements collés au sol. Notre préconisation type combine une moquette laine ignifugée EGE Hospitality dans la zone de dégustation pour l'acoustique et le confort de marche, et un sol PVC Tarkett iQ Granit Acoustic ou Forbo Coral dans les zones de circulation et d'entrée pour la résistance au piétinement et l'entretien simple. Cette combinaison offre l'expérience œnotouristique attendue tout en garantissant la conformité ERP et la durabilité sur le long terme. Les fiches matière et PV feu sont fournis au maître d'ouvrage pour le dossier de sécurité." },
   { q: "Travaillez-vous avec les architectes d'intérieur des grands crus ?", a: "Oui, régulièrement. Les grands crus de Saint-Émilion et du Libournais travaillent souvent avec des architectes d'intérieur parisiens ou bordelais réputés, parfois avec des designers internationaux pour les espaces œnotouristiques contemporains. Nous intervenons en sous-traitance de leur prescription, avec l'architecte comme interlocuteur principal pour les choix matières et le calepinage. Les échantillons sont envoyés directement à son agence pour validation. Nous fournissons toute la documentation technique nécessaire : fiches matière, PV feu, certificats d'origine, traçabilité, attestations de classement Bfl-s1, schémas de pose et coupes techniques." },
@@ -112,7 +112,7 @@ export default function RevetementSolSaintEmilionPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Revêtement de sol Saint-Émilion', item: 'https://cbsols.fr/revetement-sol-saint-emilion' },
+          { '@type': 'ListItem', position: 2, name: 'Revêtement de sol à Saint-Émilion', item: 'https://cbsols.fr/revetement-sol-saint-emilion' },
         ],
       },
     ],
@@ -133,7 +133,7 @@ export default function RevetementSolSaintEmilionPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-                Revêtement de sol Saint-Émilion,<br />
+                Revêtement de sol à Saint-Émilion,<br />
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>le sol des grands crus.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
@@ -147,7 +147,7 @@ export default function RevetementSolSaintEmilionPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Travailler dans un grand cru, c&apos;est entrer dans une maison où chaque détail compte, du verre à la lumière du caveau. Le sol doit être à la hauteur. C&apos;est exactement ce que je fais depuis 27 ans. »
+                « Travailler dans un grand cru, c&apos;est entrer dans une maison où chaque détail compte, du verre à la lumière du caveau. Le sol doit être à la hauteur. C&apos;est exactement ce que CB Sols fait depuis 27 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -244,7 +244,7 @@ export default function RevetementSolSaintEmilionPage() {
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
               « Dans un grand cru, on accueille des clients du bout du monde qui vont raconter le domaine pendant des années. Le caveau, le salon, le tapis sous la table d&apos;apparat, tout participe de cette première impression. C&apos;est un privilège de poser un sol dans ces maisons. »
             </p>
-            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, 27 ans de savoir-faire</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, gérant de CB Sols</div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <Button href="/contact?source=saint-emilion-citation" variant="primary" size="md">Prendre rendez-vous</Button>
               <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Visite calée sur calendrier viticole</span>
@@ -337,7 +337,7 @@ export default function RevetementSolSaintEmilionPage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Questions fréquentes</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-            Revêtement sol Saint-Émilion, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses concrètes.</em>
+            Revêtement de sol à Saint-Émilion, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses concrètes.</em>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {faq.map((f, i) => (

@@ -5,12 +5,12 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Cap Ferret | Villas Bassin d'Arcachon | CB Sols",
-  description: "Pose de moquette, sol PVC et tapis sur mesure pour villas du Cap Ferret. Résidences secondaires, terrasses bois, pieds dans le sable. Artisan haut de gamme CB Sols, 27 ans d'expérience.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret. Résidences secondaires, terrasses bois, pieds dans le sable. Artisan haut de gamme CB Sols, 27 ans d'expérience.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-cap-ferret' },
   keywords: ['revêtement sol Cap Ferret', 'moquette villa Cap Ferret', 'sol bord de mer Bassin Arcachon', 'pose tapis cabane Cap Ferret', 'artisan sol Arcachon'],
   openGraph: {
-    title: "Revêtement de sol Cap Ferret, l'art du bord de mer",
-    description: "Moquette, sol PVC et tapis sur mesure pour villas du Cap Ferret et du Bassin d'Arcachon. CB Sols, 27 ans de savoir-faire.",
+    title: "Revêtement de sol au Cap Ferret, l'art du bord de mer",
+    description: "Moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret et sur le Bassin d'Arcachon. CB Sols, 27 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-cap-ferret.jpg', width: 1200, height: 630 }],
   },
@@ -113,7 +113,7 @@ export default function RevetementSolCapFerretPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Revêtement de sol Cap Ferret', item: 'https://cbsols.fr/revetement-sol-cap-ferret' },
+          { '@type': 'ListItem', position: 2, name: 'Revêtement de sol au Cap Ferret', item: 'https://cbsols.fr/revetement-sol-cap-ferret' },
         ],
       },
     ],
@@ -134,7 +134,7 @@ export default function RevetementSolCapFerretPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-                Revêtement de sol Cap Ferret,<br />
+                Revêtement de sol au Cap Ferret,<br />
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>l&apos;art du bord de mer.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
@@ -148,7 +148,7 @@ export default function RevetementSolCapFerretPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Le sable s&apos;invite partout au Cap Ferret. Choisir la bonne fibre, c&apos;est ce qui fait qu&apos;un sol tient dix ans ou vingt ans. Depuis 27 ans, je travaille au bord de l&apos;Atlantique, et le Bassin parle la même langue. »
+                « Le sable s&apos;invite partout au Cap Ferret. Choisir la bonne fibre, c&apos;est ce qui fait qu&apos;un sol tient dix ans ou vingt ans. Depuis 27 ans, CB Sols travaille au bord de l&apos;Atlantique, et le Bassin parle la même langue. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -245,7 +245,7 @@ export default function RevetementSolCapFerretPage() {
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
               « Une villa du Cap, ça vit en saison et ça dort le reste de l&apos;année. Le sol doit accepter ce cycle, supporter le sel, encaisser le sable. C&apos;est un métier de patience et de bons choix dès le départ. »
             </p>
-            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, 27 ans de savoir-faire</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, gérant de CB Sols</div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <Button href="/contact?source=cap-ferret-citation" variant="primary" size="md">Prendre rendez-vous</Button>
               <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Visite hors saison</span>
@@ -338,7 +338,7 @@ export default function RevetementSolCapFerretPage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Questions fréquentes</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-            Revêtement sol Cap Ferret, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses concrètes.</em>
+            Revêtement de sol au Cap Ferret, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses concrètes.</em>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {faq.map((f, i) => (

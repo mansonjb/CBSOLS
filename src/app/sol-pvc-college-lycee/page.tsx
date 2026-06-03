@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   description: "Pose de sol PVC en collège et lycée, salles de cours, laboratoires sciences, CDI, ateliers. Conformité ERP type R, lés grande largeur soudés à chaud, marché public éducation. CB Sols, 27 ans d'expérience.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-college-lycee' },
   openGraph: {
-    title: 'Sol PVC Collège et Lycée | Revêtement Sol Établissements Secondaires',
-    description: "Sol PVC en lés grande largeur soudés à chaud pour collèges et lycées : salles, labos, CDI, ateliers techniques. Marchés publics éducation.",
+    title: "Sol PVC en collège et lycée | Revêtement de sol en établissements secondaires",
+    description: "Sol PVC en lés grande largeur soudés à chaud en collège et lycée : salles, labos, CDI, ateliers techniques. Marchés publics éducation.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/sol-pvc-college-lycee.jpg', width: 1200, height: 630 }],
   },
@@ -23,9 +23,9 @@ const cas = [
 ]
 
 const produits = [
-  { name: 'Sol PVC hétérogène en lés grande largeur', desc: "Pose en lés 2 mètres soudés à chaud, technique signature des établissements scolaires de qualité. Étanchéité totale entre lés, absence de joints accumulant la poussière, durée de vie 15 à 20 ans. Références : Tarkett iQ Granit, Gerflor Taralay Impression Compact, Forbo Eternal, Tarkett Acczent Excellence 70." },
-  { name: 'Sol PVC compact homogène premium', desc: "Pour zones très sollicitées : ateliers lycée pro, circulations principales, halls d'accueil. Couche d'usure dans la masse, ponçage possible de rénovation. Garantie commerciale jusqu'à 30 ans. Références : Gerflor Mipolam Esprit, Forbo Sphera Element, Polyflor XL." },
-  { name: 'Sol PVC sécurité et antidérapant', desc: "Pour sanitaires lycée, vestiaires gymnase, zones humides labo. Glissance R11 ou R12, granulats anti-glisse intégrés. Références : Altro XpressLay (pose sans colle pour rénovation rapide), Polyflor Polysafe Quattro, Forbo Surestep, Gerflor Tarasafe." },
+  { name: 'Sol PVC hétérogène en lés grande largeur', desc: "Pose en lés 2 mètres soudés à chaud, technique signature des établissements scolaires de qualité. Étanchéité totale entre lés, absence de joints accumulant la poussière, durée de vie 15 à 20 ans. Principales références : Tarkett iQ Granit et Gerflor Taralay Impression Compact." },
+  { name: 'Sol PVC compact homogène premium', desc: "Pour les zones très sollicitées : ateliers de lycée pro, circulations principales, halls d'accueil. Couche d'usure dans la masse, ponçage de rénovation possible, garantie commerciale jusqu'à 30 ans. Principales références : Gerflor Mipolam Esprit et Forbo Sphera Element." },
+  { name: 'Sol PVC sécurité et antidérapant', desc: "Pour sanitaires de lycée, vestiaires de gymnase, zones humides de laboratoire. Glissance R11 ou R12, granulats anti-glisse intégrés. Principales références : Altro XpressLay (pose sans colle pour rénovation rapide) et Polyflor Polysafe Quattro." },
 ]
 
 const process = [
@@ -108,7 +108,7 @@ export default function SolPvcCollegeLyceePage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Sol PVC collège lycée', item: 'https://cbsols.fr/sol-pvc-college-lycee' },
+          { '@type': 'ListItem', position: 2, name: 'Sol PVC en collège et lycée', item: 'https://cbsols.fr/sol-pvc-college-lycee' },
         ],
       },
     ],
@@ -129,7 +129,7 @@ export default function SolPvcCollegeLyceePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-                Sol PVC collège et lycée,<br />
+                Sol PVC en collège et lycée,<br />
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>la robustesse au passage.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
@@ -333,7 +333,7 @@ export default function SolPvcCollegeLyceePage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Questions fréquentes</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-            Sol PVC secondaire, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses détaillées.</em>
+            Sol PVC en collège et lycée, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses détaillées.</em>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {faq.map((f, i) => (

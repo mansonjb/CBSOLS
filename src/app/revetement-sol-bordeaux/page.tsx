@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-bordeaux' },
   keywords: ['revêtement sol Bordeaux', 'moquette Bordeaux', 'sol PVC Bordeaux', 'pose tapis Bordeaux', 'artisan sol Bordeaux'],
   openGraph: {
-    title: "Revêtement de sol Bordeaux, l'élégance bordelaise",
+    title: "Revêtement de sol à Bordeaux, l'élégance bordelaise",
     description: "Moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers, échoppes, restaurants gastronomiques. CB Sols, 27 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-bordeaux.jpg', width: 1200, height: 630 }],
@@ -110,7 +110,7 @@ export default function RevetementSolBordeauxPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Revêtement de sol Bordeaux', item: 'https://cbsols.fr/revetement-sol-bordeaux' },
+          { '@type': 'ListItem', position: 2, name: 'Revêtement de sol à Bordeaux', item: 'https://cbsols.fr/revetement-sol-bordeaux' },
         ],
       },
     ],
@@ -131,7 +131,7 @@ export default function RevetementSolBordeauxPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-                Revêtement de sol Bordeaux,<br />
+                Revêtement de sol à Bordeaux,<br />
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>l&apos;élégance bordelaise.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
@@ -145,7 +145,7 @@ export default function RevetementSolBordeauxPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Bordeaux, c&apos;est une ville de patrimoine accessible depuis La Rochelle en deux heures. Respecter un parquet ancien d&apos;échoppe ou habiller un salon des Chartrons, c&apos;est exactement le métier que je fais depuis 27 ans. »
+                « Bordeaux, c&apos;est une ville de patrimoine accessible depuis La Rochelle en deux heures. Respecter un parquet ancien d&apos;échoppe ou habiller un salon des Chartrons, c&apos;est exactement le métier que CB Sols fait depuis 27 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -242,7 +242,7 @@ export default function RevetementSolBordeauxPage() {
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
               « Un parquet d&apos;échoppe bordelaise du XIXe, ça ne se touche pas comme un sol neuf. On pose une moquette qui se dépose proprement, qui ne marque pas le bois, qui respecte ce que la maison a déjà connu. »
             </p>
-            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, 27 ans de savoir-faire</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, gérant de CB Sols</div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <Button href="/contact?source=bordeaux-citation" variant="primary" size="md">Prendre rendez-vous</Button>
               <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Visite à domicile à Bordeaux</span>
@@ -335,7 +335,7 @@ export default function RevetementSolBordeauxPage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Questions fréquentes</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
-            Revêtement sol Bordeaux, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses concrètes.</em>
+            Revêtement de sol à Bordeaux, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>réponses concrètes.</em>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {faq.map((f, i) => (
