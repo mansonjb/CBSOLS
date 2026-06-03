@@ -458,6 +458,73 @@ export const guides: Guide[] = [
       totalTime: 'PT30M',
     },
   },
+  {
+    slug: 'sol-pvc-chauffage-au-sol',
+    title: 'Sol PVC sur chauffage au sol : compatibilité et conseils',
+    metaTitle: 'Sol PVC et Chauffage au Sol | Compatibilité et Pose | CB Sols',
+    metaDescription: "Sol PVC sur chauffage au sol : compatibilité, lame PVC plancher chauffant, gestion de la dilatation, pose collée, seuil 28°C. Guide expert CB Sols La Rochelle.",
+    category: 'Guide Technique',
+    headline: 'Sol PVC sur plancher chauffant',
+    intro: "C'est l'une des questions qui revient le plus souvent sur les forums de construction et de rénovation : peut-on vraiment poser un sol PVC sur un chauffage au sol sans risquer la catastrophe ? Beaucoup hésitent par peur de la dilatation, du décollement ou d'un rendement thermique dégradé. La réponse courte : oui, c'est tout à fait possible et c'est même un excellent choix de confort, à condition de respecter quelques règles techniques précises. CB Sols, fort de 27 ans de pose dans la région de La Rochelle, vous explique ici comment réussir cette association sans mauvaise surprise.",
+    sections: [
+      {
+        title: 'Oui, le sol PVC est compatible (mais sous conditions)',
+        body: "Le sol PVC fait partie des revêtements les plus adaptés au chauffage au sol basse température, qu'il soit hydraulique (eau chaude) ou électrique. Sa faible épaisseur et sa bonne conductivité thermique permettent une diffusion homogène de la chaleur, contrairement à un parquet massif ou à une moquette épaisse qui font effet d'isolant.\n\nCela dit, tous les sols PVC ne se valent pas. Pour une pose sur plancher chauffant, le revêtement doit porter le marquage explicite du fabricant indiquant la compatibilité. Concrètement, vous cherchez le pictogramme chauffage au sol sur la fiche technique du lot, accompagné de la résistance thermique du produit (notée R, exprimée en m²K/W).\n\nLes lés PVC compacts, les lames LVT collées et la majorité des sols PVC contrats sont conçus pour cet usage. Le système est encadré par le DTU 53.12 (revêtements de sol PVC en lés et en dalles) et le DTU 65.14 (plancher chauffant à eau chaude basse température), deux références que CB Sols suit à la lettre sur chaque chantier.",
+      },
+      {
+        title: 'Les 4 règles techniques à respecter',
+        body: "Première règle : la température en surface du sol fini ne doit jamais dépasser 28°C. Ce seuil, imposé par le DTU 65.14, protège à la fois le confort des occupants et la stabilité du PVC. Au-delà, les colles vieillissent prématurément et le matériau peut commencer à marquer.\n\nDeuxième règle : la résistance thermique totale du revêtement (PVC plus sous-couche éventuelle) doit rester inférieure à 0,15 m²K/W. Au-delà, vous transformez votre chauffage en radiateur sous-dimensionné et la consommation explose.\n\nTroisième règle : la pose collée en plein est la méthode de référence sur plancher chauffant à eau. Elle garantit la transmission thermique et bloque la dilatation du revêtement. La pose clipsée n'est tolérée que sur des produits explicitement validés par le fabricant pour cet usage, ce qui reste rare.\n\nQuatrième règle : ne JAMAIS recouper le chauffage dans les 30 minutes suivant la fin de la pose. Le revêtement doit redescendre progressivement, sinon les colles et le PVC subissent un choc thermique qui crée des tensions internes durables.",
+      },
+      {
+        title: 'Pose collée vs pose clipsée : la vraie réponse',
+        body: "Sur un plancher chauffant, la pose collée gagne sur tous les critères techniques. La colle, étalée en plein, assure un contact thermique parfait entre la dalle chauffante et le revêtement. La chaleur monte sans interface d'air, le rendement est optimal et la facture énergétique reste maîtrisée.\n\nLa pose collée bloque aussi mécaniquement le revêtement. Or, le PVC se dilate naturellement avec la température. Sur une pose flottante, ces variations finissent par créer des ouvertures entre lames, voire un gondolage visible. Sur une pose collée correctement réalisée avec une colle adaptée chauffage au sol (type Bostik Stix A950 ou équivalent), la dilatation est absorbée par la couche de colle.\n\nLa pose clipsée reste possible uniquement sur des références spécifiquement validées par le fabricant. Gerflor propose par exemple sa gamme Senso Lock avec une mention compatible chauffage au sol jusqu'à 28°C. Mais ces produits restent l'exception. Dans 9 cas sur 10, CB Sols recommande la pose collée pour la durabilité et la garantie de résultat sur le long terme.",
+      },
+      {
+        title: 'Les marques validées sur chauffage au sol',
+        body: "Quatre marques sortent du lot pour la pose sur plancher chauffant, toutes disposant de gammes spécifiquement testées et certifiées pour cet usage.\n\nGerflor propose la gamme Senso (résidentiel haut de gamme) et la gamme Taralay Impression Compact pour les locaux contrats. Les deux affichent une résistance thermique inférieure à 0,02 m²K/W, idéale pour la diffusion de chaleur.\n\nTarkett couvre le segment professionnel avec iQ Granit et Acczent, deux références largement utilisées en santé et en collectivité, parfaitement adaptées au plancher chauffant basse température. Forbo, marque européenne reconnue, propose Eternal et Sphera, des sols PVC compacts dont la finesse maximise le rendement thermique. Polyflor complète l'offre pour les usages techniques.\n\nDans tous les cas, la règle absolue : vérifier la fiche technique du lot précis livré, pas seulement la gamme. Les références changent, les certifications aussi. CB Sols, présent à Villedoux depuis 27 ans, conserve un suivi à jour des compatibilités fabricant et fournit systématiquement la documentation technique avec chaque devis.",
+      },
+      {
+        title: 'Démarrer le chauffage après la pose : protocole CB Sols',
+        body: "Le protocole de mise en chauffe après pose est ce qui distingue un chantier durable d'un chantier qui se dégrade au bout de six mois. CB Sols applique le même protocole sur tous ses chantiers depuis 27 ans, et le résultat est sans appel : aucun retour client pour décollement lié à la mise en chauffe.\n\nÀ J+0 (jour de la pose) : chauffage coupé, même s'il fait froid dehors. La colle doit sécher à température stable, idéalement entre 18 et 22°C dans la pièce.\n\nÀ J+7 : montée progressive autorisée, à raison de 5°C par jour maximum sur la consigne du circuit. Si vous visez une eau de circulation à 35°C en régime nominal, commencez à 20°C et augmentez de 5°C chaque matin.\n\nÀ J+14 : régime nominal atteint, le sol peut fonctionner normalement. La colle a achevé sa prise complète, le ragréage en dessous a évacué son humidité résiduelle, le revêtement est stabilisé. Valentin Prévoteau, gérant de CB Sols, se déplace systématiquement pour valider les conditions de mise en chauffe sur les chantiers techniques.",
+      },
+    ],
+    faq: [
+      {
+        q: "Le PVC clipsable est-il compatible avec le chauffage au sol ?",
+        a: "Certains oui, beaucoup non. La règle est simple : lisez la fiche technique du produit avant l'achat. La compatibilité chauffage au sol doit être explicitement mentionnée, souvent avec un pictogramme dédié et le seuil de température maximal en surface (généralement 28°C). Gerflor Senso Lock 30 chauffage en fait partie, tout comme certaines gammes Quick-Step Livyn et Tarkett Starfloor. À l'inverse, les lames PVC clipsables d'entrée de gamme vendues en grande surface ne sont presque jamais validées. En cas de doute, CB Sols vérifie pour vous la compatibilité du lot exact avant commande."
+      },
+      {
+        q: "Quelle température max au sol pour ne pas abîmer un PVC ?",
+        a: "Le seuil officiel est de 28°C en surface du sol fini, imposé par le DTU 65.14 sur le plancher chauffant à eau chaude basse température. Cette limite protège deux choses à la fois : le confort des pieds (au-delà de 28°C, la sensation devient désagréable), et la stabilité du PVC et de ses colles. Au-dessus de ce seuil, les plastifiants du PVC migrent plus vite, le matériau peut marquer sous les charges fixes et les colles vieillissent prématurément. Un bon thermostat avec sonde au sol, calibré sur cette limite, suffit à respecter la règle sans y penser au quotidien."
+      },
+      {
+        q: "Faut-il une sous-couche sous le PVC sur plancher chauffant ?",
+        a: "En pose collée, non : la colle assure le contact direct entre la dalle chauffante et le revêtement, c'est ce qu'on veut pour la transmission thermique. Ajouter une sous-couche dégraderait le rendement et risquerait de dépasser la résistance thermique maximale de 0,15 m²K/W. En pose clipsée validée chauffage au sol, oui : il faut une sous-couche spécifique fine et conductrice (type Quick-Step Heat ou équivalent), jamais une sous-couche standard épaisse. La sous-couche acoustique classique est strictement interdite sur plancher chauffant : elle bloque la chaleur."
+      },
+      {
+        q: "Mon plancher chauffant est électrique, c'est pareil ?",
+        a: "Le principe est le même, mais avec une vigilance accrue sur le seuil de 28°C. Le chauffage électrique monte plus vite en température qu'un système hydraulique, et certaines trames anciennes peuvent localement dépasser cette limite si le thermostat est mal calibré. Vérifiez impérativement que la régulation se fait avec une sonde au sol (pas seulement une sonde d'ambiance) et que la consigne de sécurité ne dépasse pas 28°C surface. Pour le reste, les règles de compatibilité PVC, de pose collée et de protocole de mise en chauffe restent strictement identiques."
+      },
+      {
+        q: "Combien de temps avant de marcher dessus après pose ?",
+        a: "24 heures suffisent pour une circulation piétonne légère après une pose collée standard. Pour la remise en service du chauffage, comptez 72 heures minimum avec le chauffage coupé, puis 7 jours avant la montée progressive. Évitez les charges roulantes lourdes (déménagement, chariots) pendant les 7 premiers jours, le temps que la colle achève sa polymérisation. Les meubles peuvent être repositionnés à 48 heures avec précaution."
+      },
+      {
+        q: "On peut poser sur un sol chauffant déjà carrelé ?",
+        a: "Oui, c'est même une rénovation très courante. Si le carrelage existant est parfaitement solidaire, plan et sans joint creux, on peut poser directement le PVC dessus en pose collée avec une primaire d'accrochage adaptée. Si les joints sont creux ou que la planéité présente des défauts supérieurs à 5 mm sur 2 mètres, un ragréage autolissant fibré spécial chauffage au sol est obligatoire. CB Sols vérifie systématiquement la planéité et l'adhérence du carrelage avant de chiffrer le chantier, et inclut le ragréage au devis si nécessaire."
+      },
+      {
+        q: "Quel est le risque concret si on ne respecte pas les règles ?",
+        a: "Les conséquences sont concrètes et coûteuses. Un PVC posé clipsé sur un plancher chauffant non validé pour cet usage finit par ouvrir aux joints, gondoler en plein été ou se rétracter en hiver. Une pose collée sans respect du protocole de mise en chauffe entraîne des décollements localisés visibles sous forme de cloques. Le dépassement durable des 28°C en surface provoque un marquage permanent du PVC sous les meubles et un jaunissement prématuré. Dans tous ces cas, la garantie fabricant tombe et la rénovation revient à refaire la totalité du sol. Mieux vaut investir dans les bonnes pratiques dès la pose."
+      },
+    ],
+    relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
+    datePublished: '2026-06-03',
+    dateModified: '2026-06-03',
+    howToMeta: {
+      totalTime: 'PT45M',
+    },
+  },
 ]
 
 export function getGuideBySlug(slug: string): Guide | undefined {
