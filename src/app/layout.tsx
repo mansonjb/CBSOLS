@@ -7,6 +7,7 @@ import { Footer } from '@/components/Footer'
 import { MobileCTA } from '@/components/MobileCTA'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { CookieBanner } from '@/components/CookieBanner'
+import { ClarityScript } from '@/components/ClarityScript'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { company } from '@/data/company'
 import { avis } from '@/data/avis'
@@ -206,16 +207,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-0HSR55DW27');
           `}
         </Script>
-        {/* Microsoft Clarity — wyqlw2u4g8 */}
-        <Script id="clarity-init" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "wyqlw2u4g8");
-          `}
-        </Script>
+        {/* Microsoft Clarity — wyqlw2u4g8 (désactivé sur /admin) */}
+        <ClarityScript />
         <Header />
         <main>{children}</main>
         <Footer />
