@@ -80,6 +80,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/sol-pvc-ecole`, lastModified: new Date('2026-06-02'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/sol-pvc-college-lycee`, lastModified: new Date('2026-06-02'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/sol-pvc-creche`, lastModified: new Date('2026-06-02'), changeFrequency: 'monthly', priority: 0.85 },
+    // Long-tail santé / labo
+    { url: `${BASE_URL}/sol-pvc-cabinet-medical`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/sol-pvc-laboratoire-pharmaceutique`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
+    // Locations Sud-Ouest / Vendée insulaire
+    { url: `${BASE_URL}/revetement-sol-arcachon`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-biarritz`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-ile-d-yeu`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
