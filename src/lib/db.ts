@@ -1,4 +1,5 @@
 import { neon } from '@neondatabase/serverless'
+import { geocodeVille } from './geocode'
 
 /**
  * Client Neon serverless — utilisé par les Server Actions et les Server
@@ -93,6 +94,10 @@ export async function ensureSchema() {
   await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS contact_id TEXT REFERENCES contacts(id) ON DELETE SET NULL;`
   await q`CREATE INDEX IF NOT EXISTS leads_contact_id_idx ON leads (contact_id);`
 
+  // Geolocalisation des contacts (pour la carte des chantiers)
+  await q`ALTER TABLE contacts ADD COLUMN IF NOT EXISTS lat REAL;`
+  await q`ALTER TABLE contacts ADD COLUMN IF NOT EXISTS lng REAL;`
+
   _migrated = true
 }
 
@@ -179,7 +184,23 @@ export async function findOrCreateContact(params: {
     INSERT INTO contacts (id, nom, telephone, email, ville, segment)
     VALUES (${contactId}, ${nom}, ${telephone}, ${email}, ${ville}, ${segment})
   `
+  // Geocoding async (non-bloquant)
+  if (ville) {
+    geocodeAndUpdateContact(contactId, ville).catch((e) => console.error('geocode hook error:', e))
+  }
   return contactId
+}
+
+/**
+ * Geocode une ville et UPDATE la ligne contact si on obtient des coords.
+ * Appele aussi en backfill manuel via la page carte.
+ */
+export async function geocodeAndUpdateContact(contactId: string, ville: string): Promise<boolean> {
+  const coords = await geocodeVille(ville)
+  if (!coords) return false
+  const q = sql()
+  await q`UPDATE contacts SET lat = ${coords.lat}, lng = ${coords.lng}, updated_at = NOW() WHERE id = ${contactId}`
+  return true
 }
 
 export type LeadRow = {
@@ -217,4 +238,6 @@ export type ContactRow = {
   segment: string | null
   notes: { date: string; content: string; auteur: string }[]
   tags: string[]
+  lat?: number | null
+  lng?: number | null
 }

@@ -2,7 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
-import { sql, ensureSchema } from '@/lib/db'
+import { sql, ensureSchema, geocodeAndUpdateContact } from '@/lib/db'
 
 const ALLOWED_STATUTS = [
   'nouveau',
@@ -63,6 +63,8 @@ export async function updateLead(formData: FormData): Promise<void> {
   const rows = (await q`SELECT contact_id FROM leads WHERE id = ${id} LIMIT 1`) as unknown as Array<{ contact_id: string | null }>
   const contactId = rows[0]?.contact_id ?? null
   if (contactId) {
+    const prev = (await q`SELECT ville FROM contacts WHERE id = ${contactId} LIMIT 1`) as unknown as Array<{ ville: string | null }>
+    const prevVille = prev[0]?.ville ?? null
     await q`
       UPDATE contacts SET
         nom = COALESCE(${nom}, nom),
@@ -72,6 +74,10 @@ export async function updateLead(formData: FormData): Promise<void> {
         updated_at = NOW()
       WHERE id = ${contactId}
     `
+    if (ville && (prevVille || '').trim().toLowerCase() !== ville.trim().toLowerCase()) {
+      await q`UPDATE contacts SET lat = NULL, lng = NULL WHERE id = ${contactId}`
+      geocodeAndUpdateContact(contactId, ville).catch((e) => console.error('geocode hook error:', e))
+    }
     revalidatePath(`/admin/contacts/${contactId}`)
   }
 

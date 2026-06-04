@@ -2,7 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
-import { sql, ensureSchema } from '@/lib/db'
+import { sql, ensureSchema, geocodeAndUpdateContact } from '@/lib/db'
 
 /**
  * Édite les champs identitaires d'un contact. Propage les changements vers
@@ -23,6 +23,9 @@ export async function updateContact(formData: FormData): Promise<void> {
 
   await ensureSchema()
   const q = sql()
+  // Snapshot ville avant update pour detecter un changement et regeocoder
+  const prev = (await q`SELECT ville FROM contacts WHERE id = ${id} LIMIT 1`) as unknown as Array<{ ville: string | null }>
+  const prevVille = prev[0]?.ville ?? null
   await q`
     UPDATE contacts SET
       nom = COALESCE(${nom}, nom),
@@ -33,6 +36,11 @@ export async function updateContact(formData: FormData): Promise<void> {
       updated_at = NOW()
     WHERE id = ${id}
   `
+  // Regeocoder si la ville a change
+  if (ville && (prevVille || '').trim().toLowerCase() !== ville.trim().toLowerCase()) {
+    await q`UPDATE contacts SET lat = NULL, lng = NULL WHERE id = ${id}`
+    geocodeAndUpdateContact(id, ville).catch((e) => console.error('geocode hook error:', e))
+  }
   // Propagation aux leads liés
   await q`
     UPDATE leads SET
