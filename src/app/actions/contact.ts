@@ -3,7 +3,7 @@
 import nodemailer from 'nodemailer'
 import { headers } from 'next/headers'
 import { company } from '@/data/company'
-import { sql, ensureSchema } from '@/lib/db'
+import { sql, ensureSchema, findOrCreateContact } from '@/lib/db'
 
 export interface ContactState {
   status: 'idle' | 'success' | 'error'
@@ -283,14 +283,23 @@ export async function sendContactForm(
       const id = generateLeadId()
       const segment = inferSegment(projectType)
 
+      // Trouve ou crée un contact lié (regroupement par téléphone/email/nom+ville)
+      const contactId = await findOrCreateContact({
+        nom: name,
+        telephone: phone,
+        email: email || null,
+        ville: city || null,
+        segment,
+      })
+
       await q`
         INSERT INTO leads (
           id, source, nom, telephone, email, ville, type_projet, surface,
-          message, segment, ua, referer, ip_hash
+          message, segment, ua, referer, ip_hash, contact_id
         ) VALUES (
           ${id}, 'site_web', ${name}, ${phone}, ${email || null},
           ${city || null}, ${projectType || null}, ${surface || null},
-          ${message || null}, ${segment}, ${ua}, ${referer}, ${ipHash}
+          ${message || null}, ${segment}, ${ua}, ${referer}, ${ipHash}, ${contactId}
         )
       `
     } catch (dbErr) {

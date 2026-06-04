@@ -18,6 +18,68 @@ function isValidStatut(s: string): s is Statut {
 }
 
 /**
+ * Édite les champs principaux d'un lead. Whitelist stricte des colonnes pour
+ * éviter toute injection via formData. `nom` et `telephone` ne peuvent pas
+ * être nullifiés (NOT NULL en DB), les autres champs oui.
+ * Si le lead est lié à un contact, on synchronise nom/tel/email/ville.
+ */
+export async function updateLead(formData: FormData): Promise<void> {
+  const id = formData.get('id')?.toString().trim() ?? ''
+  if (!id || !id.startsWith('ld_')) return
+
+  const nom = formData.get('nom')?.toString().trim() || null
+  const telephone = formData.get('telephone')?.toString().trim() || null
+  const emailRaw = formData.get('email')?.toString().trim() ?? ''
+  const email = emailRaw.length > 0 ? emailRaw : null
+  const villeRaw = formData.get('ville')?.toString().trim() ?? ''
+  const ville = villeRaw.length > 0 ? villeRaw : null
+  const typeProjetRaw = formData.get('type_projet')?.toString().trim() ?? ''
+  const type_projet = typeProjetRaw.length > 0 ? typeProjetRaw : null
+  const surfaceRaw = formData.get('surface')?.toString().trim() ?? ''
+  const surface = surfaceRaw.length > 0 ? surfaceRaw : null
+  const messageRaw = formData.get('message')?.toString().trim() ?? ''
+  const message = messageRaw.length > 0 ? messageRaw : null
+  const prochaineActionRaw = formData.get('prochaine_action')?.toString().trim() ?? ''
+  const prochaine_action = prochaineActionRaw.length > 0 ? prochaineActionRaw : null
+
+  await ensureSchema()
+  const q = sql()
+  await q`
+    UPDATE leads SET
+      nom = COALESCE(${nom}, nom),
+      telephone = COALESCE(${telephone}, telephone),
+      email = ${email},
+      ville = ${ville},
+      type_projet = ${type_projet},
+      surface = ${surface},
+      message = ${message},
+      prochaine_action = ${prochaine_action},
+      updated_at = NOW()
+    WHERE id = ${id}
+  `
+
+  // Sync contact lié (si le lead a un contact_id)
+  const rows = (await q`SELECT contact_id FROM leads WHERE id = ${id} LIMIT 1`) as unknown as Array<{ contact_id: string | null }>
+  const contactId = rows[0]?.contact_id ?? null
+  if (contactId) {
+    await q`
+      UPDATE contacts SET
+        nom = COALESCE(${nom}, nom),
+        telephone = COALESCE(${telephone}, telephone),
+        email = COALESCE(${email}, email),
+        ville = COALESCE(${ville}, ville),
+        updated_at = NOW()
+      WHERE id = ${contactId}
+    `
+    revalidatePath(`/admin/contacts/${contactId}`)
+  }
+
+  revalidatePath('/admin')
+  revalidatePath('/admin/leads')
+  revalidatePath(`/admin/leads/${id}`)
+}
+
+/**
  * Met à jour le statut d'un lead + bump derniere_interaction.
  * Sécurisé : le middleware /admin protège déjà l'action (cookie HMAC).
  */
