@@ -1,6 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { redirect } from 'next/navigation'
 import { sql, ensureSchema } from '@/lib/db'
 
 /**
@@ -46,6 +47,9 @@ export async function updateContact(formData: FormData): Promise<void> {
   revalidatePath('/admin/contacts')
   revalidatePath(`/admin/contacts/${id}`)
   revalidatePath('/admin/leads')
+
+  // Sortie du mode édition : retour à la vue lecture de la fiche contact
+  redirect(`/admin/contacts/${id}`)
 }
 
 /**

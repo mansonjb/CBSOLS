@@ -1,6 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { redirect } from 'next/navigation'
 import { sql, ensureSchema } from '@/lib/db'
 
 const ALLOWED_STATUTS = [
@@ -77,6 +78,9 @@ export async function updateLead(formData: FormData): Promise<void> {
   revalidatePath('/admin')
   revalidatePath('/admin/leads')
   revalidatePath(`/admin/leads/${id}`)
+
+  // Sortie du mode édition : retour à la vue lecture de la fiche
+  redirect(`/admin/leads/${id}`)
 }
 
 /**
