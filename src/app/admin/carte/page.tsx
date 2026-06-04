@@ -1,13 +1,10 @@
-import dynamicImport from 'next/dynamic'
 import { sql, ensureSchema } from '@/lib/db'
 import { backfillGeocoding } from './actions'
+import { ContactMapClient } from '@/components/ContactMapClient'
 import type { MapContact } from '@/components/ContactMap'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
-
-// Leaflet a besoin de window : SSR off
-const ContactMap = dynamicImport(() => import('@/components/ContactMap'), { ssr: false })
 
 async function getData(): Promise<{ contacts: MapContact[]; pending: number }> {
   await ensureSchema()
@@ -73,7 +70,7 @@ export default async function CartePage() {
           {pending > 0 && ' Cliquez sur "Geocoder maintenant" pour lancer le backfill.'}
         </div>
       ) : (
-        <ContactMap contacts={contacts} />
+        <ContactMapClient contacts={contacts} />
       )}
     </div>
   )
