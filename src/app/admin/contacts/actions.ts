@@ -61,6 +61,27 @@ export async function updateContact(formData: FormData): Promise<void> {
 }
 
 /**
+ * Supprime une fiche contact. Les leads liés conservent leur historique :
+ * leur `contact_id` repasse à NULL via la contrainte ON DELETE SET NULL.
+ * On ne perd aucun lead, on perd juste la consolidation contact.
+ */
+export async function deleteContact(formData: FormData): Promise<void> {
+  const id = formData.get('id')?.toString().trim() ?? ''
+  if (!id || !id.startsWith('ct_')) return
+
+  await ensureSchema()
+  const q = sql()
+  await q`DELETE FROM contacts WHERE id = ${id}`
+
+  revalidatePath('/admin')
+  revalidatePath('/admin/contacts')
+  revalidatePath('/admin/leads')
+
+  // Retour à la liste des contacts (la fiche n'existe plus)
+  redirect('/admin/contacts')
+}
+
+/**
  * Ajoute une note au contact (append au tableau JSONB `notes`).
  */
 export async function addContactNote(formData: FormData): Promise<void> {

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { sql, ensureSchema, type ContactRow, type LeadRow } from '@/lib/db'
 import { LEAD_STATUS_LABEL } from '@/data/crm-fixtures'
 import { updateContact, addContactNote } from '../actions'
+import { DeleteContactButton } from './DeleteContactButton'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
@@ -188,6 +189,21 @@ export default async function ContactDetailPage({
             ))}
           </div>
         )}
+      </section>
+
+      {/* Zone dangereuse : suppression de la fiche contact */}
+      <section style={{ padding: '1.5rem', border: '1px solid #fce4e4', backgroundColor: '#fdf5f5', borderRadius: '10px', marginTop: '2rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+          <div>
+            <div style={{ fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#b71c1c', fontWeight: 700, marginBottom: '0.4rem' }}>
+              Zone dangereuse
+            </div>
+            <p style={{ fontSize: '0.82rem', color: 'var(--dark-2)', margin: 0, lineHeight: 1.6 }}>
+              Supprime la fiche contact. Les demandes de devis liées (leads) restent accessibles dans l&apos;onglet Demandes mais ne sont plus regroupées.
+            </p>
+          </div>
+          <DeleteContactButton id={contact.id} nom={contact.nom} />
+        </div>
       </section>
     </div>
   )
