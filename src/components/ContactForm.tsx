@@ -36,6 +36,18 @@ export function ContactForm() {
   useEffect(() => {
     if (state.status === 'success') {
       formRef.current?.reset()
+      // Push event GTM/GA4 sur soumission formulaire réussie. L'agence
+      // (ou tout outil branché à dataLayer) peut déclencher des balises
+      // sur l'event 'form_submit' avec la cible 'contact'.
+      if (typeof window !== 'undefined') {
+        const w = window as unknown as { dataLayer?: Array<Record<string, unknown>> }
+        w.dataLayer = w.dataLayer || []
+        w.dataLayer.push({
+          event: 'form_submit',
+          form_name: 'contact',
+          form_destination: 'cb-sols-devis',
+        })
+      }
     }
   }, [state.status])
 
