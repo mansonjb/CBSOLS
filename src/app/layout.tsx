@@ -8,6 +8,7 @@ import { MobileCTA } from '@/components/MobileCTA'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { CookieBanner } from '@/components/CookieBanner'
 import { ClarityScript } from '@/components/ClarityScript'
+import { GTMScript } from '@/components/GTMScript'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { company } from '@/data/company'
 import { avis } from '@/data/avis'
@@ -194,6 +195,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body>
+        {/* Google Tag Manager — GTM-T53BRKNL (noscript fallback, désactivé sur /admin via GTMScript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T53BRKNL"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        <GTMScript />
         {/* Google Analytics (gtag.js) — G-0HSR55DW27 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0HSR55DW27"
