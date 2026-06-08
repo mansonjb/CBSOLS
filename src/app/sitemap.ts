@@ -87,6 +87,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/revetement-sol-arcachon`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-biarritz`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-ile-d-yeu`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
+    // Locations Poitou-Charentes, Pays basque
+    { url: `${BASE_URL}/revetement-sol-niort`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-saint-jean-de-luz`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-poitiers`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-angouleme`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
