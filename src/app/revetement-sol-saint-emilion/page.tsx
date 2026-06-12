@@ -47,7 +47,7 @@ const marques = [
   { name: "Tisca Tiara", desc: "Le suisse, c'est le très haut de gamme. On les sort pour les suites de palace et les chambres d'hôtes Relais & Châteaux. Quand le budget suit, le résultat est sans équivalent." },
   { name: "Tarkett iQ Granit Acoustic", desc: "Le PVC professionnel par excellence, avec une isolation acoustique jusqu'à dix-neuf décibels. Notre standard pour les caveaux de dégustation et les salons d'accueil qui demandent du calme." },
   { name: "Forbo", desc: "Quand le projet demande du naturel, on regarde Forbo. Leur Marmoleum est un vrai linoléum à base d'huile de lin. Les Coral sont parfaits pour les entrées œnotouristiques à fort trafic." },
-  { name: "Bolon", desc: "Le suédois du tissé vinyle. Esthétique contemporaine qu'on retrouve dans les chais modernes et les boutiques de vente directe. Vingt ans devant vous sans souci." },
+  { name: "Bolon", desc: "Le suédois du tissé vinyle. Esthétique contemporaine que l'on retrouve dans les chais modernes et les boutiques de vente directe. Compter facilement vingt ans de tenue." },
   { name: "Object Carpet", desc: "Les allemands, pour les bureaux de propriété et les salles du conseil de famille. Design contemporain, finitions parfaites. Quand vous voulez sortir des codes classiques." },
   { name: "Hereke", desc: "Les tapis turcs tissés main, en soie ou en laine vierge fine. On les pose dans les bibliothèques et les salons d'apparat des châteaux historiques. C'est le genre d'objet qui se transmet." },
 ]
