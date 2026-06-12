@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 }
 
 const usages = [
-  { title: "Hôtels particuliers du plateau historique", desc: "Plateau d'Angoulême, remparts, place Saint-Pierre, rue de Beaulieu. Hôtels particuliers XVIIIe et XIXe, salons d'apparat sous plafonds moulurés, bibliothèques et chambres parentales. Moquette laine vierge tissée, tapis sur mesure bordés main, raccords sur parquets anciens validés en amont. Respect du caractère patrimonial du plateau classé." },
-  { title: "Sièges d'imprimeries et industrie BD", desc: "Angoulême est la capitale française de la bande dessinée, avec un tissu d'imprimeries historiques, de maisons d'édition, de studios de création et de musées dédiés. Plateaux open space pour studios, bureaux d'édition, salles de réception pour le FIBD. Sols PVC acoustiques, dalles moquette, finitions design adaptées à cet univers créatif singulier." },
-  { title: "Restaurants gastronomiques et bistronomie", desc: "Centre-ville historique, plateau, halles. Salles à manger, salons privés, espaces de réception. Moquette hôtellerie haute densité avec traitement anti-tache, isolation acoustique, finitions raffinées. Pose nocturne ou jour de fermeture hebdomadaire pour ne pas perdre un service. Coordination avec le chef et son équipe." },
-  { title: "Châteaux et belles demeures de campagne", desc: "Campagne charentaise autour d'Angoulême, châteaux familiaux, maisons fortes restaurées, gentilhommières viticoles cognaçaises. Tapis sur mesure pour salons d'apparat, moquette laine pour chambres parentales, raccords précis sur parquets anciens ou tomettes d'origine. Coordination avec décorateur et conservateur du patrimoine." },
+  { title: "Hôtels particuliers du plateau historique", desc: "Vous avez un hôtel particulier sur le plateau classé. Moquette laine tissée, tapis cousu main, raccords précis sur le parquet ancien. On valide chaque détail avec vous avant de poser. Le caractère patrimonial reste intact." },
+  { title: "Studios BD et maisons d'édition", desc: "Vous installez un studio ou une maison d'édition à Angoulême. PVC acoustique pour les plateaux, dalles moquette dans les bureaux, finitions design pour le FIBD. Le sol respire l'univers créatif." },
+  { title: "Restaurants gastronomiques et bistronomie", desc: "Vous tenez une table en centre-ville ou aux halles. On vient la nuit ou le jour de fermeture, vous ne perdez pas un service. Moquette dense anti-tache et acoustique soignée." },
+  { title: "Châteaux et demeures de campagne", desc: "Vous rénovez un château familial ou une gentilhommière cognaçaise. Tapis sur mesure dans les salons d'apparat, moquette laine dans la chambre parentale, raccords sur tomettes ou parquets d'origine." },
 ]
 
 const exigences = [

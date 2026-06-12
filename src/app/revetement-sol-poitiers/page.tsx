@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 }
 
 const usages = [
-  { title: "Laboratoires de recherche universitaires", desc: "Université de Poitiers, CNRS, laboratoires associés au CHU. Sols PVC homogènes résistance chimique P3, classement Bfl-s1, soudure à chaud des lés pour étanchéité parfaite, remontées en plinthes obligatoires. Conformité aux exigences ATEX et zones contrôlées. Pose en horaires décalés pour ne pas perturber les manipulations." },
-  { title: "Cabinets médicaux secteur CHU", desc: "Plateau de Saint-Éloi, secteur du CHU de Poitiers, cabinets de spécialistes en zone hospitalière. Sols PVC homogènes antibactériens, classement Bfl-s1, résistance aux produits de désinfection chlorés et alcooliques, remontées en plinthes dans les zones humides. Documentation conformité ARS fournie systématiquement." },
-  { title: "Sièges sociaux et plateaux tertiaires", desc: "Pôles tertiaires du centre-ville et de la zone d'activité de Chasseneuil. Dalles moquette acoustique, sols PVC pour open spaces, moquette laine pour bureaux de direction et salles du conseil. Coordination avec services généraux ou facility manager, phasage en horaires décalés possibles." },
-  { title: "Hôtels du Futuroscope et centre", desc: "Hôtels d'affaires du Futuroscope, hôtels boutique du centre historique, hôtels-restaurants gastronomiques. Moquette hôtellerie haute densité avec traitement anti-tache, isolation acoustique pour chambres, sols PVC pour zones humides et restaurants. Pose calée sur basse saison pour ne pas perdre de nuitées." },
+  { title: "Laboratoires de recherche universitaires", desc: "Vous dirigez un labo à l'Université ou au CNRS. On pose un PVC homogène résistant aux produits chimiques. Lés soudés à chaud, plinthes à gorge. On vient en dehors des manipulations." },
+  { title: "Cabinets médicaux secteur CHU", desc: "Vous installez un cabinet près du CHU. PVC antibactérien classé Bfl-s1, qui tient l'alcool et le chlore. Plinthes remontées dans les zones humides. On vous fournit la doc ARS d'office." },
+  { title: "Sièges sociaux et plateaux tertiaires", desc: "Vous gérez un siège à Chasseneuil ou en centre-ville. Dalles moquette acoustiques, PVC dans les open spaces, moquette laine pour la direction. On phase avec votre facility manager." },
+  { title: "Hôtels du Futuroscope et centre", desc: "Vous tenez un hôtel d'affaires ou un boutique-hôtel. On vient en basse saison, vous gardez vos nuitées. Moquette dense anti-tache dans les chambres, PVC côté restaurant et zones humides." },
 ]
 
 const exigences = [

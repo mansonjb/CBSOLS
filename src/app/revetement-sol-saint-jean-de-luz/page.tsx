@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 }
 
 const usages = [
-  { title: "Villas familiales sur l'Océan", desc: "Sainte-Barbe, Acotz, Erromardie, Lafitenia. Villas de famille à vue océan, maisons d'architectes contemporaines, demeures de villégiature transmises de génération en génération. Moquette laine vierge tissée pour les chambres parentales, tapis sur mesure pour les salons donnant sur le large, raccords précis sur parquets anciens ou tomettes basques rouges." },
-  { title: "Maisons basques à colombages rouges", desc: "Centre historique luzien, Ciboure, Guéthary, Saint-Pée-sur-Nivelle. L'etxe basque traditionnelle, avec ses colombages rouges sang-de-bœuf et sa façade blanche, garde une âme très particulière : parquets de châtaignier d'origine, escaliers étroits, pièces aux proportions intimes. Nos poses respectent le bâti existant et la tradition." },
-  { title: "Hôtels boutique de la baie", desc: "Hôtels indépendants du centre, hôtels Relais & Châteaux de la côte, maisons d'hôtes de caractère. Moquette hôtellerie haute densité avec traitement anti-tache, isolation acoustique pour les chambres donnant sur la rue, tapis sur mesure pour les halls et salons. Pose calée sur la basse saison atlantique pour ne pas perdre un nuitée." },
-  { title: "Restaurants gastronomiques de la baie", desc: "Centre historique luzien, port de pêche, front de mer, Ciboure-Socoa. Salles à manger avec vue, salons privés, espaces de réception. Moquette laine sur thibaude feutre pour l'acoustique, traitement anti-tache, finitions raffinées qui s'accordent à la table étoilée. Pose nocturne ou jour de fermeture hebdomadaire." },
+  { title: "Villas familiales sur l'Océan", desc: "Vous avez une villa à Sainte-Barbe ou Erromardie, vue large. On pose une moquette laine dans la chambre parentale et un tapis sur mesure dans le salon. On raccorde proprement sur le parquet ancien ou les tomettes rouges." },
+  { title: "Maisons basques à colombages rouges", desc: "Vous habitez une etxe traditionnelle, parquet châtaignier d'origine. Les pièces sont intimes, les escaliers étroits. On pose dans le respect du bâti, sans rien dénaturer." },
+  { title: "Hôtels boutique de la baie", desc: "Vous tenez un Relais & Châteaux ou une maison d'hôtes. On vient en basse saison, vous gardez vos nuitées. Moquette dense traitée anti-tache, acoustique soignée pour les chambres côté rue." },
+  { title: "Restaurants gastronomiques de la baie", desc: "Vous avez une table avec vue port ou front de mer. On vient la nuit ou le jour de fermeture. Moquette laine sur thibaude feutre pour l'acoustique, finitions à la hauteur d'une étoile." },
 ]
 
 const exigences = [

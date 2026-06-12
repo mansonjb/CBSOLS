@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 }
 
 const usages = [
-  { title: "Hôtels particuliers du Triangle d'Or", desc: "Chartrons, Saint-Pierre, Cours de l'Intendance, Place des Grands Hommes. Salons d'apparat, bibliothèques, chambres parentales et bureaux privés. Moquette laine vierge tissée, tapis sur mesure bordés main, raccords aux parquets de chêne d'origine validés en amont. Coordination avec l'architecte d'intérieur ou le décorateur de famille quand il en existe un." },
-  { title: "Échoppes bordelaises rénovées", desc: "L'échoppe simple ou double, en pierre de Bordeaux, garde une âme très particulière : parquets anciens souvent fragiles, escaliers étroits, contraintes ABF en centre-ville. Notre intervention respecte le bâti existant et propose des solutions de moquette ou de PVC réversibles, sans agression du support, pour préserver la valeur patrimoniale du bien." },
-  { title: "Restaurants gastronomiques et tables étoilées", desc: "Cours de l'Intendance, place du Parlement, Saint-Pierre, allées de Tourny. Salles à manger, salons privés, espaces de réception. Moquette hôtellerie haute densité, traitement anti-tache compatible service intense, isolation acoustique pour préserver la conversation à table. Pose nocturne pour ne pas perdre un service." },
-  { title: "Cabinets d'affaires et professions libérales CBD", desc: "Quartier Mériadeck, cours du Trente Juillet, immeubles tertiaires du Pey-Berland. Salles de réunion, bureaux de direction, espaces d'accueil discrets. Sol PVC acoustique pour les open spaces, moquette laine pour les bureaux de direction, finitions soignées qui posent le ton dès l'entrée du visiteur." },
+  { title: "Hôtels particuliers du Triangle d'Or", desc: "Vous avez un hôtel particulier aux Chartrons ou cours de l'Intendance. On pose une moquette laine ou un tapis cousu main dans vos salons. On raccorde proprement sur le parquet chêne d'origine. Votre décorateur garde la main du début à la fin." },
+  { title: "Échoppes bordelaises rénovées", desc: "Vous rénovez une échoppe en pierre de Bordeaux. Les parquets sont fragiles, les ABF regardent tout. On propose des solutions réversibles, sans clou ni colle agressive. Vous gardez la valeur patrimoniale du bien." },
+  { title: "Restaurants gastronomiques et tables étoilées", desc: "Vous tenez une table étoilée en centre-ville. On vient poser de nuit, vous ne perdez pas un service. Moquette dense traitée anti-tache, acoustique soignée pour la conversation à table." },
+  { title: "Cabinets d'affaires et professions libérales", desc: "Vous recevez vos clients à Mériadeck ou Pey-Berland. Un sol soigné pose le ton dès l'entrée. PVC acoustique dans les open spaces, moquette laine pour les bureaux de direction." },
 ]
 
 const exigences = [

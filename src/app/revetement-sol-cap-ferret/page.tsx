@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 }
 
 const usages = [
-  { title: "Villas familiales pieds dans le sable", desc: "Les Quatre-Vingts-Quarante-Quatre Hectares, la pointe, Le Mimbeau. Salons ouverts sur le Bassin, chambres parentales, suites d'amis, espaces enfants. Moquette laine ou polyamide haut de gamme, sols PVC effet bois résistants au sable, tapis sur mesure dans les pièces de vie. Pose calée hors saison estivale pour respecter la vie de famille." },
-  { title: "Cabanes tchanquées et maisons ostréicoles rénovées", desc: "Au village du Cap Ferret, à L'Herbe, au Canon, à Piraillan. Le bâti traditionnel ostréicole, parfois centenaire, demande un traitement particulier : planchers bois travaillés par le sel, humidité ambiante saline, charpentes apparentes. Solutions de revêtement réversibles, respectueuses du caractère ostréicole du bien." },
-  { title: "Résidences secondaires haut de gamme", desc: "Villas d'architecte, propriétés patrimoniales familiales transmises de génération en génération, programmes neufs haut de gamme. Tapis sur mesure, moquette laine vierge dans les chambres parentales, sol PVC durable dans les zones humides. Coordination avec le décorateur de famille ou le designer parisien souvent associé au projet." },
-  { title: "Hôtels boutiques et chambres d'hôtes face Bassin", desc: "L'hôtellerie boutique du Bassin se développe avec exigence. Suites avec vue, salons de réception, espaces spa et bien-être. Revêtements ignifugés conformes ERP, esthétique douce coordonnée à la palette atlantique du lieu, durabilité testée face au sable et à l'humidité saline." },
+  { title: "Villas familiales pieds dans le sable", desc: "Vous passez l'été en famille face au Bassin. Le sable rentre, on l'assume. PVC effet bois pour les pièces de vie, moquette laine ou tapis sur mesure côté chambres. On pose hors juillet-août pour ne pas couper vos vacances." },
+  { title: "Cabanes ostréicoles rénovées", desc: "Vous avez racheté une maison ostréicole à L'Herbe ou au Canon. Le plancher travaille avec le sel et l'humidité. On choisit une pose réversible qui ne brutalise rien. Le caractère du bâti reste intact." },
+  { title: "Résidences secondaires haut de gamme", desc: "Votre maison de famille a un designer attitré, souvent à Paris. On échange par photos et échantillons. Moquette laine dans les chambres, PVC durable côté zones humides, tapis dans les pièces de vie." },
+  { title: "Hôtels boutiques face Bassin", desc: "Vous tenez un petit hôtel ou des chambres d'hôtes avec vue. Tout doit être conforme ERP et tenir face au sel. On choisit des revêtements ignifugés, dans une palette douce qui colle au lieu." },
 ]
 
 const exigences = [

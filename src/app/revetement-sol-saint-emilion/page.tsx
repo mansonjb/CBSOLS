@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 }
 
 const usages = [
-  { title: "Caveaux de réception et de dégustation", desc: "Les châteaux viticoles classés grands crus accueillent une clientèle internationale exigeante : courtiers, journalistes spécialisés, clients privés, journalistes œnotouristiques. Le caveau de dégustation est leur première impression. Moquette laine acoustique pour absorber les conversations, sol PVC effet pierre pour les zones de circulation, tapis sur mesure dans les salons d'accueil." },
-  { title: "Salles à manger de domaine et tables d'hôtes", desc: "Les déjeuners de propriété, les dîners de gala et les tables d'hôtes œnotouristiques sont au cœur de l'expérience grand cru. Moquette laine sur thibaude feutre pour l'acoustique, tapis sur mesure sous la table d'apparat, finitions coordonnées aux boiseries du château. Pose calée en intersaison pour ne pas perturber le calendrier viticole." },
-  { title: "Suites d'hôtes et chambres en château viticole", desc: "L'œnotourisme premium se développe avec exigence. Suites Relais & Châteaux, chambres d'hôtes haut de gamme dans les propriétés familiales, gîtes de vendanges premium. Moquette laine vierge pour les chambres, sol PVC effet bois pour les salles de bains, tapis sur mesure dans les salons privatifs. Finitions soignées qui posent immédiatement le ton." },
-  { title: "Bureaux de propriété et boutiques de vente directe", desc: "Le bureau du propriétaire, la salle de réunion du conseil de famille, la boutique de vente directe au domaine. Sols PVC acoustiques pour les espaces de travail, moquette dalles pour les zones tertiaires, finitions coordonnées au mobilier souvent ancien. Coordination avec l'architecte d'intérieur du domaine quand il en existe un." },
+  { title: "Caveaux de réception et de dégustation", desc: "Votre caveau est la première impression que vous donnez à un courtier ou un client privé. Moquette laine pour absorber les conversations. PVC effet pierre dans les circulations. Tapis sur mesure dans le salon d'accueil." },
+  { title: "Salles à manger de domaine", desc: "Vous recevez à la table de la propriété. On pose une moquette laine sur thibaude feutre pour l'acoustique. Un tapis sur mesure sous la table d'apparat. On vient en intersaison, jamais pendant les vendanges." },
+  { title: "Suites d'hôtes en château viticole", desc: "Vous accueillez vos visiteurs en chambres d'hôtes premium. Moquette laine dans les chambres, PVC effet bois côté salle de bains, tapis sur mesure dans le salon privatif. Le ton se pose dès qu'on ouvre la porte." },
+  { title: "Bureaux et boutiques de vente directe", desc: "Vous tenez un bureau de propriétaire et une boutique au domaine. PVC acoustique pour travailler tranquille, dalles moquette ailleurs. On accorde la palette au mobilier ancien que vous avez déjà." },
 ]
 
 const exigences = [

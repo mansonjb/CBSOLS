@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 }
 
 const usages = [
-  { title: "Hôtels particuliers du centre historique", desc: "Donjon, Notre-Dame, place de la Brèche, rue Victor-Hugo. Maisons bourgeoises niortaises, salons d'apparat sous plafonds moulurés, bibliothèques et chambres parentales. Moquette laine vierge tissée, tapis sur mesure bordés main, raccords sur parquets anciens validés en amont avec le propriétaire ou l'architecte d'intérieur. Respect du caractère patrimonial sans surcharger." },
-  { title: "Sièges sociaux et grands plateaux tertiaires", desc: "Niort est la capitale française des grandes mutuelles d'assurance et concentre un parc tertiaire considérable. Sols PVC acoustiques pour open spaces, dalles moquette pour bureaux de direction, salles du conseil habillées en moquette laine. Coordination avec les services généraux et phasage en horaires décalés pour ne pas gêner l'activité." },
-  { title: "Restaurants des Halles et tables du centre", desc: "Quartier des Halles classées, place du Temple, rue Saint-Jean. Salles à manger, salons privés, espaces de réception. Moquette hôtellerie haute densité, traitement anti-tache, isolation acoustique pour préserver la conversation. Pose nocturne ou jour de fermeture pour ne pas perdre un service. Coordination avec le restaurateur et son équipe." },
-  { title: "EHPAD et résidences seniors médicalisées", desc: "Sol PVC homogène classement Bfl-s1 pour les couloirs et salles communes, moquette laine traitée pour les chambres d'invités et salons familles, sols antidérapants R10 dans les salles de bains. Respect des normes ERP type J, fiches techniques et PV feu pour la commission de sécurité. Intervention sans perturber la vie des résidents." },
+  { title: "Hôtels particuliers du centre historique", desc: "Vous avez une maison bourgeoise vers Notre-Dame ou la Brèche. Moquette laine tissée, tapis cousu main, raccords sur le parquet ancien validés avec vous. On respecte le caractère du lieu sans en rajouter." },
+  { title: "Sièges sociaux et plateaux tertiaires", desc: "Vous gérez un grand plateau de bureaux à Niort. PVC acoustique dans les open spaces, dalles moquette côté direction, moquette laine en salle du conseil. On phase avec vos services généraux." },
+  { title: "Restaurants des Halles et du centre", desc: "Vous tenez une table vers les Halles ou place du Temple. On vient la nuit ou le jour de fermeture, vous ne perdez pas un service. Moquette dense anti-tache et acoustique soignée pour la conversation." },
+  { title: "EHPAD et résidences seniors", desc: "Vous gérez un EHPAD ou une résidence médicalisée. PVC homogène Bfl-s1 dans les couloirs, moquette laine en chambres d'invités, antidérapant R10 dans les salles de bains. Doc ERP et PV feu fournis pour la commission." },
 ]
 
 const exigences = [
