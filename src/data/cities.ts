@@ -21,7 +21,7 @@ export const cities: City[] = [
     localContext:
       "La Rochelle concentre une forte demande tertiaire (bureaux, cabinets, professions libérales) en centre-ville et quartier des Minimes, doublée d'un parc résidentiel ancien (immeubles XIXe et programmes 1960-80) en cours de rénovation continue. Le climat océanique modéré et l'humidité ambiante imposent une vérification systématique du support avant pose, notamment en rez-de-chaussée sur les anciennes constructions sans polyane.",
     localFootnote:
-      "Sur les immeubles ouest centre-ville (zone classée), les contraintes ABF s'appliquent aux planchers visibles depuis l'espace public — à anticiper en CCTP.",
+      "Sur les immeubles ouest centre-ville (zone classée), les contraintes ABF s'appliquent aux planchers visibles depuis l'espace public. À anticiper en CCTP.",
   },
   {
     slug: 'aytre',
@@ -45,7 +45,7 @@ export const cities: City[] = [
     localContext:
       "Châtelaillon-Plage est une station balnéaire familiale au bâti mixte : villas balnéaires fin XIXe et Art déco du front de mer, lotissements des années 1960-80, copropriétés saisonnières et programmes neufs récents en arrière-front. Le contact direct avec la mer impose une attention particulière à la salinité atmosphérique et à l'humidité hivernale dans les rez-de-chaussée non isolés.",
     localFootnote:
-      "Plusieurs villas Belle Époque du front de mer relèvent du périmètre des monuments inscrits — sols visibles à coordonner avec l'ABF.",
+      "Plusieurs villas Belle Époque du front de mer relèvent du périmètre des monuments inscrits. Sols visibles à coordonner avec l'ABF.",
   },
   {
     slug: 'angoulins',
@@ -57,7 +57,7 @@ export const cities: City[] = [
     localContext:
       "Angoulins-sur-Mer présente un tissu essentiellement résidentiel : pavillons des années 1970-90, maisons charentaises traditionnelles en pierre et enduit chaux, lotissements pavillonnaires récents. La proximité immédiate du littoral et la nappe phréatique haute exposent les dalles béton de plain-pied à des remontées capillaires régulières, notamment sur les constructions antérieures aux normes RT.",
     localFootnote:
-      "Anticiper la présence d'anciens carrelages collés au bitume sur les pavillons des années 1970 — diagnostic amiante préalable obligatoire.",
+      "Anticiper la présence d'anciens carrelages collés au bitume sur les pavillons des années 1970. Diagnostic amiante préalable obligatoire.",
   },
   {
     slug: 'nieul-sur-mer',
@@ -81,7 +81,7 @@ export const cities: City[] = [
     localContext:
       "L'Houmeau est une commune résidentielle adossée au littoral nord rochelais, au bâti pavillonnaire dominé par les constructions des années 1970-2000 et quelques programmes récents en lotissement. La proximité immédiate de la côte et de l'anse de Pampin expose les rez-de-chaussée à l'humidité hivernale, particulièrement sur les maisons sans vide sanitaire des premières opérations.",
     localFootnote:
-      "Plusieurs lotissements de la commune ont des dalles béton de faible épaisseur — vérifier la planéité avant pose de stratifié ou LVT clipsable.",
+      "Plusieurs lotissements de la commune ont des dalles béton de faible épaisseur. Vérifier la planéité avant pose de stratifié ou LVT clipsable.",
   },
   {
     slug: 'lagord',
@@ -93,7 +93,7 @@ export const cities: City[] = [
     localContext:
       "Lagord est l'une des communes les plus dynamiques de l'agglomération avec un fort développement résidentiel récent : nombreux programmes collectifs et lots libres livrés depuis 2010, en complément d'un parc pavillonnaire des années 1970-2000. Présence également d'équipements tertiaires (clinique, ZAC Beauregard) et d'un petit tissu commercial le long de la D105.",
     localFootnote:
-      "Les programmes neufs récents sont en chape liquide ciment ou anhydrite — délai de séchage à respecter (1 mm/jour pour l'anhydrite) avant pose collée.",
+      "Les programmes neufs récents sont en chape liquide ciment ou anhydrite. Délai de séchage à respecter (1 mm/jour pour l'anhydrite) avant pose collée.",
   },
   {
     slug: 'perigny',
@@ -117,7 +117,7 @@ export const cities: City[] = [
     localContext:
       "Puilboreau combine la grande zone commerciale Beaulieu (plus de 100 enseignes), un tissu tertiaire en croissance et un parc résidentiel qui s'étend rapidement avec de nombreux programmes neufs collectifs et individuels. La commune voit beaucoup de pose en première main sur chape liquide récente, et de remplacement de sols PVC en surfaces commerciales fréquentées.",
     localFootnote:
-      "Sur la zone Beaulieu, les renouvellements de bail imposent souvent des poses en horaires décalés — colle à séchage rapide à privilégier.",
+      "Sur la zone Beaulieu, les renouvellements de bail imposent souvent des poses en horaires décalés. Colle à séchage rapide à privilégier.",
   },
   {
     slug: 'saint-xandre',
@@ -129,7 +129,7 @@ export const cities: City[] = [
     localContext:
       "Saint-Xandre est une commune résidentielle péri-urbaine au bâti dominé par les pavillons des années 1970-2000 et quelques lotissements neufs récents. Le centre-bourg conserve quelques maisons charentaises en pierre, enduit chaux et tomettes d'origine. Faible présence tertiaire, demande tournée vers la rénovation pavillonnaire et la pose en programmes neufs.",
     localFootnote:
-      "Plusieurs maisons du centre-bourg conservent des tomettes anciennes ou des planchers bois — privilégier la dépose conservatoire si rénovation patrimoniale.",
+      "Plusieurs maisons du centre-bourg conservent des tomettes anciennes ou des planchers bois. Privilégier la dépose conservatoire si rénovation patrimoniale.",
   },
   {
     slug: 'villedoux',
@@ -141,7 +141,7 @@ export const cities: City[] = [
     localContext:
       "Villedoux est une commune rurale en bordure de marais, au tissu mixte agricole et pavillonnaire. Le bâti combine fermes et longères charentaises traditionnelles, pavillons des années 1980-2000 et quelques opérations neuves récentes. La proximité du marais et la nappe haute exigent une vérification systématique de l'humidité des supports en rez-de-chaussée.",
     localFootnote:
-      "En bordure de marais, beaucoup de dalles anciennes sans rupture de capillarité — barrière anti-humidité quasi systématique avant pose souple.",
+      "En bordure de marais, beaucoup de dalles anciennes sans rupture de capillarité. Barrière anti-humidité quasi systématique avant pose souple.",
   },
   // Île de Ré
   {
@@ -226,7 +226,7 @@ export const cities: City[] = [
     localContext:
       "Sainte-Marie-de-Ré est l'une des communes rétaises les plus peuplées à l'année, avec un tissu résidentiel actif combinant maisons rétaises anciennes du bourg et de La Noue, lotissements récents et programmes neufs. Bâti mixte avec une part significative de constructions des années 1980-2010, et une demande tirée par les résidences principales en plus du saisonnier.",
     localFootnote:
-      "Plusieurs zones de la commune sont sous AVAP — toute pose visible côté rue doit être validée en amont par la mairie.",
+      "Plusieurs zones de la commune sont sous AVAP. Toute pose visible côté rue doit être validée en amont par la mairie.",
   },
   {
     slug: 'loix',
@@ -250,7 +250,7 @@ export const cities: City[] = [
     localContext:
       "Les Portes-en-Ré ferme la pointe nord-ouest de l'île, avec une très forte proportion de résidences secondaires huppées dans la pinède et autour du Fier d'Ars. Bâti rétais traditionnel au village complété par des villas contemporaines discrètes dans les bois. Exposition directe aux vents d'ouest et à la salinité, faible présence à l'année.",
     localFootnote:
-      "Chantiers majoritairement saisonniers entre octobre et avril — logistique livraison à anticiper, peu de stockage local possible.",
+      "Chantiers majoritairement saisonniers entre octobre et avril. Logistique livraison à anticiper, peu de stockage local possible.",
   },
   // Charente-Maritime
   {
@@ -444,7 +444,7 @@ export const cities: City[] = [
     localContext:
       "Salles-sur-Mer est une commune péri-urbaine au sud de La Rochelle, au tissu pavillonnaire dominant des années 1970-2010 et plusieurs lotissements récents. Bourg ancien préservé avec maisons charentaises en pierre et chaux, équipements scolaires structurants. Demande locale résidentielle tirée par la rénovation pavillonnaire et les programmes neufs en accession.",
     localFootnote:
-      "Lotissements récents avec chape liquide anhydrite — ponçage et primaire d'accrochage obligatoires avant tout sol collé.",
+      "Lotissements récents avec chape liquide anhydrite. Ponçage et primaire d'accrochage obligatoires avant tout sol collé.",
   },
   // Île d'Oléron
   {
@@ -469,7 +469,7 @@ export const cities: City[] = [
     localContext:
       "Saint-Georges-d'Oléron couvre une large partie centre-nord de l'île avec plusieurs hameaux (Boyardville, Sauzelle, La Menounière). Bâti oléronais traditionnel en chaux blanche dans les bourgs, résidences secondaires dans les pinèdes et zones de camping importantes. Forte saisonnalité, exposition continue à l'air marin sur la quasi-totalité du territoire.",
     localFootnote:
-      "Boyardville et la côte est : projets en zone Natura 2000 et loi Littoral — anticiper les délais d'instruction des autorisations.",
+      "Boyardville et la côte est : projets en zone Natura 2000 et loi Littoral. Anticiper les délais d'instruction des autorisations.",
   },
   {
     slug: 'dolus-doleron',
@@ -481,7 +481,7 @@ export const cities: City[] = [
     localContext:
       "Dolus-d'Oléron, au centre de l'île, combine un bourg ancien aux maisons oléronaises et une vaste façade littorale ouest (La Rémigeasse, La Perroche) très prisée pour les résidences secondaires en pinède. Bâti mixte ancien et constructions des années 1970-2000, fort taux de saisonnalité et demande tirée par la remise à neuf des locatifs touristiques.",
     localFootnote:
-      "Pinèdes littorales : nombreuses maisons sur vide sanitaire ventilé — vérifier l'état du plancher bois avant pose de stratifié.",
+      "Pinèdes littorales : nombreuses maisons sur vide sanitaire ventilé. Vérifier l'état du plancher bois avant pose de stratifié.",
   },
   {
     slug: 'le-grand-village-plage',
@@ -602,7 +602,7 @@ export const cities: City[] = [
     localContext:
       "Cognac est la capitale mondiale de l'eau-de-vie du même nom, avec un centre-ville médiéval en pierre de taille, des chais et négoces historiques (Hennessy, Martell, Rémy Martin) le long de la Charente, et un tissu pavillonnaire en périphérie. Climat plus continental qu'en zone côtière, faible humidité atmosphérique, présence forte du tissu viti-vinicole et tertiaire associé.",
     localFootnote:
-      "Chais et lieux d'accueil œnotourisme : sols soumis à vapeurs éthyliques permanentes — préférer PVC compact ou résine plutôt que stratifié.",
+      "Chais et lieux d'accueil œnotourisme : sols soumis à vapeurs éthyliques permanentes. Préférer PVC compact ou résine plutôt que stratifié.",
   },
 ]
 

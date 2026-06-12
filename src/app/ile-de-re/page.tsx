@@ -62,7 +62,7 @@ export default function IleDeRePage() {
             </h1>
 
             <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '640px', lineHeight: 1.75, marginBottom: '2.5rem' }}>
-              CB Sols intervient sur toute l'Île de Ré, 1re île touristique de la côte Atlantique, reliée à La Rochelle par le viaduc depuis 1988. Moquette hôtelière, sol PVC cuisine professionnelle, tapis sur mesure pour campings et résidences de tourisme : nous maîtrisons les contraintes spécifiques de l'île.
+              CB Sols intervient sur toute l'Île de Ré, reliée à La Rochelle par le viaduc depuis 1988. Moquette hôtelière, sol PVC pour cuisine professionnelle, tapis sur mesure pour campings et résidences de tourisme. Nous connaissons les contraintes de l'île et savons y travailler proprement.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -84,10 +84,10 @@ export default function IleDeRePage() {
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {[
-                  { title: 'Environnement marin exigeant', desc: "L'air iodé et l'hygrométrie élevée de l'Île de Ré imposent des produits certifiés résistants à l'humidité. CB Sols sélectionne des colles, primers et revêtements testés pour le climat atlantique insulaire." },
-                  { title: 'Saisonnalité serrée', desc: "Les hôtels et campings de l'île doivent être prêts avant Pâques. CB Sols planifie les interventions entre octobre et mars pour garantir la livraison avant l'ouverture de la haute saison." },
-                  { title: 'Logistique viaduc optimisée', desc: "Depuis Villedoux, CB Sols est à 20 minutes du viaduc. Nos équipes interviennent sans surcoût insulaire sur tout le territoire de la Communauté de communes de l'Île de Ré." },
-                  { title: 'Établissements haut de gamme', desc: "L'Île de Ré concentre des hôtels de charme, des campings 5 étoiles et des résidences de tourisme premium. CB Sols maîtrise les exigences esthétiques et fonctionnelles de ces établissements." },
+                  { title: 'Air marin et humidité', desc: "L'air iodé et l'humidité ambiante de l'île demandent des produits qui tiennent dans la durée. Nous choisissons colles, primaires et revêtements éprouvés sur le climat atlantique. Le sol tient quinze ans sans bouger." },
+                  { title: 'Saison touristique courte', desc: "Hôtels et campings doivent ouvrir à Pâques sans retard. Nous planifions les interventions d'octobre à mars, vous récupérez vos lieux à temps. Pas de chantier en pleine saison." },
+                  { title: 'À vingt minutes du pont', desc: "Depuis Villedoux, le viaduc est à vingt minutes. Nous intervenons sur toute la Communauté de communes sans surcoût insulaire. Vous appelez, nous venons mesurer dans la semaine." },
+                  { title: 'Hôtels de charme et résidences', desc: "L'île concentre des hôtels de caractère et des résidences haut de gamme. Nous connaissons leurs exigences de finition et leurs contraintes d'exploitation. Le rendu est soigné, l'usage tient." },
                 ].map((item) => (
                   <div key={item.title} style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
                     <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.4rem' }}>{item.title}</div>

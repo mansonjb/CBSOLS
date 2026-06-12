@@ -16,17 +16,17 @@ export const metadata: Metadata = {
 }
 
 const usages = [
-  { title: "Appartements premium", desc: "Carré d'Or, Monte-Carlo, Larvotto, Fontvieille, Tour Odéon, One Monte-Carlo. Salons d'apparat, chambres parentales, dressing, bibliothèque. Moquette laine vierge, tapis sur mesure, raccords motif validés en amont. Coordination avec l'architecte d'intérieur quand il existe." },
-  { title: "Suites de palace et hôtels prestige", desc: "Restauration de moquette historique, refit de suites premium, tapis d'apparat. Hôtel de Paris, Métropole, Hermitage, Fairmont Monte Carlo. Travail en site occupé, plages horaires négociées avec la direction technique, sans gêne pour la clientèle." },
-  { title: "Yachts du Port Hercule et Fontvieille", desc: "Refit complet ou ponctuel : salon, cabine propriétaire, coursives. Coordination avec le capitaine, l'architecte naval et le chantier. Laine traitée ignifuge, polypropylène premium pour les unités exposées, tapis sur mesure assortis." },
-  { title: "Bureaux d'affaires et family offices", desc: "Revêtement de sol discrétion premium, finitions feutrées, isolation acoustique. Salles de réunion, bureaux de direction, espaces d'accueil confidentiels. Pose en horaires décalés pour ne pas interrompre l'activité." },
+  { title: "Appartements en Principauté", desc: "Vous avez un appartement Carré d'Or, à Monte-Carlo ou à la Tour Odéon. On pose une moquette laine vierge ou un tapis sur mesure dans vos salons et chambres. Raccords motif validés en amont, calage millimétré sur les boiseries. Votre architecte d'intérieur reste l'interlocuteur principal." },
+  { title: "Suites de palace", desc: "Vous tenez une suite à l'Hôtel de Paris, à l'Hermitage ou au Métropole. On intervient en site occupé, par plages horaires négociées avec votre direction technique. Aucune gêne pour la clientèle, tout est nettoyé à chaque fin de journée." },
+  { title: "Yachts du Port Hercule", desc: "Vous avez un refit prévu sur votre yacht. On pose dans le salon, la cabine propriétaire et les coursives. Laine traitée ignifuge, polypropylène premium pour les zones exposées. On se cale avec le capitaine et l'architecte naval." },
+  { title: "Bureaux et family offices", desc: "Vous recevez des clients en bureau confidentiel. Le sol pose le ton dès l'entrée. Finition feutrée, isolation acoustique soignée. Pose en horaires décalés, votre activité ne s'arrête pas." },
 ]
 
 const exigences = [
   { title: "Accès et logistique", desc: "Livraison camion réglementée en Principauté, créneaux horaires précis, parkings restreints, ascenseurs de service à réserver. Notre équipe anticipe et coordonne avec la conciergerie de l'immeuble, le syndic ou la direction technique de l'hôtel. Tous les rouleaux arrivent prêts à poser." },
-  { title: "Discrétion totale", desc: "NDA fréquemment demandé, équipe formée à la confidentialité, pas de communication publique sur les projets sans autorisation explicite du client. Aucune photo diffusée, aucun nom communiqué. Cette exigence est la règle par défaut depuis 27 ans, pas une option à cocher." },
-  { title: "Coordination corps de métiers", desc: "Architectes d'intérieur, ébénistes, selliers, peintres, électriciens, domoticiens. Notre intervention s'inscrit dans un planning de chantier global, sans retard de notre fait. Nous calons notre passage en avant-dernier rang pour éviter qu'un autre corps de métier n'abîme la moquette neuve." },
-  { title: "Finitions millimétrées", desc: "À Monaco, le détail prime. Calepinage précis, raccords motif validés en amont, profilés laiton brossé ou bronze patiné Romus, plinthes intégrées, soudure à chaud des joints. Aucun profilé alu standard, jamais. Les seuils suivent les essences boiseries de la pièce." },
+  { title: "Discrétion totale", desc: "On signe le NDA si vous le demandez. Aucune photo diffusée, aucun nom évoqué. C'est la règle par défaut depuis vingt-sept ans, pas une option à cocher. Votre équipe et la nôtre travaillent en confiance." },
+  { title: "Coordination avec les autres corps de métier", desc: "Sur un chantier de cette tenue, vous avez déjà l'architecte d'intérieur, l'ébéniste, le sellier. Nous, on s'intègre au planning sans retard. On passe en avant-dernier rang pour éviter qu'un autre corps de métier n'abîme la moquette neuve." },
+  { title: "Finitions millimétrées", desc: "À Monaco, le détail compte. Calepinage précis, raccords motif validés en amont, profilés laiton brossé ou bronze patiné Romus, joints soudés à chaud. Pas de profilé alu standard, jamais. Les seuils s'accordent aux boiseries de la pièce." },
 ]
 
 const materiaux = [
@@ -34,7 +34,7 @@ const materiaux = [
   { name: "Wilton tissé", desc: "Qualité hôtellerie de luxe, tissage dense, durée de vie 15 à 20 ans en usage privé soigné. Toucher ferme, vieillissement noble. Disponible en uni, chiné ou motif géométrique discret. Idéal pour les chambres parentales et les bibliothèques." },
   { name: "Tapis Aubusson et Savonnerie reconstitués", desc: "Pour les intérieurs néo-classiques et les hôtels patrimoniaux. Reproduction de motifs historiques en laine vierge, bordure cousue main, dimensions sur mesure. Délai 10 à 16 semaines selon complexité du motif." },
   { name: "Moquettes soie et laine vierge", desc: "Pour les salons d'apparat. Toucher exceptionnel, brillance subtile, traitement anti-tache compatible service ménage. À réserver aux pièces de représentation à trafic modéré." },
-  { name: "Laine ignifugée EGE Highline et Hospitality", desc: "Pour les suites de palace et les yachts. Classement Bfl-s1, traitement ignifuge en cœur de fibre, large palette de coloris. Tient les rythmes intensifs sans perte de tenue visuelle." },
+  { name: "Laine ignifugée EGE Highline", desc: "Pour les suites de palace et les yachts. Tenue au feu conforme, traitement ignifuge en cœur de fibre, large palette de coloris. La matière encaisse les rythmes intensifs sans perdre son aspect." },
   { name: "Profilés laiton brossé et bronze patiné Romus", desc: "Finitions des seuils, nez de marche et raccords entre essences. Coordination avec les boiseries et la quincaillerie de la pièce. Possibilité de profilés sur mesure pour les chantiers à exigence particulière." },
 ]
 

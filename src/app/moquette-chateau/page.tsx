@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 const cas = [
   { title: "Salons d'apparat et galeries", desc: "Tapis sur mesure aux dimensions exactes de la pièce, motifs validés avec le décorateur ou le conservateur, pose libre sur parquet historique. Reconstitution possible de motifs anciens disparus, à partir de relevés ou photographies d'époque." },
   { title: 'Escaliers monumentaux', desc: "Tapis d'escalier d'apparat sur volée droite ou tournante, calage marche par marche sur escaliers en pierre de Charente ou en chêne, profilés laiton ou bronze patiné, fixation discrète préservant le bois ou la pierre." },
-  { title: "Suites d'hôtes et chambres", desc: "Moquettes contract en laine pour les hôtels-châteaux, traitement anti-tache compatible service hôtelier, classement feu Cfl-s1 ou Bfl-s1 pour les ERP. Esthétique préservée, exigences hôtelières respectées." },
-  { title: 'Couloirs et coursives', desc: "Grandes longueurs sans joint apparent, tissage continu, résistance au passage soutenu d'un hôtel de prestige ou d'une demeure familiale très vivante. Finitions discrètes le long des plinthes anciennes." },
+  { title: "Suites d'hôtes et chambres", desc: "Vous tenez un hôtel-château. On pose une moquette laine traitée anti-tache, conforme aux exigences feu des ERP. La pièce garde son caractère, le sol encaisse les services soutenus. Quinze ans devant vous." },
+  { title: 'Couloirs et coursives', desc: "On tisse en grande longueur, sans joint visible. Le passage soutenu ne marque pas le velours. La finition se cale discrètement le long des plinthes anciennes, sans toucher au bois." },
 ]
 
 const produits = [
   { name: 'Tapis sur mesure Axminster ou Wilton', desc: "Tissage haut de gamme historiquement britannique, idéal pour les pièces d'apparat. L'Axminster autorise les motifs complexes au mètre, le Wilton offre un velours bouclé dense de très longue durée. Dimensions jusqu'à 8 mètres sur 12 mètres d'un seul tenant." },
-  { name: 'Moquettes contract laine pour hôtel-château', desc: "Laine vierge tuftée, traitement anti-tache et classement feu adapté ERP. Collections Hospitality d'EGE, Brintons, Ulster Carpets, Tisca Tiara. Coloris et motifs alignés sur la charte du lieu, possibilité de pied à pied sur les grandes surfaces." },
+  { name: 'Moquette laine pour hôtel-château', desc: "Laine vierge tuftée, traitement anti-tache et tenue au feu conforme aux ERP. Nous travaillons avec EGE, Brintons ou Ulster Carpets. Coloris et motifs calés sur la charte du lieu, pose pied à pied possible sur grandes surfaces." },
   { name: 'Confection de tapis Aubusson et Savonnerie', desc: "Reproduction de motifs anciens sur mesure, en lien avec les ateliers de tissage spécialisés. Hereke turc également disponible pour les commandes longues. Validation des cartons avec le conservateur ou l'architecte d'intérieur avant lancement." },
 ]
 
@@ -39,7 +39,7 @@ const process = [
 const faq = [
   { q: "Comment se passe une intervention en bâtiment classé ABF ?", a: "Si le bien est classé ou inscrit Monuments Historiques, toute intervention visible doit recevoir l'accord préalable de l'Architecte des Bâtiments de France. Nous constituons le dossier avec le propriétaire ou l'architecte du patrimoine : description des matériaux, échantillons, photographies, motifs et coloris proposés. Le délai d'instruction est d'un à trois mois selon la DRAC concernée. Une fois l'accord obtenu, nous lançons la confection. Pour les biens uniquement inscrits, la procédure est plus souple mais nous appliquons le même niveau de rigueur." },
   { q: "Pouvez-vous reproduire un motif Aubusson ou Savonnerie ancien ?", a: "Oui, en lien avec des ateliers de tissage partenaires. À partir d'un tapis existant à restaurer, d'une photographie d'archive ou d'un dessin, nous faisons réaliser un carton de tissage qui est validé avec le conservateur, le décorateur ou le propriétaire avant lancement. Délais de 12 à 24 semaines pour les motifs complexes. Pour les surfaces très importantes, l'Hereke turc offre une alternative de très belle qualité avec des délais souvent plus courts." },
-  { q: "Quelle moquette choisir pour un hôtel-château Relais & Châteaux ?", a: "Pour un hôtel de prestige patrimonial, on combine généralement deux logiques. Dans les espaces d'apparat ouverts aux clients (salons, bibliothèque, fumoir), tapis sur mesure ou moquette laine grand classique, esthétique avant tout. Dans les suites et couloirs, moquette contract en laine vierge tuftée, classement feu Cfl-s1 minimum, traitement anti-tache compatible service hôtelier, durée de vie 10 à 15 ans avec entretien régulier. Les marques de référence sont EGE Hospitality Heritage, Brintons, Ulster Carpets, Tisca Tiara." },
+  { q: "Quelle moquette choisir pour un hôtel-château Relais & Châteaux ?", a: "Pour un hôtel de prestige patrimonial, on combine généralement deux logiques. Dans les espaces d'apparat ouverts aux clients (salons, bibliothèque, fumoir), tapis sur mesure ou moquette laine grand classique, esthétique avant tout. Dans les suites et couloirs, moquette contract en laine vierge tuftée, classement feu Cfl-s1 minimum, traitement anti-tache compatible service hôtelier, durée de vie 10 à 15 ans avec entretien régulier. Les maisons de référence pour ce type de projet sont EGE, Brintons, Ulster Carpets et Tisca Tiara." },
   { q: "Comment poser une moquette sans abîmer un parquet ancien ?", a: "Nous évitons systématiquement le clouage et le perçage sur un parquet historique en chêne massif, point de Hongrie ou Versailles. Trois techniques selon le cas. La pose libre sur sous-couche feutre épaisse, totalement réversible, idéale pour les tapis d'apparat. La pose collée réversible avec adhésifs spécifiques qui se déposent sans laisser de trace, utilisée pour les moquettes contract en suite. La pose sur barres à griffes positionnées sur baguettes amovibles le long des plinthes, pour préserver le parquet visible au centre. Diagnostic préalable systématique : taux d'humidité du bois, planéité, traitement insectes si nécessaire." },
   { q: "Restaurez-vous des moquettes ou tapis de famille ?", a: "Oui. Refixation des ourlets, retissage local sur petites zones usées, nettoyage à sec profond, dépoussiérage mécanique sur dossiers anciens. Pour les pièces de très grande valeur, nous orientons vers des restaurateurs spécialisés textiles anciens avec lesquels nous travaillons régulièrement. Diagnostic préalable gratuit en showroom ou sur site." },
   { q: "Travaillez-vous avec les architectes du patrimoine ?", a: "Régulièrement. Architectes du patrimoine, architectes d'intérieur spécialisés, décorateurs de demeures de prestige, conservateurs. Nous fournissons les éléments techniques nécessaires à leurs dossiers : fiches matériaux, échantillons annotés, descriptifs de pose, devis détaillés par lot. Notre rôle est d'exécuter avec précision la vision du prescripteur, en apportant l'expertise technique du métier." },
@@ -47,7 +47,7 @@ const faq = [
 ]
 
 const specs = [
-  { title: 'Réglementation ABF', desc: "Pour les biens classés ou inscrits Monuments Historiques, validation préalable de l'Architecte des Bâtiments de France pour tout élément visible. Constitution du dossier matériaux, échantillons, motifs et coloris. Délai d'instruction d'un à trois mois selon la DRAC." },
+  { title: 'Dossier ABF', desc: "Sur un bien classé ou inscrit, tout élément visible passe devant l'Architecte des Bâtiments de France. On monte le dossier avec vous. Délai d'instruction d'un à trois mois selon la DRAC, et on lance la confection une fois l'accord obtenu." },
   { title: 'Sous-couches sans clouage', desc: "Sur plancher historique en chêne massif, parquet point de Hongrie ou parquet Versailles, nous évitons tout perçage. Système de pose collée réversible ou pose libre sur sous-couche feutre, pour préserver intégralement le bois ancien." },
   { title: "Tapis sur mesure d'apparat", desc: "Reconstitution de motifs anciens type Aubusson ou Savonnerie, tissage Axminster ou Wilton, dimensions adaptées à la pièce jusqu'à 8 mètres sur 12 mètres d'un seul tenant. Cartons validés avec le décorateur ou le conservateur avant lancement." },
   { title: "Tapis d'escalier monumental", desc: "Escaliers en pierre de Charente, escaliers d'honneur en chêne, calage marche par marche sur volée droite ou tournante, profilés laiton ou bronze patiné, fixation discrète respectueuse du support." },
@@ -56,10 +56,10 @@ const specs = [
 ]
 
 const marques = [
-  { name: 'EGE Hospitality Heritage', detail: "Collections contract laine dédiées aux hôtels de prestige et demeures patrimoniales, esthétique classique adaptable aux contraintes ERP." },
-  { name: 'Brintons', detail: "Tisseur britannique historique, Axminster sur mesure, motifs classiques et héraldiques, références mondiales en hôtellerie de luxe." },
-  { name: 'Ulster Carpets', detail: "Tissages haut de gamme irlandais, collections sur mesure pour grandes demeures, durée de vie supérieure à 20 ans en usage normal." },
-  { name: 'Tisca Tiara', detail: "Manufacture suisse, gammes contract et résidentielles haut de gamme, finitions douces compatibles avec les boiseries anciennes." },
+  { name: 'EGE', detail: "Le tisseur danois pour les hôtels et demeures de caractère. Esthétique classique qui reste compatible avec les exigences ERP." },
+  { name: 'Brintons', detail: "L'Axminster britannique historique, motifs classiques ou héraldiques. Une référence mondiale en hôtellerie de luxe, et la matière vieillit noblement." },
+  { name: 'Ulster Carpets', detail: "Tissages irlandais haut de gamme pour grandes demeures. Plus de vingt ans de tenue en usage normal." },
+  { name: 'Tisca Tiara', detail: "Manufacture suisse, gammes contract et résidentielles. Les finitions douces s'accordent avec les boiseries anciennes sans contraste agressif." },
   { name: 'Axminster Carpets', detail: "Tissage à motifs au mètre, idéal pour reconstitutions de pièces d'apparat. Tradition anglaise depuis 1755." },
   { name: 'Wilton Carpets', detail: "Velours bouclé dense, durée de vie 15 à 25 ans, adaptable en moquette contract ou en tapis sur mesure." },
   { name: 'Ateliers Aubusson et Savonnerie', detail: "Tisseurs partenaires pour la reproduction de motifs historiques sur mesure, validation cartonniers avec le conservateur." },
@@ -227,7 +227,7 @@ export default function MoquetteChateauPage() {
             ))}
           </div>
           <p style={{ marginTop: '2.5rem', fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px' }}>
-            Nous travaillons avec les manufactures européennes spécialisées contract et patrimoine : EGE pour les collections Hospitality Heritage, Brintons et Ulster Carpets pour les tissages Axminster sur mesure, Tisca Tiara pour la finition douce. Pour les reproductions de motifs anciens, nous nous appuyons sur des ateliers de tissage Aubusson et Savonnerie, ainsi que sur les commandes Hereke pour les très grandes surfaces.
+            Nous travaillons avec les manufactures européennes spécialisées dans le patrimoine : EGE pour les hôtels-châteaux, Brintons et Ulster Carpets pour les Axminster sur mesure, Tisca Tiara pour les finitions douces. Pour les motifs anciens, nous passons par des ateliers Aubusson ou Savonnerie. Et l'Hereke turc reste une bonne alternative sur les très grandes surfaces, avec des délais souvent plus courts.
           </p>
         </div>
       </section>

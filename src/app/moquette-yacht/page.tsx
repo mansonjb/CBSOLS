@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 }
 
 const zones = [
-  { title: 'Salon principal & carré', desc: "Pièce de représentation : assises cuir, boiseries précieuses, baies vitrées. Laine vierge traitée ignifuge M1 ou polyamide haut de gamme, coloris coordonnés aux essences (acajou, teck, noyer). Finition douce, toucher premium." },
+  { title: 'Salon principal et carré', desc: "C'est la pièce de représentation, avec ses cuirs et ses boiseries précieuses. On pose une laine vierge traitée ignifuge, ou un polyamide haut de gamme. Le coloris se cale sur les essences en place. La finition est douce, le toucher soigné." },
   { title: 'Cabine propriétaire', desc: "Le détail qui distingue un beau yacht. Moquette épaisse 1200-1600 g/m² avec tapis sur mesure devant le lit, intégration aux dressings et tables de chevet. Confort acoustique recherché." },
   { title: 'Coursives & paliers', desc: "Zones de passage exposées aux vibrations moteur. Sous-couche mousse fermée fine, colle polyuréthane élastique, joints invisibles. La moquette doit absorber sans onduler." },
   { title: 'Salle des cartes, bureau du commandant', desc: "Espace technique mais à exigence esthétique. Combinaison moquette sobre + tapis sur mesure, intégration aux équipements de navigation." },

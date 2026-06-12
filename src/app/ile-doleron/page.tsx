@@ -62,7 +62,7 @@ export default function IleDoleronPage() {
             </h1>
 
             <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '640px', lineHeight: 1.75, marginBottom: '2.5rem' }}>
-              CB Sols intervient sur toute l'Île d'Oléron, 2e île de France Atlantique, destination touristique majeure de Charente-Maritime. Moquette hôtelière, sol PVC cuisine professionnelle, tapis sur mesure pour campings et résidences : nous connaissons les contraintes de l'île.
+              CB Sols intervient sur toute l'Île d'Oléron, deuxième île de la côte atlantique française. Moquette hôtelière, sol PVC pour cuisine professionnelle, tapis sur mesure pour campings et résidences. Nous connaissons les contraintes de l'île et savons y travailler proprement.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -84,10 +84,10 @@ export default function IleDoleronPage() {
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {[
-                  { title: 'Hygrométrie élevée', desc: 'L\'environnement maritime impose des produits certifiés résistants à l\'humidité. CB Sols sélectionne des colles, primers et revêtements adaptés au climat atlantique des îles.' },
-                  { title: 'Saisonnalité touristique', desc: 'Hôtels, campings et résidences doivent être prêts avant la saison. CB Sols organise les interventions entre octobre et mai pour n\'impacter ni les réservations ni les recettes.' },
-                  { title: 'Logistique insulaire', desc: 'Nos équipes transportent tout le matériel depuis le continent. Le devis intègre les contraintes logistiques de l\'île sans surprise sur la facture finale.' },
-                  { title: 'Hébergements premium', desc: 'L\'Île d\'Oléron compte des établissements de standing. CB Sols maîtrise les exigences des hôtels classifiés, des campings 5 étoiles et des résidences de tourisme haut de gamme.' },
+                  { title: 'Air marin et humidité', desc: "L'environnement maritime demande des produits qui résistent vraiment à l'humidité. Nous choisissons colles, primaires et revêtements éprouvés sur les îles. Le sol tient dans la durée." },
+                  { title: 'Saison touristique courte', desc: "Hôtels, campings et résidences doivent être prêts à temps. Nous intervenons d'octobre à mai, sans toucher aux réservations ni aux recettes de la saison." },
+                  { title: 'Logistique de l\'île', desc: "Nos équipes transportent tout le matériel depuis le continent. Le devis intègre la logistique insulaire dès le départ, vous n'avez pas de surprise à la facture." },
+                  { title: 'Hébergements de standing', desc: "L'île compte de belles maisons et des établissements exigeants. Nous connaissons leur niveau d'attente sur la finition. Le rendu est soigné, l'usage tient." },
                 ].map((item) => (
                   <div key={item.title} style={{ padding: '1.25rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
                     <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.4rem' }}>{item.title}</div>
