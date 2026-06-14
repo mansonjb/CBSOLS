@@ -83,6 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Long-tail santé / labo
     { url: `${BASE_URL}/sol-pvc-cabinet-medical`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/sol-pvc-laboratoire-pharmaceutique`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/sol-pvc-pharmacie`, lastModified: new Date('2026-06-14'), changeFrequency: 'monthly', priority: 0.85 },
     // Locations Sud-Ouest / Vendée insulaire
     { url: `${BASE_URL}/revetement-sol-arcachon`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-biarritz`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
