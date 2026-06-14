@@ -1,5 +1,23 @@
 import type { NextConfig } from "next";
 
+// CSP pragmatique : autorise GTM/GA4, Clarity, Vercel speed-insights,
+// Leaflet + tuiles OpenStreetMap (admin/carte), Google Fonts. 'unsafe-inline'
+// sur script-src est gardé tant que les JSON-LD inline ne sont pas migres
+// vers des nonces.
+const csp = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://vercel.live https://va.vercel-scripts.com",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com data:",
+  "img-src 'self' data: blob: https://*.googletagmanager.com https://*.google-analytics.com https://www.clarity.ms https://*.tile.openstreetmap.org",
+  "connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.clarity.ms https://*.clarity.ms https://api.openstreetmap.org https://nominatim.openstreetmap.org",
+  "frame-src 'self' https://www.googletagmanager.com",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "upgrade-insecure-requests",
+].join('; ');
+
 const securityHeaders = [
   { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
@@ -8,6 +26,7 @@ const securityHeaders = [
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
   // Strict-Transport-Security : forcée par Vercel en prod HTTPS, on renforce
   { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+  { key: 'Content-Security-Policy', value: csp },
 ];
 
 const nextConfig: NextConfig = {

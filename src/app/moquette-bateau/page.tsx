@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Moquette Bateau | Pose Marine sur Mesure | CB Sols La Rochelle',
+  title: 'Moquette Bateau | Pose Marine sur Mesure La Rochelle',
   description: "Spécialiste moquette bateau en Charente-Maritime : catamaran, yacht, péniche. Normes IMO FTP, MED, Bfl-s1. Confection atelier, pose à quai. Devis.",
   alternates: { canonical: 'https://cbsols.fr/moquette-bateau' },
   openGraph: {

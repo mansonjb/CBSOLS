@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Sol PVC Crèche, Micro-Crèche et MAM | Sol Petite Enfance | CB Sols',
+  title: 'Sol PVC Crèche, Micro-Crèche et MAM | Sol Petite Enfance',
   description: "Pose de sol PVC en crèche, micro-crèche et MAM. Conformité PMI, sans phtalates, label A+, acoustique, antibactérien. CB Sols accompagne structures petite enfance depuis 27 ans.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-creche' },
   openGraph: {

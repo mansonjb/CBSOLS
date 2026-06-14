@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: "Sols et Moquette d'Exception à Monaco | Précision | CB Sols",
+  title: "Sols et Moquette d'Exception à Monaco | Précision",
   description: "CB Sols se déplace à Monaco pour les projets d'exception : appartements Carré d'Or, suites de palace, yachts du Port Hercule. Moquette, tapis sur mesure et sols haut de gamme. Finition premium, discrétion totale, 27 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/sols-monaco' },
   openGraph: {

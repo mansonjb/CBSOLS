@@ -6,7 +6,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: "Revêtement de Sol Île de Ré | CB Sols, Artisan Certifié",
+  title: "Revêtement de Sol Île de Ré, Artisan Certifié",
   description: "CB Sols intervient sur toute l'Île de Ré pour la pose de moquette, sol PVC et tapis sur mesure. Hôtels, campings, résidences. Devis gratuit sous 48h.",
   alternates: { canonical: 'https://cbsols.fr/ile-de-re' },
 }

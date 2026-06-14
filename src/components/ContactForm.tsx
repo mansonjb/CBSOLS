@@ -129,11 +129,13 @@ export function ContactForm() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
           <div>
-            <label style={labelStyle}>Nom *</label>
+            <label htmlFor="contact-name" style={labelStyle}>Nom *</label>
             <input
+              id="contact-name"
               type="text"
               name="name"
               required
+              aria-required="true"
               maxLength={100}
               disabled={pending}
               placeholder="Jean Dupont"
@@ -141,11 +143,13 @@ export function ContactForm() {
             />
           </div>
           <div>
-            <label style={labelStyle}>Téléphone *</label>
+            <label htmlFor="contact-phone" style={labelStyle}>Téléphone *</label>
             <input
+              id="contact-phone"
               type="tel"
               name="phone"
               required
+              aria-required="true"
               maxLength={30}
               disabled={pending}
               placeholder="06 00 00 00 00"
@@ -155,11 +159,13 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label style={labelStyle}>Email *</label>
+          <label htmlFor="contact-email" style={labelStyle}>Email *</label>
           <input
+            id="contact-email"
             type="email"
             name="email"
             required
+            aria-required="true"
             maxLength={150}
             disabled={pending}
             placeholder="vous@exemple.fr"
@@ -168,8 +174,9 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label style={labelStyle}>Ville / Lieu du projet</label>
+          <label htmlFor="contact-city" style={labelStyle}>Ville / Lieu du projet</label>
           <input
+            id="contact-city"
             type="text"
             name="city"
             disabled={pending}
@@ -182,8 +189,9 @@ export function ContactForm() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
           <div>
-            <label style={labelStyle}>Type de projet</label>
+            <label htmlFor="contact-project-type" style={labelStyle}>Type de projet</label>
             <select
+              id="contact-project-type"
               name="project_type"
               disabled={pending}
               style={{ ...inputStyle, appearance: 'none', opacity: pending ? 0.6 : 1 }}
@@ -201,8 +209,9 @@ export function ContactForm() {
             </select>
           </div>
           <div>
-            <label style={labelStyle}>Surface approximative (m²)</label>
+            <label htmlFor="contact-surface" style={labelStyle}>Surface approximative (m²)</label>
             <input
+              id="contact-surface"
               type="number"
               name="surface_m2"
               min={1}
@@ -217,8 +226,9 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label style={labelStyle}>Message</label>
+          <label htmlFor="contact-message" style={labelStyle}>Message</label>
           <textarea
+            id="contact-message"
             name="message"
             rows={4}
             maxLength={3000}
@@ -232,19 +242,20 @@ export function ContactForm() {
           En envoyant ce formulaire, vous acceptez que vos informations soient utilisées pour traiter votre demande. Elles ne sont ni vendues ni partagées. Conservation 3 ans, <a href="/mentions-legales" style={{ color: 'var(--terra)', textDecoration: 'underline' }}>voir mentions légales</a>.
         </p>
 
-        {state.status === 'error' && (
-          <div
-            style={{
-              padding: '1rem',
-              backgroundColor: 'rgba(196,74,74,0.1)',
-              border: '1px solid rgba(196,74,74,0.3)',
-              fontSize: '0.83rem',
-              color: '#e07070',
-            }}
-          >
-            {state.message}
-          </div>
-        )}
+        <div
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          style={state.status === 'error' ? {
+            padding: '1rem',
+            backgroundColor: 'rgba(196,74,74,0.1)',
+            border: '1px solid rgba(196,74,74,0.3)',
+            fontSize: '0.83rem',
+            color: '#e07070',
+          } : { position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}
+        >
+          {state.status === 'error' ? state.message : ''}
+        </div>
 
         <button
           type="submit"

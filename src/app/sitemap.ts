@@ -115,17 +115,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }))
 
-  const geoPages: MetadataRoute.Sitemap = []
-  for (const service of services) {
-    for (const city of cities) {
-      geoPages.push({
-        url: `${BASE_URL}/${service.slug}-${city.slug}`,
-        lastModified: LAST.geo,
-        changeFrequency: 'monthly',
-        priority: 0.7,
-      })
-    }
-  }
+  // Pages /[geo] (service × ville) sont noindex (cf. generateMetadata dans
+  // src/app/[geo]/page.tsx) — exclues du sitemap pour ne pas signaler des URLs
+  // que Google ne doit pas indexer. Le maillage interne suffit à les
+  // découvrir.
 
   const solutionPages: MetadataRoute.Sitemap = solutions.map((s) => ({
     url: `${BASE_URL}/solutions/${s.slug}`,
@@ -162,5 +155,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...geoPages, ...solutionPages, ...guidePages, ...brandPages, ...faqPages, ...realisationPages]
+  return [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...solutionPages, ...guidePages, ...brandPages, ...faqPages, ...realisationPages]
 }

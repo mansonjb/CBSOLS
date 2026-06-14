@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Moquette Catamaran | Carré, Cabines, Coques | CB Sols La Rochelle',
+  title: 'Moquette Catamaran | Carré, Cabines, Coques La Rochelle',
   description: "Pose de moquette marine pour catamaran à La Rochelle : Lagoon, Bali, Fountaine Pajot, Catana, Outremer. Polypropylène Bfl-s1, colle polyuréthane, soudure à chaud.",
   alternates: { canonical: 'https://cbsols.fr/moquette-catamaran' },
   openGraph: {

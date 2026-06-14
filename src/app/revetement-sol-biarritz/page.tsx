@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: "Revêtement de Sol Biarritz | Villas Côte Basque | CB Sols",
+  title: "Revêtement de Sol Biarritz | Villas Côte Basque",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Biarritz et sur la Côte Basque. Villas Belle Époque, résidences contemporaines, hôtels Relais & Châteaux. CB Sols, 27 ans de savoir-faire, déplacement depuis La Rochelle.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-biarritz' },
   keywords: ['revêtement sol Biarritz', 'moquette villa Biarritz', 'sol Côte Basque', 'pose tapis Biarritz', 'artisan sol Biarritz'],

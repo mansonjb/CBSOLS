@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Sol PVC Maison Particulier | Salle de Bains, Cuisine, Buanderie | CB Sols',
+  title: 'Sol PVC Maison Particulier | Salle de Bains, Cuisine, Buanderie',
   description: "Pose de sol PVC haut de gamme pour particuliers : salle de bains, cuisine, buanderie, sous-sol, garage aménagé. 100% waterproof, marques Gerflor & objectflor. Devis sur mesure.",
   alternates: { canonical: 'https://cbsols.fr/particuliers/sol-pvc-maison' },
 }

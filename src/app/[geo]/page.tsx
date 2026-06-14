@@ -44,6 +44,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: service.metaTitle(city.name),
     description: service.metaDescription(city.name),
     alternates: { canonical: `https://cbsols.fr/${geo}` },
+    robots: {
+      index: false,
+      follow: true,
+    },
   }
 }
 
@@ -83,12 +87,6 @@ export default async function GeoPage({ params }: Props) {
         addressCountry: 'FR',
       },
       geo: { '@type': 'GeoCoordinates', latitude: company.geo.lat, longitude: company.geo.lng },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '41',
-        bestRating: '5',
-      },
     },
   }
 

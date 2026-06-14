@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: "Revêtement de Sol Cap Ferret | Villas Bassin d'Arcachon | CB Sols",
+  title: "Revêtement de Sol Cap Ferret | Villas Bassin d'Arcachon",
   description: "Pose de moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret. Résidences secondaires, terrasses bois, pieds dans le sable. Artisan haut de gamme CB Sols, 27 ans d'expérience.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-cap-ferret' },
   keywords: ['revêtement sol Cap Ferret', 'moquette villa Cap Ferret', 'sol bord de mer Bassin Arcachon', 'pose tapis cabane Cap Ferret', 'artisan sol Arcachon'],

@@ -6,7 +6,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: "Revêtement de Sol Île d'Oléron | CB Sols, Artisan Certifié",
+  title: "Revêtement de Sol Île d'Oléron, Artisan Certifié",
   description: "CB Sols intervient sur toute l'Île d'Oléron pour la pose de moquette, sol PVC et tapis sur mesure. Hôtels, campings, résidences. Devis gratuit sous 48h.",
   alternates: { canonical: 'https://cbsols.fr/ile-doleron' },
 }

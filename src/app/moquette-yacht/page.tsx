@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Moquette Yacht et Voilier Luxe | La Rochelle | CB Sols',
+  title: 'Moquette Yacht et Voilier Luxe | La Rochelle',
   description: "Pose de moquette et tapis sur mesure pour yacht moteur et voilier luxe : Sunseeker, Princess, Beneteau, Jeanneau. Laine traitée anti-feu, finitions premium, vibrations moteur.",
   alternates: { canonical: 'https://cbsols.fr/moquette-yacht' },
   openGraph: {

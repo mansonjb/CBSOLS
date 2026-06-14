@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityData = getCityBySlug(city)
   if (!cityData) return {}
   return {
-    title: `Revêtement de Sol ${cityData.name} | CB Sols, Artisan Certifié`,
+    title: `Revêtement de Sol ${cityData.name}, Artisan Certifié`,
     description: `Pose de revêtement de sol à ${cityData.name} par CB Sols. Spécialiste moquette, sol PVC et tapis depuis 1999. Devis gratuit, intervention rapide en ${cityZoneLabels[cityData.zone]}.`,
     alternates: { canonical: `https://cbsols.fr/revetement-sol-${city}` },
   }
@@ -70,12 +70,6 @@ export default async function CityHubPage({ params }: Props) {
         addressCountry: 'FR',
       },
       geo: { '@type': 'GeoCoordinates', latitude: company.geo.lat, longitude: company.geo.lng },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '41',
-        bestRating: '5',
-      },
     },
   }
 

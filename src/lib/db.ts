@@ -39,6 +39,21 @@ export async function ensureSchema() {
   if (_migrated) return
   const q = sql()
 
+  // Table meta : trace si le schema a deja ete applique. Au cold start, on
+  // verifie la presence du marker en DB pour eviter de rejouer tous les
+  // CREATE/ALTER en permanence (le flag memoire est perdu apres chaque
+  // recyclage Lambda).
+  await q`CREATE TABLE IF NOT EXISTS _schema_meta (
+    key TEXT PRIMARY KEY,
+    value JSONB NOT NULL DEFAULT '{}'::jsonb,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  );`
+  const marker = (await q`SELECT 1 AS ok FROM _schema_meta WHERE key = 'schema_v1' LIMIT 1`) as unknown as Array<{ ok: number }>
+  if (marker.length > 0) {
+    _migrated = true
+    return
+  }
+
   await q`
     CREATE TABLE IF NOT EXISTS leads (
       id            TEXT PRIMARY KEY,
@@ -98,6 +113,10 @@ export async function ensureSchema() {
   await q`ALTER TABLE contacts ADD COLUMN IF NOT EXISTS lat REAL;`
   await q`ALTER TABLE contacts ADD COLUMN IF NOT EXISTS lng REAL;`
 
+  // Marker persistant : evite de rejouer les CREATE/ALTER au prochain cold
+  // start. Si tu modifies le schema, bumpe la cle (schema_v2, etc.) ou DELETE
+  // le row pour forcer une re-execution.
+  await q`INSERT INTO _schema_meta (key, value) VALUES ('schema_v1', '{}'::jsonb) ON CONFLICT (key) DO NOTHING;`
   _migrated = true
 }
 
@@ -111,6 +130,13 @@ export async function backfillContacts() {
   if (_backfilled) return
   await ensureSchema()
   const q = sql()
+  // Marker persistant pour ne pas rebalayer la table leads a chaque cold
+  // start. Le flag memoire seul ne survit pas au recyclage Lambda.
+  const marker = (await q`SELECT 1 AS ok FROM _schema_meta WHERE key = 'backfill_contacts_v1' LIMIT 1`) as unknown as Array<{ ok: number }>
+  if (marker.length > 0) {
+    _backfilled = true
+    return
+  }
   const orphans = (await q`
     SELECT id, nom, telephone, email, ville, segment
     FROM leads
@@ -139,6 +165,7 @@ export async function backfillContacts() {
     }
     await q`UPDATE leads SET contact_id = ${contactId} WHERE id = ${ld.id}`
   }
+  await q`INSERT INTO _schema_meta (key, value) VALUES ('backfill_contacts_v1', '{}'::jsonb) ON CONFLICT (key) DO NOTHING;`
   _backfilled = true
 }
 

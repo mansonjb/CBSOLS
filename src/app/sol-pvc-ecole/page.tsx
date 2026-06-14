@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Sol PVC École Maternelle et Primaire | Pose Établissements Scolaires | CB Sols',
+  title: 'Sol PVC École Maternelle et Primaire | Pose Établissements Scolaires',
   description: "Pose de sol PVC en école maternelle et primaire. Conformité ERP (Bfl-s1, U4P3, R10/R11), pose pendant les vacances scolaires, marchés publics. CB Sols accompagne mairies et écoles privées depuis 27 ans.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-ecole' },
   openGraph: {

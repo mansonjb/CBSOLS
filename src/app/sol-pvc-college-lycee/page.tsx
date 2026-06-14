@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Sol PVC Collège et Lycée | Revêtement Sol Établissements Secondaires | CB Sols',
+  title: 'Sol PVC Collège et Lycée | Revêtement Sol Établissements Secondaires',
   description: "Pose de sol PVC en collège et lycée, salles de cours, laboratoires sciences, CDI, ateliers. Conformité ERP type R, lés grande largeur soudés à chaud, marché public éducation. CB Sols, 27 ans d'expérience.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-college-lycee' },
   openGraph: {

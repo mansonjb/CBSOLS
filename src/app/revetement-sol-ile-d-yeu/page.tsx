@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: "Revêtement de Sol Île d'Yeu | Maisons et Hôtels Vendée | CB Sols",
+  title: "Revêtement de Sol Île d'Yeu | Maisons et Hôtels Vendée",
   description: "Pose de moquette, sol PVC et tapis sur mesure à l'Île d'Yeu. Maisons de pêcheurs Port-Joinville, villas côte sauvage, hôtels boutique. Logistique insulaire maîtrisée par CB Sols, 27 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-ile-d-yeu' },
   keywords: ['revêtement sol Île d\'Yeu', 'moquette maison Yeu', 'sol pied dans le sable Vendée', 'artisan sol Île d\'Yeu'],

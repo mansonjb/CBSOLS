@@ -4,7 +4,7 @@ import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: "Sol PVC Laboratoire Pharmaceutique | Pose Labo, Pharmacie, Cosmétique | CB Sols",
+  title: "Sol PVC Laboratoire Pharmaceutique | Pose Labo, Pharmacie, Cosmétique",
   description: "Pose de sol PVC pour laboratoires pharmaceutiques, labos d'analyse, pharmacies d'officine, laboratoires cosmétique. Finition continue sans joints, rigueur du chantier, validé par les audits qualité. CB Sols, 27 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique' },
   keywords: ['sol PVC laboratoire', 'sol pharmacie', 'sol labo cosmétique', 'revêtement labo analyse', 'sol pharmaceutique'],
