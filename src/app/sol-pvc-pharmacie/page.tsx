@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-pharmacie' },
   keywords: ['sol PVC pharmacie', 'revêtement sol officine', 'sol pharmacie hygiène', 'sol PVC laboratoire pharmacie', 'conformité ARS', 'pose sol pharmacie', 'sol pharmacie facile nettoyer'],
   openGraph: {
-    title: "Sol PVC pour pharmacie d'officine, la propreté qui se voit",
+    title: "Sol PVC pour pharmacie d'officine, pensé pour durer",
     description: "Pose de sol PVC en officine : hygiène quotidienne, conformité ARS, intervention de nuit pour ne pas fermer. CB Sols, 27 ans de savoir-faire près de La Rochelle.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/sol-pvc-pharmacie.jpg', width: 1200, height: 630 }],
@@ -212,7 +212,7 @@ export default function SolPvcPharmaciePage() {
             <div>
               <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
                 Sol PVC pour pharmacie d&apos;officine,<br />
-                <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>la propreté qui se voit.</em>
+                <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>pensé pour durer.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
                 Pose de sol PVC professionnel pour votre officine : zone de vente, préparatoire, robot, réserve, sanitaires. Sols faciles à nettoyer, conformes ARS, acoustiques. Intervention nocturne pour ne jamais fermer votre pharmacie. CB Sols intervient depuis 27 ans, atelier à Villedoux près de La Rochelle.
