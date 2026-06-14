@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-pharmacie' },
   keywords: ['sol PVC pharmacie', 'revêtement sol officine', 'sol pharmacie hygiène', 'sol PVC laboratoire pharmacie', 'conformité ARS', 'pose sol pharmacie', 'sol pharmacie facile nettoyer'],
   openGraph: {
-    title: "Sol PVC pour pharmacie d'officine, pensé pour durer",
+    title: "Sol PVC pour pharmacie, pensé pour durer",
     description: "Pose de sol PVC en officine : hygiène quotidienne, conformité ARS, intervention de nuit pour ne pas fermer. CB Sols, 27 ans de savoir-faire près de La Rochelle.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/sol-pvc-pharmacie.jpg', width: 1200, height: 630 }],
@@ -137,7 +137,7 @@ const process = [
 const faq = [
   {
     q: "Combien de temps faut-il pour refaire le sol d'une officine ?",
-    a: "Tout dépend de la surface et de l'état du sol existant. Pour une pharmacie de 80 à 120 mètres carrés, comptez deux à trois nuits sur place, en général du samedi soir au lundi matin. Pour une officine plus grande de 200 mètres carrés avec robot, plutôt trois à quatre nuits, parfois étalées sur deux week-ends. On dimensionne précisément à la visite. En amont du chantier, prévoyez environ deux semaines entre l'appel initial et le devis signé, puis deux à cinq semaines de délai de fabrication chez le fournisseur selon la gamme choisie. La majorité de nos chantiers d'officine se déroulent dans une fenêtre totale de six à huit semaines entre votre premier coup de fil et la réouverture sur le sol neuf. Ce calendrier vous laisse le temps de prévenir votre équipe, d'organiser vos commandes de marchandises pour ne pas être pris de court le lundi matin, et de communiquer éventuellement auprès des patients réguliers sur la rénovation à venir.",
+    a: "Tout dépend de la surface et de l'état du sol existant. Pour une pharmacie de 80 à 120 mètres carrés, comptez deux à trois nuits sur place, en général du samedi soir au lundi matin. Pour une officine plus grande de 200 mètres carrés avec robot, plutôt trois à quatre nuits, parfois étalées sur deux week-ends. On dimensionne précisément à la visite. En amont du chantier, prévoyez environ deux semaines entre l'appel initial et le devis signé, puis deux à cinq semaines de délai de fabrication chez le fournisseur selon la gamme choisie. La majorité de nos chantiers se déroulent dans une fenêtre totale de six à huit semaines entre votre premier coup de fil et la réouverture sur le sol neuf. Ce calendrier vous laisse le temps de prévenir votre équipe, d'organiser vos commandes de marchandises pour ne pas être pris de court le lundi matin, et de communiquer éventuellement auprès des patients réguliers sur la rénovation à venir.",
   },
   {
     q: "Faut-il vraiment fermer la pharmacie ?",
@@ -149,7 +149,7 @@ const faq = [
   },
   {
     q: "Le sol PVC, est-ce vraiment compatible avec les normes ARS ?",
-    a: "Oui, totalement, et c'est même la solution la plus utilisée en officine moderne précisément pour cette raison. Les gammes que nous posons cumulent les classements attendus en ERP de cinquième catégorie : Bfl-s1 ou Cfl-s1 pour la résistance au feu, R10 ou R11 pour l'antidérapant selon les zones, label A+ pour la qualité de l'air intérieur, classement 34 pour l'usage commercial intensif. On vous fournit l'ensemble des attestations fabricant à joindre directement à votre dossier de conformité ou à présenter en cas de contrôle ARS. Si le bureau de contrôle a des questions techniques pointues, on dialogue directement avec lui à votre place. Sur les 27 ans de pose en milieu santé que cumule CB Sols, jamais une réception d'officine n'a été refusée pour défaut de conformité du sol. C'est un point sur lequel vous pouvez vous reposer sur nous sans inquiétude.",
+    a: "Oui, totalement, et c'est même la solution la plus utilisée en officine moderne précisément pour cette raison. Les gammes que nous posons cumulent les classements attendus en ERP de cinquième catégorie : Bfl-s1 ou Cfl-s1 pour la résistance au feu, R10 ou R11 pour l'antidérapant selon les zones, label A+ pour la qualité de l'air intérieur, classement 34 pour l'usage commercial intensif. On vous fournit l'ensemble des attestations fabricant à joindre directement à votre dossier de conformité ou à présenter en cas de contrôle ARS. Si le bureau de contrôle a des questions techniques pointues, on dialogue directement avec lui à votre place. Sur les 27 ans de pose en milieu santé que cumule CB Sols, jamais une réception n'a été refusée pour défaut de conformité du sol. C'est un point sur lequel vous pouvez vous reposer sur nous sans inquiétude.",
   },
   {
     q: "Comment entretenir le sol au quotidien sans l'abîmer ?",
@@ -161,7 +161,7 @@ const faq = [
   },
   {
     q: "Combien de temps tient un sol PVC en officine ?",
-    a: "Avec une gamme professionnelle posée correctement, comptez quinze à vingt ans en moyenne en officine de pharmacie, et jusqu'à vingt-cinq ans pour les PVC homogènes haut de gamme entretenus selon le protocole standard. Cette durée varie selon trois facteurs. Le passage d'abord : une officine de centre-ville avec 400 clients par jour use plus vite qu'une pharmacie de campagne avec 80 clients. Le matériau ensuite : un PVC homogène de classement 34 dure plus longtemps qu'un PVC compact bas de gamme. L'entretien enfin : le respect du protocole quotidien et de la métallisation annuelle prolonge réellement la vie du sol de plusieurs années. Nos plus anciens chantiers d'officine, posés en 2002, sont encore en service en 2026 sans avoir bougé. Vous investissez aujourd'hui, vous ne vous reposerez la question que dans la prochaine décennie. C'est le contrat moral qu'on passe avec vous en signant le devis.",
+    a: "Avec une gamme professionnelle posée correctement, comptez quinze à vingt ans en moyenne en officine de pharmacie, et jusqu'à vingt-cinq ans pour les PVC homogènes haut de gamme entretenus selon le protocole standard. Cette durée varie selon trois facteurs. Le passage d'abord : une officine de centre-ville avec 400 clients par jour use plus vite qu'une pharmacie de campagne avec 80 clients. Le matériau ensuite : un PVC homogène de classement 34 dure plus longtemps qu'un PVC compact bas de gamme. L'entretien enfin : le respect du protocole quotidien et de la métallisation annuelle prolonge réellement la vie du sol de plusieurs années. Nos plus anciens chantiers, posés en 2002, sont encore en service en 2026 sans avoir bougé. Vous investissez aujourd'hui, vous ne vous reposerez la question que dans la prochaine décennie. C'est le contrat moral qu'on passe avec vous en signant le devis.",
   },
 ]
 
@@ -172,15 +172,15 @@ export default function SolPvcPharmaciePage() {
       {
         '@type': 'Service',
         '@id': 'https://cbsols.fr/sol-pvc-pharmacie#service',
-        name: "Sol PVC pour pharmacie d'officine",
+        name: "Sol PVC pour pharmacie",
         provider: { '@id': 'https://cbsols.fr/#localbusiness' },
         areaServed: [
           { '@type': 'AdministrativeArea', name: 'Charente-Maritime' },
           { '@type': 'AdministrativeArea', name: 'Nouvelle-Aquitaine' },
           { '@type': 'Country', name: 'France' },
         ],
-        serviceType: "Pose de sol PVC en pharmacie d'officine",
-        description: "Pose de sol PVC professionnel pour pharmacies d'officine : zone de vente, préparatoire, robot, sanitaires. Soudures à chaud, plinthes en gorge, classement A+ air intérieur, conformité ARS, intervention nocturne pour ne pas fermer.",
+        serviceType: "Pose de sol PVC en pharmacie",
+        description: "Pose de sol PVC professionnel pour pharmacies : zone de vente, préparatoire, robot, sanitaires. Soudures à chaud, plinthes en gorge, classement A+ air intérieur, conformité ARS, intervention nocturne pour ne pas fermer.",
       },
       {
         '@type': 'FAQPage',
@@ -190,7 +190,7 @@ export default function SolPvcPharmaciePage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CB Sols', item: 'https://cbsols.fr' },
-          { '@type': 'ListItem', position: 2, name: "Sol PVC pharmacie d'officine", item: 'https://cbsols.fr/sol-pvc-pharmacie' },
+          { '@type': 'ListItem', position: 2, name: "Sol PVC pharmacie", item: 'https://cbsols.fr/sol-pvc-pharmacie' },
         ],
       },
     ],
@@ -349,7 +349,7 @@ export default function SolPvcPharmaciePage() {
         </div>
       </section>
 
-      {/* Typologies d'officines */}
+      {/* Typologiess */}
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Typologies d&apos;officines</div>
