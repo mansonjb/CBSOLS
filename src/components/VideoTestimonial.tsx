@@ -16,10 +16,11 @@ export interface VideoTestimonialProps {
 }
 
 /**
- * Témoignage vidéo client, Vimeo.
- * Lazy: la thumbnail (vumbnail.com) est affichée tant que l'utilisateur n'a pas
- * cliqué sur Play. Aucune iframe Vimeo ni cookie tant que pas de clic.
- * Aspect ratio 4:3.
+ * Témoignage vidéo client, Vimeo. Format 9:16 vertical.
+ * Lazy: la thumbnail est affichée tant que l'utilisateur n'a pas cliqué sur Play.
+ * Aucune iframe Vimeo ni cookie tant que pas de clic.
+ *
+ * Ordre d'affichage : vidéo en haut, identité + citation en dessous.
  */
 export function VideoTestimonial({
   vimeoId,
@@ -39,42 +40,19 @@ export function VideoTestimonial({
         backgroundColor: 'var(--bg-card)',
         border: '1px solid var(--border)',
         borderRadius: '14px',
-        padding: '1.5rem',
+        padding: '1.25rem',
         maxWidth: '720px',
         margin: '0 auto',
       }}
     >
-      {/* Citation en exergue */}
-      <div
-        style={{
-          borderLeft: '3px solid var(--terra)',
-          paddingLeft: '1.25rem',
-          marginBottom: '1.75rem',
-        }}
-      >
-        <p
-          style={{
-            fontFamily: 'var(--font-serif)',
-            fontStyle: 'italic',
-            fontSize: 'clamp(0.92rem, 1.4vw, 1.15rem)',
-            color: 'var(--dark)',
-            lineHeight: 1.5,
-            margin: 0,
-          }}
-        >
-          « {quote} »
-        </p>
-      </div>
-
-      {/* Zone vidéo 9:16 vertical, max-width 280px pour rester proportionnée
-          au reste du contenu (sinon la hauteur écrase la page sur desktop) */}
+      {/* Zone vidéo 9:16 vertical, max-width 220px pour s'intégrer dans une grille 4 colonnes */}
       <div
         style={{
           position: 'relative',
           paddingTop: '177.78%',
           width: '100%',
-          maxWidth: '240px',
-          margin: '0 auto 1.5rem',
+          maxWidth: '220px',
+          margin: '0 auto 1.25rem',
           borderRadius: '10px',
           overflow: 'hidden',
           backgroundColor: 'var(--dark)',
@@ -103,8 +81,8 @@ export function VideoTestimonial({
             <div
               className="video-poster-btn"
               style={{
-                width: 76,
-                height: 76,
+                width: 64,
+                height: 64,
                 borderRadius: '50%',
                 backgroundColor: 'rgba(44, 85, 48, 0.92)',
                 display: 'flex',
@@ -115,11 +93,11 @@ export function VideoTestimonial({
               }}
             >
               <Play
-                size={28}
+                size={24}
                 color="#fff"
                 fill="#fff"
                 strokeWidth={0}
-                style={{ marginLeft: '4px' }}
+                style={{ marginLeft: '3px' }}
               />
             </div>
           </button>
@@ -142,26 +120,26 @@ export function VideoTestimonial({
       </div>
 
       {/* Identité client */}
-      <div>
+      <div style={{ marginBottom: '1rem' }}>
         <div
           style={{
             fontFamily: 'var(--font-sans)',
             fontWeight: 700,
             color: 'var(--dark)',
-            fontSize: '1.05rem',
-            marginBottom: '0.25rem',
+            fontSize: '1rem',
+            marginBottom: '0.2rem',
           }}
         >
           {name}
         </div>
-        <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>
+        <div style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.4 }}>
           {role}, {company}
         </div>
         {projectInfo ? (
           <div
             style={{
-              marginTop: '0.5rem',
-              fontSize: '0.8rem',
+              marginTop: '0.4rem',
+              fontSize: '0.75rem',
               color: 'var(--terra)',
               fontWeight: 600,
             }}
@@ -169,6 +147,27 @@ export function VideoTestimonial({
             {projectInfo}
           </div>
         ) : null}
+      </div>
+
+      {/* Citation en bas */}
+      <div
+        style={{
+          borderLeft: '2px solid var(--terra)',
+          paddingLeft: '0.85rem',
+        }}
+      >
+        <p
+          style={{
+            fontFamily: 'var(--font-serif)',
+            fontStyle: 'italic',
+            fontSize: '0.88rem',
+            color: 'var(--dark)',
+            lineHeight: 1.5,
+            margin: 0,
+          }}
+        >
+          « {quote} »
+        </p>
       </div>
 
       <style>{`
