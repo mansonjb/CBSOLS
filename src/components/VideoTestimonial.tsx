@@ -66,14 +66,14 @@ export function VideoTestimonial({
         </p>
       </div>
 
-      {/* Zone vidéo 9:16 vertical (format natif des vidéos filmées au téléphone),
-          max-width pour ne pas envahir l'écran sur desktop */}
+      {/* Zone vidéo 9:16 vertical, max-width 280px pour rester proportionnée
+          au reste du contenu (sinon la hauteur écrase la page sur desktop) */}
       <div
         style={{
           position: 'relative',
           paddingTop: '177.78%',
           width: '100%',
-          maxWidth: '380px',
+          maxWidth: '280px',
           margin: '0 auto 1.5rem',
           borderRadius: '10px',
           overflow: 'hidden',
