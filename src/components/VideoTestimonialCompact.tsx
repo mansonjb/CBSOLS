@@ -20,11 +20,11 @@ export function VideoTestimonialCompact({ vimeoId, name, thumbnailUrl }: VideoTe
 
   return (
     <div
+      className="vt-compact-frame"
       style={{
         position: 'relative',
         paddingTop: '177.78%',
-        width: '100%',
-        maxWidth: '200px',
+        width: '200px',
         margin: '0 auto',
         borderRadius: '10px',
         overflow: 'hidden',
@@ -87,6 +87,9 @@ export function VideoTestimonialCompact({ vimeoId, name, thumbnailUrl }: VideoTe
 
       <style>{`
         .video-poster-compact:hover .video-poster-compact-btn { transform: scale(1.08); }
+        @media (max-width: 720px) {
+          .vt-compact-frame { width: 60vw !important; max-width: 200px !important; }
+        }
       `}</style>
     </div>
   )
