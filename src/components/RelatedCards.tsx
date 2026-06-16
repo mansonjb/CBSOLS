@@ -22,7 +22,7 @@ export function RelatedCards({ items, sectionTitle = 'Voir aussi', sectionSubtit
         {sectionSubtitle ? (
           <p style={{ fontSize: '1rem', color: 'var(--muted)', lineHeight: 1.65, maxWidth: '780px', marginBottom: '2.5rem' }}>{sectionSubtitle}</p>
         ) : null}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.25rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem' }}>
           {items.map((it, i) => {
             const Icon = it.icon
             return (
