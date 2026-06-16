@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Image from 'next/image'
 import { services } from '@/data/services'
 import { sectors } from '@/data/sectors'
 import { cities } from '@/data/cities'
@@ -174,8 +175,14 @@ export default async function Home() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '3rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             {brandPartners.map(b => (
               <div key={b.name} className="brand-logo" aria-label={b.name}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={b.src} alt={b.name} style={{ height: '28px', width: 'auto', maxWidth: '110px', objectFit: 'contain' }} />
+                <Image
+                  src={b.src}
+                  alt={b.name}
+                  width={110}
+                  height={28}
+                  sizes="110px"
+                  style={{ height: '28px', width: 'auto', maxWidth: '110px', objectFit: 'contain' }}
+                />
               </div>
             ))}
           </div>

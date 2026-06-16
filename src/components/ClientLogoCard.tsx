@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import type { ClientReference } from '@/data/clients'
 
 interface Props {
@@ -11,18 +12,25 @@ interface Props {
 /**
  * Carte logo client. Si une URL est fournie, le logo devient cliquable
  * et ouvre le site officiel dans un nouvel onglet (rel noopener).
+ *
+ * Utilise next/image pour servir des versions responsives optimisées (le source
+ * est en 400×400 webp mais l'affichage est 80×80, on évite 73 KiB inutiles).
  */
 export function ClientLogoCard({ client, light = false, height = 130 }: Props) {
+  const logoMax = Math.min(80, height - 50)
   const inner = (
-    /* eslint-disable-next-line @next/next/no-img-element */
-    <img
+    <Image
       src={client.src}
       alt={client.alt}
+      width={logoMax}
+      height={logoMax}
       loading="lazy"
+      sizes={`${logoMax}px`}
       style={{
-        maxHeight: Math.min(80, height - 50),
+        maxHeight: logoMax,
         maxWidth: '100%',
         width: 'auto',
+        height: 'auto',
         objectFit: 'contain',
         opacity: 0.9,
       }}
