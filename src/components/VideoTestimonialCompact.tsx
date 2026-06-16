@@ -23,7 +23,9 @@ export function VideoTestimonialCompact({ vimeoId, name, thumbnailUrl }: VideoTe
       style={{
         position: 'relative',
         paddingTop: '177.78%',
-        width: '200px',
+        width: '100%',
+        maxWidth: '200px',
+        margin: '0 auto',
         borderRadius: '10px',
         overflow: 'hidden',
         backgroundColor: 'var(--dark)',
