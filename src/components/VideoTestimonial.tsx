@@ -39,7 +39,7 @@ export function VideoTestimonial({
         backgroundColor: 'var(--bg-card)',
         border: '1px solid var(--border)',
         borderRadius: '14px',
-        padding: '2rem',
+        padding: '1.5rem',
         maxWidth: '720px',
         margin: '0 auto',
       }}
@@ -56,7 +56,7 @@ export function VideoTestimonial({
           style={{
             fontFamily: 'var(--font-serif)',
             fontStyle: 'italic',
-            fontSize: 'clamp(1.05rem, 1.8vw, 1.35rem)',
+            fontSize: 'clamp(0.92rem, 1.4vw, 1.15rem)',
             color: 'var(--dark)',
             lineHeight: 1.5,
             margin: 0,
@@ -73,7 +73,7 @@ export function VideoTestimonial({
           position: 'relative',
           paddingTop: '177.78%',
           width: '100%',
-          maxWidth: '280px',
+          maxWidth: '240px',
           margin: '0 auto 1.5rem',
           borderRadius: '10px',
           overflow: 'hidden',

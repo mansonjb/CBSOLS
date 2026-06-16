@@ -204,8 +204,8 @@ export default function TemoignagesPage() {
               className="video-grid"
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                gap: '2.5rem',
+                gridTemplateColumns: 'repeat(4, 1fr)',
+                gap: '1.75rem',
                 alignItems: 'start',
               }}
             >
@@ -232,7 +232,10 @@ export default function TemoignagesPage() {
       </div>
 
       <style>{`
-        @media (max-width: 720px) {
+        @media (max-width: 1100px) {
+          .video-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        @media (max-width: 620px) {
           .video-grid { grid-template-columns: 1fr !important; gap: 1.75rem !important; }
         }
       `}</style>
