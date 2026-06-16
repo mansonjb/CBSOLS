@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { realisations, getRealisationBySlug } from '@/data/realisations'
 import { Button } from '@/components/Button'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { VideoTestimonial } from '@/components/VideoTestimonial'
 import { company } from '@/data/company'
 
 interface Props {
@@ -198,6 +199,28 @@ export default async function RealisationDetailPage({ params }: Props) {
                   </figure>
                 ))}
               </div>
+            </div>
+          </section>
+        )}
+
+        {/* Témoignage vidéo client (réalisation AXA La Rochelle) */}
+        {slug === 'pose-sols-cabinet-axa-la-rochelle' && (
+          <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-alt)', borderTop: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700, marginBottom: '1rem', textAlign: 'center' }}>
+                Le client en parle
+              </div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.025em', lineHeight: 1.15, textAlign: 'center' }}>
+                David Labarrère, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>témoigne.</em>
+              </h2>
+              <VideoTestimonial
+                vimeoId="1201719634"
+                name="David Labarrère"
+                role="Agent général"
+                company="AXA Moiroud-Labarrère"
+                quote="Notre cabinet accueille des clients tous les jours, le sol fait partie de l'image qu'on renvoie. CB Sols a su nous proposer un revêtement qui tient et qui valorise les locaux."
+                projectInfo="Cabinet d'assurance, La Rochelle"
+              />
             </div>
           </section>
         )}

@@ -7,6 +7,7 @@ import { company } from '@/data/company'
 import { getFaqsForSector } from '@/data/faq-matchers'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 import { Button } from '@/components/Button'
+import { VideoTestimonial } from '@/components/VideoTestimonial'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -136,6 +137,28 @@ export default async function SecteurPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Témoignage vidéo (hôtellerie) */}
+      {sector.slug === 'hotellerie' && (
+        <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+          <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
+            <div style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700, marginBottom: '1rem', textAlign: 'center' }}>
+              Un hôtelier en parle
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.025em', lineHeight: 1.15, textAlign: 'center' }}>
+              Cédrick Poucineau, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>Cozy Hotels.</em>
+            </h2>
+            <VideoTestimonial
+              vimeoId="1201720983"
+              name="Cédrick Poucineau"
+              role="Directeur des Opérations"
+              company="Groupe Cozy Hotels"
+              quote="En hôtellerie, le sol participe directement au confort ressenti par nos clients. Le travail de CB Sols nous a permis de transformer nos chambres durablement."
+              projectInfo="Chambres et espaces communs"
+            />
+          </div>
+        </section>
+      )}
 
       {/* FAQ contextuelles */}
       {contextualFaqs.length > 0 && (

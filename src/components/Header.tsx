@@ -12,6 +12,7 @@ const nav = [
   { href: '/particuliers', label: 'Particuliers' },
   { href: '/architectes', label: 'Architectes' },
   { href: '/realisations', label: 'Réalisations' },
+  { href: '/temoignages', label: 'Témoignages' },
   { href: '/showroom', label: 'Showroom' },
 ]
 

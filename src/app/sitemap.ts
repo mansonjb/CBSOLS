@@ -38,6 +38,7 @@ const LAST = {
   zones: new Date('2026-04-05'),
   iles: new Date('2026-04-20'),
   mentions: new Date('2025-11-01'),
+  temoignages: new Date('2026-06-15'),
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -46,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/services`, lastModified: LAST.services, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/secteurs`, lastModified: LAST.sectors, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/realisations`, lastModified: LAST.realisations, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/temoignages`, lastModified: LAST.temoignages, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/showroom`, lastModified: LAST.showroom, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/a-propos`, lastModified: LAST.aPropos, changeFrequency: 'monthly', priority: 0.65 },
     { url: `${BASE_URL}/contact`, lastModified: LAST.contact, changeFrequency: 'monthly', priority: 0.95 },

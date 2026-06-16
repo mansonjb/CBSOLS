@@ -8,6 +8,7 @@ import { HeroSlider } from '@/components/HeroSlider'
 import { Button } from '@/components/Button'
 import { ClientLogoCard } from '@/components/ClientLogoCard'
 import { AvisSlider } from '@/components/AvisSlider'
+import { VideoTestimonial } from '@/components/VideoTestimonial'
 import { clientLogos } from '@/data/clients'
 import { avis } from '@/data/avis'
 
@@ -310,6 +311,31 @@ export default function Home() {
                 <p style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>{step.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── TÉMOIGNAGE VIDÉO (Paprec, ancrage industrie locale) ───── */}
+      <section style={{ padding: '6rem 2rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700, marginBottom: '1rem', textAlign: 'center' }}>
+            Le client en parle
+          </div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3.2vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.03em', lineHeight: 1.1, textAlign: 'center' }}>
+            Jérôme Buffereau, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>Paprec La Rochelle.</em>
+          </h2>
+          <VideoTestimonial
+            vimeoId="1201721934"
+            name="Jérôme Buffereau"
+            role="Directeur d'agence"
+            company="Paprec Sud-Ouest, La Rochelle"
+            quote="Sur un site industriel, on cherche un sol qui résiste, qui se nettoie, et qui se pose vite. CB Sols a coché les trois cases sans débordement de planning."
+            projectInfo="Bureaux et zones de circulation"
+          />
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <Link href="/temoignages" style={{ fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>
+              Voir tous les témoignages vidéo →
+            </Link>
           </div>
         </div>
       </section>
