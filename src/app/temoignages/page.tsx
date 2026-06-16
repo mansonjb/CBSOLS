@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Briefcase, Hotel, Factory, Phone, Star, Users } from 'lucide-react'
 import { VideoTestimonialCompact } from '@/components/VideoTestimonialCompact'
 import { RelatedCards, type RelatedCardItem } from '@/components/RelatedCards'
+import { getVimeoThumbnail } from '@/lib/vimeo'
 
 export const metadata: Metadata = {
   title: 'Témoignages clients vidéo',
@@ -117,7 +118,12 @@ const related: RelatedCardItem[] = [
   },
 ]
 
-export default function TemoignagesPage() {
+export default async function TemoignagesPage() {
+  // Fetch des vignettes Vimeo officielles (via oEmbed), parallèle.
+  // Bypass vumbnail.com qui cache trop longtemps.
+  const thumbnails = await Promise.all(
+    videos.map((v) => getVimeoThumbnail(v.vimeoId)),
+  )
   return (
     <>
       <script
@@ -200,7 +206,7 @@ export default function TemoignagesPage() {
           }}
         >
           <div style={{ maxWidth: '860px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '4rem' }}>
-            {videos.map((v) => (
+            {videos.map((v, i) => (
               <article
                 key={v.vimeoId}
                 className="temoignage-row"
@@ -219,7 +225,11 @@ export default function TemoignagesPage() {
                   }}
                 />
                 <div style={{ flexShrink: 0 }}>
-                  <VideoTestimonialCompact vimeoId={v.vimeoId} name={v.name} />
+                  <VideoTestimonialCompact
+                    vimeoId={v.vimeoId}
+                    name={v.name}
+                    thumbnailUrl={thumbnails[i] ?? undefined}
+                  />
                 </div>
                 <div>
                   <p

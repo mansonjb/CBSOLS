@@ -9,6 +9,7 @@ import { Button } from '@/components/Button'
 import { ClientLogoCard } from '@/components/ClientLogoCard'
 import { AvisSlider } from '@/components/AvisSlider'
 import { VideoTestimonialCompact } from '@/components/VideoTestimonialCompact'
+import { getVimeoThumbnail } from '@/lib/vimeo'
 import { clientLogos } from '@/data/clients'
 import { avis } from '@/data/avis'
 
@@ -68,7 +69,9 @@ const homeFaqSchema = {
   ],
 }
 
-export default function Home() {
+export default async function Home() {
+  // Vignette Vimeo fraîche (bypass cache vumbnail.com)
+  const paprecThumb = await getVimeoThumbnail('1201721934')
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
@@ -329,6 +332,7 @@ export default function Home() {
               <VideoTestimonialCompact
                 vimeoId="1201721934"
                 name="Jérôme Buffereau"
+                thumbnailUrl={paprecThumb ?? undefined}
               />
             </div>
             <div>
