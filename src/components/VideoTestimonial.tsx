@@ -11,6 +11,8 @@ export interface VideoTestimonialProps {
   quote: string
   /** Ex: "Cabinet d'assurance, La Rochelle" */
   projectInfo?: string
+  /** URL d'une vignette custom (sinon fallback sur vumbnail.com qui pull la vignette Vimeo). */
+  thumbnailUrl?: string
 }
 
 /**
@@ -26,8 +28,10 @@ export function VideoTestimonial({
   company,
   quote,
   projectInfo,
+  thumbnailUrl,
 }: VideoTestimonialProps) {
   const [loaded, setLoaded] = useState(false)
+  const poster = thumbnailUrl ?? `https://vumbnail.com/${vimeoId}_large.jpg`
 
   return (
     <div
@@ -87,7 +91,7 @@ export function VideoTestimonial({
               padding: 0,
               border: 'none',
               cursor: 'pointer',
-              backgroundImage: `url(https://vumbnail.com/${vimeoId}.jpg)`,
+              backgroundImage: `url(${poster})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               display: 'flex',
@@ -120,7 +124,7 @@ export function VideoTestimonial({
           </button>
         ) : (
           <iframe
-            src={`https://player.vimeo.com/video/${vimeoId}?autoplay=1&muted=1&dnt=1&badge=0&autopause=0&app_id=58479`}
+            src={`https://player.vimeo.com/video/${vimeoId}?autoplay=1&dnt=1&badge=0&autopause=0&app_id=58479`}
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             style={{
