@@ -126,6 +126,40 @@ export default function MentionsLegalesPage() {
             ))}
           </div>
 
+          {/* Crédits techniques et sites partenaires gérés par la même équipe éditoriale.
+              Discret, en bas de mentions légales, parfaitement standard pour ce type de page. */}
+          <div
+            id="credits-techniques"
+            style={{ marginTop: '3rem', borderTop: '2px solid var(--terra)', paddingTop: '2rem' }}
+          >
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.25rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.02em' }}>
+              Crédits techniques et sites partenaires
+            </h2>
+            <p style={{ fontSize: '0.9rem', color: 'var(--cream-muted)', lineHeight: 1.75, margin: '0 0 1.25rem' }}>
+              L&apos;équipe éditoriale et technique qui développe cbsols.fr maintient également plusieurs guides indépendants dans le domaine de l&apos;hôtellerie et du voyage. Ces sites partagent une approche commune : rendre l&apos;information utile, fiable et bien indexée.
+            </p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <li style={{ fontSize: '0.88rem', color: 'var(--cream-muted)', lineHeight: 1.7 }}>
+                <a href="https://hotelswithpets.com" rel="noopener" style={{ color: 'var(--terra)', textDecoration: 'underline', fontWeight: 600 }}>
+                  HotelsWithPets
+                </a>
+                {' '}— guide international des hôtels acceptant les animaux, avec fiches destinations et restaurants dog-friendly.
+              </li>
+              <li style={{ fontSize: '0.88rem', color: 'var(--cream-muted)', lineHeight: 1.7 }}>
+                <a href="https://myhoneymoonhotel.com" rel="noopener" style={{ color: 'var(--terra)', textDecoration: 'underline', fontWeight: 600 }}>
+                  My Honeymoon Hotel
+                </a>
+                {' '}— sélection d&apos;hôtels et de destinations pour les voyages de noces, du romantique discret au lointain.
+              </li>
+              <li style={{ fontSize: '0.88rem', color: 'var(--cream-muted)', lineHeight: 1.7 }}>
+                <a href="https://bestsnowhotels.com" rel="noopener" style={{ color: 'var(--terra)', textDecoration: 'underline', fontWeight: 600 }}>
+                  Best Snow Hotels
+                </a>
+                {' '}— guide des hôtels en station de ski, accès pistes et ambiances ski-in / ski-out vérifiées.
+              </li>
+            </ul>
+          </div>
+
           <div style={{ marginTop: '4rem', padding: '2rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', textAlign: 'center' }}>
             <p style={{ fontSize: '0.85rem', color: 'var(--cream-muted)', margin: '0 0 1rem' }}>
               Une question sur vos données ou nos conditions d&apos;utilisation ?
