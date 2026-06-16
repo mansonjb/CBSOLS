@@ -8,7 +8,7 @@ import { HeroSlider } from '@/components/HeroSlider'
 import { Button } from '@/components/Button'
 import { ClientLogoCard } from '@/components/ClientLogoCard'
 import { AvisSlider } from '@/components/AvisSlider'
-import { VideoTestimonial } from '@/components/VideoTestimonial'
+import { VideoTestimonialCompact } from '@/components/VideoTestimonialCompact'
 import { clientLogos } from '@/data/clients'
 import { avis } from '@/data/avis'
 
@@ -316,28 +316,38 @@ export default function Home() {
       </section>
 
       {/* ─── TÉMOIGNAGE VIDÉO (Paprec, ancrage industrie locale) ───── */}
-      <section style={{ padding: '6rem 2rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
-        <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700, marginBottom: '1rem', textAlign: 'center' }}>
+      <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '860px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700, marginBottom: '1rem' }}>
             Le client en parle
           </div>
-          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3.2vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.03em', lineHeight: 1.1, textAlign: 'center' }}>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.6vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>
             Jérôme Buffereau, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>Paprec La Rochelle.</em>
           </h2>
-          <VideoTestimonial
-            vimeoId="1201721934"
-            name="Jérôme Buffereau"
-            role="Directeur d'agence"
-            company="Paprec Sud-Ouest, La Rochelle"
-            quote="Sur un site industriel, on cherche un sol qui résiste, qui se nettoie, et qui se pose vite. CB Sols a coché les trois cases sans débordement de planning."
-            projectInfo="Bureaux et zones de circulation"
-          />
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link href="/temoignages" style={{ fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>
-              Voir tous les témoignages vidéo →
-            </Link>
+          <div className="paprec-inline" style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
+            <div style={{ flexShrink: 0 }}>
+              <VideoTestimonialCompact
+                vimeoId="1201721934"
+                name="Jérôme Buffereau"
+              />
+            </div>
+            <div>
+              <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.05rem', color: 'var(--dark)', lineHeight: 1.55, margin: '0 0 1.5rem', borderLeft: '2px solid var(--terra)', paddingLeft: '1.1rem' }}>
+                « Sur un site industriel, on cherche un sol qui résiste, qui se nettoie, et qui se pose vite. CB Sols a coché les trois cases sans débordement de planning. »
+              </p>
+              <div style={{ fontFamily: 'var(--font-sans)', fontWeight: 700, color: 'var(--dark)', fontSize: '0.95rem' }}>Jérôme Buffereau</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>Directeur d&apos;agence, Paprec Sud-Ouest, La Rochelle</div>
+              <Link href="/temoignages" style={{ display: 'inline-block', marginTop: '1.5rem', fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>
+                Voir tous les témoignages vidéo →
+              </Link>
+            </div>
           </div>
         </div>
+        <style>{`
+          @media (max-width: 720px) {
+            .paprec-inline { flex-direction: column !important; gap: 1.5rem !important; align-items: stretch !important; }
+          }
+        `}</style>
       </section>
 
       {/* ─── TÉMOIGNAGES ─────────────────────────────────────────── */}
