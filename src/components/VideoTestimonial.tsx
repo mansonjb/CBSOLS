@@ -62,16 +62,17 @@ export function VideoTestimonial({
         </p>
       </div>
 
-      {/* Zone vidéo 4:3 avec lazy load */}
+      {/* Zone vidéo 9:16 (vertical) avec lazy load, max-width pour ne pas envahir l'écran sur desktop */}
       <div
         style={{
           position: 'relative',
-          paddingTop: '75%',
+          paddingTop: '177.78%',
           width: '100%',
+          maxWidth: '380px',
+          margin: '0 auto 1.5rem',
           borderRadius: '10px',
           overflow: 'hidden',
           backgroundColor: 'var(--dark)',
-          marginBottom: '1.5rem',
         }}
       >
         {!loaded ? (
@@ -119,7 +120,7 @@ export function VideoTestimonial({
           </button>
         ) : (
           <iframe
-            src={`https://player.vimeo.com/video/${vimeoId}?autoplay=1&dnt=1&badge=0&autopause=0&app_id=58479`}
+            src={`https://player.vimeo.com/video/${vimeoId}?autoplay=1&muted=1&dnt=1&badge=0&autopause=0&app_id=58479`}
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             style={{
