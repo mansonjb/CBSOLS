@@ -49,11 +49,11 @@ export function VideoTestimonial({
         height: '100%',
       }}
     >
-      {/* Zone vidéo 4:5 portrait (format natif mobile, pas 9:16 strict) */}
+      {/* Zone vidéo 9:16 vertical (fichier source 2160×3840 confirmé, ratio strict) */}
       <div
         style={{
           position: 'relative',
-          paddingTop: '125%',
+          paddingTop: '177.78%',
           width: '100%',
           maxWidth: '200px',
           margin: '0 auto 1.25rem',
