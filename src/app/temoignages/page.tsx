@@ -210,14 +210,16 @@ export default function TemoignagesPage() {
               }}
             >
               {videos.map((v) => (
-                <div key={v.vimeoId}>
+                <div key={v.vimeoId} style={{ height: '100%', display: 'flex' }}>
                   <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
                       __html: JSON.stringify(videoSchema(v)),
                     }}
                   />
-                  <VideoTestimonial {...v} />
+                  <div style={{ width: '100%' }}>
+                    <VideoTestimonial {...v} />
+                  </div>
                 </div>
               ))}
             </div>
