@@ -53,7 +53,7 @@ export function VideoTestimonial({
       <div
         style={{
           position: 'relative',
-          paddingTop: '177.78%',
+          aspectRatio: '9 / 16',
           width: '100%',
           maxWidth: '200px',
           margin: '0 auto 1.25rem',

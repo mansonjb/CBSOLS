@@ -23,7 +23,9 @@ export function VideoTestimonialCompact({ vimeoId, name, thumbnailUrl }: VideoTe
       className="vt-compact-frame"
       style={{
         position: 'relative',
-        paddingTop: '177.78%',
+        // aspect-ratio CSS : calcule la hauteur depuis la largeur du div lui-même.
+        // Plus fiable que padding-top % qui se base sur le parent (bug mobile).
+        aspectRatio: '9 / 16',
         width: '200px',
         margin: '0 auto',
         borderRadius: '10px',
