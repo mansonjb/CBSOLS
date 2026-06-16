@@ -43,15 +43,19 @@ export function VideoTestimonial({
         padding: '1.25rem',
         maxWidth: '720px',
         margin: '0 auto',
+        // Cards alignées même hauteur dans la grille : flex column, citation poussée en bas
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
       }}
     >
-      {/* Zone vidéo 9:16 vertical, max-width 220px pour s'intégrer dans une grille 4 colonnes */}
+      {/* Zone vidéo 4:5 portrait (format natif mobile, pas 9:16 strict) */}
       <div
         style={{
           position: 'relative',
-          paddingTop: '177.78%',
+          paddingTop: '125%',
           width: '100%',
-          maxWidth: '220px',
+          maxWidth: '200px',
           margin: '0 auto 1.25rem',
           borderRadius: '10px',
           overflow: 'hidden',
@@ -149,11 +153,12 @@ export function VideoTestimonial({
         ) : null}
       </div>
 
-      {/* Citation en bas */}
+      {/* Citation en bas (poussée au pied de la carte pour aligner les hauteurs en grille) */}
       <div
         style={{
           borderLeft: '2px solid var(--terra)',
           paddingLeft: '0.85rem',
+          marginTop: 'auto',
         }}
       >
         <p
