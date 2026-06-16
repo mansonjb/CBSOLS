@@ -88,7 +88,7 @@ export function VideoTestimonialCompact({ vimeoId, name, thumbnailUrl }: VideoTe
       <style>{`
         .video-poster-compact:hover .video-poster-compact-btn { transform: scale(1.08); }
         @media (max-width: 720px) {
-          .vt-compact-frame { width: 60vw !important; max-width: 200px !important; }
+          .vt-compact-frame { width: 140px !important; }
         }
       `}</style>
     </div>
