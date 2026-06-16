@@ -66,13 +66,12 @@ export function VideoTestimonial({
         </p>
       </div>
 
-      {/* Zone vidéo 9:16 (vertical) avec lazy load, max-width pour ne pas envahir l'écran sur desktop */}
+      {/* Zone vidéo 4:3 (format Vimeo natif) avec lazy load */}
       <div
         style={{
           position: 'relative',
-          paddingTop: '177.78%',
+          paddingTop: '75%',
           width: '100%',
-          maxWidth: '380px',
           margin: '0 auto 1.5rem',
           borderRadius: '10px',
           overflow: 'hidden',
