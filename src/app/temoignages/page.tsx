@@ -43,7 +43,7 @@ const videos: VideoData[] = [
     vimeoId: '1201720983',
     name: 'Cédrick Poucineau',
     role: 'Directeur des Opérations',
-    company: 'Groupe Cozy Hotels',
+    company: 'Groupe Cosy Hotels',
     quote:
       "En hôtellerie, le sol participe directement au confort ressenti par nos clients. Le travail de CB Sols nous a permis de transformer nos chambres durablement.",
     projectInfo: 'Chambres et espaces communs',

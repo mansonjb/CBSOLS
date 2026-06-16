@@ -146,13 +146,13 @@ export default async function SecteurPage({ params }: Props) {
               Un hôtelier en parle
             </div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.025em', lineHeight: 1.15, textAlign: 'center' }}>
-              Cédrick Poucineau, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>Cozy Hotels.</em>
+              Cédrick Poucineau, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>Cosy Hotels.</em>
             </h2>
             <VideoTestimonial
               vimeoId="1201720983"
               name="Cédrick Poucineau"
               role="Directeur des Opérations"
-              company="Groupe Cozy Hotels"
+              company="Groupe Cosy Hotels"
               quote="En hôtellerie, le sol participe directement au confort ressenti par nos clients. Le travail de CB Sols nous a permis de transformer nos chambres durablement."
               projectInfo="Chambres et espaces communs"
             />
