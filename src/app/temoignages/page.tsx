@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Briefcase, Hotel, Factory, Phone, Star, Users } from 'lucide-react'
-import { VideoTestimonial } from '@/components/VideoTestimonial'
+import { VideoTestimonialCompact } from '@/components/VideoTestimonialCompact'
 import { RelatedCards, type RelatedCardItem } from '@/components/RelatedCards'
 
 export const metadata: Metadata = {
@@ -192,37 +192,76 @@ export default function TemoignagesPage() {
           </div>
         </section>
 
-        {/* Grille vidéos */}
+        {/* Stack vidéos : chaque témoignage en layout horizontal (vidéo gauche, texte droite) */}
         <section
           style={{
             padding: '5rem 2rem 6rem',
             backgroundColor: 'var(--bg-alt)',
           }}
         >
-          <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
-            <div
-              className="video-grid"
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(4, 1fr)',
-                gap: '1.75rem',
-                alignItems: 'start',
-              }}
-            >
-              {videos.map((v) => (
-                <div key={v.vimeoId} style={{ height: '100%', display: 'flex' }}>
-                  <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                      __html: JSON.stringify(videoSchema(v)),
+          <div style={{ maxWidth: '860px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '4rem' }}>
+            {videos.map((v) => (
+              <article
+                key={v.vimeoId}
+                className="temoignage-row"
+                style={{
+                  display: 'flex',
+                  gap: '2.5rem',
+                  alignItems: 'center',
+                  paddingBottom: '4rem',
+                  borderBottom: '1px solid var(--border)',
+                }}
+              >
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(videoSchema(v)),
+                  }}
+                />
+                <div style={{ flexShrink: 0 }}>
+                  <VideoTestimonialCompact vimeoId={v.vimeoId} name={v.name} />
+                </div>
+                <div>
+                  <p
+                    style={{
+                      fontFamily: 'var(--font-serif)',
+                      fontStyle: 'italic',
+                      fontSize: '1.05rem',
+                      color: 'var(--dark)',
+                      lineHeight: 1.55,
+                      margin: '0 0 1.5rem',
+                      borderLeft: '2px solid var(--terra)',
+                      paddingLeft: '1.1rem',
                     }}
-                  />
-                  <div style={{ width: '100%' }}>
-                    <VideoTestimonial {...v} />
+                  >
+                    « {v.quote} »
+                  </p>
+                  <div
+                    style={{
+                      fontFamily: 'var(--font-sans)',
+                      fontWeight: 700,
+                      color: 'var(--dark)',
+                      fontSize: '0.95rem',
+                    }}
+                  >
+                    {v.name}
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>
+                    {v.role}, {v.company}
+                  </div>
+                  <div
+                    style={{
+                      marginTop: '0.55rem',
+                      fontSize: '0.78rem',
+                      color: 'var(--terra)',
+                      fontWeight: 600,
+                    }}
+                  >
+                    {v.projectInfo}
                   </div>
                 </div>
-              ))}
-            </div>
+              </article>
+            ))}
           </div>
         </section>
 
@@ -234,11 +273,8 @@ export default function TemoignagesPage() {
       </div>
 
       <style>{`
-        @media (max-width: 1100px) {
-          .video-grid { grid-template-columns: repeat(2, 1fr) !important; }
-        }
-        @media (max-width: 620px) {
-          .video-grid { grid-template-columns: 1fr !important; gap: 1.75rem !important; }
+        @media (max-width: 720px) {
+          .temoignage-row { flex-direction: column !important; gap: 1.75rem !important; align-items: stretch !important; }
         }
       `}</style>
     </>
