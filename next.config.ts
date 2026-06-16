@@ -6,12 +6,13 @@ import type { NextConfig } from "next";
 // vers des nonces.
 const csp = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://vercel.live https://va.vercel-scripts.com",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://vercel.live https://va.vercel-scripts.com https://player.vimeo.com",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com data:",
-  "img-src 'self' data: blob: https://*.googletagmanager.com https://*.google-analytics.com https://www.clarity.ms https://*.tile.openstreetmap.org",
-  "connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.clarity.ms https://*.clarity.ms https://api.openstreetmap.org https://nominatim.openstreetmap.org",
-  "frame-src 'self' https://www.googletagmanager.com",
+  "img-src 'self' data: blob: https://*.googletagmanager.com https://*.google-analytics.com https://www.clarity.ms https://*.tile.openstreetmap.org https://vumbnail.com https://i.vimeocdn.com",
+  "connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.clarity.ms https://*.clarity.ms https://api.openstreetmap.org https://nominatim.openstreetmap.org https://player.vimeo.com https://*.vimeocdn.com",
+  "media-src 'self' blob: https://player.vimeo.com https://*.vimeocdn.com",
+  "frame-src 'self' https://www.googletagmanager.com https://player.vimeo.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
