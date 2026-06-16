@@ -8,13 +8,18 @@ export interface RelatedCardItem {
   icon: LucideIcon
 }
 
-export function RelatedCards({ items, sectionTitle = 'Voir aussi', sectionSubtitle }: {
+export function RelatedCards({ items, sectionTitle = 'Voir aussi', sectionSubtitle, forceColumns }: {
   items: RelatedCardItem[]
   sectionTitle?: string
   sectionSubtitle?: string
+  /** Si défini, force un nombre exact de colonnes sur desktop (responsive ajuste vers 2 puis 1) */
+  forceColumns?: number
 }) {
+  const gridTemplate = forceColumns
+    ? `repeat(${forceColumns}, 1fr)`
+    : 'repeat(auto-fill, minmax(220px, 1fr))'
   return (
-    <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+    <section className="related-cards-section" style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
         <div style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700, marginBottom: '1rem' }}>
           {sectionTitle}
@@ -22,7 +27,7 @@ export function RelatedCards({ items, sectionTitle = 'Voir aussi', sectionSubtit
         {sectionSubtitle ? (
           <p style={{ fontSize: '1rem', color: 'var(--muted)', lineHeight: 1.65, maxWidth: '780px', marginBottom: '2.5rem' }}>{sectionSubtitle}</p>
         ) : null}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem' }}>
+        <div className="related-cards-grid" style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: '1rem' }}>
           {items.map((it, i) => {
             const Icon = it.icon
             return (
@@ -58,6 +63,12 @@ export function RelatedCards({ items, sectionTitle = 'Voir aussi', sectionSubtit
           transform: translateY(-3px);
           box-shadow: 0 12px 32px -8px rgba(44, 85, 48, 0.18);
           border-color: var(--terra);
+        }
+        @media (max-width: 1100px) {
+          .related-cards-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        @media (max-width: 620px) {
+          .related-cards-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </section>

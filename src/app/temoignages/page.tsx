@@ -269,6 +269,7 @@ export default function TemoignagesPage() {
           items={related}
           sectionTitle="Voir aussi"
           sectionSubtitle="Explorez nos réalisations, nos solutions par secteur et notre accompagnement des architectes."
+          forceColumns={related.length}
         />
       </div>
 
