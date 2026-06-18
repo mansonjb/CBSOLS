@@ -19,9 +19,9 @@ export const cities: City[] = [
     description: 'capitale de la Charente-Maritime',
     population: 80000,
     localContext:
-      "La Rochelle concentre une forte demande tertiaire (bureaux, cabinets, professions libérales) en centre-ville et quartier des Minimes, doublée d'un parc résidentiel ancien (immeubles XIXe et programmes 1960-80) en cours de rénovation continue. Le climat océanique modéré et l'humidité ambiante imposent une vérification systématique du support avant pose, notamment en rez-de-chaussée sur les anciennes constructions sans polyane.",
+      "La Rochelle, c'est notre terrain de tous les jours. On y intervient autant dans les bureaux et les cabinets du centre-ville et des Minimes que dans les beaux immeubles anciens du Vieux-Port, où chaque parquet a son histoire. Le quartier vit, se rénove en continu, et les attentes y sont élevées : un sol doit être beau, durable et bien fini. L'air marin et l'humidité demandent qu'on prenne le temps de vérifier le support avant de poser, surtout dans les rez-de-chaussée des constructions anciennes. C'est une étape qu'on ne saute jamais, parce que c'est elle qui garantit que le sol tiendra dix ou quinze ans sans bouger. Notre atelier de Villedoux est à un quart d'heure, ce qui nous permet d'être réactifs et de suivre chaque chantier de près.",
     localFootnote:
-      "Sur les immeubles ouest centre-ville (zone classée), les contraintes ABF s'appliquent aux planchers visibles depuis l'espace public. À anticiper en CCTP.",
+      "Dans le centre ancien classé, les sols visibles depuis la rue peuvent demander l'accord des Bâtiments de France. Nous nous en occupons en amont pour vous éviter les mauvaises surprises.",
   },
   {
     slug: 'aytre',
@@ -43,9 +43,9 @@ export const cities: City[] = [
     description: 'station balnéaire de l\'agglomération rochelaise',
     population: 6500,
     localContext:
-      "Châtelaillon-Plage est une station balnéaire familiale au bâti mixte : villas balnéaires fin XIXe et Art déco du front de mer, lotissements des années 1960-80, copropriétés saisonnières et programmes neufs récents en arrière-front. Le contact direct avec la mer impose une attention particulière à la salinité atmosphérique et à l'humidité hivernale dans les rez-de-chaussée non isolés.",
+      "Châtelaillon-Plage est une station balnéaire familiale que l'on connaît bien. On y croise de tout : les villas du front de mer avec leurs jolies façades anciennes, les maisons des années soixante, les copropriétés qui se louent l'été et les programmes neufs un peu en retrait de la plage. Chaque type de logement appelle une solution différente, et c'est justement ce qui rend les chantiers intéressants ici. La mer est juste là, et l'air salé comme l'humidité de l'hiver se font sentir dans les pièces du bas, surtout quand elles sont peu isolées. Avant de poser quoi que ce soit, on vérifie donc l'état du support, et on conseille des revêtements qui tiendront dans la durée malgré ce climat exigeant. Notre atelier de Villedoux est à une quinzaine de minutes, ce qui facilite le suivi de chaque chantier.",
     localFootnote:
-      "Plusieurs villas Belle Époque du front de mer relèvent du périmètre des monuments inscrits. Sols visibles à coordonner avec l'ABF.",
+      "Quelques villas anciennes du front de mer sont protégées au titre du patrimoine. Quand un sol est visible depuis la rue, nous validons le projet avec les Bâtiments de France avant de commencer.",
   },
   {
     slug: 'angoulins',
@@ -103,9 +103,9 @@ export const cities: City[] = [
     description: 'commune de l\'agglomération rochelaise',
     population: 5000,
     localContext:
-      "Périgny abrite l'une des plus grandes zones d'activités de l'agglomération (ZI de Périgny) avec un fort tissu d'entrepôts, locaux artisanaux, showrooms et bureaux PME. Le volet résidentiel reste secondaire : pavillons des années 1980-2000 et quelques lotissements neufs. La demande locale est tirée par le tertiaire et l'industriel, avec beaucoup de sols résines et PVC en lés.",
+      "Périgny, c'est avant tout l'une des grandes zones d'activités de l'agglomération, avec ses entrepôts, ses ateliers, ses showrooms et de nombreux bureaux de PME. On y intervient beaucoup pour des locaux professionnels, où le sol doit encaisser un passage intense au quotidien sans se dégrader. La commune compte aussi des quartiers pavillonnaires plus calmes et quelques programmes récents, où l'on retrouve une demande plus classique de rénovation et de pose neuve. Notre rôle, ici, est surtout de bien cerner l'usage réel de chaque espace avant de recommander un revêtement : un bureau, un commerce et un atelier n'ont pas les mêmes contraintes. Basés à Villedoux, à quelques minutes, nous connaissons bien le tissu local et ses besoins.",
     localFootnote:
-      "En zone d'activités, le passage de chariots et transpalettes impose souvent un sol PVC compact U4P3 minimum plutôt qu'un LVT clipsable.",
+      "Dans les locaux où circulent des chariots et des transpalettes, on privilégie un sol PVC robuste pensé pour le trafic intense, plutôt qu'un revêtement clipsable plus fragile.",
   },
   {
     slug: 'puilboreau',
@@ -152,9 +152,9 @@ export const cities: City[] = [
     description: 'chef-lieu de l\'Île de Ré, ville fortifiée classée UNESCO',
     population: 2700,
     localContext:
-      "Chef-lieu de l'Île de Ré classé au patrimoine mondial UNESCO, Saint-Martin-de-Ré présente un bâti dense en pierre calcaire blanche et enduit chaux, principalement résidentiel secondaire et locatif saisonnier. La salinité atmosphérique, la forte humidité hivernale et l'absence de polyane sur les rez-de-chaussée anciens conditionnent presque toujours la mise en œuvre d'une barrière anti-humidité avant la pose d'un sol souple.",
+      "Saint-Martin-de-Ré est un lieu à part, classé au patrimoine mondial de l'UNESCO, avec ses fortifications, ses maisons basses en pierre blanche et ses ruelles autour du port. La plupart des logements sont des résidences secondaires ou des locations de vacances, ce qui veut dire des sols qui doivent rester impeccables saison après saison. Poser un revêtement ici demande du soin et le respect de l'esprit des lieux : on ne traite pas une maison rétaise ancienne comme une construction récente. L'air salé et l'humidité de l'hiver imposent presque toujours de protéger le support avant la pose, faute de quoi un sol souple ne tiendrait pas. C'est une précaution que nous prenons systématiquement. Depuis notre atelier de Villedoux, l'île est facilement accessible et nous y travaillons régulièrement.",
     localFootnote:
-      "Périmètre ABF strict : tout matériau visible depuis la voie publique demande validation préalable (parquets, plinthes, seuils, profilés métalliques).",
+      "Le secteur est protégé de près. Tout matériau visible depuis la rue, parquet, plinthe ou seuil, doit être validé avant les travaux. Nous nous chargeons de ces démarches auprès des Bâtiments de France.",
   },
   {
     slug: 'la-flotte',
@@ -176,9 +176,9 @@ export const cities: City[] = [
     description: 'commune balnéaire de l\'Île de Ré',
     population: 2500,
     localContext:
-      "Le Bois-Plage-en-Ré associe un noyau ancien de maisons rétaises basses en pierre et enduit chaux à une forte densité de résidences secondaires et campings dans la pinède littorale. Bâti mixte ancien et constructions des années 1970-2000, avec un fort taux de saisonnalité et une demande tournée vers la remise à neuf annuelle des locatifs.",
+      "Le Bois-Plage-en-Ré mêle un vieux village de maisons rétaises basses à une grande densité de résidences secondaires et de campings nichés dans la pinède, tout près des plages. C'est une commune qui vit au rythme des saisons, et beaucoup de propriétaires de locations font remettre leurs sols à neuf chaque année pour accueillir les vacanciers dans les meilleures conditions. On intervient donc autant sur des maisons anciennes pleines de caractère que sur des hébergements plus récents. La proximité de la plage et le sable qui s'invite partout nous orientent vers des revêtements faciles à entretenir et résistants à l'usage. Notre connaissance de l'île et notre atelier proche, à Villedoux, nous permettent de tenir les délais courts qu'imposent les changements de saison.",
     localFootnote:
-      "Sur les résidences saisonnières, privilégier les revêtements U3P3 résistants au sable et aux entrées sablonneuses des locataires.",
+      "Pour les locations en bord de plage, nous conseillons des revêtements résistants qui supportent bien le sable et le passage répété des vacanciers.",
   },
   {
     slug: 'rivedoux-plage',
@@ -261,9 +261,9 @@ export const cities: City[] = [
     description: 'ville historique de Charente-Maritime',
     population: 23000,
     localContext:
-      "Rochefort, ancienne ville arsenal Colbert, présente un centre-ville XVIIe-XVIIIe au tracé orthogonal avec immeubles en pierre de taille et un patrimoine militaire et thermal classé. Tissu mixte avec tertiaire administratif, secteur hospitalier important, et un parc résidentiel ancien partiellement réhabilité. Quartiers périphériques pavillonnaires des années 1960-2000 complètent l'offre.",
+      "Rochefort a gardé l'empreinte de son passé d'arsenal royal, avec son centre-ville aux rues tirées au cordeau et ses immeubles en pierre de taille. C'est une ville qui se rénove, où l'on intervient aussi bien dans de beaux appartements anciens du centre que dans les bureaux administratifs, les établissements de santé et les pavillons des quartiers plus récents. Chaque chantier a sa logique : un appartement ancien demande qu'on respecte l'existant, là où un espace professionnel privilégie la robustesse. Notre travail consiste à trouver le bon revêtement pour chaque usage, en tenant compte de l'état réel du sol en place, que l'on vérifie toujours avant de poser. Rochefort se trouve à une trentaine de minutes de notre atelier de Villedoux, dans une zone que nous parcourons régulièrement.",
     localFootnote:
-      "Cœur historique en secteur sauvegardé : reprises de sols en parties communes d'immeubles XVIIIe nécessitent l'avis ABF.",
+      "Dans le cœur historique protégé, les reprises de sol dans les parties communes des immeubles anciens demandent un avis préalable. Nous anticipons ces autorisations pour vous.",
   },
   {
     slug: 'saintes',
@@ -273,9 +273,9 @@ export const cities: City[] = [
     description: 'sous-préfecture de Charente-Maritime',
     population: 25000,
     localContext:
-      "Saintes combine un centre-ville historique au patrimoine gallo-romain et médiéval (amphithéâtre, abbaye aux Dames) avec un tissu commercial et tertiaire dense. Le bâti ancien en pierre calcaire de Saintonge domine en cœur de ville, complété par des faubourgs XIXe et des quartiers pavillonnaires des années 1950-2000 en périphérie. Hôpital et établissements scolaires structurants.",
+      "Saintes est une ville d'histoire, marquée par son amphithéâtre romain, son abbaye et ses pierres blondes de Saintonge. En cœur de ville, on travaille surtout sur du bâti ancien, dans des logements et des commerces où le sol participe pleinement au cachet des lieux. Autour, les faubourgs et les quartiers pavillonnaires apportent une demande plus courante de rénovation. La pierre locale est tendre et un peu poreuse, et les sols anciens posés à même la terre peuvent retenir l'humidité. Avant de poser un revêtement collé, nous prenons donc le temps de mesurer l'état du support : c'est ce qui évite les décollements et les mauvaises surprises quelques mois plus tard. Saintes fait partie des villes de Charente-Maritime que nous desservons depuis notre atelier de Villedoux.",
     localFootnote:
-      "Bâti calcaire de Saintonge poreux : sur dalles anciennes au contact direct du sol, prévoir test d'humidité avant tout sol PVC ou parquet collé.",
+      "La pierre de Saintonge laisse passer l'humidité. Sur un sol ancien posé directement sur la terre, nous vérifions toujours le taux d'humidité avant une pose collée.",
   },
   {
     slug: 'royan',
@@ -285,9 +285,9 @@ export const cities: City[] = [
     description: 'station balnéaire emblématique de la côte atlantique',
     population: 18000,
     localContext:
-      "Royan est marquée par sa reconstruction d'après-guerre, avec un centre-ville classé patrimoine du XXe siècle (église Notre-Dame, marché central, villas modernistes). Forte densité de copropriétés balnéaires des années 1950-70 sur le front de mer, complétée par des villas Belle Époque préservées et des programmes neufs récents. Tertiaire commercial saisonnier important.",
+      "Royan a une identité architecturale unique, née de sa reconstruction d'après-guerre, avec son église en béton, son marché central et ses villas aux lignes modernes. Le front de mer aligne les copropriétés des années cinquante et soixante, où l'on intervient souvent pour rénover des appartements de vacances. On y trouve aussi de belles villas anciennes préservées et des programmes neufs. Cette diversité fait que chaque projet est différent, et nous aimons adapter le revêtement à l'esprit du logement comme à son usage réel. Comme partout sur la côte, l'humidité des rez-de-chaussée mérite qu'on s'y attarde avant la pose. Royan se situe à environ trois quarts d'heure de notre atelier de Villedoux, sur un secteur que nous couvrons régulièrement.",
     localFootnote:
-      "Centre-ville reconstruction labellisé Patrimoine XXe : sols et plinthes des parties communes peuvent relever de prescriptions architecturales.",
+      "Le centre reconstruit est reconnu au titre du patrimoine du XXe siècle. Dans les parties communes, le choix des sols et des plinthes peut être encadré, ce que nous prenons en compte dès le départ.",
   },
   {
     slug: 'surgeres',
@@ -297,9 +297,9 @@ export const cities: City[] = [
     description: 'commune agricole dynamique de Charente-Maritime',
     population: 6500,
     localContext:
-      "Surgères est un pôle agricole et agroalimentaire (Eurial, lait) avec un centre-bourg ancien autour de l'église romane et du château, et un tissu pavillonnaire des années 1970-2000. Présence de bâtiments industriels et tertiaires liés à la filière laitière, et un petit commerce traditionnel de centre-bourg. Demande mixte rénovation et neuf.",
+      "Surgères est une ville à la fois agricole et tournée vers l'agroalimentaire, bien connue pour sa filière laitière. Autour de son église romane et de son château, le centre-bourg garde un charme ancien, et tout autour s'étendent les quartiers pavillonnaires. On y intervient pour des projets variés : des maisons en rénovation, des commerces du centre, mais aussi des locaux professionnels qui ont des exigences particulières. Cette double facette, résidentielle et professionnelle, fait la richesse des chantiers ici. Dans chaque cas, nous commençons par comprendre l'usage de la pièce avant de proposer un sol adapté, qu'il s'agisse de confort à la maison ou de résistance dans un espace de travail. Surgères fait partie des communes que nous desservons depuis notre atelier de Villedoux.",
     localFootnote:
-      "Sur sites agroalimentaires de la zone, sols résine alimentaire ou PVC compact à joints soudés étanches restent la norme HACCP.",
+      "Dans les locaux liés à l'agroalimentaire, l'hygiène prime : on y pose des sols étanches et faciles à nettoyer, conçus pour répondre aux normes du secteur.",
   },
   {
     slug: 'saint-jean-dangely',
@@ -309,9 +309,9 @@ export const cities: City[] = [
     description: 'commune historique de Charente-Maritime',
     population: 7500,
     localContext:
-      "Saint-Jean-d'Angély conserve un cœur médiéval autour de l'abbaye royale classée UNESCO au titre des chemins de Compostelle, avec maisons à pans de bois et hôtels particuliers en pierre de taille. Tissu mixte commerce/résidentiel ancien, complété par des faubourgs et lotissements pavillonnaires. Patrimoine architectural significatif imposant des précautions en rénovation.",
+      "Saint-Jean-d'Angély a conservé un cœur médiéval magnifique, autour de son abbaye royale et de ses maisons à pans de bois, sur l'un des chemins vers Compostelle. C'est une ville où le patrimoine se vit au quotidien, et où poser un sol demande de la délicatesse et le sens du détail. On y rénove autant des logements anciens et des commerces du centre que des maisons plus récentes dans les quartiers en périphérie. Travailler dans le bâti ancien suppose de s'adapter à des planchers qui ne sont jamais parfaitement réguliers : c'est là que l'expérience de CB Sols, accumulée depuis 1999, fait la différence. Saint-Jean-d'Angély compte parmi les villes de Charente-Maritime que nous desservons depuis notre atelier de Villedoux.",
     localFootnote:
-      "Cœur de ville en secteur sauvegardé UNESCO : interventions sur sols des bâtiments inscrits soumises à autorisation préalable.",
+      "Le centre ancien est protégé. Les travaux de sol dans les bâtiments classés demandent une autorisation préalable, démarche dont nous nous occupons en amont du chantier.",
   },
   {
     slug: 'marennes',
@@ -333,9 +333,9 @@ export const cities: City[] = [
     description: 'commune thermale de Charente-Maritime',
     population: 6000,
     localContext:
-      "Saujon est une station thermale spécialisée dans la psychiatrie (Thermes Louison Bobet), avec un tissu mixte combinant centre-bourg ancien, équipements de santé importants (Korian, cliniques), résidences pour curistes et lotissements pavillonnaires. Demande locale tirée par les établissements médico-sociaux et le renouvellement régulier des sols dans les chambres et circulations.",
+      "Saujon est une ville thermale reconnue, où les établissements de santé et les résidences pour curistes occupent une place importante aux côtés du centre-bourg ancien et des quartiers pavillonnaires. C'est un contexte que nous apprécions, car les sols y jouent un vrai rôle : dans une chambre ou un couloir d'établissement de soins, le revêtement doit être confortable, silencieux et facile à entretenir, tout en restant accueillant. Nous intervenons aussi bien sur ces espaces collectifs que chez les particuliers qui rénovent leur logement. Comprendre l'usage de chaque pièce avant de poser, c'est notre manière de garantir un résultat qui dure. Saujon fait partie des communes de Charente-Maritime que nous desservons depuis notre atelier de Villedoux.",
     localFootnote:
-      "Établissements de santé : sols PVC acoustiques certifiés NF EN 14041 + classement feu Cfl-s1 obligatoires sur les circulations.",
+      "Dans les établissements de santé, les sols doivent répondre à des exigences précises de confort sonore et de sécurité incendie. Nous posons des revêtements certifiés pour ces usages.",
   },
   {
     slug: 'fouras',
@@ -540,9 +540,9 @@ export const cities: City[] = [
     description: 'commune balnéaire de l\'estuaire de la Gironde',
     population: 3200,
     localContext:
-      "Meschers-sur-Gironde est une commune balnéaire en bord d'estuaire de la Gironde, célèbre pour ses grottes troglodytes et ses falaises calcaires. Bâti mixte associant maisons charentaises traditionnelles, villas balnéaires début XXe et pavillonnaire des années 1970-2000. Présence de carrelets sur l'estuaire et d'un petit port de plaisance structurant.",
+      "Meschers-sur-Gironde est une commune balnéaire pleine de caractère, posée au bord de l'estuaire, célèbre pour ses falaises calcaires et ses grottes creusées dans la roche. On y trouve des maisons charentaises traditionnelles, de jolies villas du début du siècle dernier et des pavillons plus récents, sans oublier les cabanes de pêche sur pilotis qui font le charme du paysage. Cette diversité de logements nous amène à proposer des solutions sur mesure, en fonction de l'âge et de l'orientation de chaque maison. La proximité de l'eau et la roche poreuse demandent une attention particulière à l'humidité, que nous évaluons toujours avant de poser. Meschers fait partie des communes du sud du département que nous desservons depuis notre atelier de Villedoux.",
     localFootnote:
-      "Sol calcaire poreux des falaises : sur maisons troglodytes, prévoir test d'humidité approfondi et système de ventilation adapté.",
+      "La roche calcaire laisse passer l'humidité. Dans les maisons adossées à la falaise, nous mesurons soigneusement l'humidité du sol et veillons à une bonne ventilation avant la pose.",
   },
   {
     slug: 'saint-georges-de-didonne',
@@ -600,9 +600,9 @@ export const cities: City[] = [
     description: 'capitale mondiale du cognac, à la frontière de la zone CB Sols',
     population: 19000,
     localContext:
-      "Cognac est la capitale mondiale de l'eau-de-vie du même nom, avec un centre-ville médiéval en pierre de taille, des chais et négoces historiques (Hennessy, Martell, Rémy Martin) le long de la Charente, et un tissu pavillonnaire en périphérie. Climat plus continental qu'en zone côtière, faible humidité atmosphérique, présence forte du tissu viti-vinicole et tertiaire associé.",
+      "Cognac est mondialement connue pour son eau-de-vie, avec ses grandes maisons de négoce et ses chais alignés le long de la Charente. Son centre ancien en pierre de taille et ses quartiers résidentiels offrent une belle variété de projets. La ville marque la limite de notre zone d'intervention, et nous nous y déplaçons pour des chantiers où l'exigence est de mise, qu'il s'agisse de logements de caractère ou d'espaces liés à l'univers du vin et de l'œnotourisme. Le climat y est plus sec qu'en bord de mer, ce qui change les précautions à prendre : un parquet, par exemple, demande une hygrométrie bien régulée pour rester stable. Nous tenons compte de ces particularités pour conseiller le revêtement le plus adapté à chaque lieu.",
     localFootnote:
-      "Chais et lieux d'accueil œnotourisme : sols soumis à vapeurs éthyliques permanentes. Préférer PVC compact ou résine plutôt que stratifié.",
+      "Dans les chais et les espaces d'accueil œnotouristique, l'air est chargé de vapeurs d'alcool en permanence. On y privilégie des sols résistants comme le PVC compact ou la résine plutôt qu'un stratifié.",
   },
 ]
 

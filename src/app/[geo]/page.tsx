@@ -14,6 +14,31 @@ interface Props {
   params: Promise<{ geo: string }>
 }
 
+// Pages /[geo] réactivées en indexation (sortie du noindex anti thin content),
+// chacune enrichie d'un contenu éditorial unique. Les autres restent noindex.
+export const REACTIVATED_GEO = new Set([
+  'revetement-sol-la-rochelle',
+  'sol-pvc-les-la-rochelle',
+  'pose-moquette-la-rochelle',
+  'sol-pvc-lames-dalles-la-rochelle',
+  'revetement-sol-saintes',
+  'revetement-sol-royan',
+  'revetement-sol-rochefort',
+  'revetement-sol-surgeres',
+  'revetement-sol-saint-jean-dangely',
+  'revetement-sol-saint-martin-de-re',
+  'pose-moquette-saint-martin-de-re',
+  'revetement-sol-le-bois-plage-en-re',
+  'sol-pvc-les-saint-jean-dangely',
+  'sol-pvc-les-saujon',
+  'sol-pvc-lames-dalles-perigny',
+  'revetement-sol-meschers-sur-gironde',
+  'revetement-sol-chatelaillon-plage',
+  'sol-pvc-les-chatelaillon-plage',
+  'revetement-sol-perigny',
+  'revetement-sol-cognac',
+])
+
 function parseGeoSlug(geo: string): { service: ReturnType<typeof getServiceBySlug>; city: ReturnType<typeof getCityBySlug> } | null {
   for (const service of services) {
     if (geo.startsWith(service.slug + '-')) {
@@ -45,7 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: service.metaDescription(city.name),
     alternates: { canonical: `https://cbsols.fr/${geo}` },
     robots: {
-      index: false,
+      index: REACTIVATED_GEO.has(geo),
       follow: true,
     },
   }

@@ -95,6 +95,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/revetement-sol-saint-jean-de-luz`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-poitiers`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-angouleme`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
+    // Pages ville x service réactivées en indexation (20), enrichies d'un contenu
+    // éditorial unique. Le reste des /[geo] demeure noindex (cf. page.tsx).
+    { url: `${BASE_URL}/revetement-sol-la-rochelle`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/sol-pvc-les-la-rochelle`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/pose-moquette-la-rochelle`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/sol-pvc-lames-dalles-la-rochelle`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-saintes`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-royan`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-rochefort`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-surgeres`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-saint-jean-dangely`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-saint-martin-de-re`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/pose-moquette-saint-martin-de-re`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-le-bois-plage-en-re`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/sol-pvc-les-saint-jean-dangely`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/sol-pvc-les-saujon`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/sol-pvc-lames-dalles-perigny`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-meschers-sur-gironde`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-chatelaillon-plage`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/sol-pvc-les-chatelaillon-plage`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-perigny`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/revetement-sol-cognac`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
