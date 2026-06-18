@@ -8,7 +8,7 @@
  * possession du domaine). Elle ne donne aucun pouvoir particulier, juste
  * d'identifier la propriété cbsols.fr.
  */
-const INDEXNOW_KEY = 'cb5015a4f87d9e6c2b3a8f12d4e9c7b5a6f3d2e1c0b9a8f7e6d5c4b3a2f1e0d9'
+const INDEXNOW_KEY = '4d49cd1fe0334cc59c37346debc07c0f'
 const INDEXNOW_HOST = 'cbsols.fr'
 const INDEXNOW_KEY_LOCATION = `https://${INDEXNOW_HOST}/${INDEXNOW_KEY}.txt`
 
