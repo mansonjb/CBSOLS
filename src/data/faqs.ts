@@ -138,7 +138,7 @@ export const faqs: Faq[] = [
     datePublished: '2025-12-02',
     dateModified: '2026-04-05',
     question: 'Comment obtenir un devis gratuit pour son revêtement de sol ?',
-    metaTitle: 'Devis Revêtement de Sol Gratuit | CB Sols Charente-Maritime',
+    metaTitle: 'Devis Revêtement de Sol Gratuit | Réponse sous 48h',
     metaDescription: 'Comment obtenir un devis gratuit pour votre revêtement de sol ? Process CB Sols, délais, ce qui est inclus. Devis sous 48h en Charente-Maritime.',
     category: 'Devis & Process',
     shortAnswer: "CB Sols se déplace gratuitement dans toute la Charente-Maritime pour mesurer, évaluer le support et remettre un devis chiffré sous 48h. Contactez par téléphone, formulaire ou email avec vos plans.",

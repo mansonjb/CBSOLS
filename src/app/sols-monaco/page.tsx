@@ -7,7 +7,7 @@ import { StickyDevisButton } from '@/components/StickyDevisButton'
 import { Building2, Castle, Mail, MapPin, Sparkles, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Sols et Moquette d'Exception à Monaco | Précision",
+  title: "Sols & Moquette d'Exception à Monaco | Pose Premium",
   description: "CB Sols se déplace à Monaco pour les projets d'exception : appartements Carré d'Or, suites de palace, yachts du Port Hercule. Moquette, tapis sur mesure et sols haut de gamme. Finition premium, discrétion totale, 27 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/sols-monaco' },
   openGraph: {

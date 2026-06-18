@@ -42,7 +42,7 @@ export const services: Service[] = [
     useCases: ['Chambres d\'hôtel', 'Suite parentale', 'Chambre d\'enfant', 'Bibliothèque', 'Dressing', 'Salles de réunion', 'Bureaux', 'Escaliers', 'Couloirs'],
     brands: ['EGE'],
     geoVerb: 'Pose de moquette à',
-    metaTitle: (city) => `Pose de Moquette ${city} | CB Sols, Artisan Certifié`,
+    metaTitle: (city) => `Pose de Moquette ${city} | Devis Gratuit sous 48h`,
     metaDescription: (city) =>
       `Pose de moquette professionnelle à ${city} et environs. CB Sols : artisan spécialiste depuis 27 ans, devis gratuit. Hôtels, bureaux, particuliers.`,
     h1: (city) => `Pose de Moquette à ${city}`,
@@ -68,7 +68,7 @@ export const services: Service[] = [
     useCases: ['Maison individuelle', 'Chambre', 'Salle de bain', 'Commerces', 'Cuisines professionnelles', 'Couloirs', 'Open spaces', 'Rénovation rapide'],
     brands: ['Gerflor', 'objectflor'],
     geoVerb: 'Sol PVC à',
-    metaTitle: (city) => `Sol PVC Lames & Dalles ${city} | CB Sols`,
+    metaTitle: (city) => `Sol PVC Lames & Dalles ${city} | Pose & Devis 48h`,
     metaDescription: (city) =>
       `Pose de sol PVC lames et dalles à ${city}. CB Sols installe des marques sélectionnées avec soin (Gerflor, objectflor) pour professionnels et particuliers. Devis gratuit.`,
     h1: (city) => `Sol PVC Lames & Dalles à ${city}`,
@@ -94,7 +94,7 @@ export const services: Service[] = [
     useCases: ['Maison individuelle', 'Cuisines professionnelles', 'Établissements de santé', 'Laboratoires', 'Couloirs collectifs', 'Amphithéâtres'],
     brands: ['Gerflor', 'objectflor'],
     geoVerb: 'PVC en lés à',
-    metaTitle: (city) => `Sol PVC en Lés ${city} | Pose Professionnelle CB Sols`,
+    metaTitle: (city) => `Sol PVC en Lés ${city} | Pose Pro, Devis Gratuit`,
     metaDescription: (city) =>
       `Pose de sol PVC en lés à ${city} par CB Sols. Revêtement vinyle en rouleaux avec soudure à chaud, idéal pour professionnels de santé et collectivités.`,
     h1: (city) => `Sol PVC en Lés à ${city}`,
@@ -120,7 +120,7 @@ export const services: Service[] = [
     useCases: ['Maison individuelle', 'Lobbys d\'hôtels', 'Restaurants gastronomiques', 'Salles de réception', 'Résidences de luxe', 'Boutiques premium'],
     brands: ['EGE', 'Atelier sur mesure CB Sols'],
     geoVerb: 'Tapis sur mesure à',
-    metaTitle: (city) => `Tapis Sur Mesure ${city} | CB Sols, Création Sur-Mesure`,
+    metaTitle: (city) => `Tapis Sur Mesure ${city} | Création Artisan`,
     metaDescription: (city) =>
       `Tapis décoratifs sur mesure à ${city}. CB Sols crée vos tapis uniques pour hôtels, restaurants et espaces prestige. Devis personnalisé.`,
     h1: (city) => `Tapis Sur Mesure à ${city}`,
@@ -146,7 +146,7 @@ export const services: Service[] = [
     useCases: ['Maison individuelle', 'Entrées d\'hôtels', 'Commerces', 'Bureaux & entreprises', 'Collectivités', 'Résidences'],
     brands: ['Romus'],
     geoVerb: 'Tapis de propreté à',
-    metaTitle: (city) => `Tapis de Propreté ${city} | CB Sols, Sur Mesure`,
+    metaTitle: (city) => `Tapis de Propreté ${city} sur Mesure | Devis 48h`,
     metaDescription: (city) =>
       `Tapis de propreté professionnels à ${city}. Sur mesure, avec logo possible. CB Sols protège vos sols et soigne l'image de votre établissement.`,
     h1: (city) => `Tapis de Propreté à ${city}`,
@@ -172,7 +172,7 @@ export const services: Service[] = [
     useCases: ['Hôtels entre saisons', 'Bureaux', 'Salles de conférence', 'Résidences', 'Campings premium'],
     brands: [],
     geoVerb: 'Nettoyage de moquette à',
-    metaTitle: (city) => `Nettoyage de Moquette ${city} | CB Sols, Injection-Extraction`,
+    metaTitle: (city) => `Nettoyage Moquette ${city} | Injection-Extraction`,
     metaDescription: (city) =>
       `Nettoyage professionnel de moquette à ${city} par injection-extraction. CB Sols restitue l'éclat de vos moquettes. Intervention rapide, devis gratuit.`,
     h1: (city) => `Nettoyage de Moquette à ${city}`,
@@ -198,7 +198,7 @@ export const services: Service[] = [
     useCases: ['Maisons et appartements', 'Bureaux et commerces', 'Hôtels et restaurants', 'Collectivités', 'Projets neufs et rénovation'],
     brands: ['EGE', 'Gerflor', 'objectflor'],
     geoVerb: 'Revêtement de sol à',
-    metaTitle: (city) => `Revêtement de Sol ${city} | CB Sols, Artisan Spécialiste`,
+    metaTitle: (city) => `Revêtement de Sol ${city} | Devis Gratuit sous 48h`,
     metaDescription: (city) =>
       `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis 27 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
     h1: (city) => `Revêtement de Sol à ${city}`,
@@ -224,7 +224,7 @@ export const services: Service[] = [
     useCases: ['Home-cinémas privés', 'Salles de projection résidences', 'Espaces multimédia hôteliers', 'Salles de spectacle', 'Auditoriums'],
     brands: ['EGE'],
     geoVerb: 'Salle de cinéma à',
-    metaTitle: (city) => `Sol Salle de Cinéma ${city} | Moquette Acoustique CB Sols`,
+    metaTitle: (city) => `Sol Salle de Cinéma ${city} | Moquette Acoustique`,
     metaDescription: (city) =>
       `Aménagement sol pour salle de cinéma et home-cinéma à ${city}. CB Sols : moquette acoustique haute densité, finitions anti-reflets, sous-couche renforcée. Devis gratuit.`,
     h1: (city) => `Sol pour salle de cinéma à ${city}`,
@@ -250,7 +250,7 @@ export const services: Service[] = [
     useCases: ['Salons de lecture hôteliers', 'Bibliothèques privées', 'Mezzanines en suites', 'Coins lecture résidentiels', 'Espaces étude haut de gamme'],
     brands: ['EGE', 'Atelier tapis sur mesure CB Sols'],
     geoVerb: 'Coin lecture à',
-    metaTitle: (city) => `Sol Espace Lecture ${city} | Coin Lecture CB Sols`,
+    metaTitle: (city) => `Sol Coin Lecture ${city} | Aménagement sur Mesure`,
     metaDescription: (city) =>
       `Création d'espaces et coins lecture à ${city}. Moquette feutrée, tapis sur mesure, ambiance cosy et acoustique maîtrisée. CB Sols, devis gratuit.`,
     h1: (city) => `Coin lecture à ${city}`,

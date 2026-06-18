@@ -7,7 +7,7 @@ import { StickyDevisButton } from '@/components/StickyDevisButton'
 import { Building2, Castle, Mail, MapPin, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Revêtement de Sol Arcachon | Moquette, PVC, Tapis",
+  title: "Revêtement de Sol à Arcachon | Pose & Devis sous 48h",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Arcachon et autour du Bassin. Villas Ville d'Hiver, Pereire, Moulleau, hôtels boutique face Bassin. CB Sols, 27 ans de savoir-faire, déplacement depuis La Rochelle.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-arcachon' },
   keywords: ['revêtement sol Arcachon', 'moquette Arcachon', 'sol PVC Arcachon', 'pose tapis Arcachon', 'artisan sol Bassin'],

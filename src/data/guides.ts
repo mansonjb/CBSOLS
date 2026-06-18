@@ -22,7 +22,7 @@ export const guides: Guide[] = [
   {
     slug: 'choisir-sa-moquette',
     title: 'Comment choisir sa moquette professionnelle',
-    metaTitle: 'Comment Choisir sa Moquette Professionnelle | Guide CB Sols',
+    metaTitle: 'Comment Choisir sa Moquette Professionnelle | Guide Pro',
     metaDescription: 'Guide complet pour choisir la bonne moquette professionnelle : critères de choix, classements, grammages, marques. Par CB Sols, spécialiste en Charente-Maritime.',
     category: 'Guide Moquette',
     headline: 'Choisir sa moquette professionnelle',
@@ -58,7 +58,7 @@ export const guides: Guide[] = [
   {
     slug: 'sol-pvc-ou-moquette',
     title: 'Sol PVC ou moquette : comment choisir',
-    metaTitle: 'Sol PVC ou Moquette pour Professionnel | Comparatif CB Sols',
+    metaTitle: 'Sol PVC ou Moquette : le Comparatif pour Pros 2026',
     metaDescription: 'Sol PVC vs moquette : comparatif complet pour les professionnels. Coût, durabilité, entretien, acoustique, confort. Quel revêtement choisir selon votre activité ?',
     category: 'Comparatif',
     headline: 'Sol PVC ou moquette',
@@ -93,7 +93,7 @@ export const guides: Guide[] = [
   {
     slug: 'moquette-contrat-professionnelle',
     title: 'La moquette contrat : tout ce qu\'il faut savoir',
-    metaTitle: 'Moquette Contrat Professionnelle : Guide Complet CB Sols',
+    metaTitle: 'Moquette Contrat Professionnelle | Guide Complet 2026',
     metaDescription: 'Qu\'est-ce que la moquette contrat ? Normes, certifications, différences avec la moquette résidentielle, prix. Guide expert par CB Sols en Charente-Maritime.',
     category: 'Guide Technique',
     headline: 'La moquette contrat pour les professionnels',
@@ -123,7 +123,7 @@ export const guides: Guide[] = [
   {
     slug: 'entretien-moquette-professionnelle',
     title: 'Entretien de la moquette professionnelle',
-    metaTitle: 'Entretien Moquette Professionnelle : Conseils & Fréquences CB Sols',
+    metaTitle: 'Entretien Moquette Professionnelle | Conseils & Fréquences',
     metaDescription: 'Comment entretenir une moquette professionnelle ? Fréquences, méthodes (injection-extraction, shampooing), erreurs à éviter. Guide CB Sols Charente-Maritime.',
     category: 'Guide Entretien',
     headline: 'Entretenir sa moquette professionnelle',
@@ -173,7 +173,7 @@ export const guides: Guide[] = [
   {
     slug: 'sol-pvc-cuisines-professionnelles',
     title: 'Sol PVC pour cuisines professionnelles',
-    metaTitle: 'Sol PVC Cuisine Professionnelle | Choix, Normes et Pose CB Sols',
+    metaTitle: 'Sol PVC Cuisine Professionnelle | Normes & Pose 2026',
     metaDescription: 'Quel sol PVC pour une cuisine professionnelle ? Normes HACCP, antidérapance, résistance chimique, drainage. Guide et pose par CB Sols en Charente-Maritime.',
     category: 'Guide Sol PVC',
     headline: 'Sol PVC pour cuisines professionnelles',
@@ -204,7 +204,7 @@ export const guides: Guide[] = [
   {
     slug: 'cout-pose-revetement-sol',
     title: 'Coût et prix de pose des revêtements de sol',
-    metaTitle: 'Prix Pose Revêtement de Sol Professionnel 2025 | CB Sols',
+    metaTitle: 'Prix Pose Revêtement de Sol Professionnel 2026 | au m²',
     metaDescription: 'Grille de prix 2025 pour la pose de moquette, sol PVC et tapis professionnels. Tarifs CB Sols en Charente-Maritime. Devis gratuit.',
     category: 'Guide Tarifs',
     headline: 'Prix et coûts de pose',
@@ -235,7 +235,7 @@ export const guides: Guide[] = [
   {
     slug: 'entretien-moquette-hotel',
     title: 'Entretien de la moquette hôtelière : le guide complet',
-    metaTitle: 'Entretien Moquette Hôtelière 2025 | Guide Expert CB Sols',
+    metaTitle: 'Entretien Moquette Hôtelière 2026 | Guide Expert',
     metaDescription: "Comment entretenir la moquette d'un hôtel ? Fréquences, injection-extraction, produits, coûts. Guide complet par CB Sols, spécialiste hôtellerie Charente-Maritime.",
     category: 'Guide Hôtellerie',
     headline: "Entretien de la moquette d'hôtel",
@@ -275,7 +275,7 @@ export const guides: Guide[] = [
   {
     slug: 'prix-pose-sol-pvc',
     title: 'Prix de pose du sol PVC professionnel en 2025',
-    metaTitle: 'Prix Pose Sol PVC Professionnel 2025 | Tarifs CB Sols',
+    metaTitle: 'Prix Pose Sol PVC Professionnel 2026 | Tarifs au m²',
     metaDescription: 'Quel est le prix de pose du sol PVC professionnel en 2025 ? Tarifs détaillés LVT, lés, cuisine pro, hôtel. Guide honnête par CB Sols, Charente-Maritime.',
     category: 'Guide Tarifs',
     headline: 'Prix de pose du sol PVC en 2025',
@@ -310,7 +310,7 @@ export const guides: Guide[] = [
   {
     slug: 'moquette-vs-parquet-bureau',
     title: 'Moquette ou parquet pour un bureau : comparatif complet',
-    metaTitle: 'Moquette ou Parquet Bureau | Comparatif 2025 CB Sols',
+    metaTitle: 'Moquette ou Parquet Bureau | Comparatif Complet 2026',
     metaDescription: 'Moquette ou parquet pour vos bureaux ? Acoustique, entretien, durabilité, coût : comparatif complet et honnête pour faire le bon choix. Par CB Sols.',
     category: 'Comparatif',
     headline: 'Moquette ou parquet pour un bureau',
@@ -345,7 +345,7 @@ export const guides: Guide[] = [
   {
     slug: 'choisir-revetement-sol-cuisine-pro',
     title: 'Choisir le bon revêtement de sol pour une cuisine professionnelle',
-    metaTitle: 'Revêtement Sol Cuisine Professionnelle | Guide Choix CB Sols',
+    metaTitle: 'Revêtement Sol Cuisine Professionnelle | Guide Choix 2026',
     metaDescription: 'Quel revêtement de sol pour une cuisine professionnelle ? Normes HACCP, antidérapance, résistance chimique, drainage. Guide expert par CB Sols.',
     category: 'Guide Technique',
     headline: 'Le sol idéal pour une cuisine professionnelle',
@@ -380,7 +380,7 @@ export const guides: Guide[] = [
   {
     slug: 'moquette-acoustique',
     title: 'La moquette acoustique : guide complet',
-    metaTitle: 'Moquette Acoustique | Guide Complet 2025 CB Sols',
+    metaTitle: 'Moquette Acoustique | Guide Complet & Performances 2026',
     metaDescription: "Tout savoir sur la moquette acoustique : performances, certifications, applications, prix. Guide expert par CB Sols, spécialiste en Charente-Maritime.",
     category: 'Guide Technique',
     headline: 'La moquette acoustique',
@@ -415,7 +415,7 @@ export const guides: Guide[] = [
   {
     slug: 'comprendre-un-devis-pose-de-sol',
     title: 'Comprendre un devis de pose de sol',
-    metaTitle: 'Comment lire un devis de pose de sol | Guide CB Sols 2026',
+    metaTitle: 'Comment Lire un Devis de Pose de Sol | Guide 2026',
     metaDescription: "Apprenez à décrypter un devis de pose de sol ligne par ligne : préparation du support, dépose, ragréage, fourniture, pose, accessoires. Guide complet par un solier-moquettiste qualifié.",
     category: 'Guide Tarifs',
     headline: 'Comment lire et décrypter un devis de pose de sol',
@@ -476,7 +476,7 @@ export const guides: Guide[] = [
   {
     slug: 'sol-pvc-chauffage-au-sol',
     title: 'Sol PVC sur chauffage au sol : compatibilité et conseils',
-    metaTitle: 'Sol PVC et Chauffage au Sol | Compatibilité et Pose | CB Sols',
+    metaTitle: 'Sol PVC et Chauffage au Sol | Compatibilité & Pose',
     metaDescription: "Sol PVC sur chauffage au sol : compatibilité, lame PVC plancher chauffant, gestion de la dilatation, pose collée, seuil 28°C. Guide expert CB Sols La Rochelle.",
     category: 'Guide Technique',
     headline: 'Sol PVC sur plancher chauffant',
