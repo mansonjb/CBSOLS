@@ -8,6 +8,7 @@ import { HeroSlider } from '@/components/HeroSlider'
 import { Button } from '@/components/Button'
 import { ClientLogoCard } from '@/components/ClientLogoCard'
 import { AvisSlider } from '@/components/AvisSlider'
+import { CallbackSection } from '@/components/CallbackSection'
 import { VideoTestimonialCompact } from '@/components/VideoTestimonialCompact'
 import { getVimeoThumbnail } from '@/lib/vimeo'
 import { clientLogos } from '@/data/clients'
@@ -323,6 +324,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* ─── RAPPEL GRATUIT ──────────────────────────────────────── */}
+      <CallbackSection />
 
       {/* ─── TÉMOIGNAGE VIDÉO (Paprec, ancrage industrie locale) ───── */}
       <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>

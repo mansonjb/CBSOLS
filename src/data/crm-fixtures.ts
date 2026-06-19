@@ -25,6 +25,7 @@ export type LeadSource =
   | 'showroom'
   | 'recommandation'
   | 'architecte'
+  | 'rappel'
 
 export interface Lead {
   id: string
@@ -194,4 +195,5 @@ export const SOURCE_LABEL: Record<LeadSource, string> = {
   showroom: 'Showroom',
   recommandation: 'Recommandation',
   architecte: 'Architecte',
+  rappel: 'Rappel programmé',
 }

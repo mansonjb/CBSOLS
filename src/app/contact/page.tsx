@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import { company } from '@/data/company'
 import { ContactFormSwitcher } from '@/components/ContactFormSwitcher'
+import { CallbackForm } from '@/components/CallbackForm'
 
 export const metadata: Metadata = {
   title: 'Contact & Devis Gratuit | CB Sols La Rochelle',
@@ -72,6 +73,27 @@ export default function ContactPage() {
             <Suspense fallback={<div style={{ minHeight: 400 }} />}>
               <ContactFormSwitcher />
             </Suspense>
+          </div>
+
+          {/* Alternative plus rapide : on vous rappelle */}
+          <div style={{ marginTop: '5rem', backgroundColor: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: '12px', padding: '2.5rem' }}>
+            <div className="callback-contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+              <div>
+                <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700, marginBottom: '0.75rem' }}>Ou plus simple</div>
+                <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.4vw, 1.9rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>
+                  On vous rappelle gratuitement.
+                </h2>
+                <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>
+                  Pas le temps d&apos;écrire ? Laissez votre numéro et le moment qui vous arrange, on s&apos;occupe du reste.
+                </p>
+              </div>
+              <CallbackForm />
+            </div>
+            <style>{`
+              @media (max-width: 720px) {
+                .callback-contact-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+              }
+            `}</style>
           </div>
         </div>
       </section>
