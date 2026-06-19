@@ -15,7 +15,7 @@ export function ClarityScript() {
   if (pathname?.startsWith('/admin')) return null
 
   return (
-    <Script id="clarity-init" strategy="lazyOnload">
+    <Script id="clarity-init" strategy="afterInteractive">
       {`
         (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
