@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Tapis & Escalier sur Mesure | Pose Artisanale La Rochelle, Île de Ré',
-  description: "Pose de tapis sur mesure pour escalier en bois ou en pierre, entrée, salon. Fabrication & pose artisanale, marques EGE & Romus (profilés). Un savoir-faire que nous pratiquons depuis 27 ans pour les hôtels de charme et les maisons de famille.",
+  description: "Pose de tapis sur mesure pour escalier en bois ou en pierre, entrée, salon. Fabrication & pose artisanale, marques EGE & Romus (profilés). Un savoir-faire que nous pratiquons depuis plus de 25 ans pour les hôtels de charme et les maisons de famille.",
   alternates: { canonical: 'https://cbsols.fr/particuliers/tapis-escalier-sur-mesure' },
 }
 
@@ -13,7 +13,7 @@ const cas = [
   { title: 'Escalier en bois', desc: 'Tapis sur mesure découpé et posé marche par marche, contremarche tendue, profilés Romus en laiton ou inox pour le nez de marche. Préserve le bois, étouffe le bruit, donne du caractère.' },
   { title: 'Escalier en pierre ou béton', desc: 'Pose collée avec contremarches habillées. Idéal en résidence secondaire ou maison ancienne où l\'escalier est froid et sonore. Rendu hôtellerie de charme.' },
   { title: 'Entrée & couloir', desc: 'Tapis sur mesure aux dimensions exactes de votre entrée, avec finition surjet ou bordure tissée. Possibilité de motif personnalisé en collection EGE Custom.' },
-  { title: 'Salon, bibliothèque, chambre', desc: 'Grand tapis sur mesure pour délimiter un espace, feutrer un salon, créer une zone lecture. Découpe, finition et livraison à domicile.' },
+  { title: 'Salon, bibliothèque, chambre', desc: 'Grand tapis sur mesure pour délimiter un espace, feutrer un salon, créer une zone de lecture. Découpe, finition et livraison à domicile.' },
 ]
 
 const produits = [
@@ -35,7 +35,7 @@ const faq = [
   { q: 'Combien coûte un tapis d\'escalier sur mesure ?', a: "Très variable selon la gamme et le nombre de marches. À titre indicatif : un escalier droit standard de 14 marches en EGE Highline démarre autour de 1800-2500 €, profilés et pose inclus. Un escalier tournant en Axminster Custom monte rapidement à 4000-6000 €. Devis précis après visite." },
   { q: 'Peut-on poser un tapis sur un escalier ancien (bois, pierre) ?', a: "Oui, presque toujours. Le support doit être stable et propre. Sur escalier en pierre, un primaire d'accrochage est nécessaire. Sur bois ancien, vérification de la fixité des marches. Dans tous les cas, nous évaluons à la visite." },
   { q: 'Le tapis abîme-t-il le bois de l\'escalier ?', a: "Non, au contraire : il le protège de l'usure et des chocs. À la dépose éventuelle, la colle se retire proprement (sur bois vernis ou peint). Sur bois brut, des traces résiduelles peuvent rester. Nous le précisons toujours." },
-  { q: 'Pourquoi peu d\'artisans font ce métier ?', a: "Parce que c'est exigeant : prise de cotes précise, fabrication sur mesure, pose minutieuse marche par marche. C'est un savoir-faire qui se perd dans les enseignes nationales. Nous le pratiquons depuis 27 ans, principalement pour des hôtels et maisons de famille." },
+  { q: 'Pourquoi peu d\'artisans font ce métier ?', a: "Parce que c'est exigeant : prise de cotes précise, fabrication sur mesure, pose minutieuse marche par marche. C'est un savoir-faire qui se perd dans les enseignes nationales. Nous le pratiquons depuis plus de 25 ans, principalement pour des hôtels et maisons de famille." },
 ]
 
 export default function TapisEscalierPage() {
@@ -59,7 +59,7 @@ export default function TapisEscalierPage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>sur mesure.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Habiller un escalier en bois ou en pierre, créer une entrée d&apos;exception, feutrer un salon : un savoir-faire artisanal rare, que nous pratiquons depuis 27 ans pour les hôtels de charme et les maisons de famille de la région.
+                Habiller un escalier en bois ou en pierre, créer une entrée d&apos;exception, feutrer un salon : un savoir-faire artisanal rare, que nous pratiquons depuis plus de 25 ans pour les hôtels de charme et les maisons de famille de la région.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=tapis-escalier" variant="primary" size="md">Demander un devis</Button>

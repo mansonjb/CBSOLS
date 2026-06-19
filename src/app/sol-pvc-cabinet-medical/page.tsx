@@ -8,12 +8,12 @@ import { Baby, Building2, FlaskConical, GraduationCap, Home, Mail, Pill, Store }
 
 export const metadata: Metadata = {
   title: "Sol PVC Cabinet Médical | Pose Cabinet Dentiste, Kiné, Vétérinaire",
-  description: "Pose de sol PVC pour cabinet médical, dentiste, kiné, ostéopathe, vétérinaire. Sols faciles à désinfecter, ambiance calme et accueillante. CB Sols intervient depuis 27 ans, atelier près de La Rochelle.",
+  description: "Pose de sol PVC pour cabinet médical, dentiste, kiné, ostéopathe, vétérinaire. Sols faciles à désinfecter, ambiance calme et accueillante. CB Sols intervient depuis plus de 25 ans, atelier près de La Rochelle.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-cabinet-medical' },
   keywords: ['sol PVC cabinet médical', 'sol cabinet dentiste', 'sol cabinet kiné', 'sol vétérinaire', 'revêtement salle d\'attente'],
   openGraph: {
     title: "Sol PVC pour cabinet médical, propreté et calme",
-    description: "Pose de sol PVC pour cabinets de santé : dentiste, kiné, ostéo, vétérinaire. Faciles à désinfecter, accueillants, sans odeur. CB Sols, 27 ans de savoir-faire.",
+    description: "Pose de sol PVC pour cabinets de santé : dentiste, kiné, ostéo, vétérinaire. Faciles à désinfecter, accueillants, sans odeur. CB Sols, plus de 25 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/sol-pvc-cabinet-medical.jpg', width: 1200, height: 630 }],
   },
@@ -138,7 +138,7 @@ export default function SolPvcCabinetMedicalPage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>propreté et calme.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Pose de sol PVC professionnel pour cabinets de santé : dentiste, médecin généraliste, kiné, ostéopathe, vétérinaire, ophtalmologue, sage-femme, pédiatre. Sols faciles à désinfecter, acoustiques, accueillants. CB Sols intervient depuis 27 ans, atelier à Villedoux près de La Rochelle.
+                Pose de sol PVC professionnel pour cabinets de santé : dentiste, médecin généraliste, kiné, ostéopathe, vétérinaire, ophtalmologue, sage-femme, pédiatre. Sols faciles à désinfecter, acoustiques, accueillants. CB Sols intervient depuis plus de 25 ans, atelier à Villedoux près de La Rochelle.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=sol-pvc-cabinet-medical" variant="primary" size="md">Demander un devis</Button>
@@ -148,7 +148,7 @@ export default function SolPvcCabinetMedicalPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Intervention sans fermer longtemps</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « On intervient pendant la fermeture du cabinet : un samedi prolongé, une semaine de vacances. Le praticien rouvre le lundi sur un sol propre, calme, sans odeur. C&apos;est ce que CB Sols fait depuis 27 ans. »
+                « On intervient pendant la fermeture du cabinet : un samedi prolongé, une semaine de vacances. Le praticien rouvre le lundi sur un sol propre, calme, sans odeur. C&apos;est ce que CB Sols fait depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, gérant de CB Sols</div>
             </div>
@@ -368,16 +368,16 @@ export default function SolPvcCabinetMedicalPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/sol-pvc-pharmacie", title: "Sol PVC pharmacie d'officine", teaser: "Hygiene quotidienne, conformite ARS, pose nocturne. Vingt ans de tenue dans une officine qui ne ferme pas.", icon: Pill },
-          { href: "/sol-pvc-laboratoire-pharmaceutique", title: "Sol PVC laboratoire", teaser: "La rigueur de finition que demande un audit qualite. Soudures a chaud, sols clairs, plinthes a gorge.", icon: FlaskConical },
-          { href: "/sol-pvc-creche", title: "Sol PVC creche", teaser: "Sans phtalates, antibacterien, certifie pour la petite enfance. La serenite des parents et de l'equipe.", icon: Baby },
-          { href: "/sol-pvc-ecole", title: "Sol PVC ecole", teaser: "Acoustique apaisee, entretien rapide, durabilite de quinze ans dans une classe qui ne s'arrete jamais.", icon: GraduationCap },
+          { href: "/sol-pvc-pharmacie", title: "Sol PVC pharmacie d'officine", teaser: "Hygiène quotidienne, conformité ARS, pose nocturne. Vingt ans de tenue dans une officine qui ne ferme pas.", icon: Pill },
+          { href: "/sol-pvc-laboratoire-pharmaceutique", title: "Sol PVC laboratoire", teaser: "La rigueur de finition que demande un audit qualité. Soudures à chaud, sols clairs, plinthes à gorge.", icon: FlaskConical },
+          { href: "/sol-pvc-creche", title: "Sol PVC crèche", teaser: "Sans phtalates, antibactérien, certifié pour la petite enfance. La sérénité des parents et de l'équipe.", icon: Baby },
+          { href: "/sol-pvc-ecole", title: "Sol PVC école", teaser: "Acoustique apaisée, entretien rapide, durabilité de quinze ans dans une classe qui ne s'arrête jamais.", icon: GraduationCap },
           { href: "/particuliers", title: "Pour les particuliers", teaser: "Moquette, sol PVC, tapis sur mesure : notre savoir-faire au service de votre maison.", icon: Home },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -388,7 +388,7 @@ export default function SolPvcCabinetMedicalPage() {
             Votre cabinet rénové <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>sans casse-tête.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place dans votre cabinet. Devis détaillé, sol classé A+, pose pendant votre fermeture, réouverture sans odeur. 27 ans de savoir-faire CB Sols au service des praticiens de santé.
+            Visite sur place dans votre cabinet. Devis détaillé, sol classé A+, pose pendant votre fermeture, réouverture sans odeur. Plus de 25 ans de savoir-faire CB Sols au service des praticiens de santé.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=sol-pvc-cabinet-medical-final" variant="primary" size="md">Demander un devis</Button>

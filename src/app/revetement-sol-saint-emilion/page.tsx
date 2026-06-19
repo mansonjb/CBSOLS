@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Store, Waves } from 'lucide-reac
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Saint-Émilion | Châteaux Viticoles Gironde",
-  description: "Pose de moquette, sol PVC et tapis sur mesure pour châteaux viticoles de Saint-Émilion et grands crus du Libournais. Caveaux de réception, salles de dégustation, suites privées. CB Sols, 27 ans d'expérience.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure pour châteaux viticoles de Saint-Émilion et grands crus du Libournais. Caveaux de réception, salles de dégustation, suites privées. CB Sols, plus de 25 ans d'expérience.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-emilion' },
   keywords: ['revêtement sol Saint-Émilion', 'moquette château viticole', 'sol PVC chai dégustation', 'tapis sur mesure Libournais', 'artisan sol Gironde'],
   openGraph: {
     title: "Revêtement de sol à Saint-Émilion, le sol des grands crus",
-    description: "Moquette, sol PVC et tapis sur mesure pour châteaux viticoles à Saint-Émilion et dans le Libournais. CB Sols, 27 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure pour châteaux viticoles à Saint-Émilion et dans le Libournais. CB Sols, plus de 25 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-saint-emilion.jpg', width: 1200, height: 630 }],
   },
@@ -151,7 +151,7 @@ export default function RevetementSolSaintEmilionPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Travailler dans un grand cru, c&apos;est entrer dans une maison où chaque détail compte, du verre à la lumière du caveau. Le sol doit être à la hauteur. C&apos;est exactement ce que CB Sols fait depuis 27 ans. »
+                « Travailler dans un grand cru, c&apos;est entrer dans une maison où chaque détail compte, du verre à la lumière du caveau. Le sol doit être à la hauteur. C&apos;est exactement ce que CB Sols fait depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -371,16 +371,16 @@ export default function RevetementSolSaintEmilionPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/revetement-sol-bordeaux", title: "Revetement sol Bordeaux", teaser: "Hotels particuliers, lofts d'echoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
-          { href: "/revetement-sol-arcachon", title: "Revetement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumiere et la vie au quotidien.", icon: MapPin },
-          { href: "/revetement-sol-cap-ferret", title: "Revetement sol Cap Ferret", teaser: "Cabanes ostreicoles, villas pieds dans le sable. La discretion d'un savoir-faire qui se voit a peine.", icon: Waves },
-          { href: "/moquette-chateau", title: "Moquette de chateau", teaser: "Salles de reception, escaliers monumentaux, chambres d'hotes. Une laine qui se garde un demi-siecle.", icon: Castle },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
+          { href: "/revetement-sol-bordeaux", title: "Revêtement sol Bordeaux", teaser: "Hôtels particuliers, lofts d'échoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
+          { href: "/revetement-sol-arcachon", title: "Revêtement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumière et la vie au quotidien.", icon: MapPin },
+          { href: "/revetement-sol-cap-ferret", title: "Revêtement sol Cap Ferret", teaser: "Cabanes ostréicoles, villas pieds dans le sable. La discrétion d'un savoir-faire qui se voit à peine.", icon: Waves },
+          { href: "/moquette-chateau", title: "Moquette de château", teaser: "Salles de réception, escaliers monumentaux, chambres d'hôtes. Une laine qui se garde un demi-siècle.", icon: Castle },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
           { href: "/particuliers", title: "Pour les particuliers", teaser: "Moquette, sol PVC, tapis sur mesure : notre savoir-faire au service de votre maison.", icon: Home },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -391,7 +391,7 @@ export default function RevetementSolSaintEmilionPage() {
             Votre château <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite au domaine, calée sur votre calendrier viticole. Devis détaillé, finitions à la hauteur du grand cru, discrétion garantie. 27 ans de savoir-faire au service de Saint-Émilion et du Libournais.
+            Visite au domaine, calée sur votre calendrier viticole. Devis détaillé, finitions à la hauteur du grand cru, discrétion garantie. Plus de 25 ans de savoir-faire au service de Saint-Émilion et du Libournais.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=saint-emilion-final" variant="primary" size="md">Demander un devis</Button>

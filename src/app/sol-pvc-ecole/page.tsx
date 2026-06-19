@@ -8,7 +8,7 @@ import { Baby, BookOpen, Building2, Mail, Pill, Stethoscope, Store } from 'lucid
 
 export const metadata: Metadata = {
   title: 'Sol PVC École Maternelle et Primaire | Pose Établissements Scolaires',
-  description: "Pose de sol PVC en école maternelle et primaire. Conformité ERP (Bfl-s1, U4P3, R10/R11), pose pendant les vacances scolaires, marchés publics. CB Sols accompagne mairies et écoles privées depuis 27 ans.",
+  description: "Pose de sol PVC en école maternelle et primaire. Conformité ERP (Bfl-s1, U4P3, R10/R11), pose pendant les vacances scolaires, marchés publics. CB Sols accompagne mairies et écoles privées depuis plus de 25 ans.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-ecole' },
   openGraph: {
     title: "Sol PVC en école maternelle et primaire | Pose en établissements scolaires",
@@ -40,7 +40,7 @@ const process = [
 ]
 
 const faq = [
-  { q: "Quand poser un sol PVC dans une école sans interrompre la scolarité ?", a: "La fenêtre principale reste les grandes vacances d'été, de début juillet à fin août, pour les chantiers de plusieurs salles de classe. Les vacances de la Toussaint permettent de traiter une ou deux salles. Noël et Pâques sont plus courts mais utilisables pour les petites surfaces comme un dortoir ou un local technique. Nous calons toujours le planning avec la mairie ou le directeur d'école, en intégrant le temps de séchage du ragréage, la pose, la soudure à chaud et la remise en service. Sur 27 ans de chantiers scolaires, nous n'avons jamais retardé une rentrée. Valentin Prévoteau pilote chaque planning personnellement pour garantir la livraison en temps." },
+  { q: "Quand poser un sol PVC dans une école sans interrompre la scolarité ?", a: "La fenêtre principale reste les grandes vacances d'été, de début juillet à fin août, pour les chantiers de plusieurs salles de classe. Les vacances de la Toussaint permettent de traiter une ou deux salles. Noël et Pâques sont plus courts mais utilisables pour les petites surfaces comme un dortoir ou un local technique. Nous calons toujours le planning avec la mairie ou le directeur d'école, en intégrant le temps de séchage du ragréage, la pose, la soudure à chaud et la remise en service. Sur plus de 25 ans de chantiers scolaires, nous n'avons jamais retardé une rentrée. Valentin Prévoteau pilote chaque planning personnellement pour garantir la livraison en temps." },
   { q: "Quelles normes ERP doit respecter un sol PVC en école ?", a: "Quatre exigences principales encadrent la pose en école. La réaction au feu doit être Bfl-s1 minimum, attestée par le PV de classement européen du fabricant. L'usage doit correspondre à U4P3 minimum pour les salles de classe et circulations, U4P4 pour les zones très sollicitées, U3P3 acceptable en zones humides spécifiques. La glissance doit atteindre R10 en zones sèches et R11 en sanitaires, douches et cuisines selon la norme DIN 51130. Enfin, le classement COV doit être A+ avec FDES disponible pour la qualité de l'air intérieur. Toutes les marques que nous posons respectent ces critères, nous fournissons systématiquement les PV au moment du devis." },
   { q: "Quel budget pour un sol PVC école au mètre carré posé ?", a: "Le budget varie selon la qualité du produit, la complexité du support et la surface globale. Pour un sol PVC hétérogène en lés type Gerflor Taralay Premium ou Tarkett iQ Granit, posé avec ragréage et plinthes, comptez 45 à 70 euros HT du mètre carré tout compris. Pour un sol PVC compact homogène destiné aux circulations principales, 60 à 95 euros HT. Pour un sol sécurité antidérapant en zone humide, 55 à 80 euros HT. Les grandes surfaces sur un même chantier permettent des prix dégressifs. Nous fournissons un devis détaillé poste par poste après visite sur site, sans surprise." },
   { q: "Comment se déroule un marché public pour la rénovation des sols d'une école ?", a: "La mairie ou la collectivité publie un DCE avec CCTP, CCAP, BPU et planning prévisionnel. Nous répondons par un mémoire technique détaillé : présentation de l'entreprise, références similaires sur des écoles équivalentes, fiches techniques produits avec PV de classement feu, FDES, certifications environnementales, planning de chantier calé sur les vacances scolaires, équipe affectée et compagnons qualifiés. Pour les écoles publiques en Charente-Maritime et départements limitrophes, nous répondons régulièrement sur des montants allant de 15 000 à 150 000 euros HT. Suivi administratif rigoureux jusqu'à notification, puis exécution dans le respect strict du planning." },
@@ -55,7 +55,7 @@ const specs = [
   { title: 'Glissance R10 et R11', desc: "R10 minimum en salles de classe et circulations selon DIN 51130. R11 obligatoire en sanitaires, vestiaires, restaurants scolaires et zones soumises à l'humidité. Sécurité essentielle pour les enfants." },
   { title: 'Classement COV A+', desc: "Meilleur niveau de la classification française des émissions de composés organiques volatils. FDES vérifiée par tierce partie. Indispensable pour la qualité de l'air intérieur dans une école accueillant des enfants." },
   { title: 'Pose en lés soudés à chaud', desc: "Lés de 2 mètres de large déroulés sur la salle, soudure à chaud thermofusion entre lés à l'aide d'un cordon PVC. Étanchéité totale, absence de joints poussiéreux, hygiène irréprochable. La signature d'une pose professionnelle." },
-  { title: 'Planning vacances scolaires', desc: "Chantiers calés sur juillet-août principalement, Toussaint pour petites surfaces. Coordination avec les services techniques de la mairie, garantie de remise en service avant la rentrée. Nous n'avons jamais raté une rentrée en 27 ans." },
+  { title: 'Planning vacances scolaires', desc: "Chantiers calés sur juillet-août principalement, Toussaint pour petites surfaces. Coordination avec les services techniques de la mairie, garantie de remise en service avant la rentrée. Nous n'avons jamais raté une rentrée en plus de 25 ans." },
 ]
 
 const marques = [
@@ -146,7 +146,7 @@ export default function SolPvcEcolePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>La règle d&apos;or scolaire</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Une école, ça se rénove en juillet-août, point. En 27 ans, CB Sols n&apos;a jamais raté une rentrée. C&apos;est la première promesse qu&apos;on fait au directeur ou à la mairie, et c&apos;est non négociable. »
+                « Une école, ça se rénove en juillet-août, point. En plus de 25 ans, CB Sols n&apos;a jamais raté une rentrée. C&apos;est la première promesse qu&apos;on fait au directeur ou à la mairie, et c&apos;est non négociable. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -370,15 +370,15 @@ export default function SolPvcEcolePage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/sol-pvc-creche", title: "Sol PVC creche", teaser: "Sans phtalates, antibacterien, certifie pour la petite enfance. La serenite des parents et de l'equipe.", icon: Baby },
-          { href: "/sol-pvc-college-lycee", title: "Sol PVC college et lycee", teaser: "Un sol qui encaisse mille passages par jour, resiste aux chaussures et garde son eclat sur la duree.", icon: BookOpen },
-          { href: "/sol-pvc-cabinet-medical", title: "Sol PVC cabinet medical", teaser: "Un sol qui rassure vos patients des la salle d'attente et facilite votre nettoyage quotidien.", icon: Stethoscope },
-          { href: "/sol-pvc-pharmacie", title: "Sol PVC pharmacie d'officine", teaser: "Hygiene quotidienne, conformite ARS, pose nocturne. Vingt ans de tenue dans une officine qui ne ferme pas.", icon: Pill },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/sol-pvc-creche", title: "Sol PVC crèche", teaser: "Sans phtalates, antibactérien, certifié pour la petite enfance. La sérénité des parents et de l'équipe.", icon: Baby },
+          { href: "/sol-pvc-college-lycee", title: "Sol PVC collège et lycée", teaser: "Un sol qui encaisse mille passages par jour, résiste aux chaussures et garde son éclat sur la durée.", icon: BookOpen },
+          { href: "/sol-pvc-cabinet-medical", title: "Sol PVC cabinet médical", teaser: "Un sol qui rassure vos patients dès la salle d'attente et facilite votre nettoyage quotidien.", icon: Stethoscope },
+          { href: "/sol-pvc-pharmacie", title: "Sol PVC pharmacie d'officine", teaser: "Hygiène quotidienne, conformité ARS, pose nocturne. Vingt ans de tenue dans une officine qui ne ferme pas.", icon: Pill },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 

@@ -238,7 +238,7 @@ export default function MoquetteCatamaranPage() {
             </p>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <Button href="/contact?source=moquette-catamaran-inline" variant="primary" size="md">Prendre rendez-vous</Button>
-              <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, 27 ans d&apos;expérience</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</span>
             </div>
           </div>
         </div>
@@ -310,7 +310,7 @@ export default function MoquetteCatamaranPage() {
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Joints de dilatation et courbures</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur les zones où le pont s&apos;échauffe au soleil (carré tribord, devant les baies vitrées), nous laissons un jeu de dilatation de 2 à 3 mm en périphérie, masqué par les plinthes ou la finition murale. Pour les courbures complexes (entrée de descente, mainfold), confection en plusieurs lés avec joint soudé à chaud en gorge, plus discret qu&apos;un seul lé tendu qui finit toujours par marquer.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur les zones où le pont s&apos;échauffe au soleil (carré tribord, devant les baies vitrées), nous laissons un jeu de dilatation de 2 à 3 mm en périphérie, masqué par les plinthes ou la finition murale. Pour les courbures complexes (entrée de descente, manifold), confection en plusieurs lés avec joint soudé à chaud en gorge, plus discret qu&apos;un seul lé tendu qui finit toujours par marquer.</p>
             </div>
           </div>
         </div>

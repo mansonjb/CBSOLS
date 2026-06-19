@@ -42,7 +42,7 @@ const faq = [
   { q: 'Comment gérez-vous la coordination avec les autres corps de métier ?', a: "Un refit de yacht implique souvent ébéniste, sellier, peintre, électricien. Nous calons notre intervention en dernier ou avant-dernier rang pour éviter qu’un autre corps de métier ne pose ses caisses à outils sur la moquette neuve. Nous travaillons en chantier mutualisé en bonne entente avec les artisans habitués au secteur nautique de La Rochelle." },
   { q: 'Faites-vous aussi les tapis sur mesure du salon ?', a: "Oui, c’est même fréquent : moquette + tapis sur mesure forment un ensemble. Tapis confectionné en atelier Villedoux selon vos dimensions exactes, bordures cousues main, fixation antidérapante marine. Nous proposons aussi le marquage discret au monogramme du bateau ou aux initiales du propriétaire sur demande." },
   { q: 'Quelle durée de vie sur un yacht ?', a: "Sur un yacht à usage privé saisonnier bien entretenu, comptez 8 à 12 ans pour une moquette laine traitée. Sur un yacht à usage permanent (résidence à bord), 5 à 7 ans. Les tapis sur mesure se remplacent plus souvent (3 à 6 ans) car ce sont les zones d’usure visible." },
-  { q: 'Intervenez-vous en confidentialité totale ?', a: "Oui, par défaut. Aucune photo publiée sans accord, aucun nom communiqué, aucune mention dans nos communications. C’est une exigence évidente sur ce segment, nous la respectons strictement depuis 27 ans." },
+  { q: 'Intervenez-vous en confidentialité totale ?', a: "Oui, par défaut. Aucune photo publiée sans accord, aucun nom communiqué, aucune mention dans nos communications. C’est une exigence évidente sur ce segment, nous la respectons strictement depuis plus de 25 ans." },
   { q: 'Quel coût indicatif pour un refit complet sols sur un yacht 50 pieds ?', a: "Impossible de chiffrer sans visite. Les écarts vont de 1 à 5 selon le choix matière (polypropylène vs laine premium), la complexité des courbes, la dépose de l’ancien, l’intégration aux boiseries. Pour donner un ordre de grandeur, un refit complet sols sur un yacht 50 pieds en laine traitée + tapis sur mesure se situe généralement entre 12 000 et 35 000 € TTC." },
 ]
 
@@ -298,7 +298,7 @@ export default function MoquetteYachtPage() {
             </div>
             <div style={{ padding: '1.75rem', border: '1px solid var(--border)', borderRadius: '10px', backgroundColor: 'var(--bg-card)' }}>
               <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem' }}>Calepinage des courbes</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur un yacht, les sols droits n&apos;existent pas. Notre méthode repose sur le calque papier kraft, la découpe atelier au millimètre et la soudure des joints en gorge. Ces gestes demandent l&apos;habitude des ateliers contract et marine, c&apos;est ce que CB Sols pratique depuis 27 ans.</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Sur un yacht, les sols droits n&apos;existent pas. Notre méthode repose sur le calque papier kraft, la découpe atelier au millimètre et la soudure des joints en gorge. Ces gestes demandent l&apos;habitude des ateliers contract et marine, c&apos;est ce que CB Sols pratique depuis plus de 25 ans.</p>
             </div>
           </div>
         </div>

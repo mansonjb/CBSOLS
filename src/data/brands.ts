@@ -66,7 +66,7 @@ export const brands: Brand[] = [
     topCollections: [
       { name: 'Creation 55 Clic', desc: "LVT haute résistance à clipser : aspect bois ou béton ultra-réaliste, 5,5 mm d'épaisseur", useCases: 'Hôtels, boutiques, bureaux' },
       { name: 'Taralay Impression', desc: 'PVC hétérogène compact de référence : classement 43/34, motifs variés', useCases: 'Couloirs collectivités, commerces, restaurants' },
-      { name: 'Mipolam Symbioz', desc: 'PVC homogène pour milieux médicaux : certifié hygiène, résistance chimique R10', useCases: 'cliniques, salles de soins' },
+      { name: 'Mipolam Symbioz', desc: 'PVC homogène pour milieux médicaux : certifié hygiène, résistance chimique R10', useCases: 'Cliniques, salles de soins' },
     ],
     certifications: ['ISO 14001', 'Cradle to Cradle', 'FloorScore', 'NF Environnement', 'R10/R11 antidérapant'],
     why: "Gerflor est un partenaire historique de CB Sols. La gamme homogène offre la meilleure résistance chimique du marché, et le réseau technico-commercial Gerflor facilite les dossiers techniques pour les appels d'offres. CB Sols est aussi acteur du programme de recyclage Seconde Vie de Gerflor (chutes de pose recyclées en partenariat avec Paprec).",
@@ -85,17 +85,17 @@ export const brands: Brand[] = [
     expertise: [
       'Lames LVT design haute résistance',
       'Dalles vinyle modulaires pour le tertiaire',
-      'Solutions sol PVC heterogene Expona',
+      'Solutions sol PVC hétérogène Expona',
       'Effets bois, pierre, béton ciré, textile',
       'Collections sur mesure pour projets professionnels',
     ],
     topCollections: [
-      { name: 'Expona Commercial', desc: 'Lames vinyle premium 3 mm : couche d\'usure 0,7 mm, classement 33/42, +130 décors', useCases: "Hôtels, bureaux, commerces, restaurants" },
+      { name: 'Expona Commercial', desc: 'Lames vinyle premium 3 mm : couche d\'usure 0,7 mm, classement 33/42, plus de 130 décors', useCases: "Hôtels, bureaux, commerces, restaurants" },
       { name: 'Expona Domestic', desc: 'Gamme résidentielle : lames LVT couche d\'usure 0,3 mm, plus économique', useCases: 'Logements, résidences secondaires' },
       { name: 'Polyflor Bloc', desc: 'PVC homogène 2 mm pour usage intensif : résistance chimique, facilité d\'entretien', useCases: 'Cuisines pro, ateliers, vestiaires' },
     ],
     certifications: ['EN 14041', 'Bfl-s1', 'EN 14904 (sols sportifs)', 'A+ COV', 'EU Ecolabel'],
-    why: "objectflor est le choix CB Sols quand l'esthétique compte autant que la résistance. La couche d'usure 0,7 mm d'Expona Commercial est l'une des plus épaisses du marché, durée de vie effective 20+ ans en bureau. Pour les projets architecte exigeants, c'est souvent la marque qui fait basculer le choix.",
+    why: "objectflor est le choix CB Sols quand l'esthétique compte autant que la résistance. La couche d'usure 0,7 mm d'Expona Commercial est l'une des plus épaisses du marché, durée de vie effective plus de 20 ans en bureau. Pour les projets architecte exigeants, c'est souvent la marque qui fait basculer le choix.",
     services: ['sol-pvc-lames-dalles', 'sol-pvc-les'],
   },
   {

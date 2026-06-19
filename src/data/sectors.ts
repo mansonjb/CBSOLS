@@ -17,7 +17,7 @@ export const sectors: Sector[] = [
     icon: '🏨',
     tagline: 'Des sols à la hauteur de vos étoiles',
     description:
-      "L'hôtellerie exige des revêtements de sol qui allient esthétique irréprochable, résistance aux passages intensifs et facilité d'entretien quotidien. CB Sols travaille avec des hôtels 2 à 5 étoiles, résidences de tourisme et gîtes premium en Charente-Maritime depuis 27 ans.",
+      "L'hôtellerie exige des revêtements de sol qui allient esthétique irréprochable, résistance aux passages intensifs et facilité d'entretien quotidien. CB Sols travaille avec des hôtels 2 à 5 étoiles, résidences de tourisme et gîtes premium en Charente-Maritime depuis plus de 25 ans.",
     challenges: [
       'Passages intensifs en couloirs et parties communes',
       'Maintenance rapide entre deux occupants',
@@ -152,7 +152,7 @@ export const sectors: Sector[] = [
     icon: '⛺',
     tagline: 'La qualité d\'accueil, du sol au plafond',
     description:
-      "La Charente-Maritime compte parmi les régions qui comptent le plus de campings en France. CB Sols équipe les mobil-homes haut de gamme, les bungalows et les espaces communs des campings 4 et 5 étoiles avec des revêtements résistants à l'humidité et adaptés aux usages intensifs saisonniers.",
+      "La Charente-Maritime figure parmi les départements qui comptent le plus de campings en France. CB Sols équipe les mobil-homes haut de gamme, les bungalows et les espaces communs des campings 4 et 5 étoiles avec des revêtements résistants à l'humidité et adaptés aux usages intensifs saisonniers.",
     challenges: [
       'Humidité et variations de température',
       'Passages intensifs en période estivale',

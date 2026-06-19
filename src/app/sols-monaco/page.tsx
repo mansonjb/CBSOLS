@@ -8,7 +8,7 @@ import { Building2, Castle, Mail, MapPin, Sparkles, Store, Waves } from 'lucide-
 
 export const metadata: Metadata = {
   title: "Sols & Moquette d'Exception à Monaco | Pose Premium",
-  description: "CB Sols se déplace à Monaco pour les projets d'exception : appartements Carré d'Or, suites de palace, yachts du Port Hercule. Moquette, tapis sur mesure et sols haut de gamme. Finition premium, discrétion totale, 27 ans de savoir-faire.",
+  description: "CB Sols se déplace à Monaco pour les projets d'exception : appartements Carré d'Or, suites de palace, yachts du Port Hercule. Moquette, tapis sur mesure et sols haut de gamme. Finition premium, discrétion totale, plus de 25 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/sols-monaco' },
   openGraph: {
     title: "Sols d'exception à Monaco",
@@ -237,7 +237,7 @@ export default function SolsMonacoPage() {
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
               « Quand on monte un projet à Monaco, on prépare tout en atelier : calques, raccords motif, finitions de seuil. La pose sur place doit être un geste précis, pas une improvisation. »
             </p>
-            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, 27 ans de savoir-faire</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, CB Sols</div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <Button href="/contact?source=sols-monaco-citation" variant="primary" size="md">Prendre rendez-vous</Button>
               <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>NDA signé sur demande</span>
@@ -352,15 +352,15 @@ export default function SolsMonacoPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/revetement-sol-biarritz", title: "Revetement sol Biarritz", teaser: "Villas de la Cote basque. Sols qui resistent au sel, au sable et a la lumiere de l'ocean.", icon: MapPin },
+          { href: "/revetement-sol-biarritz", title: "Revêtement sol Biarritz", teaser: "Villas de la Côte basque. Sols qui résistent au sel, au sable et à la lumière de l'océan.", icon: MapPin },
           { href: "/moquette-yacht", title: "Moquette de yacht", teaser: "Sols de yachts sur mesure : laines marines, gomme, pose nocturne au port. Une exigence sans compromis.", icon: Waves },
-          { href: "/moquette-jet-prive", title: "Moquette de jet prive", teaser: "Sols d'avions d'affaires : certifications aeronautiques, laines techniques, finition haute couture.", icon: Sparkles },
-          { href: "/moquette-chateau", title: "Moquette de chateau", teaser: "Salles de reception, escaliers monumentaux, chambres d'hotes. Une laine qui se garde un demi-siecle.", icon: Castle },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/moquette-jet-prive", title: "Moquette de jet privé", teaser: "Sols d'avions d'affaires : certifications aéronautiques, laines techniques, finition haute couture.", icon: Sparkles },
+          { href: "/moquette-chateau", title: "Moquette de château", teaser: "Salles de réception, escaliers monumentaux, chambres d'hôtes. Une laine qui se garde un demi-siècle.", icon: Castle },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -371,7 +371,7 @@ export default function SolsMonacoPage() {
             Votre projet Monaco <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>en mains expertes.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite confidentielle en Principauté. Devis détaillé, finitions premium, discrétion garantie. 27 ans de savoir-faire au service des projets d&apos;exception.
+            Visite confidentielle en Principauté. Devis détaillé, finitions premium, discrétion garantie. Plus de 25 ans de savoir-faire au service des projets d&apos;exception.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=sols-monaco-final" variant="primary" size="md">Demander un devis</Button>

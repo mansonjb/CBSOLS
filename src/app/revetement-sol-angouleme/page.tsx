@@ -5,12 +5,12 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Angoulême | Patrimoine et Tertiaire",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers du plateau, sièges d'imprimeries BD, restaurants gastronomiques, châteaux des Charentes. CB Sols, 27 ans de savoir-faire, déplacement régulier depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers du plateau, sièges d'imprimeries BD, restaurants gastronomiques, châteaux des Charentes. CB Sols, plus de 25 ans de savoir-faire, déplacement régulier depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-angouleme' },
   keywords: ['revêtement sol Angoulême', 'moquette Angoulême', 'sol PVC Angoulême', 'pose tapis Angoulême', 'artisan sol Angoulême', 'tapis château Charentes'],
   openGraph: {
     title: "Revêtement de sol à Angoulême, élégance des Charentes",
-    description: "Moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers, imprimeries BD, restaurants gastronomiques, châteaux. CB Sols, 27 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers, imprimeries BD, restaurants gastronomiques, châteaux. CB Sols, plus de 25 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-angouleme.jpg', width: 1200, height: 630 }],
   },
@@ -26,7 +26,7 @@ const usages = [
 const exigences = [
   { title: "Le plateau classé, on le respecte", desc: "Le plateau d'Angoulême est un secteur sauvegardé : remparts, cathédrale, hôtels particuliers. On pose en réversible, sans clouer, sans coller agressivement. Les parquets d'origine restent intacts. Notre passage est discret, c'est ce qu'on attend ici." },
   { title: "La ville de la BD, on parle son langage", desc: "Angoulême, c'est aussi les studios, la Cité de la BD, les fresques. Pour un studio créatif ou un loft, on propose des dalles design, des unis nets, des couleurs franches. Pour un salon classique, on reste en laine sobre. On accorde la matière au lieu, simplement." },
-  { title: "Une heure et demie de route, et on est là", desc: "Angoulême est à 120 km de notre atelier, deux heures par l'A10 ou la N141. C'est tout près. On y passe plusieurs fois par mois, on connaît la ville. Vous appelez, on vient mesurer dans la semaine, sans surcoût caché pour le déplacement." },
+  { title: "Environ deux heures de route, et on est là", desc: "Angoulême est à 120 km de notre atelier, environ deux heures par l'A10 ou la N141. C'est tout près. On y passe plusieurs fois par mois, on connaît la ville. Vous appelez, on vient mesurer dans la semaine, sans surcoût caché pour le déplacement." },
   { title: "On travaille avec les artisans patrimoine", desc: "Sur les hôtels particuliers, vous avez souvent ébéniste, doreur, peintre en décor. On s'intègre au planning de l'architecte, on passe en avant-dernier pour ne pas abîmer la moquette neuve. Vous n'arbitrez rien, on s'accorde entre nous." },
   { title: "Moins d'écho dans les grands volumes", desc: "Les salons d'apparat font cinq mètres sous plafond, ça résonne. Une moquette laine sur sous-couche feutre coupe la moitié de l'écho. La pièce retrouve sa douceur, les conversations passent mieux. Et le caractère du lieu reste intact." },
   { title: "Tradition et contemporain, on sait marier", desc: "Beaucoup de projets ici mélangent un salon classique et un studio créatif sous le même toit. Moquette laine d'un côté, dalles design de l'autre, raccord précis entre les deux. Vous gardez votre cohérence, sans renoncer ni au patrimoine ni à la modernité." },
@@ -144,7 +144,7 @@ export default function RevetementSolAngoulemePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Angoulême, c&apos;est une ville où le patrimoine du plateau dialogue avec la création contemporaine de la BD. Un terrain riche, exigeant, où CB Sols sait conjuguer tradition et modernité depuis 27 ans. »
+                « Angoulême, c&apos;est une ville où le patrimoine du plateau dialogue avec la création contemporaine de la BD. Un terrain riche, exigeant, où CB Sols sait conjuguer tradition et modernité depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -375,7 +375,7 @@ export default function RevetementSolAngoulemePage() {
             Votre projet angoumoisin <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Angoulême. Devis détaillé, finitions premium, respect du patrimoine du plateau et accompagnement de la création contemporaine. CB Sols, 27 ans de savoir-faire au service des projets d&apos;exception en Charente.
+            Visite sur place à Angoulême. Devis détaillé, finitions premium, respect du patrimoine du plateau et accompagnement de la création contemporaine. CB Sols, plus de 25 ans de savoir-faire au service des projets d&apos;exception en Charente.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=angouleme-final" variant="primary" size="md">Demander un devis</Button>

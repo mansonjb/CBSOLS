@@ -267,7 +267,7 @@ export default function ArchitectesPage() {
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem' }}>Ils nous prescrivent</div>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--text-on-dark)', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>
-              Architectes &amp; agences partenaires
+              Architectes & agences partenaires
             </h2>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', maxWidth: '560px', margin: '0 auto', lineHeight: 1.6 }}>
               Plusieurs agences d&apos;architecture d&apos;intérieur de Charente-Maritime nous confient régulièrement leurs projets. Une sélection ci-dessous.

@@ -29,7 +29,7 @@ export const solutions: Solution[] = [
     sectorName: 'Hôtellerie',
     headline: 'Moquette hôtelière',
     tagline: 'Des sols à la hauteur de vos étoiles',
-    intro: "La moquette hôtelière n'est pas une moquette ordinaire. Elle doit absorber le bruit entre les chambres, résister à des milliers de passages par an, se nettoyer en 2h d'injection-extraction sans fermeture, et raconter l'identité visuelle de votre établissement. CB Sols installe des moquettes hôtelières en Charente-Maritime depuis 27 ans, de l'Île de Ré à Royan.",
+    intro: "La moquette hôtelière n'est pas une moquette ordinaire. Elle doit absorber le bruit entre les chambres, résister à des milliers de passages par an, se nettoyer en 2h d'injection-extraction sans fermeture, et raconter l'identité visuelle de votre établissement. CB Sols installe des moquettes hôtelières en Charente-Maritime depuis plus de 25 ans, de l'Île de Ré à Royan.",
     specificChallenges: [
       'Passages intensifs en couloirs (200+ allers-retours/jour)',
       'Normes incendie obligatoires : Bfl-s1 (classement EU)',
@@ -219,7 +219,7 @@ export const solutions: Solution[] = [
     slug: 'tapis-sur-mesure-hotel',
     title: 'Tapis Sur Mesure Hôtel',
     metaTitle: 'Tapis Sur Mesure Hôtel Charente-Maritime | Création Exclusive CB Sols',
-    metaDescription: 'Création de tapis sur mesure pour hôtels en Charente-Maritime. Motif exclusif, logo, dimensions custom. CB Sols : 27 ans d\'expertise. Devis gratuit.',
+    metaDescription: 'Création de tapis sur mesure pour hôtels en Charente-Maritime. Motif exclusif, logo, dimensions custom. CB Sols : plus de 25 ans d\'expertise. Devis gratuit.',
     serviceSlug: 'tapis-sur-mesure',
     serviceName: 'Tapis sur mesure',
     sectorSlug: 'hotellerie',

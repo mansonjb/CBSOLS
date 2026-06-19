@@ -65,7 +65,7 @@ const pourquoi = [
   },
   {
     num: '04',
-    title: '27 ans, marques de référence',
+    title: 'Plus de 25 ans, marques de référence',
     desc: 'Revendeur agréé EGE, Gerflor, objectflor, Bostik, Romus depuis 2012. Le même savoir-faire technique que pour les chantiers hôteliers haut de gamme.',
   },
   {

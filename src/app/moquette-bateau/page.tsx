@@ -29,7 +29,7 @@ const produits = [
 ]
 
 const process = [
-  { step: 'Visite à quai', desc: "Relevé sur calque, photos, mesure d’humidité du support, identification des points durs (mainfold, courbes, passages techniques). Échange avec le propriétaire ou le capitaine." },
+  { step: 'Visite à quai', desc: "Relevé sur calque, photos, mesure d’humidité du support, identification des points durs (manifold, courbes, passages techniques). Échange avec le propriétaire ou le capitaine." },
   { step: 'Sélection matière', desc: "Choix en showroom à Villedoux ou via échantillons envoyés. Validation des normes feu requises selon usage (plaisance privée, charter, commercial)." },
   { step: 'Devis & planning', desc: "Devis détaillé sous 48h. Planning calé sur l’arrêt technique du bateau ou la disponibilité à quai. Pas de surprise sur la facture finale." },
   { step: 'Confection atelier', desc: "Découpe et préparation en atelier Villedoux selon calque. Précision millimétrique pour éviter toute reprise sur place. Calepinage testé avant transport." },
@@ -43,7 +43,7 @@ const faq = [
   { q: 'Faut-il sortir le bateau de l’eau pour la pose ?', a: "Non, dans la majorité des cas. La pose se fait à quai, sur 1 à 3 jours selon la surface. Nous calons l’intervention avec le port (La Pallice, Port des Minimes, La Flotte, Saint-Martin) ou le chantier. Pour un refit complet avec dépose de l’ancien revêtement et traitement du support, le bateau peut être au sec (cale sèche, élévateur)." },
   { q: 'Combien de temps dure une moquette marine bien posée ?', a: "Sur une unité de plaisance utilisée à la saison (juin-septembre), une moquette polypropylène marine posée dans les règles dure 8 à 12 ans. Sur un yacht à usage permanent, comptez 5 à 8 ans selon la fréquence d’occupation. Les défaillances que nous rencontrons viennent rarement de l'usure. Elles viennent presque toujours d'une pose initiale mal préparée, avec une colle inadaptée ou une sous-couche absorbante." },
   { q: 'Intervenez-vous sur les ports hors La Rochelle ?', a: "Oui. Notre atelier est à Villedoux, à 10 minutes de La Pallice et du Port des Minimes. Nous intervenons régulièrement à Rochefort, Royan, La Flotte, Saint-Martin-de-Ré, Boyardville, Marennes. Sur devis, nous nous déplaçons jusqu’à Arcachon, Les Sables-d’Olonne ou la Bretagne sud pour les unités importantes." },
-  { q: 'Avez-vous des références sur le secteur marine ?', a: "27 ans d’expérience CB Sols incluent des interventions sur catamarans de la flotte de Lagoon et Bali à La Rochelle, plusieurs yachts privés au Port des Minimes, et des péniches habitées sur la Charente. Les détails de chantier restent confidentiels par respect des propriétaires, mais nous transmettons des références sur demande sérieuse." },
+  { q: 'Avez-vous des références sur le secteur marine ?', a: "Nos plus de 25 ans d’expérience chez CB Sols incluent des interventions sur catamarans de la flotte de Lagoon et Bali à La Rochelle, plusieurs yachts privés au Port des Minimes, et des péniches habitées sur la Charente. Les détails de chantier restent confidentiels par respect des propriétaires, mais nous transmettons des références sur demande sérieuse." },
 ]
 
 const tableau = [
@@ -205,7 +205,7 @@ export default function SolsMarinePage() {
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>4. Surfaces courbes</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Carène arrondie, mainfold, formes complexes des cabines : la pose en lé droit standard est impossible. Calepinage sur calque, découpe atelier au millimètre, soudure à chaud des joints pour éviter toute infiltration.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Carène arrondie, manifold, formes complexes des cabines : la pose en lé droit standard est impossible. Calepinage sur calque, découpe atelier au millimètre, soudure à chaud des joints pour éviter toute infiltration.</p>
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>5. Colle polyuréthane marine</div>

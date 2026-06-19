@@ -8,7 +8,7 @@ import { Baby, Building2, GraduationCap, Mail, Pill, Stethoscope, Store } from '
 
 export const metadata: Metadata = {
   title: "Sol PVC Laboratoire Pharmaceutique | Pose Labo, Pharmacie, Cosmétique",
-  description: "Pose de sol PVC pour laboratoires pharmaceutiques, labos d'analyse, pharmacies d'officine, laboratoires cosmétique. Finition continue sans joints, rigueur du chantier, validé par les audits qualité. CB Sols, 27 ans de savoir-faire.",
+  description: "Pose de sol PVC pour laboratoires pharmaceutiques, labos d'analyse, pharmacies d'officine, laboratoires cosmétique. Finition continue sans joints, rigueur du chantier, validé par les audits qualité. CB Sols, plus de 25 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique' },
   keywords: ['sol PVC laboratoire', 'sol pharmacie', 'sol labo cosmétique', 'revêtement labo analyse', 'sol pharmaceutique'],
   openGraph: {
@@ -137,7 +137,7 @@ export default function SolPvcLaboratoirePharmaceutiquePage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>rigueur et finition.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Pose de sol PVC professionnel pour laboratoires pharmaceutique, cosmétique, d&apos;analyse, et pour pharmacies d&apos;officine. Finition continue en lés grande largeur soudés, plinthes à gorge, documentation qualité fournie. CB Sols intervient depuis 27 ans, atelier à Villedoux près de La Rochelle.
+                Pose de sol PVC professionnel pour laboratoires pharmaceutique, cosmétique, d&apos;analyse, et pour pharmacies d&apos;officine. Finition continue en lés grande largeur soudés, plinthes à gorge, documentation qualité fournie. CB Sols intervient depuis plus de 25 ans, atelier à Villedoux près de La Rochelle.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=sol-pvc-laboratoire-pharmaceutique" variant="primary" size="md">Demander un devis</Button>
@@ -147,7 +147,7 @@ export default function SolPvcLaboratoirePharmaceutiquePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Documentation qualité</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Un sol de labo, c&apos;est d&apos;abord une finition impeccable et un dossier qualité solide. On pose en grandes largeurs, on soude propre, et on remet la traçabilité complète. CB Sols fait ça depuis 27 ans. »
+                « Un sol de labo, c&apos;est d&apos;abord une finition impeccable et un dossier qualité solide. On pose en grandes largeurs, on soude propre, et on remet la traçabilité complète. CB Sols fait ça depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, gérant de CB Sols</div>
             </div>
@@ -367,15 +367,15 @@ export default function SolPvcLaboratoirePharmaceutiquePage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/sol-pvc-pharmacie", title: "Sol PVC pharmacie d'officine", teaser: "Hygiene quotidienne, conformite ARS, pose nocturne. Vingt ans de tenue dans une officine qui ne ferme pas.", icon: Pill },
-          { href: "/sol-pvc-cabinet-medical", title: "Sol PVC cabinet medical", teaser: "Un sol qui rassure vos patients des la salle d'attente et facilite votre nettoyage quotidien.", icon: Stethoscope },
-          { href: "/sol-pvc-creche", title: "Sol PVC creche", teaser: "Sans phtalates, antibacterien, certifie pour la petite enfance. La serenite des parents et de l'equipe.", icon: Baby },
-          { href: "/sol-pvc-ecole", title: "Sol PVC ecole", teaser: "Acoustique apaisee, entretien rapide, durabilite de quinze ans dans une classe qui ne s'arrete jamais.", icon: GraduationCap },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/sol-pvc-pharmacie", title: "Sol PVC pharmacie d'officine", teaser: "Hygiène quotidienne, conformité ARS, pose nocturne. Vingt ans de tenue dans une officine qui ne ferme pas.", icon: Pill },
+          { href: "/sol-pvc-cabinet-medical", title: "Sol PVC cabinet médical", teaser: "Un sol qui rassure vos patients dès la salle d'attente et facilite votre nettoyage quotidien.", icon: Stethoscope },
+          { href: "/sol-pvc-creche", title: "Sol PVC crèche", teaser: "Sans phtalates, antibactérien, certifié pour la petite enfance. La sérénité des parents et de l'équipe.", icon: Baby },
+          { href: "/sol-pvc-ecole", title: "Sol PVC école", teaser: "Acoustique apaisée, entretien rapide, durabilité de quinze ans dans une classe qui ne s'arrête jamais.", icon: GraduationCap },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -386,7 +386,7 @@ export default function SolPvcLaboratoirePharmaceutiquePage() {
             Votre laboratoire rénové <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>dans les règles.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite technique sur site. Devis détaillé, finition continue en grands lés soudés, plinthes à gorge, dossier qualité fourni. 27 ans de savoir-faire CB Sols pour les laboratoires et pharmacies.
+            Visite technique sur site. Devis détaillé, finition continue en grands lés soudés, plinthes à gorge, dossier qualité fourni. Plus de 25 ans de savoir-faire CB Sols pour les laboratoires et pharmacies.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=sol-pvc-laboratoire-pharmaceutique-final" variant="primary" size="md">Demander un devis</Button>

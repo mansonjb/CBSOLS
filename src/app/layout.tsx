@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: 'https://cbsols.fr/' },
   description:
-    'CB Sols, artisan spécialiste du revêtement de sol depuis 27 ans en Charente-Maritime. Moquette, sol PVC, tapis sur mesure pour particuliers et professionnels à La Rochelle, Île de Ré et environs.',
+    'CB Sols, artisan spécialiste du revêtement de sol depuis plus de 25 ans en Charente-Maritime. Moquette, sol PVC, tapis sur mesure pour particuliers et professionnels à La Rochelle, Île de Ré et environs.',
   keywords: ['revêtement sol', 'moquette', 'sol PVC', 'La Rochelle', 'Île de Ré', 'Charente-Maritime'],
   authors: [{ name: 'CB Sols' }],
   metadataBase: new URL('https://cbsols.fr'),
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CB Sols | Artisan Revêtement de Sol La Rochelle & Île de Ré',
-    description: 'Moquette, sol PVC, tapis sur mesure. 27 ans d\'expérience en Charente-Maritime.',
+    description: 'Moquette, sol PVC, tapis sur mesure. Plus de 25 ans d\'expérience en Charente-Maritime.',
     images: ['https://cbsols.fr/images/og-default.jpg'],
   },
   robots: {

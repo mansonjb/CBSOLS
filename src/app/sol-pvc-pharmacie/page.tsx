@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   keywords: ['sol PVC pharmacie', 'revêtement sol officine', 'sol pharmacie hygiène', 'sol PVC laboratoire pharmacie', 'conformité ARS', 'pose sol pharmacie', 'sol pharmacie facile nettoyer'],
   openGraph: {
     title: "Sol PVC pour pharmacie, pensé pour durer",
-    description: "Pose de sol PVC en officine : hygiène quotidienne, conformité ARS, intervention de nuit pour ne pas fermer. CB Sols, 27 ans de savoir-faire près de La Rochelle.",
+    description: "Pose de sol PVC en officine : hygiène quotidienne, conformité ARS, intervention de nuit pour ne pas fermer. CB Sols, plus de 25 ans de savoir-faire près de La Rochelle.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/sol-pvc-pharmacie.jpg', width: 1200, height: 630 }],
   },
@@ -129,7 +129,7 @@ const process = [
   },
   {
     step: 'Pose intégrale entre 1 et 3 nuits',
-    desc: "Intervention sur la fenêtre convenue, en général du samedi soir au lundi matin pour une officine de 100 à 150 mètres carrés. Dépose de l'ancien sol, ragréage si nécessaire, pose des lés, soudures à chaud, plinthes en gorge arrondie, profilés de seuil, nettoyage complet. Le robot et les automates restent en place, protégés et compostés autour. Lundi matin à 8h30, votre rideau se lève sur un sol neuf, propre, prêt à recevoir le premier patient.",
+    desc: "Intervention sur la fenêtre convenue, en général du samedi soir au lundi matin pour une officine de 100 à 150 mètres carrés. Dépose de l'ancien sol, ragréage si nécessaire, pose des lés, soudures à chaud, plinthes en gorge arrondie, profilés de seuil, nettoyage complet. Le robot et les automates restent en place, protégés et coffrés autour. Lundi matin à 8h30, votre rideau se lève sur un sol neuf, propre, prêt à recevoir le premier patient.",
   },
   {
     step: 'Réception conjointe et garantie',
@@ -152,7 +152,7 @@ const faq = [
   },
   {
     q: "Le sol PVC, est-ce vraiment compatible avec les normes ARS ?",
-    a: "Oui, totalement, et c'est même la solution la plus utilisée en officine moderne précisément pour cette raison. Les gammes que nous posons cumulent les classements attendus en ERP de cinquième catégorie : Bfl-s1 ou Cfl-s1 pour la résistance au feu, R10 ou R11 pour l'antidérapant selon les zones, label A+ pour la qualité de l'air intérieur, classement 34 pour l'usage commercial intensif. On vous fournit l'ensemble des attestations fabricant à joindre directement à votre dossier de conformité ou à présenter en cas de contrôle ARS. Si le bureau de contrôle a des questions techniques pointues, on dialogue directement avec lui à votre place. Sur les 27 ans de pose en milieu santé que cumule CB Sols, jamais une réception n'a été refusée pour défaut de conformité du sol. C'est un point sur lequel vous pouvez vous reposer sur nous sans inquiétude.",
+    a: "Oui, totalement, et c'est même la solution la plus utilisée en officine moderne précisément pour cette raison. Les gammes que nous posons cumulent les classements attendus en ERP de cinquième catégorie : Bfl-s1 ou Cfl-s1 pour la résistance au feu, R10 ou R11 pour l'antidérapant selon les zones, label A+ pour la qualité de l'air intérieur, classement 34 pour l'usage commercial intensif. On vous fournit l'ensemble des attestations fabricant à joindre directement à votre dossier de conformité ou à présenter en cas de contrôle ARS. Si le bureau de contrôle a des questions techniques pointues, on dialogue directement avec lui à votre place. Sur les plus de 25 ans de pose en milieu santé que cumule CB Sols, jamais une réception n'a été refusée pour défaut de conformité du sol. C'est un point sur lequel vous pouvez vous reposer sur nous sans inquiétude.",
   },
   {
     q: "Comment entretenir le sol au quotidien sans l'abîmer ?",
@@ -219,7 +219,7 @@ export default function SolPvcPharmaciePage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>pensé pour durer.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Pose de sol PVC professionnel pour votre officine : zone de vente, préparatoire, robot, réserve, sanitaires. Sols faciles à nettoyer, conformes ARS, acoustiques. Intervention nocturne pour ne jamais fermer votre pharmacie. CB Sols intervient depuis 27 ans, atelier à Villedoux près de La Rochelle.
+                Pose de sol PVC professionnel pour votre officine : zone de vente, préparatoire, robot, réserve, sanitaires. Sols faciles à nettoyer, conformes ARS, acoustiques. Intervention nocturne pour ne jamais fermer votre pharmacie. CB Sols intervient depuis plus de 25 ans, atelier à Villedoux près de La Rochelle.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=pharmacie" variant="primary" size="md">Demander un devis</Button>
@@ -227,7 +227,7 @@ export default function SolPvcPharmaciePage() {
               </div>
             </div>
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
-              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>27 ans de pose en milieu santé</div>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>plus de 25 ans de pose en milieu santé</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
                 « Quand on pose un sol dans une pharmacie, on pose pour quinze ans de service public. Chaque détail compte parce que c&apos;est le sol que les patients foulent quand ils sont fragiles, et c&apos;est le sol que votre équipe regarde des centaines de fois par jour. On a appris à le faire propre, durable, beau. »
               </p>
@@ -449,16 +449,16 @@ export default function SolPvcPharmaciePage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/sol-pvc-cabinet-medical", title: "Sol PVC cabinet medical", teaser: "Un sol qui rassure vos patients des la salle d'attente et facilite votre nettoyage quotidien.", icon: Stethoscope },
-          { href: "/sol-pvc-laboratoire-pharmaceutique", title: "Sol PVC laboratoire", teaser: "La rigueur de finition que demande un audit qualite. Soudures a chaud, sols clairs, plinthes a gorge.", icon: FlaskConical },
-          { href: "/sol-pvc-creche", title: "Sol PVC creche", teaser: "Sans phtalates, antibacterien, certifie pour la petite enfance. La serenite des parents et de l'equipe.", icon: Baby },
-          { href: "/sol-pvc-ecole", title: "Sol PVC ecole", teaser: "Acoustique apaisee, entretien rapide, durabilite de quinze ans dans une classe qui ne s'arrete jamais.", icon: GraduationCap },
+          { href: "/sol-pvc-cabinet-medical", title: "Sol PVC cabinet médical", teaser: "Un sol qui rassure vos patients dès la salle d'attente et facilite votre nettoyage quotidien.", icon: Stethoscope },
+          { href: "/sol-pvc-laboratoire-pharmaceutique", title: "Sol PVC laboratoire", teaser: "La rigueur de finition que demande un audit qualité. Soudures à chaud, sols clairs, plinthes à gorge.", icon: FlaskConical },
+          { href: "/sol-pvc-creche", title: "Sol PVC crèche", teaser: "Sans phtalates, antibactérien, certifié pour la petite enfance. La sérénité des parents et de l'équipe.", icon: Baby },
+          { href: "/sol-pvc-ecole", title: "Sol PVC école", teaser: "Acoustique apaisée, entretien rapide, durabilité de quinze ans dans une classe qui ne s'arrête jamais.", icon: GraduationCap },
           { href: "/particuliers", title: "Pour les particuliers", teaser: "Moquette, sol PVC, tapis sur mesure : notre savoir-faire au service de votre maison.", icon: Home },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -469,7 +469,7 @@ export default function SolPvcPharmaciePage() {
             Votre officine rénovée <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>sans une seule journée fermée.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place dans votre pharmacie. Devis sous 48 heures, sol classé A+, conformité ARS, pose nocturne, réouverture sans odeur. 27 ans de savoir-faire CB Sols au service des pharmaciens titulaires.
+            Visite sur place dans votre pharmacie. Devis sous 48 heures, sol classé A+, conformité ARS, pose nocturne, réouverture sans odeur. Plus de 25 ans de savoir-faire CB Sols au service des pharmaciens titulaires.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=pharmacie" variant="primary" size="md">Demander un devis</Button>

@@ -8,12 +8,12 @@ import { Building2, Mail, MapPin, Sparkles, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Biarritz | Villas Côte Basque",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Biarritz et sur la Côte Basque. Villas Belle Époque, résidences contemporaines, hôtels Relais & Châteaux. CB Sols, 27 ans de savoir-faire, déplacement depuis La Rochelle.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Biarritz et sur la Côte Basque. Villas Belle Époque, résidences contemporaines, hôtels Relais & Châteaux. CB Sols, plus de 25 ans de savoir-faire, déplacement depuis La Rochelle.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-biarritz' },
   keywords: ['revêtement sol Biarritz', 'moquette villa Biarritz', 'sol Côte Basque', 'pose tapis Biarritz', 'artisan sol Biarritz'],
   openGraph: {
     title: "Revêtement de sol à Biarritz, l'élégance basque",
-    description: "Moquette, sol PVC et tapis sur mesure à Biarritz. Villas Belle Époque front de mer, résidences contemporaines, hôtels d'exception. CB Sols, 27 ans.",
+    description: "Moquette, sol PVC et tapis sur mesure à Biarritz. Villas Belle Époque front de mer, résidences contemporaines, hôtels d'exception. CB Sols, plus de 25 ans.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-biarritz.jpg', width: 1200, height: 630 }],
   },
@@ -147,7 +147,7 @@ export default function RevetementSolBiarritzPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Projets de prestige</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Biarritz, c&apos;est l&apos;exigence Belle Époque face à l&apos;océan. Une villa de la Côte des Basques ou une suite de Relais & Châteaux, c&apos;est le même soin du détail que CB Sols apporte depuis 27 ans. »
+                « Biarritz, c&apos;est l&apos;exigence Belle Époque face à l&apos;océan. Une villa de la Côte des Basques ou une suite de Relais & Châteaux, c&apos;est le même soin du détail que CB Sols apporte depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, gérant de CB Sols</div>
             </div>
@@ -237,7 +237,7 @@ export default function RevetementSolBiarritzPage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ borderLeft: '3px solid var(--terra)', paddingLeft: '2rem' }}>
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
-              « Une villa Belle Époque face à l&apos;océan, c&apos;est un parquet à respecter, une lumière à comprendre, un sel marin à anticiper. Trois métiers qu&apos;on fait depuis 27 ans. »
+              « Une villa Belle Époque face à l&apos;océan, c&apos;est un parquet à respecter, une lumière à comprendre, un sel marin à anticiper. Trois métiers qu&apos;on fait depuis plus de 25 ans. »
             </p>
             <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, gérant de CB Sols</div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -356,16 +356,16 @@ export default function RevetementSolBiarritzPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/revetement-sol-saint-jean-de-luz", title: "Revetement sol Saint-Jean-de-Luz", teaser: "Maisons basques et villas de bord de mer. Le confort d'un sol pense pour resister au sel.", icon: MapPin },
-          { href: "/revetement-sol-arcachon", title: "Revetement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumiere et la vie au quotidien.", icon: MapPin },
-          { href: "/revetement-sol-cap-ferret", title: "Revetement sol Cap Ferret", teaser: "Cabanes ostreicoles, villas pieds dans le sable. La discretion d'un savoir-faire qui se voit a peine.", icon: Waves },
-          { href: "/revetement-sol-bordeaux", title: "Revetement sol Bordeaux", teaser: "Hotels particuliers, lofts d'echoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
-          { href: "/sols-monaco", title: "Sols Monaco", teaser: "Yachts, appartements et villas. Le niveau d'exigence et la discretion qu'attend une clientele internationale.", icon: Sparkles },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/revetement-sol-saint-jean-de-luz", title: "Revêtement sol Saint-Jean-de-Luz", teaser: "Maisons basques et villas de bord de mer. Le confort d'un sol pensé pour résister au sel.", icon: MapPin },
+          { href: "/revetement-sol-arcachon", title: "Revêtement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumière et la vie au quotidien.", icon: MapPin },
+          { href: "/revetement-sol-cap-ferret", title: "Revêtement sol Cap Ferret", teaser: "Cabanes ostréicoles, villas pieds dans le sable. La discrétion d'un savoir-faire qui se voit à peine.", icon: Waves },
+          { href: "/revetement-sol-bordeaux", title: "Revêtement sol Bordeaux", teaser: "Hôtels particuliers, lofts d'échoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
+          { href: "/sols-monaco", title: "Sols Monaco", teaser: "Yachts, appartements et villas. Le niveau d'exigence et la discrétion qu'attend une clientèle internationale.", icon: Sparkles },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -375,7 +375,7 @@ export default function RevetementSolBiarritzPage() {
             Votre projet biarrot <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Biarritz. Devis détaillé, finitions premium, respect du patrimoine basque et de la lumière atlantique. 27 ans de savoir-faire CB Sols au service de la Côte Basque.
+            Visite sur place à Biarritz. Devis détaillé, finitions premium, respect du patrimoine basque et de la lumière atlantique. Plus de 25 ans de savoir-faire CB Sols au service de la Côte Basque.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=biarritz-final" variant="primary" size="md">Demander un devis</Button>

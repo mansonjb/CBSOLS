@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Moquette Château et Manoir | Tapis Sur Mesure Patrimoine',
-  description: "Pose de moquette et tapis sur mesure en château, manoir et hôtel particulier. Respect du patrimoine et validation ABF. CB Sols accompagne propriétaires et hôteliers de prestige depuis 27 ans.",
+  description: "Pose de moquette et tapis sur mesure en château, manoir et hôtel particulier. Respect du patrimoine et validation ABF. CB Sols accompagne propriétaires et hôteliers de prestige depuis plus de 25 ans.",
   alternates: { canonical: 'https://cbsols.fr/moquette-chateau' },
   openGraph: {
     title: 'Moquette Château et Manoir | Tapis Sur Mesure Patrimoine',

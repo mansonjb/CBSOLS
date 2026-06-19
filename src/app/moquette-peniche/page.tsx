@@ -29,7 +29,7 @@ const produits = [
 ]
 
 const process = [
-  { step: 'Visite à quai', desc: "Relevé de toutes les pièces, photos, mesure d’humidité du support (souvent contre-plaqué marine ou parquet sur lambourdes). Diagnostic des éventuelles infiltrations passées." },
+  { step: 'Visite à quai', desc: "Relevé de toutes les pièces, photos, mesure d’humidité du support (souvent contreplaqué marine ou parquet sur lambourdes). Diagnostic des éventuelles infiltrations passées." },
   { step: 'Cas d’usage', desc: "Échange sur l’usage : résidence principale à quai, résidence secondaire, location courte durée, péniche commerciale ERP. La réglementation change radicalement entre ces cas." },
   { step: 'Devis & documentation', desc: "Devis détaillé sous 48h. Pour les ERP fluvial, dossier matériaux (PV feu, fiches techniques) fourni pour la commission de sécurité." },
   { step: 'Confection atelier', desc: "Découpe en atelier Villedoux selon calque. Sur péniche, les surfaces sont plus régulières que sur bateau : confection plus rapide, mais nous gardons la rigueur calepinage marine." },
@@ -190,7 +190,7 @@ export default function MoquettePenichePage() {
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Surfaces planes, supports stables</div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une péniche aménagée a généralement des surfaces planes (contre-plaqué marine sur lambourdes, parfois parquet). Le calepinage se rapproche d&apos;un chantier appartement. Avantage : confection plus rapide, finitions plus fines possibles. Vigilance : tester l&apos;humidité du support avant pose.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>Une péniche aménagée a généralement des surfaces planes (contreplaqué marine sur lambourdes, parfois parquet). Le calepinage se rapproche d&apos;un chantier appartement. Avantage : confection plus rapide, finitions plus fines possibles. Vigilance : tester l&apos;humidité du support avant pose.</p>
             </div>
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--terra)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Pas de roulis, poids non limitant</div>

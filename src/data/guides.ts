@@ -114,7 +114,7 @@ export const guides: Guide[] = [
     ],
     faq: [
       { q: "Quelle différence entre moquette contrat et moquette résidentielle ?", a: "La moquette contrat est conçue pour les usages professionnels intensifs avec des classements d'usage 32-33 (vs 21-22 pour le résidentiel), des certifications incendie obligatoires (Bfl-s1) et des tests de durabilité supérieurs. Elle est obligatoire dans les ERP, les hôtels classifiés et les bureaux professionnels." },
-      { q: "Peut-on obtenir une moquette contrat sur mesure ?", a: "Oui. CB Sols propose des moquettes sur mesure avec motif exclusif ou logo intégré, en tisssage Axminster ou tuftage. Cette option est particulièrement prisée pour les lobbys d'hôtels et les espaces de réception haut de gamme. Délai : 6 à 12 semaines selon le fabricant." },
+      { q: "Peut-on obtenir une moquette contrat sur mesure ?", a: "Oui. CB Sols propose des moquettes sur mesure avec motif exclusif ou logo intégré, en tissage Axminster ou tuftage. Cette option est particulièrement prisée pour les lobbys d'hôtels et les espaces de réception haut de gamme. Délai : 6 à 12 semaines selon le fabricant." },
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-bureau', 'moquette-collectivite'],
     datePublished: '2025-07-24',
@@ -139,7 +139,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Les erreurs à éviter",
-        body: "L'excès d'humidité est l'ennemi numéro 1 de la moquette. Un nettoyage trop humide sans séchage suffisant favorise le développement de moisissures et de mauvaises odeurs. La moquette doit être sèche dans les 6 heures suivant le nettoyage.\n\nL'utilisation de produits non adaptés peut dégrader les fibres et le dos de la moquette. Evitez les nettoyants à base d'acides forts ou d'hypochlorite de sodium. Utilisez exclusivement des produits recommandés par le fabricant.\n\nNe pas traiter les taches immédiatement est une erreur courante. Une tache de café ou de vin se traite en moins de 5 minutes avec une serviette propre par absorption (jamais en frottant) puis un produit détachant adapté. Après 30 minutes, la tache peut devenir permanente sur certaines fibres.",
+        body: "L'excès d'humidité est l'ennemi numéro 1 de la moquette. Un nettoyage trop humide sans séchage suffisant favorise le développement de moisissures et de mauvaises odeurs. La moquette doit être sèche dans les 6 heures suivant le nettoyage.\n\nL'utilisation de produits non adaptés peut dégrader les fibres et le dos de la moquette. Évitez les nettoyants à base d'acides forts ou d'hypochlorite de sodium. Utilisez exclusivement des produits recommandés par le fabricant.\n\nNe pas traiter les taches immédiatement est une erreur courante. Une tache de café ou de vin se traite en moins de 5 minutes avec une serviette propre par absorption (jamais en frottant) puis un produit détachant adapté. Après 30 minutes, la tache peut devenir permanente sur certaines fibres.",
       },
       {
         title: "L'entretien d'un sol PVC professionnel",
@@ -205,10 +205,10 @@ export const guides: Guide[] = [
     slug: 'cout-pose-revetement-sol',
     title: 'Coût et prix de pose des revêtements de sol',
     metaTitle: 'Prix Pose Revêtement de Sol Professionnel 2026 | au m²',
-    metaDescription: 'Grille de prix 2025 pour la pose de moquette, sol PVC et tapis professionnels. Tarifs CB Sols en Charente-Maritime. Devis gratuit.',
+    metaDescription: 'Grille de prix 2026 pour la pose de moquette, sol PVC et tapis professionnels. Tarifs CB Sols en Charente-Maritime. Devis gratuit.',
     category: 'Guide Tarifs',
     headline: 'Prix et coûts de pose',
-    intro: "Combien coûte la pose d'un revêtement de sol professionnel ? Les tarifs varient selon les matériaux, les surfaces et les contraintes de projet. Voici les fourchettes de prix pratiquées par CB Sols en Charente-Maritime en 2025.",
+    intro: "Combien coûte la pose d'un revêtement de sol professionnel ? Les tarifs varient selon les matériaux, les surfaces et les contraintes de projet. Voici les fourchettes de prix pratiquées par CB Sols en Charente-Maritime en 2026.",
     sections: [
       {
         title: "Prix de pose de la moquette",
@@ -274,20 +274,20 @@ export const guides: Guide[] = [
   },
   {
     slug: 'prix-pose-sol-pvc',
-    title: 'Prix de pose du sol PVC professionnel en 2025',
+    title: 'Prix de pose du sol PVC professionnel en 2026',
     metaTitle: 'Prix Pose Sol PVC Professionnel 2026 | Tarifs au m²',
-    metaDescription: 'Quel est le prix de pose du sol PVC professionnel en 2025 ? Tarifs détaillés LVT, lés, cuisine pro, hôtel. Guide honnête par CB Sols, Charente-Maritime.',
+    metaDescription: 'Quel est le prix de pose du sol PVC professionnel en 2026 ? Tarifs détaillés LVT, lés, cuisine pro, hôtel. Guide honnête par CB Sols, Charente-Maritime.',
     category: 'Guide Tarifs',
-    headline: 'Prix de pose du sol PVC en 2025',
-    intro: "Le prix de pose du sol PVC varie considérablement selon le type de produit, la surface et la complexité du projet. Ce guide détaille les fourchettes réelles pratiquées par CB Sols en 2025, sans langue de bois.",
+    headline: 'Prix de pose du sol PVC en 2026',
+    intro: "Le prix de pose du sol PVC varie considérablement selon le type de produit, la surface et la complexité du projet. Ce guide détaille les fourchettes réelles pratiquées par CB Sols en 2026, sans langue de bois.",
     sections: [
       {
         title: "Sol PVC en lames et dalles (LVT) : 35 à 75 €/m²",
-        body: "Les lames et dalles vinyle (LVT, Luxury Vinyl Tile) sont le segment le plus dynamique du marché. Leur pose est relativement rapide : en pose flottante, une équipe de 2 poseurs couvre 80 à 120 m² par jour.\n\nFourchettes 2025 (fourni posé) :\n- LVT flottant bureaux et commerces : 35 à 60 €/m²\n- LVT collé hôtellerie haut de gamme : 45 à 75 €/m²\n- Dalles vinyle design (motif bois ou pierre) : 40 à 70 €/m²\n\nLes facteurs qui font varier le prix : la qualité du produit choisi (épaisseur, classe d'usage, décor), la surface totale (tarif dégressif dès 200 m²), et l'état du support (ragréage éventuel). CB Sols établit toujours un devis détaillé poste par poste avant toute signature.",
+        body: "Les lames et dalles vinyle (LVT, Luxury Vinyl Tile) sont le segment le plus dynamique du marché. Leur pose est relativement rapide : en pose flottante, une équipe de 2 poseurs couvre 80 à 120 m² par jour.\n\nFourchettes 2026 (fourni posé) :\n- LVT flottant bureaux et commerces : 35 à 60 €/m²\n- LVT collé hôtellerie haut de gamme : 45 à 75 €/m²\n- Dalles vinyle design (motif bois ou pierre) : 40 à 70 €/m²\n\nLes facteurs qui font varier le prix : la qualité du produit choisi (épaisseur, classe d'usage, décor), la surface totale (tarif dégressif dès 200 m²), et l'état du support (ragréage éventuel). CB Sols établit toujours un devis détaillé poste par poste avant toute signature.",
       },
       {
         title: "Sol PVC en lés (rouleaux) : 30 à 90 €/m²",
-        body: "Le sol PVC en lés (vendu en rouleaux de 2 m ou 4 m de large) couvre un large éventail d'usages et de prix. C'est la solution de référence pour les cuisines professionnelles, les couloirs d'hôpitaux, les espaces à trafic intense.\n\nFourchettes 2025 (fourni posé) :\n- PVC hétérogène lés collectivités (couloirs, écoles) : 30 à 55 €/m²\n- PVC lés hétérogène hôtellerie : 40 à 70 €/m²\n- PVC homogène cuisine professionnelle R11 : 55 à 90 €/m²\n\nSur les surfaces supérieures à 300 m², CB Sols applique des remises de volume qui peuvent atteindre 10 à 15% du tarif de base. Pour les hôtels qui commandent moquette + PVC en même temps, un tarif global est négocié.",
+        body: "Le sol PVC en lés (vendu en rouleaux de 2 m ou 4 m de large) couvre un large éventail d'usages et de prix. C'est la solution de référence pour les cuisines professionnelles, les couloirs d'hôpitaux, les espaces à trafic intense.\n\nFourchettes 2026 (fourni posé) :\n- PVC hétérogène lés collectivités (couloirs, écoles) : 30 à 55 €/m²\n- PVC lés hétérogène hôtellerie : 40 à 70 €/m²\n- PVC homogène cuisine professionnelle R11 : 55 à 90 €/m²\n\nSur les surfaces supérieures à 300 m², CB Sols applique des remises de volume qui peuvent atteindre 10 à 15% du tarif de base. Pour les hôtels qui commandent moquette + PVC en même temps, un tarif global est négocié.",
       },
       {
         title: "Les travaux annexes qui s'ajoutent au prix de base",
@@ -322,7 +322,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Entretien : avantage parquet (ou sol PVC)",
-        body: "Le parquet et le sol PVC s'entretiennent avec une serpillère et des produits courants. Pas de nettoyage spécialisé nécessaire, pas de machine. Pour des bureaux à fort trafic ou des espaces où les salissures liquides sont fréquentes (espaces de restauration, cuisines communes), c'est un avantage réel.\n\nLa moquette demande une aspiration régulière (idéalement hebdomadaire) et un nettoyage à l'injection-extraction annuel par un professionnel. Ce coût récurrent doit être intégré dans le budget d'exploitation.\n\nNéanmoins, une tache de café sur un sol dur laisse une auréole même après nettoyage. Sur une moquette traitée anti-taches, les liquides perles et s'absorbent plus facilement si l'intervention est rapide.",
+        body: "Le parquet et le sol PVC s'entretiennent avec une serpillère et des produits courants. Pas de nettoyage spécialisé nécessaire, pas de machine. Pour des bureaux à fort trafic ou des espaces où les salissures liquides sont fréquentes (espaces de restauration, cuisines communes), c'est un avantage réel.\n\nLa moquette demande une aspiration régulière (idéalement hebdomadaire) et un nettoyage à l'injection-extraction annuel par un professionnel. Ce coût récurrent doit être intégré dans le budget d'exploitation.\n\nNéanmoins, une tache de café sur un sol dur laisse une auréole même après nettoyage. Sur une moquette traitée anti-taches, les liquides perlent et s'absorbent plus facilement si l'intervention est rapide.",
       },
       {
         title: "Durabilité et coût total : ils se valent sur 10 ans",
@@ -330,7 +330,7 @@ export const guides: Guide[] = [
       },
       {
         title: "Esthétique et image de marque : une question de positionnement",
-        body: "La moquette evoque la confidentialité, le sérieux, le confort. C'est le sol des cabinets d'avocats, des banques privées, des directions générales. Elle crée une ambiance feutrée qui rassure les clients et favorise la concentration.\n\nLe parquet ou le sol PVC à décor bois évoque le dynamisme, la modernité, la transparence. C'est le sol des agences créatives, des espaces coworking, des startups. Il photographie bien pour les photos de bureau sur les réseaux sociaux.\n\nIl n'y a pas de bonne ou mauvaise réponse : tout dépend de l'identité que vous voulez projeter. CB Sols vous apporte des échantillons en situation réelle lors du devis pour vous aider à trancher.",
+        body: "La moquette évoque la confidentialité, le sérieux, le confort. C'est le sol des cabinets d'avocats, des banques privées, des directions générales. Elle crée une ambiance feutrée qui rassure les clients et favorise la concentration.\n\nLe parquet ou le sol PVC à décor bois évoque le dynamisme, la modernité, la transparence. C'est le sol des agences créatives, des espaces coworking, des startups. Il photographie bien pour les photos de bureau sur les réseaux sociaux.\n\nIl n'y a pas de bonne ou mauvaise réponse : tout dépend de l'identité que vous voulez projeter. CB Sols vous apporte des échantillons en situation réelle lors du devis pour vous aider à trancher.",
       },
     ],
     faq: [
@@ -409,7 +409,7 @@ export const guides: Guide[] = [
       { q: "La moquette acoustique s'entretient-elle différemment ?", a: "Non. L'entretien d'une moquette acoustique est identique à celui d'une moquette classique : aspiration régulière et injection-extraction annuelle. La sous-couche n'est pas affectée par le nettoyage en surface si le protocole est respecté (humidité contrôlée, séchage rapide)." },
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-restaurant', 'moquette-bureau'],
-    datePublished: '2026-01-08',
+    datePublished: '2025-01-08',
     dateModified: '2026-03-20',
   },
   {
@@ -439,7 +439,7 @@ export const guides: Guide[] = [
       },
       {
         title: "4. La fourniture (matériau)",
-        body: "Le prix dépend du type de revêtement, du fabricant, de la gamme et, surtout, du conditionnement.\n\n**Moquette en rouleau**\n\nGénéralement vendue en lés de 4 m de large. Le métré doit prévoir les chutes de coupe. Sur des espaces étroits, la perte peut atteindre 20 %, sur de grandes surfaces régulières elle tombe à 5 %.\n\n**Moquette dalles**\n\nPas de chute (sauf coupes en bordure). Plus chère au m² mais souvent moins de pose détruite.\n\n**Sol PVC en lés**\n\nConditionnement 2 m ou 4 m de large.\n\n**Sol PVC en lames ou dalles**\n\nPose sans chute, mais le calepinage demande plus de temps.\n\n**Effet quantité**\n\nPlus la surface est grande, moins le m² coûte cher (moins de manutention, négociation possible avec le fournisseur). Un même produit peut avoir un écart de 15 à 25 % entre 30 m² et 300 m².\n\n**Notre méthode chez CB Sols**\n\nNous nous occupons de la réception de la matière, de la vérification des quantités et des coloris (lot fabricant, sens de pose). Le débit se fait dans notre atelier où chaque rouleau est contrôlé avant départ projet.",
+        body: "Le prix dépend du type de revêtement, du fabricant, de la gamme et, surtout, du conditionnement.\n\n**Moquette en rouleau**\n\nGénéralement vendue en lés de 4 m de large. Le métré doit prévoir les chutes de coupe. Sur des espaces étroits, la perte peut atteindre 20 %, sur de grandes surfaces régulières elle tombe à 5 %.\n\n**Moquette dalles**\n\nPas de chute (sauf coupes en bordure). Plus chère au m² mais souvent moins de perte.\n\n**Sol PVC en lés**\n\nConditionnement 2 m ou 4 m de large.\n\n**Sol PVC en lames ou dalles**\n\nPose sans chute, mais le calepinage demande plus de temps.\n\n**Effet quantité**\n\nPlus la surface est grande, moins le m² coûte cher (moins de manutention, négociation possible avec le fournisseur). Un même produit peut avoir un écart de 15 à 25 % entre 30 m² et 300 m².\n\n**Notre méthode chez CB Sols**\n\nNous nous occupons de la réception de la matière, de la vérification des quantités et des coloris (lot fabricant, sens de pose). Le débit se fait dans notre atelier où chaque rouleau est contrôlé avant départ projet.",
       },
       {
         title: "5. La pose",
@@ -467,7 +467,7 @@ export const guides: Guide[] = [
       { q: "Comment savoir si un devis sous-traite ?", a: "Demandez explicitement : « C'est vous ou une équipe extérieure qui pose ? ». Vérifiez aussi sur les attestations d'assurance décennale : elles doivent être nominatives à l'entreprise qui pose. Une entreprise qui sous-traite va souvent essayer d'esquiver la question, c'est le signal." },
     ],
     relatedSolutions: ['moquette-hotel', 'moquette-bureau', 'sol-pvc-restaurant'],
-    datePublished: '2026-01-29',
+    datePublished: '2025-01-29',
     dateModified: '2026-04-18',
     howToMeta: {
       totalTime: 'PT30M',
@@ -480,7 +480,7 @@ export const guides: Guide[] = [
     metaDescription: "Sol PVC sur chauffage au sol : compatibilité, lame PVC plancher chauffant, gestion de la dilatation, pose collée, seuil 28°C. Guide expert CB Sols La Rochelle.",
     category: 'Guide Technique',
     headline: 'Sol PVC sur plancher chauffant',
-    intro: "C'est l'une des questions qui revient le plus souvent sur les forums de construction et de rénovation : peut-on vraiment poser un sol PVC sur un chauffage au sol sans risquer la catastrophe ? Beaucoup hésitent par peur de la dilatation, du décollement ou d'un rendement thermique dégradé. La réponse courte : oui, c'est tout à fait possible et c'est même un excellent choix de confort, à condition de respecter quelques règles techniques précises. CB Sols, fort de 27 ans de pose dans la région de La Rochelle, vous explique ici comment réussir cette association sans mauvaise surprise.",
+    intro: "C'est l'une des questions qui revient le plus souvent sur les forums de construction et de rénovation : peut-on vraiment poser un sol PVC sur un chauffage au sol sans risquer la catastrophe ? Beaucoup hésitent par peur de la dilatation, du décollement ou d'un rendement thermique dégradé. La réponse courte : oui, c'est tout à fait possible et c'est même un excellent choix de confort, à condition de respecter quelques règles techniques précises. CB Sols, fort de plus de 25 ans de pose dans la région de La Rochelle, vous explique ici comment réussir cette association sans mauvaise surprise.",
     sections: [
       {
         title: 'Oui, le sol PVC est compatible (mais sous conditions)',
@@ -496,11 +496,11 @@ export const guides: Guide[] = [
       },
       {
         title: 'Les marques validées sur chauffage au sol',
-        body: "Quatre marques sortent du lot pour la pose sur plancher chauffant, toutes disposant de gammes spécifiquement testées et certifiées pour cet usage.\n\nGerflor propose la gamme Senso (résidentiel haut de gamme) et la gamme Taralay Impression Compact pour les locaux contrats. Les deux affichent une résistance thermique inférieure à 0,02 m²K/W, idéale pour la diffusion de chaleur.\n\nTarkett couvre le segment professionnel avec iQ Granit et Acczent, deux références largement utilisées en santé et en collectivité, parfaitement adaptées au plancher chauffant basse température. Forbo, marque européenne reconnue, propose Eternal et Sphera, des sols PVC compacts dont la finesse maximise le rendement thermique. Polyflor complète l'offre pour les usages techniques.\n\nDans tous les cas, la règle absolue : vérifier la fiche technique du lot précis livré, pas seulement la gamme. Les références changent, les certifications aussi. CB Sols, présent à Villedoux depuis 27 ans, conserve un suivi à jour des compatibilités fabricant et fournit systématiquement la documentation technique avec chaque devis.",
+        body: "Quatre marques sortent du lot pour la pose sur plancher chauffant, toutes disposant de gammes spécifiquement testées et certifiées pour cet usage.\n\nGerflor propose la gamme Senso (résidentiel haut de gamme) et la gamme Taralay Impression Compact pour les locaux contrats. Les deux affichent une résistance thermique inférieure à 0,02 m²K/W, idéale pour la diffusion de chaleur.\n\nTarkett couvre le segment professionnel avec iQ Granit et Acczent, deux références largement utilisées en santé et en collectivité, parfaitement adaptées au plancher chauffant basse température. Forbo, marque européenne reconnue, propose Eternal et Sphera, des sols PVC compacts dont la finesse maximise le rendement thermique. Polyflor complète l'offre pour les usages techniques.\n\nDans tous les cas, la règle absolue : vérifier la fiche technique du lot précis livré, pas seulement la gamme. Les références changent, les certifications aussi. CB Sols, présent à Villedoux depuis plus de 25 ans, conserve un suivi à jour des compatibilités fabricant et fournit systématiquement la documentation technique avec chaque devis.",
       },
       {
         title: 'Démarrer le chauffage après la pose : protocole CB Sols',
-        body: "Le protocole de mise en chauffe après pose est ce qui distingue un chantier durable d'un chantier qui se dégrade au bout de six mois. CB Sols applique le même protocole sur tous ses chantiers depuis 27 ans, et le résultat est sans appel : aucun retour client pour décollement lié à la mise en chauffe.\n\nÀ J+0 (jour de la pose) : chauffage coupé, même s'il fait froid dehors. La colle doit sécher à température stable, idéalement entre 18 et 22°C dans la pièce.\n\nÀ J+7 : montée progressive autorisée, à raison de 5°C par jour maximum sur la consigne du circuit. Si vous visez une eau de circulation à 35°C en régime nominal, commencez à 20°C et augmentez de 5°C chaque matin.\n\nÀ J+14 : régime nominal atteint, le sol peut fonctionner normalement. La colle a achevé sa prise complète, le ragréage en dessous a évacué son humidité résiduelle, le revêtement est stabilisé. Valentin Prévoteau, gérant de CB Sols, se déplace systématiquement pour valider les conditions de mise en chauffe sur les chantiers techniques.",
+        body: "Le protocole de mise en chauffe après pose est ce qui distingue un chantier durable d'un chantier qui se dégrade au bout de six mois. CB Sols applique le même protocole sur tous ses chantiers depuis plus de 25 ans, et le résultat est sans appel : aucun retour client pour décollement lié à la mise en chauffe.\n\nÀ J+0 (jour de la pose) : chauffage coupé, même s'il fait froid dehors. La colle doit sécher à température stable, idéalement entre 18 et 22°C dans la pièce.\n\nÀ J+7 : montée progressive autorisée, à raison de 5°C par jour maximum sur la consigne du circuit. Si vous visez une eau de circulation à 35°C en régime nominal, commencez à 20°C et augmentez de 5°C chaque matin.\n\nÀ J+14 : régime nominal atteint, le sol peut fonctionner normalement. La colle a achevé sa prise complète, le ragréage en dessous a évacué son humidité résiduelle, le revêtement est stabilisé. Valentin Prévoteau, gérant de CB Sols, se déplace systématiquement pour valider les conditions de mise en chauffe sur les chantiers techniques.",
       },
     ],
     faq: [
@@ -526,7 +526,7 @@ export const guides: Guide[] = [
       },
       {
         q: "On peut poser sur un sol chauffant déjà carrelé ?",
-        a: "Oui, c'est même une rénovation très courante. Si le carrelage existant est parfaitement solidaire, plan et sans joint creux, on peut poser directement le PVC dessus en pose collée avec une primaire d'accrochage adaptée. Si les joints sont creux ou que la planéité présente des défauts supérieurs à 5 mm sur 2 mètres, un ragréage autolissant fibré spécial chauffage au sol est obligatoire. CB Sols vérifie systématiquement la planéité et l'adhérence du carrelage avant de chiffrer le chantier, et inclut le ragréage au devis si nécessaire."
+        a: "Oui, c'est même une rénovation très courante. Si le carrelage existant est parfaitement solidaire, plan et sans joint creux, on peut poser directement le PVC dessus en pose collée avec un primaire d'accrochage adapté. Si les joints sont creux ou que la planéité présente des défauts supérieurs à 5 mm sur 2 mètres, un ragréage autolissant fibré spécial chauffage au sol est obligatoire. CB Sols vérifie systématiquement la planéité et l'adhérence du carrelage avant de chiffrer le chantier, et inclut le ragréage au devis si nécessaire."
       },
       {
         q: "Quel est le risque concret si on ne respecte pas les règles ?",
@@ -534,7 +534,7 @@ export const guides: Guide[] = [
       },
     ],
     relatedSolutions: ['sol-pvc-restaurant', 'sol-pvc-hotel'],
-    datePublished: '2026-06-03',
+    datePublished: '2025-06-03',
     dateModified: '2026-06-03',
     howToMeta: {
       totalTime: 'PT45M',

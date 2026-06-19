@@ -8,12 +8,12 @@ import { Building2, Mail, MapPin, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Île d'Yeu | Maisons et Hôtels Vendée",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à l'Île d'Yeu. Maisons de pêcheurs Port-Joinville, villas côte sauvage, hôtels boutique. Logistique insulaire maîtrisée par CB Sols, 27 ans de savoir-faire.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à l'Île d'Yeu. Maisons de pêcheurs Port-Joinville, villas côte sauvage, hôtels boutique. Logistique insulaire maîtrisée par CB Sols, plus de 25 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-ile-d-yeu' },
   keywords: ['revêtement sol Île d\'Yeu', 'moquette maison Yeu', 'sol pied dans le sable Vendée', 'artisan sol Île d\'Yeu'],
   openGraph: {
     title: "Revêtement de sol à l'Île d'Yeu, le charme insulaire",
-    description: "Moquette, sol PVC et tapis sur mesure à l'Île d'Yeu. Logistique maîtrisée depuis Fromentine, intervention hors saison. CB Sols, 27 ans.",
+    description: "Moquette, sol PVC et tapis sur mesure à l'Île d'Yeu. Logistique maîtrisée depuis Fromentine, intervention hors saison. CB Sols, plus de 25 ans.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-ile-d-yeu.jpg', width: 1200, height: 630 }],
   },
@@ -81,7 +81,7 @@ const faq = [
   { q: "Vous venez vraiment à Yeu depuis La Rochelle ?", a: "Oui, régulièrement. L'Île d'Yeu est à deux heures de route jusqu'à Fromentine, puis quarante minutes de traversée jusqu'à Port-Joinville. On la traite dans la continuité de Ré et d'Oléron, c'est exactement la même logique insulaire. Nous prenons en charge toute la logistique : traversées passagers et fret, hébergement de l'équipe, véhicule sur place, et même le retour des déchets vers le continent. Vous n'organisez rien de votre côté." },
   { q: "Comment ça se passe pour le fret des matières ?", a: "C'est exactement ce qu'on prépare en amont, et ça change tout entre un chantier serein et un chantier improvisé. Les rouleaux, les colles, les outils s'embarquent à Fromentine sur la traversée fret de la Compagnie Vendéenne ou de la Régie Yeu Continent. On réserve les créneaux trois à quatre semaines en avance, surtout au début et à la fin du chantier. À l'arrivée, un véhicule loué sur place fait le dernier kilomètre. Tout est inclus dans le devis." },
   { q: "Quand vaut-il mieux intervenir à Yeu ?", a: "D'octobre à mars, hors saison touristique. Les propriétaires sont moins présents, les hôtels ferment, les traversées ne sont pas saturées. Pour les locations saisonnières, on vise impérativement la basse saison pour livrer avant Pâques. On évite avril à septembre, c'est l'enfer logistique. Les meilleurs créneaux se calent quatre à six mois à l'avance, surtout avec un tapis sur mesure ou un projet d'envergure." },
-  { q: "Quelle matière pour une maison de famille à Yeu ?", a: "Ça dépend de la pièce. Pour les pièces de vie et les vérandas, on part sur du PVC effet bois ou du sisal scellé : ils encaissent le sable et le pieds nus de l'été. Dans les chambres, la moquette laine bouclée apporte la chaleur du matin. Sur les entrées face plage, le Bolon est imbattable, il se lave à grande eau. On valide toujours les choix sous la lumière insulaire, jamais en showroom." },
+  { q: "Quelle matière pour une maison de famille à Yeu ?", a: "Ça dépend de la pièce. Pour les pièces de vie et les vérandas, on part sur du PVC effet bois ou du sisal scellé : ils encaissent le sable et les pieds nus de l'été. Dans les chambres, la moquette laine bouclée apporte la chaleur du matin. Sur les entrées face plage, le Bolon est imbattable, il se lave à grande eau. On valide toujours les choix sous la lumière insulaire, jamais en showroom." },
   { q: "Vous travaillez dans les maisons de pêcheurs étroites ?", a: "C'est même là qu'on excelle. Les maisons traditionnelles de Port-Joinville ont des portes étroites et des escaliers serrés. On prépare les découpes en amont à l'atelier, parfois en plusieurs morceaux qui passent les ouvertures puis se raccordent invisiblement sur place. C'est cette préparation qui fait la différence. Sur les escaliers étroits, on propose aussi des solutions de pose qui évitent de monter de grandes pièces d'un seul tenant." },
   { q: "Vous gérez les déchets de chantier ?", a: "Oui, tout repart avec nous sur la traversée retour. On rassemble, on emballe, on charge. Vous n'avez ni benne à organiser, ni déchetterie locale à trouver, ni évacuation à gérer. C'est compris dans la prestation insulaire, comme à Ré ou à Oléron. Un chantier insulaire bien préparé se mesure aussi à ce qu'on remporte avec nous." },
   { q: "Vous posez aussi des tapis sur mesure à Yeu ?", a: "Oui, et c'est particulièrement pertinent sur les maisons de famille. Tapis cousus main, dimensions au centimètre près, bordure travaillée, motif accordé à votre décor. Sisals chinés, laines unies en tonalités chaudes, créations contemporaines pour la côte sauvage. C'est souvent ce qui transforme un salon de maison rénovée, sans masquer le sol. Compter huit à quatorze semaines de fabrication, à caler dans le planning du chantier." },
@@ -137,7 +137,7 @@ export default function RevetementSolIleDYeuPage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>le charme insulaire.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Pose de moquette, sol PVC et tapis sur mesure à l&apos;Île d&apos;Yeu. Maisons de pêcheurs de Port-Joinville, villas de la côte sauvage, hôtels boutique et locations saisonnières premium. Logistique fret depuis Fromentine intégralement gérée par nos soins. CB Sols intervient depuis 27 ans.
+                Pose de moquette, sol PVC et tapis sur mesure à l&apos;Île d&apos;Yeu. Maisons de pêcheurs de Port-Joinville, villas de la côte sauvage, hôtels boutique et locations saisonnières premium. Logistique fret depuis Fromentine intégralement gérée par nos soins. CB Sols intervient depuis plus de 25 ans.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=ile-d-yeu" variant="primary" size="md">Demander un devis</Button>
@@ -147,7 +147,7 @@ export default function RevetementSolIleDYeuPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Logistique insulaire intégrée</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « À Yeu, le métier commence à Fromentine. On planifie les rotations fret, on traverse avec l&apos;équipe, on remporte les déchets. C&apos;est ce que CB Sols fait sur les îles depuis 27 ans. »
+                « À Yeu, le métier commence à Fromentine. On planifie les rotations fret, on traverse avec l&apos;équipe, on remporte les déchets. C&apos;est ce que CB Sols fait sur les îles depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, gérant de CB Sols</div>
             </div>
@@ -356,16 +356,16 @@ export default function RevetementSolIleDYeuPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/ile-de-re", title: "Ile de Re", teaser: "Notre terrain naturel. Logistique maitrisee, materiaux choisis pour l'air marin, equipes habituees au bac.", icon: Waves },
-          { href: "/ile-doleron", title: "Ile d'Oleron", teaser: "Maisons de pecheurs, villas modernes, residences secondaires. La meme exigence, sur l'ile voisine.", icon: Waves },
-          { href: "/revetement-sol-cap-ferret", title: "Revetement sol Cap Ferret", teaser: "Cabanes ostreicoles, villas pieds dans le sable. La discretion d'un savoir-faire qui se voit a peine.", icon: Waves },
-          { href: "/revetement-sol-arcachon", title: "Revetement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumiere et la vie au quotidien.", icon: MapPin },
-          { href: "/moquette-bateau", title: "Moquette de bateau", teaser: "Sols nautiques sur mesure : confort a bord, antiderapant, resistance au sel et a la lumiere.", icon: Waves },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/ile-de-re", title: "Île de Ré", teaser: "Notre terrain naturel. Logistique maîtrisée, matériaux choisis pour l'air marin, équipes habituées au bac.", icon: Waves },
+          { href: "/ile-doleron", title: "Île d'Oléron", teaser: "Maisons de pêcheurs, villas modernes, résidences secondaires. La même exigence, sur l'île voisine.", icon: Waves },
+          { href: "/revetement-sol-cap-ferret", title: "Revêtement sol Cap Ferret", teaser: "Cabanes ostréicoles, villas pieds dans le sable. La discrétion d'un savoir-faire qui se voit à peine.", icon: Waves },
+          { href: "/revetement-sol-arcachon", title: "Revêtement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumière et la vie au quotidien.", icon: MapPin },
+          { href: "/moquette-bateau", title: "Moquette de bateau", teaser: "Sols nautiques sur mesure : confort à bord, antidérapant, résistance au sel et à la lumière.", icon: Waves },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -375,7 +375,7 @@ export default function RevetementSolIleDYeuPage() {
             Votre projet sur Yeu <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>en toute sérénité.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Port-Joinville. Devis tout compris (fret, hébergement, retour déchets), finitions soignées, intervention hors saison. 27 ans de savoir-faire CB Sols au service des îles du grand Ouest.
+            Visite sur place à Port-Joinville. Devis tout compris (fret, hébergement, retour déchets), finitions soignées, intervention hors saison. Plus de 25 ans de savoir-faire CB Sols au service des îles du grand Ouest.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=ile-d-yeu-final" variant="primary" size="md">Demander un devis</Button>

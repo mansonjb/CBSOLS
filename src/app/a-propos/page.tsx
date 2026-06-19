@@ -52,11 +52,11 @@ const personSchema = {
 export default function AProposPage() {
   const credentials = [
     { label: 'Décennale', desc: 'Assurance responsabilité décennale en cours de validité', icon: '✓' },
-    { label: '27+ ans d\'expérience', desc: 'Fondé en 1999, 500+ projets livrés en Charente-Maritime', icon: '✓' },
+    { label: 'Plus de 25 ans d\'expérience', desc: 'Fondé en 1999, 500+ projets livrés en Charente-Maritime', icon: '✓' },
   ]
 
   const stats = [
-    { value: '27+', label: "ans d'expérience", sub: 'depuis 1999' },
+    { value: 'plus de 25', label: "ans d'expérience", sub: 'depuis 1999' },
     { value: '500+', label: 'projets réalisés', sub: 'particuliers & pros' },
     { value: '49', label: 'communes couvertes', sub: 'Charente-Maritime' },
     { value: '4.9/5', label: 'satisfaction client', sub: '41 avis vérifiés' },
@@ -73,11 +73,11 @@ export default function AProposPage() {
           <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Notre histoire</div>
             <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.0 }}>
-              27 ans au service<br />
+              Plus de 25 ans au service<br />
               <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>de vos sols.</em>
             </h1>
             <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '600px', lineHeight: 1.75, margin: 0 }}>
-              CB Sols est né en 1999 à Villedoux d'une passion pour les beaux matériaux et le travail bien fait. En 27 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime, des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille au restaurant étoilé.
+              CB Sols est né en 1999 à Villedoux d'une passion pour les beaux matériaux et le travail bien fait. En plus de 25 ans, nous avons posé des sols dans des centaines d'espaces en Charente-Maritime, des chambres d'hôtel à l'amphithéâtre universitaire, des maisons de famille au restaurant étoilé.
             </p>
           </div>
         </section>

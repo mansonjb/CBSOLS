@@ -18,7 +18,7 @@ export const avis: Avis[] = [
     text: "Nous sommes absolument ravis d'avoir fait appel à l'entreprise CB Sols. Le travail réalisé est d'une qualité remarquable, avec une attention portée aux moindres détails. Valentin a su nous convaincre d'ajouter de la moquette : le résultat est non seulement esthétique, mais aussi très confortable au quotidien. Il est rare aujourd'hui de trouver une équipe de professionnels aussi consciencieux, et nous sommes heureux d'avoir fait le bon choix en leur accordant notre confiance. Je recommande les yeux fermés !",
   },
   {
-    name: "David Labarrere",
+    name: "David Labarrère",
     context: "Particulier · parquet + moquette",
     date: "il y a 7 mois",
     text: "Je recommande vivement CB Sols et son gérant Valentin ! Ils ont été incroyablement professionnels, toujours à l'écoute et de très bons conseils. Nous avions simplement besoin d'un parquet, mais Valentin a su nous convaincre d'ajouter de la moquette pour un résultat encore plus harmonieux et pratique. Son expertise et sa persuasivité ont été très appréciables. Le tout a été réalisé dans les délais prévus, sans aucune souci. Produits de très bonne qualité, service impeccable, rien à dire. Un grand merci à Valentin et à toute l'équipe de CB Sol !",
@@ -42,7 +42,7 @@ export const avis: Avis[] = [
     text: "Très satisfait, comme d'habitude ! Valentin et son équipe font un travail soigné et de qualité. A recommander sans hésitation ! Merci",
   },
   {
-    name: "Cedrick Poucineau",
+    name: "Cédrick Poucineau",
     context: "Professionnel · hôtels La Rochelle",
     date: "il y a 4 mois",
     text: "Nous travaillons avec CB Sols depuis plusieurs années pour nos hotels sur la Rochelle. Une équipe réactive, attentive à nos attentes, soucieuse du travail bien fait.",

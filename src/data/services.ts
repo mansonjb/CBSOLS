@@ -44,7 +44,7 @@ export const services: Service[] = [
     geoVerb: 'Pose de moquette à',
     metaTitle: (city) => `Pose de Moquette ${city} | Devis Gratuit sous 48h`,
     metaDescription: (city) =>
-      `Pose de moquette professionnelle à ${city} et environs. CB Sols : artisan spécialiste depuis 27 ans, devis gratuit. Hôtels, bureaux, particuliers.`,
+      `Pose de moquette professionnelle à ${city} et environs. CB Sols : artisan spécialiste depuis plus de 25 ans, devis gratuit. Hôtels, bureaux, particuliers.`,
     h1: (city) => `Pose de Moquette à ${city}`,
   },
   {
@@ -109,7 +109,7 @@ export const services: Service[] = [
     icon: '◈',
     description: 'Création de tapis décoratifs sur mesure, finitions premium. Pour hôtels, espaces de prestige et particuliers exigeants.',
     longDescription:
-      "Le tapis sur mesure est la signature d'un espace de prestige. CB Sols collabore avec les designers et architectes d'intérieur pour concevoir des pièces uniques : forme, couleur, matière, finition de bords, tout est personnalisable. Idéal pour les lobbys d'hôtels, restaurants gastronomiques et résidences de luxe.",
+      "Le tapis sur mesure est la signature d'un espace de prestige. CB Sols collabore avec les designers et architectes d'intérieur pour concevoir des pièces uniques : forme, couleur, matière, finition de bords, tout est personnalisable. Idéal pour les halls d'hôtels, restaurants gastronomiques et résidences de luxe.",
     benefits: [
       'Dimension et forme au millimètre',
       'Choix illimité de coloris et matières',
@@ -117,7 +117,7 @@ export const services: Service[] = [
       'Logo ou motif possible',
       'Résistance adaptée à l\'usage',
     ],
-    useCases: ['Maison individuelle', 'Lobbys d\'hôtels', 'Restaurants gastronomiques', 'Salles de réception', 'Résidences de luxe', 'Boutiques premium'],
+    useCases: ['Maison individuelle', 'Halls d\'hôtels', 'Restaurants gastronomiques', 'Salles de réception', 'Résidences de luxe', 'Boutiques premium'],
     brands: ['EGE', 'Atelier sur mesure CB Sols'],
     geoVerb: 'Tapis sur mesure à',
     metaTitle: (city) => `Tapis Sur Mesure ${city} | Création Artisan`,
@@ -187,7 +187,7 @@ export const services: Service[] = [
     icon: '⬛',
     description: 'Expertise complète en revêtement de sol : conseil, fourniture, pose et entretien. Particuliers et professionnels.',
     longDescription:
-      "Depuis 27 ans, CB Sols accompagne particuliers et professionnels de Charente-Maritime dans tous leurs projets de revêtement de sol. De la sélection des matériaux en showroom jusqu'à la pose et l'entretien, CB Sols est votre interlocuteur unique pour un projet réussi de A à Z.",
+      "Depuis plus de 25 ans, CB Sols accompagne particuliers et professionnels de Charente-Maritime dans tous leurs projets de revêtement de sol. De la sélection des matériaux en showroom jusqu'à la pose et l'entretien, CB Sols est votre interlocuteur unique pour un projet réussi de A à Z.",
     benefits: [
       'Interlocuteur unique de A à Z',
       'Showroom avec 500+ échantillons',
@@ -200,7 +200,7 @@ export const services: Service[] = [
     geoVerb: 'Revêtement de sol à',
     metaTitle: (city) => `Revêtement de Sol ${city} | Devis Gratuit sous 48h`,
     metaDescription: (city) =>
-      `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis 27 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
+      `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis plus de 25 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
     h1: (city) => `Revêtement de Sol à ${city}`,
   },
   {

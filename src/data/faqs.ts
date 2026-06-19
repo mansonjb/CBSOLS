@@ -93,7 +93,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les signes qui indiquent qu\'il faut remplacer',
-        body: "Comment savoir quand une moquette doit être remplacée ? Plusieurs signes ne trompent pas :\n\nLe matting : les fibres sont aplaties et ne se relèvent plus après aspiration. La moquette perd son aspect poileux et ressemble à un feutrine usée. À ce stade, aucun entretien ne peut récupérer l'aspect.\n\nLes taches persistantes : des taches qui résistent à l'injection-extraction professionnelle sont en général permanentes. Elles indiquent que les fibres sont dégradées chimiquement.\n\nLes zones d'usure très localisées (entrées de porte, devant des chaises) : dans les espaces en dalles, ces dalles seules peuvent être remplacées. En lés, il faut évaluer si la pose d'un lé de remplacement est esthétiquement acceptable.\n\nLes problèmes de collage : décollements en périphérie, cloques, ondulations. Ces défauts structurels compromettent la sécurité et ne peuvent généralement pas être rattrapés.",
+        body: "Comment savoir quand une moquette doit être remplacée ? Plusieurs signes ne trompent pas :\n\nLe matting : les fibres sont aplaties et ne se relèvent plus après aspiration. La moquette perd son aspect pelucheux et ressemble à une feutrine usée. À ce stade, aucun entretien ne peut récupérer l'aspect.\n\nLes taches persistantes : des taches qui résistent à l'injection-extraction professionnelle sont en général permanentes. Elles indiquent que les fibres sont dégradées chimiquement.\n\nLes zones d'usure très localisées (entrées de porte, devant des chaises) : dans les espaces en dalles, ces dalles seules peuvent être remplacées. En lés, il faut évaluer si la pose d'un lé de remplacement est esthétiquement acceptable.\n\nLes problèmes de collage : décollements en périphérie, cloques, ondulations. Ces défauts structurels compromettent la sécurité et ne peuvent généralement pas être rattrapés.",
       },
       {
         title: 'Planifier le remplacement pour minimiser l\'impact',
@@ -127,10 +127,10 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les produits de référence et leurs certifications',
-        body: "Trois familles de produits sont adaptées aux cuisines professionnelles :\n\nGerflor Mipolam Granit : sol PVC homogène, classement R10 standard (R11 sur demande), résistance chimique P2, certification NSF pour les espaces alimentaires. Grande gamme de coloris. Durée de vie : 20-30 ans.\n\nGerflor Taralay Premium Contract : sol PVC homogène, classement R10/R11, certifié lieux de restauration, émissions VOC très faibles (certification Indoor Air). Durée de vie comparable.\n\nGerflor Taralay Premium Contract : sol PVC hétérogène, R10, résistance chimique élevée, nombreux décors. Bonne option pour les cuisines où l'esthétique prime avec une résistance suffisante.\n\nCB Sols distribue ces trois marques et peut vous présenter des échantillons en showroom ou en visite sur site lors du devis.",
+        body: "Trois familles de produits sont adaptées aux cuisines professionnelles :\n\nGerflor Mipolam Granit : sol PVC homogène, classement R10 standard (R11 sur demande), résistance chimique P2, certification NSF pour les espaces alimentaires. Grande gamme de coloris. Durée de vie : 20-30 ans.\n\nGerflor Taralay Premium Contract : sol PVC homogène, classement R10/R11, certifié lieux de restauration, émissions VOC très faibles (certification Indoor Air). Durée de vie comparable.\n\nGerflor Taralay Impression Compact : sol PVC hétérogène, R10, résistance chimique élevée, nombreux décors. Bonne option pour les cuisines où l'esthétique prime avec une résistance suffisante.\n\nCB Sols distribue ces trois marques et peut vous présenter des échantillons en showroom ou en visite sur site lors du devis.",
       },
     ],
-    relatedFaqs: ['sol-pvc-cuisine-professionnelle-norme', 'pose-moquette-sur-carrelage'],
+    relatedFaqs: ['pose-moquette-sur-carrelage'],
     relatedSolutions: ['sol-pvc-restaurant'],
   },
   {
@@ -213,7 +213,7 @@ export const faqs: Faq[] = [
       },
     ],
     relatedFaqs: ['sol-pvc-cuisine-professionnelle-norme', 'pose-moquette-sur-carrelage'],
-    relatedSolutions: ['sol-pvc-hotel', 'sol-pvc-cuisine'],
+    relatedSolutions: ['sol-pvc-hotel', 'sol-pvc-restaurant'],
   },
 ]
 

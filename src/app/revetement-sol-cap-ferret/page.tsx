@@ -8,12 +8,12 @@ import { Building2, Mail, MapPin, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol au Cap Ferret | Villas du Bassin",
-  description: "Pose de moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret. Résidences secondaires, terrasses bois, pieds dans le sable. Artisan haut de gamme CB Sols, 27 ans d'expérience.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret. Résidences secondaires, terrasses bois, pieds dans le sable. Artisan haut de gamme CB Sols, plus de 25 ans d'expérience.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-cap-ferret' },
   keywords: ['revêtement sol Cap Ferret', 'moquette villa Cap Ferret', 'sol bord de mer Bassin Arcachon', 'pose tapis cabane Cap Ferret', 'artisan sol Arcachon'],
   openGraph: {
     title: "Revêtement de sol au Cap Ferret, l'art du bord de mer",
-    description: "Moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret et sur le Bassin d'Arcachon. CB Sols, 27 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret et sur le Bassin d'Arcachon. CB Sols, plus de 25 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-cap-ferret.jpg', width: 1200, height: 630 }],
   },
@@ -152,7 +152,7 @@ export default function RevetementSolCapFerretPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Le sable s&apos;invite partout au Cap Ferret. Choisir la bonne fibre, c&apos;est ce qui fait qu&apos;un sol tient dix ans ou vingt ans. Depuis 27 ans, CB Sols travaille au bord de l&apos;Atlantique, et le Bassin parle la même langue. »
+                « Le sable s&apos;invite partout au Cap Ferret. Choisir la bonne fibre, c&apos;est ce qui fait qu&apos;un sol tient dix ans ou vingt ans. Depuis plus de 25 ans, CB Sols travaille au bord de l&apos;Atlantique, et le Bassin parle la même langue. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -372,16 +372,16 @@ export default function RevetementSolCapFerretPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/revetement-sol-arcachon", title: "Revetement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumiere et la vie au quotidien.", icon: MapPin },
-          { href: "/revetement-sol-bordeaux", title: "Revetement sol Bordeaux", teaser: "Hotels particuliers, lofts d'echoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
-          { href: "/revetement-sol-biarritz", title: "Revetement sol Biarritz", teaser: "Villas de la Cote basque. Sols qui resistent au sel, au sable et a la lumiere de l'ocean.", icon: MapPin },
-          { href: "/revetement-sol-ile-d-yeu", title: "Revetement sol Ile d'Yeu", teaser: "Logistique insulaire, ferry, planning serre. Notre experience des projets en insularite.", icon: Waves },
-          { href: "/moquette-bateau", title: "Moquette de bateau", teaser: "Sols nautiques sur mesure : confort a bord, antiderapant, resistance au sel et a la lumiere.", icon: Waves },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/revetement-sol-arcachon", title: "Revêtement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumière et la vie au quotidien.", icon: MapPin },
+          { href: "/revetement-sol-bordeaux", title: "Revêtement sol Bordeaux", teaser: "Hôtels particuliers, lofts d'échoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
+          { href: "/revetement-sol-biarritz", title: "Revêtement sol Biarritz", teaser: "Villas de la Côte basque. Sols qui résistent au sel, au sable et à la lumière de l'océan.", icon: MapPin },
+          { href: "/revetement-sol-ile-d-yeu", title: "Revêtement sol Île d'Yeu", teaser: "Logistique insulaire, ferry, planning serré. Notre expérience des projets en insularité.", icon: Waves },
+          { href: "/moquette-bateau", title: "Moquette de bateau", teaser: "Sols nautiques sur mesure : confort à bord, antidérapant, résistance au sel et à la lumière.", icon: Waves },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -392,7 +392,7 @@ export default function RevetementSolCapFerretPage() {
             Votre villa du Cap <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>en mains expertes.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite hors saison au Cap Ferret. Devis détaillé, matières adaptées au bord de mer, finitions soignées. 27 ans de savoir-faire atlantique au service du Bassin d&apos;Arcachon.
+            Visite hors saison au Cap Ferret. Devis détaillé, matières adaptées au bord de mer, finitions soignées. Plus de 25 ans de savoir-faire atlantique au service du Bassin d&apos;Arcachon.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=cap-ferret-final" variant="primary" size="md">Demander un devis</Button>

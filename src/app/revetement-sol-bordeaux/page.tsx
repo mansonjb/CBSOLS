@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Store, Waves } from 'lucide-reac
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Bordeaux | Moquette, PVC, Tapis Sur Mesure",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers du Triangle d'Or, échoppes bordelaises, restaurants gastronomiques. CB Sols intervient depuis 27 ans, déplacement depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers du Triangle d'Or, échoppes bordelaises, restaurants gastronomiques. CB Sols intervient depuis plus de 25 ans, déplacement depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-bordeaux' },
   keywords: ['revêtement sol Bordeaux', 'moquette Bordeaux', 'sol PVC Bordeaux', 'pose tapis Bordeaux', 'artisan sol Bordeaux'],
   openGraph: {
     title: "Revêtement de sol à Bordeaux, l'élégance bordelaise",
-    description: "Moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers, échoppes, restaurants gastronomiques. CB Sols, 27 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers, échoppes, restaurants gastronomiques. CB Sols, plus de 25 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-bordeaux.jpg', width: 1200, height: 630 }],
   },
@@ -149,7 +149,7 @@ export default function RevetementSolBordeauxPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Bordeaux, c&apos;est une ville de patrimoine accessible depuis La Rochelle en deux heures. Respecter un parquet ancien d&apos;échoppe ou habiller un salon des Chartrons, c&apos;est exactement le métier que CB Sols fait depuis 27 ans. »
+                « Bordeaux, c&apos;est une ville de patrimoine accessible depuis La Rochelle en deux heures. Respecter un parquet ancien d&apos;échoppe ou habiller un salon des Chartrons, c&apos;est exactement le métier que CB Sols fait depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -369,16 +369,16 @@ export default function RevetementSolBordeauxPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/revetement-sol-arcachon", title: "Revetement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumiere et la vie au quotidien.", icon: MapPin },
-          { href: "/revetement-sol-cap-ferret", title: "Revetement sol Cap Ferret", teaser: "Cabanes ostreicoles, villas pieds dans le sable. La discretion d'un savoir-faire qui se voit a peine.", icon: Waves },
-          { href: "/revetement-sol-saint-emilion", title: "Revetement sol Saint-Emilion", teaser: "Chateaux, chais et maisons de maitre. Des sols choisis pour le caractere et la patine du temps.", icon: Castle },
-          { href: "/revetement-sol-biarritz", title: "Revetement sol Biarritz", teaser: "Villas de la Cote basque. Sols qui resistent au sel, au sable et a la lumiere de l'ocean.", icon: MapPin },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
+          { href: "/revetement-sol-arcachon", title: "Revêtement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumière et la vie au quotidien.", icon: MapPin },
+          { href: "/revetement-sol-cap-ferret", title: "Revêtement sol Cap Ferret", teaser: "Cabanes ostréicoles, villas pieds dans le sable. La discrétion d'un savoir-faire qui se voit à peine.", icon: Waves },
+          { href: "/revetement-sol-saint-emilion", title: "Revêtement sol Saint-Émilion", teaser: "Châteaux, chais et maisons de maître. Des sols choisis pour le caractère et la patine du temps.", icon: Castle },
+          { href: "/revetement-sol-biarritz", title: "Revêtement sol Biarritz", teaser: "Villas de la Côte basque. Sols qui résistent au sel, au sable et à la lumière de l'océan.", icon: MapPin },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
           { href: "/particuliers", title: "Pour les particuliers", teaser: "Moquette, sol PVC, tapis sur mesure : notre savoir-faire au service de votre maison.", icon: Home },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -389,7 +389,7 @@ export default function RevetementSolBordeauxPage() {
             Votre projet bordelais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Bordeaux. Devis détaillé, finitions premium, respect du patrimoine. 27 ans de savoir-faire au service des projets d&apos;exception en Gironde.
+            Visite sur place à Bordeaux. Devis détaillé, finitions premium, respect du patrimoine. Plus de 25 ans de savoir-faire au service des projets d&apos;exception en Gironde.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=bordeaux-final" variant="primary" size="md">Demander un devis</Button>

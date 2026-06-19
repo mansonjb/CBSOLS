@@ -39,10 +39,10 @@ export default function GuidesHubPage() {
           <div style={{ maxWidth: '920px', margin: '0 auto', position: 'relative' }}>
             <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Bibliothèque</div>
             <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.25rem, 4.5vw, 4rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.25rem', letterSpacing: '-0.03em', lineHeight: 1.05 }}>
-              Guides &amp; <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>conseils.</em>
+              Guides & <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>conseils.</em>
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--cream-muted)', lineHeight: 1.7, margin: 0, maxWidth: '640px' }}>
-              27 ans de projets résumés en guides pratiques. Comment choisir une moquette professionnelle, comparer sol PVC et carrelage en cuisine pro, entretenir un sol contrat pour qu&apos;il dure. Sans baratin.
+              Plus de 25 ans de projets résumés en guides pratiques. Comment choisir une moquette professionnelle, comparer sol PVC et carrelage en cuisine pro, entretenir un sol contrat pour qu&apos;il dure. Sans baratin.
             </p>
           </div>
         </section>

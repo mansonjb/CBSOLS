@@ -8,12 +8,12 @@ import { Building2, Home, Mail, MapPin, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Saint-Jean-de-Luz | Villas Pays Basque",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales sur l'Océan, maisons basques à colombages, hôtels boutique de la baie, restaurants gastronomiques. CB Sols, 27 ans de savoir-faire, déplacement organisé depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales sur l'Océan, maisons basques à colombages, hôtels boutique de la baie, restaurants gastronomiques. CB Sols, plus de 25 ans de savoir-faire, déplacement organisé depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-jean-de-luz' },
-  keywords: ['revêtement sol Saint-Jean-de-Luz', 'moquette Pays Basque', 'tapis sur mesure villa basque', 'artisan sol Saint-Jean-de-Luz', 'sol PVC Côte basque'],
+  keywords: ['revêtement sol Saint-Jean-de-Luz', 'moquette Pays Basque', 'tapis sur mesure villa basque', 'artisan sol Saint-Jean-de-Luz', 'sol PVC Côte Basque'],
   openGraph: {
     title: "Revêtement de sol à Saint-Jean-de-Luz, l'âme basque",
-    description: "Moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales, maisons basques, hôtels boutique. CB Sols, 27 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales, maisons basques, hôtels boutique. CB Sols, plus de 25 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-saint-jean-de-luz.jpg', width: 1200, height: 630 }],
   },
@@ -27,7 +27,7 @@ const usages = [
 ]
 
 const exigences = [
-  { title: "On respecte les couleurs du Pays basque", desc: "Rouge basque, blanc de chaux, colombages, tomettes : le Pays basque a son identité forte. Nos coloris s'y accordent sans la trahir. Le rouge se retrouve sur un tapis d'apparat, les laines naturelles dialoguent avec la chaux. L'ambiance reste cohérente avec le lieu." },
+  { title: "On respecte les couleurs du Pays Basque", desc: "Rouge basque, blanc de chaux, colombages, tomettes : le Pays Basque a son identité forte. Nos coloris s'y accordent sans la trahir. Le rouge se retrouve sur un tapis d'apparat, les laines naturelles dialoguent avec la chaux. L'ambiance reste cohérente avec le lieu." },
   { title: "L'embrun, on le prend en compte", desc: "Le climat atlantique charge en humidité et en sel. On retient des laines traitées, des PVC souples, des bordures cousues main qui tiennent dans le temps. Vous gardez un sol stable, une couleur qui ne ternit pas. Pas de matières fragiles ici, on connaît le terrain." },
   { title: "La vue océan reste la star", desc: "Une villa de Saint-Jean est structurée autour du panorama. Le sol doit accompagner sans concurrencer : tons sablés, beiges chauds, blancs cassés. On soigne particulièrement les seuils sur terrasse et les raccords aux baies. Dans la lumière du soir, ces détails se voient." },
   { title: "Quatre heures de route, bien organisées", desc: "Saint-Jean est à 370 km de notre atelier. Quand on descend, on descend avec l'équipe complète, on dort sur place, on enchaîne les jours. Tout est pré-assemblé à Villedoux avant de partir. Sur site, on pose vite, sans navette inutile." },
@@ -45,10 +45,10 @@ const materiaux = [
 ]
 
 const marques = [
-  { name: "EGE Carpets", desc: "Le danois, notre référence pour les villas familiales luziennes et les hôtels boutiques de la côte basque. Leurs gammes Highline et Hospitality posent un cadre immédiatement." },
-  { name: "Brintons", desc: "L'Axminster britannique, l'aristocratie de la moquette. Jusqu'à trente-six couleurs sur un motif. On l'appelle pour les grandes villas du Pays basque et les intérieurs d'apparat." },
+  { name: "EGE Carpets", desc: "Le danois, notre référence pour les villas familiales luziennes et les hôtels boutiques de la Côte Basque. Leurs gammes Highline et Hospitality posent un cadre immédiatement." },
+  { name: "Brintons", desc: "L'Axminster britannique, l'aristocratie de la moquette. Jusqu'à trente-six couleurs sur un motif. On l'appelle pour les grandes villas du Pays Basque et les intérieurs d'apparat." },
   { name: "Bolon", desc: "Le suédois du tissé vinyle, notre référence pour les villas en front de mer. Il encaisse les embruns et l'humidité sans broncher. Idéal pour les hôtels de la baie." },
-  { name: "Tisca Tiara", desc: "Le suisse, c'est le très haut de gamme. On les sort pour les projets résidentiels d'exception et les suites de Relais & Châteaux du Pays basque. Sans équivalent quand le budget suit." },
+  { name: "Tisca Tiara", desc: "Le suisse, c'est le très haut de gamme. On les sort pour les projets résidentiels d'exception et les suites de Relais & Châteaux du Pays Basque. Sans équivalent quand le budget suit." },
   { name: "Gerflor", desc: "Le français de Lyon, que nous connaissons en profondeur. Leurs gammes Mipolam et Texline résistent à l'humidité atlantique sans difficulté. Compatible chauffage au sol, entretien simple." },
   { name: "Forbo", desc: "Quand le projet demande du naturel, on regarde Forbo. Leur Marmoleum est un vrai linoléum à base d'huile de lin. Idéal pour les villas écoresponsables et les maisons basques restaurées." },
   { name: "Object Carpet", desc: "Les allemands, pour les villas d'architecte et les hôtels boutiques à esthétique épurée. Design contemporain affirmé, finitions parfaites." },
@@ -79,8 +79,8 @@ const process = [
 ]
 
 const faq = [
-  { q: "Vous venez vraiment à Saint-Jean-de-Luz depuis La Rochelle ?", a: "Oui, sur les projets qui le justifient. Saint-Jean-de-Luz est à 370 km, quatre heures par l'A10 puis l'A63. On organise un déplacement long, l'équipe reste sur place jusqu'à la livraison, hébergement inclus. La distance impose une préparation atelier irréprochable. Tout est pré-assemblé à blanc avant le départ, donc la pose sur site va vite. On intervient régulièrement sur la côte basque, on connaît les contraintes." },
-  { q: "Vous travaillez sur les villas familiales du Pays basque ?", a: "Oui, c'est un de nos terrains préférés sur la côte. Sainte-Barbe, Acotz, Erromardie, Lafitenia concentrent un patrimoine de villas transmises de génération en génération. Les parquets anciens, les tomettes basques, la vue océan demandent qu'on les accompagne sans les concurrencer. On intervient avec votre architecte d'intérieur. Les tapis sur mesure et les moquettes laine dans la palette basque trouvent là leur écrin naturel." },
+  { q: "Vous venez vraiment à Saint-Jean-de-Luz depuis La Rochelle ?", a: "Oui, sur les projets qui le justifient. Saint-Jean-de-Luz est à 370 km, quatre heures par l'A10 puis l'A63. On organise un déplacement long, l'équipe reste sur place jusqu'à la livraison, hébergement inclus. La distance impose une préparation atelier irréprochable. Tout est pré-assemblé à blanc avant le départ, donc la pose sur site va vite. On intervient régulièrement sur la Côte Basque, on connaît les contraintes." },
+  { q: "Vous travaillez sur les villas familiales du Pays Basque ?", a: "Oui, c'est un de nos terrains préférés sur la côte. Sainte-Barbe, Acotz, Erromardie, Lafitenia concentrent un patrimoine de villas transmises de génération en génération. Les parquets anciens, les tomettes basques, la vue océan demandent qu'on les accompagne sans les concurrencer. On intervient avec votre architecte d'intérieur. Les tapis sur mesure et les moquettes laine dans la palette basque trouvent là leur écrin naturel." },
   { q: "Comment vous gérez le climat atlantique et les embruns ?", a: "Les embruns salins et l'humidité atlantique imposent une vraie rigueur sur le choix des matières. On écarte ce qui marche en climat sec et on prend de la laine traitée anti-mites et anti-humidité, du PVC à fort taux de plastifiant qui garde sa souplesse, des tapis à bordure cousue main qui ne bougent pas. Et on soigne particulièrement les raccords aux baies vitrées et aux terrasses pour éviter toute infiltration." },
   { q: "Combien de temps pour un tapis sur mesure ?", a: "Compter dix à seize semaines pour un Brintons Axminster custom avec motif validé sur cartouche. Huit à quatorze semaines pour un Tisca Tiara haute couture. Huit à quatorze pour un Hereke avec bordure cousue main. Ajoutez la confection atelier et la pose sur place. Un projet complet de villa se planifie sur quatre à six mois, à anticiper si la famille arrive en juillet." },
   { q: "Vous intervenez sur les restaurants gastronomiques de la baie ?", a: "Oui. Sur le port de pêche, en centre historique ou côté Ciboure, l'acoustique fait toute la différence à table. Une moquette laine sur thibaude feutre coupe la moitié de la réverbération. Vos clients passent une meilleure soirée. On pose la nuit ou le jour de fermeture, vous ne perdez pas un service. On protège les cuisines, on nettoie tout, au matin la salle est prête." },
@@ -102,7 +102,7 @@ export default function RevetementSolSaintJeanDeLuzPage() {
           { '@type': 'AdministrativeArea', name: 'Pyrénées-Atlantiques' },
           { '@type': 'AdministrativeArea', name: 'Nouvelle-Aquitaine' },
         ],
-        serviceType: "Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz et sur la côte basque",
+        serviceType: "Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz et sur la Côte Basque",
         description: "Conception, confection atelier et pose de moquette, sol PVC et tapis sur mesure pour villas familiales sur l'Océan, maisons basques traditionnelles, hôtels boutique et restaurants gastronomiques à Saint-Jean-de-Luz.",
       },
       {
@@ -138,7 +138,7 @@ export default function RevetementSolSaintJeanDeLuzPage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>l&apos;âme basque.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales sur l&apos;Océan, maisons basques à colombages rouges, hôtels boutique de la baie, restaurants gastronomiques. Atelier basé à La Rochelle, déplacement organisé sur la côte basque pour les projets de prestige.
+                Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales sur l&apos;Océan, maisons basques à colombages rouges, hôtels boutique de la baie, restaurants gastronomiques. Atelier basé à La Rochelle, déplacement organisé sur la Côte Basque pour les projets de prestige.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=saint-jean-de-luz" variant="primary" size="md">Demander un devis</Button>
@@ -148,7 +148,7 @@ export default function RevetementSolSaintJeanDeLuzPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Saint-Jean-de-Luz, c&apos;est une lumière unique, une tradition forte, et des familles qui transmettent leurs villas depuis trois générations. CB Sols accompagne ces projets dans le respect de l&apos;esprit basque, depuis 27 ans. »
+                « Saint-Jean-de-Luz, c&apos;est une lumière unique, une tradition forte, et des familles qui transmettent leurs villas depuis trois générations. CB Sols accompagne ces projets dans le respect de l&apos;esprit basque, depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -194,7 +194,7 @@ export default function RevetementSolSaintJeanDeLuzPage() {
 
       <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Spécificités Pays basque</div>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Spécificités Pays Basque</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
             Six exigences <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>propres aux chantiers luziens.</em>
           </h2>
@@ -216,7 +216,7 @@ export default function RevetementSolSaintJeanDeLuzPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Matériaux et gammes pour Saint-Jean-de-Luz</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em', maxWidth: '780px' }}>
-            Les familles de produits <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>que nous mobilisons sur la côte basque.</em>
+            Les familles de produits <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>que nous mobilisons sur la Côte Basque.</em>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             {materiaux.map((p, i) => (
@@ -270,10 +270,10 @@ export default function RevetementSolSaintJeanDeLuzPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Quartiers et communes où nous intervenons</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
-            Saint-Jean-de-Luz et la côte basque, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>de Bidart à Hendaye.</em>
+            Saint-Jean-de-Luz et la Côte Basque, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>de Bidart à Hendaye.</em>
           </h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
-            Notre équipe se déplace sur l&apos;ensemble de la côte basque ainsi que dans l&apos;arrière-pays, là où se concentrent les projets résidentiels d&apos;exception et les hôtels boutique de prestige.
+            Notre équipe se déplace sur l&apos;ensemble de la Côte Basque ainsi que dans l&apos;arrière-pays, là où se concentrent les projets résidentiels d&apos;exception et les hôtels boutique de prestige.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
             {quartiers.map((q, i) => (
@@ -357,16 +357,16 @@ export default function RevetementSolSaintJeanDeLuzPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/revetement-sol-biarritz", title: "Revetement sol Biarritz", teaser: "Villas de la Cote basque. Sols qui resistent au sel, au sable et a la lumiere de l'ocean.", icon: MapPin },
-          { href: "/revetement-sol-arcachon", title: "Revetement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumiere et la vie au quotidien.", icon: MapPin },
-          { href: "/revetement-sol-cap-ferret", title: "Revetement sol Cap Ferret", teaser: "Cabanes ostreicoles, villas pieds dans le sable. La discretion d'un savoir-faire qui se voit a peine.", icon: Waves },
-          { href: "/revetement-sol-bordeaux", title: "Revetement sol Bordeaux", teaser: "Hotels particuliers, lofts d'echoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
+          { href: "/revetement-sol-biarritz", title: "Revêtement sol Biarritz", teaser: "Villas de la Côte basque. Sols qui résistent au sel, au sable et à la lumière de l'océan.", icon: MapPin },
+          { href: "/revetement-sol-arcachon", title: "Revêtement sol Arcachon", teaser: "Maisons de bassin et villas dunaires. Sols qui supportent le sable, la lumière et la vie au quotidien.", icon: MapPin },
+          { href: "/revetement-sol-cap-ferret", title: "Revêtement sol Cap Ferret", teaser: "Cabanes ostréicoles, villas pieds dans le sable. La discrétion d'un savoir-faire qui se voit à peine.", icon: Waves },
+          { href: "/revetement-sol-bordeaux", title: "Revêtement sol Bordeaux", teaser: "Hôtels particuliers, lofts d'échoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
           { href: "/particuliers", title: "Pour les particuliers", teaser: "Moquette, sol PVC, tapis sur mesure : notre savoir-faire au service de votre maison.", icon: Home },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -376,7 +376,7 @@ export default function RevetementSolSaintJeanDeLuzPage() {
             Votre projet luzien <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Saint-Jean-de-Luz. Devis détaillé, finitions premium, respect de la tradition basque. CB Sols, 27 ans de savoir-faire au service des projets d&apos;exception sur la côte basque.
+            Visite sur place à Saint-Jean-de-Luz. Devis détaillé, finitions premium, respect de la tradition basque. CB Sols, plus de 25 ans de savoir-faire au service des projets d&apos;exception sur la Côte Basque.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=saint-jean-de-luz-final" variant="primary" size="md">Demander un devis</Button>

@@ -13,7 +13,7 @@ const cas = [
   { title: 'Salle de bains & douche', desc: 'Vinyles design ou lame PVC : 100% étanche, pas de joints qui noircissent, marche pieds nus, antidérapant R10 ou R11 selon usage.' },
   { title: 'Cuisine ouverte ou fermée', desc: 'Imitation parquet, béton ciré ou pierre, en lames LVT haute résistance. Hygiène maximale, nettoyage facile, durée de vie 15-20 ans.' },
   { title: 'Buanderie, cellier, sous-sol', desc: 'Résiste à l\'humidité, aux produits ménagers, à la machine à laver qui vibre. Une fois posé, vous l\'oubliez.' },
-  { title: 'Garage aménagé, atelier maison', desc: 'PVC industriel résistant aux roulettes, aux tâches d\'huile, aux variations de température. Idéal home gym, atelier, espace bricolage.' },
+  { title: 'Garage aménagé, atelier maison', desc: 'PVC industriel résistant aux roulettes, aux taches d\'huile, aux variations de température. Idéal home gym, atelier, espace bricolage.' },
 ]
 
 const produits = [

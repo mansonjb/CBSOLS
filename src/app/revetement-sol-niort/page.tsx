@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Pill, Stethoscope, Store } from 
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Niort | Moquette, PVC, Tapis Sur Mesure",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Niort. Hôtels particuliers du centre historique, sièges sociaux et grands plateaux tertiaires, restaurants des Halles, EHPAD. CB Sols intervient depuis 27 ans, déplacement régulier depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Niort. Hôtels particuliers du centre historique, sièges sociaux et grands plateaux tertiaires, restaurants des Halles, EHPAD. CB Sols intervient depuis plus de 25 ans, déplacement régulier depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-niort' },
   keywords: ['revêtement sol Niort', 'moquette Niort', 'sol PVC Niort', 'pose tapis Niort', 'artisan sol Niort', 'sol PVC mutuelles Niort'],
   openGraph: {
     title: "Revêtement de sol à Niort, le sérieux des Deux-Sèvres",
-    description: "Moquette, sol PVC et tapis sur mesure à Niort. Mutuelles, hôtels particuliers, restaurants, EHPAD. CB Sols, 27 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Niort. Mutuelles, hôtels particuliers, restaurants, EHPAD. CB Sols, plus de 25 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-niort.jpg', width: 1200, height: 630 }],
   },
@@ -30,7 +30,7 @@ const exigences = [
   { title: "Travailler quand vous ne travaillez pas", desc: "Sur les grands plateaux de bureaux, on ne peut pas couper l'activité. On vient donc le soir et le week-end. Vous arrivez lundi matin, le sol est posé, les meubles sont en place. Aucune journée perdue pour vos équipes." },
   { title: "Moins de bruit, plus de calme", desc: "Dans un open space, le bruit ambiant fatigue tout le monde. Une bonne moquette ou un sol PVC acoustique coupe la moitié du brouhaha. Les conversations passent mieux, la concentration revient. Vos équipes le sentent dès le premier jour." },
   { title: "On respecte les parquets anciens", desc: "Beaucoup d'hôtels particuliers de Niort ont gardé leur parquet d'origine. On pose sans clouer, sans coller agressivement. Si vous voulez retirer la moquette dans dix ans, le parquet en dessous sera intact. C'est ça, respecter une belle maison." },
-  { title: "Une heure de route, et on est chez vous", desc: "Niort est à 80 km de notre atelier, une heure par l'A10. C'est tout près. On y passe plusieurs fois par mois, on connaît les chantiers du coin. Vous appelez, on vient mesurer dans la semaine." },
+  { title: "Une heure de route, et on est chez vous", desc: "Niort est à 80 km de notre atelier, une heure par la N11. C'est tout près. On y passe plusieurs fois par mois, on connaît les chantiers du coin. Vous appelez, on vient mesurer dans la semaine." },
   { title: "Les normes, on s'en occupe", desc: "EHPAD, clinique, école : il y a des règles strictes sur la sécurité incendie et l'hygiène. On choisit les bons produits pour vous, on fournit les attestations, on dialogue avec le bureau de contrôle. Vous n'avez rien à comprendre des fiches techniques." },
   { title: "Un seul interlocuteur, du début à la fin", desc: "Sur un gros chantier, vous avez déjà dix prestataires à gérer. Nous, on est un seul nom dans votre carnet. Devis, planning, livraison, facture : tout passe par la même personne. Vous gagnez du temps." },
 ]
@@ -71,7 +71,7 @@ const quartiers = [
 ]
 
 const process = [
-  { step: 'Premier contact', desc: "Échange téléphonique ou par mail. Recueil des éléments clés : type de projet (tertiaire tertiaire, hôtel particulier, EHPAD, restaurant), surface estimée, calendrier souhaité, contraintes ERP éventuelles. Pour les appels d'offres tertiaires, nous récupérons le DCE complet." },
+  { step: 'Premier contact', desc: "Échange téléphonique ou par mail. Recueil des éléments clés : type de projet (tertiaire, hôtel particulier, EHPAD, restaurant), surface estimée, calendrier souhaité, contraintes ERP éventuelles. Pour les appels d'offres tertiaires, nous récupérons le DCE complet." },
   { step: 'Visite à Niort', desc: "Déplacement organisé sous 1 à 2 semaines depuis Villedoux. Prise de cotes au laser, repérage des contraintes d'accès, photos pour coordination coloris et raccords. Pour les plateaux tertiaires, identification des phases de travaux en horaires décalés possibles." },
   { step: 'Choix matière', desc: "Showroom Villedoux ou échantillons envoyés directement à Niort, au siège du donneur d'ordre ou chez l'architecte. Validation finale sous l'éclairage du lieu de pose. Pour les mutuelles, transmission des fiches techniques, PV feu et certifications environnementales requises." },
   { step: 'Confection atelier', desc: "3 à 10 semaines selon gamme : moquette Axminster custom, Wilton, dalles, PVC découpé. Pré-assemblage à blanc en atelier pour valider l'ajustement avant transport. Cette préparation amont est ce qui permet de tenir une pose finale rapide et soignée à Niort." },
@@ -149,7 +149,7 @@ export default function RevetementSolNiortPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Niort, c&apos;est un terrain sérieux. Les services généraux des mutuelles ne plaisantent pas avec les fiches techniques et les délais. CB Sols a la documentation, la méthode et l&apos;équipe pour répondre à ces standards depuis 27 ans. »
+                « Niort, c&apos;est un terrain sérieux. Les services généraux des mutuelles ne plaisantent pas avec les fiches techniques et les délais. CB Sols a la documentation, la méthode et l&apos;équipe pour répondre à ces standards depuis plus de 25 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -244,7 +244,7 @@ export default function RevetementSolNiortPage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ borderLeft: '3px solid var(--terra)', paddingLeft: '2rem' }}>
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
-              « Un plateau tertiaire tertiaire à Niort, c&apos;est précisément ce que CB Sols sait faire. La documentation, le phasage, le respect des horaires d&apos;exploitation, et la finition irréprochable au lever du jour. »
+              « Un plateau tertiaire à Niort, c&apos;est précisément ce que CB Sols sait faire. La documentation, le phasage, le respect des horaires d&apos;exploitation, et la finition irréprochable au lever du jour. »
             </p>
             <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, gérant de CB Sols</div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -281,7 +281,7 @@ export default function RevetementSolNiortPage() {
             Niort et son agglomération, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>jusqu&apos;au Marais Poitevin.</em>
           </h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, maxWidth: '780px', marginBottom: '2.5rem' }}>
-            Notre équipe se déplace sur l&apos;ensemble de la communauté d&apos;agglomération du Niortais ainsi que sur les communes limitrophes, là où se concentrent les projets résidentiels patrimoniaux, tertiaires tertiaires et médico-sociaux.
+            Notre équipe se déplace sur l&apos;ensemble de la communauté d&apos;agglomération du Niortais ainsi que sur les communes limitrophes, là où se concentrent les projets résidentiels patrimoniaux, tertiaires et médico-sociaux.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
             {quartiers.map((q, i) => (
@@ -369,16 +369,16 @@ export default function RevetementSolNiortPage() {
       </section>
 
       <RelatedCards
-        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous interesser. Prenez le temps de parcourir, posez vos questions, nous y repondrons."
+        sectionSubtitle="Notre savoir-faire couvre d'autres univers susceptibles de vous intéresser. Prenez le temps de parcourir, posez vos questions, nous y répondrons."
         items={[
-          { href: "/revetement-sol-bordeaux", title: "Revetement sol Bordeaux", teaser: "Hotels particuliers, lofts d'echoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
-          { href: "/revetement-sol-saint-emilion", title: "Revetement sol Saint-Emilion", teaser: "Chateaux, chais et maisons de maitre. Des sols choisis pour le caractere et la patine du temps.", icon: Castle },
-          { href: "/sol-pvc-cabinet-medical", title: "Sol PVC cabinet medical", teaser: "Un sol qui rassure vos patients des la salle d'attente et facilite votre nettoyage quotidien.", icon: Stethoscope },
-          { href: "/sol-pvc-pharmacie", title: "Sol PVC pharmacie d'officine", teaser: "Hygiene quotidienne, conformite ARS, pose nocturne. Vingt ans de tenue dans une officine qui ne ferme pas.", icon: Pill },
-          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matiere, echantillons annotes, devis detailles. Notre role, c'est de servir votre vision.", icon: Building2 },
+          { href: "/revetement-sol-bordeaux", title: "Revêtement sol Bordeaux", teaser: "Hôtels particuliers, lofts d'échoppes, maisons de pierre. Sols qui dialoguent avec l'architecture.", icon: MapPin },
+          { href: "/revetement-sol-saint-emilion", title: "Revêtement sol Saint-Émilion", teaser: "Châteaux, chais et maisons de maître. Des sols choisis pour le caractère et la patine du temps.", icon: Castle },
+          { href: "/sol-pvc-cabinet-medical", title: "Sol PVC cabinet médical", teaser: "Un sol qui rassure vos patients dès la salle d'attente et facilite votre nettoyage quotidien.", icon: Stethoscope },
+          { href: "/sol-pvc-pharmacie", title: "Sol PVC pharmacie d'officine", teaser: "Hygiène quotidienne, conformité ARS, pose nocturne. Vingt ans de tenue dans une officine qui ne ferme pas.", icon: Pill },
+          { href: "/architectes", title: "Pour les architectes", teaser: "Documentation matière, échantillons annotés, devis détaillés. Notre rôle, c'est de servir votre vision.", icon: Building2 },
           { href: "/particuliers", title: "Pour les particuliers", teaser: "Moquette, sol PVC, tapis sur mesure : notre savoir-faire au service de votre maison.", icon: Home },
-          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matieres. Sur rendez-vous, a Villedoux pres de La Rochelle.", icon: Store },
-          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gerant vous repond directement.", icon: Mail },
+          { href: "/showroom", title: "Showroom Villedoux", teaser: "Venez voir et toucher les matières. Sur rendez-vous, à Villedoux près de La Rochelle.", icon: Store },
+          { href: "/contact", title: "Nous contacter", teaser: "Une question, un projet, un devis sous 48 heures. Le gérant vous répond directement.", icon: Mail },
         ]}
       />
 
@@ -389,7 +389,7 @@ export default function RevetementSolNiortPage() {
             Votre projet niortais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Niort. Devis détaillé, finitions premium, respect des contraintes tertiaires et patrimoniales. CB Sols, 27 ans de savoir-faire au service des projets d&apos;exception en Deux-Sèvres.
+            Visite sur place à Niort. Devis détaillé, finitions premium, respect des contraintes tertiaires et patrimoniales. CB Sols, plus de 25 ans de savoir-faire au service des projets d&apos;exception en Deux-Sèvres.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=niort-final" variant="primary" size="md">Demander un devis</Button>

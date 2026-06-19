@@ -12,7 +12,7 @@ const yearsOfExperience = computeExperience()
 export const company = {
   name: 'CB Sols',
   legalName: 'CB SOLS REVÊTEMENTS',
-  tagline: `Artisan solier moquettiste depuis ${yearsOfExperience} ans`,
+  tagline: `Artisan solier moquettiste depuis plus de 25 ans`,
   description:
     'Spécialiste des revêtements de sol sur mesure en Charente-Maritime. Moquettes, sols PVC, tapis : posés par des artisans qualifiés pour particuliers et professionnels.',
   phone: '06 85 05 28 80',
@@ -32,7 +32,7 @@ export const company = {
   contact: 'Valentin Prévoteau',
   since: 1999,
   yearsOfExperience,
-  experience: `${yearsOfExperience} ans`,
+  experience: `plus de 25 ans`,
   showroom: {
     description: 'Showroom sur rendez-vous : espace confidentiel avec plus de 500 échantillons',
     appointment: true,
