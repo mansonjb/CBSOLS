@@ -145,6 +145,31 @@ export default function DevisRevetementSolPage() {
         </div>
       </section>
 
+      {/* Rappel rapide (option express, en haut de page) */}
+      <section id="rappel" style={{ padding: '3.5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--dark)', scrollMarginTop: '80px' }}>
+        <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
+          <div className="devis-callback-band" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+            <div>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra-on-dark)', marginBottom: '0.85rem', fontWeight: 700 }}>Le plus rapide</div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.4rem, 2.6vw, 2rem)', fontWeight: 800, color: 'var(--bg)', margin: '0 0 1rem', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
+                Pas le temps d&apos;écrire ?<br /><em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>On vous rappelle.</em>
+              </h2>
+              <p style={{ fontSize: '0.95rem', color: 'rgba(248, 245, 238, 0.78)', lineHeight: 1.75, margin: 0 }}>
+                Laissez juste votre numéro et le moment qui vous arrange. Valentin ou son équipe vous rappelle, c&apos;est souvent plus simple pour parler de votre projet de vive voix. Le rappel est gratuit et sans engagement.
+              </p>
+            </div>
+            <div style={{ backgroundColor: 'var(--bg-card)', borderRadius: '14px', padding: '2rem' }}>
+              <CallbackForm />
+            </div>
+          </div>
+        </div>
+        <style>{`
+          @media (max-width: 820px) {
+            .devis-callback-band { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          }
+        `}</style>
+      </section>
+
       {/* Bandeau 3 réassurances */}
       <section style={{ padding: '2.5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -233,41 +258,19 @@ export default function DevisRevetementSolPage() {
         </div>
       </section>
 
-      {/* Zone de conversion */}
+      {/* Zone de conversion : formulaire devis (colonne unique) */}
       <section id="devis" style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', scrollMarginTop: '80px' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div className="devis-conversion-grid" style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '3rem', alignItems: 'start' }}>
-            {/* Colonne gauche : formulaire devis */}
-            <div>
-              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem', fontWeight: 700 }}>Demande de devis</div>
-              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.03em' }}>
-                Décrivez votre projet
-              </h2>
-              <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '560px' }}>
-                Plus vous nous en dites, plus le chiffrage sera précis. Mais l&apos;essentiel suffit pour démarrer.
-              </p>
-              <Suspense fallback={<div style={{ minHeight: 400 }} />}>
-                <ContactForm />
-              </Suspense>
-            </div>
-
-            {/* Colonne droite : rappel programmé */}
-            <div style={{ backgroundColor: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: '14px', padding: '2.25rem' }}>
-              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.75rem', fontWeight: 700 }}>Plus rapide</div>
-              <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.3rem, 2.2vw, 1.7rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.85rem', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
-                Pas le temps d&apos;écrire ?
-              </h3>
-              <p style={{ fontSize: '0.92rem', color: 'var(--muted)', lineHeight: 1.7, marginBottom: '1.75rem' }}>
-                Laissez juste votre numéro et le moment qui vous arrange. Valentin ou son équipe vous rappelle, c&apos;est souvent plus simple pour parler de votre projet de vive voix.
-              </p>
-              <CallbackForm />
-            </div>
-          </div>
-          <style>{`
-            @media (max-width: 880px) {
-              .devis-conversion-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
-            }
-          `}</style>
+        <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem', fontWeight: 700 }}>Demande de devis</div>
+          <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.03em' }}>
+            Décrivez votre projet
+          </h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, marginBottom: '2rem' }}>
+            Plus vous nous en dites, plus le chiffrage sera précis. Mais l&apos;essentiel suffit pour démarrer. Vous préférez un appel ? <a href="#rappel" style={{ color: 'var(--terra)', fontWeight: 600, textDecoration: 'none' }}>Demandez plutôt à être rappelé</a>.
+          </p>
+          <Suspense fallback={<div style={{ minHeight: 400 }} />}>
+            <ContactForm />
+          </Suspense>
         </div>
       </section>
 
