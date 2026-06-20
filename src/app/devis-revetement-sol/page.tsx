@@ -314,6 +314,7 @@ export default function DevisRevetementSolPage() {
       </section>
 
       <RelatedCards
+        forceColumns={3}
         sectionSubtitle="Avant de demander votre devis, vous voulez peut-être en savoir plus sur ce que nous faisons. Parcourez nos prestations, nos réalisations et notre showroom."
         items={[
           { href: "/services", title: "Nos services", teaser: "Moquette, sol PVC, tapis sur mesure, nettoyage : l'ensemble de notre savoir-faire en un coup d'œil.", icon: Hammer },
