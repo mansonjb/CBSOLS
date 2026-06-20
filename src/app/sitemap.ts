@@ -86,6 +86,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/sol-pvc-cabinet-medical`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/sol-pvc-laboratoire-pharmaceutique`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/sol-pvc-pharmacie`, lastModified: new Date('2026-06-14'), changeFrequency: 'monthly', priority: 0.85 },
+    // Landing de conversion : intention "devis revêtement de sol"
+    { url: `${BASE_URL}/devis-revetement-sol`, lastModified: new Date('2026-06-20'), changeFrequency: 'monthly', priority: 0.9 },
     // Locations Sud-Ouest / Vendée insulaire
     { url: `${BASE_URL}/revetement-sol-arcachon`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-biarritz`, lastModified: new Date('2026-06-04'), changeFrequency: 'monthly', priority: 0.8 },
