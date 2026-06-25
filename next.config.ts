@@ -74,6 +74,49 @@ const nextConfig: NextConfig = {
         destination: '/nettoyage-moquettes',
         permanent: true,
       },
+      // Ancienne URL WordPress sol PVC en lés → page service canonique
+      // (rankait pos 5 sur "pvc en lés" mais 0 clic, on consolide vers la vraie page)
+      {
+        source: '/pvc-en-les',
+        destination: '/services/sol-pvc-les',
+        permanent: true,
+      },
+      {
+        source: '/pvc-en-les/',
+        destination: '/services/sol-pvc-les',
+        permanent: true,
+      },
+      // Autres anciennes URLs WordPress PVC qui captent encore des impressions
+      {
+        source: '/pvc-en-lames-ou-dalles',
+        destination: '/services/sol-pvc-lames-dalles',
+        permanent: true,
+      },
+      {
+        source: '/pvc-en-lames-ou-dalles/',
+        destination: '/services/sol-pvc-lames-dalles',
+        permanent: true,
+      },
+      {
+        source: '/pose-pvc-de-differents-coloris',
+        destination: '/services/sol-pvc-lames-dalles',
+        permanent: true,
+      },
+      {
+        source: '/pose-pvc-de-differents-coloris/',
+        destination: '/services/sol-pvc-lames-dalles',
+        permanent: true,
+      },
+      {
+        source: '/pose-de-lames-pvc-dans-le-couloir',
+        destination: '/services/sol-pvc-lames-dalles',
+        permanent: true,
+      },
+      {
+        source: '/pose-de-lames-pvc-dans-le-couloir/',
+        destination: '/services/sol-pvc-lames-dalles',
+        permanent: true,
+      },
 
       // ── Anciennes URLs WordPress (cbsols.fr) → nouvelles URLs ──
       // Listing projets
