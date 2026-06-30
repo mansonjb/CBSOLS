@@ -15,9 +15,11 @@ export function RelatedCards({ items, sectionTitle = 'Voir aussi', sectionSubtit
   /** Si défini, force un nombre exact de colonnes sur desktop (responsive ajuste vers 2 puis 1) */
   forceColumns?: number
 }) {
-  const gridTemplate = forceColumns
-    ? `repeat(${forceColumns}, 1fr)`
-    : 'repeat(auto-fill, minmax(220px, 1fr))'
+  // Nombre de colonnes : forceColumns si fourni, sinon on vise 3 par ligne
+  // (6 cartes donnent 3+3 au lieu de 5+1). 4 cartes ou moins gardent leur
+  // nombre exact. Les media queries collapse vers 2 puis 1 sur mobile.
+  const cols = forceColumns ?? (items.length <= 4 ? items.length : 3)
+  const gridTemplate = `repeat(${cols}, 1fr)`
   return (
     <section className="related-cards-section" style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
