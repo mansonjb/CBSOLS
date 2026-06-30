@@ -101,6 +101,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/revetement-sol-bressuire`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-parthenay`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-thouars`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
+    // Locations Vendée (littoral + préfecture) et Vienne
+    { url: `${BASE_URL}/revetement-sol-les-sables-d-olonne`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-la-roche-sur-yon`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-chatellerault`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
     // Pages ville x service réactivées en indexation (20), enrichies d'un contenu
     // éditorial unique. Le reste des /[geo] demeure noindex (cf. page.tsx).
     { url: `${BASE_URL}/revetement-sol-la-rochelle`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
