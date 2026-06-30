@@ -17,7 +17,9 @@ async function getLeadById(id: string): Promise<LeadRow | null> {
     SELECT
       id, created_at, updated_at, source, nom, telephone, email, ville,
       type_projet, surface, message, statut, derniere_interaction,
-      prochaine_action, notes, segment, ua, referer, ip_hash, archived, contact_id
+      prochaine_action, notes, segment, ua, referer, ip_hash, archived, contact_id,
+      geo_city, geo_region, geo_country, attr_channel, attr_referrer,
+      attr_landing, utm_source, utm_medium, utm_campaign, gclid
     FROM leads
     WHERE id = ${id}
     LIMIT 1
@@ -68,6 +70,40 @@ const TIMELINE: Array<{ key: string; short: string }> = [
   { key: 'converti', short: 'Converti' },
   { key: 'perdu', short: 'Perdu' },
 ]
+
+// Métadonnées des canaux d'acquisition : libellé + couleur du badge.
+const CHANNEL_META: Record<string, { label: string; color: string; bg: string }> = {
+  google_ads: { label: 'Google Ads', color: '#1a73e8', bg: 'rgba(26,115,232,0.12)' },
+  google_organic: { label: 'Google (organique)', color: '#2C5530', bg: 'rgba(44,85,48,0.12)' },
+  direct: { label: 'Direct / inconnu', color: '#6b6155', bg: 'rgba(107,97,85,0.12)' },
+  pagesjaunes: { label: 'PagesJaunes', color: '#b8860b', bg: 'rgba(184,134,11,0.14)' },
+  social: { label: 'Réseaux sociaux', color: '#8b3fb5', bg: 'rgba(139,63,181,0.12)' },
+  ai: { label: 'ChatGPT / IA', color: '#0d9488', bg: 'rgba(13,148,136,0.12)' },
+  bing: { label: 'Bing', color: '#4aa6d6', bg: 'rgba(74,166,214,0.14)' },
+  referral: { label: 'Référent', color: '#6b6155', bg: 'rgba(107,97,85,0.10)' },
+}
+
+/**
+ * Parse un user-agent en libellé simple "Appareil · Navigateur".
+ * Retourne 'Inconnu' si l'UA est absent.
+ */
+function parseUA(ua: string | null): string {
+  if (!ua) return 'Inconnu'
+  let device = 'Ordinateur'
+  if (/iPhone/i.test(ua)) device = 'iPhone'
+  else if (/iPad/i.test(ua)) device = 'iPad'
+  else if (/Android/i.test(ua)) device = 'Android'
+  else if (/Windows/i.test(ua)) device = 'Windows'
+  else if (/Macintosh|Mac OS X/i.test(ua)) device = 'Mac'
+
+  let browser = ''
+  if (/Edg\//i.test(ua)) browser = 'Edge'
+  else if (/Firefox\//i.test(ua)) browser = 'Firefox'
+  else if (/Chrome\//i.test(ua) && !/Edg\//i.test(ua)) browser = 'Chrome'
+  else if (/Safari\//i.test(ua) && !/Chrome\//i.test(ua)) browser = 'Safari'
+
+  return browser ? `${device} · ${browser}` : device
+}
 
 export default async function LeadDetailPage({
   params,
@@ -365,11 +401,57 @@ export default async function LeadDetailPage({
                 />
               )}
               {lead.referer && (
-                <Field label="Page d'origine" value={lead.referer.replace(/^https?:\/\/[^/]+/, '')} />
+                <Field label="Page d'envoi" value={lead.referer.replace(/^https?:\/\/[^/]+/, '')} />
               )}
               <Field label="Identifiant" value={lead.id} monospace />
             </div>
           </section>
+
+          {/* Source & contexte (attribution) */}
+          {(() => {
+            const channelMeta = CHANNEL_META[lead.attr_channel ?? ''] ?? null
+            const channelLabel =
+              channelMeta?.label ??
+              (lead.attr_channel ? lead.attr_channel : 'Non détecté')
+            const channelColor = channelMeta?.color ?? 'var(--text-muted)'
+            const channelBg = channelMeta?.bg ?? 'rgba(107,97,85,0.10)'
+            const ville =
+              lead.geo_city && lead.geo_region
+                ? `${lead.geo_city}, ${lead.geo_region}`
+                : lead.geo_city
+                  ? lead.geo_city
+                  : 'Non détectée'
+            const appareil = parseUA(lead.ua)
+            const hasGclid = !!(lead.gclid && lead.gclid.trim())
+            return (
+              <section style={{ padding: '1.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '10px' }}>
+                <h3 style={{ fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem', fontWeight: 700 }}>
+                  Source & contexte
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ fontSize: '0.6rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '0.4rem', fontWeight: 600 }}>
+                      Canal
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      <span style={{ display: 'inline-block', padding: '0.3rem 0.75rem', borderRadius: '999px', backgroundColor: channelBg, color: channelColor, border: `1px solid ${channelColor}`, fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.04em' }}>
+                        {channelLabel}
+                      </span>
+                      {hasGclid && (
+                        <span style={{ fontSize: '0.62rem', color: '#1a73e8', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                          Lead publicitaire
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <Field label="Ville détectée" value={ville} />
+                  <Field label="Appareil" value={appareil} />
+                  <Field label="Page d'atterrissage" value={lead.attr_landing ?? '—'} />
+                  {lead.utm_campaign && <Field label="Campagne" value={lead.utm_campaign} />}
+                </div>
+              </section>
+            )
+          })()}
 
           {/* Archiver / désarchiver */}
           <section style={{ padding: '1.5rem', backgroundColor: lead.archived ? '#fef6ef' : 'var(--bg-card)', border: `1px solid ${lead.archived ? '#d9802f' : 'var(--border)'}`, borderRadius: '10px' }}>

@@ -4,6 +4,7 @@ import nodemailer from 'nodemailer'
 import { headers } from 'next/headers'
 import { company } from '@/data/company'
 import { sql, ensureSchema, findOrCreateContact } from '@/lib/db'
+import { parseChannel } from '@/lib/attribution'
 import { CRENEAUX } from '@/data/callback-creneaux'
 
 export interface CallbackState {
@@ -215,6 +216,26 @@ export async function requestCallback(
       // IP hashée : trace anti-doublon sans stocker de PII identifiante (RGPD).
       const ipHash = ipRaw ? await sha256(ipRaw) : null
 
+      // ── Géolocalisation Vercel (niveau ville, RGPD) ──
+      let geoCity: string | null = null
+      try {
+        const rawCity = h.get('x-vercel-ip-city')
+        geoCity = rawCity ? decodeURIComponent(rawCity) : null
+      } catch {
+        geoCity = h.get('x-vercel-ip-city')
+      }
+      const geoRegion = h.get('x-vercel-ip-country-region')
+      const geoCountry = h.get('x-vercel-ip-country')
+
+      // ── Champs d'attribution (first-touch) remontés du formulaire ──
+      const attrReferrer = (formData.get('attr_referrer')?.toString() ?? '').slice(0, 500).trim() || null
+      const attrLanding = (formData.get('attr_landing')?.toString() ?? '').slice(0, 500).trim() || null
+      const utmSource = (formData.get('attr_utm_source')?.toString() ?? '').slice(0, 500).trim() || null
+      const utmMedium = (formData.get('attr_utm_medium')?.toString() ?? '').slice(0, 500).trim() || null
+      const utmCampaign = (formData.get('attr_utm_campaign')?.toString() ?? '').slice(0, 500).trim() || null
+      const gclid = (formData.get('attr_gclid')?.toString() ?? '').slice(0, 500).trim() || null
+      const attrChannel = parseChannel({ referrer: attrReferrer, utm_medium: utmMedium, gclid }).channel
+
       const id = generateLeadId()
       const typeProjet = 'Rappel téléphonique demandé'
       const message = `Créneau souhaité : ${creneau}`
@@ -230,11 +251,15 @@ export async function requestCallback(
       await q`
         INSERT INTO leads (
           id, source, nom, telephone, email, ville, type_projet, surface,
-          message, segment, ua, referer, ip_hash, contact_id
+          message, segment, ua, referer, ip_hash, contact_id,
+          geo_city, geo_region, geo_country, attr_channel, attr_referrer,
+          attr_landing, utm_source, utm_medium, utm_campaign, gclid
         ) VALUES (
           ${id}, 'rappel', ${nom}, ${telephone}, ${null},
           ${null}, ${typeProjet}, ${null},
-          ${message}, ${'particulier'}, ${ua}, ${referer}, ${ipHash}, ${contactId}
+          ${message}, ${'particulier'}, ${ua}, ${referer}, ${ipHash}, ${contactId},
+          ${geoCity}, ${geoRegion}, ${geoCountry}, ${attrChannel}, ${attrReferrer},
+          ${attrLanding}, ${utmSource}, ${utmMedium}, ${utmCampaign}, ${gclid}
         )
       `
     } catch (dbErr) {

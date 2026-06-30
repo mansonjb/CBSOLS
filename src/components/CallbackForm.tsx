@@ -4,6 +4,8 @@ import { useActionState, useEffect, useRef, useState } from 'react'
 import { requestCallback, type CallbackState } from '@/app/actions/callback'
 import { CRENEAUX } from '@/data/callback-creneaux'
 import { company } from '@/data/company'
+import { readAttribution, type AttributionData } from '@/lib/attribution'
+import { AttributionFields } from '@/components/AttributionFields'
 
 const initial: CallbackState = { status: 'idle', message: '' }
 
@@ -37,6 +39,11 @@ export function CallbackForm() {
   // On garde le prénom pour le message de confirmation chaleureux.
   const [prenom, setPrenom] = useState<string>('')
   const [confirmedCreneau, setConfirmedCreneau] = useState<string>(CRENEAUX[0])
+  const [attr, setAttr] = useState<AttributionData | null>(null)
+
+  useEffect(() => {
+    setAttr(readAttribution())
+  }, [])
 
   useEffect(() => {
     if (state.status === 'success') {
@@ -98,6 +105,8 @@ export function CallbackForm() {
           <input type="text" name="honeypot" tabIndex={-1} autoComplete="off" defaultValue="" />
         </label>
       </div>
+
+      <AttributionFields attr={attr} />
 
       <div>
         <label htmlFor="callback-nom" style={labelStyle}>Prénom et nom</label>

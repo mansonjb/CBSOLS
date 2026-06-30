@@ -48,7 +48,9 @@ export async function ensureSchema() {
     value JSONB NOT NULL DEFAULT '{}'::jsonb,
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
   );`
-  const marker = (await q`SELECT 1 AS ok FROM _schema_meta WHERE key = 'schema_v1' LIMIT 1`) as unknown as Array<{ ok: number }>
+  // Bump du marker à schema_v2 pour rejouer les ALTER d'attribution sur les
+  // bases déjà migrées en v1 (les ADD COLUMN IF NOT EXISTS sont idempotents).
+  const marker = (await q`SELECT 1 AS ok FROM _schema_meta WHERE key = 'schema_v2' LIMIT 1`) as unknown as Array<{ ok: number }>
   if (marker.length > 0) {
     _migrated = true
     return
@@ -81,6 +83,19 @@ export async function ensureSchema() {
   // créées avant l'introduction de l'archivage (les demandes test ne doivent
   // pas polluer les stats).
   await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS archived BOOLEAN NOT NULL DEFAULT FALSE;`
+
+  // ── Attribution de source (géo Vercel + canal referrer/utm/gclid) ──
+  // Niveau ville uniquement (RGPD), l'IP reste hashée via ip_hash.
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS geo_city TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS geo_region TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS geo_country TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS attr_channel TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS attr_referrer TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS attr_landing TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS utm_source TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS utm_medium TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS utm_campaign TEXT;`
+  await q`ALTER TABLE leads ADD COLUMN IF NOT EXISTS gclid TEXT;`
 
   // Index pour les requêtes de listing par date / statut / archivage
   await q`CREATE INDEX IF NOT EXISTS leads_created_at_idx ON leads (created_at DESC);`
@@ -117,6 +132,7 @@ export async function ensureSchema() {
   // start. Si tu modifies le schema, bumpe la cle (schema_v2, etc.) ou DELETE
   // le row pour forcer une re-execution.
   await q`INSERT INTO _schema_meta (key, value) VALUES ('schema_v1', '{}'::jsonb) ON CONFLICT (key) DO NOTHING;`
+  await q`INSERT INTO _schema_meta (key, value) VALUES ('schema_v2', '{}'::jsonb) ON CONFLICT (key) DO NOTHING;`
   _migrated = true
 }
 
@@ -252,6 +268,16 @@ export type LeadRow = {
   ip_hash: string | null
   archived: boolean
   contact_id: string | null
+  geo_city: string | null
+  geo_region: string | null
+  geo_country: string | null
+  attr_channel: string | null
+  attr_referrer: string | null
+  attr_landing: string | null
+  utm_source: string | null
+  utm_medium: string | null
+  utm_campaign: string | null
+  gclid: string | null
 }
 
 export type ContactRow = {

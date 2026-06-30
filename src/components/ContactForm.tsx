@@ -1,8 +1,10 @@
 'use client'
 
-import { useActionState, useEffect, useRef } from 'react'
+import { useActionState, useEffect, useRef, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { sendContactForm, type ContactState } from '@/app/actions/contact'
+import { readAttribution, type AttributionData } from '@/lib/attribution'
+import { AttributionFields } from '@/components/AttributionFields'
 
 const initial: ContactState = { status: 'idle', message: '' }
 
@@ -32,6 +34,11 @@ export function ContactForm() {
   const formRef = useRef<HTMLFormElement>(null)
   const searchParams = useSearchParams()
   const prefillCity = searchParams?.get('city') ?? ''
+  const [attr, setAttr] = useState<AttributionData | null>(null)
+
+  useEffect(() => {
+    setAttr(readAttribution())
+  }, [])
 
   useEffect(() => {
     if (state.status === 'success') {
@@ -126,6 +133,8 @@ export function ContactForm() {
             <input type="text" name="website" tabIndex={-1} autoComplete="off" defaultValue="" />
           </label>
         </div>
+
+        <AttributionFields attr={attr} />
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
           <div>

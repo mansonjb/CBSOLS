@@ -3,6 +3,8 @@
 import { useActionState, useEffect, useRef, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { sendContactForm, type ContactState } from '@/app/actions/contact'
+import { readAttribution, type AttributionData } from '@/lib/attribution'
+import { AttributionFields } from '@/components/AttributionFields'
 
 const initial: ContactState = { status: 'idle', message: '' }
 
@@ -38,6 +40,11 @@ export function QuickQuoteForm({ onSwitchToFull }: Props) {
   const searchParams = useSearchParams()
   const prefillCity = searchParams?.get('city') ?? ''
   const [focusedField, setFocusedField] = useState<string | null>(null)
+  const [attr, setAttr] = useState<AttributionData | null>(null)
+
+  useEffect(() => {
+    setAttr(readAttribution())
+  }, [])
 
   useEffect(() => {
     if (state.status === 'success') {
@@ -92,6 +99,8 @@ export function QuickQuoteForm({ onSwitchToFull }: Props) {
           <input type="text" name="website" tabIndex={-1} autoComplete="off" defaultValue="" />
         </label>
       </div>
+
+      <AttributionFields attr={attr} />
 
       <div>
         <label style={labelStyle}>Votre nom</label>
