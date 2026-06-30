@@ -97,6 +97,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/revetement-sol-saint-jean-de-luz`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-poitiers`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/revetement-sol-angouleme`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.8 },
+    // Locations Deux-Sèvres (Bocage / Gâtine / Thouarsais)
+    { url: `${BASE_URL}/revetement-sol-bressuire`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-parthenay`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/revetement-sol-thouars`, lastModified: new Date('2026-06-30'), changeFrequency: 'monthly', priority: 0.8 },
     // Pages ville x service réactivées en indexation (20), enrichies d'un contenu
     // éditorial unique. Le reste des /[geo] demeure noindex (cf. page.tsx).
     { url: `${BASE_URL}/revetement-sol-la-rochelle`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.7 },
