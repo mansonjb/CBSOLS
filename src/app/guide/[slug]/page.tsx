@@ -8,6 +8,7 @@ import { faqs } from '@/data/faqs'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 import { GuideContent } from '@/components/GuideContent'
 import { Button } from '@/components/Button'
+import { DevisBanner } from '@/components/DevisBanner'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -133,17 +134,23 @@ export default async function GuidePage({ params }: Props) {
         <section style={{ padding: '5rem 2rem' }}>
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '4rem' }}>
-              {guide.sections.map((section, i) => (
-                <div key={i}>
-                  <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em' }}>
-                    {section.title}
-                  </h2>
-                  <GuideContent body={section.body} />
-                  {i < guide.sections.length - 1 && (
-                    <div style={{ marginTop: '3rem', height: '1px', backgroundColor: 'var(--border)' }} />
-                  )}
-                </div>
-              ))}
+              {guide.sections.map((section, i) => {
+                // Bandeau devis inséré au milieu de l'article (après la section
+                // centrale) pour casser le mur de texte et rappeler l'action.
+                const midpoint = Math.floor(guide.sections.length / 2)
+                return (
+                  <div key={i}>
+                    <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em' }}>
+                      {section.title}
+                    </h2>
+                    <GuideContent body={section.body} />
+                    {i === midpoint && guide.sections.length >= 4 && <DevisBanner />}
+                    {i < guide.sections.length - 1 && (
+                      <div style={{ marginTop: '3rem', height: '1px', backgroundColor: 'var(--border)' }} />
+                    )}
+                  </div>
+                )
+              })}
             </div>
           </div>
         </section>
