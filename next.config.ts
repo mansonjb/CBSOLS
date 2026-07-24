@@ -81,6 +81,18 @@ const nextConfig: NextConfig = {
         destination: '/services/sol-pvc-les',
         permanent: true,
       },
+      // La FAQ devis capte ~380 impressions/3 mois mais 0 clic (pos 14).
+      // On consolide vers la vraie landing de conversion /devis-revetement-sol.
+      {
+        source: '/faq/devis-revetement-sol-gratuit',
+        destination: '/devis-revetement-sol',
+        permanent: true,
+      },
+      {
+        source: '/faq/devis-revetement-sol-gratuit/',
+        destination: '/devis-revetement-sol',
+        permanent: true,
+      },
       {
         source: '/pvc-en-les/',
         destination: '/services/sol-pvc-les',

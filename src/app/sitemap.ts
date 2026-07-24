@@ -183,12 +183,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  const faqPages: MetadataRoute.Sitemap = faqs.map((f) => ({
-    url: `${BASE_URL}/faq/${f.slug}`,
-    lastModified: LAST.faqs,
-    changeFrequency: 'monthly',
-    priority: 0.75,
-  }))
+  const faqPages: MetadataRoute.Sitemap = faqs
+    // La FAQ devis est redirigee en 301 vers /devis-revetement-sol : on ne
+    // la liste plus dans le sitemap pour eviter une URL redirigee.
+    .filter((f) => f.slug !== 'devis-revetement-sol-gratuit')
+    .map((f) => ({
+      url: `${BASE_URL}/faq/${f.slug}`,
+      lastModified: LAST.faqs,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    }))
 
   return [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...solutionPages, ...guidePages, ...brandPages, ...faqPages, ...realisationPages]
 }
