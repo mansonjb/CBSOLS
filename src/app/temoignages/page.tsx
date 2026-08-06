@@ -57,6 +57,15 @@ const videos: VideoData[] = [
       "Sur un site industriel, on cherche un sol qui résiste, qui se nettoie, et qui se pose vite. CB Sols a coché les trois cases sans débordement de planning.",
     projectInfo: 'Bureaux et zones de circulation',
   },
+  {
+    vimeoId: '1216035317',
+    name: 'Gaëlle Martel',
+    role: 'Directrice',
+    company: 'Golf de la Prée, La Rochelle',
+    quote:
+      "On voulait de la moquette pour créer différents espaces avec une vraie uniformité, malgré un passage intensif de golfeurs en chaussures à crampons. L'équipe de Valentin a trouvé le bon produit, tenu les délais et laissé un chantier nickel. Aujourd'hui le club-house est sobre, classe, et nous ouvre des événements qu'on ne pouvait pas accueillir avant.",
+    projectInfo: 'Club-house, restaurant et salles de séminaire',
+  },
 ]
 
 const videoSchema = (v: VideoData) => ({
