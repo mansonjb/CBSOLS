@@ -59,18 +59,18 @@ const clients = [
 ]
 
 const aeroports = [
-  { nom: 'La Rochelle Île de Ré', detail: "Notre aéroport local, à vingt minutes de l'atelier de Villedoux. Réactivité maximale, pour les interventions programmées comme pour les coups de fil de dernière minute." },
-  { nom: 'Rochefort Charente-Maritime', detail: "Plateforme et zone aéronautique du bassin rochefortais, à un quart d'heure de nos équipes." },
-  { nom: 'Angoulême Cognac', detail: "Aéroport du sud Charente, accessible depuis notre base pour les chantiers planifiés en tranches." },
-  { nom: 'Niort Marais Poitevin', detail: "Aérodrome des Deux-Sèvres, à portée de main pour rénover un club-house ou un espace d'accueil." },
-  { nom: 'Poitiers Biard', detail: "Aéroport de la Vienne, dans notre rayon d'intervention élargi Nouvelle-Aquitaine." },
-  { nom: 'La Roche-sur-Yon Les Ajoncs', detail: "Aérodrome vendéen, couvert par notre zone d'intervention nord." },
-  { nom: "Les Sables d'Olonne Talmont", detail: "Plateforme littorale vendéenne, chantiers calés de préférence en intersaison." },
-  { nom: "Île d'Yeu", detail: "Aérodrome insulaire, desservi avec l'habitude qu'on a des chantiers sur les îles du littoral." },
-  { nom: 'Royan Médis', detail: "Aérodrome de la presqu'île royannaise, en plein dans notre secteur historique." },
-  { nom: 'Bordeaux Mérignac', detail: "Grand aéroport régional : bureaux, salons et zones tertiaires, sur chantiers programmés à l'avance." },
-  { nom: 'Saintes Thénac', detail: "Aérodrome saintongeais et son club, à moins d'une heure de l'atelier." },
-  { nom: 'Fontenay-le-Comte', detail: "Aérodrome du sud Vendée, dans notre zone d'intervention nord." },
+  { nom: 'La Rochelle Île de Ré', detail: "Notre aéroport local, à vingt minutes de l'atelier de Villedoux. Vols vers Londres, Lyon ou Porto, avec un pic de fréquentation en été." },
+  { nom: 'Poitiers Biard', detail: "Aéroport de la Vienne, lignes régulières et charters. Aérogare compacte, idéale à rénover par tranches." },
+  { nom: 'Angoulême Cognac', detail: "Aéroport charentais, trafic affaires et loisirs, à moins de deux heures de notre base." },
+  { nom: 'Bordeaux Mérignac', detail: "L'un des plus gros aéroports régionaux de France : halls, salons et bureaux, chantiers programmés à l'avance." },
+  { nom: 'Nantes Atlantique', detail: "Grand aéroport de l'Ouest, très forte fréquentation. Zones publiques et tertiaires à rénover sans fermeture." },
+  { nom: 'Limoges Bellegarde', detail: "Aéroport du Limousin, lignes nationales et internationales, aérogare à moderniser zone par zone." },
+  { nom: 'Brive Vallée de la Dordogne', detail: "Aéroport corrézien récent, trafic régulier. Surfaces publiques, salle d'embarquement et salon." },
+  { nom: 'Tours Val de Loire', detail: "Aéroport tourangeau, low-cost et aviation d'affaires. Hall et embarquement à fort passage." },
+  { nom: 'Bergerac Dordogne Périgord', detail: "Aéroport périgourdin, très fréquenté l'été par la clientèle britannique. Aérogare à fort trafic saisonnier." },
+  { nom: 'Rennes Saint-Jacques', detail: "Aéroport breton en croissance, aérogare étendue, zones tertiaires et salons importants." },
+  { nom: 'Clermont-Ferrand Auvergne', detail: "Aéroport auvergnat au centre de la France, trafic affaires soutenu, salons et bureaux exploitant." },
+  { nom: 'Pau Pyrénées', detail: "Aéroport béarnais, trafic affaires et montagne, halls et salons à entretenir toute l'année." },
 ]
 
 const faq = [
@@ -335,10 +335,10 @@ export default function RevetementSolAeroportPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Notre terrain</div>
           <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
-            Les aérogares du Grand Ouest, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>à portée d&apos;atelier.</em>
+            Les aéroports régionaux, <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>du Grand Ouest au centre de la France.</em>
           </h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7, marginBottom: '2.5rem' }}>
-            Atelier à Villedoux, à côté de La Rochelle. Une équipe qui bouge, organisée pour intervenir sur les aérogares et les terrains de Nouvelle-Aquitaine et de Vendée, avec la logistique que chaque site impose. La liste n&apos;a rien d&apos;exhaustif : si votre plateforme est dans la région, on vient la voir.
+            Atelier à Villedoux, près de La Rochelle. On intervient sur les aéroports régionaux du Grand Ouest et du centre de la France, avec la logistique que chaque site impose : matériel, phasage, déplacement des équipes. La liste n&apos;a rien d&apos;exhaustif, si votre aérogare est concernée, on vient la voir.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
             {aeroports.map((p, i) => (
