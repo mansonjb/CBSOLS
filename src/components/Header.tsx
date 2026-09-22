@@ -54,7 +54,7 @@ export function Header() {
       transition: 'box-shadow 0.3s ease, background-color 0.3s ease',
     }}>
       <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 2rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '72px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2rem', height: '72px' }}>
 
           {/* Logo */}
           <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
