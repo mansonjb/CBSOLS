@@ -8,6 +8,7 @@ import { logoutAction } from './actions'
 const NAV = [
   { href: '/admin', label: 'Tableau de bord', exact: true, icon: 'dashboard' },
   { href: '/admin/leads', label: 'Demandes', icon: 'leads' },
+  { href: '/admin/inscriptions', label: 'Inscriptions', icon: 'calendar' },
   { href: '/admin/contacts', label: 'Contacts', icon: 'clients' },
   { href: '/admin/carte', label: 'Carte', icon: 'map' },
 ]
@@ -20,6 +21,7 @@ function Icon({ name }: { name: string }) {
     case 'clients':   return (<svg {...common}><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>)
     case 'chantiers': return (<svg {...common}><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>)
     case 'map':       return (<svg {...common}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>)
+    case 'calendar':  return (<svg {...common}><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>)
     default: return null
   }
 }

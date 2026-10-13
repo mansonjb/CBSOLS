@@ -294,3 +294,49 @@ export type ContactRow = {
   lat?: number | null
   lng?: number | null
 }
+
+// ─────────────────────────────────────────────────────────────────────────
+// Inscriptions événement (RSVP) — ex. petit-déjeuner « Matières & Projets »
+// Table indépendante des leads/contacts : un inscrit n'est pas un lead devis.
+// ─────────────────────────────────────────────────────────────────────────
+
+let _rsvpMigrated = false
+export async function ensureRsvpSchema() {
+  if (_rsvpMigrated) return
+  const q = sql()
+  await q`
+    CREATE TABLE IF NOT EXISTS event_rsvp (
+      id            TEXT PRIMARY KEY,
+      created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+      event_slug    TEXT NOT NULL,
+      nom           TEXT NOT NULL,
+      societe       TEXT,
+      email         TEXT,
+      telephone     TEXT,
+      nb_personnes  INT NOT NULL DEFAULT 1,
+      creneau       TEXT,
+      message       TEXT,
+      ua            TEXT,
+      referer       TEXT,
+      ip_hash       TEXT
+    );
+  `
+  await q`CREATE INDEX IF NOT EXISTS event_rsvp_event_idx ON event_rsvp (event_slug, created_at DESC);`
+  _rsvpMigrated = true
+}
+
+export type RsvpRow = {
+  id: string
+  created_at: string
+  event_slug: string
+  nom: string
+  societe: string | null
+  email: string | null
+  telephone: string | null
+  nb_personnes: number
+  creneau: string | null
+  message: string | null
+  ua: string | null
+  referer: string | null
+  ip_hash: string | null
+}
