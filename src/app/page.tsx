@@ -403,10 +403,9 @@ export default async function Home() {
       <section style={{ padding: '6rem 2rem', backgroundColor: 'var(--bg-inv)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           <div>
-            <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Notre histoire</p>
-            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: 'var(--text-on-dark)', letterSpacing: '-0.03em', lineHeight: 1.05, margin: '0 0 1.5rem' }}>
-              CB Sols,<br />
-              <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>artisan solier depuis 1998.</em>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 3.75rem)', fontWeight: 800, color: 'var(--text-on-dark)', letterSpacing: '-0.03em', lineHeight: 1.0, margin: '0 0 1.5rem' }}>
+              Notre<br />
+              <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--text-on-dark)' }}>histoire.</em>
             </h2>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', lineHeight: 1.8, maxWidth: '480px', marginBottom: '2rem' }}>
               Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. Entré dans l'entreprise en 2008, repreneur en 2023, des centaines de projets en Charente-Maritime.
