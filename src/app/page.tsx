@@ -273,6 +273,22 @@ export default async function Home() {
                 </div>
               </Link>
             ))}
+            {[
+              { href: '/solutions/moquette-bureau', name: 'Moquette de Bureau', description: "Moquette acoustique pour bureaux et open spaces : confort sonore, image soignée, passage intensif maîtrisé." },
+              { href: '/moquette-bateau', name: 'Moquette Bateau', description: "Pose et confection de moquette marine sur mesure pour bateaux, yachts et péniches. Découpe précise et finitions." },
+              { href: '/revetement-sol-degat-des-eaux', name: 'Sol après Dégât des Eaux', description: "Réfection de sol après sinistre, devis détaillé pour votre assurance et repose une fois le support sain." },
+            ].map((service, j) => (
+              <Link key={service.href} href={service.href} style={{ textDecoration: 'none' }}>
+                <div className="service-card" style={{ backgroundColor: 'var(--bg-card)', padding: '2.25rem', borderRadius: '16px', height: '100%', transition: 'transform 0.2s, box-shadow 0.2s', boxShadow: '0 1px 3px rgba(26,25,22,0.06)' }}>
+                  <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '3rem', color: 'var(--terra)', opacity: 0.15, fontWeight: 700, lineHeight: 1, marginBottom: '1.5rem' }}>
+                    {String(services.length + j + 1).padStart(2, '0')}
+                  </div>
+                  <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.15rem', fontWeight: 400, color: 'var(--dark)', marginBottom: '0.875rem', lineHeight: 1.3 }}>{service.name}</h3>
+                  <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.7, marginBottom: '1.75rem' }}>{service.description}</p>
+                  <div style={{ fontSize: '0.65rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 600 }}>Découvrir →</div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -387,10 +403,10 @@ export default async function Home() {
       <section style={{ padding: '6rem 2rem', backgroundColor: 'var(--bg-inv)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           <div>
-            <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>L'artisan derrière chaque projet</p>
+            <p style={{ fontSize: '0.62rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Notre histoire</p>
             <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: 'var(--text-on-dark)', letterSpacing: '-0.03em', lineHeight: 1.05, margin: '0 0 1.5rem' }}>
-              Valentin Prévoteau<br />
-              <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>gérant CB Sols.</em>
+              CB Sols,<br />
+              <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>artisan solier depuis 1998.</em>
             </h2>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-on-dark-muted)', lineHeight: 1.8, maxWidth: '480px', marginBottom: '2rem' }}>
               Gérant, poseur, interlocuteur unique. Quand vous appelez CB Sols, c'est lui qui décroche, pas un commercial, pas un sous-traitant. Entré dans l'entreprise en 2008, repreneur en 2023, des centaines de projets en Charente-Maritime.
@@ -401,7 +417,7 @@ export default async function Home() {
               ))}
             </div>
             <Link href="/a-propos" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.875rem 2rem', border: '1.5px solid rgba(44, 85, 48, 0.6)', color: 'var(--terra)', fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none', fontWeight: 600, borderRadius: '999px', transition: 'all 0.2s' }}>
-              Notre histoire →
+              Découvrir l&apos;atelier →
             </Link>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
