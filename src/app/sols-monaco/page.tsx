@@ -8,7 +8,7 @@ import { Building2, Castle, Mail, MapPin, Sparkles, Store, Waves } from 'lucide-
 
 export const metadata: Metadata = {
   title: "Sols & Moquette d'Exception à Monaco | Pose Premium",
-  description: "CB Sols se déplace à Monaco pour les projets d'exception : appartements Carré d'Or, suites de palace, yachts du Port Hercule. Moquette, tapis sur mesure et sols haut de gamme. Finition premium, discrétion totale, plus de 25 ans de savoir-faire.",
+  description: "CB Sols se déplace à Monaco pour les projets d'exception : appartements Carré d'Or, suites de palace, yachts du Port Hercule. Moquette, tapis sur mesure et sols haut de gamme. Finition premium, discrétion totale, plus de 28 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/sols-monaco' },
   openGraph: {
     title: "Sols d'exception à Monaco",
@@ -371,7 +371,7 @@ export default function SolsMonacoPage() {
             Votre projet Monaco <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>en mains expertes.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite confidentielle en Principauté. Devis détaillé, finitions premium, discrétion garantie. Plus de 25 ans de savoir-faire au service des projets d&apos;exception.
+            Visite confidentielle en Principauté. Devis détaillé, finitions premium, discrétion garantie. Plus de 28 ans de savoir-faire au service des projets d&apos;exception.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=sols-monaco-final" variant="primary" size="md">Demander un devis</Button>

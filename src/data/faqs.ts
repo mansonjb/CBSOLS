@@ -205,7 +205,7 @@ export const faqs: Faq[] = [
       },
       {
         title: 'Les gammes adaptées à la SDB de particulier',
-        body: "Pour une salle de bains de particulier, deux options principales :\n\nPVC en lés (rouleaux) : c'est la solution la plus sûre, surtout en cas de douche italienne. Gerflor Taralay Premium ou objectflor expona : épaisseur 2-3 mm, R10/R11, soudure à chaud invisible, durée de vie 15-25 ans.\n\nLames LVT clipsées : pour une salle de bains avec douche à receveur ou baignoire (sans douche italienne), on peut utiliser des lames LVT premium. Esthétique parquet ou pierre très réaliste, pose plus rapide. Gerflor Creation 55 ou objectflor LooseLay : durée de vie 20+ ans, mais l'étanchéité dépend de la qualité des jonctions.\n\nNous évaluons à la visite quelle solution est la mieux adaptée à votre SDB.",
+        body: "Pour une salle de bains de particulier, deux options principales :\n\nPVC en lés (rouleaux) : c'est la solution la plus sûre, surtout en cas de douche italienne. Gerflor Taralay Premium ou objectflor expona : épaisseur 2-3 mm, R10/R11, soudure à chaud invisible, durée de vie 15-28 ans.\n\nLames LVT clipsées : pour une salle de bains avec douche à receveur ou baignoire (sans douche italienne), on peut utiliser des lames LVT premium. Esthétique parquet ou pierre très réaliste, pose plus rapide. Gerflor Creation 55 ou objectflor LooseLay : durée de vie 20+ ans, mais l'étanchéité dépend de la qualité des jonctions.\n\nNous évaluons à la visite quelle solution est la mieux adaptée à votre SDB.",
       },
       {
         title: 'Préparation du support et pose',

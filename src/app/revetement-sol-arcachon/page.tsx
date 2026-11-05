@@ -8,12 +8,12 @@ import { Building2, Castle, Mail, MapPin, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Arcachon | Pose & Devis sous 48h",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Arcachon et autour du Bassin. Villas Ville d'Hiver, Pereire, Moulleau, hôtels boutique face Bassin. CB Sols, plus de 25 ans de savoir-faire, déplacement depuis La Rochelle.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Arcachon et autour du Bassin. Villas Ville d'Hiver, Pereire, Moulleau, hôtels boutique face Bassin. CB Sols, plus de 28 ans de savoir-faire, déplacement depuis La Rochelle.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-arcachon' },
   keywords: ['revêtement sol Arcachon', 'moquette Arcachon', 'sol PVC Arcachon', 'pose tapis Arcachon', 'artisan sol Bassin'],
   openGraph: {
     title: "Revêtement de sol à Arcachon, l'esprit du Bassin",
-    description: "Moquette, sol PVC et tapis sur mesure à Arcachon. Villas Ville d'Hiver, hôtels boutique, restaurants bord de mer. CB Sols, plus de 25 ans.",
+    description: "Moquette, sol PVC et tapis sur mesure à Arcachon. Villas Ville d'Hiver, hôtels boutique, restaurants bord de mer. CB Sols, plus de 28 ans.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-arcachon.jpg', width: 1200, height: 630 }],
   },
@@ -148,7 +148,7 @@ export default function RevetementSolArcachonPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Arcachon, c&apos;est la Belle Époque qui rencontre la maison de plage. Habiller une villa de Ville d&apos;Hiver ou une résidence du Pyla, c&apos;est exactement ce que CB Sols fait depuis plus de 25 ans, avec le même soin du patrimoine et du détail. »
+                « Arcachon, c&apos;est la Belle Époque qui rencontre la maison de plage. Habiller une villa de Ville d&apos;Hiver ou une résidence du Pyla, c&apos;est exactement ce que CB Sols fait depuis plus de 28 ans, avec le même soin du patrimoine et du détail. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, gérant de CB Sols</div>
             </div>
@@ -388,7 +388,7 @@ export default function RevetementSolArcachonPage() {
             Votre projet arcachonnais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Arcachon. Devis détaillé, finitions premium, respect du patrimoine Belle Époque et esprit balnéaire contemporain. Plus de 25 ans de savoir-faire CB Sols au service du Bassin.
+            Visite sur place à Arcachon. Devis détaillé, finitions premium, respect du patrimoine Belle Époque et esprit balnéaire contemporain. Plus de 28 ans de savoir-faire CB Sols au service du Bassin.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=arcachon-final" variant="primary" size="md">Demander un devis</Button>

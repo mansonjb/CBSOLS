@@ -5,12 +5,12 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Poitiers | Laboratoires, Universités, Tertiaire",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Poitiers. Laboratoires universitaires, cabinets médicaux secteur CHU, sièges sociaux, hôtels du Futuroscope, écoles privées. CB Sols, plus de 25 ans de savoir-faire, déplacement régulier depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Poitiers. Laboratoires universitaires, cabinets médicaux secteur CHU, sièges sociaux, hôtels du Futuroscope, écoles privées. CB Sols, plus de 28 ans de savoir-faire, déplacement régulier depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-poitiers' },
   keywords: ['revêtement sol Poitiers', 'sol PVC laboratoire Poitiers', 'moquette tertiaire Poitiers', 'artisan sol Poitiers', 'sol PVC cabinet médical Poitiers'],
   openGraph: {
     title: "Revêtement de sol à Poitiers, rigueur universitaire",
-    description: "Moquette, sol PVC et tapis sur mesure à Poitiers. Laboratoires, CHU, sièges sociaux, hôtels du Futuroscope. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Poitiers. Laboratoires, CHU, sièges sociaux, hôtels du Futuroscope. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-poitiers.jpg', width: 1200, height: 630 }],
   },
@@ -33,7 +33,7 @@ const exigences = [
 ]
 
 const materiaux = [
-  { name: "Sols PVC homogènes laboratoires Gerflor", desc: "Pour un labo de chimie ou de pharmacie, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. Il encaisse les acides et les solvants, classement P3. On soude les lés à chaud et on remonte en plinthe. Vingt à vingt-cinq ans devant vous en usage intensif." },
+  { name: "Sols PVC homogènes laboratoires Gerflor", desc: "Pour un labo de chimie ou de pharmacie, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. Il encaisse les acides et les solvants, classement P3. On soude les lés à chaud et on remonte en plinthe. Vingt à vingt-huit ans devant vous en usage intensif." },
   { name: "Sols PVC cabinets médicaux Tarkett", desc: "Dans un cabinet médical, le sol doit supporter le bionettoyage quotidien sans broncher. Tarkett intègre le traitement antibactérien dans la masse. Aspect uni mat ou imitation pierre selon votre ambiance. Il encaisse les désinfectants chlorés et alcooliques, et l'entretien se fait en cinq minutes. Conformité ARS, fiches fournies." },
   { name: "Dalles moquette acoustique pour open spaces", desc: "Sur les plateaux tertiaires, les dalles 50×50 cm sont notre standard. Si quelqu'un renverse son café, on remplace juste la dalle abîmée. La sous-couche acoustique coupe les bruits de pas et de roulettes, vos équipes travaillent au calme. Quinze à vingt ans en bureau classique, choix de couleurs énorme." },
   { name: "Sols PVC écoles privées Forbo et Polyflor", desc: "Pour une école privée, on regarde Forbo Marmoleum (un vrai linoléum à base d'huile de lin, certifié A+ COV) ou du Polyflor pour les zones humides. Tout est classé Bfl-s1, résiste au trafic d'enfants sans difficulté. On vous fournit le dossier complet pour la commission de sécurité ERP type R." },
@@ -81,7 +81,7 @@ const faq = [
   { q: "Vous intervenez sur les cabinets du secteur CHU à Saint-Éloi ?", a: "Bien sûr. Le plateau Saint-Éloi concentre un pôle médical important. Les sols de cabinet relèvent du règlement ERP type U : classement Bfl-s1, résistance aux désinfectants chlorés et alcooliques, surface décontaminable, plinthes remontées dans les zones humides. On fournit tous les PV feu et fiches sanitaires. La pose se cale en horaires décalés pour ne pas perturber les consultations." },
   { q: "Comment ça se passe pour les écoles privées côté ERP ?", a: "Les écoles privées relèvent du règlement ERP type R, classement Bfl-s1 obligatoire sur les circulations et les salles. On sélectionne du Forbo Marmoleum (linoléum naturel certifié A+ COV) ou du Polyflor pour les zones humides. La pose se cale en intersession (Toussaint, Noël, février, Pâques ou grandes vacances) pour livrer l'établissement à la rentrée. Dossier complet fourni pour la commission de sécurité." },
   { q: "Vous travaillez sur les hôtels du Futuroscope ?", a: "Oui. Le Futuroscope concentre un pôle hôtelier d'affaires important. Les exigences sont précises : moquette haute densité anti-tache, isolation acoustique des chambres, PVC pour les zones humides et restaurants. On pose chambre par chambre par rotation, sans bloquer l'exploitation. Nettoyage intégral à la livraison, restitution opérationnelle à l'heure convenue avec le directeur d'exploitation." },
-  { q: "Combien de temps tient un sol PVC dans un labo universitaire ?", a: "Vingt à vingt-cinq ans facilement, parfois plus. Le PVC homogène vieillit bien parce qu'il n'a pas de couche d'usure à percer, c'est le même matériau de haut en bas. La résistance chimique P3 supporte les contacts ponctuels avec acides et solvants courants. Un nettoyage pro annuel et un bionettoyage quotidien selon votre protocole suffisent à garder l'aspect du premier jour." },
+  { q: "Combien de temps tient un sol PVC dans un labo universitaire ?", a: "Vingt à vingt-huit ans facilement, parfois plus. Le PVC homogène vieillit bien parce qu'il n'a pas de couche d'usure à percer, c'est le même matériau de haut en bas. La résistance chimique P3 supporte les contacts ponctuels avec acides et solvants courants. Un nettoyage pro annuel et un bionettoyage quotidien selon votre protocole suffisent à garder l'aspect du premier jour." },
   { q: "Vous pouvez intervenir en horaires décalés sur un CHU ou une université ?", a: "Oui, c'est même la norme. On organise les interventions en soirée, le week-end ou en intersession selon le phasage défini avec votre service patrimoine. On pré-assemble un maximum à l'atelier, donc la pose sur site va vite. On protège systématiquement les équipements sensibles, le mobilier informatique et les matériels de labo avant de commencer. À l'heure convenue, l'espace est nettoyé et opérationnel." },
 ]
 
@@ -144,7 +144,7 @@ export default function RevetementSolPoitiersPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Poitiers, c&apos;est une ville de savoir : universités, recherche, CHU. Les exigences techniques ne pardonnent pas l&apos;à-peu-près. CB Sols a la documentation et la méthode pour répondre à ces standards depuis plus de 25 ans. »
+                « Poitiers, c&apos;est une ville de savoir : universités, recherche, CHU. Les exigences techniques ne pardonnent pas l&apos;à-peu-près. CB Sols a la documentation et la méthode pour répondre à ces standards depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -234,7 +234,7 @@ export default function RevetementSolPoitiersPage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ borderLeft: '3px solid var(--terra)', paddingLeft: '2rem' }}>
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
-              « Un laboratoire universitaire, ça ne s&apos;improvise pas. Résistance chimique, antistatique, soudures parfaites, documentation impeccable. CB Sols a fait ce métier depuis plus de 25 ans, c&apos;est sa colonne vertébrale technique. »
+              « Un laboratoire universitaire, ça ne s&apos;improvise pas. Résistance chimique, antistatique, soudures parfaites, documentation impeccable. CB Sols a fait ce métier depuis plus de 28 ans, c&apos;est sa colonne vertébrale technique. »
             </p>
             <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, gérant de CB Sols</div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -375,7 +375,7 @@ export default function RevetementSolPoitiersPage() {
             Votre projet poitevin <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Poitiers. Devis détaillé, finitions premium, conformité technique irréprochable. CB Sols, plus de 25 ans de savoir-faire au service des laboratoires, du tertiaire et du médico-social poitevins.
+            Visite sur place à Poitiers. Devis détaillé, finitions premium, conformité technique irréprochable. CB Sols, plus de 28 ans de savoir-faire au service des laboratoires, du tertiaire et du médico-social poitevins.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=poitiers-final" variant="primary" size="md">Demander un devis</Button>

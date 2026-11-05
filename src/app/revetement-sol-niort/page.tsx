@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Pill, Stethoscope, Store } from 
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Niort | Moquette, PVC, Tapis Sur Mesure",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Niort. Hôtels particuliers du centre historique, sièges sociaux et grands plateaux tertiaires, restaurants des Halles, EHPAD. CB Sols intervient depuis plus de 25 ans, déplacement régulier depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Niort. Hôtels particuliers du centre historique, sièges sociaux et grands plateaux tertiaires, restaurants des Halles, EHPAD. CB Sols intervient depuis plus de 28 ans, déplacement régulier depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-niort' },
   keywords: ['revêtement sol Niort', 'moquette Niort', 'sol PVC Niort', 'pose tapis Niort', 'artisan sol Niort', 'sol PVC mutuelles Niort'],
   openGraph: {
     title: "Revêtement de sol à Niort, le sérieux des Deux-Sèvres",
-    description: "Moquette, sol PVC et tapis sur mesure à Niort. Mutuelles, hôtels particuliers, restaurants, EHPAD. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Niort. Mutuelles, hôtels particuliers, restaurants, EHPAD. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-niort.jpg', width: 1200, height: 630 }],
   },
@@ -39,7 +39,7 @@ const materiaux = [
   { name: "Sols PVC acoustiques Gerflor et Tarkett", desc: "On en pose beaucoup sur les grands plateaux de bureaux. La sous-couche absorbe les bruits de pas et de roulettes, vos équipes travaillent dans le calme. Choix large de couleurs, on peut s'aligner sur votre charte. Le sol tient facilement quinze ans, souvent vingt." },
   { name: "Moquette dalles EGE et Forbo", desc: "Le bon choix pour un bureau de direction ou une salle du conseil. Les dalles font 50×50 cm. Si quelqu'un renverse son café, on remplace juste la dalle abîmée. La sous-couche acoustique adoucit la pièce. Vous tenez quinze à vingt ans en bureau classique." },
   { name: "Moquette laine vierge tissée Wilton", desc: "Pour les salons des hôtels particuliers du centre historique. La laine se patine en vieillissant, elle ne s'écrase pas. Au toucher elle est ferme, à l'œil elle se distingue. On choisit avec vous un uni ou un motif géométrique discret pour respecter les boiseries." },
-  { name: "Sols PVC homogènes pour EHPAD", desc: "Sur les couloirs et les chambres d'EHPAD, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. On soude les lés à chaud, l'eau ne passe nulle part. Vingt à vingt-cinq ans devant vous, même avec un trafic intense." },
+  { name: "Sols PVC homogènes pour EHPAD", desc: "Sur les couloirs et les chambres d'EHPAD, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. On soude les lés à chaud, l'eau ne passe nulle part. Vingt à vingt-huit ans devant vous, même avec un trafic intense." },
   { name: "Tapis sur mesure pour bureaux de direction", desc: "Quand vous voulez poser le ton dès l'entrée d'un bureau de présidence, le tapis sur mesure fait le travail. Laine vierge, bordure cousue main, dimensions au centimètre près. On peut reproduire un motif maison ou rester sur un uni d'apparat. Compter huit à quatorze semaines." },
   { name: "Profilés laiton et alu brossé Romus", desc: "Pour les seuils et les nez de marche, on soigne le détail. On coordonne avec votre quincaillerie existante, ce qui compte sur un bâtiment historique. Sur les chantiers tertiaires un peu exigeants, on peut faire fabriquer du sur mesure. C'est le genre de détail qui se remarque à la livraison." },
 ]
@@ -149,7 +149,7 @@ export default function RevetementSolNiortPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Niort, c&apos;est un terrain sérieux. Les services généraux des mutuelles ne plaisantent pas avec les fiches techniques et les délais. CB Sols a la documentation, la méthode et l&apos;équipe pour répondre à ces standards depuis plus de 25 ans. »
+                « Niort, c&apos;est un terrain sérieux. Les services généraux des mutuelles ne plaisantent pas avec les fiches techniques et les délais. CB Sols a la documentation, la méthode et l&apos;équipe pour répondre à ces standards depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -389,7 +389,7 @@ export default function RevetementSolNiortPage() {
             Votre projet niortais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Niort. Devis détaillé, finitions premium, respect des contraintes tertiaires et patrimoniales. CB Sols, plus de 25 ans de savoir-faire au service des projets d&apos;exception en Deux-Sèvres.
+            Visite sur place à Niort. Devis détaillé, finitions premium, respect des contraintes tertiaires et patrimoniales. CB Sols, plus de 28 ans de savoir-faire au service des projets d&apos;exception en Deux-Sèvres.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=niort-final" variant="primary" size="md">Demander un devis</Button>

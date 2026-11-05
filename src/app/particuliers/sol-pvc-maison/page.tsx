@@ -31,7 +31,7 @@ const process = [
 ]
 
 const faq = [
-  { q: 'Le PVC est-il un produit haut de gamme ?', a: "Le PVC d'entrée de gamme est médiocre — c'est ce qu'on trouve en grande surface. Les gammes professionnelles que nous posons (Gerflor Taralay, objectflor LVT) sont à un autre niveau : épaisseur 5-8 mm, couche d'usure 0,55 à 0,8 mm, durée de vie 15-25 ans. Visuellement et tactilement, c'est très loin du lino bas de gamme." },
+  { q: 'Le PVC est-il un produit haut de gamme ?', a: "Le PVC d'entrée de gamme est médiocre — c'est ce qu'on trouve en grande surface. Les gammes professionnelles que nous posons (Gerflor Taralay, objectflor LVT) sont à un autre niveau : épaisseur 5-8 mm, couche d'usure 0,55 à 0,8 mm, durée de vie 15-28 ans. Visuellement et tactilement, c'est très loin du lino bas de gamme." },
   { q: 'Peut-on poser du PVC sur du carrelage existant ?', a: "Oui, dans la majorité des cas. Le carrelage doit être plan, propre et stable. Un ragréage de surfaçage est presque toujours nécessaire pour neutraliser les joints (sinon ils ressortent à travers le PVC). Nous évaluons cela à la visite." },
   { q: 'Le PVC en salle de bains, c\'est vraiment étanche ?', a: "Oui, à condition d'utiliser du PVC en lés (rouleaux) avec soudure à chaud des joints. Les lames LVT ne sont pas adaptées à la douche italienne. Nous vous orientons vers le bon produit selon votre configuration." },
   { q: 'Compatibilité chauffage au sol ?', a: "Oui, la plupart des PVC professionnels sont compatibles chauffage au sol (résistance thermique faible). À vérifier sur la fiche produit : nous ne posons que des produits validés." },

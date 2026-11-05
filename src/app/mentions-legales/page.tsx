@@ -23,7 +23,7 @@ const sections = [
       'Forme juridique : Société',
       'TVA intracommunautaire : sur demande',
       'Activité : Pose de revêtements de sol (moquette, sol PVC, tapis sur mesure)',
-      'Expérience : 500+ projets livrés depuis 1999',
+      'Expérience : 500+ projets livrés depuis 1998',
       'Assurance professionnelle et décennale souscrites.',
     ],
   },

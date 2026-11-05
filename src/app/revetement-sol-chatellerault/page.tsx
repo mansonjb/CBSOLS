@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Stethoscope, Store } from 'lucid
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Châtellerault | Devis Gratuit sous 48h",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Châtellerault. Bureaux et locaux tertiaires, commerces, cabinets, collectivités, maisons anciennes du centre. CB Sols intervient depuis plus de 25 ans, déplacement organisé depuis Villedoux en visite groupée puis pose calée.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Châtellerault. Bureaux et locaux tertiaires, commerces, cabinets, collectivités, maisons anciennes du centre. CB Sols intervient depuis plus de 28 ans, déplacement organisé depuis Villedoux en visite groupée puis pose calée.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-chatellerault' },
   keywords: ['revêtement sol Châtellerault', 'moquette Châtellerault', 'sol PVC Châtellerault', 'pose tapis Châtellerault', 'artisan sol Châtellerault'],
   openGraph: {
     title: "Revêtement de sol à Châtellerault, le sérieux du Châtelleraudais",
-    description: "Moquette, sol PVC et tapis sur mesure à Châtellerault. Bureaux, commerces, cabinets, collectivités, maisons du centre. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Châtellerault. Bureaux, commerces, cabinets, collectivités, maisons du centre. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-chatellerault.jpg', width: 1200, height: 630 }],
   },
@@ -39,7 +39,7 @@ const materiaux = [
   { name: "Sols PVC acoustiques Gerflor et Tarkett", desc: "On en pose beaucoup dans les bureaux et les locaux tertiaires châtelleraudais. La sous-couche absorbe les bruits de pas, vos équipes travaillent dans le calme. Le choix de couleurs est large, on peut s'aligner sur votre identité. Le sol tient facilement quinze ans, souvent vingt." },
   { name: "Moquette dalles EGE et Forbo", desc: "Le bon choix pour un bureau, un cabinet ou une collectivité. Les dalles font 50×50 cm. Si quelqu'un renverse un café, on remplace juste la dalle abîmée. La sous-couche acoustique adoucit la pièce. Vous tenez quinze à vingt ans en usage tertiaire classique." },
   { name: "Moquette laine vierge tissée", desc: "Pour les salons des maisons anciennes du centre châtelleraudais. La laine se patine en vieillissant, elle ne s'écrase pas. Au toucher elle est ferme, à l'œil elle se distingue. On choisit avec vous un uni ou un motif discret pour respecter les boiseries anciennes." },
-  { name: "Sols PVC homogènes pour collectivités", desc: "Sur les couloirs et les locaux recevant du public, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. On soude les lés à chaud, l'eau ne passe nulle part. Vingt à vingt-cinq ans devant vous, même avec un trafic intense." },
+  { name: "Sols PVC homogènes pour collectivités", desc: "Sur les couloirs et les locaux recevant du public, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. On soude les lés à chaud, l'eau ne passe nulle part. Vingt à vingt-huit ans devant vous, même avec un trafic intense." },
   { name: "Sols PVC effet bois pour commerces", desc: "Pour une boutique ou un commerce de centre-ville, le PVC effet bois fait merveille. Le rendu visuel est convaincant, le sol résiste au passage et se nettoie en cinq minutes. On peut même le poser sur un chauffage au sol. La pose est rapide et propre." },
   { name: "Profilés laiton et alu brossé Romus", desc: "Pour les seuils et les nez de marche, on soigne le détail. On coordonne avec votre quincaillerie existante, ce qui compte sur une maison ancienne. Sur les chantiers un peu exigeants, on peut faire fabriquer du sur mesure. C'est le genre de détail qui se remarque à la livraison." },
 ]
@@ -80,7 +80,7 @@ const process = [
 
 const faq = [
   { q: "Vous venez vraiment à Châtellerault depuis La Rochelle ?", a: "Oui. Châtellerault, c'est environ 160 km, autour de 2h par la route. Vu la distance, on s'organise : une visite de prise de mesures complète en début de projet, puis une pose groupée une fois la confection terminée. On prépare tout en amont à l'atelier pour ne revenir qu'une fois. L'hébergement et le déplacement sont compris dans le devis. Vous n'avez pas une série d'allers-retours à coordonner, juste deux rendez-vous clairs." },
-  { q: "Comment vous organisez un chantier à cette distance ?", a: "C'est tout l'enjeu. À deux heures de l'atelier, on ne peut pas se permettre d'improviser. On prend les cotes au laser à la visite, on pré-assemble un maximum à blanc à Villedoux, on cale le matériel avant de partir. L'équipe arrive à Châtellerault avec un plan précis et pose d'un bloc, sans temps mort. Cette méthode, on l'applique depuis plus de 25 ans sur tous nos chantiers éloignés." },
+  { q: "Comment vous organisez un chantier à cette distance ?", a: "C'est tout l'enjeu. À deux heures de l'atelier, on ne peut pas se permettre d'improviser. On prend les cotes au laser à la visite, on pré-assemble un maximum à blanc à Villedoux, on cale le matériel avant de partir. L'équipe arrive à Châtellerault avec un plan précis et pose d'un bloc, sans temps mort. Cette méthode, on l'applique depuis plus de 28 ans sur tous nos chantiers éloignés." },
   { q: "Vous travaillez sur les bureaux et locaux tertiaires ?", a: "Oui, c'est un de nos terrains naturels. Châtellerault concentre du tertiaire, des cabinets et des locaux hérités de son passé industriel. Ça demande un sol soigné et un travail propre. On pose du PVC acoustique dans les espaces de travail et de la moquette dalles dans les bureaux. On vient en horaires décalés, vos équipes retrouvent un espace prêt le lendemain." },
   { q: "Vous intervenez sur les commerces du centre-ville ?", a: "Oui. Pour une boutique ou un commerce près du pont Henri-IV ou dans une rue commerçante, le sol doit valoriser vos produits et résister au passage. On pose la nuit ou le jour de fermeture, vous ne perdez pas une journée de vente. On protège l'existant, on nettoie tout à la livraison, et le lendemain matin vous rouvrez dans un espace prêt à accueillir vos clients." },
   { q: "Vous intervenez sur les collectivités et les cabinets ?", a: "Bien sûr. Un local de collectivité, un cabinet, une étude qui reçoit du public relèvent du règlement ERP. Il faut des produits classés feu, qui supportent un entretien intensif, avec des attestations claires. On choisit les bons produits pour vous, on fournit tous les PV feu pour la commission de sécurité, et on planifie l'intervention pour ne pas perturber l'accueil du public." },
@@ -149,7 +149,7 @@ export default function RevetementSolChatelleraultPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Châtellerault est à deux heures de l&apos;atelier. La distance ne fait pas peur quand l&apos;organisation est carrée : une visite de mesures, puis une pose groupée. C&apos;est la méthode que CB Sols applique depuis plus de 25 ans sur ses chantiers éloignés. »
+                « Châtellerault est à deux heures de l&apos;atelier. La distance ne fait pas peur quand l&apos;organisation est carrée : une visite de mesures, puis une pose groupée. C&apos;est la méthode que CB Sols applique depuis plus de 28 ans sur ses chantiers éloignés. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -387,7 +387,7 @@ export default function RevetementSolChatelleraultPage() {
             Votre projet châtelleraudais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Châtellerault. Devis détaillé sous 48 heures, finitions soignées, déplacement maîtrisé et calendrier tenu. CB Sols, plus de 25 ans de savoir-faire au service des projets dans la Vienne.
+            Visite sur place à Châtellerault. Devis détaillé sous 48 heures, finitions soignées, déplacement maîtrisé et calendrier tenu. CB Sols, plus de 28 ans de savoir-faire au service des projets dans la Vienne.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=chatellerault-final" variant="primary" size="md">Demander un devis</Button>

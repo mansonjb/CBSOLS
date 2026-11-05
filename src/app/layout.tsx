@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: 'https://cbsols.fr/' },
   description:
-    'CB Sols, artisan spécialiste du revêtement de sol depuis plus de 25 ans en Charente-Maritime. Moquette, sol PVC, tapis sur mesure pour particuliers et professionnels à La Rochelle, Île de Ré et environs.',
+    'CB Sols, artisan spécialiste du revêtement de sol depuis plus de 28 ans en Charente-Maritime. Moquette, sol PVC, tapis sur mesure pour particuliers et professionnels à La Rochelle, Île de Ré et environs.',
   keywords: ['revêtement sol', 'moquette', 'sol PVC', 'La Rochelle', 'Île de Ré', 'Charente-Maritime'],
   authors: [{ name: 'CB Sols' }],
   metadataBase: new URL('https://cbsols.fr'),
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CB Sols | Artisan Revêtement de Sol La Rochelle & Île de Ré',
-    description: 'Moquette, sol PVC, tapis sur mesure. Plus de 25 ans d\'expérience en Charente-Maritime.',
+    description: 'Moquette, sol PVC, tapis sur mesure. Plus de 28 ans d\'expérience en Charente-Maritime.',
     images: ['https://cbsols.fr/images/og-default.jpg'],
   },
   robots: {
@@ -114,7 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           width: 200,
           height: 200,
         },
-        foundingDate: '1999',
+        foundingDate: '1998',
         founder: { '@id': 'https://cbsols.fr/#valentin' },
         contactPoint: {
           '@type': 'ContactPoint',
@@ -153,7 +153,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         email: company.email,
         image: 'https://cbsols.fr/images/logo-cbsols.png',
         logo: 'https://cbsols.fr/images/logo-cbsols.png',
-        description: 'Artisan spécialiste du revêtement de sol depuis 1999 en Charente-Maritime. Moquette professionnelle, sol PVC, tapis sur mesure. Intervention hôtels, campings, bureaux.',
+        description: 'Artisan spécialiste du revêtement de sol depuis 1998 en Charente-Maritime. Moquette professionnelle, sol PVC, tapis sur mesure. Intervention hôtels, campings, bureaux.',
         parentOrganization: { '@id': 'https://cbsols.fr/#organization' },
         address: {
           '@type': 'PostalAddress',
@@ -171,7 +171,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         ],
         hasMap: 'https://share.google/86MXB40I3QuKofiI4',
         priceRange: '€€€',
-        foundingDate: '1999',
+        foundingDate: '1998',
         sameAs: [company.social.instagram, company.social.linkedin],
         aggregateRating: {
           '@type': 'AggregateRating',

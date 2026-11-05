@@ -5,12 +5,12 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Angoulême | Patrimoine et Tertiaire",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers du plateau, sièges d'imprimeries BD, restaurants gastronomiques, châteaux des Charentes. CB Sols, plus de 25 ans de savoir-faire, déplacement régulier depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers du plateau, sièges d'imprimeries BD, restaurants gastronomiques, châteaux des Charentes. CB Sols, plus de 28 ans de savoir-faire, déplacement régulier depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-angouleme' },
   keywords: ['revêtement sol Angoulême', 'moquette Angoulême', 'sol PVC Angoulême', 'pose tapis Angoulême', 'artisan sol Angoulême', 'tapis château Charentes'],
   openGraph: {
     title: "Revêtement de sol à Angoulême, élégance des Charentes",
-    description: "Moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers, imprimeries BD, restaurants gastronomiques, châteaux. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers, imprimeries BD, restaurants gastronomiques, châteaux. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-angouleme.jpg', width: 1200, height: 630 }],
   },
@@ -36,7 +36,7 @@ const materiaux = [
   { name: "Moquette laine vierge tissée EGE", desc: "Notre matière préférée pour les salons d'apparat des hôtels particuliers du plateau et les chambres des châteaux charentais. La laine se patine, ne s'écrase pas, vieillit noblement. On choisit avec vous un uni profond ou un motif géométrique discret pour s'accorder au décor existant. Quinze à vingt ans devant vous." },
   { name: "Tapis sur mesure Brintons Aubusson reconstitués", desc: "Quand vous voulez habiller un parquet ancien sans le masquer, le tapis sur mesure fait toute la différence. On reproduit un motif historique en laine vierge, bordure cousue main, dimensions au centimètre près. Compter dix à seize semaines de fabrication. Le résultat parle tout seul à l'arrivée." },
   { name: "Sols PVC design pour studios créatifs", desc: "Pour un studio de BD, une maison d'édition ou une agence créative angoumoisine, on choisit des PVC design. Gerflor Texline ou Forbo Flotex aux motifs contemporains, classement 33 qui encaisse l'usage intensif. L'esthétique colle à l'univers visuel de la ville BD. Quinze à vingt ans devant vous tranquillement." },
-  { name: "Sols PVC homogènes pour imprimeries et ateliers", desc: "Sur une imprimerie ou un atelier de production graphique, le sol prend cher : encres, solvants, produits de nettoyage. On part sur du PVC homogène classé P3, soudé à chaud. En option, on peut prendre une version antistatique pour les zones à équipements sensibles. Vingt à vingt-cinq ans en usage intensif." },
+  { name: "Sols PVC homogènes pour imprimeries et ateliers", desc: "Sur une imprimerie ou un atelier de production graphique, le sol prend cher : encres, solvants, produits de nettoyage. On part sur du PVC homogène classé P3, soudé à chaud. En option, on peut prendre une version antistatique pour les zones à équipements sensibles. Vingt à vingt-huit ans en usage intensif." },
   { name: "Moquettes EGE Highline et Hospitality", desc: "Pour les restaurants gastronomiques et les hôtels boutiques du centre, on part sur des gammes ignifugées en cœur de fibre. Elles passent la sécurité incendie sans difficulté. Choix large de coloris pour s'aligner sur votre décoration. Et elles encaissent les rythmes de service intense sans perdre leur tenue visuelle." },
   { name: "Profilés laiton brossé et bronze patiné Romus", desc: "Pour les seuils et les nez de marche, on soigne le détail. On coordonne avec la quincaillerie d'origine des hôtels particuliers et des châteaux. Sur les chantiers patrimoniaux particuliers, on peut faire fabriquer du sur mesure. C'est ce genre de chose qu'on remarque à la livraison, et qui fait la différence." },
 ]
@@ -144,7 +144,7 @@ export default function RevetementSolAngoulemePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Angoulême, c&apos;est une ville où le patrimoine du plateau dialogue avec la création contemporaine de la BD. Un terrain riche, exigeant, où CB Sols sait conjuguer tradition et modernité depuis plus de 25 ans. »
+                « Angoulême, c&apos;est une ville où le patrimoine du plateau dialogue avec la création contemporaine de la BD. Un terrain riche, exigeant, où CB Sols sait conjuguer tradition et modernité depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -375,7 +375,7 @@ export default function RevetementSolAngoulemePage() {
             Votre projet angoumoisin <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Angoulême. Devis détaillé, finitions premium, respect du patrimoine du plateau et accompagnement de la création contemporaine. CB Sols, plus de 25 ans de savoir-faire au service des projets d&apos;exception en Charente.
+            Visite sur place à Angoulême. Devis détaillé, finitions premium, respect du patrimoine du plateau et accompagnement de la création contemporaine. CB Sols, plus de 28 ans de savoir-faire au service des projets d&apos;exception en Charente.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=angouleme-final" variant="primary" size="md">Demander un devis</Button>

@@ -8,12 +8,12 @@ import { Building2, Home, Mail, MapPin, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol aux Sables-d'Olonne | Devis Gratuit sous 48h",
-  description: "Pose de moquette, sol PVC et tapis sur mesure aux Sables-d'Olonne. Villas front de mer, résidences secondaires de standing, hôtels et restaurants du Remblai, appartements vue océan. CB Sols intervient depuis plus de 25 ans, déplacement organisé depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure aux Sables-d'Olonne. Villas front de mer, résidences secondaires de standing, hôtels et restaurants du Remblai, appartements vue océan. CB Sols intervient depuis plus de 28 ans, déplacement organisé depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-les-sables-d-olonne' },
   keywords: ["revêtement sol Les Sables-d'Olonne", "moquette Les Sables-d'Olonne", "sol PVC Les Sables-d'Olonne", "pose tapis villa bord de mer Vendée", "artisan sol Les Sables-d'Olonne"],
   openGraph: {
     title: "Revêtement de sol aux Sables-d'Olonne, l'esprit du bord de mer",
-    description: "Moquette, sol PVC et tapis sur mesure aux Sables-d'Olonne. Villas front de mer, résidences secondaires, hôtels et restaurants du Remblai. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure aux Sables-d'Olonne. Villas front de mer, résidences secondaires, hôtels et restaurants du Remblai. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-les-sables-d-olonne.jpg', width: 1200, height: 630 }],
   },
@@ -79,12 +79,12 @@ const process = [
 ]
 
 const faq = [
-  { q: "Vous venez vraiment aux Sables-d'Olonne depuis La Rochelle ?", a: "Oui, sans difficulté. Les Sables-d'Olonne, c'est environ 120 km, autour de 1h45 par la route. On maîtrise cette distance depuis plus de 25 ans avec les chantiers de Ré, d'Oléron et de toute la façade atlantique, la logique est la même. On vient mesurer une première fois, puis on revient poser. L'hébergement et le déplacement sont compris dans le devis. On évite juillet et août, on cale au printemps ou à l'automne." },
+  { q: "Vous venez vraiment aux Sables-d'Olonne depuis La Rochelle ?", a: "Oui, sans difficulté. Les Sables-d'Olonne, c'est environ 120 km, autour de 1h45 par la route. On maîtrise cette distance depuis plus de 28 ans avec les chantiers de Ré, d'Oléron et de toute la façade atlantique, la logique est la même. On vient mesurer une première fois, puis on revient poser. L'hébergement et le déplacement sont compris dans le devis. On évite juillet et août, on cale au printemps ou à l'automne." },
   { q: "Quel revêtement choisir pour une villa pieds dans le sable ?", a: "Le sable et le sel sont les ennemis numéro un d'un sol au bord de l'océan. Dans les pièces de vie et les entrées, on part sur du PVC effet bois ou homogène : l'entretien se fait à l'eau, le matériau vieillit bien face au sel. Dans les chambres, là où vous voulez du moelleux sous les pieds, on remet de la laine vierge ou du polyamide haute densité. On cale l'arbitrage avec vous à la visite." },
   { q: "Vous intervenez sur les hôtels et restaurants du Remblai ?", a: "Oui, c'est un de nos terrains naturels. Un hôtel ou un restaurant de front de mer demande des sols conformes ERP, résistants au passage estival et faciles à entretenir. On choisit des revêtements ignifugés Bfl-s1, on pose hors saison touristique pour ne pas couper l'activité, et on fournit tous les PV feu pour la commission de sécurité. Vous rouvrez prêt pour la saison." },
   { q: "Pourquoi vous évitez juillet et août aux Sables-d'Olonne ?", a: "Parce que c'est l'enfer logistique en pleine saison. La ville est saturée, les livraisons coincent, les villas sont occupées ou louées au tarif fort, les hôtels et restaurants tournent à plein. On préfère caler au printemps avant l'ouverture, ou à l'automne après la fermeture. À ces périodes, l'accès est fluide et votre bien est livré propre pour la saison qui arrive." },
   { q: "Vous travaillez en appartement et en copropriété sur le front de mer ?", a: "Oui, régulièrement. Un appartement vue océan, ça demande un travail propre et respectueux des parties communes. On protège l'ascenseur, les paliers et les couloirs, on respecte les horaires du règlement de copropriété, on évacue les déchets au fur et à mesure. Moquette laine pour le confort, PVC durable côté zones humides, tapis sur mesure dans le séjour. Vos voisins ne nous remarquent presque pas." },
-  { q: "Combien de temps tient un sol en bord d'océan ?", a: "Quinze à vingt ans, bien choisi et bien posé. Un PVC effet bois dans une pièce de vie tient facilement vingt ans en usage saisonnier. Un PVC homogène en salle de bains tient quinze ans tranquille. Une moquette laine ou polyamide premium dans une chambre, douze à quinze ans selon l'usage. Notre savoir-faire vient de plus de 25 ans de chantiers atlantiques, on connaît les pièges du bord de mer." },
+  { q: "Combien de temps tient un sol en bord d'océan ?", a: "Quinze à vingt ans, bien choisi et bien posé. Un PVC effet bois dans une pièce de vie tient facilement vingt ans en usage saisonnier. Un PVC homogène en salle de bains tient quinze ans tranquille. Une moquette laine ou polyamide premium dans une chambre, douze à quinze ans selon l'usage. Notre savoir-faire vient de plus de 28 ans de chantiers atlantiques, on connaît les pièges du bord de mer." },
   { q: "Vous pouvez poser en horaires décalés sur un commerce ou un restaurant en activité ?", a: "Oui, c'est même la norme sur ce type de chantier. On organise les interventions le soir, le jour de fermeture ou hors période touristique. On pré-assemble un maximum en atelier à Villedoux, donc la pose sur site va vite. On protège vos rayonnages, votre mobilier et votre salle avant de commencer. Le lendemain, vous rouvrez normalement, sol posé et nettoyé." },
 ]
 
@@ -149,7 +149,7 @@ export default function RevetementSolLesSablesDOlonnePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Le sel et le sable s&apos;invitent partout aux Sables. Choisir la bonne fibre, c&apos;est ce qui fait qu&apos;un sol tient dix ans ou vingt ans. Depuis plus de 25 ans, CB Sols travaille au bord de l&apos;Atlantique, la Vendée littorale parle la même langue. »
+                « Le sel et le sable s&apos;invitent partout aux Sables. Choisir la bonne fibre, c&apos;est ce qui fait qu&apos;un sol tient dix ans ou vingt ans. Depuis plus de 28 ans, CB Sols travaille au bord de l&apos;Atlantique, la Vendée littorale parle la même langue. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -387,7 +387,7 @@ export default function RevetementSolLesSablesDOlonnePage() {
             Votre bien sablais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>en mains expertes.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite hors saison aux Sables-d&apos;Olonne. Devis détaillé sous 48 heures, matières adaptées au bord de mer, finitions soignées. Plus de 25 ans de savoir-faire atlantique au service de la Vendée littorale.
+            Visite hors saison aux Sables-d&apos;Olonne. Devis détaillé sous 48 heures, matières adaptées au bord de mer, finitions soignées. Plus de 28 ans de savoir-faire atlantique au service de la Vendée littorale.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=les-sables-d-olonne-final" variant="primary" size="md">Demander un devis</Button>

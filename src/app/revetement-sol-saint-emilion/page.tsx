@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Store, Waves } from 'lucide-reac
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Saint-Émilion | Châteaux Viticoles Gironde",
-  description: "Pose de moquette, sol PVC et tapis sur mesure pour châteaux viticoles de Saint-Émilion et grands crus du Libournais. Caveaux de réception, salles de dégustation, suites privées. CB Sols, plus de 25 ans d'expérience.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure pour châteaux viticoles de Saint-Émilion et grands crus du Libournais. Caveaux de réception, salles de dégustation, suites privées. CB Sols, plus de 28 ans d'expérience.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-emilion' },
   keywords: ['revêtement sol Saint-Émilion', 'moquette château viticole', 'sol PVC chai dégustation', 'tapis sur mesure Libournais', 'artisan sol Gironde'],
   openGraph: {
     title: "Revêtement de sol à Saint-Émilion, le sol des grands crus",
-    description: "Moquette, sol PVC et tapis sur mesure pour châteaux viticoles à Saint-Émilion et dans le Libournais. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure pour châteaux viticoles à Saint-Émilion et dans le Libournais. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-saint-emilion.jpg', width: 1200, height: 630 }],
   },
@@ -151,7 +151,7 @@ export default function RevetementSolSaintEmilionPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Travailler dans un grand cru, c&apos;est entrer dans une maison où chaque détail compte, du verre à la lumière du caveau. Le sol doit être à la hauteur. C&apos;est exactement ce que CB Sols fait depuis plus de 25 ans. »
+                « Travailler dans un grand cru, c&apos;est entrer dans une maison où chaque détail compte, du verre à la lumière du caveau. Le sol doit être à la hauteur. C&apos;est exactement ce que CB Sols fait depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -391,7 +391,7 @@ export default function RevetementSolSaintEmilionPage() {
             Votre château <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite au domaine, calée sur votre calendrier viticole. Devis détaillé, finitions à la hauteur du grand cru, discrétion garantie. Plus de 25 ans de savoir-faire au service de Saint-Émilion et du Libournais.
+            Visite au domaine, calée sur votre calendrier viticole. Devis détaillé, finitions à la hauteur du grand cru, discrétion garantie. Plus de 28 ans de savoir-faire au service de Saint-Émilion et du Libournais.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=saint-emilion-final" variant="primary" size="md">Demander un devis</Button>

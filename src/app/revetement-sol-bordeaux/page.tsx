@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Store, Waves } from 'lucide-reac
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Bordeaux | Moquette, PVC, Tapis Sur Mesure",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers du Triangle d'Or, échoppes bordelaises, restaurants gastronomiques. CB Sols intervient depuis plus de 25 ans, déplacement depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers du Triangle d'Or, échoppes bordelaises, restaurants gastronomiques. CB Sols intervient depuis plus de 28 ans, déplacement depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-bordeaux' },
   keywords: ['revêtement sol Bordeaux', 'moquette Bordeaux', 'sol PVC Bordeaux', 'pose tapis Bordeaux', 'artisan sol Bordeaux'],
   openGraph: {
     title: "Revêtement de sol à Bordeaux, l'élégance bordelaise",
-    description: "Moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers, échoppes, restaurants gastronomiques. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers, échoppes, restaurants gastronomiques. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-bordeaux.jpg', width: 1200, height: 630 }],
   },
@@ -149,7 +149,7 @@ export default function RevetementSolBordeauxPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Bordeaux, c&apos;est une ville de patrimoine accessible depuis La Rochelle en deux heures. Respecter un parquet ancien d&apos;échoppe ou habiller un salon des Chartrons, c&apos;est exactement le métier que CB Sols fait depuis plus de 25 ans. »
+                « Bordeaux, c&apos;est une ville de patrimoine accessible depuis La Rochelle en deux heures. Respecter un parquet ancien d&apos;échoppe ou habiller un salon des Chartrons, c&apos;est exactement le métier que CB Sols fait depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -389,7 +389,7 @@ export default function RevetementSolBordeauxPage() {
             Votre projet bordelais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Bordeaux. Devis détaillé, finitions premium, respect du patrimoine. Plus de 25 ans de savoir-faire au service des projets d&apos;exception en Gironde.
+            Visite sur place à Bordeaux. Devis détaillé, finitions premium, respect du patrimoine. Plus de 28 ans de savoir-faire au service des projets d&apos;exception en Gironde.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=bordeaux-final" variant="primary" size="md">Demander un devis</Button>

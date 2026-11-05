@@ -8,12 +8,12 @@ import { Building2, Home, Mail, MapPin, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Saint-Jean-de-Luz | Villas Pays Basque",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales sur l'Océan, maisons basques à colombages, hôtels boutique de la baie, restaurants gastronomiques. CB Sols, plus de 25 ans de savoir-faire, déplacement organisé depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales sur l'Océan, maisons basques à colombages, hôtels boutique de la baie, restaurants gastronomiques. CB Sols, plus de 28 ans de savoir-faire, déplacement organisé depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-jean-de-luz' },
   keywords: ['revêtement sol Saint-Jean-de-Luz', 'moquette Pays Basque', 'tapis sur mesure villa basque', 'artisan sol Saint-Jean-de-Luz', 'sol PVC Côte Basque'],
   openGraph: {
     title: "Revêtement de sol à Saint-Jean-de-Luz, l'âme basque",
-    description: "Moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales, maisons basques, hôtels boutique. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales, maisons basques, hôtels boutique. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-saint-jean-de-luz.jpg', width: 1200, height: 630 }],
   },
@@ -148,7 +148,7 @@ export default function RevetementSolSaintJeanDeLuzPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Saint-Jean-de-Luz, c&apos;est une lumière unique, une tradition forte, et des familles qui transmettent leurs villas depuis trois générations. CB Sols accompagne ces projets dans le respect de l&apos;esprit basque, depuis plus de 25 ans. »
+                « Saint-Jean-de-Luz, c&apos;est une lumière unique, une tradition forte, et des familles qui transmettent leurs villas depuis trois générations. CB Sols accompagne ces projets dans le respect de l&apos;esprit basque, depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -376,7 +376,7 @@ export default function RevetementSolSaintJeanDeLuzPage() {
             Votre projet luzien <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Saint-Jean-de-Luz. Devis détaillé, finitions premium, respect de la tradition basque. CB Sols, plus de 25 ans de savoir-faire au service des projets d&apos;exception sur la Côte Basque.
+            Visite sur place à Saint-Jean-de-Luz. Devis détaillé, finitions premium, respect de la tradition basque. CB Sols, plus de 28 ans de savoir-faire au service des projets d&apos;exception sur la Côte Basque.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=saint-jean-de-luz-final" variant="primary" size="md">Demander un devis</Button>

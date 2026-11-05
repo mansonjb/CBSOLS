@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Stethoscope, Store } from 'lucid
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Bressuire | Devis Gratuit sous 48h",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Bressuire. Bureaux et cabinets, commerces du centre-ville, EHPAD et résidences seniors, maisons de bourg à rénover. CB Sols intervient depuis plus de 25 ans, déplacement organisé depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Bressuire. Bureaux et cabinets, commerces du centre-ville, EHPAD et résidences seniors, maisons de bourg à rénover. CB Sols intervient depuis plus de 28 ans, déplacement organisé depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-bressuire' },
   keywords: ['revêtement sol Bressuire', 'moquette Bressuire', 'sol PVC Bressuire', 'pose tapis Bressuire', 'artisan sol Bressuire'],
   openGraph: {
     title: "Revêtement de sol à Bressuire, le sérieux du Bocage",
-    description: "Moquette, sol PVC et tapis sur mesure à Bressuire. Bureaux, commerces, EHPAD, maisons de bourg. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Bressuire. Bureaux, commerces, EHPAD, maisons de bourg. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-bressuire.jpg', width: 1200, height: 630 }],
   },
@@ -39,7 +39,7 @@ const materiaux = [
   { name: "Sols PVC acoustiques Gerflor et Tarkett", desc: "On en pose beaucoup dans les bureaux et les cabinets de Bressuire. La sous-couche absorbe les bruits de pas, vos clients patientent dans le calme. Le choix de couleurs est large, on peut s'aligner sur votre identité. Le sol tient facilement quinze ans, souvent vingt." },
   { name: "Moquette dalles EGE et Forbo", desc: "Le bon choix pour un cabinet ou un bureau de direction. Les dalles font 50×50 cm. Si quelqu'un renverse un café, on remplace juste la dalle abîmée. La sous-couche acoustique adoucit la pièce. Vous tenez quinze à vingt ans en usage tertiaire classique." },
   { name: "Moquette laine vierge tissée", desc: "Pour les salons des maisons de bourg en granit du centre. La laine se patine en vieillissant, elle ne s'écrase pas. Au toucher elle est ferme, à l'œil elle se distingue. On choisit avec vous un uni ou un motif discret pour respecter les boiseries anciennes." },
-  { name: "Sols PVC homogènes pour EHPAD", desc: "Sur les couloirs et les chambres d'EHPAD, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. On soude les lés à chaud, l'eau ne passe nulle part. Vingt à vingt-cinq ans devant vous, même avec un trafic intense." },
+  { name: "Sols PVC homogènes pour EHPAD", desc: "Sur les couloirs et les chambres d'EHPAD, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. On soude les lés à chaud, l'eau ne passe nulle part. Vingt à vingt-huit ans devant vous, même avec un trafic intense." },
   { name: "Sols PVC effet bois pour commerces", desc: "Pour une boutique ou un commerce de centre-ville, le PVC effet bois fait merveille. Le rendu visuel est convaincant, le sol résiste au passage et se nettoie en cinq minutes. On peut même le poser sur un chauffage au sol. La pose est rapide et propre." },
   { name: "Profilés laiton et alu brossé Romus", desc: "Pour les seuils et les nez de marche, on soigne le détail. On coordonne avec votre quincaillerie existante, ce qui compte sur une maison ancienne. Sur les chantiers un peu exigeants, on peut faire fabriquer du sur mesure. C'est le genre de détail qui se remarque à la livraison." },
 ]
@@ -149,7 +149,7 @@ export default function RevetementSolBressuirePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Bressuire et le Bocage, c&apos;est un territoire de travail sérieux. On y vient avec une méthode simple : une visite de mesures, puis une pose groupée. Le déplacement est maîtrisé et le calendrier tenu, comme CB Sols le fait depuis plus de 25 ans. »
+                « Bressuire et le Bocage, c&apos;est un territoire de travail sérieux. On y vient avec une méthode simple : une visite de mesures, puis une pose groupée. Le déplacement est maîtrisé et le calendrier tenu, comme CB Sols le fait depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -387,7 +387,7 @@ export default function RevetementSolBressuirePage() {
             Votre projet bressuirais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Bressuire. Devis détaillé sous 48 heures, finitions soignées, déplacement maîtrisé et calendrier tenu. CB Sols, plus de 25 ans de savoir-faire au service des projets en Deux-Sèvres.
+            Visite sur place à Bressuire. Devis détaillé sous 48 heures, finitions soignées, déplacement maîtrisé et calendrier tenu. CB Sols, plus de 28 ans de savoir-faire au service des projets en Deux-Sèvres.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=bressuire-final" variant="primary" size="md">Demander un devis</Button>

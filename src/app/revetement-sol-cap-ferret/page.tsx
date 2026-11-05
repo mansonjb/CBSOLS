@@ -8,12 +8,12 @@ import { Building2, Mail, MapPin, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol au Cap Ferret | Villas du Bassin",
-  description: "Pose de moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret. Résidences secondaires, terrasses bois, pieds dans le sable. Artisan haut de gamme CB Sols, plus de 25 ans d'expérience.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret. Résidences secondaires, terrasses bois, pieds dans le sable. Artisan haut de gamme CB Sols, plus de 28 ans d'expérience.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-cap-ferret' },
   keywords: ['revêtement sol Cap Ferret', 'moquette villa Cap Ferret', 'sol bord de mer Bassin Arcachon', 'pose tapis cabane Cap Ferret', 'artisan sol Arcachon'],
   openGraph: {
     title: "Revêtement de sol au Cap Ferret, l'art du bord de mer",
-    description: "Moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret et sur le Bassin d'Arcachon. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure pour villas au Cap Ferret et sur le Bassin d'Arcachon. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-cap-ferret.jpg', width: 1200, height: 630 }],
   },
@@ -152,7 +152,7 @@ export default function RevetementSolCapFerretPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Le sable s&apos;invite partout au Cap Ferret. Choisir la bonne fibre, c&apos;est ce qui fait qu&apos;un sol tient dix ans ou vingt ans. Depuis plus de 25 ans, CB Sols travaille au bord de l&apos;Atlantique, et le Bassin parle la même langue. »
+                « Le sable s&apos;invite partout au Cap Ferret. Choisir la bonne fibre, c&apos;est ce qui fait qu&apos;un sol tient dix ans ou vingt ans. Depuis plus de 28 ans, CB Sols travaille au bord de l&apos;Atlantique, et le Bassin parle la même langue. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -392,7 +392,7 @@ export default function RevetementSolCapFerretPage() {
             Votre villa du Cap <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>en mains expertes.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite hors saison au Cap Ferret. Devis détaillé, matières adaptées au bord de mer, finitions soignées. Plus de 25 ans de savoir-faire atlantique au service du Bassin d&apos;Arcachon.
+            Visite hors saison au Cap Ferret. Devis détaillé, matières adaptées au bord de mer, finitions soignées. Plus de 28 ans de savoir-faire atlantique au service du Bassin d&apos;Arcachon.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=cap-ferret-final" variant="primary" size="md">Demander un devis</Button>

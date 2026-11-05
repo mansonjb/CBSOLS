@@ -8,12 +8,12 @@ import { Building2, Mail, MapPin, Sparkles, Store, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Biarritz | Villas Côte Basque",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Biarritz et sur la Côte Basque. Villas Belle Époque, résidences contemporaines, hôtels Relais & Châteaux. CB Sols, plus de 25 ans de savoir-faire, déplacement depuis La Rochelle.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Biarritz et sur la Côte Basque. Villas Belle Époque, résidences contemporaines, hôtels Relais & Châteaux. CB Sols, plus de 28 ans de savoir-faire, déplacement depuis La Rochelle.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-biarritz' },
   keywords: ['revêtement sol Biarritz', 'moquette villa Biarritz', 'sol Côte Basque', 'pose tapis Biarritz', 'artisan sol Biarritz'],
   openGraph: {
     title: "Revêtement de sol à Biarritz, l'élégance basque",
-    description: "Moquette, sol PVC et tapis sur mesure à Biarritz. Villas Belle Époque front de mer, résidences contemporaines, hôtels d'exception. CB Sols, plus de 25 ans.",
+    description: "Moquette, sol PVC et tapis sur mesure à Biarritz. Villas Belle Époque front de mer, résidences contemporaines, hôtels d'exception. CB Sols, plus de 28 ans.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-biarritz.jpg', width: 1200, height: 630 }],
   },
@@ -147,7 +147,7 @@ export default function RevetementSolBiarritzPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Projets de prestige</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Biarritz, c&apos;est l&apos;exigence Belle Époque face à l&apos;océan. Une villa de la Côte des Basques ou une suite de Relais & Châteaux, c&apos;est le même soin du détail que CB Sols apporte depuis plus de 25 ans. »
+                « Biarritz, c&apos;est l&apos;exigence Belle Époque face à l&apos;océan. Une villa de la Côte des Basques ou une suite de Relais & Châteaux, c&apos;est le même soin du détail que CB Sols apporte depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, gérant de CB Sols</div>
             </div>
@@ -237,7 +237,7 @@ export default function RevetementSolBiarritzPage() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ borderLeft: '3px solid var(--terra)', paddingLeft: '2rem' }}>
             <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 'clamp(1.2rem, 2.2vw, 1.6rem)', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1.5rem' }}>
-              « Une villa Belle Époque face à l&apos;océan, c&apos;est un parquet à respecter, une lumière à comprendre, un sel marin à anticiper. Trois métiers qu&apos;on fait depuis plus de 25 ans. »
+              « Une villa Belle Époque face à l&apos;océan, c&apos;est un parquet à respecter, une lumière à comprendre, un sel marin à anticiper. Trois métiers qu&apos;on fait depuis plus de 28 ans. »
             </p>
             <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>Valentin Prévoteau, gérant de CB Sols</div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -375,7 +375,7 @@ export default function RevetementSolBiarritzPage() {
             Votre projet biarrot <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Biarritz. Devis détaillé, finitions premium, respect du patrimoine basque et de la lumière atlantique. Plus de 25 ans de savoir-faire CB Sols au service de la Côte Basque.
+            Visite sur place à Biarritz. Devis détaillé, finitions premium, respect du patrimoine basque et de la lumière atlantique. Plus de 28 ans de savoir-faire CB Sols au service de la Côte Basque.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=biarritz-final" variant="primary" size="md">Demander un devis</Button>

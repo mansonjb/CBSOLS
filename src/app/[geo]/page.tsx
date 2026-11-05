@@ -187,7 +187,7 @@ export default async function GeoPage({ params }: Props) {
             </h1>
 
             <p style={{ fontSize: '1rem', color: 'var(--cream-muted)', maxWidth: '680px', lineHeight: 1.7, marginBottom: '2.5rem' }}>
-              CB Sols, artisan spécialiste depuis 1999, intervient pour {service.ctaLabel} à {city.name} et {zoneWithPrep(city.zone, 'dans').replace(/^dans /, 'dans toute ')}.
+              CB Sols, artisan spécialiste depuis 1998, intervient pour {service.ctaLabel} à {city.name} et {zoneWithPrep(city.zone, 'dans').replace(/^dans /, 'dans toute ')}.
               {' '}{service.longDescription.split('.')[0]}. Devis gratuit sous 48 h.
             </p>
 

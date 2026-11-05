@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cityData) return {}
   return {
     title: `Revêtement de Sol ${cityData.name}, Artisan Certifié`,
-    description: `Pose de revêtement de sol à ${cityData.name} par CB Sols. Spécialiste moquette, sol PVC et tapis depuis 1999. Devis gratuit, intervention rapide en ${cityZoneLabels[cityData.zone]}.`,
+    description: `Pose de revêtement de sol à ${cityData.name} par CB Sols. Spécialiste moquette, sol PVC et tapis depuis 1998. Devis gratuit, intervention rapide en ${cityZoneLabels[cityData.zone]}.`,
     alternates: { canonical: `https://cbsols.fr/revetement-sol-${city}` },
   }
 }
@@ -50,7 +50,7 @@ export default async function CityHubPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: `Revêtement de Sol ${cityData.name}`,
-    description: `Pose de moquette, sol PVC, tapis sur mesure à ${cityData.name} par CB Sols, artisan spécialiste depuis 1999.`,
+    description: `Pose de moquette, sol PVC, tapis sur mesure à ${cityData.name} par CB Sols, artisan spécialiste depuis 1998.`,
     serviceType: 'Revêtement de sol',
     areaServed: {
       '@type': 'City',
@@ -152,7 +152,7 @@ export default async function CityHubPage({ params }: Props) {
             </h1>
 
             <p style={{ fontSize: '1.05rem', color: 'var(--cream-muted)', maxWidth: '600px', lineHeight: 1.7, marginBottom: '2.5rem' }}>
-              {zoneContent.tagline} Moquette, sol PVC, tapis sur mesure posés par un artisan spécialiste depuis 1999. Devis gratuit sous 48 h à {cityData.name}.
+              {zoneContent.tagline} Moquette, sol PVC, tapis sur mesure posés par un artisan spécialiste depuis 1998. Devis gratuit sous 48 h à {cityData.name}.
             </p>
 
             {/* Stats strip */}

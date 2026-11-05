@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
   title: 'Moquette Château et Manoir | Tapis Sur Mesure Patrimoine',
-  description: "Pose de moquette et tapis sur mesure en château, manoir et hôtel particulier. Respect du patrimoine et validation ABF. CB Sols accompagne propriétaires et hôteliers de prestige depuis plus de 25 ans.",
+  description: "Pose de moquette et tapis sur mesure en château, manoir et hôtel particulier. Respect du patrimoine et validation ABF. CB Sols accompagne propriétaires et hôteliers de prestige depuis plus de 28 ans.",
   alternates: { canonical: 'https://cbsols.fr/moquette-chateau' },
   openGraph: {
     title: 'Moquette Château et Manoir | Tapis Sur Mesure Patrimoine',
@@ -61,7 +61,7 @@ const marques = [
   { name: 'Ulster Carpets', detail: "Tissages irlandais haut de gamme pour grandes demeures. Plus de vingt ans de tenue en usage normal." },
   { name: 'Tisca Tiara', detail: "Manufacture suisse, gammes contract et résidentielles. Les finitions douces s'accordent avec les boiseries anciennes sans contraste agressif." },
   { name: 'Axminster Carpets', detail: "Tissage à motifs au mètre, idéal pour reconstitutions de pièces d'apparat. Tradition anglaise depuis 1755." },
-  { name: 'Wilton Carpets', detail: "Velours bouclé dense, durée de vie 15 à 25 ans, adaptable en moquette contract ou en tapis sur mesure." },
+  { name: 'Wilton Carpets', detail: "Velours bouclé dense, durée de vie 15 à 28 ans, adaptable en moquette contract ou en tapis sur mesure." },
   { name: 'Ateliers Aubusson et Savonnerie', detail: "Tisseurs partenaires pour la reproduction de motifs historiques sur mesure, validation cartonniers avec le conservateur." },
   { name: 'Hereke turc', detail: "Alternative qualitative pour grandes surfaces, délais souvent plus courts, motifs orientaux ou occidentaux sur commande." },
 ]

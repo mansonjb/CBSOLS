@@ -44,7 +44,7 @@ export const services: Service[] = [
     geoVerb: 'Pose de moquette à',
     metaTitle: (city) => `Pose de Moquette ${city} | Devis Gratuit sous 48h`,
     metaDescription: (city) =>
-      `Pose de moquette professionnelle à ${city} et environs. CB Sols : artisan spécialiste depuis plus de 25 ans, devis gratuit. Hôtels, bureaux, particuliers.`,
+      `Pose de moquette professionnelle à ${city} et environs. CB Sols : artisan spécialiste depuis plus de 28 ans, devis gratuit. Hôtels, bureaux, particuliers.`,
     h1: (city) => `Pose de Moquette à ${city}`,
   },
   {
@@ -187,7 +187,7 @@ export const services: Service[] = [
     icon: '⬛',
     description: 'Expertise complète en revêtement de sol : conseil, fourniture, pose et entretien. Particuliers et professionnels.',
     longDescription:
-      "Depuis plus de 25 ans, CB Sols accompagne particuliers et professionnels de Charente-Maritime dans tous leurs projets de revêtement de sol. De la sélection des matériaux en showroom jusqu'à la pose et l'entretien, CB Sols est votre interlocuteur unique pour un projet réussi de A à Z.",
+      "Depuis plus de 28 ans, CB Sols accompagne particuliers et professionnels de Charente-Maritime dans tous leurs projets de revêtement de sol. De la sélection des matériaux en showroom jusqu'à la pose et l'entretien, CB Sols est votre interlocuteur unique pour un projet réussi de A à Z.",
     benefits: [
       'Interlocuteur unique de A à Z',
       'Showroom avec 500+ échantillons',
@@ -200,7 +200,7 @@ export const services: Service[] = [
     geoVerb: 'Revêtement de sol à',
     metaTitle: (city) => `Revêtement de Sol ${city} | Devis Gratuit sous 48h`,
     metaDescription: (city) =>
-      `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis plus de 25 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
+      `Pose de revêtement de sol à ${city} par CB Sols. Spécialiste depuis plus de 28 ans en Charente-Maritime : moquette, PVC, tapis. Devis gratuit, intervention rapide.`,
     h1: (city) => `Revêtement de Sol à ${city}`,
   },
   {

@@ -20,7 +20,7 @@ interface DevisBannerProps {
  */
 export function DevisBanner({
   title = 'Un projet de sol chez vous ?',
-  subtitle = 'Devis gratuit et sans engagement, réponse rapide. Plus de 25 ans de savoir-faire près de La Rochelle.',
+  subtitle = 'Devis gratuit et sans engagement, réponse rapide. Plus de 28 ans de savoir-faire près de La Rochelle.',
   ctaLabel = 'Demander un devis',
   ctaHref = '/devis-revetement-sol',
 }: DevisBannerProps) {

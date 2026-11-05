@@ -1,6 +1,6 @@
-// Auto-calcul de l'expérience : années depuis août 1999, incrémenté chaque août
+// Auto-calcul de l'expérience : années depuis août 1998, incrémenté chaque août
 function computeExperience(): number {
-  const founded = new Date(1999, 7, 1) // août = mois 7 (0-indexed)
+  const founded = new Date(1998, 7, 1) // août = mois 7 (0-indexed)
   const now = new Date()
   let years = now.getFullYear() - founded.getFullYear()
   if (now.getMonth() < founded.getMonth()) years -= 1
@@ -12,7 +12,7 @@ const yearsOfExperience = computeExperience()
 export const company = {
   name: 'CB Sols',
   legalName: 'CB SOLS REVÊTEMENTS',
-  tagline: `Artisan solier moquettiste depuis plus de 25 ans`,
+  tagline: `Artisan solier moquettiste depuis plus de 28 ans`,
   description:
     'Spécialiste des revêtements de sol sur mesure en Charente-Maritime. Moquettes, sols PVC, tapis : posés par des artisans qualifiés pour particuliers et professionnels.',
   phone: '06 85 05 28 80',
@@ -30,9 +30,9 @@ export const company = {
     lng: -1.0923,
   },
   contact: 'Valentin Prévoteau',
-  since: 1999,
+  since: 1998,
   yearsOfExperience,
-  experience: `plus de 25 ans`,
+  experience: `plus de 28 ans`,
   showroom: {
     description: 'Showroom sur rendez-vous : espace confidentiel avec plus de 500 échantillons',
     appointment: true,

@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Store } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Thouars | Devis Gratuit sous 48h",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Thouars. Maisons de caractère, commerces, cabinets, collectivités, EHPAD. CB Sols intervient depuis plus de 25 ans avec un déplacement maîtrisé : visite de mesures puis pose groupée depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Thouars. Maisons de caractère, commerces, cabinets, collectivités, EHPAD. CB Sols intervient depuis plus de 28 ans avec un déplacement maîtrisé : visite de mesures puis pose groupée depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-thouars' },
   keywords: ['revêtement sol Thouars', 'moquette Thouars', 'sol PVC Thouars', 'pose tapis Thouars', 'artisan sol Thouars'],
   openGraph: {
     title: "Revêtement de sol à Thouars, le soin du patrimoine",
-    description: "Moquette, sol PVC et tapis sur mesure à Thouars. Ville d'art et d'histoire, maisons de caractère, commerces, collectivités, EHPAD. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Thouars. Ville d'art et d'histoire, maisons de caractère, commerces, collectivités, EHPAD. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-thouars.jpg', width: 1200, height: 630 }],
   },
@@ -39,7 +39,7 @@ const materiaux = [
   { name: "Moquette laine vierge tissée", desc: "Pour les salons des maisons de caractère de Thouars. La laine se patine en vieillissant, elle ne s'écrase pas. Au toucher elle est ferme, à l'œil elle se distingue. On choisit avec vous un uni ou un motif discret pour respecter la pierre et les boiseries d'origine." },
   { name: "Tapis sur mesure pour sols anciens", desc: "Quand vous voulez habiller un plancher ancien sans le masquer, le tapis sur mesure fait le travail. Laine vierge, bordure cousue main, dimensions au centimètre près. On peut rester sur un uni sobre ou reproduire un motif discret. Compter huit à quatorze semaines." },
   { name: "Sols PVC acoustiques Gerflor et Tarkett", desc: "On en pose dans les cabinets et les collectivités de Thouars. La sous-couche absorbe les bruits de pas, l'accueil se fait dans le calme. Le choix de couleurs est large, on peut s'aligner sur votre identité. Le sol tient facilement quinze ans, souvent vingt." },
-  { name: "Sols PVC homogènes pour EHPAD", desc: "Sur les couloirs et les chambres d'EHPAD, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. On soude les lés à chaud, l'eau ne passe nulle part. Vingt à vingt-cinq ans devant vous, même avec un trafic intense." },
+  { name: "Sols PVC homogènes pour EHPAD", desc: "Sur les couloirs et les chambres d'EHPAD, on part sur du PVC homogène. C'est le même matériau de haut en bas, donc pas de couche d'usure à percer. On soude les lés à chaud, l'eau ne passe nulle part. Vingt à vingt-huit ans devant vous, même avec un trafic intense." },
   { name: "Sols PVC effet bois pour commerces", desc: "Pour une boutique ou un commerce, le PVC effet bois fait merveille. Le rendu visuel est convaincant, le sol résiste au passage et se nettoie en cinq minutes. Posé en réversible, il convient au bâti ancien. On peut même le poser sur un chauffage au sol." },
   { name: "Profilés laiton et alu brossé Romus", desc: "Pour les seuils et les nez de marche, on soigne le détail. On coordonne avec votre quincaillerie existante, ce qui compte sur une maison de caractère. Sur les chantiers un peu exigeants, on peut faire fabriquer du sur mesure. C'est le genre de détail qui se remarque à la livraison." },
 ]
@@ -149,7 +149,7 @@ export default function RevetementSolThouarsPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Thouars est à deux heures, mais ça ne nous arrête pas. On organise : une visite pour tout caler, puis une pose groupée d&apos;une traite. C&apos;est cette méthode qui permet à CB Sols d&apos;intervenir loin, sérieusement, depuis plus de 25 ans. »
+                « Thouars est à deux heures, mais ça ne nous arrête pas. On organise : une visite pour tout caler, puis une pose groupée d&apos;une traite. C&apos;est cette méthode qui permet à CB Sols d&apos;intervenir loin, sérieusement, depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -387,7 +387,7 @@ export default function RevetementSolThouarsPage() {
             Votre projet thouarsais <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Thouars. Devis détaillé sous 48 heures, finitions soignées, pose groupée et déplacement maîtrisé. CB Sols, plus de 25 ans de savoir-faire au service des projets en Deux-Sèvres.
+            Visite sur place à Thouars. Devis détaillé sous 48 heures, finitions soignées, pose groupée et déplacement maîtrisé. CB Sols, plus de 28 ans de savoir-faire au service des projets en Deux-Sèvres.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=thouars-final" variant="primary" size="md">Demander un devis</Button>

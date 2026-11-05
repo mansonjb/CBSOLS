@@ -11,13 +11,13 @@ import { Building2, Hammer, Home, Image as ImageIcon, Mail, Store } from 'lucide
 export const metadata: Metadata = {
   title: 'Devis Revêtement de Sol Gratuit | Réponse sous 48h',
   description:
-    'Demandez votre devis revêtement de sol gratuit et sans engagement : moquette, sol PVC, tapis sur mesure. Réponse sous 48h en Charente-Maritime. CB Sols, plus de 25 ans d\'expérience.',
+    'Demandez votre devis revêtement de sol gratuit et sans engagement : moquette, sol PVC, tapis sur mesure. Réponse sous 48h en Charente-Maritime. CB Sols, plus de 28 ans d\'expérience.',
   alternates: { canonical: 'https://cbsols.fr/devis-revetement-sol' },
   keywords: ['devis revêtement de sol', 'devis sol gratuit', 'devis moquette', 'devis sol PVC', 'devis tapis sur mesure', 'chiffrage revêtement sol Charente-Maritime'],
   openGraph: {
     title: 'Devis revêtement de sol gratuit, réponse sous 48h',
     description:
-      'Moquette, sol PVC, tapis sur mesure : demandez votre devis gratuit et sans engagement en Charente-Maritime. CB Sols, plus de 25 ans d\'expérience, réponse sous 48h.',
+      'Moquette, sol PVC, tapis sur mesure : demandez votre devis gratuit et sans engagement en Charente-Maritime. CB Sols, plus de 28 ans d\'expérience, réponse sous 48h.',
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/devis-revetement-sol.jpg', width: 1200, height: 630 }],
   },
@@ -202,7 +202,7 @@ export default function DevisRevetementSolPage() {
             Un sol, ça ne se chiffre pas sérieusement par téléphone en trente secondes. Le prix dépend de la surface réelle, de l&apos;état du support, du matériau choisi et des finitions. C&apos;est pour ça qu&apos;on prend le temps de bien comprendre votre projet avant d&apos;avancer le moindre montant. Vous recevez un devis ligne par ligne, où vous voyez exactement ce que vous payez : la fourniture, la préparation du support, la pose, les finitions.
           </p>
           <p style={{ fontSize: '1rem', color: 'var(--muted)', lineHeight: 1.8, margin: 0 }}>
-            Depuis plus de 25 ans, CB Sols pose des sols en Charente-Maritime, du particulier qui refait son salon à l&apos;hôtelier qui rénove ses chambres. Cette expérience, c&apos;est ce qui nous permet de vous dire d&apos;emblée ce qui est faisable, ce qui tiendra dans le temps, et à quel prix. Pas de mauvaise surprise en cours de chantier.
+            Depuis plus de 28 ans, CB Sols pose des sols en Charente-Maritime, du particulier qui refait son salon à l&apos;hôtelier qui rénove ses chambres. Cette expérience, c&apos;est ce qui nous permet de vous dire d&apos;emblée ce qui est faisable, ce qui tiendra dans le temps, et à quel prix. Pas de mauvaise surprise en cours de chantier.
           </p>
         </div>
       </section>
@@ -279,7 +279,7 @@ export default function DevisRevetementSolPage() {
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem', textAlign: 'center' }}>
             {[
-              { big: 'Plus de 25 ans', small: "d'expérience" },
+              { big: 'Plus de 28 ans', small: "d'expérience" },
               { big: '41 avis Google', small: 'de clients satisfaits' },
               { big: 'Assurance décennale', small: 'sur tous nos travaux' },
             ].map((t, i) => (

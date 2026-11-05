@@ -8,12 +8,12 @@ import { Building2, Castle, Home, Mail, MapPin, Store } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Parthenay | Devis Gratuit sous 48h",
-  description: "Pose de moquette, sol PVC et tapis sur mesure à Parthenay. Maisons anciennes du centre médiéval, commerces, cabinets, collectivités. CB Sols intervient depuis plus de 25 ans avec une vraie prudence sur les supports anciens, déplacement depuis Villedoux.",
+  description: "Pose de moquette, sol PVC et tapis sur mesure à Parthenay. Maisons anciennes du centre médiéval, commerces, cabinets, collectivités. CB Sols intervient depuis plus de 28 ans avec une vraie prudence sur les supports anciens, déplacement depuis Villedoux.",
   alternates: { canonical: 'https://cbsols.fr/revetement-sol-parthenay' },
   keywords: ['revêtement sol Parthenay', 'moquette Parthenay', 'sol PVC Parthenay', 'pose tapis Parthenay', 'artisan sol Parthenay'],
   openGraph: {
     title: "Revêtement de sol à Parthenay, le respect du bâti ancien",
-    description: "Moquette, sol PVC et tapis sur mesure à Parthenay. Cité médiévale, maisons anciennes, commerces, collectivités. CB Sols, plus de 25 ans de savoir-faire.",
+    description: "Moquette, sol PVC et tapis sur mesure à Parthenay. Cité médiévale, maisons anciennes, commerces, collectivités. CB Sols, plus de 28 ans de savoir-faire.",
     type: 'website',
     images: [{ url: 'https://cbsols.fr/og/revetement-sol-parthenay.jpg', width: 1200, height: 630 }],
   },
@@ -149,7 +149,7 @@ export default function RevetementSolParthenayPage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Nous nous déplaçons</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Une maison du centre médiéval de Parthenay, ça ne se traite pas comme un sol neuf. On sonde le support, on pose en réversible, on respecte ce que le bâti a déjà traversé. C&apos;est le métier que CB Sols fait depuis plus de 25 ans. »
+                « Une maison du centre médiéval de Parthenay, ça ne se traite pas comme un sol neuf. On sonde le support, on pose en réversible, on respecte ce que le bâti a déjà traversé. C&apos;est le métier que CB Sols fait depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, CB Sols</div>
             </div>
@@ -387,7 +387,7 @@ export default function RevetementSolParthenayPage() {
             Votre projet parthenaisien <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>entre les bonnes mains.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite sur place à Parthenay. Devis détaillé sous 48 heures, finitions soignées, pose réversible et respect du bâti ancien. CB Sols, plus de 25 ans de savoir-faire au service des projets en Deux-Sèvres.
+            Visite sur place à Parthenay. Devis détaillé sous 48 heures, finitions soignées, pose réversible et respect du bâti ancien. CB Sols, plus de 28 ans de savoir-faire au service des projets en Deux-Sèvres.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=parthenay-final" variant="primary" size="md">Demander un devis</Button>

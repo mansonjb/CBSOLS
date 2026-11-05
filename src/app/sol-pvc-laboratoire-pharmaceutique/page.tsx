@@ -8,7 +8,7 @@ import { Baby, Building2, GraduationCap, Mail, Pill, Stethoscope, Store } from '
 
 export const metadata: Metadata = {
   title: "Sol PVC Laboratoire Pharmaceutique | Pose Labo, Pharmacie, Cosmétique",
-  description: "Pose de sol PVC pour laboratoires pharmaceutiques, labos d'analyse, pharmacies d'officine, laboratoires cosmétique. Finition continue sans joints, rigueur du chantier, validé par les audits qualité. CB Sols, plus de 25 ans de savoir-faire.",
+  description: "Pose de sol PVC pour laboratoires pharmaceutiques, labos d'analyse, pharmacies d'officine, laboratoires cosmétique. Finition continue sans joints, rigueur du chantier, validé par les audits qualité. CB Sols, plus de 28 ans de savoir-faire.",
   alternates: { canonical: 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique' },
   keywords: ['sol PVC laboratoire', 'sol pharmacie', 'sol labo cosmétique', 'revêtement labo analyse', 'sol pharmaceutique'],
   openGraph: {
@@ -137,7 +137,7 @@ export default function SolPvcLaboratoirePharmaceutiquePage() {
                 <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>rigueur et finition.</em>
               </h1>
               <p style={{ fontSize: '1rem', color: 'var(--muted)', maxWidth: '560px', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Pose de sol PVC professionnel pour laboratoires pharmaceutique, cosmétique, d&apos;analyse, et pour pharmacies d&apos;officine. Finition continue en lés grande largeur soudés, plinthes à gorge, documentation qualité fournie. CB Sols intervient depuis plus de 25 ans, atelier à Villedoux près de La Rochelle.
+                Pose de sol PVC professionnel pour laboratoires pharmaceutique, cosmétique, d&apos;analyse, et pour pharmacies d&apos;officine. Finition continue en lés grande largeur soudés, plinthes à gorge, documentation qualité fournie. CB Sols intervient depuis plus de 28 ans, atelier à Villedoux près de La Rochelle.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Button href="/contact?from=sol-pvc-laboratoire-pharmaceutique" variant="primary" size="md">Demander un devis</Button>
@@ -147,7 +147,7 @@ export default function SolPvcLaboratoirePharmaceutiquePage() {
             <div style={{ padding: '2.5rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px' }}>
               <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem' }}>Documentation qualité</div>
               <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.4rem', color: 'var(--dark)', lineHeight: 1.5, margin: '0 0 1rem' }}>
-                « Un sol de labo, c&apos;est d&apos;abord une finition impeccable et un dossier qualité solide. On pose en grandes largeurs, on soude propre, et on remet la traçabilité complète. CB Sols fait ça depuis plus de 25 ans. »
+                « Un sol de labo, c&apos;est d&apos;abord une finition impeccable et un dossier qualité solide. On pose en grandes largeurs, on soude propre, et on remet la traçabilité complète. CB Sols fait ça depuis plus de 28 ans. »
               </p>
               <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>Valentin Prévoteau, gérant de CB Sols</div>
             </div>
@@ -386,7 +386,7 @@ export default function SolPvcLaboratoirePharmaceutiquePage() {
             Votre laboratoire rénové <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra-on-dark)' }}>dans les règles.</em>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(248, 245, 238, 0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: 1.75 }}>
-            Visite technique sur site. Devis détaillé, finition continue en grands lés soudés, plinthes à gorge, dossier qualité fourni. Plus de 25 ans de savoir-faire CB Sols pour les laboratoires et pharmacies.
+            Visite technique sur site. Devis détaillé, finition continue en grands lés soudés, plinthes à gorge, dossier qualité fourni. Plus de 28 ans de savoir-faire CB Sols pour les laboratoires et pharmacies.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Button href="/contact?from=sol-pvc-laboratoire-pharmaceutique-final" variant="primary" size="md">Demander un devis</Button>
