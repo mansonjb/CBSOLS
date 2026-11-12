@@ -96,11 +96,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         description: 'Artisan revêtement de sol — La Rochelle, Île de Ré, Charente-Maritime',
         inLanguage: 'fr-FR',
         publisher: { '@id': 'https://cbsols.fr/#organization' },
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: { '@type': 'EntryPoint', urlTemplate: 'https://cbsols.fr/recherche?q={search_term_string}' },
-          'query-input': 'required name=search_term_string',
-        },
       },
       {
         '@type': 'Organization',

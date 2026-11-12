@@ -41,6 +41,31 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // ─── Anciennes URLs WordPress encore crawlées en 404 (GSC nov 2026) → pages canoniques ───
+      { source: '/moquettes', destination: '/services/pose-moquette', permanent: true },
+      { source: '/moquettes/', destination: '/services/pose-moquette', permanent: true },
+      { source: '/category/moquettes', destination: '/services/pose-moquette', permanent: true },
+      { source: '/category/moquettes/', destination: '/services/pose-moquette', permanent: true },
+      { source: '/tapis-decoratifs', destination: '/services/tapis-sur-mesure', permanent: true },
+      { source: '/tapis-decoratifs/', destination: '/services/tapis-sur-mesure', permanent: true },
+      { source: '/category/tapis-decoratif', destination: '/services/tapis-sur-mesure', permanent: true },
+      { source: '/category/tapis-decoratif/', destination: '/services/tapis-sur-mesure', permanent: true },
+      { source: '/tapis-de-proprete', destination: '/services/tapis-de-proprete', permanent: true },
+      { source: '/tapis-de-proprete/', destination: '/services/tapis-de-proprete', permanent: true },
+      { source: '/category/tapis-de-proprete', destination: '/services/tapis-de-proprete', permanent: true },
+      { source: '/category/tapis-de-proprete/', destination: '/services/tapis-de-proprete', permanent: true },
+      { source: '/portfolio', destination: '/realisations', permanent: true },
+      { source: '/portfolio/', destination: '/realisations', permanent: true },
+      { source: '/showroom-moquette-la-rochelle', destination: '/showroom', permanent: true },
+      { source: '/showroom-moquette-la-rochelle/', destination: '/showroom', permanent: true },
+      { source: '/douches-integrales-pvc', destination: '/services/sol-pvc-les', permanent: true },
+      { source: '/douches-integrales-pvc/', destination: '/services/sol-pvc-les', permanent: true },
+      { source: '/amphitheatre-en-pvc', destination: '/services/sol-pvc-les', permanent: true },
+      { source: '/amphitheatre-en-pvc/', destination: '/services/sol-pvc-les', permanent: true },
+      { source: '/sols-de-bureau-cabinet-comptable', destination: '/solutions/moquette-bureau', permanent: true },
+      { source: '/sols-de-bureau-cabinet-comptable/', destination: '/solutions/moquette-bureau', permanent: true },
+      { source: '/guides', destination: '/guide', permanent: true },
+      { source: '/guides/', destination: '/guide', permanent: true },
       // Slug historique avec accent → normalisé ASCII
       {
         source: '/revetement-sol-aytré',

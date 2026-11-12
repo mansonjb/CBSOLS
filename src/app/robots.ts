@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/admin', '/admin/'],
+        disallow: ['/admin', '/admin/', '/wp-admin', '/wp-content', '/wp-includes', '/wp-json'],
       },
     ],
     sitemap: 'https://cbsols.fr/sitemap.xml',
