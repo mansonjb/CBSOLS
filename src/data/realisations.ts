@@ -34,6 +34,35 @@ export interface Realisation {
 
 export const realisations: Realisation[] = [
   {
+    slug: 'salle-conference-grand-groupe-assurance',
+    title: 'Salle de conférence, grand groupe d\'assurance',
+    description: "Dalles de moquette acoustiques dans la salle de conférence en gradins d'un grand groupe d'assurance, et lames PVC plombantes dans la cuisine. Acoustique maîtrisée et maintenance facilitée.",
+    image: '/images/projects/salle-conference-assurance.webp',
+    date: '2026-11-13',
+    year: '2026',
+    sector: 'Tertiaire',
+    location: 'Nouvelle-Aquitaine',
+    client: 'Grand groupe d\'assurance',
+    type: 'Dalles de moquette acoustiques & lames PVC plombantes',
+    surface: '≈ 400 m² de dalles de moquette',
+    body: [
+      "Nous sommes intervenus dans la salle de conférence d'un grand groupe d'assurance pour reprendre entièrement le sol d'un amphithéâtre interne : une grande salle en gradins, habillée de bois, où se tiennent réunions de direction, assemblées et présentations tout au long de l'année. Un lieu de parole, donc, où le sol ne se choisit pas seulement pour son aspect, mais d'abord pour ce qu'il fait au son et pour la facilité avec laquelle on l'entretient dans la durée.",
+      "Le choix s'est porté sur des dalles de moquette, et ce n'est pas un hasard. Dans une salle de conférence, l'intelligibilité de la parole prime sur tout le reste. Un sol textile absorbe les bruits de pas et d'impact, limite la réverbération et adoucit l'ambiance sonore d'une salle où l'on écoute un orateur, souvent au micro. Là où un sol dur renvoie et fatigue, la moquette feutre et clarifie. C'est l'acoustique qui a guidé la préconisation, avant même l'esthétique.",
+      "La dalle s'est imposée pour une seconde raison, tout aussi concrète : la maintenance. Une salle de ce type encaisse un trafic dense, des fauteuils sur roulettes, des passages répétés dans les circulations et sur les gradins. Avec des dalles, une zone qui marque ou s'abîme devant un rang se remplace localement, sans refaire les centaines de mètres carrés de l'ensemble. En conservant un stock de dalles de la même série, la teinte reste raccord et l'intervention se fait en quelques heures, sans immobiliser la salle. Pour un service généraux, c'est un coût global maîtrisé sur dix ans, pas seulement un sol le jour de la pose.",
+      "Le calepinage a été soigné pour accompagner la géométrie courbe des gradins : raccords du motif chiné bleu-gris, pose au plus juste contre les habillages bois, et reprise des marches avec des nez de marche aluminium antidérapants. Ces nez de marche assurent la sécurité et la lisibilité des ressauts, un point d'attention systématique dans un établissement recevant du public où l'accessibilité et la prévention des chutes ne se négocient pas.",
+      "Dans la cuisine attenante, l'exigence n'était plus acoustique mais hydrique. Nous y avons posé des lames PVC plombantes à l'aspect bois : un revêtement résilient qui résiste à l'eau et aux salissures, se nettoie vite et se pose sans colle. L'atout des lames plombantes est double, une mise en œuvre rapide en site occupé et, là encore, un remplacement localisé possible lame par lame en cas de choc ou de tache. Un même chantier, deux usages, deux revêtements choisis chacun pour la contrainte réelle de sa pièce.",
+      "Cette réalisation résume la méthode de CB Sols pour les sièges, directions et espaces tertiaires : écouter l'usage réel d'une pièce avant de dérouler un produit, traiter l'acoustique et la maintenance comme des critères de premier plan, et intervenir proprement en site occupé sans perturber l'activité. Un savoir-faire que nous mettons au service des grands comptes comme des PME de toute la Nouvelle-Aquitaine.",
+    ],
+    gallery: [
+      { src: '/images/projects/salle-conference-grand-groupe-assurance/01.jpg', caption: "Vue d'ensemble de la salle de conférence en gradins, dalles de moquette acoustiques" },
+      { src: '/images/projects/salle-conference-grand-groupe-assurance/02.jpg', caption: 'Rangs de fauteuils et circulation, moquette en dalles bleu-gris chinée' },
+      { src: '/images/projects/salle-conference-grand-groupe-assurance/03.jpg', caption: 'Gradins et marches avec nez de marche aluminium antidérapants' },
+      { src: '/images/projects/salle-conference-grand-groupe-assurance/04.jpg', caption: 'Fauteuil sur roulettes sur la moquette en dalles, tenue au trafic intensif' },
+      { src: '/images/projects/salle-conference-grand-groupe-assurance/05.jpg', caption: 'Transition entre la moquette de la salle et les lames PVC aspect bois' },
+      { src: '/images/projects/salle-conference-grand-groupe-assurance/06.jpg', caption: 'Détail de la matière : moquette contract chinée pour le confort acoustique' },
+    ],
+  },
+  {
     slug: 'tapis-sur-mesure-hotel-la-baronnie',
     title: 'Tapis sur mesure, Hôtel La Baronnie',
     description: "Confection d'un tapis sur mesure pour l'hôtel La Baronnie, au cœur de Saint-Martin-de-Ré.",
