@@ -34,6 +34,34 @@ export interface Realisation {
 
 export const realisations: Realisation[] = [
   {
+    slug: 'amenagement-bureaux-dalles-moquette-la-rochelle',
+    title: 'Aménagement de bureaux, 422 m² à La Rochelle',
+    description: "Aménagement complet d'un plateau de bureaux à La Rochelle : 21 bureaux et un coin attente en dalles de moquette, sanitaires, douche et espace convivialité en lames PVC. 422 m² au total.",
+    image: '/images/projects/amenagement-bureaux-la-rochelle.webp',
+    date: '2026-11-13',
+    year: '2026',
+    sector: 'Tertiaire',
+    location: 'La Rochelle',
+    type: 'Dalles de moquette & lames PVC, plateau de bureaux',
+    surface: '422 m²',
+    body: [
+      "Nous avons réalisé l'habillage complet des sols d'un nouveau plateau de bureaux en plein cœur de La Rochelle : 422 mètres carrés à traiter, avec une logique simple et efficace, un revêtement par usage. Vingt-et-un bureaux et un coin attente ont reçu des dalles de moquette, tandis que les cinq sanitaires, la douche et l'espace de convivialité ont été posés en lames PVC. Deux familles de produits, choisies chacune pour la contrainte réelle de la pièce qu'elles habillent.",
+      "Pour les bureaux, la dalle de moquette s'est imposée. Dans un plateau tertiaire, le sol textile joue un rôle acoustique majeur : il absorbe les bruits de pas, limite la réverbération entre les postes et rend les open spaces et les bureaux partagés nettement plus confortables à vivre au quotidien. Sur vingt-et-un bureaux, c'est la différence entre un plateau calme et un espace fatigant. Le coloris chiné bleu-gris a été retenu pour sa tenue dans le temps et sa capacité à masquer l'usure courante d'un lieu de travail.",
+      "La dalle apporte aussi un avantage décisif pour un gestionnaire : la maintenance. Fauteuils sur roulettes, passages répétés, déplacements de mobilier, un bureau vit et s'use de façon inégale. Avec des dalles, la zone marquée sous un fauteuil ou dans un couloir se remplace à l'unité, sans toucher au reste du plateau. En gardant un stock de la même série, la teinte reste raccord et l'intervention se fait en quelques heures. Sur 422 mètres carrés, c'est un coût d'entretien maîtrisé sur toute la vie du bureau.",
+      "Dans les pièces d'eau, l'exigence change. Les cinq sanitaires et la douche ont été posés en lames PVC, un revêtement résilient qui résiste à l'eau et aux produits de nettoyage, se désinfecte facilement et ne craint pas l'humidité. L'espace de convivialité, lui, a reçu des lames PVC à l'aspect bois chaleureux, pour une ambiance détendue qui tranche volontairement avec les bureaux, tout en gardant la robustesse et la facilité d'entretien attendues dans un lieu où l'on mange et où l'on passe.",
+      "Le chantier a demandé une vraie coordination : préparation des supports, calepinage propre des dalles d'un bureau à l'autre, raccords maîtrisés aux seuils entre la moquette et le PVC, finitions aux plinthes. Chaque transition entre deux matériaux a été soignée pour que le plateau se lise comme un ensemble cohérent, pas comme une juxtaposition de pièces.",
+      "Ce projet illustre ce que CB Sols apporte aux entreprises qui aménagent ou rénovent leurs bureaux à La Rochelle et en Charente-Maritime : un interlocuteur unique qui choisit le bon revêtement pièce par pièce, pose proprement et pense la maintenance dès le départ. De la salle de réunion au local technique, du bureau de direction à l'espace détente, chaque sol est traité pour son usage réel.",
+    ],
+    gallery: [
+      { src: '/images/projects/amenagement-bureaux-dalles-moquette-la-rochelle/01.jpg', caption: 'Bureau individuel sur dalles de moquette, poste réglable en hauteur' },
+      { src: '/images/projects/amenagement-bureaux-dalles-moquette-la-rochelle/02.jpg', caption: 'Bureau équipé, moquette en dalles bleu-gris chinée' },
+      { src: '/images/projects/amenagement-bureaux-dalles-moquette-la-rochelle/03.jpg', caption: 'Espace de réunion, moquette contract pour le confort acoustique' },
+      { src: '/images/projects/amenagement-bureaux-dalles-moquette-la-rochelle/04.jpg', caption: "Espace d'attente et de convivialité, assises colorées" },
+      { src: '/images/projects/amenagement-bureaux-dalles-moquette-la-rochelle/05.jpg', caption: "Lames PVC aspect bois dans l'espace convivialité et les circulations" },
+      { src: '/images/projects/amenagement-bureaux-dalles-moquette-la-rochelle/06.jpg', caption: 'Détail : roulette de fauteuil sur la moquette en dalles' },
+    ],
+  },
+  {
     slug: 'salle-conference-grand-groupe-assurance',
     title: 'Salle de conférence, grand groupe d\'assurance',
     description: "Dalles de moquette acoustiques dans la salle de conférence en gradins d'un grand groupe d'assurance, et lames PVC plombantes dans la cuisine. Acoustique maîtrisée et maintenance facilitée.",
@@ -44,11 +72,11 @@ export const realisations: Realisation[] = [
     location: 'Nouvelle-Aquitaine',
     client: 'Grand groupe d\'assurance',
     type: 'Dalles de moquette acoustiques & lames PVC plombantes',
-    surface: '≈ 400 m² de dalles de moquette',
+    surface: '104 m² de dalles de moquette',
     body: [
       "Nous sommes intervenus dans la salle de conférence d'un grand groupe d'assurance pour reprendre entièrement le sol d'un amphithéâtre interne : une grande salle en gradins, habillée de bois, où se tiennent réunions de direction, assemblées et présentations tout au long de l'année. Un lieu de parole, donc, où le sol ne se choisit pas seulement pour son aspect, mais d'abord pour ce qu'il fait au son et pour la facilité avec laquelle on l'entretient dans la durée.",
       "Le choix s'est porté sur des dalles de moquette, et ce n'est pas un hasard. Dans une salle de conférence, l'intelligibilité de la parole prime sur tout le reste. Un sol textile absorbe les bruits de pas et d'impact, limite la réverbération et adoucit l'ambiance sonore d'une salle où l'on écoute un orateur, souvent au micro. Là où un sol dur renvoie et fatigue, la moquette feutre et clarifie. C'est l'acoustique qui a guidé la préconisation, avant même l'esthétique.",
-      "La dalle s'est imposée pour une seconde raison, tout aussi concrète : la maintenance. Une salle de ce type encaisse un trafic dense, des fauteuils sur roulettes, des passages répétés dans les circulations et sur les gradins. Avec des dalles, une zone qui marque ou s'abîme devant un rang se remplace localement, sans refaire les centaines de mètres carrés de l'ensemble. En conservant un stock de dalles de la même série, la teinte reste raccord et l'intervention se fait en quelques heures, sans immobiliser la salle. Pour un service généraux, c'est un coût global maîtrisé sur dix ans, pas seulement un sol le jour de la pose.",
+      "La dalle s'est imposée pour une seconde raison, tout aussi concrète : la maintenance. Une salle de ce type encaisse un trafic dense, des fauteuils sur roulettes, des passages répétés dans les circulations et sur les gradins. Avec des dalles, une zone qui marque ou s'abîme devant un rang se remplace localement, sans refaire l'ensemble de la salle. En conservant un stock de dalles de la même série, la teinte reste raccord et l'intervention se fait en quelques heures, sans immobiliser la salle. Pour un service généraux, c'est un coût global maîtrisé sur dix ans, pas seulement un sol le jour de la pose.",
       "Le calepinage a été soigné pour accompagner la géométrie courbe des gradins : raccords du motif chiné bleu-gris, pose au plus juste contre les habillages bois, et reprise des marches avec des nez de marche aluminium antidérapants. Ces nez de marche assurent la sécurité et la lisibilité des ressauts, un point d'attention systématique dans un établissement recevant du public où l'accessibilité et la prévention des chutes ne se négocient pas.",
       "Dans la cuisine attenante, l'exigence n'était plus acoustique mais hydrique. Nous y avons posé des lames PVC plombantes à l'aspect bois : un revêtement résilient qui résiste à l'eau et aux salissures, se nettoie vite et se pose sans colle. L'atout des lames plombantes est double, une mise en œuvre rapide en site occupé et, là encore, un remplacement localisé possible lame par lame en cas de choc ou de tache. Un même chantier, deux usages, deux revêtements choisis chacun pour la contrainte réelle de sa pièce.",
       "Cette réalisation résume la méthode de CB Sols pour les sièges, directions et espaces tertiaires : écouter l'usage réel d'une pièce avant de dérouler un produit, traiter l'acoustique et la maintenance comme des critères de premier plan, et intervenir proprement en site occupé sans perturber l'activité. Un savoir-faire que nous mettons au service des grands comptes comme des PME de toute la Nouvelle-Aquitaine.",

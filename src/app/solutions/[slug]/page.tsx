@@ -6,6 +6,7 @@ import { cities } from '@/data/cities'
 import { company } from '@/data/company'
 import { guides } from '@/data/guides'
 import { faqs } from '@/data/faqs'
+import { realisations } from '@/data/realisations'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 import { Button } from '@/components/Button'
 
@@ -36,6 +37,12 @@ export default async function SolutionPage({ params }: Props) {
   const relatedCities = cities.slice(0, 10)
   const relatedGuides = guides.filter(g => g.relatedSolutions.includes(slug))
   const relatedFaqs = faqs.filter(f => f.relatedSolutions.includes(slug))
+  const relatedRealSlugs: Record<string, string[]> = {
+    'moquette-bureau': ['amenagement-bureaux-dalles-moquette-la-rochelle', 'salle-conference-grand-groupe-assurance'],
+  }
+  const relatedRealisations = (relatedRealSlugs[slug] || [])
+    .map((rs) => realisations.find((r) => r.slug === rs))
+    .filter((r): r is NonNullable<typeof r> => Boolean(r))
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -240,6 +247,31 @@ export default async function SolutionPage({ params }: Props) {
                   <Link key={f.slug} href={`/faq/${f.slug}`} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem', padding: '1.25rem', border: '1px solid var(--border)', borderLeft: '3px solid var(--terra)', borderRadius: '4px', backgroundColor: 'var(--bg-card)' }}>
                     <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 600 }}>Question</div>
                     <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--dark)', lineHeight: 1.4 }}>{f.question}</div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Réalisations liées */}
+        {relatedRealisations.length > 0 && (
+          <section style={{ padding: '4rem 2rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--bg-alt)' }}>
+            <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Nos réalisations</div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.03em' }}>
+                Des projets de bureaux que nous avons posés
+              </h2>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
+                {relatedRealisations.map((r) => (
+                  <Link key={r.slug} href={`/realisations/${r.slug}`} style={{ textDecoration: 'none', border: '1px solid var(--border)', borderRadius: '12px', overflow: 'hidden', backgroundColor: 'var(--bg-card)', display: 'flex', flexDirection: 'column' }}>
+                    <img src={r.image} alt={r.title} width={640} height={420} style={{ display: 'block', width: '100%', height: '200px', objectFit: 'cover' }} />
+                    <div style={{ padding: '1.25rem' }}>
+                      <div style={{ fontSize: '0.58rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', fontWeight: 700, marginBottom: '0.5rem' }}>{r.sector}{r.surface ? ` · ${r.surface}` : ''}</div>
+                      <div style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', lineHeight: 1.3, marginBottom: '0.4rem' }}>{r.title}</div>
+                      <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.6 }}>{r.type}</div>
+                      <div style={{ fontSize: '0.72rem', color: 'var(--terra)', fontWeight: 600, marginTop: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Voir la réalisation →</div>
+                    </div>
                   </Link>
                 ))}
               </div>
