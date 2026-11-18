@@ -171,6 +171,34 @@ export default async function RealisationDetailPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Vidéo témoignage */}
+        {r.video && (
+          <section style={{ padding: '4rem 2rem 1rem', borderTop: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1rem', fontWeight: 600 }}>Le client témoigne</div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.8vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2rem', letterSpacing: '-0.025em', lineHeight: 1.2 }}>
+                Ils en <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>parlent mieux que nous.</em>
+              </h2>
+              <figure style={{ margin: 0 }}>
+                <div style={{ maxWidth: '420px', margin: '0 auto', borderRadius: '14px', overflow: 'hidden', backgroundColor: 'var(--dark)', border: '1px solid var(--border)' }}>
+                  <video
+                    controls
+                    playsInline
+                    preload="none"
+                    poster={r.video.poster}
+                    style={{ display: 'block', width: '100%', height: 'auto' }}
+                  >
+                    <source src={r.video.src} type="video/mp4" />
+                  </video>
+                </div>
+                {r.video.caption && (
+                  <figcaption style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.9rem', textAlign: 'center', fontStyle: 'italic' }}>{r.video.caption}</figcaption>
+                )}
+              </figure>
+            </div>
+          </section>
+        )}
+
         {/* Galerie photos */}
         {r.gallery && r.gallery.length > 0 && (
           <section style={{ padding: '4rem 2rem 5rem', borderTop: '1px solid var(--border)' }}>
