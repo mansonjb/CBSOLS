@@ -3,18 +3,23 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { company } from '@/data/company'
 import { getCityBySlug } from '@/data/cities'
+import { getEnCityBySlug } from '@/app/en/_lib/cities'
 
 export function MobileCTA() {
   const pathname = usePathname() ?? ''
   if (pathname.startsWith('/admin')) return null
+  const isEn = pathname === '/en' || pathname.startsWith('/en/')
+  const path = isEn ? pathname.replace(/^\/en/, '') || '/' : pathname
   // Detect city context on /revetement-sol-[city] and /[service]-[city]
   let contextCity: string | null = null
-  if (pathname.startsWith('/revetement-sol-')) {
-    const slug = pathname.replace('/revetement-sol-', '').split('/')[0]
-    contextCity = getCityBySlug(slug)?.name ?? null
+  if (path.startsWith('/revetement-sol-')) {
+    const slug = path.replace('/revetement-sol-', '').split('/')[0]
+    contextCity = (isEn ? getEnCityBySlug(slug)?.name : getCityBySlug(slug)?.name) ?? null
   }
-  const ctaHref = contextCity ? `/contact?city=${encodeURIComponent(contextCity)}` : '/contact'
-  const ctaLabel = contextCity ? `Devis ${contextCity}` : 'Devis gratuit 48h'
+  const base = isEn ? '/en' : ''
+  const ctaHref = contextCity ? `${base}/contact?city=${encodeURIComponent(contextCity)}` : `${base}/contact`
+  const callLabel = isEn ? 'Call' : 'Appeler'
+  const ctaLabel = contextCity ? (isEn ? `Quote ${contextCity}` : `Devis ${contextCity}`) : (isEn ? 'Free quote 48h' : 'Devis gratuit 48h')
 
   return (
     <div className="mobile-cta-bar" style={{
@@ -53,7 +58,7 @@ export function MobileCTA() {
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.46 2 2 0 0 1 3.62 1.27h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.72 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 5.9 5.9l.99-1.04a2 2 0 0 1 2.11-.45c.9.36 1.85.59 2.81.72a2 2 0 0 1 1.72 2.02z"/>
         </svg>
-        Appeler
+        {callLabel}
       </a>
       <Link
         href={ctaHref}

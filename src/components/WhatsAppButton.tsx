@@ -5,15 +5,16 @@ import { company } from '@/data/company'
 export function WhatsAppButton() {
   const pathname = usePathname() ?? ''
   if (pathname.startsWith('/admin')) return null
+  const isEn = pathname === '/en' || pathname.startsWith('/en/')
   const waNumber = company.phoneClean.replace('+', '')
-  const message = encodeURIComponent('Bonjour CB Sols, je souhaite un devis pour mon projet.')
+  const message = encodeURIComponent(isEn ? 'Hello CB Sols, I would like a quote for my project.' : 'Bonjour CB Sols, je souhaite un devis pour mon projet.')
 
   return (
     <a
       href={`https://wa.me/${waNumber}?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Nous contacter sur WhatsApp"
+      aria-label={isEn ? 'Contact us on WhatsApp' : 'Nous contacter sur WhatsApp'}
       style={{
         position: 'fixed',
         bottom: '5.75rem',

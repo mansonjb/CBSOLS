@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const STORAGE_KEY = 'cbsols-cookie-consent-v1'
 
@@ -36,6 +37,25 @@ function saveConsent(value: 'accepted' | 'declined') {
 export function CookieBanner() {
   const [visible, setVisible] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname() ?? ''
+  const isEn = pathname === '/en' || pathname.startsWith('/en/')
+  const t = isEn
+    ? {
+        aria: 'Cookie preferences',
+        body: 'We use a minimum of cookies (theme preference, anonymous performance measurement via Vercel). No advertising cookies or third-party trackers.',
+        accept: 'Accept',
+        decline: 'Decline',
+        more: 'Learn more',
+        legalHref: '/en/mentions-legales#cookies-et-traceurs',
+      }
+    : {
+        aria: 'Préférences cookies',
+        body: 'Nous utilisons un minimum de cookies (préférence de thème, mesure de performance anonyme via Vercel). Aucun cookie publicitaire ni traceur tiers.',
+        accept: 'Accepter',
+        decline: 'Refuser',
+        more: 'En savoir plus',
+        legalHref: '/mentions-legales#cookies-et-traceurs',
+      }
 
   useEffect(() => {
     setMounted(true)
@@ -63,7 +83,7 @@ export function CookieBanner() {
   return (
     <div
       role="dialog"
-      aria-label="Préférences cookies"
+      aria-label={t.aria}
       style={{
         position: 'fixed',
         bottom: '1rem',
@@ -85,7 +105,7 @@ export function CookieBanner() {
         Cookies
       </div>
       <p style={{ fontSize: '0.85rem', color: 'var(--dark-2)', lineHeight: 1.6, margin: '0 0 1.25rem' }}>
-        Nous utilisons un minimum de cookies (préférence de thème, mesure de performance anonyme via Vercel). Aucun cookie publicitaire ni traceur tiers.
+        {t.body}
       </p>
       <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', alignItems: 'center' }}>
         <button
@@ -105,7 +125,7 @@ export function CookieBanner() {
             fontFamily: 'inherit',
           }}
         >
-          Accepter
+          {t.accept}
         </button>
         <button
           type="button"
@@ -124,10 +144,10 @@ export function CookieBanner() {
             fontFamily: 'inherit',
           }}
         >
-          Refuser
+          {t.decline}
         </button>
         <Link
-          href="/mentions-legales#cookies-et-traceurs"
+          href={t.legalHref}
           style={{
             fontSize: '0.72rem',
             color: 'var(--text-muted)',
@@ -136,7 +156,7 @@ export function CookieBanner() {
           }}
           onClick={() => setVisible(false)}
         >
-          En savoir plus
+          {t.more}
         </Link>
       </div>
 

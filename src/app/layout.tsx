@@ -9,6 +9,7 @@ import { CookieBanner } from '@/components/CookieBanner'
 import { ClarityScript } from '@/components/ClarityScript'
 import { GTMScript } from '@/components/GTMScript'
 import { AttributionTracker } from '@/components/AttributionTracker'
+import { LangSync } from '@/components/LangSync'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { company } from '@/data/company'
 import { avis } from '@/data/avis'
@@ -207,6 +208,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Microsoft Clarity — wyqlw2u4g8 (désactivé sur /admin) */}
         <ClarityScript />
         <AttributionTracker />
+        <LangSync />
         <Header />
         <main>{children}</main>
         <Footer />

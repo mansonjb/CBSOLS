@@ -6,23 +6,52 @@ import { usePathname } from 'next/navigation'
 import { company } from '@/data/company'
 import { Button } from '@/components/Button'
 
-const nav = [
-  { href: '/services', label: 'Services' },
-  { href: '/secteurs', label: 'Professionnels' },
-  { href: '/particuliers', label: 'Particuliers' },
-  { href: '/architectes', label: 'Architectes' },
-  { href: '/realisations', label: 'Réalisations' },
-  { href: '/showroom', label: 'Showroom' },
-]
+const navByLocale = {
+  fr: [
+    { href: '/services', label: 'Services' },
+    { href: '/secteurs', label: 'Professionnels' },
+    { href: '/particuliers', label: 'Particuliers' },
+    { href: '/architectes', label: 'Architectes' },
+    { href: '/realisations', label: 'Réalisations' },
+    { href: '/showroom', label: 'Showroom' },
+  ],
+  en: [
+    { href: '/en/services', label: 'Services' },
+    { href: '/en/secteurs', label: 'For businesses' },
+    { href: '/en/particuliers', label: 'For homeowners' },
+    { href: '/en/architectes', label: 'Architects' },
+    { href: '/en/realisations', label: 'Projects' },
+    { href: '/en/showroom', label: 'Showroom' },
+  ],
+}
 
-const navMobileExtra = [
-  { href: '/marques', label: 'Marques' },
-  { href: '/a-propos', label: 'À propos' },
-  { href: '/zones', label: 'Zones' },
-]
+const navMobileExtraByLocale = {
+  fr: [
+    { href: '/marques', label: 'Marques' },
+    { href: '/a-propos', label: 'À propos' },
+    { href: '/zones', label: 'Zones' },
+  ],
+  en: [
+    { href: '/en/marques', label: 'Brands' },
+    { href: '/en/a-propos', label: 'About' },
+    { href: '/en/zones', label: 'Areas' },
+  ],
+}
+
+const ctaByLocale = {
+  fr: { quote: 'Devis gratuit', home: '/' },
+  en: { quote: 'Free quote', home: '/en' },
+}
 
 export function Header() {
   const pathname = usePathname() ?? ''
+  const isEn = pathname === '/en' || pathname.startsWith('/en/')
+  const locale: 'fr' | 'en' = isEn ? 'en' : 'fr'
+  const nav = navByLocale[locale]
+  const navMobileExtra = navMobileExtraByLocale[locale]
+  const cta = ctaByLocale[locale]
+  // Le lien de bascule FR<->EN garde la page courante (fallback accueil de la langue cible)
+  const altHref = isEn ? (pathname.replace(/^\/en(?=\/|$)/, '') || '/') : `/en${pathname === '/' ? '' : pathname}`
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -57,10 +86,10 @@ export function Header() {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2rem', height: '72px' }}>
 
           {/* Logo */}
-          <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
+          <Link href={cta.home} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
             <Image
               src="/images/logo-cbsols.png"
-              alt="CB Sols Revêtements"
+              alt={isEn ? 'CB Sols Flooring' : 'CB Sols Revêtements'}
               width={40}
               height={38}
               style={{ filter: 'brightness(0) saturate(100%)', objectFit: 'contain' }}
@@ -71,7 +100,7 @@ export function Header() {
                 CB <span style={{ color: 'var(--terra)' }}>Sols</span>
               </div>
               <div style={{ fontSize: '0.55rem', letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase', marginTop: '2px' }}>
-                Revêtements · La Rochelle
+                {isEn ? 'Coverings · La Rochelle' : 'Revêtements · La Rochelle'}
               </div>
             </div>
           </Link>
@@ -97,7 +126,14 @@ export function Header() {
             }}>
               {company.phone}
             </a>
-            <Button href="/contact" variant="primary" size="sm">Devis gratuit</Button>
+            <Link href={altHref} aria-label={isEn ? 'Voir en français' : 'View in English'} style={{
+              fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
+              color: 'var(--dark-2)', textDecoration: 'none', border: '1px solid var(--border)',
+              borderRadius: '6px', padding: '0.35rem 0.6rem', whiteSpace: 'nowrap',
+            }}>
+              {isEn ? 'FR' : 'EN'}
+            </Link>
+            <Button href={locale === 'en' ? '/en/contact' : '/contact'} variant="primary" size="sm">{cta.quote}</Button>
           </div>
 
           {/* Burger */}
@@ -113,7 +149,7 @@ export function Header() {
       {open && (
         <button
           type="button"
-          aria-label="Fermer le menu"
+          aria-label={isEn ? 'Close menu' : 'Fermer le menu'}
           onClick={() => setOpen(false)}
           style={{
             position: 'fixed',
@@ -152,7 +188,7 @@ export function Header() {
               {company.phone}
             </a>
             <Link
-              href="/contact"
+              href={locale === 'en' ? '/en/contact' : '/contact'}
               onClick={() => setOpen(false)}
               style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -162,7 +198,19 @@ export function Header() {
                 textDecoration: 'none', fontWeight: 700, borderRadius: '999px',
               }}
             >
-              Devis gratuit
+              {cta.quote}
+            </Link>
+            <Link
+              href={altHref}
+              onClick={() => setOpen(false)}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                padding: '0.75rem 2rem', border: '1px solid var(--border)',
+                color: 'var(--dark)', fontSize: '0.7rem', letterSpacing: '0.14em',
+                textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px',
+              }}
+            >
+              {isEn ? 'Voir en français' : 'View in English'}
             </Link>
           </div>
         </div>
