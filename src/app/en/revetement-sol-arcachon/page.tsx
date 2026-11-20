@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Arcachon and around the Bay. Ville d\'Hiver, Pereire and Le Moulleau villas, boutique hotels facing the Bay. CB Sols, over 28 years of know-how, travel from La Rochelle.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-arcachon',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-arcachon', en: 'https://cbsols.fr/en/revetement-sol-arcachon' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-arcachon', en: 'https://cbsols.fr/en/revetement-sol-arcachon', es: 'https://cbsols.fr/es/revetement-sol-arcachon', },
   },
   keywords: ['floor covering Arcachon', 'carpet Arcachon', 'vinyl flooring Arcachon', 'rug laying Arcachon', 'flooring craftsman Arcachon Bay'],
   openGraph: {

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Floor covering solutions by use: hotel carpet, restaurant vinyl, office carpet, cinema room, reading nook. Choose by your type of establishment.',
   alternates: {
     canonical: 'https://cbsols.fr/en/solutions',
-    languages: { 'fr-FR': 'https://cbsols.fr/solutions', en: 'https://cbsols.fr/en/solutions' },
+    languages: { 'fr-FR': 'https://cbsols.fr/solutions', en: 'https://cbsols.fr/en/solutions', es: 'https://cbsols.fr/es/solutions', },
   },
 }
 

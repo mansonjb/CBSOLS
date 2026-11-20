@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Bordeaux. Townhouses of the Golden Triangle, Bordeaux échoppe houses, gastronomic restaurants. CB Sols has worked in the trade for over 28 years, travel from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-bordeaux',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-bordeaux', en: 'https://cbsols.fr/en/revetement-sol-bordeaux' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-bordeaux', en: 'https://cbsols.fr/en/revetement-sol-bordeaux', es: 'https://cbsols.fr/es/revetement-sol-bordeaux', },
   },
   keywords: ['floor covering Bordeaux', 'carpet Bordeaux', 'vinyl flooring Bordeaux', 'rug laying Bordeaux', 'flooring craftsman Bordeaux'],
   openGraph: {

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Bespoke rug laying for wood or stone staircases, entrances, living rooms. Artisan making & laying, EGE & Romus (profiles) brands. A know-how we have practised for over 28 years for boutique hotels and family homes.',
   alternates: {
     canonical: 'https://cbsols.fr/en/particuliers/tapis-escalier-sur-mesure',
-    languages: { 'fr-FR': 'https://cbsols.fr/particuliers/tapis-escalier-sur-mesure', en: 'https://cbsols.fr/en/particuliers/tapis-escalier-sur-mesure' },
+    languages: { 'fr-FR': 'https://cbsols.fr/particuliers/tapis-escalier-sur-mesure', en: 'https://cbsols.fr/en/particuliers/tapis-escalier-sur-mesure', es: 'https://cbsols.fr/es/particuliers/tapis-escalier-sur-mesure', },
   },
 }
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Showroom Revêtement Sol La Rochelle | CB Sols, Sur Rendez-vous',
   description:
     'Visitez le showroom CB Sols à Villedoux (10 min de La Rochelle) : plus de 500 échantillons EGE, Gerflor, objectflor, Bostik, Romus consultables sur place. Sur rendez-vous.',
-  alternates: { canonical: 'https://cbsols.fr/showroom', languages: { 'fr-FR': 'https://cbsols.fr/showroom', en: 'https://cbsols.fr/en/showroom' } },
+  alternates: { canonical: 'https://cbsols.fr/showroom', languages: { 'fr-FR': 'https://cbsols.fr/showroom', en: 'https://cbsols.fr/en/showroom', es: 'https://cbsols.fr/es/showroom', } },
 }
 
 export default function ShowroomPage() {

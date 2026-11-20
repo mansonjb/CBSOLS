@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Moquette Bateau | Pose Marine sur Mesure La Rochelle',
   description: "Spécialiste moquette bateau en Charente-Maritime : catamaran, yacht, péniche. Normes IMO FTP, MED, Bfl-s1. Confection atelier, pose à quai. Devis.",
-  alternates: { canonical: 'https://cbsols.fr/moquette-bateau', languages: { 'fr-FR': 'https://cbsols.fr/moquette-bateau', en: 'https://cbsols.fr/en/moquette-bateau' } },
+  alternates: { canonical: 'https://cbsols.fr/moquette-bateau', languages: { 'fr-FR': 'https://cbsols.fr/moquette-bateau', en: 'https://cbsols.fr/en/moquette-bateau', es: 'https://cbsols.fr/es/moquette-bateau', } },
   openGraph: {
     title: 'Moquette Bateau | Pose Marine sur Mesure | La Rochelle',
     description: "Moquette bateau sur mesure : catamaran, yacht, péniche. Normes feu IMO, humidité saline, colles polyuréthane marine.",

@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Moquette Catamaran | Carré, Cabines, Coques La Rochelle',
   description: "Pose de moquette marine pour catamaran à La Rochelle : Lagoon, Bali, Fountaine Pajot, Catana, Outremer. Polypropylène Bfl-s1, colle polyuréthane, soudure à chaud.",
-  alternates: { canonical: 'https://cbsols.fr/moquette-catamaran', languages: { 'fr-FR': 'https://cbsols.fr/moquette-catamaran', en: 'https://cbsols.fr/en/moquette-catamaran' } },
+  alternates: { canonical: 'https://cbsols.fr/moquette-catamaran', languages: { 'fr-FR': 'https://cbsols.fr/moquette-catamaran', en: 'https://cbsols.fr/en/moquette-catamaran', es: 'https://cbsols.fr/es/moquette-catamaran', } },
   openGraph: {
     title: 'Moquette Catamaran | La Rochelle',
     description: "Spécialiste moquette marine pour catamaran : carré, cabines, deux coques. Confection atelier, pose à quai au Port des Minimes ou La Flotte.",

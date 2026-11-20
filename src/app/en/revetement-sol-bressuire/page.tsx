@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Bressuire. Offices and practices, town-centre shops, care homes and senior residences, town houses to renovate. CB Sols has worked in the trade for over 28 years, travel organised from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-bressuire',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-bressuire', en: 'https://cbsols.fr/en/revetement-sol-bressuire' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-bressuire', en: 'https://cbsols.fr/en/revetement-sol-bressuire', es: 'https://cbsols.fr/es/revetement-sol-bressuire', },
   },
   keywords: ['floor covering Bressuire', 'carpet Bressuire', 'vinyl flooring Bressuire', 'rug laying Bressuire', 'flooring craftsman Bressuire'],
   openGraph: {

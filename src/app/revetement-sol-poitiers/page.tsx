@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: "Revêtement de Sol Poitiers | Laboratoires, Universités, Tertiaire",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Poitiers. Laboratoires universitaires, cabinets médicaux secteur CHU, sièges sociaux, hôtels du Futuroscope, écoles privées. CB Sols, plus de 28 ans de savoir-faire, déplacement régulier depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-poitiers', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-poitiers', en: 'https://cbsols.fr/en/revetement-sol-poitiers' } },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-poitiers', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-poitiers', en: 'https://cbsols.fr/en/revetement-sol-poitiers', es: 'https://cbsols.fr/es/revetement-sol-poitiers', } },
   keywords: ['revêtement sol Poitiers', 'sol PVC laboratoire Poitiers', 'moquette tertiaire Poitiers', 'artisan sol Poitiers', 'sol PVC cabinet médical Poitiers'],
   openGraph: {
     title: "Revêtement de sol à Poitiers, rigueur universitaire",

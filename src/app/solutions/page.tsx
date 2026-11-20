@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Solutions Revêtement de Sol | CB Sols, Hôtels, Restaurants, Bureaux',
   description:
     "Solutions revêtement de sol par usage : moquette hôtel, sol PVC restaurant, moquette bureau, salle de cinéma, coin lecture. Choisissez par votre type d'établissement.",
-  alternates: { canonical: 'https://cbsols.fr/solutions', languages: { 'fr-FR': 'https://cbsols.fr/solutions', en: 'https://cbsols.fr/en/solutions' } },
+  alternates: { canonical: 'https://cbsols.fr/solutions', languages: { 'fr-FR': 'https://cbsols.fr/solutions', en: 'https://cbsols.fr/en/solutions', es: 'https://cbsols.fr/es/solutions', } },
 }
 
 function groupByService(items: typeof solutions) {

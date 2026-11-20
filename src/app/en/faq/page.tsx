@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'All your questions about carpet, vinyl flooring and laying: timescales, prices, standards, techniques, differences. Clear answers from a specialist craftsman.',
   alternates: {
     canonical: 'https://cbsols.fr/en/faq',
-    languages: { 'fr-FR': 'https://cbsols.fr/faq', en: 'https://cbsols.fr/en/faq' },
+    languages: { 'fr-FR': 'https://cbsols.fr/faq', en: 'https://cbsols.fr/en/faq', es: 'https://cbsols.fr/es/faq', },
   },
 }
 

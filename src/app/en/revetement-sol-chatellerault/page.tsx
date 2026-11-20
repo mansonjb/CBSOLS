@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Châtellerault. Offices and office premises, shops, practices, public bodies, old houses of the centre. CB Sols has worked in the trade for over 28 years, travel organised from Villedoux as a grouped visit then a set laying.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-chatellerault',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-chatellerault', en: 'https://cbsols.fr/en/revetement-sol-chatellerault' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-chatellerault', en: 'https://cbsols.fr/en/revetement-sol-chatellerault', es: 'https://cbsols.fr/es/revetement-sol-chatellerault', },
   },
   keywords: ['floor covering Châtellerault', 'carpet Châtellerault', 'vinyl flooring Châtellerault', 'rug laying Châtellerault', 'flooring craftsman Châtellerault'],
   openGraph: {

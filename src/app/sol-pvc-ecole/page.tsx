@@ -9,7 +9,7 @@ import { Baby, BookOpen, Building2, Mail, Pill, Stethoscope, Store } from 'lucid
 export const metadata: Metadata = {
   title: 'Sol PVC École Maternelle et Primaire | Pose Établissements Scolaires',
   description: "Pose de sol PVC en école maternelle et primaire. Conformité ERP (Bfl-s1, U4P3, R10/R11), pose pendant les vacances scolaires, marchés publics. CB Sols accompagne mairies et écoles privées depuis plus de 28 ans.",
-  alternates: { canonical: 'https://cbsols.fr/sol-pvc-ecole', languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-ecole', en: 'https://cbsols.fr/en/sol-pvc-ecole' } },
+  alternates: { canonical: 'https://cbsols.fr/sol-pvc-ecole', languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-ecole', en: 'https://cbsols.fr/en/sol-pvc-ecole', es: 'https://cbsols.fr/es/sol-pvc-ecole', } },
   openGraph: {
     title: "Sol PVC en école maternelle et primaire | Pose en établissements scolaires",
     description: "Sol PVC pour salles de classe, dortoirs maternelle, restaurants scolaires. Normes ERP, label A+, pose pendant les vacances scolaires.",

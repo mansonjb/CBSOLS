@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: service.metaTitle(city.name),
     description: service.metaDescription(city.name),
-    alternates: { canonical: `https://cbsols.fr/${geo}`, languages: { 'fr-FR': `https://cbsols.fr/${geo}`, en: `https://cbsols.fr/en/${geo}` } },
+    alternates: { canonical: `https://cbsols.fr/${geo}`, languages: { 'fr-FR': `https://cbsols.fr/${geo}`, en: `https://cbsols.fr/en/${geo}`, es: `https://cbsols.fr/es/${geo}`, } },
     robots: {
       index: REACTIVATED_GEO.has(geo),
       follow: true,

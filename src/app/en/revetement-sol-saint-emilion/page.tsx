@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs for the wine châteaux of Saint-Émilion and the Libournais grands crus. Reception cellars, tasting rooms, private suites. CB Sols, over 28 years of experience.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-saint-emilion',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-saint-emilion', en: 'https://cbsols.fr/en/revetement-sol-saint-emilion' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-saint-emilion', en: 'https://cbsols.fr/en/revetement-sol-saint-emilion', es: 'https://cbsols.fr/es/revetement-sol-saint-emilion', },
   },
   keywords: ['floor covering Saint-Émilion', 'wine château carpet', 'tasting cellar vinyl flooring', 'bespoke rug Libournais', 'flooring craftsman Gironde'],
   openGraph: {

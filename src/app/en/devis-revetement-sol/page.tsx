@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Request your free, no-obligation floor covering quote: carpet, vinyl, bespoke rugs. Reply within 48h in Charente-Maritime. CB Sols, over 28 years of experience.',
   alternates: {
     canonical: 'https://cbsols.fr/en/devis-revetement-sol',
-    languages: { 'fr-FR': 'https://cbsols.fr/devis-revetement-sol', en: 'https://cbsols.fr/en/devis-revetement-sol' },
+    languages: { 'fr-FR': 'https://cbsols.fr/devis-revetement-sol', en: 'https://cbsols.fr/en/devis-revetement-sol', es: 'https://cbsols.fr/es/devis-revetement-sol', },
   },
 }
 

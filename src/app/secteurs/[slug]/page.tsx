@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Revêtement Sol ${sector.name}`,
     description: `CB Sols, partenaire revêtement de sol pour ${sector.name.toLowerCase()} en Charente-Maritime. ${sector.tagline}. Devis gratuit, intervention rapide.`,
-    alternates: { canonical: `https://cbsols.fr/secteurs/${slug}`, languages: { 'fr-FR': `https://cbsols.fr/secteurs/${slug}`, en: `https://cbsols.fr/en/secteurs/${slug}` } },
+    alternates: { canonical: `https://cbsols.fr/secteurs/${slug}`, languages: { 'fr-FR': `https://cbsols.fr/secteurs/${slug}`, en: `https://cbsols.fr/en/secteurs/${slug}`, es: `https://cbsols.fr/es/secteurs/${slug}`, } },
   }
 }
 

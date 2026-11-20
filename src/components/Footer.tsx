@@ -7,70 +7,106 @@ import { services } from '@/data/services'
 import { cities } from '@/data/cities'
 import { enServices } from '@/app/en/services/_data'
 import { enCities } from '@/app/en/_lib/cities'
+import { esServices } from '@/app/es/services/_data'
+import { esCities } from '@/app/es/_lib/cities'
+import { localeFromPath, localeBase } from '@/lib/locale'
 
 const MAIN_CITY_SLUGS = ['la-rochelle', 'saint-martin-de-re', 'rochefort', 'saintes', 'royan', 'le-bois-plage-en-re', 'aytre', 'rivedoux-plage', 'lagord', 'puilboreau']
 
+const FOOTER = {
+  fr: {
+    tagline: 'Artisan solier moquettiste depuis plus de 28 ans. La Rochelle, Île de Ré, Charente-Maritime.',
+    colBrand: 'Revêtements · La Rochelle',
+    colCbsols: 'CB Sols',
+    cbsolsLinks: [
+      { href: '/a-propos', label: "Valentin & l'équipe" },
+      { href: '/showroom', label: 'Showroom' },
+      { href: '/realisations', label: 'Réalisations' },
+      { href: '/tarifs', label: 'Notre approche tarifs' },
+      { href: '/marques', label: 'Nos marques' },
+      { href: '/architectes', label: 'Architectes & MOE' },
+      { href: '/guide', label: 'Guides' },
+      { href: '/faq', label: 'FAQ' },
+      { href: '/solutions', label: 'Solutions' },
+      { href: '/nettoyage-moquettes', label: 'Nettoyage moquettes' },
+      { href: '/nettoyage-sols', label: 'Nettoyage de sols' },
+    ],
+    colServices: 'Services',
+    colZones: 'Zones',
+    allZones: 'Toutes les zones →',
+    colContact: 'Contact',
+    showroomLabel: 'Showroom · Sur RDV',
+    hours: 'Lun – Ven · 8h–18h',
+    legal: 'Mentions légales',
+    contact: 'Contact',
+    copyright: 'Revêtements',
+  },
+  en: {
+    tagline: 'Flooring and carpet craftsman for over 28 years. La Rochelle, Île de Ré, Charente-Maritime.',
+    colBrand: 'Coverings · La Rochelle',
+    colCbsols: 'CB Sols',
+    cbsolsLinks: [
+      { href: '/a-propos', label: 'Valentin & the team' },
+      { href: '/showroom', label: 'Showroom' },
+      { href: '/realisations', label: 'Projects' },
+      { href: '/tarifs', label: 'Our approach to pricing' },
+      { href: '/marques', label: 'Our brands' },
+      { href: '/architectes', label: 'Architects & project managers' },
+      { href: '/guide', label: 'Guides' },
+      { href: '/faq', label: 'FAQ' },
+      { href: '/solutions', label: 'Solutions' },
+      { href: '/nettoyage-moquettes', label: 'Carpet cleaning' },
+      { href: '/nettoyage-sols', label: 'Floor cleaning' },
+    ],
+    colServices: 'Services',
+    colZones: 'Areas',
+    allZones: 'All areas →',
+    colContact: 'Contact',
+    showroomLabel: 'Showroom · By appointment',
+    hours: 'Mon – Fri · 8am–6pm',
+    legal: 'Legal notice',
+    contact: 'Contact',
+    copyright: 'Flooring',
+  },
+  es: {
+    tagline: 'Artesano instalador de suelos y moquetas desde hace más de 28 años. La Rochelle, Île de Ré, Charente-Maritime.',
+    colBrand: 'Revestimientos · La Rochelle',
+    colCbsols: 'CB Sols',
+    cbsolsLinks: [
+      { href: '/a-propos', label: 'Valentin y el equipo' },
+      { href: '/showroom', label: 'Showroom' },
+      { href: '/realisations', label: 'Proyectos' },
+      { href: '/tarifs', label: 'Nuestra forma de presupuestar' },
+      { href: '/marques', label: 'Nuestras marcas' },
+      { href: '/architectes', label: 'Arquitectos y direcciones de obra' },
+      { href: '/guide', label: 'Guías' },
+      { href: '/faq', label: 'Preguntas frecuentes' },
+      { href: '/solutions', label: 'Soluciones' },
+      { href: '/nettoyage-moquettes', label: 'Limpieza de moquetas' },
+      { href: '/nettoyage-sols', label: 'Limpieza de suelos' },
+    ],
+    colServices: 'Servicios',
+    colZones: 'Zonas',
+    allZones: 'Todas las zonas →',
+    colContact: 'Contacto',
+    showroomLabel: 'Showroom · Con cita previa',
+    hours: 'Lun – Vie · 8 h–18 h',
+    legal: 'Aviso legal',
+    contact: 'Contacto',
+    copyright: 'Revestimientos',
+  },
+} as const
+
 export function Footer() {
   const pathname = usePathname() ?? ''
-  const isEn = pathname === '/en' || pathname.startsWith('/en/')
-  const p = (href: string) => (isEn ? `/en${href}` : href)
+  const locale = localeFromPath(pathname)
+  const base = localeBase(locale)
+  const p = (href: string) => `${base}${href}`
 
-  const t = isEn
-    ? {
-        tagline: 'Flooring and carpet craftsman for over 28 years. La Rochelle, Île de Ré, Charente-Maritime.',
-        colBrand: 'Coverings · La Rochelle',
-        colCbsols: 'CB Sols',
-        cbsolsLinks: [
-          { href: '/a-propos', label: 'Valentin & the team' },
-          { href: '/showroom', label: 'Showroom' },
-          { href: '/realisations', label: 'Projects' },
-          { href: '/tarifs', label: 'Our approach to pricing' },
-          { href: '/marques', label: 'Our brands' },
-          { href: '/architectes', label: 'Architects & project managers' },
-          { href: '/guide', label: 'Guides' },
-          { href: '/faq', label: 'FAQ' },
-          { href: '/solutions', label: 'Solutions' },
-          { href: '/nettoyage-moquettes', label: 'Carpet cleaning' },
-          { href: '/nettoyage-sols', label: 'Floor cleaning' },
-        ],
-        colServices: 'Services',
-        colZones: 'Areas',
-        allZones: 'All areas →',
-        colContact: 'Contact',
-        showroomLabel: 'Showroom · By appointment',
-        hours: 'Mon – Fri · 8am–6pm',
-        legal: 'Legal notice',
-        contact: 'Contact',
-      }
-    : {
-        tagline: 'Artisan solier moquettiste depuis plus de 28 ans. La Rochelle, Île de Ré, Charente-Maritime.',
-        colBrand: 'Revêtements · La Rochelle',
-        colCbsols: 'CB Sols',
-        cbsolsLinks: [
-          { href: '/a-propos', label: "Valentin & l'équipe" },
-          { href: '/showroom', label: 'Showroom' },
-          { href: '/realisations', label: 'Réalisations' },
-          { href: '/tarifs', label: 'Notre approche tarifs' },
-          { href: '/marques', label: 'Nos marques' },
-          { href: '/architectes', label: 'Architectes & MOE' },
-          { href: '/guide', label: 'Guides' },
-          { href: '/faq', label: 'FAQ' },
-          { href: '/solutions', label: 'Solutions' },
-          { href: '/nettoyage-moquettes', label: 'Nettoyage moquettes' },
-          { href: '/nettoyage-sols', label: 'Nettoyage de sols' },
-        ],
-        colServices: 'Services',
-        colZones: 'Zones',
-        allZones: 'Toutes les zones →',
-        colContact: 'Contact',
-        showroomLabel: 'Showroom · Sur RDV',
-        hours: 'Lun – Ven · 8h–18h',
-        legal: 'Mentions légales',
-        contact: 'Contact',
-      }
+  const t = FOOTER[locale]
 
-  const servicesList = isEn ? enServices : services
-  const citiesList = isEn ? enCities : cities
+  const servicesList = locale === 'en' ? enServices : locale === 'es' ? esServices : services
+  const citiesList = locale === 'en' ? enCities : locale === 'es' ? esCities : cities
   const mainCities = citiesList.filter((c) => MAIN_CITY_SLUGS.includes(c.slug))
 
   return (
@@ -163,7 +199,7 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div style={{ padding: '1.25rem 2rem', maxWidth: '1320px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '0.75rem' }}>
-        <p style={{ fontSize: '0.7rem', color: 'rgba(240,235,227,0.3)' }}>© {new Date().getFullYear()} CB Sols {isEn ? 'Flooring' : 'Revêtements'}</p>
+        <p style={{ fontSize: '0.7rem', color: 'rgba(240,235,227,0.3)' }}>© {new Date().getFullYear()} CB Sols {t.copyright}</p>
         <div style={{ display: 'flex', gap: '1.5rem' }}>
           {[{ href: '/mentions-legales', l: t.legal }, { href: '/contact', l: t.contact }].map((i) => (
             <Link key={i.href} href={p(i.href)} style={{ fontSize: '0.7rem', color: 'rgba(240,235,227,0.3)', textDecoration: 'none' }}>{i.l}</Link>

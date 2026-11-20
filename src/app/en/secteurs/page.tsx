@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     'CB Sols, partner to the professionals of Charente-Maritime. Floor-covering solutions for hotels, restaurants, offices, public bodies, retail and campsites.',
   alternates: {
     canonical: 'https://cbsols.fr/en/secteurs',
-    languages: { 'fr-FR': 'https://cbsols.fr/secteurs', en: 'https://cbsols.fr/en/secteurs' },
+    languages: { 'fr-FR': 'https://cbsols.fr/secteurs', en: 'https://cbsols.fr/en/secteurs', es: 'https://cbsols.fr/es/secteurs', },
   },
 }
 

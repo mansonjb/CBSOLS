@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'High-end home vinyl flooring for private clients: bathroom, kitchen, utility room, basement, converted garage. 100% waterproof, Gerflor & objectflor brands. Bespoke quote.',
   alternates: {
     canonical: 'https://cbsols.fr/en/particuliers/sol-pvc-maison',
-    languages: { 'fr-FR': 'https://cbsols.fr/particuliers/sol-pvc-maison', en: 'https://cbsols.fr/en/particuliers/sol-pvc-maison' },
+    languages: { 'fr-FR': 'https://cbsols.fr/particuliers/sol-pvc-maison', en: 'https://cbsols.fr/en/particuliers/sol-pvc-maison', es: 'https://cbsols.fr/es/particuliers/sol-pvc-maison', },
   },
 }
 

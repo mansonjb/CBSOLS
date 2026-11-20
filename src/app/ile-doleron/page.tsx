@@ -8,7 +8,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: "Revêtement de Sol Île d'Oléron, Artisan Certifié",
   description: "CB Sols intervient sur toute l'Île d'Oléron pour la pose de moquette, sol PVC et tapis sur mesure. Hôtels, campings, résidences. Devis gratuit sous 48h.",
-  alternates: { canonical: 'https://cbsols.fr/ile-doleron', languages: { 'fr-FR': 'https://cbsols.fr/ile-doleron', en: 'https://cbsols.fr/en/ile-doleron' } },
+  alternates: { canonical: 'https://cbsols.fr/ile-doleron', languages: { 'fr-FR': 'https://cbsols.fr/ile-doleron', en: 'https://cbsols.fr/en/ile-doleron', es: 'https://cbsols.fr/es/ile-doleron', } },
 }
 
 const jsonLd = {

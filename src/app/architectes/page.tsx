@@ -8,7 +8,7 @@ import { architectePartners } from '@/data/clients'
 export const metadata: Metadata = {
   title: 'Architectes & Prescripteurs | CB Sols, Partenaire Revêtement de Sol',
   description: 'CB Sols accompagne architectes, décorateurs et maîtres d\'œuvre en Charente-Maritime. Fiches techniques, nuanciers, suivi de projet dédié. Devis prescripteur sous 24h.',
-  alternates: { canonical: 'https://cbsols.fr/architectes', languages: { 'fr-FR': 'https://cbsols.fr/architectes', en: 'https://cbsols.fr/en/architectes' } },
+  alternates: { canonical: 'https://cbsols.fr/architectes', languages: { 'fr-FR': 'https://cbsols.fr/architectes', en: 'https://cbsols.fr/en/architectes', es: 'https://cbsols.fr/es/architectes', } },
 }
 
 const atouts = [

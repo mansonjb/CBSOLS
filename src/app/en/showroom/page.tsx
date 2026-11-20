@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     'Visit the CB Sols showroom in Villedoux (10 min from La Rochelle): over 500 EGE, Gerflor, objectflor, Bostik, Romus samples to see on site. By appointment.',
   alternates: {
     canonical: 'https://cbsols.fr/en/showroom',
-    languages: { 'fr-FR': 'https://cbsols.fr/showroom', en: 'https://cbsols.fr/en/showroom' },
+    languages: { 'fr-FR': 'https://cbsols.fr/showroom', en: 'https://cbsols.fr/en/showroom', es: 'https://cbsols.fr/es/showroom', },
   },
 }
 

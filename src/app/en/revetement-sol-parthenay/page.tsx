@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Parthenay. Old houses of the medieval centre, shops, practices, public bodies. CB Sols has worked in the trade for over 28 years with real caution on old substrates, travel from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-parthenay',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-parthenay', en: 'https://cbsols.fr/en/revetement-sol-parthenay' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-parthenay', en: 'https://cbsols.fr/en/revetement-sol-parthenay', es: 'https://cbsols.fr/es/revetement-sol-parthenay', },
   },
   keywords: ['floor covering Parthenay', 'carpet Parthenay', 'vinyl flooring Parthenay', 'rug laying Parthenay', 'flooring craftsman Parthenay'],
   openGraph: {

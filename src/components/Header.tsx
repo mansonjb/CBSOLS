@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { company } from '@/data/company'
 import { Button } from '@/components/Button'
+import { localeFromPath, localeBase, stripLocale, withLocale, type Locale } from '@/lib/locale'
 
 const navByLocale = {
   fr: [
@@ -23,6 +24,14 @@ const navByLocale = {
     { href: '/en/realisations', label: 'Projects' },
     { href: '/en/showroom', label: 'Showroom' },
   ],
+  es: [
+    { href: '/es/services', label: 'Servicios' },
+    { href: '/es/secteurs', label: 'Profesionales' },
+    { href: '/es/particuliers', label: 'Particulares' },
+    { href: '/es/architectes', label: 'Arquitectos' },
+    { href: '/es/realisations', label: 'Proyectos' },
+    { href: '/es/showroom', label: 'Showroom' },
+  ],
 }
 
 const navMobileExtraByLocale = {
@@ -36,22 +45,33 @@ const navMobileExtraByLocale = {
     { href: '/en/a-propos', label: 'About' },
     { href: '/en/zones', label: 'Areas' },
   ],
+  es: [
+    { href: '/es/marques', label: 'Marcas' },
+    { href: '/es/a-propos', label: 'Quiénes somos' },
+    { href: '/es/zones', label: 'Zonas' },
+  ],
 }
 
 const ctaByLocale = {
   fr: { quote: 'Devis gratuit', home: '/' },
   en: { quote: 'Free quote', home: '/en' },
+  es: { quote: 'Presupuesto gratis', home: '/es' },
 }
+
+const LANG_CODES: { locale: Locale; code: string }[] = [
+  { locale: 'fr', code: 'FR' },
+  { locale: 'en', code: 'EN' },
+  { locale: 'es', code: 'ES' },
+]
 
 export function Header() {
   const pathname = usePathname() ?? ''
-  const isEn = pathname === '/en' || pathname.startsWith('/en/')
-  const locale: 'fr' | 'en' = isEn ? 'en' : 'fr'
+  const locale = localeFromPath(pathname)
   const nav = navByLocale[locale]
   const navMobileExtra = navMobileExtraByLocale[locale]
   const cta = ctaByLocale[locale]
-  // Le lien de bascule FR<->EN garde la page courante (fallback accueil de la langue cible)
-  const altHref = isEn ? (pathname.replace(/^\/en(?=\/|$)/, '') || '/') : `/en${pathname === '/' ? '' : pathname}`
+  // Chemin "nu" courant, pour construire les bascules de langue qui gardent la page.
+  const bare = stripLocale(pathname)
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -89,7 +109,7 @@ export function Header() {
           <Link href={cta.home} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
             <Image
               src="/images/logo-cbsols.png"
-              alt={isEn ? 'CB Sols Flooring' : 'CB Sols Revêtements'}
+              alt={locale === 'en' ? 'CB Sols Flooring' : locale === 'es' ? 'CB Sols Revestimientos' : 'CB Sols Revêtements'}
               width={40}
               height={38}
               style={{ filter: 'brightness(0) saturate(100%)', objectFit: 'contain' }}
@@ -100,7 +120,7 @@ export function Header() {
                 CB <span style={{ color: 'var(--terra)' }}>Sols</span>
               </div>
               <div style={{ fontSize: '0.55rem', letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase', marginTop: '2px' }}>
-                {isEn ? 'Coverings · La Rochelle' : 'Revêtements · La Rochelle'}
+                {locale === 'en' ? 'Coverings · La Rochelle' : locale === 'es' ? 'Revestimientos · La Rochelle' : 'Revêtements · La Rochelle'}
               </div>
             </div>
           </Link>
@@ -126,14 +146,18 @@ export function Header() {
             }}>
               {company.phone}
             </a>
-            <Link href={altHref} aria-label={isEn ? 'Voir en français' : 'View in English'} style={{
-              fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
-              color: 'var(--dark-2)', textDecoration: 'none', border: '1px solid var(--border)',
-              borderRadius: '6px', padding: '0.35rem 0.6rem', whiteSpace: 'nowrap',
-            }}>
-              {isEn ? 'FR' : 'EN'}
-            </Link>
-            <Button href={locale === 'en' ? '/en/contact' : '/contact'} variant="primary" size="sm">{cta.quote}</Button>
+            <div style={{ display: 'flex', gap: '0.25rem' }}>
+              {LANG_CODES.filter((l) => l.locale !== locale).map((l) => (
+                <Link key={l.locale} href={withLocale(bare, l.locale)} hrefLang={l.locale} aria-label={`CB Sols ${l.code}`} style={{
+                  fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
+                  color: 'var(--dark-2)', textDecoration: 'none', border: '1px solid var(--border)',
+                  borderRadius: '6px', padding: '0.35rem 0.55rem', whiteSpace: 'nowrap',
+                }}>
+                  {l.code}
+                </Link>
+              ))}
+            </div>
+            <Button href={withLocale('/contact', locale)} variant="primary" size="sm">{cta.quote}</Button>
           </div>
 
           {/* Burger */}
@@ -149,7 +173,7 @@ export function Header() {
       {open && (
         <button
           type="button"
-          aria-label={isEn ? 'Close menu' : 'Fermer le menu'}
+          aria-label={locale === 'en' ? 'Close menu' : locale === 'es' ? 'Cerrar el menú' : 'Fermer le menu'}
           onClick={() => setOpen(false)}
           style={{
             position: 'fixed',
@@ -173,20 +197,17 @@ export function Header() {
         WebkitOverflowScrolling: 'touch',
       }}>
         <div style={{ borderTop: '1px solid var(--border)', padding: '1.5rem 2rem calc(2rem + env(safe-area-inset-bottom, 0px))' }}>
-          {/* Sélecteur de langue, visible en haut du menu mobile (accès direct FR/EN) */}
+          {/* Sélecteur de langue, visible en haut du menu mobile (accès direct FR/EN/ES) */}
           <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
-            {([
-              { code: 'FR', active: !isEn },
-              { code: 'EN', active: isEn },
-            ] as const).map(l => (
-              l.active ? (
-                <span key={l.code} aria-current="true" style={{
+            {LANG_CODES.map(l => (
+              l.locale === locale ? (
+                <span key={l.locale} aria-current="true" style={{
                   flex: 1, textAlign: 'center', padding: '0.6rem 0',
                   borderRadius: '999px', backgroundColor: 'var(--terra)', color: '#fff',
                   fontSize: '0.72rem', letterSpacing: '0.14em', fontWeight: 700,
                 }}>{l.code}</span>
               ) : (
-                <Link key={l.code} href={altHref} onClick={() => setOpen(false)} aria-label={isEn ? 'Voir en français' : 'View in English'} style={{
+                <Link key={l.locale} href={withLocale(bare, l.locale)} hrefLang={l.locale} onClick={() => setOpen(false)} aria-label={`CB Sols ${l.code}`} style={{
                   flex: 1, textAlign: 'center', padding: '0.6rem 0',
                   borderRadius: '999px', border: '1px solid var(--border)',
                   color: 'var(--dark)', textDecoration: 'none',
@@ -210,7 +231,7 @@ export function Header() {
               {company.phone}
             </a>
             <Link
-              href={locale === 'en' ? '/en/contact' : '/contact'}
+              href={withLocale('/contact', locale)}
               onClick={() => setOpen(false)}
               style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center',

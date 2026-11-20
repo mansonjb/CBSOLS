@@ -9,7 +9,7 @@ import { Building2, Castle, Home, Mail, MapPin, Store, Waves } from 'lucide-reac
 export const metadata: Metadata = {
   title: "Revêtement de Sol Saint-Émilion | Châteaux Viticoles Gironde",
   description: "Pose de moquette, sol PVC et tapis sur mesure pour châteaux viticoles de Saint-Émilion et grands crus du Libournais. Caveaux de réception, salles de dégustation, suites privées. CB Sols, plus de 28 ans d'expérience.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-emilion', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-saint-emilion', en: 'https://cbsols.fr/en/revetement-sol-saint-emilion' } },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-emilion', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-saint-emilion', en: 'https://cbsols.fr/en/revetement-sol-saint-emilion', es: 'https://cbsols.fr/es/revetement-sol-saint-emilion', } },
   keywords: ['revêtement sol Saint-Émilion', 'moquette château viticole', 'sol PVC chai dégustation', 'tapis sur mesure Libournais', 'artisan sol Gironde'],
   openGraph: {
     title: "Revêtement de sol à Saint-Émilion, le sol des grands crus",

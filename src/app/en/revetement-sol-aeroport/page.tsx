@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Laying and renovation of floors for airports and terminals: hall, boarding, lounges, offices. Vinyl and carpet rated Cfl-s1, accessibility, non-slip. Work in an occupied site, night work. CB Sols, La Rochelle.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-aeroport',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-aeroport', en: 'https://cbsols.fr/en/revetement-sol-aeroport' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-aeroport', en: 'https://cbsols.fr/en/revetement-sol-aeroport', es: 'https://cbsols.fr/es/revetement-sol-aeroport', },
   },
   openGraph: {
     title: 'Airport & Terminal Floor Covering | Heavy Traffic, Public-Building Standards',

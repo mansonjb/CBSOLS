@@ -8,7 +8,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: "Revêtement de Sol Île de Ré | Pose & Devis Gratuit 48h",
   description: "CB Sols intervient sur toute l'Île de Ré pour la pose de moquette, sol PVC et tapis sur mesure. Hôtels, campings, résidences. Devis gratuit sous 48h.",
-  alternates: { canonical: 'https://cbsols.fr/ile-de-re', languages: { 'fr-FR': 'https://cbsols.fr/ile-de-re', en: 'https://cbsols.fr/en/ile-de-re' } },
+  alternates: { canonical: 'https://cbsols.fr/ile-de-re', languages: { 'fr-FR': 'https://cbsols.fr/ile-de-re', en: 'https://cbsols.fr/en/ile-de-re', es: 'https://cbsols.fr/es/ile-de-re', } },
 }
 
 const jsonLd = {

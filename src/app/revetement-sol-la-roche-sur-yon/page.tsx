@@ -9,7 +9,7 @@ import { Building2, Castle, Home, Mail, MapPin, Stethoscope, Store } from 'lucid
 export const metadata: Metadata = {
   title: "Revêtement de Sol à La Roche-sur-Yon | Devis Gratuit sous 48h",
   description: "Pose de moquette, sol PVC et tapis sur mesure à La Roche-sur-Yon. Bureaux et cabinets, commerces de centre-ville, EHPAD et résidences seniors, maisons bourgeoises à rénover. CB Sols intervient depuis plus de 28 ans, déplacement organisé depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-la-roche-sur-yon', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-la-roche-sur-yon', en: 'https://cbsols.fr/en/revetement-sol-la-roche-sur-yon' } },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-la-roche-sur-yon', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-la-roche-sur-yon', en: 'https://cbsols.fr/en/revetement-sol-la-roche-sur-yon', es: 'https://cbsols.fr/es/revetement-sol-la-roche-sur-yon', } },
   keywords: ['revêtement sol La Roche-sur-Yon', 'moquette La Roche-sur-Yon', 'sol PVC La Roche-sur-Yon', 'pose tapis La Roche-sur-Yon', 'artisan sol La Roche-sur-Yon'],
   openGraph: {
     title: "Revêtement de sol à La Roche-sur-Yon, le sérieux de la préfecture",

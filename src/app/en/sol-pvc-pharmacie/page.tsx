@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Caring for your pharmacy floor protects your image and makes your team\'s daily work easier. CB Sols supports you, quote within 48h.',
   alternates: {
     canonical: 'https://cbsols.fr/en/sol-pvc-pharmacie',
-    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-pharmacie', en: 'https://cbsols.fr/en/sol-pvc-pharmacie' },
+    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-pharmacie', en: 'https://cbsols.fr/en/sol-pvc-pharmacie', es: 'https://cbsols.fr/es/sol-pvc-pharmacie', },
   },
   keywords: ['pharmacy vinyl flooring', 'pharmacy floor covering', 'pharmacy hygiene floor', 'pharmacy lab flooring', 'health-authority compliance', 'pharmacy floor laying', 'easy-clean pharmacy floor'],
   openGraph: {

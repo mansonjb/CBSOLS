@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'CB Sols works with 5 carefully selected brands: EGE (carpet), Gerflor and objectflor (vinyl), Bostik (adhesives & preparation), Romus (profiles). Villedoux showroom.',
   alternates: {
     canonical: 'https://cbsols.fr/en/marques',
-    languages: { 'fr-FR': 'https://cbsols.fr/marques', en: 'https://cbsols.fr/en/marques' },
+    languages: { 'fr-FR': 'https://cbsols.fr/marques', en: 'https://cbsols.fr/en/marques', es: 'https://cbsols.fr/es/marques', },
   },
 }
 

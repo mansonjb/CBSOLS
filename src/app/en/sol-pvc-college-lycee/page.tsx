@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Vinyl flooring laid in middle and high schools: classrooms, science labs, libraries, workshops. Public-building (type R) compliance, heat-welded wide sheets, public education tenders. CB Sols, over 28 years of experience.',
   alternates: {
     canonical: 'https://cbsols.fr/en/sol-pvc-college-lycee',
-    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-college-lycee', en: 'https://cbsols.fr/en/sol-pvc-college-lycee' },
+    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-college-lycee', en: 'https://cbsols.fr/en/sol-pvc-college-lycee', es: 'https://cbsols.fr/es/sol-pvc-college-lycee', },
   },
   openGraph: {
     title: 'Vinyl flooring in middle and high schools',

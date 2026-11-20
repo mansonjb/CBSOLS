@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "CB Sols works across the whole of Île d'Oléron, laying carpet, vinyl and bespoke rugs. Hotels, campsites, residences. Free quote within 48h.",
   alternates: {
     canonical: 'https://cbsols.fr/en/ile-doleron',
-    languages: { 'fr-FR': 'https://cbsols.fr/ile-doleron', en: 'https://cbsols.fr/en/ile-doleron' },
+    languages: { 'fr-FR': 'https://cbsols.fr/ile-doleron', en: 'https://cbsols.fr/en/ile-doleron', es: 'https://cbsols.fr/es/ile-doleron', },
   },
 }
 

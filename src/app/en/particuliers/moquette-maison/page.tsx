@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'High-end carpet laying for private clients: bedroom, master suite, floor, dressing room. EGE, Gerflor brands. The same quality as for 5★ hotels. Bespoke quote.',
   alternates: {
     canonical: 'https://cbsols.fr/en/particuliers/moquette-maison',
-    languages: { 'fr-FR': 'https://cbsols.fr/particuliers/moquette-maison', en: 'https://cbsols.fr/en/particuliers/moquette-maison' },
+    languages: { 'fr-FR': 'https://cbsols.fr/particuliers/moquette-maison', en: 'https://cbsols.fr/en/particuliers/moquette-maison', es: 'https://cbsols.fr/es/particuliers/moquette-maison', },
   },
 }
 

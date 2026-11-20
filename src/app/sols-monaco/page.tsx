@@ -9,7 +9,7 @@ import { Building2, Castle, Mail, MapPin, Sparkles, Store, Waves } from 'lucide-
 export const metadata: Metadata = {
   title: "Sols & Moquette d'Exception à Monaco | Pose Premium",
   description: "CB Sols se déplace à Monaco pour les projets d'exception : appartements Carré d'Or, suites de palace, yachts du Port Hercule. Moquette, tapis sur mesure et sols haut de gamme. Finition premium, discrétion totale, plus de 28 ans de savoir-faire.",
-  alternates: { canonical: 'https://cbsols.fr/sols-monaco', languages: { 'fr-FR': 'https://cbsols.fr/sols-monaco', en: 'https://cbsols.fr/en/sols-monaco' } },
+  alternates: { canonical: 'https://cbsols.fr/sols-monaco', languages: { 'fr-FR': 'https://cbsols.fr/sols-monaco', en: 'https://cbsols.fr/en/sols-monaco', es: 'https://cbsols.fr/es/sols-monaco', } },
   openGraph: {
     title: "Sols d'exception à Monaco",
     description: "Moquette, tapis sur mesure et sols haut de gamme pour les projets d'exception en Principauté. Atelier La Rochelle, équipe mobile, discrétion totale.",

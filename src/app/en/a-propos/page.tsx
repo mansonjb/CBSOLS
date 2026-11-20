@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Meet Valentin Prévoteau, owner of CB Sols (founded in 1998). He joined as an apprentice in 2008 and took over in 2023. Ten-year insurance, 500+ projects in Charente-Maritime.',
   alternates: {
     canonical: 'https://cbsols.fr/en/a-propos',
-    languages: { 'fr-FR': 'https://cbsols.fr/a-propos', en: 'https://cbsols.fr/en/a-propos' },
+    languages: { 'fr-FR': 'https://cbsols.fr/a-propos', en: 'https://cbsols.fr/en/a-propos', es: 'https://cbsols.fr/es/a-propos', },
   },
 }
 

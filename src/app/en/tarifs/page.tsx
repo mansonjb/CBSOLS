@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'At CB Sols every project is bespoke: area, material, substrate, access, local constraints. Rather than a misleading grid, we provide a real free quote within 48h.',
   alternates: {
     canonical: 'https://cbsols.fr/en/tarifs',
-    languages: { 'fr-FR': 'https://cbsols.fr/tarifs', en: 'https://cbsols.fr/en/tarifs' },
+    languages: { 'fr-FR': 'https://cbsols.fr/tarifs', en: 'https://cbsols.fr/en/tarifs', es: 'https://cbsols.fr/es/tarifs', },
   },
 }
 

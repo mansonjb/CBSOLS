@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Vinyl flooring laid in nursery and primary schools. Public-building compliance (Bfl-s1, U4P3, R10/R11), laying during the school holidays, public tenders. CB Sols has supported town halls and private schools for over 28 years.',
   alternates: {
     canonical: 'https://cbsols.fr/en/sol-pvc-ecole',
-    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-ecole', en: 'https://cbsols.fr/en/sol-pvc-ecole' },
+    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-ecole', en: 'https://cbsols.fr/en/sol-pvc-ecole', es: 'https://cbsols.fr/es/sol-pvc-ecole', },
   },
   openGraph: {
     title: 'Vinyl flooring in nursery and primary schools',

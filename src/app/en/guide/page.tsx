@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'All of CB Sols’ practical guides to choosing, laying and caring for your floor coverings: professional carpet, vinyl, bespoke rugs. A craftsman’s advice.',
   alternates: {
     canonical: 'https://cbsols.fr/en/guide',
-    languages: { 'fr-FR': 'https://cbsols.fr/guide', en: 'https://cbsols.fr/en/guide' },
+    languages: { 'fr-FR': 'https://cbsols.fr/guide', en: 'https://cbsols.fr/en/guide', es: 'https://cbsols.fr/es/guide', },
   },
 }
 

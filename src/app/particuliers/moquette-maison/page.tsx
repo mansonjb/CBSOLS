@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Moquette Maison Particulier | Pose Soignée La Rochelle, Île de Ré',
   description: "Pose de moquette haut de gamme pour particuliers : chambre, suite parentale, étage, dressing. Marques EGE, Gerflor. La même qualité que pour les hôtels 5★. Devis sur mesure.",
-  alternates: { canonical: 'https://cbsols.fr/particuliers/moquette-maison', languages: { 'fr-FR': 'https://cbsols.fr/particuliers/moquette-maison', en: 'https://cbsols.fr/en/particuliers/moquette-maison' } },
+  alternates: { canonical: 'https://cbsols.fr/particuliers/moquette-maison', languages: { 'fr-FR': 'https://cbsols.fr/particuliers/moquette-maison', en: 'https://cbsols.fr/en/particuliers/moquette-maison', es: 'https://cbsols.fr/es/particuliers/moquette-maison', } },
 }
 
 const cas = [

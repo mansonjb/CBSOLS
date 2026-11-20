@@ -9,7 +9,7 @@ import { Building2, Castle, Home, Mail, MapPin, Store } from 'lucide-react'
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Thouars | Devis Gratuit sous 48h",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Thouars. Maisons de caractère, commerces, cabinets, collectivités, EHPAD. CB Sols intervient depuis plus de 28 ans avec un déplacement maîtrisé : visite de mesures puis pose groupée depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-thouars', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-thouars', en: 'https://cbsols.fr/en/revetement-sol-thouars' } },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-thouars', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-thouars', en: 'https://cbsols.fr/en/revetement-sol-thouars', es: 'https://cbsols.fr/es/revetement-sol-thouars', } },
   keywords: ['revêtement sol Thouars', 'moquette Thouars', 'sol PVC Thouars', 'pose tapis Thouars', 'artisan sol Thouars'],
   openGraph: {
     title: "Revêtement de sol à Thouars, le soin du patrimoine",

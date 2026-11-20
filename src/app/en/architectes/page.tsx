@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'CB Sols supports architects, decorators and project managers in Charente-Maritime. Technical sheets, colour ranges, dedicated project follow-up. Specifier quote within 24h.',
   alternates: {
     canonical: 'https://cbsols.fr/en/architectes',
-    languages: { 'fr-FR': 'https://cbsols.fr/architectes', en: 'https://cbsols.fr/en/architectes' },
+    languages: { 'fr-FR': 'https://cbsols.fr/architectes', en: 'https://cbsols.fr/en/architectes', es: 'https://cbsols.fr/es/architectes', },
   },
 }
 

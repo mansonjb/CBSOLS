@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Thouars. Characterful houses, shops, practices, public bodies, care homes. CB Sols has worked in the trade for over 28 years with mastered travel: a measuring visit then a grouped laying from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-thouars',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-thouars', en: 'https://cbsols.fr/en/revetement-sol-thouars' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-thouars', en: 'https://cbsols.fr/en/revetement-sol-thouars', es: 'https://cbsols.fr/es/revetement-sol-thouars', },
   },
   keywords: ['floor covering Thouars', 'carpet Thouars', 'vinyl flooring Thouars', 'rug laying Thouars', 'flooring craftsman Thouars'],
   openGraph: {

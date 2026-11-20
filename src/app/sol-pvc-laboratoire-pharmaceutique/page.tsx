@@ -9,7 +9,7 @@ import { Baby, Building2, GraduationCap, Mail, Pill, Stethoscope, Store } from '
 export const metadata: Metadata = {
   title: "Sol PVC Laboratoire Pharmaceutique | Pose Labo, Pharmacie, Cosmétique",
   description: "Pose de sol PVC pour laboratoires pharmaceutiques, labos d'analyse, pharmacies d'officine, laboratoires cosmétique. Finition continue sans joints, rigueur du chantier, validé par les audits qualité. CB Sols, plus de 28 ans de savoir-faire.",
-  alternates: { canonical: 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique', languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique', en: 'https://cbsols.fr/en/sol-pvc-laboratoire-pharmaceutique' } },
+  alternates: { canonical: 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique', languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique', en: 'https://cbsols.fr/en/sol-pvc-laboratoire-pharmaceutique', es: 'https://cbsols.fr/es/sol-pvc-laboratoire-pharmaceutique', } },
   keywords: ['sol PVC laboratoire', 'sol pharmacie', 'sol labo cosmétique', 'revêtement labo analyse', 'sol pharmaceutique'],
   openGraph: {
     title: "Sol PVC pour laboratoire, rigueur et finition",

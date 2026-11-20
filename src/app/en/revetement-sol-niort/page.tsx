@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Niort. Historic-centre townhouses, head offices and large office floors, market-hall restaurants, care homes. CB Sols has worked in the trade for over 28 years, regular travel from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-niort',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-niort', en: 'https://cbsols.fr/en/revetement-sol-niort' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-niort', en: 'https://cbsols.fr/en/revetement-sol-niort', es: 'https://cbsols.fr/es/revetement-sol-niort', },
   },
   keywords: ['floor covering Niort', 'carpet Niort', 'vinyl flooring Niort', 'rug laying Niort', 'flooring craftsman Niort', 'mutual-insurer office vinyl Niort'],
   openGraph: {

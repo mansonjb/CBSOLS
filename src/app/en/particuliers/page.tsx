@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "The craftsman who lays the carpet of the region's 5★ hotels also works in private homes: main residence, second home, bespoke staircase, room-by-room renovation. Bespoke quote, never a price-per-m² grid.",
   alternates: {
     canonical: 'https://cbsols.fr/en/particuliers',
-    languages: { 'fr-FR': 'https://cbsols.fr/particuliers', en: 'https://cbsols.fr/en/particuliers' },
+    languages: { 'fr-FR': 'https://cbsols.fr/particuliers', en: 'https://cbsols.fr/en/particuliers', es: 'https://cbsols.fr/es/particuliers', },
   },
 }
 

@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Moquette Yacht et Voilier Luxe | La Rochelle',
   description: "Pose de moquette et tapis sur mesure pour yacht moteur et voilier luxe : Sunseeker, Princess, Beneteau, Jeanneau. Laine traitée anti-feu, finitions premium, vibrations moteur.",
-  alternates: { canonical: 'https://cbsols.fr/moquette-yacht', languages: { 'fr-FR': 'https://cbsols.fr/moquette-yacht', en: 'https://cbsols.fr/en/moquette-yacht' } },
+  alternates: { canonical: 'https://cbsols.fr/moquette-yacht', languages: { 'fr-FR': 'https://cbsols.fr/moquette-yacht', en: 'https://cbsols.fr/en/moquette-yacht', es: 'https://cbsols.fr/es/moquette-yacht', } },
   openGraph: {
     title: 'Moquette Yacht | La Rochelle',
     description: "Revêtements de sol pour yachts à moteur et voiliers luxe : salon, cabine propriétaire, coursive. Laine traitée anti-feu, tapis sur mesure, intégration boiseries.",

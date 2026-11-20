@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'Discover CB Sols’ projects: hotel carpet, office vinyl, bespoke restaurant rugs, residential projects for demanding private clients. Floor-covering craftsman in Charente-Maritime.',
   alternates: {
     canonical: 'https://cbsols.fr/en/realisations',
-    languages: { 'fr-FR': 'https://cbsols.fr/realisations', en: 'https://cbsols.fr/en/realisations' },
+    languages: { 'fr-FR': 'https://cbsols.fr/realisations', en: 'https://cbsols.fr/en/realisations', es: 'https://cbsols.fr/es/realisations', },
   },
 }
 

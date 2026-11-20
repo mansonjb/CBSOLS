@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Vinyl flooring laid for pharmaceutical labs, analysis labs, pharmacies and cosmetics labs. Seamless continuous finish, site rigour, validated by quality audits. CB Sols, over 28 years of know-how.',
   alternates: {
     canonical: 'https://cbsols.fr/en/sol-pvc-laboratoire-pharmaceutique',
-    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique', en: 'https://cbsols.fr/en/sol-pvc-laboratoire-pharmaceutique' },
+    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-laboratoire-pharmaceutique', en: 'https://cbsols.fr/en/sol-pvc-laboratoire-pharmaceutique', es: 'https://cbsols.fr/es/sol-pvc-laboratoire-pharmaceutique', },
   },
   keywords: ['laboratory vinyl flooring', 'pharmacy flooring', 'cosmetics lab flooring', 'analysis lab flooring', 'pharmaceutical flooring'],
   openGraph: {

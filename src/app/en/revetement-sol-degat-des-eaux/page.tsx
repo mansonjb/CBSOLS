@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Floor damaged by a water leak: swollen parquet, carpet, vinyl or laminate to redo. CB Sols works after drying, costs the repair and provides the detailed quote your insurer expects. La Rochelle and Charente-Maritime.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-degat-des-eaux',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-degat-des-eaux', en: 'https://cbsols.fr/en/revetement-sol-degat-des-eaux' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-degat-des-eaux', en: 'https://cbsols.fr/en/revetement-sol-degat-des-eaux', es: 'https://cbsols.fr/es/revetement-sol-degat-des-eaux', },
   },
   openGraph: {
     title: 'Floor Covering After Water Damage | Insurance Quote | CB Sols',

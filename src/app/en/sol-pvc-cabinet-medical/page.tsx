@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Vinyl flooring laid for medical practices, dentists, physiotherapists, osteopaths and vets. Floors that are easy to disinfect, with a calm, welcoming feel. CB Sols has worked in the trade for over 28 years, workshop near La Rochelle.',
   alternates: {
     canonical: 'https://cbsols.fr/en/sol-pvc-cabinet-medical',
-    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-cabinet-medical', en: 'https://cbsols.fr/en/sol-pvc-cabinet-medical' },
+    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-cabinet-medical', en: 'https://cbsols.fr/en/sol-pvc-cabinet-medical', es: 'https://cbsols.fr/es/sol-pvc-cabinet-medical', },
   },
   keywords: ['medical practice vinyl flooring', 'dental surgery flooring', 'physiotherapy flooring', 'veterinary flooring', 'waiting-room flooring'],
   openGraph: {
