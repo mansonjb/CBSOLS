@@ -14,7 +14,7 @@ export interface EnRealisation {
   body: string[]
   clientLink?: { url: string; label: string }
   gallery?: { src: string; caption?: string }[]
-  video?: { src: string; poster?: string; caption?: string }
+  video?: { vimeoId?: string; src?: string; poster?: string; caption?: string }
 }
 
 export const enRealisations: EnRealisation[] = [
@@ -30,15 +30,14 @@ export const enRealisations: EnRealisation[] = [
     client: 'Robbie, catamaran owner',
     type: 'Bespoke marine carpet',
     body: [
-      "Robbie asked us to lay a bespoke carpet aboard his catamaran. The aim was twofold: to warm up and dress the boat’s interior, and to do it fast, without keeping the catamaran out of the water any longer than necessary. We treated all the living spaces, the cabins, the companionways and the circulation, with a dark grey marine textile laid as close as possible to the boat’s shapes.",
+      "Robbie asked us to lay a bespoke carpet aboard his catamaran. The aim was twofold: to warm up and dress the boat’s interior, and to do it fast, without keeping the catamaran out of the water any longer than necessary. We treated all the living spaces, the cabins, the companionways and the circulation, with a green marine textile laid as close as possible to the boat’s shapes.",
       "On a boat, carpet is not only a matter of looks. It brings real thermal comfort, a warm floor underfoot while the hull stays cold, and precious acoustic comfort, absorbing footsteps and hull resonance. It also plays a part in safety by limiting slips when the boat moves. It is a covering that transforms the atmosphere of a catamaran interior, giving it a cocoon feel rather than the sense of a technical cockpit.",
       "The whole difficulty of a marine project lies in the cutting. Nothing is straight on a boat: curved hull, narrow companionways, hatches, rounded wooden furniture, lockers. Every strip of carpet was templated and cut to measure to hug these volumes, with controlled joints around the joinery and clean finishes on the steps. This is exactly the know-how we bring to boats, yachts, catamarans and barges.",
       "The point we committed to, and which matters enormously to an owner, is responsiveness. We replied to Robbie’s enquiry in under an hour, and the entire laying was done in under three days. For a boat, often on a tight availability window between two outings or during a stop in port, that timing makes all the difference. A fast, clean project, and a catamaran handed back ready to sail.",
       "This project illustrates our approach to marine floor covering: responsive advice, demanding bespoke cutting and laying carried out to short deadlines. From La Rochelle to the whole Atlantic coast, CB Sols dresses boat interiors as it handles the most technical floors on land, with the same eye for detail.",
     ],
     video: {
-      src: '/videos/pose-moquette-sur-mesure-catamaran.mp4',
-      poster: '/images/projects/pose-moquette-sur-mesure-catamaran/poster.webp',
+      vimeoId: '1248720481',
       caption: 'Robbie, the owner, talks about the carpet laid in his catamaran',
     },
     gallery: [

@@ -6,6 +6,7 @@ import { realisations, getRealisationBySlug } from '@/data/realisations'
 import { Button } from '@/components/Button'
 import { BreadcrumbLD } from '@/components/BreadcrumbLD'
 import { VideoTestimonial } from '@/components/VideoTestimonial'
+import { VideoTestimonialCompact } from '@/components/VideoTestimonialCompact'
 import { company } from '@/data/company'
 
 interface Props {
@@ -180,17 +181,21 @@ export default async function RealisationDetailPage({ params }: Props) {
                 Ils en <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>parlent mieux que nous.</em>
               </h2>
               <figure style={{ margin: 0 }}>
-                <div style={{ maxWidth: '420px', margin: '0 auto', borderRadius: '14px', overflow: 'hidden', backgroundColor: 'var(--dark)', border: '1px solid var(--border)' }}>
-                  <video
-                    controls
-                    playsInline
-                    preload="none"
-                    poster={r.video.poster}
-                    style={{ display: 'block', width: '100%', height: 'auto' }}
-                  >
-                    <source src={r.video.src} type="video/mp4" />
-                  </video>
-                </div>
+                {r.video.vimeoId ? (
+                  <VideoTestimonialCompact vimeoId={r.video.vimeoId} name={r.client ?? r.title} />
+                ) : r.video.src ? (
+                  <div style={{ maxWidth: '420px', margin: '0 auto', borderRadius: '14px', overflow: 'hidden', backgroundColor: 'var(--dark)', border: '1px solid var(--border)' }}>
+                    <video
+                      controls
+                      playsInline
+                      preload="none"
+                      poster={r.video.poster}
+                      style={{ display: 'block', width: '100%', height: 'auto' }}
+                    >
+                      <source src={r.video.src} type="video/mp4" />
+                    </video>
+                  </div>
+                ) : null}
                 {r.video.caption && (
                   <figcaption style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.9rem', textAlign: 'center', fontStyle: 'italic' }}>{r.video.caption}</figcaption>
                 )}

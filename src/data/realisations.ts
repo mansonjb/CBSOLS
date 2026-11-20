@@ -30,8 +30,8 @@ export interface Realisation {
   clientLink?: { url: string; label: string }
   /** Galerie de photos additionnelles, affichée en plein-largeur sous le body */
   gallery?: { src: string; caption?: string }[]
-  /** Vidéo témoignage (mp4 local), affichée sous le body */
-  video?: { src: string; poster?: string; caption?: string }
+  /** Vidéo témoignage affichée sous le body : Vimeo (vimeoId) ou mp4 local (src) */
+  video?: { vimeoId?: string; src?: string; poster?: string; caption?: string }
 }
 
 export const realisations: Realisation[] = [
@@ -47,15 +47,14 @@ export const realisations: Realisation[] = [
     client: 'Robbie, propriétaire du catamaran',
     type: 'Moquette marine sur mesure',
     body: [
-      "Robbie nous a confié la pose d'une moquette sur mesure à bord de son catamaran. L'objectif était double : réchauffer et habiller l'intérieur du bateau, et le faire vite, sans immobiliser le catamaran plus longtemps que nécessaire. Nous avons traité l'ensemble des espaces de vie, les cabines, les escaliers et les circulations, avec un textile marine gris foncé posé au plus près des formes du bord.",
+      "Robbie nous a confié la pose d'une moquette sur mesure à bord de son catamaran. L'objectif était double : réchauffer et habiller l'intérieur du bateau, et le faire vite, sans immobiliser le catamaran plus longtemps que nécessaire. Nous avons traité l'ensemble des espaces de vie, les cabines, les escaliers et les circulations, avec un textile marine vert posé au plus près des formes du bord.",
       "Dans un bateau, la moquette n'est pas qu'une question d'esthétique. Elle apporte un vrai confort thermique, un sol chaud sous les pieds alors que la coque reste froide, et un confort acoustique précieux, en absorbant les bruits de pas et les résonances de la coque. Elle participe aussi à la sécurité en limitant les glissades quand le bateau bouge. C'est un revêtement qui transforme l'ambiance d'un intérieur de catamaran, en lui donnant une atmosphère cocon plutôt qu'une sensation d'habitacle technique.",
       "Toute la difficulté d'un chantier marine tient dans la découpe. Rien n'est droit sur un bateau : coque galbée, escaliers étroits, trappes, meubles en bois aux formes arrondies, soutes. Chaque lé de moquette a été relevé et découpé sur mesure pour épouser ces volumes, avec des raccords maîtrisés autour des menuiseries et des finitions propres sur les marches. C'est exactement le savoir-faire que nous mettons en œuvre sur les bateaux, les yachts, les catamarans et les péniches.",
       "Le point sur lequel nous nous sommes engagés, et qui compte énormément pour un propriétaire, c'est la réactivité. Nous avons répondu à la demande de Robbie en moins d'une heure, et l'intégralité de la pose a été réalisée en moins de trois jours. Pour un bateau, qui est souvent sur une fenêtre de disponibilité serrée entre deux sorties ou lors d'un passage au port, ce délai fait toute la différence. Un chantier rapide, propre, et un catamaran rendu prêt à naviguer.",
       "Ce projet illustre notre approche du revêtement de sol marine : un conseil réactif, une découpe sur mesure exigeante et une pose menée dans des délais courts. De La Rochelle à l'ensemble de la façade atlantique, CB Sols habille les intérieurs de bateaux comme il traite les sols les plus techniques à terre, avec le même soin du détail.",
     ],
     video: {
-      src: '/videos/pose-moquette-sur-mesure-catamaran.mp4',
-      poster: '/images/projects/pose-moquette-sur-mesure-catamaran/poster.webp',
+      vimeoId: '1248720481',
       caption: 'Robbie, propriétaire, revient sur la pose de la moquette de son catamaran',
     },
     gallery: [
