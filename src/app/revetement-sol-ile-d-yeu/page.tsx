@@ -9,7 +9,7 @@ import { Building2, Mail, MapPin, Store, Waves } from 'lucide-react'
 export const metadata: Metadata = {
   title: "Revêtement de Sol Île d'Yeu | Maisons et Hôtels Vendée",
   description: "Pose de moquette, sol PVC et tapis sur mesure à l'Île d'Yeu. Maisons de pêcheurs Port-Joinville, villas côte sauvage, hôtels boutique. Logistique insulaire maîtrisée par CB Sols, plus de 28 ans de savoir-faire.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-ile-d-yeu' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-ile-d-yeu', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-ile-d-yeu', en: 'https://cbsols.fr/en/revetement-sol-ile-d-yeu' } },
   keywords: ['revêtement sol Île d\'Yeu', 'moquette maison Yeu', 'sol pied dans le sable Vendée', 'artisan sol Île d\'Yeu'],
   openGraph: {
     title: "Revêtement de sol à l'Île d'Yeu, le charme insulaire",

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Revêtement de Sol ${cityData.name}, Artisan Certifié`,
     description: `Pose de revêtement de sol à ${cityData.name} par CB Sols. Spécialiste moquette, sol PVC et tapis depuis 1998. Devis gratuit, intervention rapide en ${cityZoneLabels[cityData.zone]}.`,
-    alternates: { canonical: `https://cbsols.fr/revetement-sol-${city}` },
+    alternates: { canonical: `https://cbsols.fr/revetement-sol-${city}`, languages: { 'fr-FR': `https://cbsols.fr/revetement-sol-${city}`, en: `https://cbsols.fr/en/revetement-sol-${city}` } },
   }
 }
 

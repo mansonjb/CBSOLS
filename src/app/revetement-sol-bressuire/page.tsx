@@ -9,7 +9,7 @@ import { Building2, Castle, Home, Mail, MapPin, Stethoscope, Store } from 'lucid
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Bressuire | Devis Gratuit sous 48h",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Bressuire. Bureaux et cabinets, commerces du centre-ville, EHPAD et résidences seniors, maisons de bourg à rénover. CB Sols intervient depuis plus de 28 ans, déplacement organisé depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-bressuire' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-bressuire', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-bressuire', en: 'https://cbsols.fr/en/revetement-sol-bressuire' } },
   keywords: ['revêtement sol Bressuire', 'moquette Bressuire', 'sol PVC Bressuire', 'pose tapis Bressuire', 'artisan sol Bressuire'],
   openGraph: {
     title: "Revêtement de sol à Bressuire, le sérieux du Bocage",

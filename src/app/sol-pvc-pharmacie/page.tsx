@@ -9,7 +9,7 @@ import { Baby, Building2, FlaskConical, GraduationCap, Home, Mail, Stethoscope, 
 export const metadata: Metadata = {
   title: "Sol PVC Pharmacie d'Officine | Hygiène, Conformité et Durabilité",
   description: "Soigner le sol de votre officine, c'est protéger votre image et faciliter le quotidien de l'équipe. CB Sols vous accompagne, devis sous 48h.",
-  alternates: { canonical: 'https://cbsols.fr/sol-pvc-pharmacie' },
+  alternates: { canonical: 'https://cbsols.fr/sol-pvc-pharmacie', languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-pharmacie', en: 'https://cbsols.fr/en/sol-pvc-pharmacie' } },
   keywords: ['sol PVC pharmacie', 'revêtement sol officine', 'sol pharmacie hygiène', 'sol PVC laboratoire pharmacie', 'conformité ARS', 'pose sol pharmacie', 'sol pharmacie facile nettoyer'],
   openGraph: {
     title: "Sol PVC pour pharmacie, pensé pour durer",

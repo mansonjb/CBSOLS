@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: "Moquette Jet Privé | Refit Cabine Aviation d'Affaires",
   description: "Pose de moquette sur jet privé et avion d'affaires. Refit cabine cuir et tapis sur mesure pour Cessna Citation, Falcon, Gulfstream, Bombardier. Normes feu FAA / EASA. CB Sols, La Rochelle.",
-  alternates: { canonical: 'https://cbsols.fr/moquette-jet-prive' },
+  alternates: { canonical: 'https://cbsols.fr/moquette-jet-prive', languages: { 'fr-FR': 'https://cbsols.fr/moquette-jet-prive', en: 'https://cbsols.fr/en/moquette-jet-prive' } },
   openGraph: {
     title: "Moquette Jet Privé | Refit Cabine Aviation d'Affaires",
     description: "Moquette aviation d'affaires certifiée FAA Part 25 et EASA CS-25. Confection atelier, pose en hangar. Falcon, Gulfstream, Bombardier, Citation.",

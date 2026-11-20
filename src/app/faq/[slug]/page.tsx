@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: faq.metaTitle,
     description: faq.metaDescription,
-    alternates: { canonical: `https://cbsols.fr/faq/${slug}` },
+    alternates: { canonical: `https://cbsols.fr/faq/${slug}`, languages: { 'fr-FR': `https://cbsols.fr/faq/${slug}`, en: `https://cbsols.fr/en/faq/${slug}` } },
   }
 }
 

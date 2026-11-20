@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Moquette Péniche | Habitation et Commerce Fluvial',
   description: "Pose de moquette pour péniche habitée et péniche commerciale (restaurant, événementiel) en Charente-Maritime. Humidité fluviale, classement feu ERP fluvial, surfaces planes.",
-  alternates: { canonical: 'https://cbsols.fr/moquette-peniche' },
+  alternates: { canonical: 'https://cbsols.fr/moquette-peniche', languages: { 'fr-FR': 'https://cbsols.fr/moquette-peniche', en: 'https://cbsols.fr/en/moquette-peniche' } },
   openGraph: {
     title: 'Moquette Péniche | La Rochelle, Charente',
     description: "Revêtements de sol pour péniches habitées et péniches restaurant. Polypropylène, laine traitée, PVC marine. Conforme classement feu ERP fluvial.",

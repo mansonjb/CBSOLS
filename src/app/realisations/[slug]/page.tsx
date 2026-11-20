@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${r.title} | Réalisation CB Sols`,
     description: r.description,
-    alternates: { canonical: `https://cbsols.fr/realisations/${slug}` },
+    alternates: { canonical: `https://cbsols.fr/realisations/${slug}`, languages: { 'fr-FR': `https://cbsols.fr/realisations/${slug}`, en: `https://cbsols.fr/en/realisations/${slug}` } },
     openGraph: {
       title: r.title,
       description: r.description,

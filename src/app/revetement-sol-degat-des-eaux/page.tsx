@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Revêtement de Sol après Dégât des Eaux | Devis Assurance',
   description: "Sol abîmé par un dégât des eaux : parquet gonflé, moquette, sol PVC ou stratifié à refaire. CB Sols intervient après séchage, chiffre la réfection et fournit le devis détaillé attendu par votre assurance. La Rochelle et Charente-Maritime.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-degat-des-eaux' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-degat-des-eaux', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-degat-des-eaux', en: 'https://cbsols.fr/en/revetement-sol-degat-des-eaux' } },
   openGraph: {
     title: 'Revêtement de Sol après Dégât des Eaux | Devis Assurance | CB Sols',
     description: "Réfection de sol après sinistre : parquet, moquette, PVC, stratifié. Visite sur place, mesure de l'humidité, devis chiffré pour l'expert et l'assurance. CB Sols, artisan solier La Rochelle.",

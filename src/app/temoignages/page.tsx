@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Témoignages clients vidéo',
   description:
     "Découvrez les retours de nos clients en vidéo : assurance, hôtellerie, industrie. Chaque projet est une histoire de confiance.",
-  alternates: { canonical: 'https://cbsols.fr/temoignages' },
+  alternates: { canonical: 'https://cbsols.fr/temoignages', languages: { 'fr-FR': 'https://cbsols.fr/temoignages', en: 'https://cbsols.fr/en/temoignages' } },
 }
 
 interface VideoData {

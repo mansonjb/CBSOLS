@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Notre histoire | CB Sols, artisan solier à La Rochelle depuis 1998',
   description:
     "Rencontrez Valentin Prévoteau, gérant de CB Sols (entreprise fondée en 1998). Entré comme apprenti en 2008, repreneur en 2023. Assurance décennale, 500+ projets en Charente-Maritime.",
-  alternates: { canonical: 'https://cbsols.fr/a-propos' },
+  alternates: { canonical: 'https://cbsols.fr/a-propos', languages: { 'fr-FR': 'https://cbsols.fr/a-propos', en: 'https://cbsols.fr/en/a-propos' } },
 }
 
 const personSchema = {

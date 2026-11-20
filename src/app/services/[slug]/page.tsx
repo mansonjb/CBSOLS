@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: service.metaTitle('La Rochelle'),
     description: service.metaDescription('La Rochelle'),
-    alternates: { canonical: `https://cbsols.fr/services/${slug}` },
+    alternates: { canonical: `https://cbsols.fr/services/${slug}`, languages: { 'fr-FR': `https://cbsols.fr/services/${slug}`, en: `https://cbsols.fr/en/services/${slug}` } },
   }
 }
 
