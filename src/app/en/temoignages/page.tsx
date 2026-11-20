@@ -18,7 +18,10 @@ interface VideoData {
   name: string
   role: string
   company: string
+  /** Client quote (verbatim) OR, if isDescription, a factual project descriptor. */
   quote: string
+  /** true = `quote` is a project descriptor, not reported speech (no quotation marks, no italics). */
+  isDescription?: boolean
   projectInfo: string
 }
 
@@ -62,6 +65,16 @@ const videos: VideoData[] = [
     company: 'Golf de la Prée, La Rochelle',
     quote: 'We wanted carpet to create different spaces with real consistency, despite intensive traffic from golfers in spiked shoes. Valentin’s team found the right product, kept to the schedule and left an impeccable site. Today the clubhouse is understated and classy, and it opens up events we could not host before.',
     projectInfo: 'Clubhouse, restaurant and seminar rooms',
+  },
+  {
+    vimeoId: '1248720481',
+    name: 'Robbie',
+    role: 'Owner',
+    company: 'Catamaran, Charente-Maritime',
+    quote:
+      'Bespoke marine carpet laid aboard his catamaran: cabins, companionways and circulation, delivered in under three days, with a reply to the enquiry in under an hour.',
+    isDescription: true,
+    projectInfo: 'Bespoke marine carpet',
   },
 ]
 
@@ -112,7 +125,7 @@ export default async function TemoignagesPageEn() {
               <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, color: 'var(--terra)' }}>and they tell the story.</em>
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--cream-muted)', lineHeight: 1.75, margin: 0, maxWidth: '720px' }}>
-              More than ten written reviews, one video testimonial. Here are directors who chose CB Sols for their offices, their hotels or their industrial sites. They tell what they experienced: the quote, the laying, the result, the service. No script, no retouching, no compromise.
+              More than ten written reviews, one video testimonial. Here are the directors and owners who chose CB Sols, for their offices, their hotels, their industrial sites or their boat. They tell what they experienced: the quote, the laying, the result, the service. No script, no retouching, no compromise.
             </p>
           </div>
         </section>
@@ -126,8 +139,8 @@ export default async function TemoignagesPageEn() {
                   <VideoTestimonialCompact vimeoId={v.vimeoId} name={v.name} thumbnailUrl={thumbnails[i] ?? undefined} />
                 </div>
                 <div>
-                  <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.05rem', color: 'var(--dark)', lineHeight: 1.55, margin: '0 0 1.5rem', borderLeft: '2px solid var(--terra)', paddingLeft: '1.1rem' }}>
-                    &ldquo;{v.quote}&rdquo;
+                  <p style={{ fontFamily: v.isDescription ? 'var(--font-sans)' : 'var(--font-serif)', fontStyle: v.isDescription ? 'normal' : 'italic', fontSize: v.isDescription ? '0.95rem' : '1.05rem', color: v.isDescription ? 'var(--cream-muted)' : 'var(--dark)', lineHeight: 1.6, margin: '0 0 1.5rem', borderLeft: '2px solid var(--terra)', paddingLeft: '1.1rem' }}>
+                    {v.isDescription ? v.quote : <>&ldquo;{v.quote}&rdquo;</>}
                   </p>
                   <div style={{ fontFamily: 'var(--font-sans)', fontWeight: 700, color: 'var(--dark)', fontSize: '0.95rem' }}>{v.name}</div>
                   <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>{v.role}, {v.company}</div>

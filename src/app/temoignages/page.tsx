@@ -16,7 +16,10 @@ interface VideoData {
   name: string
   role: string
   company: string
+  /** Citation du client (verbatim) OU, si isDescription, descriptif factuel du chantier. */
   quote: string
+  /** true = `quote` est un descriptif de chantier, pas une parole rapportée (pas de guillemets ni d'italique). */
+  isDescription?: boolean
   projectInfo: string
 }
 
@@ -65,6 +68,16 @@ const videos: VideoData[] = [
     quote:
       "On voulait de la moquette pour créer différents espaces avec une vraie uniformité, malgré un passage intensif de golfeurs en chaussures à crampons. L'équipe de Valentin a trouvé le bon produit, tenu les délais et laissé un chantier impeccable. Aujourd'hui le club-house est sobre, classe, et nous ouvre des événements qu'on ne pouvait pas accueillir avant.",
     projectInfo: 'Club-house, restaurant et salles de séminaire',
+  },
+  {
+    vimeoId: '1248720481',
+    name: 'Robbie',
+    role: 'Propriétaire',
+    company: 'Catamaran, Charente-Maritime',
+    quote:
+      "Pose de moquette marine sur mesure à bord de son catamaran : cabines, escaliers et circulations, livrée en moins de trois jours, avec une réponse à la demande en moins d'une heure.",
+    isDescription: true,
+    projectInfo: 'Moquette marine sur mesure',
   },
 ]
 
@@ -198,11 +211,11 @@ export default async function TemoignagesPage() {
                 maxWidth: '720px',
               }}
             >
-              Plus que dix avis textuels, un seul témoignage vidéo. Voici quatre
-              dirigeants qui ont choisi CB Sols pour leurs bureaux, leurs hôtels
-              ou leurs sites industriels. Ils racontent ce qu'ils ont vécu : le
-              devis, la pose, le résultat, le service. Sans script, sans
-              retouche, sans concession.
+              Plus que dix avis textuels, un seul témoignage vidéo. Voici les
+              dirigeants et propriétaires qui ont choisi CB Sols, pour leurs
+              bureaux, leurs hôtels, leurs sites industriels ou leur bateau. Ils
+              racontent ce qu'ils ont vécu : le devis, la pose, le résultat, le
+              service. Sans script, sans retouche, sans concession.
             </p>
           </div>
         </section>
@@ -243,17 +256,17 @@ export default async function TemoignagesPage() {
                 <div>
                   <p
                     style={{
-                      fontFamily: 'var(--font-serif)',
-                      fontStyle: 'italic',
-                      fontSize: '1.05rem',
-                      color: 'var(--dark)',
-                      lineHeight: 1.55,
+                      fontFamily: v.isDescription ? 'var(--font-sans)' : 'var(--font-serif)',
+                      fontStyle: v.isDescription ? 'normal' : 'italic',
+                      fontSize: v.isDescription ? '0.95rem' : '1.05rem',
+                      color: v.isDescription ? 'var(--cream-muted)' : 'var(--dark)',
+                      lineHeight: 1.6,
                       margin: '0 0 1.5rem',
                       borderLeft: '2px solid var(--terra)',
                       paddingLeft: '1.1rem',
                     }}
                   >
-                    « {v.quote} »
+                    {v.isDescription ? v.quote : `« ${v.quote} »`}
                   </p>
                   <div
                     style={{

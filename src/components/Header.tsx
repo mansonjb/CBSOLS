@@ -173,6 +173,28 @@ export function Header() {
         WebkitOverflowScrolling: 'touch',
       }}>
         <div style={{ borderTop: '1px solid var(--border)', padding: '1.5rem 2rem calc(2rem + env(safe-area-inset-bottom, 0px))' }}>
+          {/* Sélecteur de langue, visible en haut du menu mobile (accès direct FR/EN) */}
+          <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
+            {([
+              { code: 'FR', active: !isEn },
+              { code: 'EN', active: isEn },
+            ] as const).map(l => (
+              l.active ? (
+                <span key={l.code} aria-current="true" style={{
+                  flex: 1, textAlign: 'center', padding: '0.6rem 0',
+                  borderRadius: '999px', backgroundColor: 'var(--terra)', color: '#fff',
+                  fontSize: '0.72rem', letterSpacing: '0.14em', fontWeight: 700,
+                }}>{l.code}</span>
+              ) : (
+                <Link key={l.code} href={altHref} onClick={() => setOpen(false)} aria-label={isEn ? 'Voir en français' : 'View in English'} style={{
+                  flex: 1, textAlign: 'center', padding: '0.6rem 0',
+                  borderRadius: '999px', border: '1px solid var(--border)',
+                  color: 'var(--dark)', textDecoration: 'none',
+                  fontSize: '0.72rem', letterSpacing: '0.14em', fontWeight: 700,
+                }}>{l.code}</Link>
+              )
+            ))}
+          </div>
           {[...nav, ...navMobileExtra].map(item => (
             <Link key={item.href} href={item.href} onClick={() => setOpen(false)} style={{
               display: 'block', padding: '0.875rem 0',
@@ -199,18 +221,6 @@ export function Header() {
               }}
             >
               {cta.quote}
-            </Link>
-            <Link
-              href={altHref}
-              onClick={() => setOpen(false)}
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                padding: '0.75rem 2rem', border: '1px solid var(--border)',
-                color: 'var(--dark)', fontSize: '0.7rem', letterSpacing: '0.14em',
-                textTransform: 'uppercase', textDecoration: 'none', fontWeight: 700, borderRadius: '999px',
-              }}
-            >
-              {isEn ? 'Voir en français' : 'View in English'}
             </Link>
           </div>
         </div>
