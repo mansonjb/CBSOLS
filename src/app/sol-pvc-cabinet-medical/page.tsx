@@ -9,7 +9,7 @@ import { Baby, Building2, FlaskConical, GraduationCap, Home, Mail, Pill, Store }
 export const metadata: Metadata = {
   title: "Sol PVC Cabinet Médical | Pose Cabinet Dentiste, Kiné, Vétérinaire",
   description: "Pose de sol PVC pour cabinet médical, dentiste, kiné, ostéopathe, vétérinaire. Sols faciles à désinfecter, ambiance calme et accueillante. CB Sols intervient depuis plus de 28 ans, atelier près de La Rochelle.",
-  alternates: { canonical: 'https://cbsols.fr/sol-pvc-cabinet-medical' },
+  alternates: { canonical: 'https://cbsols.fr/sol-pvc-cabinet-medical', languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-cabinet-medical', en: 'https://cbsols.fr/en/sol-pvc-cabinet-medical' } },
   keywords: ['sol PVC cabinet médical', 'sol cabinet dentiste', 'sol cabinet kiné', 'sol vétérinaire', 'revêtement salle d\'attente'],
   openGraph: {
     title: "Sol PVC pour cabinet médical, propreté et calme",

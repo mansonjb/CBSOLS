@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Revêtement de Sol Aéroport & Aérogare | Fort Trafic, Normes ERP',
   description: "Pose et rénovation de sol pour aéroports et aérogares : hall, embarquement, salons, bureaux. Sol PVC et moquette classés feu Cfl-s1, PMR, antidérapants. Intervention en site occupé, travaux de nuit. CB Sols, La Rochelle.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-aeroport' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-aeroport', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-aeroport', en: 'https://cbsols.fr/en/revetement-sol-aeroport' } },
   openGraph: {
     title: 'Revêtement de Sol Aéroport & Aérogare | Fort Trafic, Normes ERP',
     description: "Sol technique pour aérogares : classé feu Cfl-s1, PMR podotactile, antidérapant, trafic classe 34. Pose par phases sans fermer le terminal. CB Sols, artisan La Rochelle.",

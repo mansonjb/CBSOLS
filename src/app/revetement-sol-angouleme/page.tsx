@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: "Revêtement de Sol Angoulême | Patrimoine et Tertiaire",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Angoulême. Hôtels particuliers du plateau, sièges d'imprimeries BD, restaurants gastronomiques, châteaux des Charentes. CB Sols, plus de 28 ans de savoir-faire, déplacement régulier depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-angouleme' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-angouleme', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-angouleme', en: 'https://cbsols.fr/en/revetement-sol-angouleme' } },
   keywords: ['revêtement sol Angoulême', 'moquette Angoulême', 'sol PVC Angoulême', 'pose tapis Angoulême', 'artisan sol Angoulême', 'tapis château Charentes'],
   openGraph: {
     title: "Revêtement de sol à Angoulême, élégance des Charentes",

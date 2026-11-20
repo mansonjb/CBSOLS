@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Nos Services | Moquette, Sol PVC, Tapis Sur Mesure',
   description:
     'Découvrez tous les services CB Sols : pose de moquette, sol PVC lames/dalles/lés, tapis sur mesure, tapis de propreté, salle de cinéma, coin lecture, nettoyage de moquette. Artisan spécialiste en Charente-Maritime.',
-  alternates: { canonical: 'https://cbsols.fr/services' },
+  alternates: { canonical: 'https://cbsols.fr/services', languages: { 'fr-FR': 'https://cbsols.fr/services', en: 'https://cbsols.fr/en/services' } },
 }
 
 export default function ServicesPage() {

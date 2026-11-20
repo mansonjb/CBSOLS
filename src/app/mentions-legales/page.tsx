@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Mentions Légales | CB Sols Revêtements',
   description: "Mentions légales du site cbsols.fr : éditeur, hébergement, propriété intellectuelle, données personnelles.",
   robots: { index: false, follow: true },
-  alternates: { canonical: 'https://cbsols.fr/mentions-legales' },
+  alternates: { canonical: 'https://cbsols.fr/mentions-legales', languages: { 'fr-FR': 'https://cbsols.fr/mentions-legales', en: 'https://cbsols.fr/en/mentions-legales' } },
 }
 
 const sections = [

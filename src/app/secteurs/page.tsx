@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Solutions Pro | Hôtels, Restaurants, Bureaux, Collectivités',
   description:
     'CB Sols, partenaire des professionnels de Charente-Maritime. Solutions revêtement de sol pour hôtellerie, restauration, bureaux, collectivités, commerces et campings.',
-  alternates: { canonical: 'https://cbsols.fr/secteurs' },
+  alternates: { canonical: 'https://cbsols.fr/secteurs', languages: { 'fr-FR': 'https://cbsols.fr/secteurs', en: 'https://cbsols.fr/en/secteurs' } },
 }
 
 export default function SecteursPage() {

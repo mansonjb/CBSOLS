@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "FAQ Revêtement de Sol | CB Sols, Réponses d'Artisan",
   description:
     'Toutes vos questions sur la moquette, le sol PVC et la pose : délais, prix, normes, techniques, différences. Réponses claires d&apos;un artisan spécialiste.',
-  alternates: { canonical: 'https://cbsols.fr/faq' },
+  alternates: { canonical: 'https://cbsols.fr/faq', languages: { 'fr-FR': 'https://cbsols.fr/faq', en: 'https://cbsols.fr/en/faq' } },
 }
 
 function groupByCategory(items: typeof faqs) {

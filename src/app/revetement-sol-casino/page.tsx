@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Moquette & Revêtement de Sol pour Casino | CB Sols',
   description: "CB Sols accompagne casinos et établissements de jeux pour leurs revêtements de sol : moquette sur mesure, trafic intensif, acoustique, ERP et pose par phases sans fermer l'établissement. La Rochelle et Grand Ouest.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-casino' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-casino', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-casino', en: 'https://cbsols.fr/en/revetement-sol-casino' } },
   openGraph: {
     title: 'Moquette & Revêtement de Sol pour Casino | CB Sols',
     description: "Revêtement de sol pour casinos : moquette sur mesure, résistance au trafic, confort acoustique, classement feu ERP et chantier par phases sans arrêter l'exploitation. CB Sols, artisan La Rochelle.",

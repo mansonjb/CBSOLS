@@ -9,7 +9,7 @@ import { Building2, Castle, Home, Mail, MapPin, Stethoscope, Store } from 'lucid
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Châtellerault | Devis Gratuit sous 48h",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Châtellerault. Bureaux et locaux tertiaires, commerces, cabinets, collectivités, maisons anciennes du centre. CB Sols intervient depuis plus de 28 ans, déplacement organisé depuis Villedoux en visite groupée puis pose calée.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-chatellerault' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-chatellerault', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-chatellerault', en: 'https://cbsols.fr/en/revetement-sol-chatellerault' } },
   keywords: ['revêtement sol Châtellerault', 'moquette Châtellerault', 'sol PVC Châtellerault', 'pose tapis Châtellerault', 'artisan sol Châtellerault'],
   openGraph: {
     title: "Revêtement de sol à Châtellerault, le sérieux du Châtelleraudais",

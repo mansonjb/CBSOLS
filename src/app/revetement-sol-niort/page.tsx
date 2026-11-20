@@ -9,7 +9,7 @@ import { Building2, Castle, Home, Mail, MapPin, Pill, Stethoscope, Store } from 
 export const metadata: Metadata = {
   title: "Revêtement de Sol Niort | Moquette, PVC, Tapis Sur Mesure",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Niort. Hôtels particuliers du centre historique, sièges sociaux et grands plateaux tertiaires, restaurants des Halles, EHPAD. CB Sols intervient depuis plus de 28 ans, déplacement régulier depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-niort' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-niort', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-niort', en: 'https://cbsols.fr/en/revetement-sol-niort' } },
   keywords: ['revêtement sol Niort', 'moquette Niort', 'sol PVC Niort', 'pose tapis Niort', 'artisan sol Niort', 'sol PVC mutuelles Niort'],
   openGraph: {
     title: "Revêtement de sol à Niort, le sérieux des Deux-Sèvres",

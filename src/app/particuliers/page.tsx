@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Particuliers | CB Sols, Artisan-Poseur Haut de Gamme La Rochelle, Île de Ré',
   description: "L'artisan qui pose la moquette des hôtels 5★ de la région intervient aussi chez les particuliers : maison principale, résidence secondaire, escalier sur mesure, rénovation pièce par pièce. Devis sur mesure, jamais de grille au m².",
-  alternates: { canonical: 'https://cbsols.fr/particuliers' },
+  alternates: { canonical: 'https://cbsols.fr/particuliers', languages: { 'fr-FR': 'https://cbsols.fr/particuliers', en: 'https://cbsols.fr/en/particuliers' } },
 }
 
 const filtres = [

@@ -9,7 +9,7 @@ import { Building2, Castle, Home, Mail, MapPin, Store, Waves } from 'lucide-reac
 export const metadata: Metadata = {
   title: "Revêtement de Sol Bordeaux | Moquette, PVC, Tapis Sur Mesure",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Bordeaux. Hôtels particuliers du Triangle d'Or, échoppes bordelaises, restaurants gastronomiques. CB Sols intervient depuis plus de 28 ans, déplacement depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-bordeaux' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-bordeaux', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-bordeaux', en: 'https://cbsols.fr/en/revetement-sol-bordeaux' } },
   keywords: ['revêtement sol Bordeaux', 'moquette Bordeaux', 'sol PVC Bordeaux', 'pose tapis Bordeaux', 'artisan sol Bordeaux'],
   openGraph: {
     title: "Revêtement de sol à Bordeaux, l'élégance bordelaise",

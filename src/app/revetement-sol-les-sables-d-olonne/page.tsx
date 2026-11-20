@@ -9,7 +9,7 @@ import { Building2, Home, Mail, MapPin, Store, Waves } from 'lucide-react'
 export const metadata: Metadata = {
   title: "Revêtement de Sol aux Sables-d'Olonne | Devis Gratuit sous 48h",
   description: "Pose de moquette, sol PVC et tapis sur mesure aux Sables-d'Olonne. Villas front de mer, résidences secondaires de standing, hôtels et restaurants du Remblai, appartements vue océan. CB Sols intervient depuis plus de 28 ans, déplacement organisé depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-les-sables-d-olonne' },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-les-sables-d-olonne', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-les-sables-d-olonne', en: 'https://cbsols.fr/en/revetement-sol-les-sables-d-olonne' } },
   keywords: ["revêtement sol Les Sables-d'Olonne", "moquette Les Sables-d'Olonne", "sol PVC Les Sables-d'Olonne", "pose tapis villa bord de mer Vendée", "artisan sol Les Sables-d'Olonne"],
   openGraph: {
     title: "Revêtement de sol aux Sables-d'Olonne, l'esprit du bord de mer",

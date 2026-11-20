@@ -41,6 +41,27 @@ export const metadata: Metadata = {
   },
 }
 
+// English-language WebSite node for the /en subtree. Distinct @id (/en/#website),
+// inLanguage en-GB. It does NOT redeclare the Organization/LocalBusiness (those
+// language-neutral entities live once in the root layout with their canonical
+// @id) — it only references the Organization as publisher, so no duplicate
+// business node appears on /en pages.
+const enWebsiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://cbsols.fr/en/#website',
+  url: 'https://cbsols.fr/en',
+  name: 'CB Sols',
+  description: 'Flooring and carpet craftsman — La Rochelle, Île de Ré, Charente-Maritime',
+  inLanguage: 'en-GB',
+  publisher: { '@id': 'https://cbsols.fr/#organization' },
+}
+
 export default function EnLayout({ children }: { children: React.ReactNode }) {
-  return children
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(enWebsiteJsonLd) }} />
+      {children}
+    </>
+  )
 }
