@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: brand.metaTitle,
     description: brand.metaDescription,
-    alternates: { canonical: `https://cbsols.fr/marques/${slug}`, languages: { 'fr-FR': `https://cbsols.fr/marques/${slug}`, en: `https://cbsols.fr/en/marques/${slug}` } },
+    alternates: { canonical: `https://cbsols.fr/marques/${slug}`, languages: { 'fr-FR': `https://cbsols.fr/marques/${slug}`, en: `https://cbsols.fr/en/marques/${slug}`, es: `https://cbsols.fr/es/marques/${slug}`, } },
   }
 }
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Saint-Jean-de-Luz. Ocean-facing family villas, red-timbered Basque houses, bay boutique hotels, gastronomic restaurants. CB Sols, over 28 years of know-how, travel organised from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-saint-jean-de-luz',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-saint-jean-de-luz', en: 'https://cbsols.fr/en/revetement-sol-saint-jean-de-luz' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-saint-jean-de-luz', en: 'https://cbsols.fr/en/revetement-sol-saint-jean-de-luz', es: 'https://cbsols.fr/es/revetement-sol-saint-jean-de-luz', },
   },
   keywords: ['floor covering Saint-Jean-de-Luz', 'Basque Country carpet', 'bespoke rug Basque villa', 'flooring craftsman Saint-Jean-de-Luz', 'Basque Coast vinyl flooring'],
   openGraph: {

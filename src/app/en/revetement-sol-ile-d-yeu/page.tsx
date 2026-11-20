@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Laying of carpet, vinyl and bespoke rugs on the Île d'Yeu. Fishermen's houses in Port-Joinville, wild-coast villas, boutique hotels. Island logistics mastered by CB Sols, over 28 years of know-how.",
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-ile-d-yeu',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-ile-d-yeu', en: 'https://cbsols.fr/en/revetement-sol-ile-d-yeu' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-ile-d-yeu', en: 'https://cbsols.fr/en/revetement-sol-ile-d-yeu', es: 'https://cbsols.fr/es/revetement-sol-ile-d-yeu', },
   },
   keywords: ["floor covering Île d'Yeu", 'carpet island house Yeu', 'feet-in-the-sand floor Vendée', "flooring craftsman Île d'Yeu"],
   openGraph: {

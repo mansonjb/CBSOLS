@@ -9,7 +9,7 @@ import { Building2, Home, Mail, MapPin, Store, Waves } from 'lucide-react'
 export const metadata: Metadata = {
   title: "Revêtement de Sol Saint-Jean-de-Luz | Villas Pays Basque",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Saint-Jean-de-Luz. Villas familiales sur l'Océan, maisons basques à colombages, hôtels boutique de la baie, restaurants gastronomiques. CB Sols, plus de 28 ans de savoir-faire, déplacement organisé depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-jean-de-luz', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-saint-jean-de-luz', en: 'https://cbsols.fr/en/revetement-sol-saint-jean-de-luz' } },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-saint-jean-de-luz', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-saint-jean-de-luz', en: 'https://cbsols.fr/en/revetement-sol-saint-jean-de-luz', es: 'https://cbsols.fr/es/revetement-sol-saint-jean-de-luz', } },
   keywords: ['revêtement sol Saint-Jean-de-Luz', 'moquette Pays Basque', 'tapis sur mesure villa basque', 'artisan sol Saint-Jean-de-Luz', 'sol PVC Côte Basque'],
   openGraph: {
     title: "Revêtement de sol à Saint-Jean-de-Luz, l'âme basque",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
   alternates: {
     canonical: 'https://cbsols.fr/en/mentions-legales',
-    languages: { 'fr-FR': 'https://cbsols.fr/mentions-legales', en: 'https://cbsols.fr/en/mentions-legales' },
+    languages: { 'fr-FR': 'https://cbsols.fr/mentions-legales', en: 'https://cbsols.fr/en/mentions-legales', es: 'https://cbsols.fr/es/mentions-legales', },
   },
 }
 

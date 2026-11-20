@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "CB Sols works across the whole of Île de Ré, laying carpet, vinyl and bespoke rugs. Hotels, campsites, residences. Free quote within 48h.",
   alternates: {
     canonical: 'https://cbsols.fr/en/ile-de-re',
-    languages: { 'fr-FR': 'https://cbsols.fr/ile-de-re', en: 'https://cbsols.fr/en/ile-de-re' },
+    languages: { 'fr-FR': 'https://cbsols.fr/ile-de-re', en: 'https://cbsols.fr/en/ile-de-re', es: 'https://cbsols.fr/es/ile-de-re', },
   },
 }
 

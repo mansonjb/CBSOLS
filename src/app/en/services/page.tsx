@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Discover every CB Sols service: carpet fitting, LVT planks and tiles, sheet vinyl, bespoke rugs, entrance matting, home cinema rooms, reading nooks, carpet cleaning. Specialist craftsman in Charente-Maritime.',
   alternates: {
     canonical: 'https://cbsols.fr/en/services',
-    languages: { 'fr-FR': 'https://cbsols.fr/services', en: 'https://cbsols.fr/en/services' },
+    languages: { 'fr-FR': 'https://cbsols.fr/services', en: 'https://cbsols.fr/en/services', es: 'https://cbsols.fr/es/services', },
   },
 }
 

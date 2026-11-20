@@ -9,7 +9,7 @@ import { Building2, Castle, Home, Mail, MapPin, Store } from 'lucide-react'
 export const metadata: Metadata = {
   title: "Revêtement de Sol à Parthenay | Devis Gratuit sous 48h",
   description: "Pose de moquette, sol PVC et tapis sur mesure à Parthenay. Maisons anciennes du centre médiéval, commerces, cabinets, collectivités. CB Sols intervient depuis plus de 28 ans avec une vraie prudence sur les supports anciens, déplacement depuis Villedoux.",
-  alternates: { canonical: 'https://cbsols.fr/revetement-sol-parthenay', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-parthenay', en: 'https://cbsols.fr/en/revetement-sol-parthenay' } },
+  alternates: { canonical: 'https://cbsols.fr/revetement-sol-parthenay', languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-parthenay', en: 'https://cbsols.fr/en/revetement-sol-parthenay', es: 'https://cbsols.fr/es/revetement-sol-parthenay', } },
   keywords: ['revêtement sol Parthenay', 'moquette Parthenay', 'sol PVC Parthenay', 'pose tapis Parthenay', 'artisan sol Parthenay'],
   openGraph: {
     title: "Revêtement de sol à Parthenay, le respect du bâti ancien",

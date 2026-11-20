@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'Design, workshop making and laying of carpet, bespoke rugs and high-end floors for premium apartments, palace suites, yachts and offices in Monaco.',
   alternates: {
     canonical: 'https://cbsols.fr/en/sols-monaco',
-    languages: { 'fr-FR': 'https://cbsols.fr/sols-monaco', en: 'https://cbsols.fr/en/sols-monaco' },
+    languages: { 'fr-FR': 'https://cbsols.fr/sols-monaco', en: 'https://cbsols.fr/en/sols-monaco', es: 'https://cbsols.fr/es/sols-monaco', },
   },
 }
 

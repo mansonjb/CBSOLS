@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet and bespoke rugs in châteaux, manor houses and townhouses. Heritage care and ABF approval. CB Sols has served prestige owners and hoteliers for over 28 years.',
   alternates: {
     canonical: 'https://cbsols.fr/en/moquette-chateau',
-    languages: { 'fr-FR': 'https://cbsols.fr/moquette-chateau', en: 'https://cbsols.fr/en/moquette-chateau' },
+    languages: { 'fr-FR': 'https://cbsols.fr/moquette-chateau', en: 'https://cbsols.fr/en/moquette-chateau', es: 'https://cbsols.fr/es/moquette-chateau', },
   },
   openGraph: {
     title: 'Château & Manor Carpet | Bespoke Heritage Rugs',

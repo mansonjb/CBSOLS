@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in La Roche-sur-Yon. Offices and practices, town-centre shops, care homes and senior residences, bourgeois houses to renovate. CB Sols has worked in the trade for over 28 years, travel organised from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-la-roche-sur-yon',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-la-roche-sur-yon', en: 'https://cbsols.fr/en/revetement-sol-la-roche-sur-yon' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-la-roche-sur-yon', en: 'https://cbsols.fr/en/revetement-sol-la-roche-sur-yon', es: 'https://cbsols.fr/es/revetement-sol-la-roche-sur-yon', },
   },
   keywords: ['floor covering La Roche-sur-Yon', 'carpet La Roche-sur-Yon', 'vinyl flooring La Roche-sur-Yon', 'rug laying La Roche-sur-Yon', 'flooring craftsman La Roche-sur-Yon'],
   openGraph: {

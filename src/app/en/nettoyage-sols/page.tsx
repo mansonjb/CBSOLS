@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Deep cleaning of all floor types (vinyl, lino, tiles, stone, polished concrete) with Rotowash mechanical scrubbing. Hotels, restaurants, offices and public bodies in La Rochelle, Île de Ré and Charente-Maritime.',
   alternates: {
     canonical: 'https://cbsols.fr/en/nettoyage-sols',
-    languages: { 'fr-FR': 'https://cbsols.fr/nettoyage-sols', en: 'https://cbsols.fr/en/nettoyage-sols' },
+    languages: { 'fr-FR': 'https://cbsols.fr/nettoyage-sols', en: 'https://cbsols.fr/en/nettoyage-sols', es: 'https://cbsols.fr/es/nettoyage-sols', },
   },
 }
 

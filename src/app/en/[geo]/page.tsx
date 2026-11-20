@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: `Professional ${ctaLabel(service.name)} in ${city.name} and the surrounding area. CB Sols: specialist craftsman for over 28 years, free quote.`,
     alternates: {
       canonical: `https://cbsols.fr/en/${geo}`,
-      languages: { 'fr-FR': `https://cbsols.fr/${geo}`, en: `https://cbsols.fr/en/${geo}` },
+      languages: { 'fr-FR': `https://cbsols.fr/${geo}`, en: `https://cbsols.fr/en/${geo}`, es: `https://cbsols.fr/es/${geo}`, },
     },
     robots: { index: REACTIVATED_GEO.has(geo), follow: true },
   }

@@ -1,0 +1,248 @@
+import { notFound } from 'next/navigation'
+import Link from 'next/link'
+import type { Metadata } from 'next'
+import { esGuides, getEsGuideBySlug } from '../../_lib/guides'
+import { esSolutions, getEsSolutionBySlug } from '../../_lib/solutions'
+import { esFaqs } from '../../_lib/faqs'
+import { company } from '@/data/company'
+import { BreadcrumbLD } from '@/components/BreadcrumbLD'
+import { GuideContent } from '@/components/GuideContent'
+import { Button } from '@/components/Button'
+import { DevisBanner } from '@/components/DevisBanner'
+
+interface Props {
+  params: Promise<{ slug: string }>
+}
+
+export async function generateStaticParams() {
+  return esGuides.map((g) => ({ slug: g.slug }))
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const guide = getEsGuideBySlug(slug)
+  if (!guide) return {}
+  return {
+    title: guide.metaTitle,
+    description: guide.metaDescription,
+    alternates: {
+      canonical: `https://cbsols.fr/es/guide/${slug}`,
+      languages: {
+        'fr-FR': `https://cbsols.fr/guide/${slug}`, en: `https://cbsols.fr/en/guide/${slug}`, es: `https://cbsols.fr/es/guide/${slug}`,
+      },
+    },
+  }
+}
+
+export default async function GuidePageEn({ params }: Props) {
+  const { slug } = await params
+  const guide = getEsGuideBySlug(slug)
+  if (!guide) notFound()
+
+  const relatedSolutions = guide.relatedSolutions.map((s) => getEsSolutionBySlug(s)).filter(Boolean)
+  const relatedFaqs = esFaqs.filter((f) =>
+    guide.relatedSolutions.some((sol) => f.relatedSolutions.includes(sol))
+  ).slice(0, 4)
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: guide.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  }
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: guide.title,
+    description: guide.metaDescription,
+    datePublished: guide.datePublished ?? '2025-10-01',
+    dateModified: guide.dateModified ?? '2026-03-15',
+    author: { '@type': 'Organization', name: company.legalName },
+    publisher: { '@type': 'Organization', name: company.legalName },
+  }
+
+  const howToSchema = guide.howToMeta
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: guide.title,
+        description: guide.intro,
+        totalTime: guide.howToMeta.totalTime,
+        ...(guide.howToMeta.tools && guide.howToMeta.tools.length > 0
+          ? { tool: guide.howToMeta.tools.map((t) => ({ '@type': 'HowToTool', name: t })) }
+          : {}),
+        ...(guide.howToMeta.supplies && guide.howToMeta.supplies.length > 0
+          ? { supply: guide.howToMeta.supplies.map((s) => ({ '@type': 'HowToSupply', name: s })) }
+          : {}),
+        step: guide.sections.map((section) => ({
+          '@type': 'HowToStep',
+          name: section.title,
+          text: section.body.replace(/\s+/g, ' ').trim().slice(0, 300),
+        })),
+      }
+    : null
+
+  return (
+    <>
+      <BreadcrumbLD
+        items={[
+          { name: 'CB Sols', url: 'https://cbsols.fr/es' },
+          { name: 'Guides', url: 'https://cbsols.fr/es/guide' },
+          { name: guide.title, url: `https://cbsols.fr/es/guide/${slug}` },
+        ]}
+      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {howToSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      )}
+      <div style={{ paddingTop: '72px' }}>
+
+        {/* Hero */}
+        <section style={{ padding: '5rem 2rem 4rem', borderBottom: '1px solid var(--border)', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 70% 30%, rgba(44, 85, 48, 0.06) 0%, transparent 60%)', pointerEvents: 'none' }} />
+          <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative' }}>
+            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+              <Link href="/es" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>CB Sols</Link>
+              <span style={{ color: 'var(--border-hover)' }}>→</span>
+              <Link href="/es/guide" style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', textDecoration: 'none' }}>Guías</Link>
+            </div>
+
+            <span style={{ display: 'inline-block', padding: '0.3rem 0.875rem', border: '1px solid var(--border-hover)', backgroundColor: 'rgba(44, 85, 48, 0.08)', fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--terra)', borderRadius: '999px', marginBottom: '1.5rem' }}>
+              {guide.category}
+            </span>
+
+            <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2rem, 4.5vw, 3.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em', lineHeight: 1.05 }}>
+              {guide.headline}
+            </h1>
+            <p style={{ fontSize: '1.05rem', color: 'var(--muted)', lineHeight: 1.75, maxWidth: '700px' }}>
+              {guide.intro}
+            </p>
+          </div>
+        </section>
+
+        {/* Article content */}
+        <section style={{ padding: '5rem 2rem' }}>
+          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '4rem' }}>
+              {guide.sections.map((section, i) => {
+                const midpoint = Math.floor(guide.sections.length / 2)
+                return (
+                  <div key={i}>
+                    <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1.5rem', letterSpacing: '-0.03em' }}>
+                      {section.title}
+                    </h2>
+                    <GuideContent body={section.body} />
+                    {i === midpoint && guide.sections.length >= 4 && (
+                      <DevisBanner
+                        title="¿Un proyecto de suelo en su casa?"
+                        subtitle="Un presupuesto gratuito y sin compromiso, con respuesta rápida. Más de 28 años de oficio cerca de La Rochelle."
+                        ctaLabel="Solicitar un presupuesto"
+                        ctaHref="/es/contact"
+                      />
+                    )}
+                    {i < guide.sections.length - 1 && (
+                      <div style={{ marginTop: '3rem', height: '1px', backgroundColor: 'var(--border)' }} />
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section style={{ padding: '5rem 2rem', backgroundColor: 'var(--bg-card)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
+          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>FAQ</div>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 3rem', letterSpacing: '-0.03em' }}>
+              Preguntas frecuentes
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              {guide.faq.map((item, i) => (
+                <div key={i} style={{ padding: '1.5rem 0', borderBottom: '1px solid var(--border)' }}>
+                  <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--dark)', marginBottom: '0.75rem', letterSpacing: '-0.01em' }}>{item.q}</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.75 }}>{item.a}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Related FAQ pages */}
+        {relatedFaqs.length > 0 && (
+          <section style={{ padding: '3rem 2rem', borderBottom: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.25rem' }}>Ir más allá</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+                {relatedFaqs.map((f) => (
+                  <Link key={f.slug} href={`/es/faq/${f.slug}`} style={{ textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 0', borderBottom: '1px solid var(--border)' }}>
+                    <div>
+                      <div style={{ fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '0.2rem' }}>{f.category}</div>
+                      <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--dark)' }}>{f.question}</div>
+                    </div>
+                    <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', flexShrink: 0, marginLeft: '1rem' }}>Leer →</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Related solutions */}
+        {relatedSolutions.length > 0 && (
+          <section style={{ padding: '5rem 2rem', borderBottom: '1px solid var(--border)' }}>
+            <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+              <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Soluciones relacionadas</div>
+              <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.5rem, 2.5vw, 2rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 2.5rem', letterSpacing: '-0.03em' }}>
+                Nuestras soluciones{' '}
+                <em style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300 }}>a medida</em>
+              </h2>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1px', backgroundColor: 'var(--border)' }}>
+                {relatedSolutions.map((solution) => solution && (
+                  <Link key={solution.slug} href={`/es/solutions/${solution.slug}`} style={{ textDecoration: 'none' }}>
+                    <div style={{ backgroundColor: 'var(--bg-card)', padding: '2rem', height: '100%', transition: 'background-color 0.2s' }} className="service-card">
+                      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+                        <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', padding: '0.2rem 0.625rem', border: '1px solid rgba(44, 85, 48, 0.3)', borderRadius: '999px' }}>{solution.serviceName}</span>
+                        <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', padding: '0.2rem 0.625rem', border: '1px solid var(--border)', borderRadius: '999px' }}>{solution.sectorName}</span>
+                      </div>
+                      <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1rem', fontWeight: 700, color: 'var(--dark)', margin: '0 0 0.75rem', letterSpacing: '-0.02em' }}>
+                        {solution.headline}
+                      </h3>
+                      <p style={{ fontSize: '0.78rem', color: 'var(--muted)', margin: '0 0 1.5rem', lineHeight: 1.6 }}>
+                        {solution.tagline}
+                      </p>
+                      <div style={{ fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--terra)' }}>Explorar →</div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* CTA */}
+        <section style={{ padding: '5rem 2rem' }}>
+          <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
+            <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: '1.5rem' }}>Su proyecto</div>
+            <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800, color: 'var(--dark)', margin: '0 0 1rem', letterSpacing: '-0.03em' }}>
+              ¿Un proyecto en Charente-Maritime?
+            </h2>
+            <p style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 300, fontSize: '1.1rem', color: 'var(--muted)', margin: '0 0 2.5rem' }}>
+              CB Sols le acompaña de la elección a la colocación
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <Button href="/es/contact" variant="primary" size="md">Presupuesto gratuito</Button>
+              <Button href="/es/showroom" variant="outline" size="md">Ver la exposición</Button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </>
+  )
+}

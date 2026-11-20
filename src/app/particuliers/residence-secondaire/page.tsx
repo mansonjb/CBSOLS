@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 export const metadata: Metadata = {
   title: 'Résidence Secondaire Île de Ré, Oléron | Pose Sol Clé en Main, Photos d\'Avancement',
   description: "Vous habitez Paris, Bordeaux, Nantes : nous gérons les travaux de votre résidence secondaire à distance. Île de Ré, Île d'Oléron, La Rochelle. Photos d'avancement, livraison clé en main.",
-  alternates: { canonical: 'https://cbsols.fr/particuliers/residence-secondaire', languages: { 'fr-FR': 'https://cbsols.fr/particuliers/residence-secondaire', en: 'https://cbsols.fr/en/particuliers/residence-secondaire' } },
+  alternates: { canonical: 'https://cbsols.fr/particuliers/residence-secondaire', languages: { 'fr-FR': 'https://cbsols.fr/particuliers/residence-secondaire', en: 'https://cbsols.fr/en/particuliers/residence-secondaire', es: 'https://cbsols.fr/es/particuliers/residence-secondaire', } },
 }
 
 const cas = [

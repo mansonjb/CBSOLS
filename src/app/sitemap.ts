@@ -197,5 +197,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     }))
 
-  return [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...solutionPages, ...guidePages, ...brandPages, ...faqPages, ...realisationPages]
+  const frPages: MetadataRoute.Sitemap = [...staticPages, ...servicePages, ...sectorPages, ...cityHubPages, ...solutionPages, ...guidePages, ...brandPages, ...faqPages, ...realisationPages]
+
+  // Sous-arbres localisés /en et /es : mêmes pages indexables que le FR,
+  // préfixées. Les /[geo] (ville × service) restent noindex dans les trois
+  // langues, donc hors sitemap.
+  const localize = (prefix: '/en' | '/es'): MetadataRoute.Sitemap =>
+    frPages.map((p) => ({
+      ...p,
+      url: p.url === BASE_URL ? `${BASE_URL}${prefix}` : p.url.replace(BASE_URL, `${BASE_URL}${prefix}`),
+    }))
+
+  return [...frPages, ...localize('/en'), ...localize('/es')]
 }

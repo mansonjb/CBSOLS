@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Biarritz and on the Basque Coast. Belle Époque villas, contemporary residences, Relais & Châteaux hotels. CB Sols, over 28 years of know-how, travel from La Rochelle.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-biarritz',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-biarritz', en: 'https://cbsols.fr/en/revetement-sol-biarritz' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-biarritz', en: 'https://cbsols.fr/en/revetement-sol-biarritz', es: 'https://cbsols.fr/es/revetement-sol-biarritz', },
   },
   keywords: ['floor covering Biarritz', 'villa carpet Biarritz', 'Basque Coast flooring', 'rug laying Biarritz', 'flooring craftsman Biarritz'],
   openGraph: {

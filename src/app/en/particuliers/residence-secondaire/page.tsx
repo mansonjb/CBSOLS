@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "You live in Paris, Bordeaux, Nantes: we manage your second-home works remotely. Île de Ré, Île d'Oléron, La Rochelle. Progress photos, turnkey delivery.",
   alternates: {
     canonical: 'https://cbsols.fr/en/particuliers/residence-secondaire',
-    languages: { 'fr-FR': 'https://cbsols.fr/particuliers/residence-secondaire', en: 'https://cbsols.fr/en/particuliers/residence-secondaire' },
+    languages: { 'fr-FR': 'https://cbsols.fr/particuliers/residence-secondaire', en: 'https://cbsols.fr/en/particuliers/residence-secondaire', es: 'https://cbsols.fr/es/particuliers/residence-secondaire', },
   },
 }
 

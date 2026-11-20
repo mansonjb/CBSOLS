@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'Carpet, vinyl flooring, bespoke rugs: CB Sols has supported private clients, hotels and businesses in Charente-Maritime for over 28 years. Free quote within 48h.',
   alternates: {
     canonical: 'https://cbsols.fr/en',
-    languages: { 'fr-FR': 'https://cbsols.fr', en: 'https://cbsols.fr/en' },
+    languages: { 'fr-FR': 'https://cbsols.fr', en: 'https://cbsols.fr/en', es: 'https://cbsols.fr/es', },
   },
 }
 

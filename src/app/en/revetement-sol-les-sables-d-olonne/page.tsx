@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Les Sables-d\'Olonne. Seafront villas, upmarket second homes, Remblai hotels and restaurants, ocean-view apartments. CB Sols has worked in the trade for over 28 years, travel organised from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-les-sables-d-olonne',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-les-sables-d-olonne', en: 'https://cbsols.fr/en/revetement-sol-les-sables-d-olonne' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-les-sables-d-olonne', en: 'https://cbsols.fr/en/revetement-sol-les-sables-d-olonne', es: 'https://cbsols.fr/es/revetement-sol-les-sables-d-olonne', },
   },
   keywords: ['floor covering Les Sables-d\'Olonne', 'carpet Les Sables-d\'Olonne', 'vinyl flooring Les Sables-d\'Olonne', 'seaside villa rug laying Vendée', 'flooring craftsman Les Sables-d\'Olonne'],
   openGraph: {

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     'Ask CB Sols for your free quote. Floor-covering craftsman in La Rochelle, Île de Ré and Charente-Maritime. Reply within 48h.',
   alternates: {
     canonical: 'https://cbsols.fr/en/contact',
-    languages: { 'fr-FR': 'https://cbsols.fr/contact', en: 'https://cbsols.fr/en/contact' },
+    languages: { 'fr-FR': 'https://cbsols.fr/contact', en: 'https://cbsols.fr/en/contact', es: 'https://cbsols.fr/es/contact', },
   },
 }
 

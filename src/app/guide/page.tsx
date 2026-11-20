@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Guides Revêtement de Sol | CB Sols, Conseils Pro Charente-Maritime',
   description:
     "Tous les guides pratiques de CB Sols pour bien choisir, poser et entretenir vos revêtements de sol : moquette professionnelle, sol PVC, tapis sur mesure. Conseils d'artisan.",
-  alternates: { canonical: 'https://cbsols.fr/guide', languages: { 'fr-FR': 'https://cbsols.fr/guide', en: 'https://cbsols.fr/en/guide' } },
+  alternates: { canonical: 'https://cbsols.fr/guide', languages: { 'fr-FR': 'https://cbsols.fr/guide', en: 'https://cbsols.fr/en/guide', es: 'https://cbsols.fr/es/guide', } },
 }
 
 // Group guides by category for clearer hub navigation

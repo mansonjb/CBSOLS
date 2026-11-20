@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'CB Sols supports casinos and gaming venues with their floor coverings: bespoke carpet, intensive traffic, acoustics, public-building compliance and phased laying without closing the venue. La Rochelle and western France.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-casino',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-casino', en: 'https://cbsols.fr/en/revetement-sol-casino' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-casino', en: 'https://cbsols.fr/en/revetement-sol-casino', es: 'https://cbsols.fr/es/revetement-sol-casino', },
   },
   openGraph: {
     title: 'Casino Carpet & Floor Covering | CB Sols',

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Discover our clients’ feedback on video: insurance, hotels, industry. Every project is a story of trust.',
   alternates: {
     canonical: 'https://cbsols.fr/en/temoignages',
-    languages: { 'fr-FR': 'https://cbsols.fr/temoignages', en: 'https://cbsols.fr/en/temoignages' },
+    languages: { 'fr-FR': 'https://cbsols.fr/temoignages', en: 'https://cbsols.fr/en/temoignages', es: 'https://cbsols.fr/es/temoignages', },
   },
 }
 

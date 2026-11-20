@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs for villas in Cap Ferret. Second homes, timber decks, feet in the sand. CB Sols high-end craftsman, over 28 years of experience.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-cap-ferret',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-cap-ferret', en: 'https://cbsols.fr/en/revetement-sol-cap-ferret' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-cap-ferret', en: 'https://cbsols.fr/en/revetement-sol-cap-ferret', es: 'https://cbsols.fr/es/revetement-sol-cap-ferret', },
   },
   keywords: ['floor covering Cap Ferret', 'villa carpet Cap Ferret', 'seaside flooring Arcachon Bay', 'cabin rug laying Cap Ferret', 'flooring craftsman Arcachon'],
   openGraph: {

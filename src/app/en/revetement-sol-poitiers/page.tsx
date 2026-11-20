@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Poitiers. University laboratories, medical practices in the teaching-hospital area, head offices, Futuroscope hotels, private schools. CB Sols, over 28 years of know-how, regular travel from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-poitiers',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-poitiers', en: 'https://cbsols.fr/en/revetement-sol-poitiers' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-poitiers', en: 'https://cbsols.fr/en/revetement-sol-poitiers', es: 'https://cbsols.fr/es/revetement-sol-poitiers', },
   },
   keywords: ['floor covering Poitiers', 'laboratory vinyl flooring Poitiers', 'office carpet Poitiers', 'flooring craftsman Poitiers', 'medical-practice vinyl Poitiers'],
   openGraph: {

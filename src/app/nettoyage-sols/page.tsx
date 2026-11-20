@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Nettoyage de Sols Professionnel | Brossage Rotowash CB Sols La Rochelle',
   description:
     "Nettoyage en profondeur de tous types de sols (PVC, lino, carrelage, pierre, béton ciré) au brossage mécanique Rotowash. Hôtels, restaurants, bureaux et collectivités à La Rochelle, Île de Ré et Charente-Maritime.",
-  alternates: { canonical: 'https://cbsols.fr/nettoyage-sols', languages: { 'fr-FR': 'https://cbsols.fr/nettoyage-sols', en: 'https://cbsols.fr/en/nettoyage-sols' } },
+  alternates: { canonical: 'https://cbsols.fr/nettoyage-sols', languages: { 'fr-FR': 'https://cbsols.fr/nettoyage-sols', en: 'https://cbsols.fr/en/nettoyage-sols', es: 'https://cbsols.fr/es/nettoyage-sols', } },
   keywords: [
     'nettoyage de sols La Rochelle',
     'brossage mécanique Rotowash',

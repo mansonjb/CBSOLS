@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Carpet cleaning by hot-water extraction in La Rochelle, Île de Ré and Charente-Maritime. Hotels, offices, restaurants, private homes. Free quote, work with no interruption to activity.',
   alternates: {
     canonical: 'https://cbsols.fr/en/nettoyage-moquettes',
-    languages: { 'fr-FR': 'https://cbsols.fr/nettoyage-moquettes', en: 'https://cbsols.fr/en/nettoyage-moquettes' },
+    languages: { 'fr-FR': 'https://cbsols.fr/nettoyage-moquettes', en: 'https://cbsols.fr/en/nettoyage-moquettes', es: 'https://cbsols.fr/es/nettoyage-moquettes', },
   },
 }
 

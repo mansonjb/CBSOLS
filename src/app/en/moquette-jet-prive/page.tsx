@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Carpet laying on private jets and business aircraft. Leather cabin refit and bespoke rugs for Cessna Citation, Falcon, Gulfstream, Bombardier. FAA / EASA fire standards. CB Sols, La Rochelle.',
   alternates: {
     canonical: 'https://cbsols.fr/en/moquette-jet-prive',
-    languages: { 'fr-FR': 'https://cbsols.fr/moquette-jet-prive', en: 'https://cbsols.fr/en/moquette-jet-prive' },
+    languages: { 'fr-FR': 'https://cbsols.fr/moquette-jet-prive', en: 'https://cbsols.fr/en/moquette-jet-prive', es: 'https://cbsols.fr/es/moquette-jet-prive', },
   },
   openGraph: {
     title: 'Private-Jet Carpet | Business-Aviation Cabin Refit',

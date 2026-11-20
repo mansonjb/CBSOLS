@@ -4,22 +4,27 @@ import { usePathname } from 'next/navigation'
 import { company } from '@/data/company'
 import { getCityBySlug } from '@/data/cities'
 import { getEnCityBySlug } from '@/app/en/_lib/cities'
+import { getEsCityBySlug } from '@/app/es/_lib/cities'
+import { localeFromPath, localeBase, stripLocale } from '@/lib/locale'
 
 export function MobileCTA() {
   const pathname = usePathname() ?? ''
   if (pathname.startsWith('/admin')) return null
-  const isEn = pathname === '/en' || pathname.startsWith('/en/')
-  const path = isEn ? pathname.replace(/^\/en/, '') || '/' : pathname
+  const locale = localeFromPath(pathname)
+  const path = stripLocale(pathname)
   // Detect city context on /revetement-sol-[city] and /[service]-[city]
   let contextCity: string | null = null
   if (path.startsWith('/revetement-sol-')) {
     const slug = path.replace('/revetement-sol-', '').split('/')[0]
-    contextCity = (isEn ? getEnCityBySlug(slug)?.name : getCityBySlug(slug)?.name) ?? null
+    const lookup = locale === 'en' ? getEnCityBySlug(slug) : locale === 'es' ? getEsCityBySlug(slug) : getCityBySlug(slug)
+    contextCity = lookup?.name ?? null
   }
-  const base = isEn ? '/en' : ''
+  const base = localeBase(locale)
   const ctaHref = contextCity ? `${base}/contact?city=${encodeURIComponent(contextCity)}` : `${base}/contact`
-  const callLabel = isEn ? 'Call' : 'Appeler'
-  const ctaLabel = contextCity ? (isEn ? `Quote ${contextCity}` : `Devis ${contextCity}`) : (isEn ? 'Free quote 48h' : 'Devis gratuit 48h')
+  const callLabel = locale === 'en' ? 'Call' : locale === 'es' ? 'Llamar' : 'Appeler'
+  const ctaLabel = contextCity
+    ? (locale === 'en' ? `Quote ${contextCity}` : locale === 'es' ? `Presupuesto ${contextCity}` : `Devis ${contextCity}`)
+    : (locale === 'en' ? 'Free quote 48h' : locale === 'es' ? 'Presupuesto gratis 48 h' : 'Devis gratuit 48h')
 
   return (
     <div className="mobile-cta-bar" style={{

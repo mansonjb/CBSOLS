@@ -1,20 +1,27 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import { company } from '@/data/company'
+import { localeFromPath } from '@/lib/locale'
+
+const WA = {
+  fr: { message: 'Bonjour CB Sols, je souhaite un devis pour mon projet.', aria: 'Nous contacter sur WhatsApp' },
+  en: { message: 'Hello CB Sols, I would like a quote for my project.', aria: 'Contact us on WhatsApp' },
+  es: { message: 'Hola CB Sols, me gustaría recibir un presupuesto para mi proyecto.', aria: 'Contáctanos por WhatsApp' },
+} as const
 
 export function WhatsAppButton() {
   const pathname = usePathname() ?? ''
   if (pathname.startsWith('/admin')) return null
-  const isEn = pathname === '/en' || pathname.startsWith('/en/')
+  const t = WA[localeFromPath(pathname)]
   const waNumber = company.phoneClean.replace('+', '')
-  const message = encodeURIComponent(isEn ? 'Hello CB Sols, I would like a quote for my project.' : 'Bonjour CB Sols, je souhaite un devis pour mon projet.')
+  const message = encodeURIComponent(t.message)
 
   return (
     <a
       href={`https://wa.me/${waNumber}?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={isEn ? 'Contact us on WhatsApp' : 'Nous contacter sur WhatsApp'}
+      aria-label={t.aria}
       style={{
         position: 'fixed',
         bottom: '5.75rem',

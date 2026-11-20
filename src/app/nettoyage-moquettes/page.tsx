@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Nettoyage de Moquettes Professionnel | CB Sols La Rochelle',
   description:
     "Nettoyage de moquettes par injection-extraction à La Rochelle, Île de Ré et Charente-Maritime. Hôtels, bureaux, restaurants, particuliers. Devis gratuit, intervention sans interruption d'activité.",
-  alternates: { canonical: 'https://cbsols.fr/nettoyage-moquettes', languages: { 'fr-FR': 'https://cbsols.fr/nettoyage-moquettes', en: 'https://cbsols.fr/en/nettoyage-moquettes' } },
+  alternates: { canonical: 'https://cbsols.fr/nettoyage-moquettes', languages: { 'fr-FR': 'https://cbsols.fr/nettoyage-moquettes', en: 'https://cbsols.fr/en/nettoyage-moquettes', es: 'https://cbsols.fr/es/nettoyage-moquettes', } },
   keywords: [
     'nettoyage moquette La Rochelle',
     'injection extraction moquette',

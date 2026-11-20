@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Laying of carpet, vinyl and bespoke rugs in Angoulême. Townhouses of the plateau, comics-studio offices, gastronomic restaurants, Charente châteaux. CB Sols, over 28 years of know-how, regular travel from Villedoux.',
   alternates: {
     canonical: 'https://cbsols.fr/en/revetement-sol-angouleme',
-    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-angouleme', en: 'https://cbsols.fr/en/revetement-sol-angouleme' },
+    languages: { 'fr-FR': 'https://cbsols.fr/revetement-sol-angouleme', en: 'https://cbsols.fr/en/revetement-sol-angouleme', es: 'https://cbsols.fr/es/revetement-sol-angouleme', },
   },
   keywords: ['floor covering Angoulême', 'carpet Angoulême', 'vinyl flooring Angoulême', 'rug laying Angoulême', 'flooring craftsman Angoulême', 'Charente château rug'],
   openGraph: {

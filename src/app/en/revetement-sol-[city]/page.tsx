@@ -28,8 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://cbsols.fr/en/revetement-sol-${city}`,
       languages: {
-        'fr-FR': `https://cbsols.fr/revetement-sol-${city}`,
-        en: `https://cbsols.fr/en/revetement-sol-${city}`,
+        'fr-FR': `https://cbsols.fr/revetement-sol-${city}`, en: `https://cbsols.fr/en/revetement-sol-${city}`, es: `https://cbsols.fr/es/revetement-sol-${city}`,
       },
     },
   }

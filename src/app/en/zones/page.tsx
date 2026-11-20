@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'CB Sols works across 51 towns in Charente-Maritime: La Rochelle, Île de Ré, Rochefort, Saintes, Royan and the surrounding area. Floor covering, carpet, vinyl.',
   alternates: {
     canonical: 'https://cbsols.fr/en/zones',
-    languages: { 'fr-FR': 'https://cbsols.fr/zones', en: 'https://cbsols.fr/en/zones' },
+    languages: { 'fr-FR': 'https://cbsols.fr/zones', en: 'https://cbsols.fr/en/zones', es: 'https://cbsols.fr/es/zones', },
   },
 }
 

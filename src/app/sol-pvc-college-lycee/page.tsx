@@ -9,7 +9,7 @@ import { Baby, Building2, GraduationCap, Mail, Pill, Stethoscope, Store } from '
 export const metadata: Metadata = {
   title: 'Sol PVC Collège et Lycée | Revêtement Sol Établissements Secondaires',
   description: "Pose de sol PVC en collège et lycée, salles de cours, laboratoires sciences, CDI, ateliers. Conformité ERP type R, lés grande largeur soudés à chaud, marché public éducation. CB Sols, plus de 28 ans d'expérience.",
-  alternates: { canonical: 'https://cbsols.fr/sol-pvc-college-lycee', languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-college-lycee', en: 'https://cbsols.fr/en/sol-pvc-college-lycee' } },
+  alternates: { canonical: 'https://cbsols.fr/sol-pvc-college-lycee', languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-college-lycee', en: 'https://cbsols.fr/en/sol-pvc-college-lycee', es: 'https://cbsols.fr/es/sol-pvc-college-lycee', } },
   openGraph: {
     title: "Sol PVC en collège et lycée | Revêtement de sol en établissements secondaires",
     description: "Sol PVC en lés grande largeur soudés à chaud en collège et lycée : salles, labos, CDI, ateliers techniques. Marchés publics éducation.",

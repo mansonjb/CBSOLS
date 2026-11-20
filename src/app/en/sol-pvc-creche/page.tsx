@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Vinyl flooring laid in nurseries, micro-nurseries and childminder homes. Early-years-authority compliance, phthalate-free, A+ label, acoustic, antibacterial. CB Sols has supported early-years settings for over 28 years.',
   alternates: {
     canonical: 'https://cbsols.fr/en/sol-pvc-creche',
-    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-creche', en: 'https://cbsols.fr/en/sol-pvc-creche' },
+    languages: { 'fr-FR': 'https://cbsols.fr/sol-pvc-creche', en: 'https://cbsols.fr/en/sol-pvc-creche', es: 'https://cbsols.fr/es/sol-pvc-creche', },
   },
   openGraph: {
     title: 'Vinyl flooring in nurseries and daycare | Early-years floors',

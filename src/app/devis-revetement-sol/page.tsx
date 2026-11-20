@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Devis Revêtement de Sol Gratuit | Réponse sous 48h',
   description:
     'Demandez votre devis revêtement de sol gratuit et sans engagement : moquette, sol PVC, tapis sur mesure. Réponse sous 48h en Charente-Maritime. CB Sols, plus de 28 ans d\'expérience.',
-  alternates: { canonical: 'https://cbsols.fr/devis-revetement-sol', languages: { 'fr-FR': 'https://cbsols.fr/devis-revetement-sol', en: 'https://cbsols.fr/en/devis-revetement-sol' } },
+  alternates: { canonical: 'https://cbsols.fr/devis-revetement-sol', languages: { 'fr-FR': 'https://cbsols.fr/devis-revetement-sol', en: 'https://cbsols.fr/en/devis-revetement-sol', es: 'https://cbsols.fr/es/devis-revetement-sol', } },
   keywords: ['devis revêtement de sol', 'devis sol gratuit', 'devis moquette', 'devis sol PVC', 'devis tapis sur mesure', 'chiffrage revêtement sol Charente-Maritime'],
   openGraph: {
     title: 'Devis revêtement de sol gratuit, réponse sous 48h',

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Contact & Devis Gratuit | CB Sols La Rochelle',
   description:
     'Demandez votre devis gratuit à CB Sols. Artisan revêtement de sol à La Rochelle, Île de Ré et Charente-Maritime. Réponse sous 48h.',
-  alternates: { canonical: 'https://cbsols.fr/contact', languages: { 'fr-FR': 'https://cbsols.fr/contact', en: 'https://cbsols.fr/en/contact' } },
+  alternates: { canonical: 'https://cbsols.fr/contact', languages: { 'fr-FR': 'https://cbsols.fr/contact', en: 'https://cbsols.fr/en/contact', es: 'https://cbsols.fr/es/contact', } },
 }
 
 export default function ContactPage() {

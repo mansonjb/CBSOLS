@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { localeFromPath } from '@/lib/locale'
 
 const STORAGE_KEY = 'cbsols-cookie-consent-v1'
 
@@ -38,24 +39,34 @@ export function CookieBanner() {
   const [visible, setVisible] = useState(false)
   const [mounted, setMounted] = useState(false)
   const pathname = usePathname() ?? ''
-  const isEn = pathname === '/en' || pathname.startsWith('/en/')
-  const t = isEn
-    ? {
-        aria: 'Cookie preferences',
-        body: 'We use a minimum of cookies (theme preference, anonymous performance measurement via Vercel). No advertising cookies or third-party trackers.',
-        accept: 'Accept',
-        decline: 'Decline',
-        more: 'Learn more',
-        legalHref: '/en/mentions-legales#cookies-et-traceurs',
-      }
-    : {
-        aria: 'Préférences cookies',
-        body: 'Nous utilisons un minimum de cookies (préférence de thème, mesure de performance anonyme via Vercel). Aucun cookie publicitaire ni traceur tiers.',
-        accept: 'Accepter',
-        decline: 'Refuser',
-        more: 'En savoir plus',
-        legalHref: '/mentions-legales#cookies-et-traceurs',
-      }
+  const locale = localeFromPath(pathname)
+  const COOKIE = {
+    fr: {
+      aria: 'Préférences cookies',
+      body: 'Nous utilisons un minimum de cookies (préférence de thème, mesure de performance anonyme via Vercel). Aucun cookie publicitaire ni traceur tiers.',
+      accept: 'Accepter',
+      decline: 'Refuser',
+      more: 'En savoir plus',
+      legalHref: '/mentions-legales#cookies-et-traceurs',
+    },
+    en: {
+      aria: 'Cookie preferences',
+      body: 'We use a minimum of cookies (theme preference, anonymous performance measurement via Vercel). No advertising cookies or third-party trackers.',
+      accept: 'Accept',
+      decline: 'Decline',
+      more: 'Learn more',
+      legalHref: '/en/mentions-legales#cookies-et-traceurs',
+    },
+    es: {
+      aria: 'Preferencias de cookies',
+      body: 'Utilizamos un mínimo de cookies (preferencia de tema, medición anónima del rendimiento mediante Vercel). Sin cookies publicitarias ni rastreadores de terceros.',
+      accept: 'Aceptar',
+      decline: 'Rechazar',
+      more: 'Más información',
+      legalHref: '/es/mentions-legales#cookies-et-traceurs',
+    },
+  } as const
+  const t = COOKIE[locale]
 
   useEffect(() => {
     setMounted(true)
