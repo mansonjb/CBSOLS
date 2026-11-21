@@ -73,7 +73,9 @@ export function Header() {
   // Chemin "nu" courant, pour construire les bascules de langue qui gardent la page.
   const bare = stripLocale(pathname)
   const [open, setOpen] = useState(false)
+  const [langOpen, setLangOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const current = LANG_CODES.find((l) => l.locale === locale) ?? LANG_CODES[0]
 
   // Pas de header public sur /admin/* (interface admin a son propre layout)
   if (pathname.startsWith('/admin')) return null
@@ -93,6 +95,18 @@ export function Header() {
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [open])
+
+  // Fermer le menu langue au clic extérieur / Escape
+  useEffect(() => {
+    if (!langOpen) return
+    const onDoc = (e: MouseEvent) => {
+      if (!(e.target as HTMLElement)?.closest('[data-lang-switch]')) setLangOpen(false)
+    }
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setLangOpen(false) }
+    document.addEventListener('click', onDoc)
+    window.addEventListener('keydown', onKey)
+    return () => { document.removeEventListener('click', onDoc); window.removeEventListener('keydown', onKey) }
+  }, [langOpen])
 
   return (
     <header style={{
@@ -146,16 +160,49 @@ export function Header() {
             }}>
               {company.phone}
             </a>
-            <div style={{ display: 'flex', gap: '0.25rem' }}>
-              {LANG_CODES.filter((l) => l.locale !== locale).map((l) => (
-                <Link key={l.locale} href={withLocale(bare, l.locale)} hrefLang={l.locale} aria-label={`CB Sols ${l.code}`} style={{
+            <div data-lang-switch style={{ position: 'relative' }}>
+              <button
+                type="button"
+                onClick={() => setLangOpen((v) => !v)}
+                aria-haspopup="true"
+                aria-expanded={langOpen}
+                aria-label={`Langue : ${current.code}`}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: '0.3rem',
                   fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
-                  color: 'var(--dark-2)', textDecoration: 'none', border: '1px solid var(--border)',
-                  borderRadius: '6px', padding: '0.35rem 0.55rem', whiteSpace: 'nowrap',
+                  color: 'var(--dark-2)', background: 'none', border: '1px solid var(--border)',
+                  borderRadius: '6px', padding: '0.35rem 0.5rem', whiteSpace: 'nowrap', cursor: 'pointer',
+                  fontFamily: 'inherit',
+                }}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                {current.code}
+                <svg width="9" height="9" viewBox="0 0 10 6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" style={{ transform: langOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }}>
+                  <path d="M1 1l4 4 4-4" />
+                </svg>
+              </button>
+              {langOpen && (
+                <div role="menu" style={{
+                  position: 'absolute', top: 'calc(100% + 0.4rem)', right: 0, minWidth: '100%',
+                  backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
+                  borderRadius: '8px', boxShadow: '0 6px 24px rgba(0,0,0,0.12)', overflow: 'hidden', zIndex: 10,
+                  animation: 'fade-in 0.15s ease',
                 }}>
-                  {l.code}
-                </Link>
-              ))}
+                  {LANG_CODES.filter((l) => l.locale !== locale).map((l) => (
+                    <Link key={l.locale} href={withLocale(bare, l.locale)} hrefLang={l.locale} role="menuitem" onClick={() => setLangOpen(false)} aria-label={`CB Sols ${l.code}`} style={{
+                      display: 'block', padding: '0.5rem 0.9rem',
+                      fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
+                      color: 'var(--dark-2)', textDecoration: 'none', whiteSpace: 'nowrap',
+                    }}>
+                      {l.code}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
             <Button href={withLocale('/contact', locale)} variant="primary" size="sm">{cta.quote}</Button>
           </div>
@@ -198,6 +245,16 @@ export function Header() {
       }}>
         <div style={{ borderTop: '1px solid var(--border)', padding: '1.5rem 2rem calc(2rem + env(safe-area-inset-bottom, 0px))' }}>
           {/* Sélecteur de langue, visible en haut du menu mobile (accès direct FR/EN/ES) */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.6rem', color: 'var(--muted)' }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+            <span style={{ fontSize: '0.6rem', letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 600 }}>
+              {locale === 'en' ? 'Language' : locale === 'es' ? 'Idioma' : 'Langue'}
+            </span>
+          </div>
           <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
             {LANG_CODES.map(l => (
               l.locale === locale ? (
